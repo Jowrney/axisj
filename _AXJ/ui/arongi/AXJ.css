@@ -1,0 +1,99 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #866c61;
+}
+html a,
+body a {
+  color: #917970;
+  text-decoration: none;
+}
+html a:hover,
+body a:hover {
+  color: #5a3628;
+  text-decoration: underline;
+}
+html a:active,
+body a:active {
+  color: #464646;
+}
+.axwrap {
+  position: relative;
+  width: 93.75%;
+  margin: 0 auto;
+}
+#AXPage {
+  font-family: "Open sans";
+  overflow: hidden;
+}
+#AXPage .axwrap {
+  margin: 0 auto;
+}
+#AXPage .axclear {
+  clear: both;
+}
+#AXPage .axunit {
+  margin: 0 10px;
+}
+#AXPage .axcol {
+  float: left;
+  color: #fff;
+  background: #0f0;
+}
+#AXPage div[class*="axcol-"] {
+  float: left;
+}
+#AXPage .axcol-1 {
+  width: 8.3334%;
+}
+#AXPage .axcol-2 {
+  width: 16.6667%;
+}
+#AXPage .axcol-3 {
+  width: 25%;
+}
+#AXPage .axcol-4 {
+  width: 33.3334%;
+}
+#AXPage .axcol-5 {
+  width: 41.6667%;
+}
+#AXPage .axcol-6 {
+  width: 50%;
+}
+#AXPage .axcol-7 {
+  width: 58.3334%;
+}
+#AXPage .axcol-8 {
+  width: 66.6667%;
+}
+#AXPage .axcol-9 {
+  width: 75%;
+}
+#AXPage .axcol-10 {
+  width: 83.3334%;
+}
+#AXPage .axcol-11 {
+  width: 91.6667%;
+}
+#AXPage .axcol-12 {
+  width: 100%;
+}
+@media (min-width:1152px) {
+  .axwrap {
+    max-width: 1132px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1151px) {
+  
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  
+}
+@media (max-width: 767px) {
+  .axwrap {
+    width: 100%;
+  }
+}

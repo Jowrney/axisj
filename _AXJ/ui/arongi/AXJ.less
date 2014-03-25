@@ -1,0 +1,99 @@
+// sDescription ////////////////////////
+// CSS Script by Jowrney Kim
+// Last update. Feb 21, 2014	
+// eDescription ///////////////////////
+
+// Preset < --------------------------------------------------
+@color-light:#fff;
+@color-dark:#5a3628;
+@color-area:#f1efea;
+
+@color-font:#866c61;
+@color-font-point-1:#3492ca; //Blue
+@color-font-point-1:#76a91f; //Green
+
+@color-link-color:#917970;
+@color-link-hover-color:#5a3628;
+@color-link-active-color:#464646;
+// Preset > --------------------------------------------------
+
+
+
+// Common < --------------------------------------------------
+html, body	{
+	margin:0; padding:0; 
+	height:100%; 
+	color:@color-font; 
+	a 		{color:@color-link-color; text-decoration: none;}	 	
+	a:hover {color:@color-link-hover-color; text-decoration: underline;}
+	a:active{color:@color-link-active-color;}	
+	
+}
+.axwrap		{position:relative; width:93.75%; margin:0 auto;}
+// Common > --------------------------------------------------	
+
+
+// AXPage < --------------------------------------------------
+#AXPage {
+
+	// sBaseStyle
+	font-family:"Open sans"; 
+	overflow: hidden;
+	.axwrap 	{margin:0 auto;}
+	.axclear	{clear:both;}
+	.axlayer 	{}
+	.axunit		{margin:0 10px; }
+	
+	.axcol		{float:left; color:#fff; background:#0f0;}		
+	div[class*="axcol-"] {float:left; }
+	.axcol-1	{width:8.3334%;}	
+	.axcol-2	{width:16.6667%}		
+	.axcol-3	{width:25%}			
+	.axcol-4	{width:33.3334%; }
+	.axcol-5 	{width:41.6667%;}
+	.axcol-6	{width:50%;}
+	.axcol-7	{width:58.3334%}
+	.axcol-8	{width:66.6667%}
+	.axcol-9	{width:75%}
+	.axcol-10 	{width:83.3334%}
+	.axcol-11	{width:91.6667%}
+	.axcol-12	{width:100%}
+
+	// eBaseStyle
+	
+	#AXPageHead{
+	}
+	
+	#AXPageBody{
+		
+	}
+	
+	#AXPageFoot{
+		
+	}	
+}	
+// AXPage > --------------------------------------------------	
+	
+	
+// MediaQuery < --------------------------------------------------
+@wide:		~"(min-width:1152px)";
+@desktop:   ~"only screen and (min-width: 1024px) and (max-width: 1151px)";
+@tablet:    ~"only screen and (min-width: 768px) and (max-width: 1023px)";
+@mobile:	~"(max-width: 767px)";
+
+@media @wide {
+	.axwrap {max-width:1132px;}
+}
+
+@media @desktop {
+
+}
+
+@media @tablet {
+
+}
+
+@media @mobile {
+	.axwrap {width:100%;}
+}
+// MediaQuery > --------------------------------------------------
