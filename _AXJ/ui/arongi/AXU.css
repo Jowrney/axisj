@@ -19,6 +19,18 @@ html a:active,
 body a:active {
   color: #82898f;
 }
+html h1,
+body h1 {
+  font-size: 20px;
+}
+html h2,
+body h2 {
+  font-size: 16px;
+}
+html h3,
+body h3 {
+  font-size: 12px;
+}
 .ax-wrap {
   margin: 0 auto;
 }
@@ -136,7 +148,6 @@ body a:active {
   overflow: hidden;
 }
 #AXPage #AXPageBody .ax-layer-1 .secBlock h3 {
-  font-size: 12px;
   text-align: center;
   background: #e8e8e8;
   margin: 4px;
