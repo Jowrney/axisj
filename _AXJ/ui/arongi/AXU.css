@@ -130,12 +130,12 @@ body a:active {
 #AXPage #AXPageBody .ax-layer-1 {
   margin-bottom: 30px;
 }
-#AXPage #AXPageBody .ax-layer-1 .ax-unit {
+#AXPage #AXPageBody .ax-layer-1 .secBlock {
   border: 2px solid #e8e8e8;
   margin: 10px;
   overflow: hidden;
 }
-#AXPage #AXPageBody .ax-layer-1 .ax-unit h3 {
+#AXPage #AXPageBody .ax-layer-1 .secBlock h3 {
   font-size: 12px;
   text-align: center;
   background: #e8e8e8;
@@ -144,15 +144,15 @@ body a:active {
   line-height: 40px;
   height: 40px;
 }
-#AXPage #AXPageBody .ax-layer-1 .ax-unit ul {
+#AXPage #AXPageBody .ax-layer-1 .secBlock ul {
   margin: 10px;
   padding: 0px;
   list-style-position: inside;
 }
-#AXPage #AXPageBody .ax-layer-1 .ax-unit ul li {
+#AXPage #AXPageBody .ax-layer-1 .secBlock ul li {
   line-height: 180%;
 }
-#AXPage #AXPageBody .ax-layer-1 .ax-unit ul li a:hover {
+#AXPage #AXPageBody .ax-layer-1 .secBlock ul li a:hover {
   text-decoration: underline;
 }
 #AXPage #AXPageBody .dummyBlock {
