@@ -6,7 +6,7 @@
 	<title>AXISJ</title>
 	<script src="jquery/jquery.min.js"></script>
 	<script src="lib/AXJ.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="ui/arongi/AXU.css">
 	<script>
 	var fnObj = {
 		pageStart: function(){
@@ -29,33 +29,23 @@
 			<div class="ax-layer-1">
 				<div class="ax-col-12">
 					<div class="ax-unit">
-						<nav>
-							<h3>AXISJ Theme</h3>
+
+						<!-- navMenu < -->
+						<nav class="navMenu">
+							<h3><img src="AXJ.png" style="width:110px; height:40px;" /></h3>
 							<ul>
-								<li>Arongi(Default)</li>
-								<li>Bulldog</li>
-								<li>Flybasket</li>
-								<li>Kakao</li>
+								<li><a href="#">Common</a></li>
+								<li><a href="#">UI<span>(Unique)</span></a></li>
+								<li><a href="#">UI<span>(Complex)</span></a></li>
+								<li><a href="#">Lab</a></li>
 							</ul>
+							<div class="ax-clear"></div>							
 						</nav>
+						<!-- navMenu > -->
+												
 					</div>	
 				</div>	
 			</div>	
-			<div class="ax-layer-2">
-				<div class="ax-col-12">
-					<div class="ax-unit">
-						<nav>
-							<h3>MENU</h3>
-							<ul>
-								<li>Common</li>
-								<li>UI-Unique</li>
-								<li>UI-Complex</li>
-								<li>Lab</li>
-							</ul>
-						</nav>
-					</div>	
-				</div>	
-			</div>				
 		</div>
 	</header>
 	<!-- AXPageHead > -------------------------------------------------- -->
@@ -80,13 +70,13 @@
 					<div class="ax-unit">
 						<h3>UI-Unique</h3>
 						<ul>
-							<li>AXButton</li>
-							<li>AXInput</li>							
-							<li>AXSelect</li>
-							<li>AXNotification</li>							
-							<li>AXProgress</li>							
-							<li>AXScroll</li>
-							<li>AXTabs</li>
+							<li><a href="samples/AXButton/index.html">AXButton</a></li>
+							<li><a href="samples/AXInput/index.html">AXInput</a></li>							
+							<li><a href="samples/AXSelect/index.html">AXSelect</a></li>
+							<li><a href="samples/AXNotification/index.html">AXNotification</a></li>							
+							<li><a href="samples/AXProgress/index.html">AXProgress</a></li>							
+							<li><a href="samples/AXScroll/index.html">AXScroll</a></li>
+							<li><a href="samples/AXTabs/index.html">AXTabs</a></li>
 						</ul>
 					</div>	
 				</div>	
@@ -94,13 +84,13 @@
 					<div class="ax-unit">
 						<h3>UI-Complex</h3>
 						<ul>
-							<li>AXModal</li>
-							<li>AXGrid</li>
-							<li>AXTree</li>
-							<li>AXEditor</li>	
-							<li>AXSearch</li>
-							<li>AXTopDownMenu</li>
-							<li>AXUpload5</li>						
+							<li><a href="samples/AXModal/index.html">AXModal</a></li>
+							<li><a href="samples/AXGrid/index.html">AXGrid</a></li>
+							<li><a href="samples/AXTree/index.html">AXTree</a></li>
+							<li><a href="samples/AXEditor/index.html">AXEditor</a></li>	
+							<li><a href="samples/AXSearch/index.html">AXSearch</a></li>
+							<li><a href="samples/AXTopDownMenu/index.html">AXTopDownMenu</a></li>
+							<li><a href="samples/AXUpload5/index.html">AXUpload5</a></li>						
 						</ul>
 					</div>	
 				</div>				
@@ -108,22 +98,21 @@
 					<div class="ax-unit">
 						<h3>Lab</h3>
 						<ul>
-							<li>AXExcelConvert</li>							
-							<li>AXTimeTable</li>
-							<li>AXModelControl</li>
-							<li>AXUserSelect</li>							
-							<li>tableStyleGuide</li>							
-							<li>AXScheduleCalendar(alpha)</li>														
-							<li>AXFrameSet(alpha)</li>
-
-							<li>for Mobile</li>															
-							<li>for AngularJS</li>																						
-						</ul>
+							<li><a href="samples/AXExcelConvert/index.html">AXExcelConvert</a></li>							
+							<li><a href="samples/AXTimeTable/index.html">AXTimeTable</a></li>
+							<li><a href="samples/AXModelControl/index.html">AXModelControl</a></li>
+							<li><a href="samples/AXUserSelect/index.html">AXUserSelect</a></li>							
+							<li><a href="samples/tableStyleGuide/index.html">tableStyleGuide</a></li>							
+							<li><a href="samples/AXScheduleCalendar/index.html">AXScheduleCalendar(alpha)</a></li>												<li><a href="samples/AXFrameSet/index.html">AXFrameSet(alpha)</a></li>
+							<li><a href="samples/AXTabs/index.html">for Mobile</a></li>																			<li><a href="samples/AXTabs/index.html">for AngularJS</a></li>																	</ul>
 					</div>	
 				</div>	
+				<div class="ax-clear"></div>				
 			</section>	
-			<!-- axlayer 1 > -->			
+			<!-- axlayer 1 > -->	
+
 		</div>
+		
 	</article>
 	<!-- AXPageBody > -------------------------------------------------- -->
 	
@@ -131,7 +120,22 @@
 	<!-- AXPageFoot < -------------------------------------------------- -->
 	<footer id="AXPageFoot">
 		<div class="ax-wrap">
-			Axis of javascript AXISJ - www.axisj.com
+			<div class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+						<nav class="navTheme">
+							<h3>AXISJ Theme</h3>
+							<ul>
+								<li><a href="#" class="on">Arongi<span>(Default)</span></a></li>
+								<li><a href="#">Bulldog</a></li>
+								<li><a href="#">Flybasket</a></li>
+								<li><a href="#">Kakao</a></li>
+							</ul>
+							<div class="ax-clear"></div>
+						</nav>
+					</div>	
+				</div>
+			</div>			
 		</div>
 	</footer>
 	<!-- AXPageFoot > -------------------------------------------------- -->
