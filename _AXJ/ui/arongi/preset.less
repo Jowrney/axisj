@@ -1,0 +1,157 @@
+// Description ////////////////////////////////////////////////////////////////////
+//
+// AXISJ는 AXU(Application eXperience Universal) UX가이드라인에 따르고 있습니다.
+// preset 문서는 UI의 테마 전체 영역의 색상, 선 굵기, 이미지 등의 값을 포괄 관리하도록 되어 있습니다.
+// 이는 테마생성시 preset파일을 변경하면 테마전체에 빠르게 변경 가능하도록 목표하고 있습니다.
+// AXU는 크게 "거치형(Heavy-ware)"과 "휴대형(Light-ware)"으로 나누어집니다.
+// 
+// 네임스페이스(ax는 네임스페이스로 사용할 수 없습니다.)
+// Heavy-ware : cx(Watch), mx(Mobile)*, tx(Tablet)
+// light-ware : dx(Desktop)*, wx(Wide), ux(Ultra), fx(4k)
+// * 기준사이즈 mx, dx 기준사이즈임
+// 자세한 사항은 axu.axisj.com의 "AXU UX Guideline"을 참조해주세요.
+// 
+// 변수명은 모두 소문자로 작성하면 의미소 단위로 하이픈(-)을 이용하여 구분하여 작성합니다.
+// 변수명 명명법(Common은 예외입니다.)
+// @type-ui-atrribute-variation
+//
+///////////////////////////////////////////////////////////////////////////////////
+
+
+
+// Common ///////////////////////////////////////////////////
+@bgcolor:#fff;
+@font-family:"Open sans";
+@font-size:12px;
+@color:#565b61;
+@link:#6e7a86;
+@link-hover:#565b61;
+@link-focus:#565b61;
+@link-active:#82898f;
+@link-visited:#c3cad0;
+@stroke:"1px solid #000";
+
+@bgcolor-a:#e8e8e8;
+@bgcolor-b:#c6cdd3;
+@bgcolor-c:#717b85;
+@storke-a:#000;
+@stroke-b:#000;
+
+@wide:		~"(min-width:1152px)";
+@desktop:   ~"only screen and (min-width: 1024px) and (max-width: 1151px)";
+@tablet:    ~"only screen and (min-width: 768px) and (max-width: 1023px)";
+@mobile:	~"(max-width: 767px)";
+
+
+
+// AXButton ///////////////////////////////////////////////////
+.dx-axbutton-colors-normal(){
+	@color-fill-a:#fdfdfd;
+	@color-fill-b:#e8e8e8;	
+	@color-stroke:#b9babc;
+	@color-text:#6e7a85;
+	@color-bg:#fdfdfd;
+}
+
+.dx-axbutton-colors-classic(){
+	@color-fill-a:#c1cdd5;
+	@color-fill-b:#98a4ae;	
+	@color-stroke:#81898e;
+	@color-text:#ebf4f7;
+	@color-bg:#c1cdd5;
+}
+
+.dx-axbutton-colors-blue(){
+	@color-fill-a:#6faee1;
+	@color-fill-b:#468ec9;	
+	@color-stroke:#3f80b1;
+	@color-text:#d0ebfe;
+	@color-bg:#6faee1;
+}
+
+.dx-axbutton-colors-green(){
+	@color-fill-a:#98c87b;
+	@color-fill-b:#79aa5a;	
+	@color-stroke:#6a9751;
+	@color-text:#dffebe;
+	@color-bg:#98c87b;
+}
+
+.dx-axbutton-colors-red(){
+	@color-fill-a:#c65a5b;
+	@color-fill-b:#a93b3e;
+	@color-stroke:#87302b;
+	@color-text:#fcccc9;
+	@color-bg:#c65a5b;
+}
+
+.dx-axbutton-colors-disabled(){
+	@color-fill-a:#d7d7d7;
+	@color-fill-b:#d7d7d7;
+	@color-stroke:#ccc;
+	@color-text:#eaeaea;
+	@color-bg:#d7d7d7;
+}
+
+
+// AXTab ///////////////////////////////////////////////////
+.dx-axtabs-colors-normal(){
+	@color-fill-a:#fdfdfd;
+	@color-fill-b:#e8e8e8;	
+	@color-stroke:#b9babc;
+	@color-text:#6e7a85;
+	@color-bg:#fdfdfd;
+}
+
+.dx-axtabs-colors-classic(){
+	@color-fill-a:#c1cdd5;
+	@color-fill-b:#98a4ae;	
+	@color-stroke:#81898e;
+	@color-text:#ebf4f7;
+	@color-bg:#c1cdd5;
+}
+
+.dx-axtabs-colors-blue(){
+	@color-fill-a:#6faee1;
+	@color-fill-b:#468ec9;	
+	@color-stroke:#3f80b1;
+	@color-text:#d0ebfe;
+	@color-bg:#6faee1;
+}
+
+.dx-axtabs-colors-green(){
+	@color-fill-a:#98c87b;
+	@color-fill-b:#79aa5a;	
+	@color-stroke:#6a9751;
+	@color-text:#dffebe;
+	@color-bg:#98c87b;
+}
+
+.dx-axtabs-colors-red(){
+	@color-fill-a:#c65a5b;
+	@color-fill-b:#a93b3e;
+	@color-stroke:#87302b;
+	@color-text:#fcccc9;
+	@color-bg:#c65a5b;
+}
+
+.dx-axtabs-colors-disabled(){
+	@color-fill-a:#d7d7d7;
+	@color-fill-b:#d7d7d7;
+	@color-stroke:#ccc;
+	@color-text:#eaeaea;
+	@color-bg:#d7d7d7;
+}
+
+
+
+
+// AXInput ///////////////////////////////////////////////////
+
+
+
+
+// AXSelect ///////////////////////////////////////////////////
+
+
+// AXTree ///////////////////////////////////////////////////

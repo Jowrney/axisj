@@ -1,0 +1,195 @@
+@import "preset";
+@import "AXUtils";
+
+// AXButton Style ///////////////////////////////////////////////////
+.axbutton-style-normal{
+	.dx-axbutton-colors-normal();
+	background: @color-fill-a;
+	.util-gradient(top, @color-fill-a, @color-fill-b);
+	color:@color-text;
+	text-align: center;
+	border:none; 
+	padding:0 8px; 
+	margin:0; 
+	box-sizing: content-box;
+	display: inline-block; 
+	text-shadow: 0px 1px 0px rgba(255,255,255,0.9);	
+	.util-drop-shadow (0, 1px, 0, 0, 0.15);
+	border:1px solid @color-stroke;
+	.util-border-radius(4px);		
+}
+
+.axbutton-style-classic{
+	.dx-axbutton-colors-classic();
+	background: @color-fill-a;
+	.util-gradient(top, @color-fill-a, @color-fill-b);		
+	color:@color-text;
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.25);	
+	.util-drop-shadow (0, 1px, 0, 0, 0.15);	
+	border:1px solid @color-stroke;
+	.util-border-radius(4px);			
+}
+.axbutton-style-blue{
+	.dx-axbutton-colors-blue();
+	background:@color-fill-a;
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
+	.util-gradient(top, @color-fill-a, @color-fill-b);			
+	color:@color-text;
+	border:1px solid @color-stroke;
+}
+.axbutton-style-green{
+	.dx-axbutton-colors-green();
+	background:@color-fill-a;
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
+	.util-gradient(top, @color-fill-a, @color-fill-b);			
+	color:@color-text;
+	border:1px solid @color-stroke;	
+}
+.axbutton-style-red{
+	.dx-axbutton-colors-red();
+	background:@color-fill-a;
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
+	.util-gradient(top, @color-fill-a, @color-fill-b);			
+	color:@color-text;
+	border:1px solid @color-stroke;		
+}
+.axbutton-style-disabled{
+	.dx-axbutton-colors-disabled();
+	background:@color-fill-a;
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.10);
+	.util-gradient(top, @color-fill-a, @color-fill-b);			
+	color:@color-text;
+	border:1px solid @color-stroke;
+	
+}
+
+// AXButton Events ///////////////////////////////////////////////////
+.axbutton-event-normal{
+	&				{.axbutton-style-normal;}
+	&:hover, &:focus{
+		.dx-axbutton-colors-normal();
+		background: @color-fill-b;	
+		text-decoration: none; 
+		color:@color-text;	
+	}
+	&:active		{
+		box-shadow: none;
+	}		
+}
+
+.axbutton-event-classic{
+	&				{.axbutton-style-classic;}
+	&:hover, &:focus{
+		.dx-axbutton-colors-classic();
+		background: @color-fill-b;
+		text-decoration: none; 
+		color:@color-text;					
+	}
+	&:active		{
+		box-shadow: none;
+	}	
+}
+
+.axbutton-event-blue{
+	&				{.axbutton-style-blue;}
+	&:hover, &:focus{
+		.dx-axbutton-colors-blue();
+		background: @color-fill-b;		
+	}
+	&:active		{
+		box-shadow: none;
+	}	
+}
+
+.axbutton-event-green{
+	&				{.axbutton-style-green;}
+	&:hover, &:focus{
+		.dx-axbutton-colors-green();
+		background: @color-fill-b;		
+	}
+	&:active		{
+		box-shadow: none;
+	}	
+}
+
+.axbutton-event-red{
+	&				{.axbutton-style-red;}
+	&:hover, &:focus{
+		.dx-axbutton-colors-red();
+		background: @color-fill-b;		
+	}
+	&:active		{
+		box-shadow: none;
+	}	
+}
+
+.axbutton-event-disabled{
+	&				{.axbutton-style-disabled;}
+	&:hover, &:focus{
+		.dx-axbutton-colors-disabled();
+		background: @color-fill-b;		
+	}
+	&:active		{
+		box-shadow: none;
+	}	
+}
+
+
+// AXButton Component ///////////////////////////////////////////////////
+
+//AXButton
+.AXButton {
+	position:relative;
+	font-size:12px; 
+	height:26px;line-height:26px;
+	margin:0;padding:0 10px;
+	cursor:pointer;
+	outline:none;
+	&				{.axbutton-event-normal}
+	&.Classic		{.axbutton-event-classic;}
+	&.Blue			{.axbutton-event-blue;}
+	&.Green			{.axbutton-event-green;}		
+	&.Red			{.axbutton-event-red;}
+	&[disabled]		{.axbutton-event-disabled;}		
+}
+
+
+//AXButton Small
+.AXButtonSmall{
+	position:relative;
+	font-size:11px; 
+	height:20px;line-height:20px;
+	margin:0;padding:0 10px;
+	cursor:pointer;
+	outline:none;
+	&				{.axbutton-event-normal;}
+	&.Classic		{.axbutton-event-classic;}
+	&.Blue			{.axbutton-event-blue;}
+	&.Green			{.axbutton-event-green;}		
+	&.Red			{.axbutton-event-red;}	
+	&[disabled]		{.axbutton-event-disabled;}	
+	i{
+
+	}
+		
+}
+
+//AXButton Large
+.AXButtonLarge{
+	position:relative;
+	font-size:12px; 
+	height:46px; line-height: 46px; 
+	margin:0;padding:0 10px;
+	cursor:pointer;
+	outline:none;
+
+	&				{.axbutton-event-normal;}
+	&.Classic		{.axbutton-event-classic;}
+	&.Blue			{.axbutton-event-blue;}
+	&.Green			{.axbutton-event-green;}		
+	&.Red			{.axbutton-event-red;}
+	&[disabled]		{.axbutton-event-disabled;}				
+	i{
+	}
+			
+}

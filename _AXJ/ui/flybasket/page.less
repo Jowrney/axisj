@@ -1,0 +1,199 @@
+// Description ////////////////////////////////////////////////////////////////////
+//
+// CSS Script by Jowrney Kim
+// Last update. Feb 21, 2014	
+//
+///////////////////////////////////////////////////////////////////////////////////
+
+@import "preset";
+
+
+// Common /////////////////////////////////////////////////////////////
+html, body	{
+	margin:0; padding:0; 
+	height:100%; 
+	color:@color; background: @bgcolor; 
+	a 		{color:@link; text-decoration: none;}	 	
+	a:hover {color:@link-hover;}
+	a:active{color:@link-active;}	
+	
+	h1{font-size:20px; }
+	h2{font-size:16px;}
+	h3{font-size:12px;}
+}
+.ax-wrap		{position:relative; margin:0 auto;}
+.h10			{height:10px; font-size:1px;}
+.h20			{height:20px; font-size:1px;}
+.h30			{height:30px; font-size:1px;}
+.h40			{height:40px; font-size:1px;}
+.h50			{height:50px; font-size:1px;}
+
+// AXPage /////////////////////////////////////////////////////////////
+#AXPage {
+
+	font-family:@font-family;
+	font-size:@font-size; 
+	overflow: hidden;
+	.ax-wrap 	{margin:0 auto;}
+	.ax-clear	{clear:both;}
+	.ax-layer 	{}
+	.ax-unit	{margin:0 10px; position:relative; }
+	
+	div[class^="ax-col-"] {float:left; }
+	.ax-col-1	{width:8.3334%;}	
+	.ax-col-2	{width:16.6667%}		
+	.ax-col-3	{width:25%}			
+	.ax-col-4	{width:33.3334%; }
+	.ax-col-5 	{width:41.6667%;}
+	.ax-col-6	{width:50%;}
+	.ax-col-7	{width:58.3334%}
+	.ax-col-8	{width:66.6667%}
+	.ax-col-9	{width:75%}
+	.ax-col-10 	{width:83.3334%}
+	.ax-col-11	{width:91.6667%}
+	.ax-col-12	{width:100%}
+	
+	#AXPageHead{
+
+		.ax-layer-1{
+			.ax-unit{
+				background:@bgcolor-a; margin:0px;
+				.navMenu{
+					margin-bottom:1px; height:40px; overflow: hidden; 
+					h3 {
+						float:left; margin: 0px; padding:0px; line-height: 40px; font-size:12px; font-weight: normal;
+						border-right:1px solid @bgcolor; background: @bgcolor-c; color:@bgcolor;
+					}
+					ul{
+					
+						list-style: none; margin:0px; padding:0px;
+						li{
+							float:left; border-right:1px solid @bgcolor;
+							a{
+								font-size:13px; display: block; line-height: 40px; 
+								padding:0px 10px; background: @bgcolor-a; 
+								span{
+									font-size:10px; margin:0px 2px;
+								}
+								&:hover{
+									background: @bgcolor-b;
+								}
+								&.on{
+									background: @bgcolor-b;
+								}
+							}
+						}
+					}
+				}	
+			}	
+		}
+		
+		
+	}
+	
+	#AXPageBody{
+		.title{
+			h1{
+				text-indent: 10px;
+			}
+		}
+		.ax-wrap{
+			margin-bottom:30px;
+			.ax-layer-1{
+				.secBlock{
+					border:2px solid @bgcolor-a; margin:10px; overflow: hidden;
+					h3{
+						text-align: center; background: @bgcolor-a;
+						margin: 4px; padding:0px; height:40px; line-height: 40px; 
+					}
+					ul{
+						margin:10px; padding:0px; list-style-position: inside;
+						li{
+							line-height: 180%;
+							a{
+								&:hover{
+									text-decoration: underline;
+								}	
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		&.SampleAXButton {
+			label {
+				display: inline-block; margin-right:10px;
+				vertical-align: middle;
+				width:60px; text-align: right;
+			}
+			.withIcons{
+				button {margin-bottom:10px;}
+			}
+		}
+		
+		
+	}
+	
+	#AXPageFoot{
+		position: fixed; bottom:0px; width:100%; 
+		.ax-layer-1{
+			.ax-unit{
+				background:@bgcolor-a; margin:0px;
+				.navTheme{
+					height:30px; overflow: hidden;
+					h3 {
+						float:left; margin: 0px; padding:0px; line-height: 30px; font-size:12px; font-weight: normal;
+						padding:0 20px; border-right:1px solid @bgcolor; background: @bgcolor-c; color:@bgcolor;
+					}
+					ul{
+						list-style: none; margin:0px; padding:0px;
+						li{
+							float:left; border-right:1px solid @bgcolor;
+							a{
+								font-size:13px; display: block; line-height: 30px;
+								padding:0px 10px; background: @bgcolor-a; 
+								span{
+									font-size:10px; margin:0px 2px;
+								}
+								&:hover{
+									background: @bgcolor-b;
+								}
+								&.on{
+									background: @bgcolor-b;
+								}
+							}
+						}
+					}
+				}
+			}	
+		}	
+				
+	}	
+}	
+
+	
+	
+// MediaQuery //////////////////////////////////////////////////////////////
+@media @wide {
+	
+}
+
+@media @desktop {
+
+}
+
+@media @tablet {
+
+	#AXPageBody{
+		.ax-wrap {width:100%;}
+		.ax-col-3	{width:50%}		
+	}		
+}
+
+@media @mobile {
+	#AXPageBody{
+		.ax-wrap {width:100%;}
+		.ax-col-3	{width:100%}		
+	}		
+}
