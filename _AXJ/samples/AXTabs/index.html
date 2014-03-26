@@ -2,115 +2,174 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>AXTabs</title>
-    
-    <meta property="og:image" content="/samples/_img/axisj_sns.png" />  
-    <meta property="og:site_name" content="Axis of Javascript - axisj.com" /> 
-    <meta property="og:description" id="meta_description" content="Javascript UI Library based on JQuery" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1" />
+	<title>AXISJ</title>
+	<!-- Libs -->
+	<script type="text/javascript" src="../../jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="../../lib/AXJ.js"></script>
+	<script type="text/javascript" src="../../lib/AXTab.js"></script>	
+	<!-- Self -->
+	<script src="pageTab.js"></script>			
+	<!-- Theme -->
+	<script src="../../ui/arongi/page.js"></script>		
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/page.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXTabs.css">	
 
-	<!-- css block -->
-	<link rel="stylesheet" type="text/css" href="../_css/default_common.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXJ.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXTabs.css" />
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXJ_desktop.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXTabs_desktop.css" />
-	<![endif]-->
-	<style type="text/css">
-	H2{font-family:consolas;}
-	</style>
-	<!-- css block -->
-
-	<!-- js block -->
-	<script type="text/javascript" src="../../_AXJ/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXJ.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXCodeView.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXTab.js"></script>
-	<script type="text/javascript" src="pageTab.js"></script>
-	
-	<script type="text/javascript">
+	<script>
 	var pageID = "Default";
 	var fnObj = {
 		pageStart: function(){
-			AXCode.bind(); // 소스보기
+			//Require page.js before this fn...
+			pageObj.host = "../../";
+			pageObj.incHeader();
+			pageObj.incFooter();		
 		}
 	};
-	$(document.body).ready(function(){
-		setTimeout(fnObj.pageStart, 1);
-	});
+	jQuery(document).ready(fnObj.pageStart);
 	</script>
-	<!-- js block -->
 
+	<style type="text/css">
+	
+	</style>
 </head>
+	
 <body>
-	<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
-	<div class="AXdemoPageContent">
 
-		<h2>AXTabs</h2>
+<div id="AXPage">
+	<!-- s.AXPageHead -------------------------------------------------- -->
+	<header id="AXPageHead">
+		<div class="ax-wrap">
+			<div class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
 
-		<div class="AXTabs">
-			<div class="AXTabsTray">
-				<a href="#modsExec" class="AXTab">Tab1</a>
-				<a href="#modsExec" class="AXTab on">Tab2</a>
-				<a href="#modsExec" class="AXTab Classic">Tab3</a>
-				<a href="#modsExec" class="AXTab Red">Tab4</a>
-				<a href="#modsExec" class="AXTab Green">Tab5</a>
-				<a href="#modsExec" class="AXTab Blue">Tab6</a>
-				<a href="#modsExec" class="AXTab">Tab7</a>
-				<a href="#modsExec" class="AXTab">Tab8</a>
-				<a href="#modsExec" class="AXTab">Tab9</a>
-				<a href="#modsExec" class="AXTab">Tab10</a>
-				<a href="#modsExec" class="AXTab">Tab11</a>
-				<a href="#modsExec" class="AXTab">Tab12</a>
-				<div class="clear"></div>
-			</div>
+						<!-- navMenu < -->
+						<nav class="navMenu"></nav>
+						<!-- navMenu > -->
+
+					</div>	
+				</div>	
+			</div>	
+			<div class="ax-layer-2">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+
+						<!-- navMenu < -->
+						<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
+						<!-- navMenu > -->
+
+					</div>	
+				</div>	
+			</div>	
+
 		</div>
-		<div class="Hspace20"></div>
+	</header>
+	<!-- e.AXPageHead -------------------------------------------------- -->
+	<div class="ax-clear"></div>						
+	<!-- s.AXPageBody -------------------------------------------------- -->
+	<article id="AXPageBody" class="SampleAXTabs">
 
-		<div class="Hspace20"></div>
+		<div class="ax-wrap">
+			<div class="title"><h1>AXTab</h1></div>
+			<!-- s.axlayer 1 -->		
+			<section class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+						<h2>Basic</h2>
+						<h3>Normal</h3>
+						<div class="AXTabs">
+							<div class="AXTabsTray">
+								<a href="#ax" class="AXTab">Tab1</a>
+								<a href="#ax" class="AXTab on">Tab2</a>
+								<a href="#ax" class="AXTab Classic">Tab3</a>
+								<a href="#ax" class="AXTab Red">Tab4</a>
+								<a href="#ax" class="AXTab Green">Tab5</a>
+								<a href="#ax" class="AXTab Blue">Tab6</a>
+								<a href="#ax" class="AXTab">Tab7</a>
+								<a href="#ax" class="AXTab">Tab8</a>
+								<a href="#ax" class="AXTab">Tab9</a>
+								<a href="#ax" class="AXTab">Tab10</a>
+								<a href="#ax" class="AXTab">Tab11</a>
+								<a href="#ax" class="AXTab">Tab12</a>
+								<div class="ax-clear"></div>
+							</div>
+						</div>
+						<div class="H40"></div>
+					
+						<h3>Small</h3>
+						<div class="AXTabsSmall">
+							<div class="AXTabsTray">
+								<a href="#ax" class="AXTab">Tab1</a>
+								<a href="#ax" class="AXTab on">Tab2</a>
+								<a href="#ax" class="AXTab Classic">Tab3</a>
+								<a href="#ax" class="AXTab Red">Tab4</a>
+								<a href="#ax" class="AXTab Green">Tab5</a>
+								<a href="#ax" class="AXTab Blue">Tab6</a>
+								<a href="#ax" class="AXTab">Tab7</a>
+								<a href="#ax" class="AXTab">Tab8</a>
+								<a href="#ax" class="AXTab">Tab9</a>
+								<a href="#ax" class="AXTab">Tab10</a>
+								<a href="#ax" class="AXTab">Tab11</a>
+								<a href="#ax" class="AXTab">Tab12</a>
+								<div class="ax-clear"></div>
+							</div>
+						</div>
+						<div class="H40"></div>					
 
-		<div class="AXTabsSmall">
-			<div class="AXTabsTray">
-				<a href="#modsExec" class="AXTab">Tab1</a>
-				<a href="#modsExec" class="AXTab on">Tab2</a>
-				<a href="#modsExec" class="AXTab Classic">Tab3</a>
-				<a href="#modsExec" class="AXTab Red">Tab4</a>
-				<a href="#modsExec" class="AXTab Green">Tab5</a>
-				<a href="#modsExec" class="AXTab Blue">Tab6</a>
-				<a href="#modsExec" class="AXTab">Tab7</a>
-				<a href="#modsExec" class="AXTab">Tab8</a>
-				<a href="#modsExec" class="AXTab">Tab9</a>
-				<a href="#modsExec" class="AXTab">Tab10</a>
-				<a href="#modsExec" class="AXTab">Tab11</a>
-				<a href="#modsExec" class="AXTab">Tab12</a>
-				<div class="clear"></div>
-			</div>
+						<h3>Large</h3>
+						<div class="AXTabsLarge">
+							<div class="AXTabsTray">
+								<a href="#ax" class="AXTab">Tab1</a>
+								<a href="#ax" class="AXTab on">Tab2</a>
+								<a href="#ax" class="AXTab Classic">Tab3</a>
+								<a href="#ax" class="AXTab Red">Tab4</a>
+								<a href="#ax" class="AXTab Green">Tab5</a>
+								<a href="#ax" class="AXTab Blue">Tab6</a>
+								<a href="#ax" class="AXTab">Tab7</a>
+								<a href="#ax" class="AXTab">Tab8</a>
+								<a href="#ax" class="AXTab">Tab9</a>
+								<a href="#ax" class="AXTab">Tab10</a>
+								<a href="#ax" class="AXTab">Tab11</a>
+								<a href="#ax" class="AXTab">Tab12</a>
+								<div class="ax-clear"></div>
+							</div>
+						</div>
+						<div class="H40"></div>							
+
+					</div>	
+				</div>
+				<div class="ax-clear"></div>
+			</section>
+			<!-- e.axlayer 1 -->
+			
+			<div class="ax-clear"></div>							
+	
 		</div>
-		<div class="Hspace20"></div>
+		<div class="h20"></div>		
+	</article>
+	<!-- e.AXPageBody -------------------------------------------------- -->
 
-		<div class="Hspace20"></div>
-
-		<div class="AXTabsLarge">
-			<div class="AXTabsTray">
-				<a href="#modsExec" class="AXTab">Tab1</a>
-				<a href="#modsExec" class="AXTab on">Tab2</a>
-				<a href="#modsExec" class="AXTab Classic">Tab3</a>
-				<a href="#modsExec" class="AXTab Red">Tab4</a>
-				<a href="#modsExec" class="AXTab Green">Tab5</a>
-				<a href="#modsExec" class="AXTab Blue">Tab6</a>
-				<a href="#modsExec" class="AXTab">Tab7</a>
-				<a href="#modsExec" class="AXTab">Tab8</a>
-				<a href="#modsExec" class="AXTab">Tab9</a>
-				<a href="#modsExec" class="AXTab">Tab10</a>
-				<a href="#modsExec" class="AXTab">Tab11</a>
-				<a href="#modsExec" class="AXTab">Tab12</a>
-				<div class="clear"></div>
-			</div>
+	<div class="ax-clear"></div>
+	
+	<!-- s.AXPageFoot -------------------------------------------------- -->
+	<footer id="AXPageFoot">
+		<div class="ax-wrap">
+			<div class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+						
+						<!-- navTheme < -->
+						<nav class="navTheme"></nav>
+						<!-- navTheme > -->
+						
+					</div>	
+				</div>
+			</div>			
 		</div>
-		<div class="Hspace20"></div>
-
-
-	</div>
+	</footer>
+	<!-- e.AXPageFoot -------------------------------------------------- -->
+</div>
 
 </body>
-</html>
+</html>		
