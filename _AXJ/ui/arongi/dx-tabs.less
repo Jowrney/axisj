@@ -64,6 +64,7 @@
 		box-shadow: none;
 	}
 	&.on{
+		text-shadow:none;
 		background:#fff; border-bottom:1px solid #fff;
 	}			
 }
@@ -78,6 +79,9 @@
 		box-shadow: none;
 	}
 	&.on{
+		.dx-axtabs-colors-classic();
+		text-shadow:none;		
+		color:@color-stroke;	
 		background:#fff; border-bottom:1px solid #fff;
 	}					
 }
@@ -92,6 +96,9 @@
 		box-shadow: none;
 	}	
 	&.on{
+		.dx-axtabs-colors-blue();
+		text-shadow:none;		
+		color:@color-stroke;	
 		background:#fff; border-bottom:1px solid #fff;
 	}				
 }
@@ -106,6 +113,9 @@
 		box-shadow: none;
 	}
 	&.on{
+		.dx-axtabs-colors-green();
+		text-shadow:none;		
+		color:@color-stroke;	
 		background:#fff; border-bottom:1px solid #fff;
 	}					
 }
@@ -120,6 +130,9 @@
 		box-shadow: none;
 	}	
 	&.on{
+		.dx-axtabs-colors-red();
+		text-shadow:none;		
+		color:@color-stroke;	
 		background:#fff; border-bottom:1px solid #fff;
 	}				
 }
@@ -134,6 +147,9 @@
 		box-shadow: none;
 	}
 	&.on{
+		.dx-axtabs-colors-disabled();
+		text-shadow:none;		
+		color:@color-stroke;	
 		background:#fff; border-bottom:1px solid #fff;
 	}					
 }
@@ -245,10 +261,10 @@
 	background:url('images/leftArrowsBg.png') repeat-y 0px 0px;
 	.tabArrow{
 		display:block;width:29px;height:@height;
-		background:url(img/leftArrows.png) no-repeat -5px 0px;
+		background:url('images/leftArrows01.png') no-repeat 50%;
 		text-indent:-1000px;overflow:hidden;
 		&:hover{
-			background:url(img/leftArrows.png) no-repeat -5px -30px;	
+			background:url('images/leftArrows01r.png') no-repeat 50%;	
 		}
 	}
 }
@@ -260,10 +276,10 @@
 	background:url('images/rightArrowsBg.png') repeat-y 100% 0px;	
 	.tabArrow{
 		display:block;width:29px;height:@height;
-		background:url(img/rightArrows.png) no-repeat 50%;
+		background:url('images/rightArrows01.png') no-repeat 50%;
 		text-indent:-1000px;overflow:hidden;
 		&:hover{
-			background:url(img/rightArrows.png) no-repeat 50%;
+			background:url('images/rightArrows01r.png') no-repeat 50%;
 		}
 	}	
 }
@@ -275,10 +291,10 @@
 	background:#fff;	
 	.tabArrow{
 		display:block;width:24px;height:@height;
-		background:url('images/rightArrowsMore.png') no-repeat 50%;
+		background:url('images/rightArrowsMore01.png') no-repeat 50%;
 		text-indent:-1000px;overflow:hidden;
 		&:hover{
-			background:url('images/rightArrowsMore.png') no-repeat 50%;
+			background:url('images/rightArrowsMore01r.png') no-repeat 50%;
 		}
 	}	
 }

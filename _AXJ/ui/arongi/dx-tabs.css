@@ -178,6 +178,7 @@
   box-shadow: none;
 }
 .axtabs-event-normal.on {
+  text-shadow: none;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -212,6 +213,8 @@
   box-shadow: none;
 }
 .axtabs-event-classic.on {
+  text-shadow: none;
+  color: #81898e;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -246,6 +249,8 @@
   box-shadow: none;
 }
 .axtabs-event-blue.on {
+  text-shadow: none;
+  color: #3f80b1;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -280,6 +285,8 @@
   box-shadow: none;
 }
 .axtabs-event-green.on {
+  text-shadow: none;
+  color: #6a9751;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -314,6 +321,8 @@
   box-shadow: none;
 }
 .axtabs-event-red.on {
+  text-shadow: none;
+  color: #87302b;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -349,6 +358,8 @@
   box-shadow: none;
 }
 .axtabs-event-disabled.on {
+  text-shadow: none;
+  color: #cccccc;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -422,6 +433,7 @@
   box-shadow: none;
 }
 .AXTabs .AXTabsTray .AXTab.on {
+  text-shadow: none;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -459,6 +471,8 @@
   box-shadow: none;
 }
 .AXTabs .AXTabsTray .AXTab.Classic.on {
+  text-shadow: none;
+  color: #81898e;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -493,6 +507,8 @@
   box-shadow: none;
 }
 .AXTabs .AXTabsTray .AXTab.Blue.on {
+  text-shadow: none;
+  color: #3f80b1;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -527,6 +543,8 @@
   box-shadow: none;
 }
 .AXTabs .AXTabsTray .AXTab.Green.on {
+  text-shadow: none;
+  color: #6a9751;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -561,6 +579,8 @@
   box-shadow: none;
 }
 .AXTabs .AXTabsTray .AXTab.Red.on {
+  text-shadow: none;
+  color: #87302b;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -596,6 +616,8 @@
   box-shadow: none;
 }
 .AXTabs .AXTabsTray .AXTab[disabled].on {
+  text-shadow: none;
+  color: #cccccc;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -611,12 +633,12 @@
   display: block;
   width: 29px;
   height: 28px;
-  background: url(img/leftArrows.png) no-repeat -5px 0px;
+  background: url('images/leftArrows01.png') no-repeat 50%;
   text-indent: -1000px;
   overflow: hidden;
 }
 .AXTabs .AXTabsTray .leftArrowHandleBox .tabArrow:hover {
-  background: url(img/leftArrows.png) no-repeat -5px -30px;
+  background: url('images/leftArrows01r.png') no-repeat 50%;
 }
 .AXTabs .AXTabsTray .rightArrowHandleBox {
   position: absolute;
@@ -630,12 +652,12 @@
   display: block;
   width: 29px;
   height: 28px;
-  background: url(img/rightArrows.png) no-repeat 50%;
+  background: url('images/rightArrows01.png') no-repeat 50%;
   text-indent: -1000px;
   overflow: hidden;
 }
 .AXTabs .AXTabsTray .rightArrowHandleBox .tabArrow:hover {
-  background: url(img/rightArrows.png) no-repeat 50%;
+  background: url('images/rightArrows01r.png') no-repeat 50%;
 }
 .AXTabs .AXTabsTray .rightArrowMoreBox {
   position: absolute;
@@ -649,12 +671,12 @@
   display: block;
   width: 24px;
   height: 28px;
-  background: url('images/rightArrowsMore.png') no-repeat 50%;
+  background: url('images/rightArrowsMore01.png') no-repeat 50%;
   text-indent: -1000px;
   overflow: hidden;
 }
 .AXTabs .AXTabsTray .rightArrowMoreBox .tabArrow:hover {
-  background: url('images/rightArrowsMore.png') no-repeat 50%;
+  background: url('images/rightArrowsMore01r.png') no-repeat 50%;
 }
 .AXTabsLarge {
   position: relative;
@@ -720,6 +742,7 @@
   box-shadow: none;
 }
 .AXTabsLarge .AXTabsTray .AXTab.on {
+  text-shadow: none;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -757,6 +780,8 @@
   box-shadow: none;
 }
 .AXTabsLarge .AXTabsTray .AXTab.Classic.on {
+  text-shadow: none;
+  color: #81898e;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -791,6 +816,8 @@
   box-shadow: none;
 }
 .AXTabsLarge .AXTabsTray .AXTab.Blue.on {
+  text-shadow: none;
+  color: #3f80b1;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -825,6 +852,8 @@
   box-shadow: none;
 }
 .AXTabsLarge .AXTabsTray .AXTab.Green.on {
+  text-shadow: none;
+  color: #6a9751;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -859,6 +888,8 @@
   box-shadow: none;
 }
 .AXTabsLarge .AXTabsTray .AXTab.Red.on {
+  text-shadow: none;
+  color: #87302b;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -894,6 +925,8 @@
   box-shadow: none;
 }
 .AXTabsLarge .AXTabsTray .AXTab[disabled].on {
+  text-shadow: none;
+  color: #cccccc;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -909,12 +942,12 @@
   display: block;
   width: 29px;
   height: 44px;
-  background: url(img/leftArrows.png) no-repeat -5px 0px;
+  background: url('images/leftArrows01.png') no-repeat 50%;
   text-indent: -1000px;
   overflow: hidden;
 }
 .AXTabsLarge .AXTabsTray .leftArrowHandleBox .tabArrow:hover {
-  background: url(img/leftArrows.png) no-repeat -5px -30px;
+  background: url('images/leftArrows01r.png') no-repeat 50%;
 }
 .AXTabsLarge .AXTabsTray .rightArrowHandleBox {
   position: absolute;
@@ -928,12 +961,12 @@
   display: block;
   width: 29px;
   height: 44px;
-  background: url(img/rightArrows.png) no-repeat 50%;
+  background: url('images/rightArrows01.png') no-repeat 50%;
   text-indent: -1000px;
   overflow: hidden;
 }
 .AXTabsLarge .AXTabsTray .rightArrowHandleBox .tabArrow:hover {
-  background: url(img/rightArrows.png) no-repeat 50%;
+  background: url('images/rightArrows01r.png') no-repeat 50%;
 }
 .AXTabsLarge .AXTabsTray .rightArrowMoreBox {
   position: absolute;
@@ -947,12 +980,12 @@
   display: block;
   width: 24px;
   height: 44px;
-  background: url('images/rightArrowsMore.png') no-repeat 50%;
+  background: url('images/rightArrowsMore01.png') no-repeat 50%;
   text-indent: -1000px;
   overflow: hidden;
 }
 .AXTabsLarge .AXTabsTray .rightArrowMoreBox .tabArrow:hover {
-  background: url('images/rightArrowsMore.png') no-repeat 50%;
+  background: url('images/rightArrowsMore01r.png') no-repeat 50%;
 }
 .AXTabsSmall {
   position: relative;
@@ -1018,6 +1051,7 @@
   box-shadow: none;
 }
 .AXTabsSmall .AXTabsTray .AXTab.on {
+  text-shadow: none;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -1055,6 +1089,8 @@
   box-shadow: none;
 }
 .AXTabsSmall .AXTabsTray .AXTab.Classic.on {
+  text-shadow: none;
+  color: #81898e;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -1089,6 +1125,8 @@
   box-shadow: none;
 }
 .AXTabsSmall .AXTabsTray .AXTab.Blue.on {
+  text-shadow: none;
+  color: #3f80b1;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -1123,6 +1161,8 @@
   box-shadow: none;
 }
 .AXTabsSmall .AXTabsTray .AXTab.Green.on {
+  text-shadow: none;
+  color: #6a9751;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -1157,6 +1197,8 @@
   box-shadow: none;
 }
 .AXTabsSmall .AXTabsTray .AXTab.Red.on {
+  text-shadow: none;
+  color: #87302b;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -1192,6 +1234,8 @@
   box-shadow: none;
 }
 .AXTabsSmall .AXTabsTray .AXTab[disabled].on {
+  text-shadow: none;
+  color: #cccccc;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -1207,12 +1251,12 @@
   display: block;
   width: 29px;
   height: 22px;
-  background: url(img/leftArrows.png) no-repeat -5px 0px;
+  background: url('images/leftArrows01.png') no-repeat 50%;
   text-indent: -1000px;
   overflow: hidden;
 }
 .AXTabsSmall .AXTabsTray .leftArrowHandleBox .tabArrow:hover {
-  background: url(img/leftArrows.png) no-repeat -5px -30px;
+  background: url('images/leftArrows01r.png') no-repeat 50%;
 }
 .AXTabsSmall .AXTabsTray .rightArrowHandleBox {
   position: absolute;
@@ -1226,12 +1270,12 @@
   display: block;
   width: 29px;
   height: 22px;
-  background: url(img/rightArrows.png) no-repeat 50%;
+  background: url('images/rightArrows01.png') no-repeat 50%;
   text-indent: -1000px;
   overflow: hidden;
 }
 .AXTabsSmall .AXTabsTray .rightArrowHandleBox .tabArrow:hover {
-  background: url(img/rightArrows.png) no-repeat 50%;
+  background: url('images/rightArrows01r.png') no-repeat 50%;
 }
 .AXTabsSmall .AXTabsTray .rightArrowMoreBox {
   position: absolute;
@@ -1245,10 +1289,10 @@
   display: block;
   width: 24px;
   height: 22px;
-  background: url('images/rightArrowsMore.png') no-repeat 50%;
+  background: url('images/rightArrowsMore01.png') no-repeat 50%;
   text-indent: -1000px;
   overflow: hidden;
 }
 .AXTabsSmall .AXTabsTray .rightArrowMoreBox .tabArrow:hover {
-  background: url('images/rightArrowsMore.png') no-repeat 50%;
+  background: url('images/rightArrowsMore01r.png') no-repeat 50%;
 }
