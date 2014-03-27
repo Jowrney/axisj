@@ -1,82 +1,43 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>AXInput</title>
-    
-    <meta property="og:image" content="/samples/_img/axisj_sns.png" />  
-    <meta property="og:site_name" content="Axis of Javascript - axisj.com" /> 
-    <meta property="og:description" id="meta_description" content="Javascript UI Library based on JQuery" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1" />
+	<title>AXISJ</title>
+	<!-- Libs -->
+	<script type="text/javascript" src="../../jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="../../lib/AXJ.js"></script>
+	<script type="text/javascript" src="../../lib/AXTab.js"></script>	
+	<script type="text/javascript" src="../../lib/AXInput.js"></script>
+	<script type="text/javascript" src="../../lib/AXMultiSelector.js"></script>			
+	<!-- Self -->
+	<script src="pageTab.js"></script>			
+	<!-- Theme -->
+	<script src="../../ui/arongi/page.js"></script>		
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/page.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXJ.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXButton.css">	
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXTabs.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXInput.css">	
 
-	<!-- css block -->
-	<link rel="stylesheet" type="text/css" href="../_css/default_common.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXJ.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXInput.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXTabs.css" />
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXJ_desktop.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXButton_desktop.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXTabs_desktop.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXInput_desktop.css" />
-	<![endif]-->
-	<style type="text/css">
-	
-	H2, H3{font-family:consolas;}
-	
-	
-	.AXMultiSelector_expandBox{
-		position:absolute;
-		left:100px;top:100px;
-		width:400px;height:285px;
-		border:1px solid #ccc;
-		background:#fff;
-		padding:5px 0px;
-		box-shadow:0px 0px 3px #ccc;
-		overflow:hidden;
-	}
-	
-	.AXMultiSelector_expandBox .AXMultiSelector_scrollBox{
-		float:left;
-		width:200px;
-		height:250px;
-		border:1px solid #eee;
-		box-shadow:inset 1px 1px 3px #eee;
-		margin:0px 0px 0px 5px;
-	}
-		
-	.AXMultiSelector_expandBox a{
-		display:block;padding:3px 8px;
-		font-size:12px;line-height:30px;color:#888888;text-decoration:none;
-		border-bottom:1px solid #eee;background:#fff;
-		}
-		.AXMultiSelector_expandBox a.on{
-			background:#5ea3db;color:#fff;
-		}
-		.AXMultiSelector_expandBox a:hover{
-			
-		}
-	
-	</style>
-	<!-- css block -->
-	
-	<!-- js block -->
-	<script type="text/javascript" src="../../_AXJ/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXJ.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXInput.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXMultiSelector.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXCodeView.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXTab.js"></script>
-	<script type="text/javascript" src="pageTab.js"></script>
-	
-	<script type="text/javascript">
+	<script>
+	/**
+	 * Require Files for AXISJ UI Component...
+	 * Based		: jQuery
+	 * Javascript 	: AXJ.js, AXInput.js, AXMultiSelector.js
+	 * CSS			: AXJ.css, AXInput.css
+	 */	
 	var pageID = "Selector";
-	var MyMultiSelector = new AXMultiSelector();
- 	var fnObj = {
+	var MyMultiSelector = new AXMultiSelector();	
+	var fnObj = {
 		pageStart: function(){
-			AXCode.bind(); // 소스보기
+			//Require page.js before this fn...
+			pageObj.host = "../../";
+			pageObj.incHeader();
+			pageObj.incFooter();		
 
-			$("#AXInputSelector").bindSelector({
+			jQuery("#AXInputSelector").bindSelector({
 				appendable:true,
 				options:[
 					{optionValue:1, optionText:"Seoul"},
@@ -95,15 +56,15 @@
 					{optionValue:9, optionText:"Gwangju"}
 				]
 			});
-			$("#AXInputSelector").setConfigInput({
+			jQuery("#AXInputSelector").setConfigInput({
 				onChange:function(){
 					toast.push(Object.toJSON({targetID:this.targetID, options:this.options, selectedIndex:this.selectedIndex, selectedOption:this.selectedOption}));
 				}
 			});
 			
-			$("#AXInputSelectorAjax").bindSelector({
+			jQuery("#AXInputSelectorAjax").bindSelector({
 				appendable:false,
-				ajaxUrl:"selectorData.asp", 
+				ajaxUrl:"selectorData.txt", 
 				ajaxPars:"",
 				//selectorName:"imselector",
 				onChange:function(){
@@ -158,7 +119,7 @@
 				}
 			});
 			
-			$("#AXInputSelectorFind").bindSelector({
+			jQuery("#AXInputSelectorFind").bindSelector({
 				appendable:false,
 				options:[
 					{optionValue:1, optionText:"Seoul"},
@@ -181,67 +142,141 @@
 						AXUtil.alert(this);
 					}
 				}
-			});
-			
+			});			
 		},
 		setValue: function(){
-			$("#AXInputSelector").setValueInput(9);
+			jQuery("#AXInputSelector").setValueInput(9);
 		}
 	};
-	
-	$(document.body).ready(function(){
-		setTimeout(fnObj.pageStart, 1);
-	});
+	jQuery(document).ready(fnObj.pageStart);
 	</script>
-	<!-- js block -->
+
+	<style type="text/css">
+	.AXMultiSelector_expandBox{
+		position:absolute;
+		left:100px;top:100px;
+		width:400px;height:285px;
+		border:1px solid #ccc;
+		background:#fff;
+		padding:5px 0px;
+		box-shadow:0px 0px 3px #ccc;
+		overflow:hidden;
+	}
 	
+	.AXMultiSelector_expandBox .AXMultiSelector_scrollBox{
+		float:left;
+		width:200px;
+		height:250px;
+		border:1px solid #eee;
+		box-shadow:inset 1px 1px 3px #eee;
+		margin:0px 0px 0px 5px;
+	}
+		
+	.AXMultiSelector_expandBox a{
+		display:block;padding:3px 8px;
+		font-size:12px;line-height:30px;color:#888888;text-decoration:none;
+		border-bottom:1px solid #eee;background:#fff;
+		}
+		.AXMultiSelector_expandBox a.on{
+			background:#5ea3db;color:#fff;
+		}
+		.AXMultiSelector_expandBox a:hover{
+			
+		}
+	</style>
 </head>
+	
 <body>
-	<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
-	<div class="AXdemoPageContent">
 
+<div id="AXPage">
+	<!-- s.AXPageHead -------------------------------------------------- -->
+	<header id="AXPageHead">
+		<div class="ax-wrap">
+			<div class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
 
-		<h2>AXInput bind Selector</h2>
-		<div style="position:relative;">
-			<input type="text" name="inputSelector" id="AXInputSelector" value="" class="AXInput" />
+						<!-- navMenu < -->
+						<nav class="navMenu"></nav>
+						<!-- navMenu > -->
+
+					</div>	
+				</div>	
+			</div>	
+			<div class="ax-layer-2">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+
+						<!-- navMenu < -->
+						<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
+						<!-- navMenu > -->
+
+					</div>	
+				</div>	
+			</div>	
+
 		</div>
+	</header>
+	<!-- e.AXPageHead -------------------------------------------------- -->
+	<div class="ax-clear"></div>						
+	<!-- s.AXPageBody -------------------------------------------------- -->
+	<article id="AXPageBody" class="SampleAXInput">
 
-		<div class="Hspace20"></div>
-		
+		<div class="ax-wrap">
+			<div class="title"><h1>AXInput</h1></div>
+			<!-- s.axlayer 1 -->		
+			<section class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+						<h2>AXInput</h2>
+						
+						<h3>bind Selector</h3>
+						<input type="text" name="inputSelector" id="AXInputSelector" value="" class="AXInput" />
+						<div class="H20"></div>	
+												
+						<h3>bind Selector(AJAX)</h3>
+						<input type="text" name="inputSelector" id="AXInputSelectorAjax" value="" class="AXInput" />
+						<input type="button" class="AXButton" value="값 주기" onclick="fnObj.setValue();" />
 
-		<div class="Hspace20"></div>
-		
-
-		<h2>AXInput bind Selector(AJAX)</h2>
-		<div style="position:relative;">
-			<input type="text" name="inputSelector" id="AXInputSelectorAjax" value="" class="AXInput" />
+						<div class="H20"></div>
+						
+						<h2>AXInput bind Selector(find)</h2>													
+						<input type="text" name="inputSelector" id="AXInputSelectorFind" value="" class="AXInput W200" />						
+						<button type="button" class="AXButton" id="multiSelector">다중선택</button>						
+						<div class="H30"></div>	
+						
+					</div>	
+				</div>
+				<div class="ax-clear"></div>
+			</section>
+			<!-- e.axlayer 1 -->
+			<div class="ax-clear"></div>							
+	
 		</div>
+		<div class="H20"></div>		
+	</article>
+	<!-- e.AXPageBody -------------------------------------------------- -->
 
-		<div class="Hspace20"></div>
-
-		<input type="button" class="AXButton" value="값 주기" onclick="fnObj.setValue();" />
-		$("#AXInputSelector").setValueInput(9);
-		
-		<div class="Hspace20"></div>
-		
-		<div class="Hspace20"></div>
-		
-		<h2>AXInput bind Selector(find)</h2>
-		
-		<div class="inlineBlock">
-			<input type="text" name="inputSelector" id="AXInputSelectorFind" value="" class="AXInput W200" />
+	<div class="ax-clear"></div>
+	
+	<!-- s.AXPageFoot -------------------------------------------------- -->
+	<footer id="AXPageFoot">
+		<div class="ax-wrap">
+			<div class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+						
+						<!-- navTheme < -->
+						<nav class="navTheme"></nav>
+						<!-- navTheme > -->
+						
+					</div>	
+				</div>
+			</div>			
 		</div>
-		<div class="inlineBlock">
-			<button type="button" class="AXButton" id="multiSelector">다중선택</button>
-		</div>
-		
-				<div class="Hspace50"></div>
-				<div class="Hspace50"></div>
-				<div class="Hspace50"></div>
-				<div class="Hspace50"></div>
-				<div class="Hspace50"></div>
-		
-	</div>
+	</footer>
+	<!-- e.AXPageFoot -------------------------------------------------- -->
+</div>
 
 </body>
-</html>
+</html>		

@@ -201,6 +201,16 @@ body h3 {
 #AXPage #AXPageBody.SampleAXButton .withIcons button {
   margin-bottom: 10px;
 }
+#AXPage #AXPageBody.SampleAXInput label {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 80px;
+  text-align: right;
+}
+#AXPage #AXPageBody.SampleAXInput .bindCheckbox label {
+  text-align: left;
+}
 #AXPage #AXPageFoot {
   position: fixed;
   bottom: 0px;

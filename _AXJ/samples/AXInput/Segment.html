@@ -1,29 +1,89 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>AXInput</title>
-    
-    <meta property="og:image" content="/samples/_img/axisj_sns.png" />  
-    <meta property="og:site_name" content="Axis of Javascript - axisj.com" /> 
-    <meta property="og:description" id="meta_description" content="Javascript UI Library based on JQuery" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1" />
+	<title>AXISJ</title>
+	<!-- Libs -->
+	<script type="text/javascript" src="../../jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="../../lib/AXJ.js"></script>
+	<script type="text/javascript" src="../../lib/AXTab.js"></script>	
+	<script type="text/javascript" src="../../lib/AXInput.js"></script>		
+	<!-- Self -->
+	<script src="pageTab.js"></script>			
+	<!-- Theme -->
+	<script src="../../ui/arongi/page.js"></script>		
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/page.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXJ.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXButton.css">	
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXTabs.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXInput.css">	
 
-	<!-- css block -->
-	<link rel="stylesheet" type="text/css" href="../_css/default_common.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXJ.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXInput.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXTabs.css" />
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXJ_desktop.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXButton_desktop.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXTabs_desktop.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXInput_desktop.css" />
-	<![endif]-->
+	<script>
+	/**
+	 * Require Files for AXISJ UI Component...
+	 * Based		: jQuery
+	 * Javascript 	: AXJ.js, AXInput.js
+	 * CSS			: AXJ.css, AXInput.css
+	 */	
+	var pageID = "Segment";
+	var fnObj = {
+		pageStart: function(){
+			//Require page.js before this fn...
+			pageObj.host = "../../";
+			pageObj.incHeader();
+			pageObj.incFooter();		
+			
+			
+			$("#AXInputSegment").bindSegment({
+				options:[
+					{optionValue:0, optionText:"왼쪽"},
+					{optionValue:1, optionText:"가운데"},
+					{optionValue:2, optionText:"오른쪽"}
+				], 
+				onChange:function(){
+					//this.targetID, this.options, this.selectedIndex, this.selectedOption
+					toast.push(Object.toJSON({targetID:this.targetID, options:this.options, selectedIndex:this.selectedIndex, selectedOption:this.selectedOption}));
+				}
+			});
+			
+			$("#AXInputSegmentForImage").bindSegment({
+				theme:"AXSegmentCustom",
+				options:[
+					{optionValue:0, optionText:"왼쪽", addClass:"type1"},
+					{optionValue:1, optionText:"가운데", addClass:"type2"},
+					{optionValue:2, optionText:"오른쪽", addClass:"type3"}
+				], 
+				onChange:function(){
+					//this.targetID, this.options, this.selectedIndex, this.selectedOption
+					toast.push(Object.toJSON({targetID:this.targetID, options:this.options, selectedIndex:this.selectedIndex, selectedOption:this.selectedOption}));
+				}
+			});
+			
+			$("#AXInputSegmentForImage2").bindSegment({
+				theme:"AXSegmentCustom2",
+				options:[
+					{optionValue:0, optionText:"1", addClass:"type1"},
+					{optionValue:1, optionText:"2", addClass:"type2"},
+					{optionValue:2, optionText:"3", addClass:"type3"},
+					{optionValue:3, optionText:"4", addClass:"type4"},
+					{optionValue:4, optionText:"5", addClass:"type5"},
+					{optionValue:5, optionText:"6", addClass:"type6"},
+					{optionValue:6, optionText:"7", addClass:"type7"}
+				], 
+				onChange:function(){
+					//this.targetID, this.options, this.selectedIndex, this.selectedOption
+					toast.push(Object.toJSON({targetID:this.targetID, options:this.options, selectedIndex:this.selectedIndex, selectedOption:this.selectedOption}));
+				}
+			});				
+		
+		}
+	};
+	jQuery(document).ready(fnObj.pageStart);
+	</script>
+
 	<style type="text/css">
-	H2, H3{font-family:consolas;}
-
-
 	.AXSegmentCustom{
 		position:absolute;left:0px;top:0px;height:50px;
 		padding:0px;margin:0px;
@@ -139,104 +199,112 @@
 		.AXSegmentCustom2 .AXanchorSegmentHandle.type7.on{
 			background:url(/_AXJ/ui/icon/smiley-evil.png) no-repeat center center #f8f8f8;
 		}
+	
 	</style>
-	<!-- css block -->
-	
-	<!-- js block -->
-	<script type="text/javascript" src="../../_AXJ/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXJ.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXInput.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXCodeView.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXTab.js"></script>
-	<script type="text/javascript" src="pageTab.js"></script>
-	
-	<script type="text/javascript">
-	var pageID = "Segment";
-	</script>
-	<!-- js block -->
-	
 </head>
+	
 <body>
-	<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
-	<div class="AXdemoPageContent">
 
+<div id="AXPage">
+	<!-- s.AXPageHead -------------------------------------------------- -->
+	<header id="AXPageHead">
+		<div class="ax-wrap">
+			<div class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
 
-		<h2>AXInput bind Switch</h2>
+						<!-- navMenu < -->
+						<nav class="navMenu"></nav>
+						<!-- navMenu > -->
 
-		<input type="text" name="" value="0" id="AXInputSegment" class="AXInput" style="width:150px;" />
-		
-		<div style="padding:10px 0px;">
-			<input type="button" value="왼쪽으로" class="AXButton" onclick="$('#AXInputSegment').setValueInput('0');" />
-			<input type="button" value="가운데로" class="AXButton" onclick="$('#AXInputSegment').setValueInput('1');" />
-			<input type="button" value="오른쪽으로" class="AXButton" onclick="$('#AXInputSegment').setValueInput('2');" />
+					</div>	
+				</div>	
+			</div>	
+			<div class="ax-layer-2">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+
+						<!-- navMenu < -->
+						<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
+						<!-- navMenu > -->
+
+					</div>	
+				</div>	
+			</div>	
+
 		</div>
-		
-		<div class="Hspace20"></div>
+	</header>
+	<!-- e.AXPageHead -------------------------------------------------- -->
+	<div class="ax-clear"></div>						
+	<!-- s.AXPageBody -------------------------------------------------- -->
+	<article id="AXPageBody" class="SampleAXInput">
 
-		<h2>AXInput bind Switch (custom css)</h2>
+		<div class="ax-wrap">
+			<div class="title"><h1>AXInput</h1></div>
+			<!-- s.axlayer 1 -->		
+			<section class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+						<h2>AXInput</h2>
+						<h3>bind Segment</h3>
 
-		<input type="text" name="" value="0" id="AXInputSegmentForImage" style="width:150px;height:50px;" />
-		
-		<div style="padding:10px 0px;">
-			<input type="button" value="왼쪽으로" class="AXButton" onclick="$('#AXInputSegmentForImage').setValueInput('0');" />
-			<input type="button" value="가운데로" class="AXButton" onclick="$('#AXInputSegmentForImage').setValueInput('1');" />
-			<input type="button" value="오른쪽으로" class="AXButton" onclick="$('#AXInputSegmentForImage').setValueInput('2');" />
+						<input type="text" name="" value="0" id="AXInputSegment" class="AXInput" style="width:150px;" />
+						
+						<div style="padding:10px 0px;">
+							<input type="button" value="왼쪽으로" class="AXButton" onclick="jQuery('#AXInputSegment').setValueInput('0');" />
+							<input type="button" value="가운데로" class="AXButton" onclick="jQuery('#AXInputSegment').setValueInput('1');" />
+							<input type="button" value="오른쪽으로" class="AXButton" onclick="jQuery('#AXInputSegment').setValueInput('2');" />
+						</div>
+						
+						<h3>bind Segment(custom css)</h3>
+
+						<input type="text" name="" value="0" id="AXInputSegmentForImage" style="width:150px;height:50px;" />
+						
+						<div style="padding:10px 0px;">
+							<input type="button" value="왼쪽으로" class="AXButton" onclick="jQuery('#AXInputSegmentForImage').setValueInput('0');" />
+							<input type="button" value="가운데로" class="AXButton" onclick="jQuery('#AXInputSegmentForImage').setValueInput('1');" />
+							<input type="button" value="오른쪽으로" class="AXButton" onclick="jQuery('#AXInputSegmentForImage').setValueInput('2');" />
+						</div>
+					
+						<h3>AXInput bind Switch (custom css)</h3>
+
+						<input type="text" name="" value="0" id="AXInputSegmentForImage2" style="width:260px;height:30px;" />						
+
+						
+						<div class="H30"></div>	
+						
+					</div>	
+				</div>
+				<div class="ax-clear"></div>
+			</section>
+			<!-- e.axlayer 1 -->
+			<div class="ax-clear"></div>							
+	
 		</div>
+		<div class="H20"></div>		
+	</article>
+	<!-- e.AXPageBody -------------------------------------------------- -->
 
-		<h2>AXInput bind Switch (custom css)</h2>
+	<div class="ax-clear"></div>
+	
+	<!-- s.AXPageFoot -------------------------------------------------- -->
+	<footer id="AXPageFoot">
+		<div class="ax-wrap">
+			<div class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+						
+						<!-- navTheme < -->
+						<nav class="navTheme"></nav>
+						<!-- navTheme > -->
+						
+					</div>	
+				</div>
+			</div>			
+		</div>
+	</footer>
+	<!-- e.AXPageFoot -------------------------------------------------- -->
+</div>
 
-		<input type="text" name="" value="0" id="AXInputSegmentForImage2" style="width:260px;height:30px;" />
-
-	</div>
-	<script type="text/javascript">
-	var fnObj = {
-		pageStart: function(){
-			AXCode.bind(); // 소스보기
-			
-			$("#AXInputSegment").bindSegment({
-				options:[
-					{optionValue:0, optionText:"왼쪽"},
-					{optionValue:1, optionText:"가운데"},
-					{optionValue:2, optionText:"오른쪽"}
-				], 
-				onChange:function(){
-					//this.targetID, this.options, this.selectedIndex, this.selectedOption
-					toast.push(Object.toJSON({targetID:this.targetID, options:this.options, selectedIndex:this.selectedIndex, selectedOption:this.selectedOption}));
-				}
-			});
-			
-			$("#AXInputSegmentForImage").bindSegment({
-				theme:"AXSegmentCustom",
-				options:[
-					{optionValue:0, optionText:"왼쪽", addClass:"type1"},
-					{optionValue:1, optionText:"가운데", addClass:"type2"},
-					{optionValue:2, optionText:"오른쪽", addClass:"type3"}
-				], 
-				onChange:function(){
-					//this.targetID, this.options, this.selectedIndex, this.selectedOption
-					toast.push(Object.toJSON({targetID:this.targetID, options:this.options, selectedIndex:this.selectedIndex, selectedOption:this.selectedOption}));
-				}
-			});
-			
-			$("#AXInputSegmentForImage2").bindSegment({
-				theme:"AXSegmentCustom2",
-				options:[
-					{optionValue:0, optionText:"1", addClass:"type1"},
-					{optionValue:1, optionText:"2", addClass:"type2"},
-					{optionValue:2, optionText:"3", addClass:"type3"},
-					{optionValue:3, optionText:"4", addClass:"type4"},
-					{optionValue:4, optionText:"5", addClass:"type5"},
-					{optionValue:5, optionText:"6", addClass:"type6"},
-					{optionValue:6, optionText:"7", addClass:"type7"}
-				], 
-				onChange:function(){
-					//this.targetID, this.options, this.selectedIndex, this.selectedOption
-					toast.push(Object.toJSON({targetID:this.targetID, options:this.options, selectedIndex:this.selectedIndex, selectedOption:this.selectedOption}));
-				}
-			});
-		}
-	};
-	fnObj.pageStart();
-	</script>
 </body>
-</html>
+</html>		
