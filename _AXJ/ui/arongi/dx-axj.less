@@ -1,0 +1,160 @@
+@import "preset";
+@import "AXUtils";
+
+
+// Common //////////////////////////////////////////////////////////////
+.clear{clear:both;}
+.AXHspace1	{.util-hspace(1px);} 
+.AXHspace2	{.util-hspace(2px);} 
+.AXHspace3	{.util-hspace(3px);} 
+.AXHspace4	{.util-hspace(4px);} 
+.AXHspace5	{.util-hspace(5px);} 
+.AXHspace10	{.util-hspace(10px);}
+.AXHspace15	{.util-hspace(15px);} 
+.AXHspace20	{.util-hspace(20px);} 
+.AXHspace30	{.util-hspace(30px);} 
+.AXHspace40	{.util-hspace(40px);} 
+.AXHspace50	{.util-hspace(50px);}
+
+
+
+// AXContextMenu //////////////////////////////////////////////////////////////
+.AXContextMenu{
+	z-index:4999;
+	position:absolute;left:0px;top:0px;
+	width:140px;
+	background:#fff;
+	border:1px solid #b1b1b1;border-radius:5px;
+	box-shadow:0px 0px 5px #ccc;
+
+	.contextMenuItem{
+		position:relative;
+		display:block;
+		height:30px;
+		line-height:30px;padding:0px 5px 0px 30px;
+		color:#5e5e5e;text-decoration:none;
+		.util-text-ellipsis;
+		background-image:url('images/contextMenuIcon_doc.png');
+		background-repeat:no-repeat;
+		background-position:0px center;
+		&:hover{background-color:#eee;}
+		&.first{ border-top-left-radius:5px;border-top-right-radius:5px;}
+		&.last{
+			border-bottom:0px none;
+			border-bottom-left-radius:5px;border-bottom-right-radius:5px;
+		}
+		&.docline	{background-image:url('images/contextMenuIcon_docline.png');}
+		&.plus		{background-image:url('images/contextMenuIcon_plus.png');}
+        &.minus		{background-image:url('images/contextMenuIcon_minus.png');}
+        &.group		{background-image:url('images/contextMenuIcon_group.png');}
+        &.edit		{background-image:url('images/contextMenuIcon_edit.png');}
+		&.copy		{background-image:url('images/contextMenuIcon_copy.png');}
+		&.cut		{background-image:url('images/contextMenuIcon_cut.png');}
+		&.paste		{background-image:url('images/contextMenuIcon_paste.png');}
+		&.up		{background-image:url('images/contextMenuIcon_up.png');}
+		&.down		{background-image:url('images/contextMenuIcon_down.png');}
+		&.left		{background-image:url('images/contextMenuIcon_left.png');}
+		&.right		{background-image:url('images/contextMenuIcon_right.png');}
+		&.link		{background-image:url('images/contextMenuIcon_link.png');}
+		&.unlink	{background-image:url('images/contextMenuIcon_unlink.png');}
+		&.openall	{background-image:url('images/contextMenuIcon_openall.png');}
+		&.closeall	{background-image:url('images/contextMenuIcon_closeall.png');}	
+		.contextSubMenuIcon{
+			position:absolute;right:0px;top:0px;
+			width:30px;height:30px;
+			background-image:url('images/contextSubMenuIcon.png');
+			background-repeat:no-repeat;
+			background-position:0px center;
+		}
+	}
+	.hline{
+		display:block;
+		height:1px;line-height:1px;font-size:1px;
+		background:#b1b1b1;
+	}
+	.contextMenuItem:hover{
+		background-color:#eee;	
+	}
+}		
+
+
+
+// AXNotification //////////////////////////////////////////////////////////////
+.AXNotificationTray{
+	position:fixed;right:10px;top:0px;z-index:5001;
+	width:322px;
+	.AXNotification{
+		width:300px;
+		border:1px solid #c5c5c5;background:#ebebeb;
+		padding:10px;margin:10px 0px;
+		box-shadow:0px 0px 5px #b2b2b2;
+		font-size:12px;color:#525252;
+		.util-opacity(80);
+		.util-border-radius(4px);	
+		&.Warning{
+			.AXNotificationIcon{		
+				width:42px;height:42px;
+				background:url('images/notificationWarning.png') no-repeat center center !important;
+			}
+			.AXNotificationBody{
+				B{color:#bf601b;}
+			}
+		}
+		&.Caution{
+			.AXNotificationIcon{		
+				width:42px;height:42px;
+				background:url('images/notificationCaution.png') no-repeat center center !important;
+			}
+			.AXNotificationBody{
+				B{color:#7e302c;}
+			}
+		}
+		.AXNotificationHead{
+			font-weight:bold;
+			color:#717b85;text-shadow:0px 1px #fff;
+			padding:5px 15px;height:20px;line-height:20px;
+			background:url('images/dialogTitle.png') repeat-x;
+			text-align:center;
+		}	
+		.AXNotificationTable{
+			width:100%;border:0px none !important;background:#ebebeb;
+			td, th{
+				border:0px none !important; background:#ebebeb;
+			}
+		}
+		.AXNotificationIcon{
+			width:42px;height:42px;
+			background:url('images/notificationComplete.png') no-repeat center 5px !important;
+		}		
+		.AXNotificationBody{
+			font-size:12px;color:#525252;padding-right:5px;
+			line-height:1.6em;
+			B{color:#477e47;}
+
+		}
+		.AXNotificationButton{width:45px;}
+		.AXNotificationButtons{
+			padding:10px 0px;
+			text-align:center;background:#ebebeb;
+		}
+	}
+}
+
+.AXNotificationTrayDialog{
+	position:fixed;left:0px;top:50px;
+	width:340px;
+	z-index:5001;
+	.AXNotification{
+		width:340px;
+		border:1px solid #444;background:#ebebeb;
+		padding:0px;margin:0px 0px;
+		box-shadow:0px 0px 3px #888;
+		font-size:12px;color:#525252;
+		overflow:hidden;
+		.util-opacity(100);
+		.util-border-radius(4px);
+		.AXNotificationCT{
+			padding:10px;
+		}
+	}	
+}

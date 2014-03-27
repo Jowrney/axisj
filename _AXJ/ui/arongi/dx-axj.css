@@ -1,0 +1,288 @@
+.util-border-radius-none {
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  border-radius: none;
+}
+.util-text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.clear {
+  clear: both;
+}
+.AXHspace1 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 1px;
+}
+.AXHspace2 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 2px;
+}
+.AXHspace3 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 3px;
+}
+.AXHspace4 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 4px;
+}
+.AXHspace5 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 5px;
+}
+.AXHspace10 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 10px;
+}
+.AXHspace15 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 15px;
+}
+.AXHspace20 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 20px;
+}
+.AXHspace30 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 30px;
+}
+.AXHspace40 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 40px;
+}
+.AXHspace50 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 50px;
+}
+.AXContextMenu {
+  z-index: 4999;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 140px;
+  background: #fff;
+  border: 1px solid #b1b1b1;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #ccc;
+}
+.AXContextMenu .contextMenuItem {
+  position: relative;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0px 5px 0px 30px;
+  color: #5e5e5e;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-image: url('images/contextMenuIcon_doc.png');
+  background-repeat: no-repeat;
+  background-position: 0px center;
+}
+.AXContextMenu .contextMenuItem:hover {
+  background-color: #eee;
+}
+.AXContextMenu .contextMenuItem.first {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.AXContextMenu .contextMenuItem.last {
+  border-bottom: 0px none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.AXContextMenu .contextMenuItem.docline {
+  background-image: url('images/contextMenuIcon_docline.png');
+}
+.AXContextMenu .contextMenuItem.plus {
+  background-image: url('images/contextMenuIcon_plus.png');
+}
+.AXContextMenu .contextMenuItem.minus {
+  background-image: url('images/contextMenuIcon_minus.png');
+}
+.AXContextMenu .contextMenuItem.group {
+  background-image: url('images/contextMenuIcon_group.png');
+}
+.AXContextMenu .contextMenuItem.edit {
+  background-image: url('images/contextMenuIcon_edit.png');
+}
+.AXContextMenu .contextMenuItem.copy {
+  background-image: url('images/contextMenuIcon_copy.png');
+}
+.AXContextMenu .contextMenuItem.cut {
+  background-image: url('images/contextMenuIcon_cut.png');
+}
+.AXContextMenu .contextMenuItem.paste {
+  background-image: url('images/contextMenuIcon_paste.png');
+}
+.AXContextMenu .contextMenuItem.up {
+  background-image: url('images/contextMenuIcon_up.png');
+}
+.AXContextMenu .contextMenuItem.down {
+  background-image: url('images/contextMenuIcon_down.png');
+}
+.AXContextMenu .contextMenuItem.left {
+  background-image: url('images/contextMenuIcon_left.png');
+}
+.AXContextMenu .contextMenuItem.right {
+  background-image: url('images/contextMenuIcon_right.png');
+}
+.AXContextMenu .contextMenuItem.link {
+  background-image: url('images/contextMenuIcon_link.png');
+}
+.AXContextMenu .contextMenuItem.unlink {
+  background-image: url('images/contextMenuIcon_unlink.png');
+}
+.AXContextMenu .contextMenuItem.openall {
+  background-image: url('images/contextMenuIcon_openall.png');
+}
+.AXContextMenu .contextMenuItem.closeall {
+  background-image: url('images/contextMenuIcon_closeall.png');
+}
+.AXContextMenu .contextMenuItem .contextSubMenuIcon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  background-image: url('images/contextSubMenuIcon.png');
+  background-repeat: no-repeat;
+  background-position: 0px center;
+}
+.AXContextMenu .hline {
+  display: block;
+  height: 1px;
+  line-height: 1px;
+  font-size: 1px;
+  background: #b1b1b1;
+}
+.AXContextMenu .contextMenuItem:hover {
+  background-color: #eee;
+}
+.AXNotificationTray {
+  position: fixed;
+  right: 10px;
+  top: 0px;
+  z-index: 5001;
+  width: 322px;
+}
+.AXNotificationTray .AXNotification {
+  width: 300px;
+  border: 1px solid #c5c5c5;
+  background: #ebebeb;
+  padding: 10px;
+  margin: 10px 0px;
+  box-shadow: 0px 0px 5px #b2b2b2;
+  font-size: 12px;
+  color: #525252;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px 5px 5px 5px;
+  -moz-border-radius: 4px 5px 5px 5px;
+  border-radius: 4px 5px 5px 5px;
+}
+.AXNotificationTray .AXNotification.Warning .AXNotificationIcon {
+  width: 42px;
+  height: 42px;
+  background: url('images/notificationWarning.png') no-repeat center center !important;
+}
+.AXNotificationTray .AXNotification.Warning .AXNotificationBody B {
+  color: #bf601b;
+}
+.AXNotificationTray .AXNotification.Caution .AXNotificationIcon {
+  width: 42px;
+  height: 42px;
+  background: url('images/notificationCaution.png') no-repeat center center !important;
+}
+.AXNotificationTray .AXNotification.Caution .AXNotificationBody B {
+  color: #7e302c;
+}
+.AXNotificationTray .AXNotification .AXNotificationHead {
+  font-weight: bold;
+  color: #717b85;
+  text-shadow: 0px 1px #fff;
+  padding: 5px 15px;
+  height: 20px;
+  line-height: 20px;
+  background: url('images/dialogTitle.png') repeat-x;
+  text-align: center;
+}
+.AXNotificationTray .AXNotification .AXNotificationTable {
+  width: 100%;
+  border: 0px none !important;
+  background: #ebebeb;
+}
+.AXNotificationTray .AXNotification .AXNotificationTable td,
+.AXNotificationTray .AXNotification .AXNotificationTable th {
+  border: 0px none !important;
+  background: #ebebeb;
+}
+.AXNotificationTray .AXNotification .AXNotificationIcon {
+  width: 42px;
+  height: 42px;
+  background: url('images/notificationComplete.png') no-repeat center 5px !important;
+}
+.AXNotificationTray .AXNotification .AXNotificationBody {
+  font-size: 12px;
+  color: #525252;
+  padding-right: 5px;
+  line-height: 1.6em;
+}
+.AXNotificationTray .AXNotification .AXNotificationBody B {
+  color: #477e47;
+}
+.AXNotificationTray .AXNotification .AXNotificationButton {
+  width: 45px;
+}
+.AXNotificationTray .AXNotification .AXNotificationButtons {
+  padding: 10px 0px;
+  text-align: center;
+  background: #ebebeb;
+}
+.AXNotificationTrayDialog {
+  position: fixed;
+  left: 0px;
+  top: 50px;
+  width: 340px;
+  z-index: 5001;
+}
+.AXNotificationTrayDialog .AXNotification {
+  width: 340px;
+  border: 1px solid #444;
+  background: #ebebeb;
+  padding: 0px;
+  margin: 0px 0px;
+  box-shadow: 0px 0px 3px #888;
+  font-size: 12px;
+  color: #525252;
+  overflow: hidden;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity=80);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px 5px 5px 5px;
+  -moz-border-radius: 4px 5px 5px 5px;
+  border-radius: 4px 5px 5px 5px;
+}
+.AXNotificationTrayDialog .AXNotification .AXNotificationCT {
+  padding: 10px;
+}
