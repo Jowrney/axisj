@@ -361,6 +361,7 @@
   padding: 0 10px;
   cursor: pointer;
   outline: none;
+  vertical-align: middle;
 }
 .AXButton {
   background: #fdfdfd;
@@ -566,6 +567,7 @@
   padding: 0 10px;
   cursor: pointer;
   outline: none;
+  vertical-align: middle;
 }
 .AXButtonSmall {
   background: #fdfdfd;
@@ -771,6 +773,7 @@
   padding: 0 10px;
   cursor: pointer;
   outline: none;
+  vertical-align: middle;
 }
 .AXButtonLarge {
   background: #fdfdfd;

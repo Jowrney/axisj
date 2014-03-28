@@ -46,6 +46,34 @@
   .AXInput:focus {
     border: 1px solid #949fa8;
     box-shadow: inset 0px 0px 3px #949fa8;
+    outline: none;
+  }
+  .AXInput[disabled] {
+    background: url('images/defaultRegular.png') repeat-x;
+    background-position: 0px -78px;
+    color: #fff;
+    text-shadow: 0px -1px #b7b7b7;
+    box-shadow: inset 0px 1px 2px #b1b1b1;
+  }
+  .AXInput[readonly] {
+    background: #eee;
+    color: #676767;
+    text-shadow: 0px 1px #fff;
+    box-shadow: inset 0px 1px 2px #b1b1b1;
+  }
+  .AXInput::-webkit-input-placeholder {
+    color: #bbb;
+  }
+  .AXInput::-moz-placeholder {
+    color: #bbb;
+  }
+  .AXInput:-ms-input-placeholder {
+    color: #bbb;
+  }
+  .AXInput.Round {
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
   }
   .AXInputSmall {
     border: 1px solid #b6b6b6;
@@ -65,25 +93,7 @@
   .AXInputSmall:focus {
     border: 1px solid #949fa8;
     box-shadow: inset 0px 0px 3px #949fa8;
-  }
-  .AXInput.Round {
-    border-radius: 15px;
-  }
-  .AXInputSmall.Round {
-    border-radius: 15px;
-  }
-  .AXInput[readonly] {
-    background: #eee;
-    color: #676767;
-    text-shadow: 0px 1px #fff;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
-  }
-  .AXInput[disabled] {
-    background: url('images/defaultRegular.png') repeat-x;
-    background-position: 0px -78px;
-    color: #fff;
-    text-shadow: 0px -1px #b7b7b7;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
+    outline: none;
   }
   .AXInputSmall[disabled] {
     background: url('images/defaultSmall.png') repeat-x;
@@ -98,15 +108,6 @@
     text-shadow: 0px 1px #fff;
     box-shadow: inset 0px 1px 2px #b1b1b1;
   }
-  .AXInput::-webkit-input-placeholder {
-    color: #bbb;
-  }
-  .AXInput::-moz-placeholder {
-    color: #bbb;
-  }
-  .AXInput:-ms-input-placeholder {
-    color: #bbb;
-  }
   .AXInputSmall::-webkit-input-placeholder {
     color: #bbb;
   }
@@ -115,6 +116,11 @@
   }
   .AXInputSmall:-ms-input-placeholder {
     color: #bbb;
+  }
+  .AXInputSmall.Round {
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
   }
   .AXCheckbox {
     position: relative;
@@ -142,78 +148,25 @@
     display: inline-block;
     vertical-align: top;
   }
-  .AXInputLabel SPAN {
+  .AXInputLabel span {
     line-height: 24px;
     font-size: 12px;
     color: #717b85;
     padding: 0px 3px;
   }
-  .AXInputLabel SPAN.block {
+  .AXInputLabel span.bloack {
     display: block;
   }
   .AXInputLabel.fullWidth {
     display: block;
     padding-right: 8px;
   }
-  .AXInputLabel.fullWidth SPAN {
+  .AXInputLabel.fullWidth span {
     display: block;
   }
   .AXInputLabel.fullWidth input[type=text],
   .AXInputLabel.fullWidth input[type=password] {
     width: 100%;
-  }
-  .AXanchor {
-    position: absolute;
-    height: 0px;
-    left: 0px;
-    top: 0px;
-    display: none;
-    vertical-align: middle;
-  }
-  .AXInput {
-    border: 1px solid #b6b6b6;
-    background: #fff;
-    box-shadow: inset 0px 1px 2px #dddddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px 5px 5px 5px;
-    -moz-border-radius: 4px 5px 5px 5px;
-    border-radius: 4px 5px 5px 5px;
-    font-size: 12px;
-    line-height: 15px;
-    height: 15px;
-    padding: 4px;
-    margin: 0px auto;
-  }
-  .AXInput:focus {
-    outline: none;
-  }
-  .AXInput:focus {
-    border: 1px solid #949fa8;
-    box-shadow: inset 0px 0px 3px #949fa8;
-  }
-  .AXInputSmall {
-    border: 1px solid #b6b6b6;
-    box-shadow: inset 0px 1px 1px #dddddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px 5px 5px 5px;
-    -moz-border-radius: 4px 5px 5px 5px;
-    border-radius: 4px 5px 5px 5px;
-    font-size: 12px;
-    line-height: 12px;
-    height: 12px;
-    padding: 3px 3px;
-    margin: 0px auto;
-  }
-  .AXInputSmall:focus {
-    outline: none;
-  }
-  .AXInputSmall:focus {
-    border: 1px solid #949fa8;
-    box-shadow: inset 0px 0px 3px #949fa8;
   }
   .AXInputGroup {
     position: relative;
@@ -234,6 +187,10 @@
     *display: inline;
     *margin-right: 3px;
   }
+  .AXInputGroup.inline input[type=text],
+  .AXInputGroup.inline input[type=password] {
+    *width: auto;
+  }
   .AXInputGroup input[type=text],
   .AXInputGroup input[type=password] {
     border: 0px none;
@@ -244,10 +201,6 @@
     line-height: 15px;
     height: 15px;
     background: none;
-  }
-  .AXInputGroup.inline input[type=text],
-  .AXInputGroup.inline input[type=password] {
-    *width: auto;
   }
   .AXanchorPlaceHolder {
     position: absolute;
@@ -282,7 +235,7 @@
     border-bottom-right-radius: 4px;
     overflow: hidden;
   }
-  .AXanchorIncrease {
+  .AXanchorNumberContainer .AXanchorIncrease {
     position: absolute;
     display: block;
     background: url('images/upArrow.png') center center no-repeat;
@@ -293,10 +246,10 @@
     text-indent: -2000px;
     border-bottom: 1px solid #b9babc;
   }
-  .AXanchorIncrease:active {
+  .AXanchorNumberContainer .AXanchorIncrease:active {
     background-image: url('images/upArrowOn.png');
   }
-  .AXanchorDecrease {
+  .AXanchorNumberContainer .AXanchorDecrease {
     position: absolute;
     display: block;
     background: url('images/downArrow.png') center center no-repeat;
@@ -307,7 +260,7 @@
     text-indent: -2000px;
     border-top: 1px solid #b9babc;
   }
-  .AXanchorDecrease:active {
+  .AXanchorNumberContainer .AXanchorDecrease:active {
     background-image: url('images/downArrowOn.png');
   }
   .AXanchorSelectorHandleContainer {
@@ -319,7 +272,7 @@
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
-  .AXanchorSelectorHandle {
+  .AXanchorSelectorHandleContainer .AXanchorSelectorHandle {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -327,7 +280,7 @@
     overflow: hidden;
     text-indent: -2000px;
   }
-  .AXanchorSelectorHandle.on {
+  .AXanchorSelectorHandleContainer .AXanchorSelectorHandle.on {
     background: url('images/slideUpArrow.png') center center no-repeat;
   }
   .AXanchorSelectorFinderContainer {
@@ -337,7 +290,7 @@
     background: url('images/defaultRegular.png') repeat-x;
     border: 1px solid #b9babc;
   }
-  .AXanchorSelectorFinder {
+  .AXanchorSelectorFinderContainer .AXanchorSelectorFinder {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -345,7 +298,7 @@
     overflow: hidden;
     text-indent: -2000px;
   }
-  .AXanchorSelectorFinder.on {
+  .AXanchorSelectorFinderContainer .AXanchorSelectorFinder.on {
     background: url('images/selectorSearch.png') center center no-repeat;
   }
   .AXanchorSelectorExpandBox {
@@ -522,7 +475,6 @@
     left: 0px;
     top: 0px;
   }
-  /** AXanchorSwitch **/
   .AXanchorSwitchBox {
     position: absolute;
     left: 0px;
@@ -610,20 +562,20 @@
     color: #6e7a86;
     text-align: center;
     text-decoration: none;
-    background: #000000;
-    background: -webkit-linear-gradient(#e8e8e8, #000000);
+    background: #e8e8e8;
+    background: -webkit-linear-gradient(#ffffff, #e8e8e8);
     /* For Safari */
   
-    background: -o-linear-gradient(#e8e8e8, #000000);
+    background: -o-linear-gradient(#ffffff, #e8e8e8);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#e8e8e8, #000000);
+    background: -moz-linear-gradient(#ffffff, #e8e8e8);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#e8e8e8, #000000);
+    background: linear-gradient(#ffffff, #e8e8e8);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e8e8e8, endColorstr=#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#e8e8e8);
     /*For IE7-8-9*/
     white-space: nowrap;
     overflow: hidden;
@@ -631,20 +583,20 @@
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle:hover,
   .AXanchorSegmentBox .AXanchorSegmentHandle:focus {
-    background: #000000;
-    background: -webkit-linear-gradient(#e5eff2, #000000);
+    background: #e5eff2;
+    background: -webkit-linear-gradient(#c7cfd4, #e5eff2);
     /* For Safari */
   
-    background: -o-linear-gradient(#e5eff2, #000000);
+    background: -o-linear-gradient(#c7cfd4, #e5eff2);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#e5eff2, #000000);
+    background: -moz-linear-gradient(#c7cfd4, #e5eff2);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#e5eff2, #000000);
+    background: linear-gradient(#c7cfd4, #e5eff2);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e5eff2, endColorstr=#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c7cfd4, endColorstr=#e5eff2);
     /*For IE7-8-9*/
     text-shadow: 0px 1px #fff;
   }
@@ -658,20 +610,20 @@
     border-bottom-right-radius: 4px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.on {
-    background: #000000;
-    background: -webkit-linear-gradient(#b9babc, #000000);
+    background: #b9babc;
+    background: -webkit-linear-gradient(#7c7e83, #b9babc);
     /* For Safari */
   
-    background: -o-linear-gradient(#b9babc, #000000);
+    background: -o-linear-gradient(#7c7e83, #b9babc);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#b9babc, #000000);
+    background: -moz-linear-gradient(#7c7e83, #b9babc);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#b9babc, #000000);
+    background: linear-gradient(#7c7e83, #b9babc);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#b9babc, endColorstr=#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#7c7e83, endColorstr=#b9babc);
     /*For IE7-8-9*/
     color: #fff;
     text-shadow: 0px 1px #4e585f;
@@ -886,6 +838,34 @@
   .AXInput:focus {
     border: 1px solid #949fa8;
     box-shadow: inset 0px 0px 3px #949fa8;
+    outline: none;
+  }
+  .AXInput[disabled] {
+    background: url('images/defaultRegular.png') repeat-x;
+    background-position: 0px -78px;
+    color: #fff;
+    text-shadow: 0px -1px #b7b7b7;
+    box-shadow: inset 0px 1px 2px #b1b1b1;
+  }
+  .AXInput[readonly] {
+    background: #eee;
+    color: #676767;
+    text-shadow: 0px 1px #fff;
+    box-shadow: inset 0px 1px 2px #b1b1b1;
+  }
+  .AXInput::-webkit-input-placeholder {
+    color: #bbb;
+  }
+  .AXInput::-moz-placeholder {
+    color: #bbb;
+  }
+  .AXInput:-ms-input-placeholder {
+    color: #bbb;
+  }
+  .AXInput.Round {
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
   }
   .AXInputSmall {
     border: 1px solid #b6b6b6;
@@ -905,25 +885,7 @@
   .AXInputSmall:focus {
     border: 1px solid #949fa8;
     box-shadow: inset 0px 0px 3px #949fa8;
-  }
-  .AXInput.Round {
-    border-radius: 15px;
-  }
-  .AXInputSmall.Round {
-    border-radius: 15px;
-  }
-  .AXInput[readonly] {
-    background: #eee;
-    color: #676767;
-    text-shadow: 0px 1px #fff;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
-  }
-  .AXInput[disabled] {
-    background: url('images/defaultRegular.png') repeat-x;
-    background-position: 0px -78px;
-    color: #fff;
-    text-shadow: 0px -1px #b7b7b7;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
+    outline: none;
   }
   .AXInputSmall[disabled] {
     background: url('images/defaultSmall.png') repeat-x;
@@ -938,15 +900,6 @@
     text-shadow: 0px 1px #fff;
     box-shadow: inset 0px 1px 2px #b1b1b1;
   }
-  .AXInput::-webkit-input-placeholder {
-    color: #bbb;
-  }
-  .AXInput::-moz-placeholder {
-    color: #bbb;
-  }
-  .AXInput:-ms-input-placeholder {
-    color: #bbb;
-  }
   .AXInputSmall::-webkit-input-placeholder {
     color: #bbb;
   }
@@ -955,6 +908,11 @@
   }
   .AXInputSmall:-ms-input-placeholder {
     color: #bbb;
+  }
+  .AXInputSmall.Round {
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
   }
   .AXCheckbox {
     position: relative;
@@ -982,78 +940,25 @@
     display: inline-block;
     vertical-align: top;
   }
-  .AXInputLabel SPAN {
+  .AXInputLabel span {
     line-height: 24px;
     font-size: 12px;
     color: #717b85;
     padding: 0px 3px;
   }
-  .AXInputLabel SPAN.block {
+  .AXInputLabel span.bloack {
     display: block;
   }
   .AXInputLabel.fullWidth {
     display: block;
     padding-right: 8px;
   }
-  .AXInputLabel.fullWidth SPAN {
+  .AXInputLabel.fullWidth span {
     display: block;
   }
   .AXInputLabel.fullWidth input[type=text],
   .AXInputLabel.fullWidth input[type=password] {
     width: 100%;
-  }
-  .AXanchor {
-    position: absolute;
-    height: 0px;
-    left: 0px;
-    top: 0px;
-    display: none;
-    vertical-align: middle;
-  }
-  .AXInput {
-    border: 1px solid #b6b6b6;
-    background: #fff;
-    box-shadow: inset 0px 1px 2px #dddddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px 5px 5px 5px;
-    -moz-border-radius: 4px 5px 5px 5px;
-    border-radius: 4px 5px 5px 5px;
-    font-size: 12px;
-    line-height: 15px;
-    height: 15px;
-    padding: 4px;
-    margin: 0px auto;
-  }
-  .AXInput:focus {
-    outline: none;
-  }
-  .AXInput:focus {
-    border: 1px solid #949fa8;
-    box-shadow: inset 0px 0px 3px #949fa8;
-  }
-  .AXInputSmall {
-    border: 1px solid #b6b6b6;
-    box-shadow: inset 0px 1px 1px #dddddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px 5px 5px 5px;
-    -moz-border-radius: 4px 5px 5px 5px;
-    border-radius: 4px 5px 5px 5px;
-    font-size: 12px;
-    line-height: 12px;
-    height: 12px;
-    padding: 3px 3px;
-    margin: 0px auto;
-  }
-  .AXInputSmall:focus {
-    outline: none;
-  }
-  .AXInputSmall:focus {
-    border: 1px solid #949fa8;
-    box-shadow: inset 0px 0px 3px #949fa8;
   }
   .AXInputGroup {
     position: relative;
@@ -1074,6 +979,10 @@
     *display: inline;
     *margin-right: 3px;
   }
+  .AXInputGroup.inline input[type=text],
+  .AXInputGroup.inline input[type=password] {
+    *width: auto;
+  }
   .AXInputGroup input[type=text],
   .AXInputGroup input[type=password] {
     border: 0px none;
@@ -1084,10 +993,6 @@
     line-height: 15px;
     height: 15px;
     background: none;
-  }
-  .AXInputGroup.inline input[type=text],
-  .AXInputGroup.inline input[type=password] {
-    *width: auto;
   }
   .AXanchorPlaceHolder {
     position: absolute;
@@ -1122,7 +1027,7 @@
     border-bottom-right-radius: 4px;
     overflow: hidden;
   }
-  .AXanchorIncrease {
+  .AXanchorNumberContainer .AXanchorIncrease {
     position: absolute;
     display: block;
     background: url('images/upArrow.png') center center no-repeat;
@@ -1133,10 +1038,10 @@
     text-indent: -2000px;
     border-bottom: 1px solid #b9babc;
   }
-  .AXanchorIncrease:active {
+  .AXanchorNumberContainer .AXanchorIncrease:active {
     background-image: url('images/upArrowOn.png');
   }
-  .AXanchorDecrease {
+  .AXanchorNumberContainer .AXanchorDecrease {
     position: absolute;
     display: block;
     background: url('images/downArrow.png') center center no-repeat;
@@ -1147,7 +1052,7 @@
     text-indent: -2000px;
     border-top: 1px solid #b9babc;
   }
-  .AXanchorDecrease:active {
+  .AXanchorNumberContainer .AXanchorDecrease:active {
     background-image: url('images/downArrowOn.png');
   }
   .AXanchorSelectorHandleContainer {
@@ -1159,7 +1064,7 @@
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
-  .AXanchorSelectorHandle {
+  .AXanchorSelectorHandleContainer .AXanchorSelectorHandle {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -1167,7 +1072,7 @@
     overflow: hidden;
     text-indent: -2000px;
   }
-  .AXanchorSelectorHandle.on {
+  .AXanchorSelectorHandleContainer .AXanchorSelectorHandle.on {
     background: url('images/slideUpArrow.png') center center no-repeat;
   }
   .AXanchorSelectorFinderContainer {
@@ -1177,7 +1082,7 @@
     background: url('images/defaultRegular.png') repeat-x;
     border: 1px solid #b9babc;
   }
-  .AXanchorSelectorFinder {
+  .AXanchorSelectorFinderContainer .AXanchorSelectorFinder {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -1185,7 +1090,7 @@
     overflow: hidden;
     text-indent: -2000px;
   }
-  .AXanchorSelectorFinder.on {
+  .AXanchorSelectorFinderContainer .AXanchorSelectorFinder.on {
     background: url('images/selectorSearch.png') center center no-repeat;
   }
   .AXanchorSelectorExpandBox {
@@ -1362,7 +1267,6 @@
     left: 0px;
     top: 0px;
   }
-  /** AXanchorSwitch **/
   .AXanchorSwitchBox {
     position: absolute;
     left: 0px;
@@ -1450,20 +1354,20 @@
     color: #6e7a86;
     text-align: center;
     text-decoration: none;
-    background: #000000;
-    background: -webkit-linear-gradient(#e8e8e8, #000000);
+    background: #e8e8e8;
+    background: -webkit-linear-gradient(#ffffff, #e8e8e8);
     /* For Safari */
   
-    background: -o-linear-gradient(#e8e8e8, #000000);
+    background: -o-linear-gradient(#ffffff, #e8e8e8);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#e8e8e8, #000000);
+    background: -moz-linear-gradient(#ffffff, #e8e8e8);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#e8e8e8, #000000);
+    background: linear-gradient(#ffffff, #e8e8e8);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e8e8e8, endColorstr=#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#e8e8e8);
     /*For IE7-8-9*/
     white-space: nowrap;
     overflow: hidden;
@@ -1471,20 +1375,20 @@
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle:hover,
   .AXanchorSegmentBox .AXanchorSegmentHandle:focus {
-    background: #000000;
-    background: -webkit-linear-gradient(#e5eff2, #000000);
+    background: #e5eff2;
+    background: -webkit-linear-gradient(#c7cfd4, #e5eff2);
     /* For Safari */
   
-    background: -o-linear-gradient(#e5eff2, #000000);
+    background: -o-linear-gradient(#c7cfd4, #e5eff2);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#e5eff2, #000000);
+    background: -moz-linear-gradient(#c7cfd4, #e5eff2);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#e5eff2, #000000);
+    background: linear-gradient(#c7cfd4, #e5eff2);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e5eff2, endColorstr=#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c7cfd4, endColorstr=#e5eff2);
     /*For IE7-8-9*/
     text-shadow: 0px 1px #fff;
   }
@@ -1498,20 +1402,20 @@
     border-bottom-right-radius: 4px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.on {
-    background: #000000;
-    background: -webkit-linear-gradient(#b9babc, #000000);
+    background: #b9babc;
+    background: -webkit-linear-gradient(#7c7e83, #b9babc);
     /* For Safari */
   
-    background: -o-linear-gradient(#b9babc, #000000);
+    background: -o-linear-gradient(#7c7e83, #b9babc);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#b9babc, #000000);
+    background: -moz-linear-gradient(#7c7e83, #b9babc);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#b9babc, #000000);
+    background: linear-gradient(#7c7e83, #b9babc);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#b9babc, endColorstr=#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#7c7e83, endColorstr=#b9babc);
     /*For IE7-8-9*/
     color: #fff;
     text-shadow: 0px 1px #4e585f;
@@ -1726,6 +1630,34 @@
   .AXInput:focus {
     border: 1px solid #949fa8;
     box-shadow: inset 0px 0px 3px #949fa8;
+    outline: none;
+  }
+  .AXInput[disabled] {
+    background: url('images/defaultRegular.png') repeat-x;
+    background-position: 0px -78px;
+    color: #fff;
+    text-shadow: 0px -1px #b7b7b7;
+    box-shadow: inset 0px 1px 2px #b1b1b1;
+  }
+  .AXInput[readonly] {
+    background: #eee;
+    color: #676767;
+    text-shadow: 0px 1px #fff;
+    box-shadow: inset 0px 1px 2px #b1b1b1;
+  }
+  .AXInput::-webkit-input-placeholder {
+    color: #bbb;
+  }
+  .AXInput::-moz-placeholder {
+    color: #bbb;
+  }
+  .AXInput:-ms-input-placeholder {
+    color: #bbb;
+  }
+  .AXInput.Round {
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
   }
   .AXInputSmall {
     border: 1px solid #b6b6b6;
@@ -1745,25 +1677,7 @@
   .AXInputSmall:focus {
     border: 1px solid #949fa8;
     box-shadow: inset 0px 0px 3px #949fa8;
-  }
-  .AXInput.Round {
-    border-radius: 15px;
-  }
-  .AXInputSmall.Round {
-    border-radius: 15px;
-  }
-  .AXInput[readonly] {
-    background: #eee;
-    color: #676767;
-    text-shadow: 0px 1px #fff;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
-  }
-  .AXInput[disabled] {
-    background: url('images/defaultRegular.png') repeat-x;
-    background-position: 0px -78px;
-    color: #fff;
-    text-shadow: 0px -1px #b7b7b7;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
+    outline: none;
   }
   .AXInputSmall[disabled] {
     background: url('images/defaultSmall.png') repeat-x;
@@ -1778,15 +1692,6 @@
     text-shadow: 0px 1px #fff;
     box-shadow: inset 0px 1px 2px #b1b1b1;
   }
-  .AXInput::-webkit-input-placeholder {
-    color: #bbb;
-  }
-  .AXInput::-moz-placeholder {
-    color: #bbb;
-  }
-  .AXInput:-ms-input-placeholder {
-    color: #bbb;
-  }
   .AXInputSmall::-webkit-input-placeholder {
     color: #bbb;
   }
@@ -1795,6 +1700,11 @@
   }
   .AXInputSmall:-ms-input-placeholder {
     color: #bbb;
+  }
+  .AXInputSmall.Round {
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
   }
   .AXCheckbox {
     position: relative;
@@ -1822,78 +1732,25 @@
     display: inline-block;
     vertical-align: top;
   }
-  .AXInputLabel SPAN {
+  .AXInputLabel span {
     line-height: 24px;
     font-size: 12px;
     color: #717b85;
     padding: 0px 3px;
   }
-  .AXInputLabel SPAN.block {
+  .AXInputLabel span.bloack {
     display: block;
   }
   .AXInputLabel.fullWidth {
     display: block;
     padding-right: 8px;
   }
-  .AXInputLabel.fullWidth SPAN {
+  .AXInputLabel.fullWidth span {
     display: block;
   }
   .AXInputLabel.fullWidth input[type=text],
   .AXInputLabel.fullWidth input[type=password] {
     width: 100%;
-  }
-  .AXanchor {
-    position: absolute;
-    height: 0px;
-    left: 0px;
-    top: 0px;
-    display: none;
-    vertical-align: middle;
-  }
-  .AXInput {
-    border: 1px solid #b6b6b6;
-    background: #fff;
-    box-shadow: inset 0px 1px 2px #dddddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px 5px 5px 5px;
-    -moz-border-radius: 4px 5px 5px 5px;
-    border-radius: 4px 5px 5px 5px;
-    font-size: 12px;
-    line-height: 15px;
-    height: 15px;
-    padding: 4px;
-    margin: 0px auto;
-  }
-  .AXInput:focus {
-    outline: none;
-  }
-  .AXInput:focus {
-    border: 1px solid #949fa8;
-    box-shadow: inset 0px 0px 3px #949fa8;
-  }
-  .AXInputSmall {
-    border: 1px solid #b6b6b6;
-    box-shadow: inset 0px 1px 1px #dddddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px 5px 5px 5px;
-    -moz-border-radius: 4px 5px 5px 5px;
-    border-radius: 4px 5px 5px 5px;
-    font-size: 12px;
-    line-height: 12px;
-    height: 12px;
-    padding: 3px 3px;
-    margin: 0px auto;
-  }
-  .AXInputSmall:focus {
-    outline: none;
-  }
-  .AXInputSmall:focus {
-    border: 1px solid #949fa8;
-    box-shadow: inset 0px 0px 3px #949fa8;
   }
   .AXInputGroup {
     position: relative;
@@ -1914,6 +1771,10 @@
     *display: inline;
     *margin-right: 3px;
   }
+  .AXInputGroup.inline input[type=text],
+  .AXInputGroup.inline input[type=password] {
+    *width: auto;
+  }
   .AXInputGroup input[type=text],
   .AXInputGroup input[type=password] {
     border: 0px none;
@@ -1924,10 +1785,6 @@
     line-height: 15px;
     height: 15px;
     background: none;
-  }
-  .AXInputGroup.inline input[type=text],
-  .AXInputGroup.inline input[type=password] {
-    *width: auto;
   }
   .AXanchorPlaceHolder {
     position: absolute;
@@ -1962,7 +1819,7 @@
     border-bottom-right-radius: 4px;
     overflow: hidden;
   }
-  .AXanchorIncrease {
+  .AXanchorNumberContainer .AXanchorIncrease {
     position: absolute;
     display: block;
     background: url('images/upArrow.png') center center no-repeat;
@@ -1973,10 +1830,10 @@
     text-indent: -2000px;
     border-bottom: 1px solid #b9babc;
   }
-  .AXanchorIncrease:active {
+  .AXanchorNumberContainer .AXanchorIncrease:active {
     background-image: url('images/upArrowOn.png');
   }
-  .AXanchorDecrease {
+  .AXanchorNumberContainer .AXanchorDecrease {
     position: absolute;
     display: block;
     background: url('images/downArrow.png') center center no-repeat;
@@ -1987,7 +1844,7 @@
     text-indent: -2000px;
     border-top: 1px solid #b9babc;
   }
-  .AXanchorDecrease:active {
+  .AXanchorNumberContainer .AXanchorDecrease:active {
     background-image: url('images/downArrowOn.png');
   }
   .AXanchorSelectorHandleContainer {
@@ -1999,7 +1856,7 @@
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
-  .AXanchorSelectorHandle {
+  .AXanchorSelectorHandleContainer .AXanchorSelectorHandle {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -2007,7 +1864,7 @@
     overflow: hidden;
     text-indent: -2000px;
   }
-  .AXanchorSelectorHandle.on {
+  .AXanchorSelectorHandleContainer .AXanchorSelectorHandle.on {
     background: url('images/slideUpArrow.png') center center no-repeat;
   }
   .AXanchorSelectorFinderContainer {
@@ -2017,7 +1874,7 @@
     background: url('images/defaultRegular.png') repeat-x;
     border: 1px solid #b9babc;
   }
-  .AXanchorSelectorFinder {
+  .AXanchorSelectorFinderContainer .AXanchorSelectorFinder {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -2025,7 +1882,7 @@
     overflow: hidden;
     text-indent: -2000px;
   }
-  .AXanchorSelectorFinder.on {
+  .AXanchorSelectorFinderContainer .AXanchorSelectorFinder.on {
     background: url('images/selectorSearch.png') center center no-repeat;
   }
   .AXanchorSelectorExpandBox {
@@ -2202,7 +2059,6 @@
     left: 0px;
     top: 0px;
   }
-  /** AXanchorSwitch **/
   .AXanchorSwitchBox {
     position: absolute;
     left: 0px;
@@ -2290,20 +2146,20 @@
     color: #6e7a86;
     text-align: center;
     text-decoration: none;
-    background: #000000;
-    background: -webkit-linear-gradient(#e8e8e8, #000000);
+    background: #e8e8e8;
+    background: -webkit-linear-gradient(#ffffff, #e8e8e8);
     /* For Safari */
   
-    background: -o-linear-gradient(#e8e8e8, #000000);
+    background: -o-linear-gradient(#ffffff, #e8e8e8);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#e8e8e8, #000000);
+    background: -moz-linear-gradient(#ffffff, #e8e8e8);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#e8e8e8, #000000);
+    background: linear-gradient(#ffffff, #e8e8e8);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e8e8e8, endColorstr=#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#e8e8e8);
     /*For IE7-8-9*/
     white-space: nowrap;
     overflow: hidden;
@@ -2311,20 +2167,20 @@
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle:hover,
   .AXanchorSegmentBox .AXanchorSegmentHandle:focus {
-    background: #000000;
-    background: -webkit-linear-gradient(#e5eff2, #000000);
+    background: #e5eff2;
+    background: -webkit-linear-gradient(#c7cfd4, #e5eff2);
     /* For Safari */
   
-    background: -o-linear-gradient(#e5eff2, #000000);
+    background: -o-linear-gradient(#c7cfd4, #e5eff2);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#e5eff2, #000000);
+    background: -moz-linear-gradient(#c7cfd4, #e5eff2);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#e5eff2, #000000);
+    background: linear-gradient(#c7cfd4, #e5eff2);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e5eff2, endColorstr=#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c7cfd4, endColorstr=#e5eff2);
     /*For IE7-8-9*/
     text-shadow: 0px 1px #fff;
   }
@@ -2338,20 +2194,20 @@
     border-bottom-right-radius: 4px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.on {
-    background: #000000;
-    background: -webkit-linear-gradient(#b9babc, #000000);
+    background: #b9babc;
+    background: -webkit-linear-gradient(#7c7e83, #b9babc);
     /* For Safari */
   
-    background: -o-linear-gradient(#b9babc, #000000);
+    background: -o-linear-gradient(#7c7e83, #b9babc);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#b9babc, #000000);
+    background: -moz-linear-gradient(#7c7e83, #b9babc);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#b9babc, #000000);
+    background: linear-gradient(#7c7e83, #b9babc);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#b9babc, endColorstr=#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#7c7e83, endColorstr=#b9babc);
     /*For IE7-8-9*/
     color: #fff;
     text-shadow: 0px 1px #4e585f;
@@ -2566,6 +2422,34 @@
   .AXInput:focus {
     border: 1px solid #949fa8;
     box-shadow: inset 0px 0px 3px #949fa8;
+    outline: none;
+  }
+  .AXInput[disabled] {
+    background: url('images/defaultRegular.png') repeat-x;
+    background-position: 0px -78px;
+    color: #fff;
+    text-shadow: 0px -1px #b7b7b7;
+    box-shadow: inset 0px 1px 2px #b1b1b1;
+  }
+  .AXInput[readonly] {
+    background: #eee;
+    color: #676767;
+    text-shadow: 0px 1px #fff;
+    box-shadow: inset 0px 1px 2px #b1b1b1;
+  }
+  .AXInput::-webkit-input-placeholder {
+    color: #bbb;
+  }
+  .AXInput::-moz-placeholder {
+    color: #bbb;
+  }
+  .AXInput:-ms-input-placeholder {
+    color: #bbb;
+  }
+  .AXInput.Round {
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
   }
   .AXInputSmall {
     border: 1px solid #b6b6b6;
@@ -2585,25 +2469,7 @@
   .AXInputSmall:focus {
     border: 1px solid #949fa8;
     box-shadow: inset 0px 0px 3px #949fa8;
-  }
-  .AXInput.Round {
-    border-radius: 15px;
-  }
-  .AXInputSmall.Round {
-    border-radius: 15px;
-  }
-  .AXInput[readonly] {
-    background: #eee;
-    color: #676767;
-    text-shadow: 0px 1px #fff;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
-  }
-  .AXInput[disabled] {
-    background: url('images/defaultRegular.png') repeat-x;
-    background-position: 0px -78px;
-    color: #fff;
-    text-shadow: 0px -1px #b7b7b7;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
+    outline: none;
   }
   .AXInputSmall[disabled] {
     background: url('images/defaultSmall.png') repeat-x;
@@ -2618,15 +2484,6 @@
     text-shadow: 0px 1px #fff;
     box-shadow: inset 0px 1px 2px #b1b1b1;
   }
-  .AXInput::-webkit-input-placeholder {
-    color: #bbb;
-  }
-  .AXInput::-moz-placeholder {
-    color: #bbb;
-  }
-  .AXInput:-ms-input-placeholder {
-    color: #bbb;
-  }
   .AXInputSmall::-webkit-input-placeholder {
     color: #bbb;
   }
@@ -2635,6 +2492,11 @@
   }
   .AXInputSmall:-ms-input-placeholder {
     color: #bbb;
+  }
+  .AXInputSmall.Round {
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
   }
   .AXCheckbox {
     position: relative;
@@ -2662,78 +2524,25 @@
     display: inline-block;
     vertical-align: top;
   }
-  .AXInputLabel SPAN {
+  .AXInputLabel span {
     line-height: 24px;
     font-size: 12px;
     color: #717b85;
     padding: 0px 3px;
   }
-  .AXInputLabel SPAN.block {
+  .AXInputLabel span.bloack {
     display: block;
   }
   .AXInputLabel.fullWidth {
     display: block;
     padding-right: 8px;
   }
-  .AXInputLabel.fullWidth SPAN {
+  .AXInputLabel.fullWidth span {
     display: block;
   }
   .AXInputLabel.fullWidth input[type=text],
   .AXInputLabel.fullWidth input[type=password] {
     width: 100%;
-  }
-  .AXanchor {
-    position: absolute;
-    height: 0px;
-    left: 0px;
-    top: 0px;
-    display: none;
-    vertical-align: middle;
-  }
-  .AXInput {
-    border: 1px solid #b6b6b6;
-    background: #fff;
-    box-shadow: inset 0px 1px 2px #dddddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px 5px 5px 5px;
-    -moz-border-radius: 4px 5px 5px 5px;
-    border-radius: 4px 5px 5px 5px;
-    font-size: 12px;
-    line-height: 15px;
-    height: 15px;
-    padding: 4px;
-    margin: 0px auto;
-  }
-  .AXInput:focus {
-    outline: none;
-  }
-  .AXInput:focus {
-    border: 1px solid #949fa8;
-    box-shadow: inset 0px 0px 3px #949fa8;
-  }
-  .AXInputSmall {
-    border: 1px solid #b6b6b6;
-    box-shadow: inset 0px 1px 1px #dddddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px 5px 5px 5px;
-    -moz-border-radius: 4px 5px 5px 5px;
-    border-radius: 4px 5px 5px 5px;
-    font-size: 12px;
-    line-height: 12px;
-    height: 12px;
-    padding: 3px 3px;
-    margin: 0px auto;
-  }
-  .AXInputSmall:focus {
-    outline: none;
-  }
-  .AXInputSmall:focus {
-    border: 1px solid #949fa8;
-    box-shadow: inset 0px 0px 3px #949fa8;
   }
   .AXInputGroup {
     position: relative;
@@ -2754,6 +2563,10 @@
     *display: inline;
     *margin-right: 3px;
   }
+  .AXInputGroup.inline input[type=text],
+  .AXInputGroup.inline input[type=password] {
+    *width: auto;
+  }
   .AXInputGroup input[type=text],
   .AXInputGroup input[type=password] {
     border: 0px none;
@@ -2764,10 +2577,6 @@
     line-height: 15px;
     height: 15px;
     background: none;
-  }
-  .AXInputGroup.inline input[type=text],
-  .AXInputGroup.inline input[type=password] {
-    *width: auto;
   }
   .AXanchorPlaceHolder {
     position: absolute;
@@ -2802,7 +2611,7 @@
     border-bottom-right-radius: 4px;
     overflow: hidden;
   }
-  .AXanchorIncrease {
+  .AXanchorNumberContainer .AXanchorIncrease {
     position: absolute;
     display: block;
     background: url('images/upArrow.png') center center no-repeat;
@@ -2813,10 +2622,10 @@
     text-indent: -2000px;
     border-bottom: 1px solid #b9babc;
   }
-  .AXanchorIncrease:active {
+  .AXanchorNumberContainer .AXanchorIncrease:active {
     background-image: url('images/upArrowOn.png');
   }
-  .AXanchorDecrease {
+  .AXanchorNumberContainer .AXanchorDecrease {
     position: absolute;
     display: block;
     background: url('images/downArrow.png') center center no-repeat;
@@ -2827,7 +2636,7 @@
     text-indent: -2000px;
     border-top: 1px solid #b9babc;
   }
-  .AXanchorDecrease:active {
+  .AXanchorNumberContainer .AXanchorDecrease:active {
     background-image: url('images/downArrowOn.png');
   }
   .AXanchorSelectorHandleContainer {
@@ -2839,7 +2648,7 @@
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
-  .AXanchorSelectorHandle {
+  .AXanchorSelectorHandleContainer .AXanchorSelectorHandle {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -2847,7 +2656,7 @@
     overflow: hidden;
     text-indent: -2000px;
   }
-  .AXanchorSelectorHandle.on {
+  .AXanchorSelectorHandleContainer .AXanchorSelectorHandle.on {
     background: url('images/slideUpArrow.png') center center no-repeat;
   }
   .AXanchorSelectorFinderContainer {
@@ -2857,7 +2666,7 @@
     background: url('images/defaultRegular.png') repeat-x;
     border: 1px solid #b9babc;
   }
-  .AXanchorSelectorFinder {
+  .AXanchorSelectorFinderContainer .AXanchorSelectorFinder {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -2865,7 +2674,7 @@
     overflow: hidden;
     text-indent: -2000px;
   }
-  .AXanchorSelectorFinder.on {
+  .AXanchorSelectorFinderContainer .AXanchorSelectorFinder.on {
     background: url('images/selectorSearch.png') center center no-repeat;
   }
   .AXanchorSelectorExpandBox {
@@ -3042,7 +2851,6 @@
     left: 0px;
     top: 0px;
   }
-  /** AXanchorSwitch **/
   .AXanchorSwitchBox {
     position: absolute;
     left: 0px;
@@ -3130,20 +2938,20 @@
     color: #6e7a86;
     text-align: center;
     text-decoration: none;
-    background: #000000;
-    background: -webkit-linear-gradient(#e8e8e8, #000000);
+    background: #e8e8e8;
+    background: -webkit-linear-gradient(#ffffff, #e8e8e8);
     /* For Safari */
   
-    background: -o-linear-gradient(#e8e8e8, #000000);
+    background: -o-linear-gradient(#ffffff, #e8e8e8);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#e8e8e8, #000000);
+    background: -moz-linear-gradient(#ffffff, #e8e8e8);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#e8e8e8, #000000);
+    background: linear-gradient(#ffffff, #e8e8e8);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e8e8e8, endColorstr=#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#e8e8e8);
     /*For IE7-8-9*/
     white-space: nowrap;
     overflow: hidden;
@@ -3151,20 +2959,20 @@
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle:hover,
   .AXanchorSegmentBox .AXanchorSegmentHandle:focus {
-    background: #000000;
-    background: -webkit-linear-gradient(#e5eff2, #000000);
+    background: #e5eff2;
+    background: -webkit-linear-gradient(#c7cfd4, #e5eff2);
     /* For Safari */
   
-    background: -o-linear-gradient(#e5eff2, #000000);
+    background: -o-linear-gradient(#c7cfd4, #e5eff2);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#e5eff2, #000000);
+    background: -moz-linear-gradient(#c7cfd4, #e5eff2);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#e5eff2, #000000);
+    background: linear-gradient(#c7cfd4, #e5eff2);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e5eff2, endColorstr=#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c7cfd4, endColorstr=#e5eff2);
     /*For IE7-8-9*/
     text-shadow: 0px 1px #fff;
   }
@@ -3178,20 +2986,20 @@
     border-bottom-right-radius: 4px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.on {
-    background: #000000;
-    background: -webkit-linear-gradient(#b9babc, #000000);
+    background: #b9babc;
+    background: -webkit-linear-gradient(#7c7e83, #b9babc);
     /* For Safari */
   
-    background: -o-linear-gradient(#b9babc, #000000);
+    background: -o-linear-gradient(#7c7e83, #b9babc);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#b9babc, #000000);
+    background: -moz-linear-gradient(#7c7e83, #b9babc);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#b9babc, #000000);
+    background: linear-gradient(#7c7e83, #b9babc);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#b9babc, endColorstr=#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#7c7e83, endColorstr=#b9babc);
     /*For IE7-8-9*/
     color: #fff;
     text-shadow: 0px 1px #4e585f;

@@ -1,86 +1,156 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>AXSelect</title>
-    
-    <meta property="og:image" content="/samples/_img/axisj_sns.png" />  
-    <meta property="og:site_name" content="Axis of Javascript - axisj.com" /> 
-    <meta property="og:description" id="meta_description" content="Javascript UI Library based on JQuery" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1" />
+	<title>AXISJ</title>
+	<!-- Libs -->
+	<script type="text/javascript" src="../../jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="../../lib/AXJ.js"></script>
+	<script type="text/javascript" src="../../lib/AXTab.js"></script>	
+	<script type="text/javascript" src="../../lib/AXInput.js"></script>		
+	<script type="text/javascript" src="../../lib/AXSelect.js"></script>			
+	<!-- Self -->
+	<script src="pageTab.js"></script>			
+	<!-- Theme -->
+	<script src="../../ui/arongi/page.js"></script>		
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/page.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXJ.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXTabs.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXButton.css">			
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXInput.css">	
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXSelect.css">		
 
-	<!-- css block -->
-	<link rel="stylesheet" type="text/css" href="../_css/default_common.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXJ.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXTabs.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXInput.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXButton.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXSelect.css" />
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/import_desktop.css" />
-	<![endif]-->
-	<style type="text/css">
-	
-	H2, H3{font-family:consolas;}
-	</style>
-	<!-- css block -->
-	
-	<!-- js block -->
-	<script type="text/javascript" src="../../_AXJ/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXJ.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXSelect.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXCodeView.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXTab.js"></script>
-	<script type="text/javascript" src="pageTab.js"></script>
-	
-	<script type="text/javascript">
+	<script>
+	/**
+	 * Require Files for AXISJ UI Component...
+	 * Based		: jQuery
+	 * Javascript 	: AXJ.js, AXInput.js, AXSelect.js
+	 * CSS			: AXJ.css, AXInput.css, AXSelect.css
+	 */	
 	var pageID = "AXSelectControl";
 	var fnObj = {
-		pageStart: function () {
+		pageStart: function(){
+			//Require page.js before this fn...
+			pageObj.host = "../../";
+			pageObj.incHeader();
+			pageObj.incFooter();		
 			
-			AXCode.bind(); // 소스보기
-			
-			$("#AXSelect1").bindSelect({
+			jQuery("#AXSelect1").bindSelect({
 				maxHeight: 150,
 				onChange: function(){
 				
 				}
 			});
-			
 		}
 	};
-	$(document.body).ready(function(){
-		setTimeout(fnObj.pageStart, 1);
-	});
+	jQuery(document).ready(fnObj.pageStart);
 	</script>
-	<!-- js block -->
+
+	<style type="text/css">
 	
+	</style>
 </head>
+	
 <body>
-	<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
-	<div class="AXdemoPageContent">
 
+<div id="AXPage">
+	<!-- s.AXPageHead -------------------------------------------------- -->
+	<header id="AXPageHead">
+		<div class="ax-wrap">
+			<div class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
 
-		<h2>AXSelect bind Select</h2>
+						<!-- navMenu < -->
+						<nav class="navMenu"></nav>
+						<!-- navMenu > -->
 
-		<h3>default</h3>
-		<select name="" class="AXSelect" id="AXSelect1">
-			<option value="">-- 선택하세요 --</option>
-			<option value="1">ABCDE #1</option>
-			<option value="2" selected="selected">ABCDE #2</option>
-			<option value="3">ABCDE #3</option>
-			<option value="4">ABCDE #4</option>
-			<option value="5">ABCDE #5</option>
-			<option value="6">ABCDE #6</option>
-			<option value="7">ABCDE #7</option>
-			<option value="8">ABCDE #8</option>
-		</select>
-		
-		<div class="Hspace10"></div>
-		<input type="button" value="bindSelectSetValue(1)" class="AXButton" onclick="$('#AXSelect1').bindSelectSetValue('1');" />
-		<input type="button" value="bindSelectSetValue(2)" class="AXButton" onclick="$('#AXSelect1').bindSelectSetValue('2');" />
-		<input type="button" value="bindSelectSetValue()" class="AXButton" onclick="$('#AXSelect1').bindSelectSetValue('');" />
+					</div>	
+				</div>	
+			</div>	
+			<div class="ax-layer-2">
+				<div class="ax-col-12">
+					<div class="ax-unit">
 
-	</div>
+						<!-- navMenu < -->
+						<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
+						<!-- navMenu > -->
+
+					</div>	
+				</div>	
+			</div>	
+
+		</div>
+	</header>
+	<!-- e.AXPageHead -------------------------------------------------- -->
+	<div class="ax-clear"></div>						
+	<!-- s.AXPageBody -------------------------------------------------- -->
+	<article id="AXPageBody" class="SampleAXSelect">
+
+		<div class="ax-wrap">
+			<div class="title"><h1>AXSelect</h1></div>
+			<!-- s.axlayer 1 -->		
+			<section class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+						<h2>AXSelect bind Select</h2>
+						<h3>Default</h3>
+
+						<select name="" class="AXSelect" id="AXSelect1">
+							<option value="">-- 선택하세요 --</option>
+							<option value="1">ABCDE #1</option>
+							<option value="2" selected="selected">ABCDE #2</option>
+							<option value="3">ABCDE #3</option>
+							<option value="4">ABCDE #4</option>
+							<option value="5">ABCDE #5</option>
+							<option value="6">ABCDE #6</option>
+							<option value="7">ABCDE #7</option>
+							<option value="8">ABCDE #8</option>
+						</select>
+						
+						<div class="H10"></div>
+						
+						<input type="button" value="bindSelectSetValue(1)" class="AXButton" onclick="jQuery('#AXSelect1').bindSelectSetValue('1');" />
+						<input type="button" value="bindSelectSetValue(2)" class="AXButton" onclick="jQuery('#AXSelect1').bindSelectSetValue('2');" />
+						<input type="button" value="bindSelectSetValue()" class="AXButton" onclick="jQuery('#AXSelect1').bindSelectSetValue('');" />
+						
+						<div class="H30"></div>
+						
+					</div>	
+				</div>
+
+				<div class="ax-clear"></div>
+			</section>
+			<!-- e.axlayer 1 -->
+			<div class="ax-clear"></div>							
+	
+		</div>
+		<div class="H20"></div>		
+	</article>
+	<!-- e.AXPageBody -------------------------------------------------- -->
+
+	<div class="ax-clear"></div>
+	
+	<!-- s.AXPageFoot -------------------------------------------------- -->
+	<footer id="AXPageFoot">
+		<div class="ax-wrap">
+			<div class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+						
+						<!-- navTheme < -->
+						<nav class="navTheme"></nav>
+						<!-- navTheme > -->
+						
+					</div>	
+				</div>
+			</div>			
+		</div>
+	</footer>
+	<!-- e.AXPageFoot -------------------------------------------------- -->
+</div>
 
 </body>
-</html>
+</html>		

@@ -126,6 +126,45 @@
 .W200 {
   width: 200px;
 }
+.AXUserSelectNone {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -o-user-select: none;
+}
+.AXMobileConsole {
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 10000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  color: #FF00FF;
+  text-shadow: 0px 1px 0px #fff;
+}
+.AXMask {
+  z-index: 5000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  -moz-opacity: 0.2;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.AXLoading {
+  min-height: 50px;
+  background: url('images/AXUIProgressAnimate02_white.gif') no-repeat center center;
+}
+.AXLoadingSmall {
+  min-height: 25px;
+  background: url('images/AXUIProgressAnimate01_white.gif') no-repeat center center;
+}
 .AXContextMenu {
   z-index: 4999;
   position: absolute;
@@ -232,14 +271,7 @@
 .AXContextMenu .contextMenuItem:hover {
   background-color: #eee;
 }
-.AXNotificationTray {
-  position: fixed;
-  right: 10px;
-  top: 0px;
-  z-index: 5001;
-  width: 322px;
-}
-.AXNotificationTray .AXNotification {
+.AXNotification {
   width: 300px;
   border: 1px solid #c5c5c5;
   background: #ebebeb;
@@ -250,7 +282,7 @@
   color: #525252;
   -moz-opacity: 0.8;
   opacity: 0.8;
-  filter: alpha(opacity=80);
+  filter: alpha(opacity=20);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -258,23 +290,23 @@
   -moz-border-radius: 4px 5px 5px 5px;
   border-radius: 4px 5px 5px 5px;
 }
-.AXNotificationTray .AXNotification.Warning .AXNotificationIcon {
+.AXNotification.Warning .AXNotificationIcon {
   width: 42px;
   height: 42px;
   background: url('images/notificationWarning.png') no-repeat center center !important;
 }
-.AXNotificationTray .AXNotification.Warning .AXNotificationBody B {
+.AXNotification.Warning .AXNotificationBody B {
   color: #bf601b;
 }
-.AXNotificationTray .AXNotification.Caution .AXNotificationIcon {
+.AXNotification.Caution .AXNotificationIcon {
   width: 42px;
   height: 42px;
   background: url('images/notificationCaution.png') no-repeat center center !important;
 }
-.AXNotificationTray .AXNotification.Caution .AXNotificationBody B {
+.AXNotification.Caution .AXNotificationBody B {
   color: #7e302c;
 }
-.AXNotificationTray .AXNotification .AXNotificationHead {
+.AXNotification .AXNotificationHead {
   font-weight: bold;
   color: #717b85;
   text-shadow: 0px 1px #fff;
@@ -284,37 +316,44 @@
   background: url('images/dialogTitle.png') repeat-x;
   text-align: center;
 }
-.AXNotificationTray .AXNotification .AXNotificationTable {
+.AXNotification .AXNotificationTable {
   width: 100%;
   border: 0px none !important;
   background: #ebebeb;
 }
-.AXNotificationTray .AXNotification .AXNotificationTable td,
-.AXNotificationTray .AXNotification .AXNotificationTable th {
+.AXNotification .AXNotificationTable td,
+.AXNotification .AXNotificationTable th {
   border: 0px none !important;
   background: #ebebeb;
 }
-.AXNotificationTray .AXNotification .AXNotificationIcon {
+.AXNotification .AXNotificationIcon {
   width: 42px;
   height: 42px;
   background: url('images/notificationComplete.png') no-repeat center 5px !important;
 }
-.AXNotificationTray .AXNotification .AXNotificationBody {
+.AXNotification .AXNotificationBody {
   font-size: 12px;
   color: #525252;
   padding-right: 5px;
   line-height: 1.6em;
 }
-.AXNotificationTray .AXNotification .AXNotificationBody B {
+.AXNotification .AXNotificationBody B {
   color: #477e47;
 }
-.AXNotificationTray .AXNotification .AXNotificationButton {
+.AXNotification .AXNotificationButton {
   width: 45px;
 }
-.AXNotificationTray .AXNotification .AXNotificationButtons {
+.AXNotification .AXNotificationButtons {
   padding: 10px 0px;
   text-align: center;
   background: #ebebeb;
+}
+.AXNotificationTray {
+  position: fixed;
+  right: 10px;
+  top: 0px;
+  z-index: 5001;
+  width: 322px;
 }
 .AXNotificationTrayDialog {
   position: fixed;
@@ -335,7 +374,7 @@
   overflow: hidden;
   -moz-opacity: 1;
   opacity: 1;
-  filter: alpha(opacity=80);
+  filter: alpha(opacity=20);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -394,7 +433,7 @@
   text-align: center;
   border-right: 1px solid #b9babc;
   border-bottom: 1px solid #b9babc;
-  background: url(img/calendarBgs.png) repeat-x 0px -26px;
+  background: url('images/calendarBgs.png') repeat-x 0px -26px;
 }
 .AXCalendar table.calendarPage tbody td.bodyCol_6 {
   border-right: 0px none;
@@ -403,7 +442,7 @@
   border-bottom: 0px none;
 }
 .AXCalendar table.calendarPage tbody td.setDate {
-  background: url(img/calendarBgs.png) repeat-x 0px -76px;
+  background: url('images/calendarBgs.png') repeat-x 0px -76px;
 }
 .AXCalendar table.calendarPage tbody td A.calendarDate {
   display: block;
@@ -414,12 +453,6 @@
   font-size: 11px;
   font-family: Arial;
   font-weight: bold;
-}
-.AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate {
-  color: #c78b82;
-}
-.AXCalendar table.calendarPage tbody td A.calendarDate.notThisMonth {
-  color: #bfbfc1;
 }
 .AXCalendar table.calendarPage tbody td A.calendarDate:hover {
   background: #d8e1e7;
@@ -434,6 +467,12 @@
   color: #fff;
   box-shadow: inset 0px 0px 4px #3d84bc;
 }
+.AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate {
+  color: #c78b82;
+}
+.AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate.notThisMonth {
+  color: #bfbfc1;
+}
 .AXCalendar table.calendarPageMonth {
   table-layout: fixed;
   width: 100%;
@@ -445,12 +484,12 @@
   text-align: center;
   border-right: 1px solid #b9babc;
   border-bottom: 1px solid #b9babc;
-  background: url(img/calendarBgs.png) repeat-x 0px -101px;
+  background: url('images/calendarBgs.png') repeat-x 0px -101px;
 }
 .AXCalendar table.calendarPageMonth tbody td.bodyCol_2 {
   border-right: 0px none;
 }
-.AXCalendar table.calendarPageMonth tbody td.bodyRow_3 {
+.AXCalendar table.calendarPageMonth tbody td.bodyCol_3 {
   border-bottom: 0px none;
   padding-bottom: 1px;
 }
@@ -596,7 +635,7 @@
   background: #000;
   -moz-opacity: 0;
   opacity: 0;
-  filter: alpha(opacity=80);
+  filter: alpha(opacity=20);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -607,7 +646,7 @@
 .AXScroll .scrollTrack_hover {
   -moz-opacity: 0.2;
   opacity: 0.2;
-  filter: alpha(opacity=80);
+  filter: alpha(opacity=20);
 }
 .AXScroll .scrollBar {
   z-index: 100;
@@ -619,7 +658,7 @@
   background: #000;
   -moz-opacity: 0.1;
   opacity: 0.1;
-  filter: alpha(opacity=80);
+  filter: alpha(opacity=20);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -634,14 +673,13 @@
 .AXScroll .scrollBar_hover {
   -moz-opacity: 0.5;
   opacity: 0.5;
-  filter: alpha(opacity=80);
+  filter: alpha(opacity=20);
 }
 .AXScroll .scrollTarget {
   position: absolute;
   left: 0px;
   top: 0px;
 }
-/* xscroll */
 .AXScroll .xscrollTrack {
   z-index: 100;
   position: absolute;
@@ -652,7 +690,7 @@
   background: #000;
   -moz-opacity: 0.1;
   opacity: 0.1;
-  filter: alpha(opacity=80);
+  filter: alpha(opacity=20);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -663,7 +701,7 @@
 .AXScroll .xscrollTrack_hover {
   -moz-opacity: 0.2;
   opacity: 0.2;
-  filter: alpha(opacity=80);
+  filter: alpha(opacity=20);
 }
 .AXScroll .xscrollBar {
   z-index: 100;
@@ -675,7 +713,7 @@
   background: #000;
   -moz-opacity: 0.1;
   opacity: 0.1;
-  filter: alpha(opacity=80);
+  filter: alpha(opacity=20);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -690,7 +728,7 @@
 .AXScroll .xscrollBar_hover {
   -moz-opacity: 0.5;
   opacity: 0.5;
-  filter: alpha(opacity=80);
+  filter: alpha(opacity=20);
 }
 .AXScroll .xscrollTarget {
   position: absolute;
@@ -710,7 +748,7 @@
   background: #000;
   -moz-opacity: 0.1;
   opacity: 0.1;
-  filter: alpha(opacity=80);
+  filter: alpha(opacity=20);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -721,7 +759,7 @@
 .AXScrollSmall .scrollTrack_hover {
   -moz-opacity: 0.2;
   opacity: 0.2;
-  filter: alpha(opacity=80);
+  filter: alpha(opacity=20);
 }
 .AXScrollSmall .scrollBar {
   position: absolute;
@@ -732,7 +770,7 @@
   background: #000;
   -moz-opacity: 0.3;
   opacity: 0.3;
-  filter: alpha(opacity=80);
+  filter: alpha(opacity=20);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -747,7 +785,7 @@
 .AXScrollSmall .scrollBar_hover {
   -moz-opacity: 0.5;
   opacity: 0.5;
-  filter: alpha(opacity=80);
+  filter: alpha(opacity=20);
 }
 .AXScrollSmall .scrollTarget {
   position: absolute;
