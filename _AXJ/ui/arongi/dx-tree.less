@@ -1,0 +1,1018 @@
+@import "preset";
+@import "AXUtils";
+
+// AXTree ///////////////////////////////////////////////////
+.AXTree{
+	position:relative;
+	.AXTreeScrollBody{
+		position:relative;
+		border:1px solid #b1b1b1;
+		overflow:hidden;
+		//Tree Head...
+
+		.AXTreeColHead{
+			position:absolute;left:0px;top:0px;
+			width:100%;
+			background:url('images/dx-tree-head-bg.png') repeat-x 0px 0px #fff;
+			border-bottom:1px solid #b1b1b1;
+			.colHeadTable{
+				table-layout:fixed;
+				background:url('images/dx-tree-head-bg.png') repeat-x 0px 0px #fff;
+				tbody{
+					tr{
+						td{
+							padding:0px;
+							background:url('images/dx-tree-head-border.png') repeat-y 100% 0px;
+							vertical-align:bottom;
+							cursor:pointer;				
+							&:hover{
+								background-color:#e5e6eb;								
+							}
+							&.colHeadBottomBorder{
+								border-bottom:1px solid #b1b1b1;
+							}
+							&.sortDesc{
+								background-color:#e5e6eb;
+								.colHeadNode{
+									background:url('images/dx-sort-desc.png') no-repeat center 0px;
+								}
+							}
+							&.sortAsc{
+								background-color:#e5e6eb;
+								.colHeadNode{
+									background:url('images/dx-sort-asc.png') no-repeat center 0px;
+								}
+							}
+							.colHeadResizer{
+								position:absolute;right:0px;top:0px;
+								width:5px;height:20px;
+								cursor:w-resize;
+								&:active{
+									background:#ffbbcc;
+								}
+							}
+							.colHeadTool{
+								position:absolute;right:1px;top:0px;
+								display:block;
+								width:20px;height:30px;
+								cursor:pointer;
+								text-indent:-2000px;overflow:hidden;
+								&.readyTool{
+									background:url('images/dx-tree-head-tool.png') no-repeat -2px center;
+									&:hover{
+										background:url('images/dx-tree-head-tool-on.png') no-repeat -2px center;
+									}
+									
+								}								
+							}
+							.colHeadNode{
+								position:relative;
+								padding:0px;
+							}
+							.colHeadTdText{
+								position:relative;
+								line-height:20px;
+								padding:5px 8px;
+								color:#5e5e5e;text-shadow:0px 1px 0px #fff;
+								font-family:AppleGothic, 'Malgun Gothic', Gulim;
+								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+							}
+							.colHeadTdCheck{
+								height:20px;padding:7px 1px 3px 0px;
+								color:#5e5e5e;
+								input{vertical-align:middle;}
+							}
+							.colHeadTdHtml{
+								height:30px;padding:0px 1px 0px 0px;
+								color:#5e5e5e;
+							}					
+						}
+					} 
+				}
+			}
+		}
+		.fixedColHead{
+			position:absolute;left:0px;top:0px;
+			width:auto;
+			box-shadow:0px 0px 3px #ccc;
+		}
+		//Tree Body...
+		.AXTreeBody{
+			position:absolute;left:0px;top:0px;
+			width:100%;overflow:hidden;
+			.treeScrollContent{
+				overflow:visible;position:relative;
+			}
+			.treeFixedScrollContent{
+				overflow:visible;position:absolute;left:0px;top:0px;
+				box-shadow:0px 0px 3px #ccc;
+			}
+			.treeScrollTrackXY{
+				position:absolute;right:0px;bottom:0px;
+				width:9px;height:9px;border:1px solid #B6B6B6;
+				background:url('images/dx-diagonal-bg.png');
+				display:none;
+			}
+			.treeScrollTrackY{
+				position:absolute;right:0px;top:0px;
+				width:9px;height:9px;
+				border-left:1px solid #dbdbdb;border-right:1px solid #dbdbdb;
+				background:#f3f3f3;
+				display:none;
+				.treeScrollHandle{
+					position:absolute;left:-1px;top:0px;
+					width:9px;height:20px;
+					background:url('images/dx-diagonal-bg.png');
+					border:1px solid #B6B6B6;
+					cursor:pointer;
+					&:hover, &.hover{
+						background:#929292;border:1px solid #636363;
+					}
+				}
+			}
+			.treeScrollTrackX{
+				position:absolute;left:0px;bottom:0px;
+				width:9px;height:9px;
+				border-top:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb;
+				background:#f3f3f3;
+				display:none;
+				.treeScrollHandle{
+					position:absolute;left:0px;top:-1px;
+					width:20px;height:9px;
+					background:url('images/dx-diagonal-bg.png');
+					border:1px solid #B6B6B6;
+					cursor:pointer;
+					&:hover, &.hover{
+						background:#929292;border:1px solid #636363;
+					}
+				}
+			}
+			.treeBodyTable{
+				width:100%;table-layout:fixed;
+				tbody{
+					tr{
+						&.noListTr{
+							td{
+								vertical-align:middle;
+								height:100px;
+								border-bottom:1px solid #c8c8c8;
+							}
+						}
+						&.line0{
+							td{}
+						}
+						&.line1{
+							td{}
+						}
+						&.AXTreeSplit{
+							td{
+								vertical-align:middle;
+								height:1px;line-height:1px;background:#eee;
+								border-bottom:0px none;
+							}
+						}
+						&.red{
+							td{ background-color:#FFE8E8; }
+						}
+						&.green{
+							td{ background-color:#F7FDEA; }	
+						} 
+						&.blue{
+							td{ background-color:#EAF5FD; }	
+						} 
+						&.yellow{
+							td{ background-color:#FEFEE9; }	
+						} 
+						&.hover{ 
+							td{background-color:#e7f1fa;}
+						}
+						&.selected{
+							td{background-color:#D2D9DF;}
+						}
+						&.disable{ 
+							td{
+								background-color:#F5F5F1;
+								color:#ccc ! important;
+							}
+						}
+						&.copied{
+							td{
+								background-color:#FFFFBF;
+								border-top:1px dotted;
+								border-bottom:1px dotted;
+							}
+						}
+						td{
+							padding:0px;
+							background:url('images/dx-tree-body-border.png') repeat-y 100% 0px;
+							vertical-align:bottom;
+							border-bottom:1px solid #c8c8c8;
+							cursor:pointer;
+							&.selected{
+								background-color:#D2D9DF;box-shadow:inset 0px 0px 2px #000;
+							}
+							&.bodyBottomBorder{
+								border-bottom:1px dashed #c8c8c8;
+							}
+							&.bodyNullTd{
+								background-image:none;								
+							}
+							.bodyNode{
+								position:relative;
+								padding:0px;
+								.connectionLineContainer{
+									display:block;position:absolute;
+									top:0px;left:0px;	
+									.connectionLine{
+										display:block;position:absolute;
+										top:0px;left:0px;
+										width:20px;height:30px;
+										background:url('images/dx-tree-line.png') no-repeat center 0px;
+										&.isLastChild{
+											background:url('images/dx-tree-line-last.png') no-repeat center 0px;
+										}
+										&.isParentInside{
+											background:url('images/dx-tree-line-middle.png') no-repeat center 0px;
+										}
+										&.isParentOutside{
+											background:url('images/blank.png') no-repeat center 0px;
+										}
+									}
+								}
+								.bodyNodeIndent{
+									display:block;
+									position:absolute;
+									top:5px;
+									width:20px;height:20px;
+									background:url('images/dx-tree-arrows.png') no-repeat -65px center;
+									&.noChild{
+										background:url('images/dx-tree-line-no-child.png') no-repeat center center;
+										&:hover{
+											background:url('images/dx-tree-line-no-child.png') no-repeat center center;
+										}
+									}	
+									&:hover{
+										background:url('images/dx-tree-arrows.png') no-repeat -5px center;
+									}
+									&.expand{
+										background:url('images/dx-tree-arrows.png') no-repeat -95px center;
+										&:hover{
+											background:url('images/dx-tree-arrows.png') no-repeat -35px center;
+										}
+										&.loading{
+											background:url('images/dx-progresss-ani-white-1.gif') no-repeat 2px center;
+										}
+										&.noChild{
+											background:url('images/dx-tree-line-no-child.png') no-repeat center center;											
+											&:hover{background:url('images/dx-tree-line-no-child.png') no-repeat center center;}
+										}
+									}
+								}
+								.bodyNodeIcon{
+									display:block;
+									position:absolute;
+									top:5px;
+									width:20px;height:20px;
+									&.folder	{background:url('images/dx-tree-icons.png') no-repeat -5px center;}
+									&.AXfolder	{background:url('images/dx-tree-icons.png') no-repeat -5px center;}
+									&.movie		{background:url('images/dx-tree-icons.png') no-repeat -65px center;}
+									&.img		{background:url('images/dx-tree-icons.png') no-repeat -95px center;}
+									&.zip		{background:url('images/dx-tree-icons.png') no-repeat -125px center;}
+									&.file		{background:url('images/dx-tree-icons.png') no-repeat -155px center;}
+									&.fileTxt	{background:url('images/dx-tree-icons.png') no-repeat -185px center;}
+									&.fileTag	{background:url('images/dx-tree-icons.png') no-repeat -215px center;}
+									&.company	{background:url('images/dx-tree-icons2.png') no-repeat -5px center;}
+									&.computer	{background:url('images/dx-tree-icons2.png') no-repeat -35px center;}
+									&.desktop	{background:url('images/dx-tree-icons2.png') no-repeat -65px center;}
+									&.tree		{background:url('images/dx-tree-icons2.png') no-repeat -95px center;}									
+								}
+							}
+							.bodyTdText{
+								position:relative;
+								line-height:20px;
+								padding:5px 8px;
+								color:#3b3b3b;text-shadow:0px 1px 0px #fff;
+								font-family:AppleGothic, 'Malgun Gothic',Gulim;
+								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+							}
+							.bodyTdHtml{
+								padding:0px 1px 0px 0px;	
+							}
+							.bodyTdCheckBox{
+								line-height:20px;height:20px;
+								padding:5px 1px 5px 0px;	
+							}
+						}						
+					}
+				}
+				thead, tfoot{
+					tr{
+						td{
+							padding:0px;
+							background:url('images/dx-tree-body-border.png') repeat-y 100% 0px;
+							vertical-align:bottom;
+							border-bottom:1px solid #c8c8c8;
+							background-color:#FFFFEC;
+							&.bodyBottomBorder{
+								border-bottom:1px dashed #c8c8c8;
+							}							
+							&.bodyNullTd{
+								background-image:none;								
+							}
+							.bodyNode{
+								position:relative;
+								padding:0px;
+							}
+							.bodyTdText{
+								position:relative;
+								line-height:20px;
+								padding:5px 8px;
+								color:#3b3b3b;text-shadow:0px 1px 0px #fff;
+								font-family:AppleGothic, 'Malgun Gothic',Gulim;
+								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;								
+							}
+							.bodyTdHtml{
+								padding:0px 1px 0px 0px;	
+							}
+							.bodyTdCheckBox{
+								line-height:20px;height:20px;
+								padding:5px 1px 5px 0px;	
+							}
+						}
+					}
+				} 
+			}
+			.treeFixedBodyTable{
+				table-layout:fixed;
+				tbody{
+					tr{
+						&.noListTr{
+							td{
+								vertical-align:middle;
+								height:100px;
+								background:#f7f7f7;
+								border-bottom:1px solid #c8c8c8;
+							}
+						}	
+						&.line0{
+							td	{background-color:#eaedef;}	
+						} 
+						&.line1{
+							td	{background-color:#F7F8F9;}
+						}	
+						&.AXTreeSplit{
+							td{
+								vertical-align:middle;
+								height:1px;line-height:1px;background:#eee;
+								border-bottom:0px none;
+							}
+						}	
+						&.red{
+							td{ background-color:#FFE8E8;} 	
+						} 
+						&.green{
+							td{ background-color:#F7FDEA;} 
+						} 
+						&.blue{
+							td{ background-color:#EAF5FD;} 
+						} 
+						&.yellow{
+							td{ background-color:#FEFEE9;} 
+						} 	
+						&.selected{
+							td{background-color:#D2D9DF;}
+						}		
+						&.hover{
+							td{background-color:#d7dde3;}
+						}																		
+						td{
+							padding:0px;
+							background:url('images/dx-tree-body-border.png') repeat-y 100% 0px;
+							vertical-align:bottom;
+							border-bottom:1px solid #c8c8c8;
+							cursor:pointer;
+							&.fixedLine{
+								background:url('images/dx-tree-fixed-body-border.png') repeat-y 100% 0px #FFFFEC;								
+							}
+							&.selected{
+								background-color:#D2D9DF;box-shadow:inset 0px 0px 2px #000;
+							}
+							&.bodyBottomBorder{
+								border-bottom:1px dashed #c8c8c8;
+							}
+							&.bodyNullTd{
+								background-image:none;	
+							}
+							.bodyNode{
+								position:relative;
+								padding:0px;
+							}
+							.bodyTdText{
+								position:relative;
+								line-height:20px;
+								padding:5px 8px;
+								color:#3b3b3b;text-shadow:0px 1px 0px #fff;
+								font-family:AppleGothic, 'Malgun Gothic',Gulim;
+								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+							}
+							.bodyTdHtml{
+								padding:0px 1px 0px 0px;									
+							}
+							.bodyTdCheckBox{
+								line-height:20px;height:20px;
+								padding:5px 1px 5px 0px;
+							}
+						}
+					}
+				}
+				thead, tfoot{
+					tr{
+						td{
+							padding:0px;
+							background:url('images/dx-tree-body-border.png') repeat-y 100% 0px;
+							vertical-align:bottom;
+							border-bottom:1px solid #c8c8c8;
+							background-color:#FFFFEC;
+							&.fixedLine{
+								background:url('images/dx-tree-fixed-body-border.png') repeat-y 100% 0px #FFFFEC;
+							}	
+							&.bodyBottomBorder{
+								border-bottom:1px dashed #c8c8c8;
+							}
+							&.bodyNullTd{
+								background-image:none;	
+							}
+							.bodyNode{
+								position:relative;
+								padding:0px;
+							}
+							.bodyTdText{
+								position:relative;
+								line-height:20px;
+								padding:5px 8px;
+								color:#3b3b3b;text-shadow:0px 1px 0px #fff;
+								font-family:AppleGothic, 'Malgun Gothic',Gulim;
+								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+							}
+							.bodyTdHtml{
+								padding:0px 1px 0px 0px;									
+							}							
+							.bodyTdCheckBox{
+								line-height:20px;height:20px;
+								padding:5px 1px 5px 0px;
+							}						
+						}
+					}
+				}
+			}
+		}
+		//Tree Foot
+		.AXTreeFoot{}		
+	}
+	.tdRelBlock{
+		position:relative;
+	}	
+}
+
+
+// AXTree_none ///////////////////////////////////////////////////
+.AXTree_none{
+	position:relative;
+	.AXTreeScrollBody{
+		position:relative;
+		//border:1px solid #b1b1b1;
+		overflow:hidden;
+		.AXTreeColHead{
+			position:absolute;left:0px;top:0px;
+			width:100%;
+			background:url('images/dx-tree-head-bg.png') repeat-x 0px 0px #fff;
+			border-bottom:1px solid #b1b1b1;
+			.colHeadTable{
+				table-layout:fixed;
+				background:url('images/dx-tree-head-bg.png') repeat-x 0px 0px #fff;
+				tbody{
+					tr{
+						td{
+							padding:0px;
+							background:url('images/dx-tree-head-border.png') repeat-y 100% 0px;
+							vertical-align:bottom;
+							cursor:pointer;
+							&:hover{
+								background-color:#e5e6eb;								
+							}
+							&.sortDesc{
+								background-color:#e5e6eb;
+								.colHeadNode{
+									background:url('images/dx-sort-desc.png') no-repeat center 0px;
+								}								
+							}
+							&.sortAsc{
+								background-color:#e5e6eb;
+								.colHeadNode{
+									background:url('images/dx-sort-asc.png') no-repeat center 0px;
+								}								
+							}
+							&.colHeadBottomBorder{
+								border-bottom:1px solid #b1b1b1;
+							}
+							.colHeadResizer{
+								position:absolute;right:0px;top:0px;
+								width:5px;height:20px;
+								cursor:w-resize;
+								&:active{
+									background:#ffbbcc;
+								}
+							}
+							.colHeadTool{
+								position:absolute;right:1px;top:0px;
+								display:block;
+								width:20px;height:30px;
+								cursor:pointer;
+								text-indent:-2000px;overflow:hidden;
+								&.readyTool{
+									background:url('images/dx-tree-head-tool.png') no-repeat -2px center;
+									&:hover{
+										background:url('images/dx-tree-head-tool-on.png') no-repeat -2px center;
+									}
+								}
+								
+							}
+							.colHeadNode{
+								position:relative;
+								padding:0px;
+							}		
+							.colHeadTdText{
+								position:relative;
+								line-height:20px;
+								padding:5px 0px;
+								color:#5e5e5e;text-shadow:0px 1px 0px #fff;
+								font-family:AppleGothic, 'Malgun Gothic', Gulim;
+								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+							}
+							.colHeadTdCheck{
+								height:20px;padding:7px 1px 3px 0px;
+								color:#5e5e5e;
+								input{
+									vertical-align:middle;
+								}
+							}
+							.colHeadTdHtml{
+								height:30px;padding:0px 1px 0px 0px;
+								color:#5e5e5e;
+							}
+						}						
+					}	
+				}
+			}
+		}
+		.fixedColHead{
+			position:absolute;left:0px;top:0px;
+			width:auto;
+			box-shadow:0px 0px 3px #ccc;
+		}
+		//Body ...
+		.AXTreeBody{
+			position:absolute;left:0px;top:0px;
+			width:100%;overflow:hidden;
+			.treeScrollContent{
+				overflow:visible;position:relative;
+			}			
+			.treeFixedScrollContent{
+				overflow:visible;position:absolute;left:0px;top:0px;
+				box-shadow:0px 0px 3px #ccc;
+			}
+			.treeScrollBody{
+				.treeScrollTrackY{
+					.treeScrollHandle{
+						&.hover{
+							background:#929292;border:1px solid #636363;
+						}
+					}
+				}
+			}
+			.treeScrollTrackXY{
+				position:absolute;right:0px;bottom:0px;
+				width:9px;height:9px;border:1px solid #B6B6B6;
+				background:url('images/dx-diagonal-bg.png');
+				display:none;
+			}
+			.treeScrollTrackY{
+				position:absolute;right:0px;top:0px;
+				width:9px;height:9px;
+				border-left:1px solid #dbdbdb;border-right:1px solid #dbdbdb;
+				background:#f3f3f3;
+				display:none;
+				.treeScrollHandle{
+					position:absolute;left:-1px;top:0px;
+					width:9px;height:20px;
+					background:url('images/dx-diagonal-bg.png');
+					border:1px solid #B6B6B6;
+					cursor:pointer;
+					&:hover, &.hover{
+						background:#929292;border:1px solid #636363;
+					}
+				}
+			}
+			.treeScrollTrackX{
+				position:absolute;left:0px;bottom:0px;
+				width:9px;height:9px;
+				border-top:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb;
+				background:#f3f3f3;
+				display:none;
+				.treeScrollHandle{
+					position:absolute;left:0px;top:-1px;
+					width:20px;height:9px;
+					background:url('images/dx-diagonal-bg.png');
+					border:1px solid #B6B6B6;
+					cursor:pointer;
+					&:hover, &.hover{
+						background:#929292;border:1px solid #636363;
+					}
+				}
+			}
+			.treeBodyTable{
+				width:100%;table-layout:fixed;
+				tbody{
+					tr{
+						&.noListTr{
+							td{
+								vertical-align:middle;
+								height:100px;
+								border-bottom:1px solid #c8c8c8;
+							}							
+						}
+						&.line0{
+							td {}
+						}
+						&.line1{
+							td {}
+						}
+						&.AXTreeSplit{
+							td{
+								vertical-align:middle;
+								height:1px;line-height:1px;background:#ccc;
+								border-bottom:0px none;
+							}							
+						}
+						&.red{
+							td{ background-color:#FFE8E8; }
+						}
+						&.green{
+							td{ background-color:#F7FDEA; }
+						}
+						&.blue{
+							td{ background-color:#EAF5FD; }
+						}
+						&.yellow{
+							td{ background-color:#FEFEE9; }
+						}
+						&.hover{
+							td{background-color:#e7f1fa;}
+						}
+						&.selected{
+							td{background-color:#D2D9DF;}
+						}
+						&.disable{
+							td{
+								background-color:#F5F5F1;
+								color:#ccc ! important;
+							}
+						}
+						&.copied{
+							td{
+								background-color:#FFFFBF;
+								border-top:1px dotted;
+								border-bottom:1px dotted;
+							}
+						}
+						td{
+							padding:0px;
+							vertical-align:bottom;
+							cursor:pointer;
+							&.selected{
+								background-color:#D2D9DF;box-shadow:inset 0px 0px 2px #000;
+							}
+							&.bodyBottomBorder{
+								border-bottom:1px dashed #c8c8c8;
+							}
+							&.bodyNullTd{
+								background-image:none;
+							}
+							.bodyNode{
+								position:relative;
+								padding:0px;
+								.connectionLineContainer{
+									display:block;position:absolute;
+									top:0px;left:0px;
+									.connectionLine{
+										display:block;position:absolute;
+										top:0px;left:0px;
+										width:20px;height:30px;
+										background:url('images/dx-tree-line.png') no-repeat center 0px;
+										&.isLastChild{
+											background:url('images/dx-tree-line-last.png') no-repeat center 0px;
+										}
+										&.isParentInside{
+											background:url('images/dx-tree-line-middle.png') no-repeat center 0px;
+										}
+										&.isParentOutside{
+											background:url('images/blank.png') no-repeat center 0px;
+										}
+									}
+								}
+								.bodyNodeIndent{
+									display:block;
+									position:absolute;
+									top:5px;
+									width:20px;height:20px;
+									background:url('images/dx-tree-arrows.png') no-repeat -65px center;
+									&:hover{
+										background:url('images/dx-tree-arrows.png') no-repeat -5px center;
+									}
+									&.noChild{
+										background:url('images/dx-tree-line-no-child.png') no-repeat center center;
+										&:hover{
+											background:url('images/dx-tree-line-no-child.png') no-repeat center center;											
+										}
+									}
+
+									&.expand{
+										background:url('images/dx-tree-arrows.png') no-repeat -95px center;
+										&:hover{
+											background:url('images/dx-tree-arrows.png') no-repeat -35px center;	
+										}
+										&.noChild{
+											background:url('images/dx-tree-line-no-child.png') no-repeat center center;
+											&:hover{
+												background:url('images/dx-tree-line-no-child.png') no-repeat center center;																						}
+										}
+									}
+								}
+								.bodyNodeIcon{
+									display:block;
+									position:absolute;
+									top:5px;
+									width:20px;height:20px;
+									&.folder		{background:url('images/dx-tree-icons.png') no-repeat -5px center;}
+									&.AXfolder		{background:url('images/dx-tree-icons.png') no-repeat -35px center;}
+									&.movie			{background:url('images/dx-tree-icons.png') no-repeat -65px center;}
+									&.img			{background:url('images/dx-tree-icons.png') no-repeat -95px center;}
+									&.zip			{background:url('images/dx-tree-icons.png') no-repeat -125px center;}
+									&.file			{background:url('images/dx-tree-icons.png') no-repeat -155px center;}
+									&.fileTxt		{background:url('images/dx-tree-icons.png') no-repeat -185px center;}
+									&.fileTag		{background:url('images/dx-tree-icons.png') no-repeat -215px center;}
+									&.company		{background:url('images/dx-tree-icons2.png') no-repeat -5px center;}
+									&.computer		{background:url('images/dx-tree-icons2.png') no-repeat -35px center;}
+									&.desktop		{background:url('images/dx-tree-icons2.png') no-repeat -65px center;}
+									&.tree			{background:url('images/dx-tree-icons2.png') no-repeat -95px center;}
+								}
+							}
+							.bodyTdText{
+								position:relative;
+								line-height:20px;
+								padding:5px 8px;
+								color:#3b3b3b;text-shadow:0px 1px 0px #fff;
+								font-family:AppleGothic, 'Malgun Gothic',Gulim;
+								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+							}
+							.bodyTdHtml{
+								padding:0px 1px 0px 0px;									
+							}
+							.bodyTdCheckBox{
+								line-height:20px;height:20px;
+								padding:5px 1px 5px 0px;	
+							}
+						}
+					}
+				}
+				thead, tfoot{
+					tr{
+						td{
+							padding:0px;
+							background:url('images/dx-tree-body-border.png') repeat-y 100% 0px;
+							vertical-align:bottom;
+							border-bottom:1px solid #c8c8c8;
+							background-color:#FFFFEC;
+							&.bodyBottomBorder{
+								border-bottom:1px dashed #c8c8c8;
+							}
+							&.bodyNullTd{
+								background-image:none;
+							}
+							.bodyNode{
+								position:relative;
+								padding:0px;
+							}
+							.bodyTdText{
+								position:relative;
+								line-height:20px;
+								padding:5px 8px;
+								color:#3b3b3b;text-shadow:0px 1px 0px #fff;
+								font-family:AppleGothic, 'Malgun Gothic',Gulim;
+								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+							}
+							.bodyTdHtml{
+								padding:0px 1px 0px 0px;									
+							}
+							.bodyTdCheckBox{
+								line-height:20px;height:20px;
+								padding:5px 1px 5px 0px;	
+							}
+						}
+					}
+				}
+			}
+			.treeFixedBodyTable{
+				table-layout:fixed;
+				tbody{
+					tr{
+						&.noListTr{
+							td{
+								vertical-align:middle;
+								height:100px;
+								background:#f7f7f7;
+								border-bottom:1px solid #c8c8c8;
+							}
+						}
+						&.line0{
+							td{
+								background-color:#eaedef;
+							}
+						}
+						&.line1{
+							td{
+								background-color:#F7F8F9;
+							}
+						}
+						&.AXTreeSplit{
+							td{
+								vertical-align:middle;
+								height:1px;line-height:1px;background:#eee;
+								border-bottom:0px none;
+							}
+						}
+						&.red{
+							td{ background-color:#FFE8E8;}
+						}
+						&.green{
+							td{ background-color:#F7FDEA;}
+						}
+						&.blue{
+							td{ background-color:#EAF5FD;}
+						}
+						&.yellow{
+							td{ background-color:#FEFEE9;}
+						}
+						&.selected{
+							td{background-color:#D2D9DF;}								
+						}
+						&.hover{
+							td{background-color:#d7dde3;}
+						}
+						td{
+							padding:0px;
+							background:url('images/dx-tree-body-border.png') repeat-y 100% 0px;
+							vertical-align:bottom;
+							border-bottom:1px solid #c8c8c8;
+							cursor:pointer;
+							&.fixedLine{
+								background:url('images/dx-tree-fixed-body-border.png') repeat-y 100% 0px #FFFFEC;
+							}
+							&.selected{
+								background-color:#D2D9DF;box-shadow:inset 0px 0px 2px #000;
+							}
+							&.bodyBottomBorder{
+								border-bottom:1px dashed #c8c8c8;
+							}
+							&.bodyNullTd{
+								background-image:none;
+							}
+							.bodyNode{
+								position:relative;
+								padding:0px;
+							}
+							.bodyTdText{
+								position:relative;
+								line-height:20px;
+								padding:5px 8px;
+								color:#3b3b3b;text-shadow:0px 1px 0px #fff;
+								font-family:AppleGothic, 'Malgun Gothic',Gulim;
+								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+							}	
+							.bodyTdHtml{
+								padding:0px 1px 0px 0px;
+							}
+							.bodyTdCheckBox{
+								line-height:20px;height:20px;
+								padding:5px 1px 5px 0px;
+							}
+													
+						}
+					}
+				}
+				thead, tfoot{
+					tr{
+						td{
+							padding:0px;
+							background:url('images/dx-tree-body-border.png') repeat-y 100% 0px;
+							vertical-align:bottom;
+							border-bottom:1px solid #c8c8c8;
+							background-color:#FFFFEC;
+							&.fixedLine{
+								background:url('images/dx-tree-fixed-body-border.png') repeat-y 100% 0px #FFFFEC;
+							}
+							&.bodyBottomBorder{
+								border-bottom:1px dashed #c8c8c8;
+							}
+							&.bodyNullTd{
+								background-image:none;
+							}
+							.bodyNode{
+								position:relative;
+								padding:0px;
+							}
+							.bodyTdText{
+								position:relative;
+								line-height:20px;
+								padding:5px 8px;
+								color:#3b3b3b;text-shadow:0px 1px 0px #fff;
+								font-family:AppleGothic, 'Malgun Gothic',Gulim;
+								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+							}
+							.bodyTdHtml{
+								padding:0px 1px 0px 0px;
+							}
+							.bodyTdCheckBox{
+								line-height:20px;height:20px;
+								padding:5px 1px 5px 0px;
+							}
+						}
+					}
+				}
+			}
+		}
+		//Foot ...
+		.AXTreeFoot{}
+	}
+
+	//AXGridEditor...
+	.AXTreeEditor{
+		position:absolute;left:0px;top:0px;
+		width:100%;height:60px;
+		.editorContent{
+			position:absolute;left:0px;top:0px;
+			width:100%;
+			background:#d8e1e7;
+			border-bottom:1px solid #7f8d9c;		
+			box-shadow:1px 1px 3px #ccc;
+		}
+		.editorButtons{
+			position:absolute;left:50px;top:19px;
+			height:30px;padding:1px 3px;
+			background:#d8e1e7;
+			border-left:1px solid #7f8d9c;
+			border-right:1px solid #7f8d9c;
+			border-bottom:1px solid #7f8d9c;
+			box-shadow:1px 1px 3px #ccc;
+			border-bottom-left-radius:4px;border-bottom-right-radius:4px;
+		}
+		.editorBodyTable{
+			table-layout:fixed;width:100%;
+		}
+	}
+	.tdRelBlock{
+		position:relative;
+	}	
+}
+
+
+// AXTreeColGroupListBox ///////////////////////////////////////////////////
+.AXTreeColGroupListBox{
+	z-index:4999;
+	position:absolute;left:0px;top:0px;
+	width:146px;
+	background:#fff;
+	border:1px solid #b1b1b1;border-radius:5px;
+	box-shadow:0px 0px 5px #ccc;
+	.AXTreeColGroupListBoxItem{
+		display:block;
+		line-height:15px;padding:5px 5px 5px 25px;
+		color:#5e5e5e;text-decoration:none;
+		border-bottom:1px solid #e3e3e3;
+		&.last{
+			border-bottom:0px none;
+		}
+		&.on{
+			color:#7b8590;
+			background:url('images/dx-item-check.png') no-repeat 3px center;
+		}
+	}
+}
+
+
+.AXtreeSelector{
+	height:400px;
+	background:#fff;
+}
+
+
