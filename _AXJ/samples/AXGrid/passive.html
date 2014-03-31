@@ -2,93 +2,172 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>AXGrid</title>
-    
-    <meta property="og:image" content="/samples/_img/axisj_sns.png" />  
-    <meta property="og:site_name" content="Axis of Javascript - axisj.com" /> 
-    <meta property="og:description" id="meta_description" content="Javascript UI Library based on JQuery" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1" />
+	<title>AXISJ</title>
+	<!-- Libs -->
+	<script type="text/javascript" src="../../jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="../../lib/AXJ.js"></script>
+	<script type="text/javascript" src="../../lib/AXTab.js"></script>	
+	<script type="text/javascript" src="../../lib/AXInput.js"></script>		
+	<script type="text/javascript" src="../../lib/AXSelect.js"></script>		
+	<script type="text/javascript" src="../../lib/AXGrid.js"></script>			
+	<!-- Self -->
+	<script src="pageTab.js"></script>			
+	<!-- Theme -->
+	<script src="../../ui/arongi/page.js"></script>		
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/page.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXJ.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXTabs.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXSelect.css">			
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXInput.css">			
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXButton.css">			
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXGrid.css">				
 
-	<!-- css block -->
-	<link rel="stylesheet" type="text/css" href="../_css/default_common.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXJ.css" />
-	
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXButton.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXSelect.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXGrid.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXInput.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXTabs.css" />
-	
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/import_desktop.css" />
-	<![endif]-->
+	<script>
+	/**
+	 * Require Files for AXISJ UI Component...
+	 * Based		: jQuery
+	 * Javascript 	: AXJ.js, AXGrid.js, AXInput.js, AXSelect.js
+	 * CSS			: AXJ.css, AXGrid.css, AXButton.css, AXInput.css, AXSelector.css
+	 */	
+	var pageID = "passive";
+	var fnObj = {
+		pageStart: function(){
+			//Require page.js before this fn...
+			pageObj.host = "../../";
+			pageObj.incHeader();
+			pageObj.incFooter();	
+			
+		}
+	};
+	jQuery(document).ready(fnObj.pageStart);
+	</script>
 
 	<style type="text/css">
-	H2, H3{font-family:consolas;}
+	
 	</style>
-	<!-- css block -->
-	
-	<!-- js block -->
-	<script type="text/javascript" src="../../_AXJ/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXJ.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXInput.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXSelect.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXGrid.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXCodeView.js"></script>	
-	<script type="text/javascript" src="../../_AXJ/lib/AXTab.js"></script>
-	<script type="text/javascript" src="pageTab.js"></script>
-	
-	<script type="text/javascript">
-	var pageID = "passive";
-	</script>
 </head>
+	
 <body>
-	<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
-	<div class="AXdemoPageContent">
-		
-		<h2>AXGrid passive option true</h2>
-		<div>
-			grid의 추가/수정/삭제 내역을 그리드에 유지 하고 변경 내역을 수동으로 취할 수 있는 방식 입니다.
+
+<div id="AXPage">
+	<!-- s.AXPageHead -------------------------------------------------- -->
+	<header id="AXPageHead">
+		<div class="ax-wrap">
+			<div class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+
+						<!-- navMenu < -->
+						<nav class="navMenu"></nav>
+						<!-- navMenu > -->
+
+					</div>	
+				</div>	
+			</div>	
+			<div class="ax-layer-2">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+
+						<!-- navMenu < -->
+						<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
+						<!-- navMenu > -->
+
+					</div>	
+				</div>	
+			</div>	
+
 		</div>
-		<div style="height:10px;"></div>
-		
-		<div id="AXGridTarget" style="height:400px;"></div>
-		
-		<div style="padding:10px 0px;">
-			<input type="button" value="추가하기" class="AXButton Red" onclick="fnObj.appendGrid();" />
-			<input type="button" value="삭제하기" class="AXButton Red" onclick="fnObj.removeList();" />
-			<input type="button" value="삭제취소" class="AXButton Red" onclick="fnObj.restoreList();" />
-			<input type="button" value="새로고침" class="AXButton Red" onclick="myGrid.reloadList();" />
+	</header>
+	<!-- e.AXPageHead -------------------------------------------------- -->
+	<div class="ax-clear"></div>						
+	<!-- s.AXPageBody -------------------------------------------------- -->
+	<article id="AXPageBody" class="SampleAXSelect">
+
+		<div class="ax-wrap">
+			<div class="title"><h1>AXGrid</h1></div>
+			<!-- s.axlayer 1 -->		
+			<section class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+						<h2>AXGrid passive option true</h2>
+						<h3>grid의 추가/수정/삭제 내역을 그리드에 유지 하고 변경 내역을 수동으로 취할 수 있는 방식 입니다.</h3>
+						<div id="AXGridTarget" style="height:400px;"></div>
+						
+						<div class="H20"></div>
+						
+						<div style="padding:10px 0px;">
+							<input type="button" value="추가하기" class="AXButton Red" onclick="fnObj.appendGrid();" />
+							<input type="button" value="삭제하기" class="AXButton Red" onclick="fnObj.removeList();" />
+							<input type="button" value="삭제취소" class="AXButton Red" onclick="fnObj.restoreList();" />
+							<input type="button" value="새로고침" class="AXButton Red" onclick="myGrid.reloadList();" />
+						</div>
+
+						<div class="H20"></div>
+						
+						<div>
+							<b>passiveMode:true </b> 사용시 <br/>	
+							_isNew : 신규 등록된 item,
+							_isDel : 삭제된 item,
+							_isUpd : 수정된 item
+							<br/>
+							<b>passiveRemoveHide:true</b> 변경 하면 삭제될 때 리스트가 제거 됩니다. 또한 삭제된 데이터가 myGrid.removedList 에 쌓이게 됩니다.
+							<br/>
+							<br/>
+							AXUtil.gridPassiveMode = true; 로 그리드 기본값을 설정 하실 수도 있습니다.<br/>
+							AXUtil.gridPassiveRemoveHide = true; 로 그리드 기본값을 설정 하실 수도 있습니다.
+						</div>
+						
+						<div style="padding:10px 0px;">
+							<input type="button" value="list 추출" class="AXButton Green" onclick="AXUtil.alert(myGrid.list);" />
+							<input type="button" value="removedList 추출" class="AXButton Green" onclick="AXUtil.alert(myGrid.removedList);" />
+						</div>						
+						
+						<div class="H30"></div>
+						
+					</div>	
+				</div>
+				
+				<div class="ax-clear"></div>
+			</section>
+			<!-- e.axlayer 1 -->
+			
+			<div class="ax-clear"></div>							
+	
 		</div>
-		
-		<div>
-			<b>passiveMode:true </b> 사용시 <br/>	
-			_isNew : 신규 등록된 item,
-			_isDel : 삭제된 item,
-			_isUpd : 수정된 item
-			<br/>
-			<b>passiveRemoveHide:true</b> 변경 하면 삭제될 때 리스트가 제거 됩니다. 또한 삭제된 데이터가 myGrid.removedList 에 쌓이게 됩니다.
-			<br/>
-			<br/>
-			AXUtil.gridPassiveMode = true; 로 그리드 기본값을 설정 하실 수도 있습니다.<br/>
-			AXUtil.gridPassiveRemoveHide = true; 로 그리드 기본값을 설정 하실 수도 있습니다.
+		<div class="H20"></div>		
+	</article>
+	<!-- e.AXPageBody -------------------------------------------------- -->
+
+	<div class="ax-clear"></div>
+	
+	<!-- s.AXPageFoot -------------------------------------------------- -->
+	<footer id="AXPageFoot">
+		<div class="ax-wrap">
+			<div class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+						
+						<!-- navTheme < -->
+						<nav class="navTheme"></nav>
+						<!-- navTheme > -->
+						
+					</div>	
+				</div>
+			</div>			
 		</div>
-		
-		<div style="padding:10px 0px;">
-			<input type="button" value="list 추출" class="AXButton Green" onclick="AXUtil.alert(myGrid.list);" />
-			<input type="button" value="removedList 추출" class="AXButton Green" onclick="AXUtil.alert(myGrid.removedList);" />
-		</div>
-		
-		
-	</div>
+	</footer>
+	<!-- e.AXPageFoot -------------------------------------------------- -->
+</div>
 
 </body>
-</html>
+</html>		
 
 <script type="text/javascript">
 var myGrid = new AXGrid();
 var fnObj = {
 	pageStart: function(){
-		AXCode.bind(); // 소스보기
 
 		myGrid.setConfig({
 			targetID : "AXGridTarget",
@@ -187,9 +266,9 @@ var fnObj = {
 									}
 								}
 							}
-							, AXBind:{type:"selector", config:{
+							,AXBind:{type:"selector", config:{
 								appendable:true,
-								ajaxUrl:"/samples/AXInput/selectorData.asp", 
+								ajaxUrl:"../../samples/AXInput/selectorData.txt", 
 								ajaxPars:"",
 								onChange:function(){
 									//trace(this.selectedOption);
@@ -289,7 +368,7 @@ var fnObj = {
 		});
 		
 		myGrid.setList({
-			ajaxUrl:"loadGrid.asp", ajaxPars:"param1=1&param2=2", 
+			ajaxUrl:"loadGrid.txt", ajaxPars:"param1=1&param2=2", 
 			onLoad:function(){
 				
 			}
@@ -334,4 +413,4 @@ $(document.body).ready(function(){
 	setTimeout(fnObj.pageStart, 1);
 });
 </script>
-<!-- js block -->
+

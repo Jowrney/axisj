@@ -170,11 +170,11 @@
   }
   .AXLoading {
     min-height: 50px;
-    background: url('images/AXUIProgressAnimate02_white.gif') no-repeat center center;
+    background: url('images/dx-progresss-ani-white-1.gif') no-repeat center center;
   }
   .AXLoadingSmall {
     min-height: 25px;
-    background: url('images/AXUIProgressAnimate01_white.gif') no-repeat center center;
+    background: url('images/dx-progresss-ani-white-2.gif') no-repeat center center;
   }
   .AXContextMenu {
     z-index: 4999;
@@ -198,7 +198,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    background-image: url('images/contextMenuIcon_doc.png');
+    background-image: url('images/dx-context-icon-doc.png');
     background-repeat: no-repeat;
     background-position: 0px center;
   }
@@ -215,52 +215,52 @@
     border-bottom-right-radius: 5px;
   }
   .AXContextMenu .contextMenuItem.docline {
-    background-image: url('images/contextMenuIcon_docline.png');
+    background-image: url('images/dx-context-icon-docline.png');
   }
   .AXContextMenu .contextMenuItem.plus {
-    background-image: url('images/contextMenuIcon_plus.png');
+    background-image: url('images/dx-context-icon-plus.png');
   }
   .AXContextMenu .contextMenuItem.minus {
-    background-image: url('images/contextMenuIcon_minus.png');
+    background-image: url('images/dx-context-icon-minus.png');
   }
   .AXContextMenu .contextMenuItem.group {
-    background-image: url('images/contextMenuIcon_group.png');
+    background-image: url('images/dx-context-icon-group.png');
   }
   .AXContextMenu .contextMenuItem.edit {
-    background-image: url('images/contextMenuIcon_edit.png');
+    background-image: url('images/dx-context-icon-edit.png');
   }
   .AXContextMenu .contextMenuItem.copy {
-    background-image: url('images/contextMenuIcon_copy.png');
+    background-image: url('images/dx-context-icon-copy.png');
   }
   .AXContextMenu .contextMenuItem.cut {
-    background-image: url('images/contextMenuIcon_cut.png');
+    background-image: url('images/dx-context-icon-cut.png');
   }
   .AXContextMenu .contextMenuItem.paste {
-    background-image: url('images/contextMenuIcon_paste.png');
+    background-image: url('images/dx-context-icon-paste.png');
   }
   .AXContextMenu .contextMenuItem.up {
-    background-image: url('images/contextMenuIcon_up.png');
+    background-image: url('images/dx-context-icon-up.png');
   }
   .AXContextMenu .contextMenuItem.down {
-    background-image: url('images/contextMenuIcon_down.png');
+    background-image: url('images/dx-context-icon-down.png');
   }
   .AXContextMenu .contextMenuItem.left {
-    background-image: url('images/contextMenuIcon_left.png');
+    background-image: url('images/dx-context-icon-left.png');
   }
   .AXContextMenu .contextMenuItem.right {
-    background-image: url('images/contextMenuIcon_right.png');
+    background-image: url('images/dx-context-icon-right.png');
   }
   .AXContextMenu .contextMenuItem.link {
-    background-image: url('images/contextMenuIcon_link.png');
+    background-image: url('images/dx-context-icon-link.png');
   }
   .AXContextMenu .contextMenuItem.unlink {
-    background-image: url('images/contextMenuIcon_unlink.png');
+    background-image: url('images/dx-context-icon-unlink.png');
   }
   .AXContextMenu .contextMenuItem.openall {
-    background-image: url('images/contextMenuIcon_openall.png');
+    background-image: url('images/dx-context-icon-openall.png');
   }
   .AXContextMenu .contextMenuItem.closeall {
-    background-image: url('images/contextMenuIcon_closeall.png');
+    background-image: url('images/dx-context-icon-cloaseall.png');
   }
   .AXContextMenu .contextMenuItem .contextSubMenuIcon {
     position: absolute;
@@ -268,7 +268,7 @@
     top: 0px;
     width: 30px;
     height: 30px;
-    background-image: url('images/contextSubMenuIcon.png');
+    background-image: url('images/dx-context-sub-icon.png');
     background-repeat: no-repeat;
     background-position: 0px center;
   }
@@ -304,7 +304,7 @@
   .AXNotification.Warning .AXNotificationIcon {
     width: 42px;
     height: 42px;
-    background: url('images/notificationWarning.png') no-repeat center center !important;
+    background: url('images/dx-noti-warning.png') no-repeat center center !important;
   }
   .AXNotification.Warning .AXNotificationBody B {
     color: #bf601b;
@@ -312,7 +312,7 @@
   .AXNotification.Caution .AXNotificationIcon {
     width: 42px;
     height: 42px;
-    background: url('images/notificationCaution.png') no-repeat center center !important;
+    background: url('images/dx-noti-caution.png') no-repeat center center !important;
   }
   .AXNotification.Caution .AXNotificationBody B {
     color: #7e302c;
@@ -324,7 +324,7 @@
     padding: 5px 15px;
     height: 20px;
     line-height: 20px;
-    background: url('images/dialogTitle.png') repeat-x;
+    background: url('images/dx-dialog-title.png') repeat-x;
     text-align: center;
   }
   .AXNotification .AXNotificationTable {
@@ -340,7 +340,7 @@
   .AXNotification .AXNotificationIcon {
     width: 42px;
     height: 42px;
-    background: url('images/notificationComplete.png') no-repeat center 5px !important;
+    background: url('images/dx-noti-complete.png') no-repeat center 5px !important;
   }
   .AXNotification .AXNotificationBody {
     font-size: 12px;
@@ -444,7 +444,7 @@
     text-align: center;
     border-right: 1px solid #b9babc;
     border-bottom: 1px solid #b9babc;
-    background: url('images/calendarBgs.png') repeat-x 0px -26px;
+    background: url('images/dx-calendar-bgs.png') repeat-x 0px -26px;
   }
   .AXCalendar table.calendarPage tbody td.bodyCol_6 {
     border-right: 0px none;
@@ -453,7 +453,7 @@
     border-bottom: 0px none;
   }
   .AXCalendar table.calendarPage tbody td.setDate {
-    background: url('images/calendarBgs.png') repeat-x 0px -76px;
+    background: url('images/dx-calendar-bgs.png') repeat-x 0px -76px;
   }
   .AXCalendar table.calendarPage tbody td A.calendarDate {
     display: block;
@@ -495,7 +495,7 @@
     text-align: center;
     border-right: 1px solid #b9babc;
     border-bottom: 1px solid #b9babc;
-    background: url('images/calendarBgs.png') repeat-x 0px -101px;
+    background: url('images/dx-calendar-bgs.png') repeat-x 0px -101px;
   }
   .AXCalendar table.calendarPageMonth tbody td.bodyCol_2 {
     border-right: 0px none;
@@ -625,7 +625,7 @@
     display: block;
     width: 38px;
     height: 38px;
-    background: url(img/axmodalClose.png) no-repeat;
+    background: url('images/dx-modal-close.png') no-repeat;
     border: 1px solid #a6a6a6;
     border-left: 0px none;
     box-shadow: 0px 0px 1px #a6a6a6;
@@ -966,11 +966,11 @@
   }
   .AXLoading {
     min-height: 50px;
-    background: url('images/AXUIProgressAnimate02_white.gif') no-repeat center center;
+    background: url('images/dx-progresss-ani-white-1.gif') no-repeat center center;
   }
   .AXLoadingSmall {
     min-height: 25px;
-    background: url('images/AXUIProgressAnimate01_white.gif') no-repeat center center;
+    background: url('images/dx-progresss-ani-white-2.gif') no-repeat center center;
   }
   .AXContextMenu {
     z-index: 4999;
@@ -994,7 +994,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    background-image: url('images/contextMenuIcon_doc.png');
+    background-image: url('images/dx-context-icon-doc.png');
     background-repeat: no-repeat;
     background-position: 0px center;
   }
@@ -1011,52 +1011,52 @@
     border-bottom-right-radius: 5px;
   }
   .AXContextMenu .contextMenuItem.docline {
-    background-image: url('images/contextMenuIcon_docline.png');
+    background-image: url('images/dx-context-icon-docline.png');
   }
   .AXContextMenu .contextMenuItem.plus {
-    background-image: url('images/contextMenuIcon_plus.png');
+    background-image: url('images/dx-context-icon-plus.png');
   }
   .AXContextMenu .contextMenuItem.minus {
-    background-image: url('images/contextMenuIcon_minus.png');
+    background-image: url('images/dx-context-icon-minus.png');
   }
   .AXContextMenu .contextMenuItem.group {
-    background-image: url('images/contextMenuIcon_group.png');
+    background-image: url('images/dx-context-icon-group.png');
   }
   .AXContextMenu .contextMenuItem.edit {
-    background-image: url('images/contextMenuIcon_edit.png');
+    background-image: url('images/dx-context-icon-edit.png');
   }
   .AXContextMenu .contextMenuItem.copy {
-    background-image: url('images/contextMenuIcon_copy.png');
+    background-image: url('images/dx-context-icon-copy.png');
   }
   .AXContextMenu .contextMenuItem.cut {
-    background-image: url('images/contextMenuIcon_cut.png');
+    background-image: url('images/dx-context-icon-cut.png');
   }
   .AXContextMenu .contextMenuItem.paste {
-    background-image: url('images/contextMenuIcon_paste.png');
+    background-image: url('images/dx-context-icon-paste.png');
   }
   .AXContextMenu .contextMenuItem.up {
-    background-image: url('images/contextMenuIcon_up.png');
+    background-image: url('images/dx-context-icon-up.png');
   }
   .AXContextMenu .contextMenuItem.down {
-    background-image: url('images/contextMenuIcon_down.png');
+    background-image: url('images/dx-context-icon-down.png');
   }
   .AXContextMenu .contextMenuItem.left {
-    background-image: url('images/contextMenuIcon_left.png');
+    background-image: url('images/dx-context-icon-left.png');
   }
   .AXContextMenu .contextMenuItem.right {
-    background-image: url('images/contextMenuIcon_right.png');
+    background-image: url('images/dx-context-icon-right.png');
   }
   .AXContextMenu .contextMenuItem.link {
-    background-image: url('images/contextMenuIcon_link.png');
+    background-image: url('images/dx-context-icon-link.png');
   }
   .AXContextMenu .contextMenuItem.unlink {
-    background-image: url('images/contextMenuIcon_unlink.png');
+    background-image: url('images/dx-context-icon-unlink.png');
   }
   .AXContextMenu .contextMenuItem.openall {
-    background-image: url('images/contextMenuIcon_openall.png');
+    background-image: url('images/dx-context-icon-openall.png');
   }
   .AXContextMenu .contextMenuItem.closeall {
-    background-image: url('images/contextMenuIcon_closeall.png');
+    background-image: url('images/dx-context-icon-cloaseall.png');
   }
   .AXContextMenu .contextMenuItem .contextSubMenuIcon {
     position: absolute;
@@ -1064,7 +1064,7 @@
     top: 0px;
     width: 30px;
     height: 30px;
-    background-image: url('images/contextSubMenuIcon.png');
+    background-image: url('images/dx-context-sub-icon.png');
     background-repeat: no-repeat;
     background-position: 0px center;
   }
@@ -1100,7 +1100,7 @@
   .AXNotification.Warning .AXNotificationIcon {
     width: 42px;
     height: 42px;
-    background: url('images/notificationWarning.png') no-repeat center center !important;
+    background: url('images/dx-noti-warning.png') no-repeat center center !important;
   }
   .AXNotification.Warning .AXNotificationBody B {
     color: #bf601b;
@@ -1108,7 +1108,7 @@
   .AXNotification.Caution .AXNotificationIcon {
     width: 42px;
     height: 42px;
-    background: url('images/notificationCaution.png') no-repeat center center !important;
+    background: url('images/dx-noti-caution.png') no-repeat center center !important;
   }
   .AXNotification.Caution .AXNotificationBody B {
     color: #7e302c;
@@ -1120,7 +1120,7 @@
     padding: 5px 15px;
     height: 20px;
     line-height: 20px;
-    background: url('images/dialogTitle.png') repeat-x;
+    background: url('images/dx-dialog-title.png') repeat-x;
     text-align: center;
   }
   .AXNotification .AXNotificationTable {
@@ -1136,7 +1136,7 @@
   .AXNotification .AXNotificationIcon {
     width: 42px;
     height: 42px;
-    background: url('images/notificationComplete.png') no-repeat center 5px !important;
+    background: url('images/dx-noti-complete.png') no-repeat center 5px !important;
   }
   .AXNotification .AXNotificationBody {
     font-size: 12px;
@@ -1240,7 +1240,7 @@
     text-align: center;
     border-right: 1px solid #b9babc;
     border-bottom: 1px solid #b9babc;
-    background: url('images/calendarBgs.png') repeat-x 0px -26px;
+    background: url('images/dx-calendar-bgs.png') repeat-x 0px -26px;
   }
   .AXCalendar table.calendarPage tbody td.bodyCol_6 {
     border-right: 0px none;
@@ -1249,7 +1249,7 @@
     border-bottom: 0px none;
   }
   .AXCalendar table.calendarPage tbody td.setDate {
-    background: url('images/calendarBgs.png') repeat-x 0px -76px;
+    background: url('images/dx-calendar-bgs.png') repeat-x 0px -76px;
   }
   .AXCalendar table.calendarPage tbody td A.calendarDate {
     display: block;
@@ -1291,7 +1291,7 @@
     text-align: center;
     border-right: 1px solid #b9babc;
     border-bottom: 1px solid #b9babc;
-    background: url('images/calendarBgs.png') repeat-x 0px -101px;
+    background: url('images/dx-calendar-bgs.png') repeat-x 0px -101px;
   }
   .AXCalendar table.calendarPageMonth tbody td.bodyCol_2 {
     border-right: 0px none;
@@ -1421,7 +1421,7 @@
     display: block;
     width: 38px;
     height: 38px;
-    background: url(img/axmodalClose.png) no-repeat;
+    background: url('images/dx-modal-close.png') no-repeat;
     border: 1px solid #a6a6a6;
     border-left: 0px none;
     box-shadow: 0px 0px 1px #a6a6a6;
@@ -1762,11 +1762,11 @@
   }
   .AXLoading {
     min-height: 50px;
-    background: url('images/AXUIProgressAnimate02_white.gif') no-repeat center center;
+    background: url('images/dx-progresss-ani-white-1.gif') no-repeat center center;
   }
   .AXLoadingSmall {
     min-height: 25px;
-    background: url('images/AXUIProgressAnimate01_white.gif') no-repeat center center;
+    background: url('images/dx-progresss-ani-white-2.gif') no-repeat center center;
   }
   .AXContextMenu {
     z-index: 4999;
@@ -1790,7 +1790,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    background-image: url('images/contextMenuIcon_doc.png');
+    background-image: url('images/dx-context-icon-doc.png');
     background-repeat: no-repeat;
     background-position: 0px center;
   }
@@ -1807,52 +1807,52 @@
     border-bottom-right-radius: 5px;
   }
   .AXContextMenu .contextMenuItem.docline {
-    background-image: url('images/contextMenuIcon_docline.png');
+    background-image: url('images/dx-context-icon-docline.png');
   }
   .AXContextMenu .contextMenuItem.plus {
-    background-image: url('images/contextMenuIcon_plus.png');
+    background-image: url('images/dx-context-icon-plus.png');
   }
   .AXContextMenu .contextMenuItem.minus {
-    background-image: url('images/contextMenuIcon_minus.png');
+    background-image: url('images/dx-context-icon-minus.png');
   }
   .AXContextMenu .contextMenuItem.group {
-    background-image: url('images/contextMenuIcon_group.png');
+    background-image: url('images/dx-context-icon-group.png');
   }
   .AXContextMenu .contextMenuItem.edit {
-    background-image: url('images/contextMenuIcon_edit.png');
+    background-image: url('images/dx-context-icon-edit.png');
   }
   .AXContextMenu .contextMenuItem.copy {
-    background-image: url('images/contextMenuIcon_copy.png');
+    background-image: url('images/dx-context-icon-copy.png');
   }
   .AXContextMenu .contextMenuItem.cut {
-    background-image: url('images/contextMenuIcon_cut.png');
+    background-image: url('images/dx-context-icon-cut.png');
   }
   .AXContextMenu .contextMenuItem.paste {
-    background-image: url('images/contextMenuIcon_paste.png');
+    background-image: url('images/dx-context-icon-paste.png');
   }
   .AXContextMenu .contextMenuItem.up {
-    background-image: url('images/contextMenuIcon_up.png');
+    background-image: url('images/dx-context-icon-up.png');
   }
   .AXContextMenu .contextMenuItem.down {
-    background-image: url('images/contextMenuIcon_down.png');
+    background-image: url('images/dx-context-icon-down.png');
   }
   .AXContextMenu .contextMenuItem.left {
-    background-image: url('images/contextMenuIcon_left.png');
+    background-image: url('images/dx-context-icon-left.png');
   }
   .AXContextMenu .contextMenuItem.right {
-    background-image: url('images/contextMenuIcon_right.png');
+    background-image: url('images/dx-context-icon-right.png');
   }
   .AXContextMenu .contextMenuItem.link {
-    background-image: url('images/contextMenuIcon_link.png');
+    background-image: url('images/dx-context-icon-link.png');
   }
   .AXContextMenu .contextMenuItem.unlink {
-    background-image: url('images/contextMenuIcon_unlink.png');
+    background-image: url('images/dx-context-icon-unlink.png');
   }
   .AXContextMenu .contextMenuItem.openall {
-    background-image: url('images/contextMenuIcon_openall.png');
+    background-image: url('images/dx-context-icon-openall.png');
   }
   .AXContextMenu .contextMenuItem.closeall {
-    background-image: url('images/contextMenuIcon_closeall.png');
+    background-image: url('images/dx-context-icon-cloaseall.png');
   }
   .AXContextMenu .contextMenuItem .contextSubMenuIcon {
     position: absolute;
@@ -1860,7 +1860,7 @@
     top: 0px;
     width: 30px;
     height: 30px;
-    background-image: url('images/contextSubMenuIcon.png');
+    background-image: url('images/dx-context-sub-icon.png');
     background-repeat: no-repeat;
     background-position: 0px center;
   }
@@ -1896,7 +1896,7 @@
   .AXNotification.Warning .AXNotificationIcon {
     width: 42px;
     height: 42px;
-    background: url('images/notificationWarning.png') no-repeat center center !important;
+    background: url('images/dx-noti-warning.png') no-repeat center center !important;
   }
   .AXNotification.Warning .AXNotificationBody B {
     color: #bf601b;
@@ -1904,7 +1904,7 @@
   .AXNotification.Caution .AXNotificationIcon {
     width: 42px;
     height: 42px;
-    background: url('images/notificationCaution.png') no-repeat center center !important;
+    background: url('images/dx-noti-caution.png') no-repeat center center !important;
   }
   .AXNotification.Caution .AXNotificationBody B {
     color: #7e302c;
@@ -1916,7 +1916,7 @@
     padding: 5px 15px;
     height: 20px;
     line-height: 20px;
-    background: url('images/dialogTitle.png') repeat-x;
+    background: url('images/dx-dialog-title.png') repeat-x;
     text-align: center;
   }
   .AXNotification .AXNotificationTable {
@@ -1932,7 +1932,7 @@
   .AXNotification .AXNotificationIcon {
     width: 42px;
     height: 42px;
-    background: url('images/notificationComplete.png') no-repeat center 5px !important;
+    background: url('images/dx-noti-complete.png') no-repeat center 5px !important;
   }
   .AXNotification .AXNotificationBody {
     font-size: 12px;
@@ -2036,7 +2036,7 @@
     text-align: center;
     border-right: 1px solid #b9babc;
     border-bottom: 1px solid #b9babc;
-    background: url('images/calendarBgs.png') repeat-x 0px -26px;
+    background: url('images/dx-calendar-bgs.png') repeat-x 0px -26px;
   }
   .AXCalendar table.calendarPage tbody td.bodyCol_6 {
     border-right: 0px none;
@@ -2045,7 +2045,7 @@
     border-bottom: 0px none;
   }
   .AXCalendar table.calendarPage tbody td.setDate {
-    background: url('images/calendarBgs.png') repeat-x 0px -76px;
+    background: url('images/dx-calendar-bgs.png') repeat-x 0px -76px;
   }
   .AXCalendar table.calendarPage tbody td A.calendarDate {
     display: block;
@@ -2087,7 +2087,7 @@
     text-align: center;
     border-right: 1px solid #b9babc;
     border-bottom: 1px solid #b9babc;
-    background: url('images/calendarBgs.png') repeat-x 0px -101px;
+    background: url('images/dx-calendar-bgs.png') repeat-x 0px -101px;
   }
   .AXCalendar table.calendarPageMonth tbody td.bodyCol_2 {
     border-right: 0px none;
@@ -2217,7 +2217,7 @@
     display: block;
     width: 38px;
     height: 38px;
-    background: url(img/axmodalClose.png) no-repeat;
+    background: url('images/dx-modal-close.png') no-repeat;
     border: 1px solid #a6a6a6;
     border-left: 0px none;
     box-shadow: 0px 0px 1px #a6a6a6;
@@ -2558,11 +2558,11 @@
   }
   .AXLoading {
     min-height: 50px;
-    background: url('images/AXUIProgressAnimate02_white.gif') no-repeat center center;
+    background: url('images/dx-progresss-ani-white-1.gif') no-repeat center center;
   }
   .AXLoadingSmall {
     min-height: 25px;
-    background: url('images/AXUIProgressAnimate01_white.gif') no-repeat center center;
+    background: url('images/dx-progresss-ani-white-2.gif') no-repeat center center;
   }
   .AXContextMenu {
     z-index: 4999;
@@ -2586,7 +2586,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    background-image: url('images/contextMenuIcon_doc.png');
+    background-image: url('images/dx-context-icon-doc.png');
     background-repeat: no-repeat;
     background-position: 0px center;
   }
@@ -2603,52 +2603,52 @@
     border-bottom-right-radius: 5px;
   }
   .AXContextMenu .contextMenuItem.docline {
-    background-image: url('images/contextMenuIcon_docline.png');
+    background-image: url('images/dx-context-icon-docline.png');
   }
   .AXContextMenu .contextMenuItem.plus {
-    background-image: url('images/contextMenuIcon_plus.png');
+    background-image: url('images/dx-context-icon-plus.png');
   }
   .AXContextMenu .contextMenuItem.minus {
-    background-image: url('images/contextMenuIcon_minus.png');
+    background-image: url('images/dx-context-icon-minus.png');
   }
   .AXContextMenu .contextMenuItem.group {
-    background-image: url('images/contextMenuIcon_group.png');
+    background-image: url('images/dx-context-icon-group.png');
   }
   .AXContextMenu .contextMenuItem.edit {
-    background-image: url('images/contextMenuIcon_edit.png');
+    background-image: url('images/dx-context-icon-edit.png');
   }
   .AXContextMenu .contextMenuItem.copy {
-    background-image: url('images/contextMenuIcon_copy.png');
+    background-image: url('images/dx-context-icon-copy.png');
   }
   .AXContextMenu .contextMenuItem.cut {
-    background-image: url('images/contextMenuIcon_cut.png');
+    background-image: url('images/dx-context-icon-cut.png');
   }
   .AXContextMenu .contextMenuItem.paste {
-    background-image: url('images/contextMenuIcon_paste.png');
+    background-image: url('images/dx-context-icon-paste.png');
   }
   .AXContextMenu .contextMenuItem.up {
-    background-image: url('images/contextMenuIcon_up.png');
+    background-image: url('images/dx-context-icon-up.png');
   }
   .AXContextMenu .contextMenuItem.down {
-    background-image: url('images/contextMenuIcon_down.png');
+    background-image: url('images/dx-context-icon-down.png');
   }
   .AXContextMenu .contextMenuItem.left {
-    background-image: url('images/contextMenuIcon_left.png');
+    background-image: url('images/dx-context-icon-left.png');
   }
   .AXContextMenu .contextMenuItem.right {
-    background-image: url('images/contextMenuIcon_right.png');
+    background-image: url('images/dx-context-icon-right.png');
   }
   .AXContextMenu .contextMenuItem.link {
-    background-image: url('images/contextMenuIcon_link.png');
+    background-image: url('images/dx-context-icon-link.png');
   }
   .AXContextMenu .contextMenuItem.unlink {
-    background-image: url('images/contextMenuIcon_unlink.png');
+    background-image: url('images/dx-context-icon-unlink.png');
   }
   .AXContextMenu .contextMenuItem.openall {
-    background-image: url('images/contextMenuIcon_openall.png');
+    background-image: url('images/dx-context-icon-openall.png');
   }
   .AXContextMenu .contextMenuItem.closeall {
-    background-image: url('images/contextMenuIcon_closeall.png');
+    background-image: url('images/dx-context-icon-cloaseall.png');
   }
   .AXContextMenu .contextMenuItem .contextSubMenuIcon {
     position: absolute;
@@ -2656,7 +2656,7 @@
     top: 0px;
     width: 30px;
     height: 30px;
-    background-image: url('images/contextSubMenuIcon.png');
+    background-image: url('images/dx-context-sub-icon.png');
     background-repeat: no-repeat;
     background-position: 0px center;
   }
@@ -2692,7 +2692,7 @@
   .AXNotification.Warning .AXNotificationIcon {
     width: 42px;
     height: 42px;
-    background: url('images/notificationWarning.png') no-repeat center center !important;
+    background: url('images/dx-noti-warning.png') no-repeat center center !important;
   }
   .AXNotification.Warning .AXNotificationBody B {
     color: #bf601b;
@@ -2700,7 +2700,7 @@
   .AXNotification.Caution .AXNotificationIcon {
     width: 42px;
     height: 42px;
-    background: url('images/notificationCaution.png') no-repeat center center !important;
+    background: url('images/dx-noti-caution.png') no-repeat center center !important;
   }
   .AXNotification.Caution .AXNotificationBody B {
     color: #7e302c;
@@ -2712,7 +2712,7 @@
     padding: 5px 15px;
     height: 20px;
     line-height: 20px;
-    background: url('images/dialogTitle.png') repeat-x;
+    background: url('images/dx-dialog-title.png') repeat-x;
     text-align: center;
   }
   .AXNotification .AXNotificationTable {
@@ -2728,7 +2728,7 @@
   .AXNotification .AXNotificationIcon {
     width: 42px;
     height: 42px;
-    background: url('images/notificationComplete.png') no-repeat center 5px !important;
+    background: url('images/dx-noti-complete.png') no-repeat center 5px !important;
   }
   .AXNotification .AXNotificationBody {
     font-size: 12px;
@@ -2832,7 +2832,7 @@
     text-align: center;
     border-right: 1px solid #b9babc;
     border-bottom: 1px solid #b9babc;
-    background: url('images/calendarBgs.png') repeat-x 0px -26px;
+    background: url('images/dx-calendar-bgs.png') repeat-x 0px -26px;
   }
   .AXCalendar table.calendarPage tbody td.bodyCol_6 {
     border-right: 0px none;
@@ -2841,7 +2841,7 @@
     border-bottom: 0px none;
   }
   .AXCalendar table.calendarPage tbody td.setDate {
-    background: url('images/calendarBgs.png') repeat-x 0px -76px;
+    background: url('images/dx-calendar-bgs.png') repeat-x 0px -76px;
   }
   .AXCalendar table.calendarPage tbody td A.calendarDate {
     display: block;
@@ -2883,7 +2883,7 @@
     text-align: center;
     border-right: 1px solid #b9babc;
     border-bottom: 1px solid #b9babc;
-    background: url('images/calendarBgs.png') repeat-x 0px -101px;
+    background: url('images/dx-calendar-bgs.png') repeat-x 0px -101px;
   }
   .AXCalendar table.calendarPageMonth tbody td.bodyCol_2 {
     border-right: 0px none;
@@ -3013,7 +3013,7 @@
     display: block;
     width: 38px;
     height: 38px;
-    background: url(img/axmodalClose.png) no-repeat;
+    background: url('images/dx-modal-close.png') no-repeat;
     border: 1px solid #a6a6a6;
     border-left: 0px none;
     box-shadow: 0px 0px 1px #a6a6a6;

@@ -2,49 +2,46 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>AXGrid</title>
-    
-    <meta property="og:image" content="/samples/_img/axisj_sns.png" />  
-    <meta property="og:site_name" content="Axis of Javascript - axisj.com" /> 
-    <meta property="og:description" id="meta_description" content="Javascript UI Library based on JQuery" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1" />
+	<title>AXISJ</title>
+	<!-- Libs -->
+	<script type="text/javascript" src="../../jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="../../lib/AXJ.js"></script>
+	<script type="text/javascript" src="../../lib/AXTab.js"></script>	
+	<script type="text/javascript" src="../../lib/AXInput.js"></script>		
+	<script type="text/javascript" src="../../lib/AXSelect.js"></script>		
+	<script type="text/javascript" src="../../lib/AXGrid.js"></script>			
+	<!-- Self -->
+	<script src="pageTab.js"></script>			
+	<!-- Theme -->
+	<script src="../../ui/arongi/page.js"></script>		
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/page.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXJ.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXTabs.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXSelect.css">			
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXInput.css">			
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXButton.css">			
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXGrid.css">				
 
-	<!-- css block -->
-	<link rel="stylesheet" type="text/css" href="../_css/default_common.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXJ.css" />
-	
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXButton.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXSelect.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXGrid.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXInput.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXTabs.css" />
-	
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/import_desktop.css" />
-	<![endif]-->
-
-	<style type="text/css">
-	H2, H3{font-family:consolas;}
-	</style>
-	<!-- css block -->
-	
-	<!-- js block -->
-	<script type="text/javascript" src="../../_AXJ/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXJ.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXInput.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXSelect.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXGrid.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXCodeView.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXTab.js"></script>
-	<script type="text/javascript" src="pageTab.js"></script>
-	
-	<script type="text/javascript">
+	<script>
+	/**
+	 * Require Files for AXISJ UI Component...
+	 * Based		: jQuery
+	 * Javascript 	: AXJ.js, AXGrid.js, AXInput.js, AXSelect.js
+	 * CSS			: AXJ.css, AXGrid.css, AXButton.css, AXInput.css, AXSelector.css
+	 */	
 	var pageID = "viewMode";
 	var myGrid = new AXGrid();
 	var itemSum = 0;
+	
 	var fnObj = {
 		pageStart: function(){
-			AXCode.bind(); // 소스보기
-
+			//Require page.js before this fn...
+			pageObj.host = "../../";
+			pageObj.incHeader();
+			pageObj.incFooter();	
+			
 			myGrid.setConfig({
 				targetID : "AXGridTarget",
 				theme : "AXGrid",
@@ -105,48 +102,124 @@
 			});
 			
 			var list = [
-				{no:1, title:"AXGrid 첫번째 줄 입니다.AXGrid 첫번째 줄 입니다.AXGrid 첫번째 줄 입니다.", writer:"장기영", img:"img/1.jpg", desc:"많은 글을 담고 있는 내용 입니다. 자연스럽게 줄이 넘어가고 표현되는 것이 관건 입니다."}, // item
-				{no:2, title:"AXGrid 두번째 줄 입니다.", writer:"장기영", img:"img/2.jpg"},
-				{no:3, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"img/3.jpg"},
-				{no:4, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"img/4.jpg"},
-				{no:5, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"img/5.jpg"},
-				{no:6, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"img/6.jpg"},
-				{no:7, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"img/7.jpg"},
-				{no:8, title:"AXGrid 첫번째 줄 입니다.", writer:"장기영", img:"img/8.jpg"},
-				{no:9, title:"AXGrid 두번째 줄 입니다.", writer:"장기영", img:"img/9.jpg"},
-				{no:10, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"img/10.jpg"},
-				{no:11, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"img/11.jpg"},
-				{no:12, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"img/12.jpg"},
-				{no:13, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"img/13.jpg"},
-				{no:14, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"img/14.jpg"},
-				{no:15, title:"AXGrid 두번째 줄 입니다.", writer:"장기영", img:"img/15.jpg"},
-				{no:16, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"img/16.jpg"},
-				{no:17, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"img/17.jpg"},
-				{no:18, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"img/18.jpg"},
-				{no:19, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"img/19.jpg"},
-				{no:20, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"img/20.jpg"}
+				{no:1, title:"AXGrid 첫번째 줄 입니다.AXGrid 첫번째 줄 입니다.AXGrid 첫번째 줄 입니다.", writer:"장기영", img:"images/1.jpg", desc:"많은 글을 담고 있는 내용 입니다. 자연스럽게 줄이 넘어가고 표현되는 것이 관건 입니다."}, // item
+				{no:2, title:"AXGrid 두번째 줄 입니다.", writer:"장기영", img:"images/2.jpg"},
+				{no:3, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"images/3.jpg"},
+				{no:4, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"images/4.jpg"},
+				{no:5, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"images/5.jpg"},
+				{no:6, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"images/6.jpg"},
+				{no:7, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"images/7.jpg"},
+				{no:8, title:"AXGrid 첫번째 줄 입니다.", writer:"장기영", img:"images/8.jpg"},
+				{no:9, title:"AXGrid 두번째 줄 입니다.", writer:"장기영", img:"images/9.jpg"},
+				{no:10, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"images/10.jpg"},
+				{no:11, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"images/11.jpg"},
+				{no:12, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"images/12.jpg"},
+				{no:13, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"images/13.jpg"},
+				{no:14, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"images/14.jpg"},
+				{no:15, title:"AXGrid 두번째 줄 입니다.", writer:"장기영", img:"images/15.jpg"},
+				{no:16, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"images/16.jpg"},
+				{no:17, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"images/17.jpg"},
+				{no:18, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"images/18.jpg"},
+				{no:19, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"images/19.jpg"},
+				{no:20, title:"AXGrid 세번째 줄 입니다.", writer:"장기영", img:"images/20.jpg"}
 			];
 			myGrid.setList(list);
 		},
 		otherFunction: function(reqThis){
 			toast.push(reqThis.buttonItem.label+"//"+Object.toJSON(reqThis.item));
 		}
+
 	};
-	
-	$(document.body).ready(function(){
-		setTimeout(fnObj.pageStart, 1);
-	});
+	jQuery(document).ready(fnObj.pageStart);
 	</script>
-	<!-- js block -->
+
+	<style type="text/css">
 	
+	</style>
 </head>
+	
 <body>
-	<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
-	<div class="AXdemoPageContent">
 
-		<h2>AXGrid</h2>
+<div id="AXPage">
+	<!-- s.AXPageHead -------------------------------------------------- -->
+	<header id="AXPageHead">
+		<div class="ax-wrap">
+			<div class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
 
-		<div id="AXGridTarget" style="height:600px;"></div>
-	</div>
+						<!-- navMenu < -->
+						<nav class="navMenu"></nav>
+						<!-- navMenu > -->
+
+					</div>	
+				</div>	
+			</div>	
+			<div class="ax-layer-2">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+
+						<!-- navMenu < -->
+						<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
+						<!-- navMenu > -->
+
+					</div>	
+				</div>	
+			</div>	
+
+		</div>
+	</header>
+	<!-- e.AXPageHead -------------------------------------------------- -->
+	<div class="ax-clear"></div>						
+	<!-- s.AXPageBody -------------------------------------------------- -->
+	<article id="AXPageBody" class="SampleAXSelect">
+
+		<div class="ax-wrap">
+			<div class="title"><h1>AXGrid</h1></div>
+			<!-- s.axlayer 1 -->		
+			<section class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+						<h2>Default</h2>
+
+						<div id="AXGridTarget" style="height:600px;"></div>
+						
+						<div class="H30"></div>
+						
+					</div>	
+				</div>
+				
+				<div class="ax-clear"></div>
+			</section>
+			<!-- e.axlayer 1 -->
+			
+			<div class="ax-clear"></div>							
+	
+		</div>
+		<div class="H20"></div>		
+	</article>
+	<!-- e.AXPageBody -------------------------------------------------- -->
+
+	<div class="ax-clear"></div>
+	
+	<!-- s.AXPageFoot -------------------------------------------------- -->
+	<footer id="AXPageFoot">
+		<div class="ax-wrap">
+			<div class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+						
+						<!-- navTheme < -->
+						<nav class="navTheme"></nav>
+						<!-- navTheme > -->
+						
+					</div>	
+				</div>
+			</div>			
+		</div>
+	</footer>
+	<!-- e.AXPageFoot -------------------------------------------------- -->
+</div>
+
 </body>
-</html>
+</html>		
