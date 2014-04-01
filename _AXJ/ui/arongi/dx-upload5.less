@@ -1,0 +1,196 @@
+@import "preset";
+@import "AXUtils";
+
+// AXUpload5 ///////////////////////////////////////////////////
+.AXUpload5{
+	height:26px;
+	.swfupload{
+		position:absolute;left:0px;top:0px;
+	}
+	table, table td{
+		background:none !important;
+		border:0px none !important;
+		border-collapse:collapse;border-spacing:0px;padding:0px;margin:0px;
+		text-align:left;
+	}
+	.AXFileSelector{
+		padding-right:26px;padding-left:5px;
+		background:url('images/dx-upload5-icon.png') no-repeat 100%;
+	}
+	.AXFileDisplay{
+		white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+		color:#525252;
+		.AXUploadItem{
+			position:relative;height:24px;
+			.AXUploadTit{
+				text-indent:46px;font-size:12px;line-height:24px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+			}
+			.AXUploadBtns{
+				position:absolute;left:0px;top:0px;line-height:1em;
+				.AXUploadBtnsA{
+					display:block;width:24px;height:24px;background:url('images/dx-upload5-remove-icon.png') no-repeat center center;
+					text-indent:-1000px;overflow:hidden;line-height:50000px;
+				}
+			}
+			.AXUploadLabel{
+				position:absolute;left:24px;top:4px;line-height:1em;
+				.AXUploadDownload{
+					display:block;width:16px;height:16px;background:url('images/dx-upload5-download-icon.png') no-repeat #fff;
+					text-indent:-1000px;overflow:hidden;line-height:50000px;
+					&:hover{background-color:#000;}
+				}
+				.AXUploadMainImage{
+					display:block;width:16px;height:16px;background:url('images/dx-upload5-main-image-icon.png') no-repeat #fff;
+					text-indent:-1000px;overflow:hidden;float:left;line-height:50000px;					
+				}
+			}			
+		}
+		.AXUploadProcess{
+			position:absolute;left:10px;top:8px;height:8px;
+			width:100px;
+			background:#b2b2b2;border:1px solid #b2b2b2;
+			border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;font-size:1px;line-height:1px;			
+			.AXUploadProcessBar{
+				background:#fff;height:8px;width:0px;min-width:5px;border-radius:4px;
+			}			
+		}
+	}
+}
+
+.AXUpload5QueueBox{
+	position:relative;
+	border:1px solid #b1b1b1;background:#f7f7f7;
+	overflow:auto;
+	&.allowDrop{
+		background-image:url('images/dx-upload5-drop-icon-img.png');
+		background-repeat:no-repeat;
+		background-position:center center;
+		.dropZoneBox{
+			position:absolute;
+			left:0px;top:0px;
+			z-index:1000;
+		}
+	}
+	.AXUploadItem{
+		box-sizing:content-box !important;
+		position:relative;float:left;padding:10px;margin:9px 0px 0px 9px;width:100px;
+		height:148px;color:#525252;overflow:hidden;z-index:100;
+		&.readyselect{cursor:pointer;}
+		&.beSelected{
+			background:#68adcf;color:#fff;
+			.AXUploadBtns{
+				.AXUploadBtnsA{
+					background:url('images/dx-upload5-remove-icon-white.png') no-repeat center center;
+				}
+			}
+		}
+		&.AX_selecting{
+			background:#68adcf;color:#fff;
+			.AXUploadBtns{
+				.AXUploadBtnsA{
+					background:url('images/dx-upload5-remove-icon-white.png') no-repeat center center;
+				}
+			}
+		}
+		
+		.AXUploadIcon{
+			background-color:#e0e0e0;
+			width:100px;height:100px;
+			text-align:center;line-height:100px;
+			font-size:14px;color:#888;font-weight:bold;
+		}
+		.AXUploadType{
+			white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:12px;line-height:1.3em;padding-top:3px;text-align:right;			
+		}
+		.AXUploadTit{
+			font-size:12px;line-height:1.3em;word-break:break-all;height:32px;overflow:hidden;
+		}
+		.AXUploadSize{
+			font-size:11px;
+		}
+		.AXUploadProcess{
+			position:absolute;left:20px;top:54px;height:8px;width:78px;background:#b2b2b2;
+			border:1px solid #b2b2b2;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;font-size:1px;line-height:1px;
+			.AXUploadProcessBar{
+				background:#fff;height:8px;width:0px;min-width:5px;border-radius:4px;
+			}
+		}
+		.AXUploadBtns{
+			position:absolute;left:3px;top:110px;line-height:1em;
+			.AXUploadBtnsA{
+				display:block;width:24px;height:24px;background:url('images/dx-upload5-remove-icon-black.png') no-repeat center center;
+				text-indent:-1000px;overflow:hidden;line-height:50000px;
+			}
+		}
+		.AXUploadLabel{
+			position:absolute;right:14px;top:14px;line-height:1em;
+			.AXUploadMainImage{
+				display:none;width:16px;height:16px;background:url('images/dx-upload5-main-image-icon.png') no-repeat #fff;
+				text-indent:-1000px;overflow:hidden;float:left;line-height:50000px;
+			}
+			.AXUploadDownload{
+				display:block;width:16px;height:16px;background:url('images/dx-upload5-download-icon.png') no-repeat #fff;
+				text-indent:-1000px;overflow:hidden;line-height:50000px;				
+				&:hover{
+					background-color:#000;
+				}
+			}
+		}
+		.AXUploadPreview{
+			background-size:contain;
+			background-position:center center;
+			background-repeat:no-repeat;
+			background-color:transparent;
+		}
+		
+	}
+}
+
+
+.AXUpload5Single{
+	table{
+		tbody{
+			tr{
+				td{border:0px none;background:none;}
+			}
+		}
+	}
+	.AXUploadButton{}
+	.AXUploadDisplay{
+		position:relative;
+		padding:0px 0px 0px 5px;
+		.AXUploadProcess{
+			position:relative;width:120px;background:#fff;
+			border:1px solid #000;border-radius:7px;
+			font-size:1px;line-height:1px;
+			box-shadow:0px 0px 3px #ccc;
+			overflow:hidden;
+			.AXUploadProcessBar{
+				background:url('images/dx-red-small.png') repeat-x 0px center;height:15px;width:0px;
+				border:1px solid #fff;border-radius:5px;
+			}
+		}
+		.AXFileTitleBlock{
+			position:relative;		
+			.AXFileTitle{
+				display:inline-block;
+				height:24px;line-height:24px;
+				padding-right:24px;
+				text-decoration:none;
+				color:#444;
+				max-width:150px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;				
+			}	
+			.AXFileDelete{
+				position:absolute;
+				right:0px;top:0px;
+				display:block;
+				background:url('images/dx-cross-button.png') no-repeat 100% center;
+				height:24px;width:24px;
+				line-height:2000px;overflow:hidden;
+			}
+		}
+		
+	}
+	
+}
+

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1" />
+	<title>AXISJ</title>
+	<!-- Libs -->
+	<script type="text/javascript" src="../../jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="../../lib/AXJ.js"></script>
+	<script type="text/javascript" src="../../lib/AXTab.js"></script>	
+	<script type="text/javascript" src="../../lib/AXInput.js"></script>		
+	<script type="text/javascript" src="../../lib/AXSelect.js"></script>			
+	<script type="text/javascript" src="../../lib/AXTree.js"></script>			
+	
+	<!-- Self -->
+	<script src="pageTab.js"></script>			
+	<!-- Theme -->
+	<script src="../../ui/arongi/page.js"></script>		
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/page.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXJ.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXTabs.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXButton.css">			
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXInput.css">	
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXSelect.css">		
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXTree.css">	
+
+	<script>
+	/**
+	 * Require Files for AXISJ UI Component...
+	 * Based		: jQuery
+	 * Javascript 	: AXJ.js, AXTree.js, AXInput.js, AXSelect.js
+	 * CSS			: AXJ.css, AXTree.css, AXInput.css, AXSelect.css
+	 */	
+	var pageID = "ajax";
+	var myTree = new AXTree();
+	var youTree = new AXTree();
+
+	var fnObj = {
+		pageStart: function(){
+			//Require page.js before this fn...
+			pageObj.host = "../../";
+			pageObj.incHeader();
+			pageObj.incFooter();	
+			
+			myTree.setConfig({
+				targetID : "AXTreeTarget",
+				theme: "AXTree",
+				//height:"auto",
+				xscroll:false,
+				reserveKeys:{
+					parentHashKey:"pHash", // 부모 트리 포지션
+					hashKey:"hash", // 트리 포지션
+					openKey:"open", // 확장여부
+					subTree:"subTree", // 자식개체키
+					displayKey:"display" // 표시여부
+				},
+				relation:{
+					parentKey:"pno",
+					childKey:"no"
+				},
+				colGroup: [
+					{
+						key:"no", label:"번호", width:"30", align:"center", formatter:"checkbox", 
+						disabled:function(){
+							return (this.item.__subTreeLength > 0) ? true : false;
+						},
+						checked:function(){
+							return false;	
+						}
+					},
+					{
+						key:"nodeName",
+						label:"제목",
+						width:"250", align:"left",
+						indent:true,
+						getIconClass: function(){
+							//folder, AXfolder, movie, img, zip, file, fileTxt, fileTag
+							var iconNames = "folder, AXfolder, movie, img, zip, file, fileTxt, fileTag".split(/, /g);
+							var iconName = "file";
+							if(this.item.type) iconName = iconNames[this.item.type];
+							return iconName;
+						},
+						formatter:function(){
+							return "<b>"+this.item.no.setDigit(2) + "</b> : " + this.item.nodeName + " (" + this.item.writer + ")";
+						}
+					}
+					,{key:"writer", label:"작성자", width:"80", align:"center"}
+				],
+				colHead: {
+					display:true
+				},
+				body: {
+					onclick:function(idx, item){
+						toast.push(Object.toJSON(this.item));
+					},
+					oncheck:function(){
+						//사용 가능한 변수
+						//this.index
+						//this.target
+						//this.checked
+						//this.r
+						//this.c
+						//this.list
+						//this.item
+						alert(this.checked);
+					},
+					onexpand: function(){
+						if(this.subTree.length == 0){ //자식개체가 없으므로.. subTree 호출 처리 합니다.
+							var index = this.index, item = this.item;
+							myTree.setLoading(index, item); // 화살표를 loading mark 로 전환 합니다.
+							var url = "loadTree.txt";
+							var pars = "no="+this.item.no;
+							new AXReq(url, {debug:false, pars:pars, onsucc:function(res){
+								if(res.result == AXUtil.ajaxOkCode){
+									trace(res.tree);
+									myTree.appendTree(index, item, res.tree);
+								}else{
+									trace(res);
+								}
+								myTree.endLoading(index, item); // 화살표를 loading mark 로 전환 합니다.
+							}, onerr:null});
+						}
+					}
+				}
+			});
+			myTree.setTree({ajaxUrl:"loadTree.txt", ajaxPars:"param1=1&param2=2"});			
+		}
+	};
+	jQuery(document).ready(fnObj.pageStart);
+	</script>
+
+	<style type="text/css">
+	
+	</style>
+</head>
+	
+<body>
+
+<div id="AXPage">
+	<!-- s.AXPageHead -------------------------------------------------- -->
+	<header id="AXPageHead">
+		<div class="ax-wrap">
+			<div class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+
+						<!-- navMenu < -->
+						<nav class="navMenu"></nav>
+						<!-- navMenu > -->
+
+					</div>	
+				</div>	
+			</div>	
+			<div class="ax-layer-2">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+
+						<!-- navMenu < -->
+						<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
+						<!-- navMenu > -->
+
+					</div>	
+				</div>	
+			</div>	
+
+		</div>
+	</header>
+	<!-- e.AXPageHead -------------------------------------------------- -->
+	<div class="ax-clear"></div>						
+	<!-- s.AXPageBody -------------------------------------------------- -->
+	<article id="AXPageBody" class="SampleAXSelect">
+
+		<div class="ax-wrap">
+			<div class="title"><h1>AXTree</h1></div>
+			<!-- s.axlayer 1 -->		
+			<section class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+						<h2>Default</h2>
+						
+						<div id="AXTreeTarget" style="height:400px;"></div>						
+						
+						<div class="H30"></div>
+					</div>	
+				</div>
+				
+				<div class="ax-clear"></div>
+			</section>
+			<!-- e.axlayer 1 -->
+			
+			<div class="ax-clear"></div>							
+	
+		</div>
+		<div class="H20"></div>		
+	</article>
+	<!-- e.AXPageBody -------------------------------------------------- -->
+
+	<div class="ax-clear"></div>
+	
+	<!-- s.AXPageFoot -------------------------------------------------- -->
+	<footer id="AXPageFoot">
+		<div class="ax-wrap">
+			<div class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+						
+						<!-- navTheme < -->
+						<nav class="navTheme"></nav>
+						<!-- navTheme > -->
+						
+					</div>	
+				</div>
+			</div>			
+		</div>
+	</footer>
+	<!-- e.AXPageFoot -------------------------------------------------- -->
+</div>
+
+</body>
+</html>		

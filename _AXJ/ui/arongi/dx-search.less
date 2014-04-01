@@ -1,0 +1,188 @@
+@import "preset";
+@import "AXUtils";
+
+// AXSearch ///////////////////////////////////////////////////
+.AXSearch{
+	position:relative;
+	.expandHandle{
+		display:block;
+		border-bottom:1px solid #ccc;
+		background:#eee;
+		text-align:center;
+		color:#888;
+		text-decoration:none;
+		font-size:11px;line-height:20px;height:20px;
+	}	
+	.searchGroup{
+		position:relative;
+		background: #fff;
+		min-height:40px;
+		&.gray{
+			background: #f5f5f5;
+			padding:0px;
+			min-height:25px;
+			.searchItem{
+				&.searchLabel{
+					background: #eee;				
+				}
+			}
+		}
+		.searchItem{
+			float:left;
+			line-height:25px;min-height:25px;
+			padding:0px;
+			text-align:center;
+			position:relative;
+			.itemTable{
+				tr{
+					th{
+						color:#616161;
+						border-right:1px solid #d8d8d8;
+						min-height:40px;
+					}
+					td{
+						padding:7px 10px 7px 10px;text-align:left;position:relative;
+					}
+				}
+			}
+			&.secondItem{
+				.itemTable{
+					tr{
+						th{border-left:1px solid #d8d8d8 };						
+					} 
+				}				
+			}
+			&.rightPadding0{
+				.itemTable{
+					tr{
+						td{padding-right:0px;}
+					} 
+				}				
+			}
+			&.leftPadding0{
+				.itemTable{
+					tr{
+						td{padding-left:0px;}
+					} 
+				}				
+			}
+			&.padding0{
+				.itemTable{
+					tr{
+						td{padding:10px 0px}
+					} 
+				}				
+			}
+			&.searchLabel{
+				background: #f3f3f3;
+				font-weight:bold;
+				font-size:11px;
+				color:#444;
+			}
+			&.searchLink{
+				color:#ccc;
+				.searchLinkItem{
+					color:#616161;
+					text-decoration:none;padding:0px 3px;
+					&.on{
+						color:#616161;
+						font-weight:bold;
+						text-decoration:underline;
+					}	
+				}
+			}
+		}
+		.groupClear{
+			font-size:1px;line-height:1px;height:1px;
+			background:#ccc;
+			clear:both;
+		}
+	}	
+	 
+}
+
+
+
+// AXSearchTable ///////////////////////////////////////////////////
+.AXSearchTable{
+	border-top:1px solid #c1c1c1;border-bottom:0px none;
+	width:100%;table-layout:fixed;
+	font-size:12px;
+	td, th{
+		.tdRel{
+			padding:0px 10px;
+		}	
+	}
+	tbody{
+		td{
+			min-height:36px;height:36px;overflow:visible;
+			border-bottom:1px solid #c1c1c1;
+			color:#666;
+			background:url('images/dx-grid-body-border.png') repeat-y 100% 0px;			
+		}
+		th{
+			min-height:36px;height:36px;overflow:visible;
+			border-bottom:1px solid #c1c1c1;
+			color:#444;
+			text-align:center;
+			background:url('images/dx-grid-body-border.png') repeat-y 100% 0px #fff;			
+		}
+		tr{
+			.gray{
+				td, th{
+					background-color:#F5F5F5;
+				}
+			}
+			.red{
+				td, th{
+					background-color:#FFE8E8;
+				}				
+			}
+			.green{
+				td, th{
+					background-color:#F7FDEA;
+				}
+			}
+			.blue{
+				td, th{
+					background-color:#EAF5FD;
+				}
+			}
+			.yellow{
+				td, th{
+					background-color:#FEFEE9;
+				}
+			}
+		}
+		td.last, th.last{
+			background:url() repeat-y 100% 0px;	
+		}
+	}
+}
+	
+// AXMultiselectorHelper
+.AXMultiselectorHelper{
+	position:absolute;
+	border:1px dotted #000;
+}
+
+// AXResizable
+.AXResizable{
+	position:relative;
+	.AXResizableHandle{
+		position:absolute;
+		width:18px;height:18px;
+		right:1px;bottom:1px;
+		cursor:se-resize;
+		background:url('images/dx-resizable-handle.png') no-repeat;
+	}
+}
+
+.AXResizableHelper{
+	position:absolute;
+	border:1px dotted #000;
+	cursor:se-resize;
+	background:url('images/dx-resizable-handle.png') no-repeat 100% 100%;
+}		
+
+
