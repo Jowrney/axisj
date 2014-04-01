@@ -1,3 +1,13 @@
+.util-border-radius-none {
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  border-radius: none;
+}
+.util-text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .AXprogressTray {
   position: fixed;
   left: 0px;

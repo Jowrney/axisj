@@ -9,6 +9,16 @@
   text-overflow: ellipsis;
 }
 @media (min-width:1152px) {
+  .util-border-radius-none {
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    border-radius: none;
+  }
+  .util-text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .AXprogressTray {
     position: fixed;
     left: 0px;
@@ -176,6 +186,16 @@
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1151px) {
+  .util-border-radius-none {
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    border-radius: none;
+  }
+  .util-text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .AXprogressTray {
     position: fixed;
     left: 0px;
@@ -343,6 +363,16 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .util-border-radius-none {
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    border-radius: none;
+  }
+  .util-text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .AXprogressTray {
     position: fixed;
     left: 0px;
@@ -510,6 +540,16 @@
   }
 }
 @media (max-width: 767px) {
+  .util-border-radius-none {
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    border-radius: none;
+  }
+  .util-text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .AXprogressTray {
     position: fixed;
     left: 0px;
