@@ -1,58 +1,55 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>AXEditor</title>
-    
-    <meta property="og:image" content="/samples/_img/axisj_sns.png" />  
-    <meta property="og:site_name" content="Axis of Javascript - axisj.com" /> 
-    <meta property="og:description" id="meta_description" content="Javascript UI Library based on JQuery" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1" />
+	<title>AXISJ</title>
+	<!-- Libs -->
+	<script type="text/javascript" src="../../jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="../../lib/AXJ.js"></script>
+	<script type="text/javascript" src="../../lib/AXTab.js"></script>	
+	<script type="text/javascript" src="../../lib/AXInput.js"></script>		
+	<script type="text/javascript" src="../../lib/AXSelect.js"></script>			
+	<script type="text/javascript" src="../../lib/AXEditor.js"></script>			
+	<script type="text/javascript" src="../../lib/AXUpload5.js"></script>				
+	
+	<!-- Self -->
+	<script src="pageTab.js"></script>			
+	<!-- Theme -->
+	<script src="../../ui/arongi/page.js"></script>		
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/page.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXJ.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXTabs.css">
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXButton.css">			
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXInput.css">	
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXSelect.css">		
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXEditor.css">		
+	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXUpload5.css">			
 
-	<!-- css block -->
-	<link rel="stylesheet" type="text/css" href="../_css/default_common.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXJ.css" />
-	
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXButton.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXSelect.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXInput.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXTabs.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXEditor.css" />
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/AXUpload5.css" />
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="../../_AXJ/ui/default/import_desktop.css" />
-	<![endif]-->
-	<style type="text/css">
-	H2, H3{font-family:consolas;}
-	</style>
-	<!-- css block -->
-	
-	<!-- js block -->
-	<script type="text/javascript" src="../../_AXJ/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXJ.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXInput.js"></script>
-	
-	<script type="text/javascript" src="../../_AXJ/lib/AXDOMRange.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXEditor.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXUpload5.js"></script>
-	
-	<script type="text/javascript" src="../../_AXJ/lib/AXCodeView.js"></script>
-	<script type="text/javascript" src="../../_AXJ/lib/AXTab.js"></script>
-	<script type="text/javascript" src="pageTab.js"></script>
-	
-	<script type="text/javascript">
+	<script>
+	/**
+	 * Require Files for AXISJ UI Component...
+	 * Based		: jQuery
+	 * Javascript 	: AXJ.js, AXInput.js, AXDOMRange.js, AXEditor.js, AXUpload5.js
+	 * CSS			: AXJ.css, AXButton.css, AXSelect.css, AXInput.css, AXEditor.css, AXUpload5.css
+	 */	
 	var pageID = "withAXUpload5";
-
 	var myEditor = new AXEditor();
 	var myUpload = new AXUpload5();
+	
 	var fnObj = {
 		pageStart: function(){
-			AXCode.bind(); // 소스보기
+			//Require page.js before this fn...
+			pageObj.host = "../../";
+			pageObj.incHeader();
+			pageObj.incFooter();	
 			
 			myEditor.setConfig({
 				targetID: "AXEditorTarget",
 				lang: "kr",
 				height:300,
-				frameSrc: "../../_AXJ/lib/AXEditor.html",
+				frameSrc: pageObj.host+"lib/AXEditor.html",
 				editorFontFamily: "Malgun Gothic",
 				fonts:["Malgun Gothic","Gulim","Dotum","궁서"],
 				onReady: function(){
@@ -61,7 +58,6 @@
 			});
 			
 			fnObj.upload.init();
-
 		},
 		upload: {
 			init: function(){
@@ -74,8 +70,8 @@
 					queueBoxID:"uploadQueueBox", // upload queue targetID
 					//queueBoxAppendType:"(prepend || append)",
 					// html 5를 지원하지 않는 브라우저를 위한 swf upload 설정 원치 않는 경우엔 선언 하지 않아도 됩니다. ------- s
-					flash_url : "../../_AXJ/lib/swfupload.swf",
-					flash9_url : "../../_AXJ/lib/swfupload_fp9.swf",
+					flash_url : pageObj.host+"lib/swfupload.swf",
+					flash9_url : pageObj.host+"lib/swfupload_fp9.swf",
 					
 					// --------- e
 					onClickUploadedItem: function(){ // 업로드된 목록을 클릭했을 때.
@@ -180,45 +176,120 @@
 			});
 			alert(fpas);
 			
-		}
+		}		
 	};
-	
-	$(document.body).ready(function(){
-		setTimeout(fnObj.pageStart, 1);
-	});
+	jQuery(document).ready(fnObj.pageStart);
 	</script>
-	<!-- js block -->
+
+	<style type="text/css">
+	
+	</style>
 </head>
+	
 <body>
-	<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
-	<div class="AXdemoPageContent">
 
-		<h2>AXEditor with AXUpload5</h2>
-		
-		<div id="AXEditorTarget"></div>
-		<div id="editContent" style="display:none;">에디터의 사용 법은 ?</div>
+<div id="AXPage">
+	<!-- s.AXPageHead -------------------------------------------------- -->
+	<header id="AXPageHead">
+		<div class="ax-wrap">
+			<div class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
 
-		<div class="Hspace10"></div>
-		
-		<div class="AXUpload5" id="AXUpload5"></div>
-		<div class="Hspace10"></div>
-		<div id="uploadQueueBox" class="AXUpload5QueueBox" style="height:188px;"></div>
-		<div class="Hspace10"></div>
-		<div style="padding-top:5px;">
-			<input type="button" value="전송중지" class="AXButton" id="uploadCancelBtn" disabled="disabled" onclick="myUpload.cancelUpload();" />
-			<input type="button" value="선택삭제" class="AXButton" onclick="myUpload.deleteSelect();" />
-			<input type="button" value="모두삭제" class="AXButton" onclick="myUpload.deleteSelect('all');" />
+						<!-- navMenu < -->
+						<nav class="navMenu"></nav>
+						<!-- navMenu > -->
+
+					</div>	
+				</div>	
+			</div>	
+			<div class="ax-layer-2">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+
+						<!-- navMenu < -->
+						<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
+						<!-- navMenu > -->
+
+					</div>	
+				</div>	
+			</div>	
+
 		</div>
-		<div class="Hspace20"></div>
-		
-		<div style="padding:5px;" align="center">
-			<input type="button" value="파라미터 추출" class="AXButtonLarge Red" onclick="fnObj.saveEditor();" />
+	</header>
+	<!-- e.AXPageHead -------------------------------------------------- -->
+	<div class="ax-clear"></div>						
+	<!-- s.AXPageBody -------------------------------------------------- -->
+	<article id="AXPageBody" class="SampleAXSelect">
+
+		<div class="ax-wrap">
+			<div class="title"><h1>AXEditor</h1></div>
+			<!-- s.axlayer 1 -->		
+			<section class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+						<h2>AXEditor with AXUpload5</h2>
+						
+						<div id="AXEditorTarget"></div>
+						<div id="editContent" style="display:none;">에디터의 사용 법은 ?</div>
+				
+						<div class="H10"></div>
+						
+						<div class="AXUpload5" id="AXUpload5"></div>
+
+						<div class="H10"></div>
+
+						<div id="uploadQueueBox" class="AXUpload5QueueBox" style="height:188px;"></div>
+
+						<div class="H10"></div>
+
+						<div>
+							<input type="button" value="전송중지" class="AXButton" id="uploadCancelBtn" disabled="disabled" onclick="myUpload.cancelUpload();" />
+							<input type="button" value="선택삭제" class="AXButton" onclick="myUpload.deleteSelect();" />
+							<input type="button" value="모두삭제" class="AXButton" onclick="myUpload.deleteSelect('all');" />
+						</div>
+
+						<div class="H20"></div>
+						
+						<div align="center">
+							<input type="button" value="파라미터 추출" class="AXButtonLarge Red" onclick="fnObj.saveEditor();" />
+						</div>
+						
+						<div class="H30"></div>
+					</div>	
+				</div>
+				
+				<div class="ax-clear"></div>
+			</section>
+			<!-- e.axlayer 1 -->
+			
+			<div class="ax-clear"></div>							
+	
 		</div>
+		<div class="H20"></div>		
+	</article>
+	<!-- e.AXPageBody -------------------------------------------------- -->
 
-
-		<div class="Hspace20"></div>		
-
-	</div>
+	<div class="ax-clear"></div>
+	
+	<!-- s.AXPageFoot -------------------------------------------------- -->
+	<footer id="AXPageFoot">
+		<div class="ax-wrap">
+			<div class="ax-layer-1">
+				<div class="ax-col-12">
+					<div class="ax-unit">
+						
+						<!-- navTheme < -->
+						<nav class="navTheme"></nav>
+						<!-- navTheme > -->
+						
+					</div>	
+				</div>
+			</div>			
+		</div>
+	</footer>
+	<!-- e.AXPageFoot -------------------------------------------------- -->
+</div>
 
 </body>
-</html>
+</html>		

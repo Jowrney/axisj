@@ -381,7 +381,7 @@
     box-sizing: content-box !important;
   }
   .AXTabs .AXTabsTray {
-    background: url('images/AXTabBg.png');
+    background: url('images/dx-tab-bg.png');
     box-sizing: content-box !important;
   }
   .AXTabs .AXTabsTray .trayScroll {
@@ -638,18 +638,18 @@
     top: 1px;
     width: 29px;
     height: 28px;
-    background: url('images/leftArrowsBg.png') repeat-y 0px 0px;
+    background: url('images/dx-left-arrows-bg.png') repeat-y 0px 0px;
   }
   .AXTabs .AXTabsTray .leftArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 28px;
-    background: url('images/leftArrows01.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabs .AXTabsTray .leftArrowHandleBox .tabArrow:hover {
-    background: url('images/leftArrows01r.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabs .AXTabsTray .rightArrowHandleBox {
     position: absolute;
@@ -657,18 +657,18 @@
     top: 1px;
     width: 29px;
     height: 28px;
-    background: url('images/rightArrowsBg.png') repeat-y 100% 0px;
+    background: url('images/dx-right-arrows-bg.png') repeat-y 100% 0px;
   }
   .AXTabs .AXTabsTray .rightArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 28px;
-    background: url('images/rightArrows01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabs .AXTabsTray .rightArrowHandleBox .tabArrow:hover {
-    background: url('images/rightArrows01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabs .AXTabsTray .rightArrowMoreBox {
     position: absolute;
@@ -682,12 +682,12 @@
     display: block;
     width: 24px;
     height: 28px;
-    background: url('images/rightArrowsMore01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabs .AXTabsTray .rightArrowMoreBox .tabArrow:hover {
-    background: url('images/rightArrowsMore01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01-r.png') no-repeat 50%;
   }
   .AXTabsLarge {
     position: relative;
@@ -695,7 +695,7 @@
     overflow: hidden;
   }
   .AXTabsLarge .AXTabsTray {
-    background: url('images/AXTabBgLarge.png');
+    background: url('images/dx-tab-bg-large.png');
   }
   .AXTabsLarge .AXTabsTray .trayScroll {
     position: absolute;
@@ -947,18 +947,18 @@
     top: 1px;
     width: 29px;
     height: 44px;
-    background: url('images/leftArrowsBg.png') repeat-y 0px 0px;
+    background: url('images/dx-left-arrows-bg.png') repeat-y 0px 0px;
   }
   .AXTabsLarge .AXTabsTray .leftArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 44px;
-    background: url('images/leftArrows01.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsLarge .AXTabsTray .leftArrowHandleBox .tabArrow:hover {
-    background: url('images/leftArrows01r.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabsLarge .AXTabsTray .rightArrowHandleBox {
     position: absolute;
@@ -966,18 +966,18 @@
     top: 1px;
     width: 29px;
     height: 44px;
-    background: url('images/rightArrowsBg.png') repeat-y 100% 0px;
+    background: url('images/dx-right-arrows-bg.png') repeat-y 100% 0px;
   }
   .AXTabsLarge .AXTabsTray .rightArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 44px;
-    background: url('images/rightArrows01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsLarge .AXTabsTray .rightArrowHandleBox .tabArrow:hover {
-    background: url('images/rightArrows01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabsLarge .AXTabsTray .rightArrowMoreBox {
     position: absolute;
@@ -991,12 +991,12 @@
     display: block;
     width: 24px;
     height: 44px;
-    background: url('images/rightArrowsMore01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsLarge .AXTabsTray .rightArrowMoreBox .tabArrow:hover {
-    background: url('images/rightArrowsMore01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01-r.png') no-repeat 50%;
   }
   .AXTabsSmall {
     position: relative;
@@ -1004,7 +1004,7 @@
     overflow: hidden;
   }
   .AXTabsSmall .AXTabsTray {
-    background: url('images/AXTabBgSmall.png');
+    background: url('images/dx-tab-bg-small.png');
   }
   .AXTabsSmall .AXTabsTray .trayScroll {
     position: absolute;
@@ -1256,18 +1256,18 @@
     top: 1px;
     width: 29px;
     height: 22px;
-    background: url('images/leftArrowsBg.png') repeat-y 0px 0px;
+    background: url('images/dx-left-arrows-bg.png') repeat-y 0px 0px;
   }
   .AXTabsSmall .AXTabsTray .leftArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 22px;
-    background: url('images/leftArrows01.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsSmall .AXTabsTray .leftArrowHandleBox .tabArrow:hover {
-    background: url('images/leftArrows01r.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabsSmall .AXTabsTray .rightArrowHandleBox {
     position: absolute;
@@ -1275,18 +1275,18 @@
     top: 1px;
     width: 29px;
     height: 22px;
-    background: url('images/rightArrowsBg.png') repeat-y 100% 0px;
+    background: url('images/dx-right-arrows-bg.png') repeat-y 100% 0px;
   }
   .AXTabsSmall .AXTabsTray .rightArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 22px;
-    background: url('images/rightArrows01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsSmall .AXTabsTray .rightArrowHandleBox .tabArrow:hover {
-    background: url('images/rightArrows01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabsSmall .AXTabsTray .rightArrowMoreBox {
     position: absolute;
@@ -1300,12 +1300,12 @@
     display: block;
     width: 24px;
     height: 22px;
-    background: url('images/rightArrowsMore01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsSmall .AXTabsTray .rightArrowMoreBox .tabArrow:hover {
-    background: url('images/rightArrowsMore01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01-r.png') no-repeat 50%;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1151px) {
@@ -1681,7 +1681,7 @@
     box-sizing: content-box !important;
   }
   .AXTabs .AXTabsTray {
-    background: url('images/AXTabBg.png');
+    background: url('images/dx-tab-bg.png');
     box-sizing: content-box !important;
   }
   .AXTabs .AXTabsTray .trayScroll {
@@ -1938,18 +1938,18 @@
     top: 1px;
     width: 29px;
     height: 28px;
-    background: url('images/leftArrowsBg.png') repeat-y 0px 0px;
+    background: url('images/dx-left-arrows-bg.png') repeat-y 0px 0px;
   }
   .AXTabs .AXTabsTray .leftArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 28px;
-    background: url('images/leftArrows01.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabs .AXTabsTray .leftArrowHandleBox .tabArrow:hover {
-    background: url('images/leftArrows01r.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabs .AXTabsTray .rightArrowHandleBox {
     position: absolute;
@@ -1957,18 +1957,18 @@
     top: 1px;
     width: 29px;
     height: 28px;
-    background: url('images/rightArrowsBg.png') repeat-y 100% 0px;
+    background: url('images/dx-right-arrows-bg.png') repeat-y 100% 0px;
   }
   .AXTabs .AXTabsTray .rightArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 28px;
-    background: url('images/rightArrows01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabs .AXTabsTray .rightArrowHandleBox .tabArrow:hover {
-    background: url('images/rightArrows01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabs .AXTabsTray .rightArrowMoreBox {
     position: absolute;
@@ -1982,12 +1982,12 @@
     display: block;
     width: 24px;
     height: 28px;
-    background: url('images/rightArrowsMore01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabs .AXTabsTray .rightArrowMoreBox .tabArrow:hover {
-    background: url('images/rightArrowsMore01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01-r.png') no-repeat 50%;
   }
   .AXTabsLarge {
     position: relative;
@@ -1995,7 +1995,7 @@
     overflow: hidden;
   }
   .AXTabsLarge .AXTabsTray {
-    background: url('images/AXTabBgLarge.png');
+    background: url('images/dx-tab-bg-large.png');
   }
   .AXTabsLarge .AXTabsTray .trayScroll {
     position: absolute;
@@ -2247,18 +2247,18 @@
     top: 1px;
     width: 29px;
     height: 44px;
-    background: url('images/leftArrowsBg.png') repeat-y 0px 0px;
+    background: url('images/dx-left-arrows-bg.png') repeat-y 0px 0px;
   }
   .AXTabsLarge .AXTabsTray .leftArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 44px;
-    background: url('images/leftArrows01.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsLarge .AXTabsTray .leftArrowHandleBox .tabArrow:hover {
-    background: url('images/leftArrows01r.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabsLarge .AXTabsTray .rightArrowHandleBox {
     position: absolute;
@@ -2266,18 +2266,18 @@
     top: 1px;
     width: 29px;
     height: 44px;
-    background: url('images/rightArrowsBg.png') repeat-y 100% 0px;
+    background: url('images/dx-right-arrows-bg.png') repeat-y 100% 0px;
   }
   .AXTabsLarge .AXTabsTray .rightArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 44px;
-    background: url('images/rightArrows01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsLarge .AXTabsTray .rightArrowHandleBox .tabArrow:hover {
-    background: url('images/rightArrows01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabsLarge .AXTabsTray .rightArrowMoreBox {
     position: absolute;
@@ -2291,12 +2291,12 @@
     display: block;
     width: 24px;
     height: 44px;
-    background: url('images/rightArrowsMore01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsLarge .AXTabsTray .rightArrowMoreBox .tabArrow:hover {
-    background: url('images/rightArrowsMore01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01-r.png') no-repeat 50%;
   }
   .AXTabsSmall {
     position: relative;
@@ -2304,7 +2304,7 @@
     overflow: hidden;
   }
   .AXTabsSmall .AXTabsTray {
-    background: url('images/AXTabBgSmall.png');
+    background: url('images/dx-tab-bg-small.png');
   }
   .AXTabsSmall .AXTabsTray .trayScroll {
     position: absolute;
@@ -2556,18 +2556,18 @@
     top: 1px;
     width: 29px;
     height: 22px;
-    background: url('images/leftArrowsBg.png') repeat-y 0px 0px;
+    background: url('images/dx-left-arrows-bg.png') repeat-y 0px 0px;
   }
   .AXTabsSmall .AXTabsTray .leftArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 22px;
-    background: url('images/leftArrows01.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsSmall .AXTabsTray .leftArrowHandleBox .tabArrow:hover {
-    background: url('images/leftArrows01r.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabsSmall .AXTabsTray .rightArrowHandleBox {
     position: absolute;
@@ -2575,18 +2575,18 @@
     top: 1px;
     width: 29px;
     height: 22px;
-    background: url('images/rightArrowsBg.png') repeat-y 100% 0px;
+    background: url('images/dx-right-arrows-bg.png') repeat-y 100% 0px;
   }
   .AXTabsSmall .AXTabsTray .rightArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 22px;
-    background: url('images/rightArrows01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsSmall .AXTabsTray .rightArrowHandleBox .tabArrow:hover {
-    background: url('images/rightArrows01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabsSmall .AXTabsTray .rightArrowMoreBox {
     position: absolute;
@@ -2600,12 +2600,12 @@
     display: block;
     width: 24px;
     height: 22px;
-    background: url('images/rightArrowsMore01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsSmall .AXTabsTray .rightArrowMoreBox .tabArrow:hover {
-    background: url('images/rightArrowsMore01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01-r.png') no-repeat 50%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -2981,7 +2981,7 @@
     box-sizing: content-box !important;
   }
   .AXTabs .AXTabsTray {
-    background: url('images/AXTabBg.png');
+    background: url('images/dx-tab-bg.png');
     box-sizing: content-box !important;
   }
   .AXTabs .AXTabsTray .trayScroll {
@@ -3238,18 +3238,18 @@
     top: 1px;
     width: 29px;
     height: 28px;
-    background: url('images/leftArrowsBg.png') repeat-y 0px 0px;
+    background: url('images/dx-left-arrows-bg.png') repeat-y 0px 0px;
   }
   .AXTabs .AXTabsTray .leftArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 28px;
-    background: url('images/leftArrows01.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabs .AXTabsTray .leftArrowHandleBox .tabArrow:hover {
-    background: url('images/leftArrows01r.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabs .AXTabsTray .rightArrowHandleBox {
     position: absolute;
@@ -3257,18 +3257,18 @@
     top: 1px;
     width: 29px;
     height: 28px;
-    background: url('images/rightArrowsBg.png') repeat-y 100% 0px;
+    background: url('images/dx-right-arrows-bg.png') repeat-y 100% 0px;
   }
   .AXTabs .AXTabsTray .rightArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 28px;
-    background: url('images/rightArrows01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabs .AXTabsTray .rightArrowHandleBox .tabArrow:hover {
-    background: url('images/rightArrows01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabs .AXTabsTray .rightArrowMoreBox {
     position: absolute;
@@ -3282,12 +3282,12 @@
     display: block;
     width: 24px;
     height: 28px;
-    background: url('images/rightArrowsMore01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabs .AXTabsTray .rightArrowMoreBox .tabArrow:hover {
-    background: url('images/rightArrowsMore01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01-r.png') no-repeat 50%;
   }
   .AXTabsLarge {
     position: relative;
@@ -3295,7 +3295,7 @@
     overflow: hidden;
   }
   .AXTabsLarge .AXTabsTray {
-    background: url('images/AXTabBgLarge.png');
+    background: url('images/dx-tab-bg-large.png');
   }
   .AXTabsLarge .AXTabsTray .trayScroll {
     position: absolute;
@@ -3547,18 +3547,18 @@
     top: 1px;
     width: 29px;
     height: 44px;
-    background: url('images/leftArrowsBg.png') repeat-y 0px 0px;
+    background: url('images/dx-left-arrows-bg.png') repeat-y 0px 0px;
   }
   .AXTabsLarge .AXTabsTray .leftArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 44px;
-    background: url('images/leftArrows01.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsLarge .AXTabsTray .leftArrowHandleBox .tabArrow:hover {
-    background: url('images/leftArrows01r.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabsLarge .AXTabsTray .rightArrowHandleBox {
     position: absolute;
@@ -3566,18 +3566,18 @@
     top: 1px;
     width: 29px;
     height: 44px;
-    background: url('images/rightArrowsBg.png') repeat-y 100% 0px;
+    background: url('images/dx-right-arrows-bg.png') repeat-y 100% 0px;
   }
   .AXTabsLarge .AXTabsTray .rightArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 44px;
-    background: url('images/rightArrows01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsLarge .AXTabsTray .rightArrowHandleBox .tabArrow:hover {
-    background: url('images/rightArrows01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabsLarge .AXTabsTray .rightArrowMoreBox {
     position: absolute;
@@ -3591,12 +3591,12 @@
     display: block;
     width: 24px;
     height: 44px;
-    background: url('images/rightArrowsMore01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsLarge .AXTabsTray .rightArrowMoreBox .tabArrow:hover {
-    background: url('images/rightArrowsMore01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01-r.png') no-repeat 50%;
   }
   .AXTabsSmall {
     position: relative;
@@ -3604,7 +3604,7 @@
     overflow: hidden;
   }
   .AXTabsSmall .AXTabsTray {
-    background: url('images/AXTabBgSmall.png');
+    background: url('images/dx-tab-bg-small.png');
   }
   .AXTabsSmall .AXTabsTray .trayScroll {
     position: absolute;
@@ -3856,18 +3856,18 @@
     top: 1px;
     width: 29px;
     height: 22px;
-    background: url('images/leftArrowsBg.png') repeat-y 0px 0px;
+    background: url('images/dx-left-arrows-bg.png') repeat-y 0px 0px;
   }
   .AXTabsSmall .AXTabsTray .leftArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 22px;
-    background: url('images/leftArrows01.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsSmall .AXTabsTray .leftArrowHandleBox .tabArrow:hover {
-    background: url('images/leftArrows01r.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabsSmall .AXTabsTray .rightArrowHandleBox {
     position: absolute;
@@ -3875,18 +3875,18 @@
     top: 1px;
     width: 29px;
     height: 22px;
-    background: url('images/rightArrowsBg.png') repeat-y 100% 0px;
+    background: url('images/dx-right-arrows-bg.png') repeat-y 100% 0px;
   }
   .AXTabsSmall .AXTabsTray .rightArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 22px;
-    background: url('images/rightArrows01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsSmall .AXTabsTray .rightArrowHandleBox .tabArrow:hover {
-    background: url('images/rightArrows01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabsSmall .AXTabsTray .rightArrowMoreBox {
     position: absolute;
@@ -3900,12 +3900,12 @@
     display: block;
     width: 24px;
     height: 22px;
-    background: url('images/rightArrowsMore01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsSmall .AXTabsTray .rightArrowMoreBox .tabArrow:hover {
-    background: url('images/rightArrowsMore01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01-r.png') no-repeat 50%;
   }
 }
 @media (max-width: 767px) {
@@ -4281,7 +4281,7 @@
     box-sizing: content-box !important;
   }
   .AXTabs .AXTabsTray {
-    background: url('images/AXTabBg.png');
+    background: url('images/dx-tab-bg.png');
     box-sizing: content-box !important;
   }
   .AXTabs .AXTabsTray .trayScroll {
@@ -4538,18 +4538,18 @@
     top: 1px;
     width: 29px;
     height: 28px;
-    background: url('images/leftArrowsBg.png') repeat-y 0px 0px;
+    background: url('images/dx-left-arrows-bg.png') repeat-y 0px 0px;
   }
   .AXTabs .AXTabsTray .leftArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 28px;
-    background: url('images/leftArrows01.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabs .AXTabsTray .leftArrowHandleBox .tabArrow:hover {
-    background: url('images/leftArrows01r.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabs .AXTabsTray .rightArrowHandleBox {
     position: absolute;
@@ -4557,18 +4557,18 @@
     top: 1px;
     width: 29px;
     height: 28px;
-    background: url('images/rightArrowsBg.png') repeat-y 100% 0px;
+    background: url('images/dx-right-arrows-bg.png') repeat-y 100% 0px;
   }
   .AXTabs .AXTabsTray .rightArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 28px;
-    background: url('images/rightArrows01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabs .AXTabsTray .rightArrowHandleBox .tabArrow:hover {
-    background: url('images/rightArrows01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabs .AXTabsTray .rightArrowMoreBox {
     position: absolute;
@@ -4582,12 +4582,12 @@
     display: block;
     width: 24px;
     height: 28px;
-    background: url('images/rightArrowsMore01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabs .AXTabsTray .rightArrowMoreBox .tabArrow:hover {
-    background: url('images/rightArrowsMore01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01-r.png') no-repeat 50%;
   }
   .AXTabsLarge {
     position: relative;
@@ -4595,7 +4595,7 @@
     overflow: hidden;
   }
   .AXTabsLarge .AXTabsTray {
-    background: url('images/AXTabBgLarge.png');
+    background: url('images/dx-tab-bg-large.png');
   }
   .AXTabsLarge .AXTabsTray .trayScroll {
     position: absolute;
@@ -4847,18 +4847,18 @@
     top: 1px;
     width: 29px;
     height: 44px;
-    background: url('images/leftArrowsBg.png') repeat-y 0px 0px;
+    background: url('images/dx-left-arrows-bg.png') repeat-y 0px 0px;
   }
   .AXTabsLarge .AXTabsTray .leftArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 44px;
-    background: url('images/leftArrows01.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsLarge .AXTabsTray .leftArrowHandleBox .tabArrow:hover {
-    background: url('images/leftArrows01r.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabsLarge .AXTabsTray .rightArrowHandleBox {
     position: absolute;
@@ -4866,18 +4866,18 @@
     top: 1px;
     width: 29px;
     height: 44px;
-    background: url('images/rightArrowsBg.png') repeat-y 100% 0px;
+    background: url('images/dx-right-arrows-bg.png') repeat-y 100% 0px;
   }
   .AXTabsLarge .AXTabsTray .rightArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 44px;
-    background: url('images/rightArrows01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsLarge .AXTabsTray .rightArrowHandleBox .tabArrow:hover {
-    background: url('images/rightArrows01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabsLarge .AXTabsTray .rightArrowMoreBox {
     position: absolute;
@@ -4891,12 +4891,12 @@
     display: block;
     width: 24px;
     height: 44px;
-    background: url('images/rightArrowsMore01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsLarge .AXTabsTray .rightArrowMoreBox .tabArrow:hover {
-    background: url('images/rightArrowsMore01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01-r.png') no-repeat 50%;
   }
   .AXTabsSmall {
     position: relative;
@@ -4904,7 +4904,7 @@
     overflow: hidden;
   }
   .AXTabsSmall .AXTabsTray {
-    background: url('images/AXTabBgSmall.png');
+    background: url('images/dx-tab-bg-small.png');
   }
   .AXTabsSmall .AXTabsTray .trayScroll {
     position: absolute;
@@ -5156,18 +5156,18 @@
     top: 1px;
     width: 29px;
     height: 22px;
-    background: url('images/leftArrowsBg.png') repeat-y 0px 0px;
+    background: url('images/dx-left-arrows-bg.png') repeat-y 0px 0px;
   }
   .AXTabsSmall .AXTabsTray .leftArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 22px;
-    background: url('images/leftArrows01.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsSmall .AXTabsTray .leftArrowHandleBox .tabArrow:hover {
-    background: url('images/leftArrows01r.png') no-repeat 50%;
+    background: url('images/dx-left-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabsSmall .AXTabsTray .rightArrowHandleBox {
     position: absolute;
@@ -5175,18 +5175,18 @@
     top: 1px;
     width: 29px;
     height: 22px;
-    background: url('images/rightArrowsBg.png') repeat-y 100% 0px;
+    background: url('images/dx-right-arrows-bg.png') repeat-y 100% 0px;
   }
   .AXTabsSmall .AXTabsTray .rightArrowHandleBox .tabArrow {
     display: block;
     width: 29px;
     height: 22px;
-    background: url('images/rightArrows01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsSmall .AXTabsTray .rightArrowHandleBox .tabArrow:hover {
-    background: url('images/rightArrows01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-01-r.png') no-repeat 50%;
   }
   .AXTabsSmall .AXTabsTray .rightArrowMoreBox {
     position: absolute;
@@ -5200,11 +5200,11 @@
     display: block;
     width: 24px;
     height: 22px;
-    background: url('images/rightArrowsMore01.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01.png') no-repeat 50%;
     text-indent: -1000px;
     overflow: hidden;
   }
   .AXTabsSmall .AXTabsTray .rightArrowMoreBox .tabArrow:hover {
-    background: url('images/rightArrowsMore01r.png') no-repeat 50%;
+    background: url('images/dx-right-arrows-more-01-r.png') no-repeat 50%;
   }
 }

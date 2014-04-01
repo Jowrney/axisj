@@ -39,7 +39,7 @@
   outline: none;
 }
 .AXInput[disabled] {
-  background: url('images/defaultRegular.png') repeat-x;
+  background: url('images/dx-default-regular.png') repeat-x;
   background-position: 0px -78px;
   color: #fff;
   text-shadow: 0px -1px #b7b7b7;
@@ -87,7 +87,7 @@
   outline: none;
 }
 .AXInputSmall[disabled] {
-  background: url('images/defaultSmall.png') repeat-x;
+  background: url('images/dx-default-small.png') repeat-x;
   background-position: 0px -60px;
   color: #fff;
   text-shadow: 0px -1px #b7b7b7;
@@ -125,7 +125,7 @@
   white-space: nowrap;
   cursor: pointer;
   overflow: hidden;
-  background: url('images/AXCheckbox.png') no-repeat left 0px;
+  background: url('images/dx-checkbox.png') no-repeat left 0px;
   vertical-align: middle;
 }
 .AXCheckbox.checked {
@@ -211,7 +211,7 @@
 .AXanchorSearch {
   position: absolute;
   display: block;
-  background: url('images/deleteValue.png') center center no-repeat;
+  background: url('images/dx-delete-value.png') center center no-repeat;
   width: 18px;
   height: 18px;
   overflow: hidden;
@@ -221,7 +221,7 @@
   position: absolute;
   width: 18px;
   height: 18px;
-  background: url('images/defaultRegular.png') repeat-x;
+  background: url('images/dx-default-regular.png') repeat-x;
   border: 1px solid #b9babc;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -230,7 +230,7 @@
 .AXanchorNumberContainer .AXanchorIncrease {
   position: absolute;
   display: block;
-  background: url('images/upArrow.png') center center no-repeat;
+  background: url('images/dx-up-arrow.png') center center no-repeat;
   *background-position: center 2px;
   width: 18px;
   height: 18px;
@@ -239,12 +239,12 @@
   border-bottom: 1px solid #b9babc;
 }
 .AXanchorNumberContainer .AXanchorIncrease:active {
-  background-image: url('images/upArrowOn.png');
+  background-image: url('images/dx-up-arrow-on.png');
 }
 .AXanchorNumberContainer .AXanchorDecrease {
   position: absolute;
   display: block;
-  background: url('images/downArrow.png') center center no-repeat;
+  background: url('images/dx-down-arrow.png') center center no-repeat;
   *background-position: center 2px;
   width: 18px;
   height: 18px;
@@ -253,13 +253,13 @@
   border-top: 1px solid #b9babc;
 }
 .AXanchorNumberContainer .AXanchorDecrease:active {
-  background-image: url('images/downArrowOn.png');
+  background-image: url('images/dx-down-arrow-on.png');
 }
 .AXanchorSelectorHandleContainer {
   position: absolute;
   width: 18px;
   height: 18px;
-  background: url('images/defaultRegular.png') repeat-x;
+  background: url('images/dx-default-regular.png') repeat-x;
   border: 1px solid #b9babc;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -268,30 +268,30 @@
   position: absolute;
   width: 18px;
   height: 18px;
-  background: url('images/slideDownArrow.png') center center no-repeat;
+  background: url('images/dx-slide-down-arrow.png') center center no-repeat;
   overflow: hidden;
   text-indent: -2000px;
 }
 .AXanchorSelectorHandleContainer .AXanchorSelectorHandle.on {
-  background: url('images/slideUpArrow.png') center center no-repeat;
+  background: url('images/dx-slide-up-arrow.png') center center no-repeat;
 }
 .AXanchorSelectorFinderContainer {
   position: absolute;
   width: 18px;
   height: 18px;
-  background: url('images/defaultRegular.png') repeat-x;
+  background: url('images/dx-default-regular.png') repeat-x;
   border: 1px solid #b9babc;
 }
 .AXanchorSelectorFinderContainer .AXanchorSelectorFinder {
   position: absolute;
   width: 18px;
   height: 18px;
-  background: url('images/selectorSearch.png') center center no-repeat;
+  background: url('images/dx-selector-search.png') center center no-repeat;
   overflow: hidden;
   text-indent: -2000px;
 }
 .AXanchorSelectorFinderContainer .AXanchorSelectorFinder.on {
-  background: url('images/selectorSearch.png') center center no-repeat;
+  background: url('images/dx-selector-search.png') center center no-repeat;
 }
 .AXanchorSelectorExpandBox {
   position: absolute;
@@ -388,12 +388,12 @@
   top: -16px;
   width: 24px;
   height: 30px;
-  background: url('images/slideHandle.png') no-repeat;
+  background: url('images/dx-slide-handle.png') no-repeat;
   text-indent: -1000px;
   overflow: hidden;
 }
 .AXanchorSliderBox .AXanchorSliderHandle:active {
-  background: url('images/slideHandle.png') no-repeat 0px -30px;
+  background: url('images/dx-slide-handle.png') no-repeat 0px -30px;
 }
 .AXanchorSliderBox .AXanchorSliderHandleTitle {
   position: absolute;
@@ -412,12 +412,12 @@
   top: -8px;
   width: 15px;
   height: 20px;
-  background: url('images/sliderHandleMin.png') no-repeat;
+  background: url('images/dx-slider-handle-min.png') no-repeat;
   text-indent: -1000px;
   overflow: hidden;
 }
 .AXanchorSliderBox .AXanchorSliderHandleMin:active {
-  --background: url('images/sliderHandleMin.png') no-repeat 0px -30px;
+  --background: url('images/dx-slider-handle-min.png') no-repeat 0px -30px;
 }
 .AXanchorSliderBox .AXanchorSliderHandleMinTitle {
   position: absolute;
@@ -436,12 +436,12 @@
   top: -8px;
   width: 15px;
   height: 20px;
-  background: url('images/sliderHandleMax.png') no-repeat;
+  background: url('images/dx-slider-handle-max.png') no-repeat;
   text-indent: -1000px;
   overflow: hidden;
 }
 .AXanchorSliderBox .AXanchorSliderHandleMax:active {
-  --background: url('images/sliderHandleMax.png') no-repeat 0px -30px;
+  --background: url('images/dx-slider-handle-max.png') no-repeat 0px -30px;
 }
 .AXanchorSliderBox .AXanchorSliderHandleMaxTitle {
   position: absolute;
@@ -456,7 +456,7 @@
 .AXanchorDate {
   position: absolute;
   display: block;
-  background: url('images/calendarHandle.png') center center no-repeat;
+  background: url('images/dx-calendar-handle.png') center center no-repeat;
   width: 21px;
   height: 18px;
   overflow: hidden;
@@ -497,7 +497,7 @@
   display: block;
   width: 22px;
   height: 21px;
-  background: url('images/AXSwitch.png') no-repeat 0px center;
+  background: url('images/dx-switch.png') no-repeat 0px center;
   text-indent: -1000px;
   overflow: hidden;
 }
@@ -530,7 +530,7 @@
   display: block;
   width: 22px;
   height: 21px;
-  background: url('images/AXSwitch.png') no-repeat -60px center;
+  background: url('images/dx-switch.png') no-repeat -60px center;
   text-indent: -1000px;
   overflow: hidden;
 }
@@ -623,7 +623,7 @@
 .AXanchorDateHandle {
   position: absolute;
   display: block;
-  background: url('images/calendarHandle.png') center center no-repeat;
+  background: url('images/dx-calendar-handle.png') center center no-repeat;
   width: 21px;
   height: 20px;
   overflow: hidden;
@@ -634,7 +634,7 @@
   left: 0px;
   top: 0px;
   padding: 5px;
-  background: url('images/calendarBoxBG.png');
+  background: url('images/dx-calendar-box-bg.png');
   border: 1px solid #808d9d;
   border-radius: 5px;
   box-shadow: 0px 1px 3px #ccc;
@@ -643,7 +643,7 @@
   position: relative;
   width: 181px;
   height: 26px;
-  background: url('images/calendarBgs.png') repeat-x;
+  background: url('images/dx-calendar-bgs.png') repeat-x;
   border: 1px solid #7f8d9c;
 }
 .AXbindDateExpandBox .dateControlBox .prevbutton {
@@ -655,10 +655,10 @@
   display: block;
   text-indent: -1000px;
   overflow: hidden;
-  background: url('images/prevArrow.png') no-repeat;
+  background: url('images/dx-prev-arrow.png') no-repeat;
 }
 .AXbindDateExpandBox .dateControlBox .prevbutton:hover {
-  background: url('images/prevArrow.png') no-repeat 0px -26px;
+  background: url('images/dx-prev-arrow.png') no-repeat 0px -26px;
 }
 .AXbindDateExpandBox .dateControlBox .nextbutton {
   position: absolute;
@@ -669,10 +669,10 @@
   display: block;
   text-indent: -1000px;
   overflow: hidden;
-  background: url('images/nextArrow.png') no-repeat;
+  background: url('images/dx-next-arrow.png') no-repeat;
 }
 .AXbindDateExpandBox .dateControlBox .nextbutton:hover {
-  background: url('images/nextArrow.png') no-repeat 0px -26px;
+  background: url('images/dx-next-arrow.png') no-repeat 0px -26px;
 }
 .AXbindDateExpandBox .dateControlBox .yearbutton {
   position: absolute;
@@ -711,7 +711,7 @@
   left: 0px;
   top: 0px;
   padding: 5px;
-  background: url('images/calendarBoxBG.png');
+  background: url('images/dx-calendar-box-bg.png');
   border: 1px solid #808d9d;
   border-radius: 5px;
   box-shadow: 0px 1px 3px #ccc;
@@ -719,7 +719,7 @@
 .AXbindTwinDateExpandBox .dateControlBox {
   position: relative;
   height: 26px;
-  background: url('images/calendarBgs.png') repeat-x;
+  background: url('images/dx-calendar-bgs.png') repeat-x;
   border: 1px solid #7f8d9c;
   width: 181px;
 }
@@ -732,10 +732,10 @@
   display: block;
   text-indent: -1000px;
   overflow: hidden;
-  background: url('images/prevArrow.png') no-repeat;
+  background: url('images/dx-prev-arrow.png') no-repeat;
 }
 .AXbindTwinDateExpandBox .dateControlBox .prevbutton:hover {
-  background: url('images/prevArrow.png') no-repeat 0px -26px;
+  background: url('images/dx-prev-arrow.png') no-repeat 0px -26px;
 }
 .AXbindTwinDateExpandBox .dateControlBox .nextbutton {
   position: absolute;
@@ -746,10 +746,10 @@
   display: block;
   text-indent: -1000px;
   overflow: hidden;
-  background: url('images/nextArrow.png') no-repeat;
+  background: url('images/dx-next-arrow.png') no-repeat;
 }
 .AXbindTwinDateExpandBox .dateControlBox .nextbutton:hover {
-  background: url('images/nextArrow.png') no-repeat 0px -26px;
+  background: url('images/dx-next-arrow.png') no-repeat 0px -26px;
 }
 .AXbindTwinDateExpandBox .dateControlBox .yearbutton {
   position: absolute;
