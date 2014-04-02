@@ -90,6 +90,14 @@
 	white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
 
+.util-text-shadow-black(@y:-1px, @alpha: 0.25){
+	text-shadow:0px -1px rgba(0, 0, 0, @alpha);;
+};
+
+.util-text-shadow-white(@y:-1px, @alpha: 0.25){
+	text-shadow:0px -1px rgba(0, 0, 0, @alpha);;
+};
+
 
 .util-hspace(@height: 1px){
 	font-size:1px;line-height:1px;height:@height;
@@ -100,4 +108,7 @@
 	-webkit-transform: rotate(unit(@deg, deg)); /* Chrome, Safari, Opera */
 	transform: rotate(unit(@deg, deg));	
 }
+
+
+
 

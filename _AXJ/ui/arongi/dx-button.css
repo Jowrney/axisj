@@ -1,3 +1,21 @@
+/*
+@bgcolor:#fff;
+@font-family:"Open sans";
+@font-size:12px;
+@color:#565b61;
+@link:#6e7a86;
+@link-hover:#565b61;
+@link-focus:#565b61;
+@link-active:#82898f;
+@link-visited:#c3cad0;
+@stroke:"1px solid #000";
+
+@bgcolor-a:#e8e8e8;
+@bgcolor-b:#c6cdd3;
+@bgcolor-c:#717b85;
+@storke-a:#000;
+@stroke-b:#000;
+*/
 .util-border-radius-none {
   -webkit-border-radius: none;
   -moz-border-radius: none;
@@ -61,7 +79,7 @@
 
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
   /*For IE7-8-9*/
-  color: #ebf4f7;
+  color: #565b61;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -219,7 +237,7 @@
 
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
   /*For IE7-8-9*/
-  color: #ebf4f7;
+  color: #565b61;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -236,7 +254,7 @@
 .axbutton-event-classic:focus {
   background: #98a4ae;
   text-decoration: none;
-  color: #ebf4f7;
+  color: #565b61;
 }
 .axbutton-event-classic:active {
   box-shadow: none;
@@ -425,7 +443,7 @@
 
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
   /*For IE7-8-9*/
-  color: #ebf4f7;
+  color: #565b61;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -442,7 +460,7 @@
 .AXButton.Classic:focus {
   background: #98a4ae;
   text-decoration: none;
-  color: #ebf4f7;
+  color: #565b61;
 }
 .AXButton.Classic:active {
   box-shadow: none;
@@ -631,7 +649,7 @@
 
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
   /*For IE7-8-9*/
-  color: #ebf4f7;
+  color: #565b61;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -648,7 +666,7 @@
 .AXButtonSmall.Classic:focus {
   background: #98a4ae;
   text-decoration: none;
-  color: #ebf4f7;
+  color: #565b61;
 }
 .AXButtonSmall.Classic:active {
   box-shadow: none;
@@ -837,7 +855,7 @@
 
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
   /*For IE7-8-9*/
-  color: #ebf4f7;
+  color: #565b61;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -854,7 +872,7 @@
 .AXButtonLarge.Classic:focus {
   background: #98a4ae;
   text-decoration: none;
-  color: #ebf4f7;
+  color: #565b61;
 }
 .AXButtonLarge.Classic:active {
   box-shadow: none;

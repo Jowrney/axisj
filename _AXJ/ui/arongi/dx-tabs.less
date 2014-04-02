@@ -5,49 +5,49 @@
 // AXTabs Style ///////////////////////////////////////////////////
 .axtabs-style-normal{
 	.dx-axtabs-colors-normal();
-	.util-gradient(top, @color-fill-a, @color-fill-b);
-	color:@color-text;
-	border:1px solid @color-stroke;
+	.util-gradient(top, @bgcolor-a, @bgcolor-b);
+	color:@color;
+	border:@border;
 	text-shadow: 0px 1px 0px rgba(255,255,255,0.8);
 	.util-border-radius (4px, 4px, 0, 0);
 }
 .axtabs-style-classic{
 	.dx-axtabs-colors-classic();
-	.util-gradient(top, @color-fill-a, @color-fill-b);
-	color:@color-text;
-	border:1px solid @color-stroke;
+	.util-gradient(top, @bgcolor-a, @bgcolor-b);
+	color:@color;
+	border:@border;
 	text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
 	.util-border-radius (4px, 4px, 0, 0);
 }
 .axtabs-style-blue{
 	.dx-axtabs-colors-blue();
-	.util-gradient(top, @color-fill-a, @color-fill-b);
-	color:@color-text;
-	border:1px solid @color-stroke;
+	.util-gradient(top, @bgcolor-a, @bgcolor-b);
+	color:@color;
+	border:@border;
 	text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
 	.util-border-radius (4px, 4px, 0, 0);
 }
 .axtabs-style-green{
 	.dx-axtabs-colors-green();
-	.util-gradient(top, @color-fill-a, @color-fill-b);
-	color:@color-text;
-	border:1px solid @color-stroke;
+	.util-gradient(top, @bgcolor-a, @bgcolor-b);
+	color:@color;
+	border:@border;
 	text-shadow: 0px -1px 0px rgba(0,0,0,0.25);	
 	.util-border-radius (4px, 4px, 0, 0);
 }
 .axtabs-style-red{
 	.dx-axtabs-colors-red();
-	.util-gradient(top, @color-fill-a, @color-fill-b);
-	color:@color-text;
-	border:1px solid @color-stroke;
+	.util-gradient(top, @bgcolor-a, @bgcolor-b);
+	color:@color;
+	border:@border;
 	text-shadow: 0px -1px 0px rgba(0,0,0,0.25);	
 	.util-border-radius (4px, 4px, 0, 0);
 }
 .axtabs-style-disabled{
 	.dx-axtabs-colors-disabled();
-	.util-gradient(top, @color-fill-a, @color-fill-b);
-	color:@color-text;
-	border:1px solid @color-stroke;
+	.util-gradient(top, @bgcolor-a, @bgcolor-b);
+	color:@color;
+	border:@border;
 	text-shadow: 0px -1px 0px rgba(0,0,0,0.10);	
 	box-shadow: none;
 	.util-border-radius (4px, 4px, 0, 0);
@@ -58,7 +58,7 @@
 	&				{.axtabs-style-normal;}
 	&:hover, &:focus{
 		.dx-axtabs-colors-normal();
-		background: @color-fill-b;		
+		background: @bgcolor-b;		
 	}
 	&:active		{
 		box-shadow: none;
@@ -73,7 +73,7 @@
 	&				{.axtabs-style-classic;}
 	&:hover, &:focus{
 		.dx-axtabs-colors-classic();
-		background: @color-fill-b;		
+		background: @bgcolor-b;		
 	}
 	&:active		{
 		box-shadow: none;
@@ -81,7 +81,7 @@
 	&.on{
 		.dx-axtabs-colors-classic();
 		text-shadow:none;		
-		color:@color-stroke;	
+		color:@color-a;	
 		background:#fff; border-bottom:1px solid #fff;
 	}					
 }
@@ -90,7 +90,7 @@
 	&				{.axtabs-style-blue;}
 	&:hover, &:focus{
 		.dx-axtabs-colors-blue();
-		background: @color-fill-b;		
+		background: @bgcolor-b;		
 	}
 	&:active		{
 		box-shadow: none;
@@ -98,7 +98,7 @@
 	&.on{
 		.dx-axtabs-colors-blue();
 		text-shadow:none;		
-		color:@color-stroke;	
+		color:@color-a;	
 		background:#fff; border-bottom:1px solid #fff;
 	}				
 }
@@ -107,7 +107,7 @@
 	&				{.axtabs-style-green;}
 	&:hover, &:focus{
 		.dx-axtabs-colors-green();
-		background: @color-fill-b;		
+		background: @bgcolor-b;		
 	}
 	&:active		{
 		box-shadow: none;
@@ -115,7 +115,7 @@
 	&.on{
 		.dx-axtabs-colors-green();
 		text-shadow:none;		
-		color:@color-stroke;	
+		color:@color-a;	
 		background:#fff; border-bottom:1px solid #fff;
 	}					
 }
@@ -124,7 +124,7 @@
 	&				{.axtabs-style-red;}
 	&:hover, &:focus{
 		.dx-axtabs-colors-red();
-		background: @color-fill-b;		
+		background: @bgcolor-b;		
 	}
 	&:active		{
 		box-shadow: none;
@@ -132,7 +132,7 @@
 	&.on{
 		.dx-axtabs-colors-red();
 		text-shadow:none;		
-		color:@color-stroke;	
+		color:@color-a;	
 		background:#fff; border-bottom:1px solid #fff;
 	}				
 }
@@ -141,7 +141,7 @@
 	&				{.axtabs-style-disabled;}
 	&:hover, &:focus{
 		.dx-axtabs-colors-disabled();
-		background: @color-fill-b;		
+		background: @bgcolor-b;		
 	}
 	&:active		{
 		box-shadow: none;
@@ -149,7 +149,7 @@
 	&.on{
 		.dx-axtabs-colors-disabled();
 		text-shadow:none;		
-		color:@color-stroke;	
+		color:@color-a;	
 		background:#fff; border-bottom:1px solid #fff;
 	}					
 }

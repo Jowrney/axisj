@@ -219,33 +219,35 @@
 
 // AXCalendar //////////////////////////////////////////////////////////////
 .AXCalendar{
+	.dx-axcalenter-colors-normal();
 	position:relative;
 	table{
 		&.calendarPage{
 			table-layout:fixed;width:100%;
 			thead{
 				td{
-					font-size:8px;font-family:'Arial';
+					background: @bgcolor; 
+					font-size:8px;font-family:@font-family;
 					height:20px;line-height:20px;
 					padding:0px;text-align:center;
-					border-right:1px solid #f2f2f3;
-					border-bottom:1px solid #b9babc;
+					border-right:@border-a;
+					border-bottom:@border-b;
 					&.head_6{border-right:0px none;}
-					&.dayofweek_0{color:#c78b82;}
-					&.dayofweek_1{color:#7b7b7b;}
-					&.dayofweek_2{color:#7b7b7b;}
-					&.dayofweek_3{color:#7b7b7b;}
-					&.dayofweek_4{color:#7b7b7b;}
-					&.dayofweek_5{color:#7b7b7b;}
-					&.dayofweek_6{color:#627d9b;}					
+					&.dayofweek_0{color:@color-a;}
+					&.dayofweek_1{color:@color;}
+					&.dayofweek_2{color:@color;}
+					&.dayofweek_3{color:@color;}
+					&.dayofweek_4{color:@color;}
+					&.dayofweek_5{color:@color;}
+					&.dayofweek_6{color:@color-b;}					
 				}
 			}
 			tbody{
 				td{
 					height:25px;line-height:25px;
 					padding:0px;text-align:center;
-					border-right:1px solid #b9babc;
-					border-bottom:1px solid #b9babc;
+					border-right:@border; 
+					border-bottom:@border;
 					background:url('images/dx-calendar-bgs.png') repeat-x 0px -26px;
 					&.bodyCol_6{border-right:0px none;}
 					&.bodyRow_5{border-bottom:0px none;}
@@ -253,19 +255,19 @@
 					A{
 						&.calendarDate{
 							display:block;height:25px;line-height:25px;
-							text-decoration:none;color:#6d6e71;
-							font-size:11px;font-family:Arial;font-weight:bold;
-							&:hover		{background:#d8e1e7;}
-							&:active	{background:#5ea3db;color:#fff;box-shadow:inset 0px 0px 4px #3d84bc;}
-							&.selected	{background:#5ea3db;color:#fff;box-shadow:inset 0px 0px 4px #3d84bc;}
+							text-decoration:none;color:@color-c;
+							font-size:11px;font-family:@font-family;font-weight:bold;
+							&:hover		{background:@bgcolor-a;}
+							&:active	{background:@bgcolor-b;color:@color-d;box-shadow:inset 0px 0px 4px #3d84bc;}
+							&.selected	{background:@bgcolor-c;color:@color-e;box-shadow:inset 0px 0px 4px #3d84bc;}
 						}
 					}
 					&.bodyCol_0{
 						A{
 							&.calendarDate{
-								color:#c78b82;
+								color:@color-a;
 								&.notThisMonth{
-									color:#bfbfc1;
+									color:@color-f;
 								}
 							}
 						}
@@ -280,20 +282,20 @@
 				td{
 					height:43px;line-height:43px;
 					padding:0px;text-align:center;
-					border-right:1px solid #b9babc;
-					border-bottom:1px solid #b9babc;
+					border-right:@border;
+					border-bottom:@border;
 					background:url('images/dx-calendar-bgs.png') repeat-x 0px -101px;
 					&.bodyCol_2	{border-right:0px none;}
 					&.bodyCol_3	{border-bottom:0px none;padding-bottom:1px;}	
-					&.setDate	{background:#f3e2df;}
+					&.setDate	{background:@bgcolor-d;}
 					A{
 						&.calendarMonth{
 							display:block;height:43px;line-height:43px;
-							text-decoration:none;color:#6d6e71;
-							font-size:12px;font-family:Arial;font-weight:bold;
+							text-decoration:none;color:@color-c;
+							font-size:12px;font-family:@font-family;font-weight:bold;
 							&:hover	{background:#d8e1e7;}
-							&:active{background:#5ea3db;color:#fff;box-shadow:inset 0px 0px 5px #3d84bc;}							
-							&.selected{background:#5ea3db;color:#fff;box-shadow:inset 0px 0px 5px #3d84bc;}
+							&:active{background:@bgcolor-b;color:@color-d;box-shadow:inset 0px 0px 5px #3d84bc;}						
+							&.selected{background:@bgcolor-c;color:@color-e;box-shadow:inset 0px 0px 5px #3d84bc;}
 						}
 					}
 				}	
@@ -304,7 +306,7 @@
 		position:relative;height:90px;
 		.hourTitle{
 			position:absolute;left:5px;top:18px;
-			color:#738089;font-size:11px;line-height:24px;font-family:Arial;
+			color:@color-g;font-size:11px;line-height:24px;font-family:@font-family;
 			text-shadow:0px 1px #fff;
 		}
 		.hourSlider{
@@ -314,7 +316,7 @@
 		}		
 		.minuteTitle{
 			position:absolute;left:5px;top:53px;
-			color:#738089;font-size:11px;line-height:24px;font-family:Arial;
+			color:@color-g;font-size:11px;line-height:24px;font-family:@font-family;
 			text-shadow:0px 1px #fff;
 		}
 		.minuteSlider{
@@ -323,11 +325,12 @@
 		}
 		.timeDisplay{
 			position:absolute;left:5px;top:90px;
-			border:1px solid #7f8d9c;background:#a3b0b9;box-shadow:inset 0px 1px 2px #828282;
-			border-radius:5px;
+			border:@border-c;background:@bgcolor-e;box-shadow:inset 0px 1px 2px #828282;
+			border-radius:@radius;
 			padding:0px 20px;margin:0px;
-			font-size:12px;color:#fff;font-family:Arial;line-height:22px;
-			text-shadow:0px -1px #8a939e;
+			font-size:12px;color:#fff;font-family:@font-family;line-height:22px;
+			.util-text-shadow-black();
+			//text-shadow:0px -1px #8a939e;
 			outline:none;
 			white-space:nowrap;
 		}		

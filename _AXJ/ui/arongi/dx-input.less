@@ -8,40 +8,47 @@
 	vertical-align:middle;
 }
 .AXInput{
-	border:1px solid #b6b6b6;background:#fff;
+	.dx-axinput-colors-normal();
+	border:@border;
+	background:@bgcolor;
+	color:@color;
 	box-shadow:inset 0px 1px 2px #dddddd;
-	.util-border-radius(4px);
+	.util-border-radius(@radius);
 	font-size:12px;line-height:15px;height:15px;
 	padding:4px;
 	margin:0px auto;
 	vertical-align: middle;
 	&:focus{
-		border:1px solid #949fa8;
+		border:@border-a;
 		box-shadow:inset 0px 0px 3px #949fa8;
 		outline:none;
+		color:@color-a;
 	}
 	&[disabled]{
 		background:url('images/dx-default-regular.png') repeat-x;
 		background-position:0px -78px;
-		color:#fff;text-shadow:0px -1px #b7b7b7;
+		color:@color-b;text-shadow:0px -1px #b7b7b7;
 		box-shadow:inset 0px 1px 2px #b1b1b1;
 	}
 	&[readonly]{
 		background:#eee;
-		color:#676767;text-shadow:0px 1px #fff;
+		color:@color-c;text-shadow:0px 1px #fff;
 		box-shadow:inset 0px 1px 2px #b1b1b1;
 	}
-	&::-webkit-input-placeholder	{color:#bbb;}
-	&::-moz-placeholder				{color:#bbb;}
-	&:-ms-input-placeholder			{color:#bbb;}
+	&::-webkit-input-placeholder	{color:@color-d;}
+	&::-moz-placeholder				{color:@color-d;}
+	&:-ms-input-placeholder			{color:@color-d;}
 
 	&.Round{
-		.util-border-radius(15px, 15px, 15px, 15px);
+		.util-border-radius(@radius-a, @radius-a, @radius-a, @radius-a);
 	}
 }
 
 .AXInputSmall{
-	border:1px solid #b6b6b6;
+	.dx-axinput-colors-normal();
+	border:@border;
+	background:@bgcolor;	
+	color:@color;
 	box-shadow:inset 0px 1px 1px #dddddd;
 	.util-border-radius(4px);
 	font-size:12px;line-height:12px;height:12px;
@@ -49,27 +56,28 @@
 	margin:0px auto;
 	vertical-align: middle;	
 	&:focus{
-		border:1px solid #949fa8;
+		border:@border-a;
 		box-shadow:inset 0px 0px 3px #949fa8;
 		outline:none;		
+		color:@color-a;
 	}
 	&[disabled]{
 		background:url('images/dx-default-small.png') repeat-x;
 		background-position:0px -60px;
-		color:#fff;text-shadow:0px -1px #b7b7b7;
+		color:@color-b;text-shadow:0px -1px #b7b7b7;
 		box-shadow:inset 0px 1px 2px #b1b1b1;
 	}	
 	&[readonly]{
 		background:#eee;
-		color:#676767;text-shadow:0px 1px #fff;
+		color:@color-c;text-shadow:0px 1px #fff;
 		box-shadow:inset 0px 1px 2px #b1b1b1;
 	}
-	&::-webkit-input-placeholder	{color:#bbb;}
-	&::-moz-placeholder				{color:#bbb;}
-	&:-ms-input-placeholder			{color:#bbb;}
+	&::-webkit-input-placeholder	{color:@color-d;}
+	&::-moz-placeholder				{color:@color-d;}
+	&:-ms-input-placeholder			{color:@color-d;}
 
 	&.Round{
-		.util-border-radius(15px, 15px, 15px, 15px);
+		.util-border-radius(@radius-a, @radius-a, @radius-a, @radius-a);
 	}
 }
 
@@ -200,10 +208,13 @@
 
 // AXbindSelector ///////////////////////////////////////////////////
 .AXanchorSelectorHandleContainer{
+	.dx-axinput-colors-selector();
 	position:absolute;
 	width:18px;height:18px;
 	background:url('images/dx-default-regular.png') repeat-x;
-	border:1px solid #b9babc;border-top-right-radius:4px;border-bottom-right-radius:4px;
+	border:@border;
+	border-top-right-radius:@radius;
+	border-bottom-right-radius:@radius;
 	.AXanchorSelectorHandle{
 		position:absolute;
 		width:18px;height:18px;
@@ -218,10 +229,11 @@
 }
 
 .AXanchorSelectorFinderContainer{
+	.dx-axinput-colors-selector();
 	position:absolute;
 	width:18px;height:18px;
 	background:url('images/dx-default-regular.png') repeat-x;
-	border:1px solid #b9babc;
+	border:@border;
 	.AXanchorSelectorFinder{
 		position:absolute;
 		width:18px;height:18px;
@@ -270,22 +282,23 @@
 }
 
 .AXanchorSliderBox{
+	.dx-axinput-colors-slider();
 	position:absolute;left:0px;top:-3px;	
 	.AXanchorSliderMinTitle{
 		position:absolute;left:0px;bottom:3px;display:block;
-		text-decoration:none;color:#acacac;text-align:left;font-size:11px;line-height:14px;font-family:Arial;
+		text-decoration:none;color:@color;text-align:left;font-size:11px;line-height:14px;font-family:Arial;
 	}
 	.AXanchorSliderMaxTitle{
 		position:absolute;right:0px;bottom:3px;display:block;
-		text-decoration:none;color:#acacac;text-align:right;font-size:11px;line-height:14px;font-family:Arial;
+		text-decoration:none;color:@color;text-align:right;font-size:11px;line-height:14px;font-family:Arial;
 	}
 	.AXanchorSliderBar{
 		position:absolute;left:0px;top:0px;
-		background:#e2e3e4;height:4px;border-radius:2px;
+		background:@bgcolor;height:4px;border-radius:@radius;
 	}
 	.AXanchorSliderBarInside{
 		position:absolute;left:0px;top:0px;
-		background:#90979d;height:4px;border-radius:2px;
+		background:@bgcolor-a;height:4px;border-radius:@radius;
 	}
 	.AXanchorSliderHandle{
 		position:absolute;left:0px;top:-16px;
@@ -299,7 +312,7 @@
 	.AXanchorSliderHandleTitle{
 		position:absolute;left:0px;bottom:-22px;
 		display:block;
-		text-decoration:none;color:#444;text-align:center;font-size:11px;font-family:Arial;
+		text-decoration:none;color:@color-a;text-align:center;font-size:11px;font-family:@font-family;
 	}
 	.AXanchorSliderHandleMin{
 		position:absolute;left:0px;top:-8px;
@@ -348,15 +361,21 @@
 }
 
 // AXanchorSwitch ///////////////////////////////////////////////////
+
+
 .AXanchorSwitchBox{
+	.dx-axinput-colors-switch();
 	position:absolute;left:0px;top:0px;height:22px;
-	border:1px solid #b6b6b6;background:#fff;box-shadow:inset 0px 1px 2px #dddddd;
-	border-radius:14px;
+	border:@border;
+	background:@bgcolor;
+	box-shadow:inset 0px 1px 2px #dddddd;
+	border-radius:@radius;
 	padding:0px;margin:0px;
 	outline:none;
 	.AXanchorSwitchDisplay{
 		text-align:center;padding-left:18px;
-		font-family:Arial;font-size:11px;color:#b6b6b6;line-height:22px;
+		font-family:Arial;font-size:11px;
+		color:@color;line-height:22px;
 		white-space:nowrap;overflow:hidden;
 	}
 	.AXanchorSwitchHandle{
@@ -368,12 +387,13 @@
 	}
 	&.on{
 		position:absolute;left:0px;top:0px;
-		border:1px solid #4f5458;background:#a3b0b9;box-shadow:inset 0px 1px 2px #828282;
+		border:@border-a;
+		background:@bgcolor-a;box-shadow:inset 0px 1px 2px #828282;
 		padding:0px;margin:0px;
 		outline:none;
 		.AXanchorSwitchDisplay{
 			text-align:center;padding-left:0px;padding-right:18px;
-			font-size:11px;color:#fff;
+			font-size:11px;color:@color-a;
 			text-shadow:0px -1px #8b969d;
 			white-space:nowrap;overflow:hidden;
 		}
@@ -389,32 +409,34 @@
 
 // AXanchorSegment ///////////////////////////////////////////////////
 .AXanchorSegmentBox{
+	.dx-axinput-colors-segments();
 	position:absolute;left:0px;top:0px;
 	padding:0px;margin:0px;
 	.AXanchorSegmentHandle{
 		cursor:pointer;display:block;float:left;
 		padding:0px 0px;
 		margin:0px;
-		border-top:1px solid #b9babc;border-left:1px solid #b9babc;border-bottom:1px solid #b9babc;
+		border-top:@border;border-left:@border;border-bottom:@border;
 		font-size:12px;
-		color:#6e7a86;
+		color:@color;
 		text-align:center;text-decoration:none;
-		.util-gradient(top,#ffffff,#e8e8e8);
+		.util-gradient(top,@bgcolor-a,@bgcolor-b);
 		.util-text-ellipsis();
 		&:hover, &:focus{
-			.util-gradient(top,#c7cfd4,#e5eff2);
+			.util-gradient(top,@bgcolor-c,@bgcolor-d);
 			text-shadow:0px 1px #fff;
 		}
 		&.segmentLeft{
-			border-top-left-radius:4px;border-bottom-left-radius:4px;	
+			border-top-left-radius:@radius;border-bottom-left-radius:@radius;	
 		}
 		&.segmentRight{
-			border-right:1px solid #b9babc;
-			border-top-right-radius:4px;border-bottom-right-radius:4px;
+			border-right:@border;
+			border-top-right-radius:@radius;border-bottom-right-radius:@radius;
 		}
 		&.on{
-			.util-gradient(top,#7C7E83,#b9babc);
-			color:#fff;text-shadow:0px 1px #4e585f;
+			.util-gradient(top,@bgcolor-e,@bgcolor-f);
+			color:@color-a;
+			text-shadow:0px 1px #4e585f;
 		}
 	}
 }
@@ -429,16 +451,17 @@
 }
 
 .AXbindDateExpandBox{
+	.dx-axinput-colors-date();
 	position:absolute;left:0px;top:0px;
 	padding:5px;
 	background:url('images/dx-calendar-box-bg.png');
-	border:1px solid #808d9d;border-radius:5px;
+	border:@border;border-radius:@radius;
 	box-shadow:0px 1px 3px #ccc;
 	.dateControlBox{
 		position:relative;
 		width:181px;height:26px;
 		background:url('images/dx-calendar-bgs.png') repeat-x;
-		border:1px solid #7f8d9c;
+		border:@border-a;
 		.prevbutton{
 			position:absolute;left:0px;top:0px;width:26px;height:26px;
 			display:block;text-indent:-1000px;overflow:hidden;
@@ -457,17 +480,17 @@
 		}
 		.yearbutton{
 			position:absolute;left:55px;top:0px;
-			text-decoration:none;color:#fff;line-height:26px;
+			text-decoration:none;color:@color;line-height:26px;
 			font-family:Arial;font-size:12px;text-shadow:0px -1px #869198;
 		}
 		.monthbutton{
 			position:absolute;left:100px;top:0px;	
-			text-decoration:none;color:#fff;line-height:26px;
+			text-decoration:none;color:@color;line-height:26px;
 			font-family:Arial;font-size:12px;text-shadow:0px -1px #869198;
 		}
 	}
 	.dateDisplayBox{
-		background:#fff;border:1px solid #b9babc;border-top:0px none;
+		background:@bgcolor;border:@border-b;border-top:0px none;
 		width:181px;
 	}
 	.timeDisplayBox{
@@ -479,16 +502,17 @@
 
 	
 .AXbindTwinDateExpandBox{
+	.dx-axinput-colors-date();
 	position:absolute;left:0px;top:0px;
 	padding:5px;
 	background:url('images/dx-calendar-box-bg.png');
-	border:1px solid #808d9d;border-radius:5px;
+	border:@border;border-radius:@radius;
 	box-shadow:0px 1px 3px #ccc;
 	.dateControlBox{
 		position:relative;
 		height:26px;
 		background:url('images/dx-calendar-bgs.png') repeat-x;
-		border:1px solid #7f8d9c;
+		border:@border-a;
 		width:181px;
 		.prevbutton{
 			position:absolute;left:0px;top:0px;width:26px;height:26px;
@@ -509,17 +533,17 @@
 		}
 		.yearbutton{
 			position:absolute;left:55px;top:0px;
-			text-decoration:none;color:#fff;line-height:26px;
-			font-family:Arial;font-size:12px;text-shadow:0px -1px #869198;
+			text-decoration:none;color:@color;line-height:26px;
+			font-family:@font-family;font-size:12px;text-shadow:0px -1px #869198;
 		}
 		.monthbutton{
 			position:absolute;left:100px;top:0px;	
-			text-decoration:none;color:#fff;line-height:26px;
-			font-family:Arial;font-size:12px;text-shadow:0px -1px #869198;
+			text-decoration:none;color:@color;line-height:26px;
+			font-family:@font-family;font-size:12px;text-shadow:0px -1px #869198;
 		}
 	}
 	.dateDisplayBox{
-		background:#fff;border:1px solid #b9babc;border-top:0px none;
+		background:@bgcolor;border:@border-b;border-top:0px none;
 		width:181px;
 	}
 	.timeDisplayBox{
@@ -528,7 +552,7 @@
 	}
 	.dateTypeName{
 		height:22px;line-height:21px;text-align:center;
-		color:#828f9e;text-shadow:0px 1px #fff;font-family:Arial;	
+		color:@color-a;text-shadow:0px 1px #fff;font-family:@font-family;	
 	}
 }
 

@@ -19,7 +19,31 @@
 
 
 
+
+
+@color:#565b61;			
+@color-a:#565b61; 		
+@color-b:#565b61;		
+@color-c:#565b61;		
+
+@link:#6e7a86;	
+@link-hover:#565b61;
+@link-focus:#565b61;
+@link-active:#82898f;
+@link-visited:#c3cad0;
+
+@font-family:"Open sans";
+@font-size:12px;
+
+@border:"1px solid #000";
+
+@bgcolor:#fff;
+@bgcolor-a:#e8e8e8;
+@bgcolor-b:#c6cdd3;
+@bgcolor-c:#717b85;
+
 // Common ///////////////////////////////////////////////////
+/*
 @bgcolor:#fff;
 @font-family:"Open sans";
 @font-size:12px;
@@ -36,6 +60,7 @@
 @bgcolor-c:#717b85;
 @storke-a:#000;
 @stroke-b:#000;
+*/
 
 @wide:		~"(min-width:1152px)";
 @desktop:   ~"only screen and (min-width: 1024px) and (max-width: 1151px)";
@@ -46,101 +71,120 @@
 
 // AXButton ///////////////////////////////////////////////////
 .dx-axbutton-colors-normal(){
-	@color-fill-a:#fdfdfd;
-	@color-fill-b:#e8e8e8;	
-	@color-stroke:#b9babc;
-	@color-text:#6e7a85;
-	@color-bg:#fdfdfd;
+	@bgcolor	:#fdfdfd;
+	@bgcolor-a	:#fdfdfd;
+	@bgcolor-b	:#e8e8e8;	
+	@color		:#6e7a85;
+	@border		:1px solid #b9babc;	
+	@radius		:4px;
 }
 
 .dx-axbutton-colors-classic(){
-	@color-fill-a:#c1cdd5;
-	@color-fill-b:#98a4ae;	
-	@color-stroke:#81898e;
-	@color-text:#ebf4f7;
-	@color-bg:#c1cdd5;
+	@bgcolor	:#c1cdd5;
+	@bgcolor-a	:#c1cdd5;
+	@bgcolor-b	:#98a4ae;	
+	@color-text	:#ebf4f7;
+	@border		:1px solid #81898e;	
+	@radius		:4px;	
 }
 
 .dx-axbutton-colors-blue(){
-	@color-fill-a:#6faee1;
-	@color-fill-b:#468ec9;	
-	@color-stroke:#3f80b1;
-	@color-text:#d0ebfe;
-	@color-bg:#6faee1;
+	@bgcolor	:#6faee1;
+	@bgcolor-a	:#6faee1;
+	@bgcolor-b	:#468ec9;	
+	@color		:#d0ebfe;
+	@border		:1px solid #3f80b1;	
+	@radius		:4px;	
 }
 
 .dx-axbutton-colors-green(){
-	@color-fill-a:#98c87b;
-	@color-fill-b:#79aa5a;	
-	@color-stroke:#6a9751;
-	@color-text:#dffebe;
-	@color-bg:#98c87b;
+	@bgcolor	:#98c87b;
+	@bgcolor-a	:#98c87b;
+	@bgcolor-b	:#79aa5a;	
+	@color		:#dffebe;
+	@border		:1px solid #6a9751;	
+	@radius		:4px;	
 }
 
 .dx-axbutton-colors-red(){
-	@color-fill-a:#c65a5b;
-	@color-fill-b:#a93b3e;
-	@color-stroke:#87302b;
-	@color-text:#fcccc9;
-	@color-bg:#c65a5b;
+	@bgcolor	:#c65a5b;
+	@bgcolor-a	:#c65a5b;
+	@bgcolor-b	:#a93b3e;
+	@color		:#fcccc9;
+	@border		:1px solid #87302b;	
+	@radius		:4px;	
 }
 
 .dx-axbutton-colors-disabled(){
-	@color-fill-a:#d7d7d7;
-	@color-fill-b:#d7d7d7;
-	@color-stroke:#ccc;
-	@color-text:#eaeaea;
-	@color-bg:#d7d7d7;
+	@bgcolor	:#d7d7d7;
+	@bgcolor-a	:#d7d7d7;
+	@bgcolor-b	:#d7d7d7;
+	@color		:#eaeaea;
+	@border		:1px solid #ccc;	
+	@radius		:4px;	
 }
 
 
 // AXTab ///////////////////////////////////////////////////
 .dx-axtabs-colors-normal(){
-	@color-fill-a:#fdfdfd;
-	@color-fill-b:#e8e8e8;	
-	@color-stroke:#b9babc;
-	@color-text:#6e7a85;
-	@color-bg:#fdfdfd;
+	@bgcolor	:#fdfdfd;
+	@bgcolor-a	:#fdfdfd;
+	@bgcolor-b	:#e8e8e8;	
+	@color		:#6e7a85;
+	@color-a	:#b9babc;
+	@border		:1px solid #b9babc;
+	@radius		:4px;		
 }
 
 .dx-axtabs-colors-classic(){
-	@color-fill-a:#c1cdd5;
-	@color-fill-b:#98a4ae;	
-	@color-stroke:#81898e;
-	@color-text:#ebf4f7;
-	@color-bg:#c1cdd5;
+	@bgcolor	:#c1cdd5;
+	@bgcolor-a	:#c1cdd5;
+	@bgcolor-b	:#98a4ae;	
+	@color		:#ebf4f7;
+	@color-a	:#81898e;
+	@border		:1px solid #81898e;
+	@radius		:4px;	
 }
 
 .dx-axtabs-colors-blue(){
-	@color-fill-a:#6faee1;
-	@color-fill-b:#468ec9;	
-	@color-stroke:#3f80b1;
-	@color-text:#d0ebfe;
-	@color-bg:#6faee1;
+	@bgcolor	:#6faee1;
+	@bgcolor-a	:#6faee1;
+	@bgcolor-b	:#468ec9;	
+	@color		:#d0ebfe;
+	@color-a 	:#3f80b1;
+	@border		:1px solid #3f80b1;
+	@radius		:4px;
 }
 
 .dx-axtabs-colors-green(){
-	@color-fill-a:#98c87b;
-	@color-fill-b:#79aa5a;	
-	@color-stroke:#6a9751;
-	@color-text:#dffebe;
-	@color-bg:#98c87b;
+	@bgcolor	:#98c87b;
+	@bgcolor-a	:#98c87b;
+	@bgcolor-b	:#79aa5a;	
+	@color		:#dffebe;
+	@color-a	:#6a9751;
+	@border		:1px solid #6a9751;	
+	@radius		:4px;
+
 }
 
 .dx-axtabs-colors-red(){
-	@color-fill-a:#c65a5b;
-	@color-fill-b:#a93b3e;
-	@color-stroke:#87302b;
-	@color-text:#fcccc9;
-	@color-bg:#c65a5b;
+	@bgcolor	:#c65a5b;
+	@bgcolor-a	:#c65a5b;
+	@bgcolor-b	:#a93b3e;
+	@color		:#fcccc9;
+	@color-a	:#87302b;	
+	@border		:1px solid #87302b;
+	@radius		:4px;
 }
 
 .dx-axtabs-colors-disabled(){
-	@color-fill-a:#d7d7d7;
-	@color-fill-b:#d7d7d7;
-	@color-stroke:#ccc;
-	@color-text:#eaeaea;
-	@color-bg:#d7d7d7;
+	@bgcolor-a	:#d7d7d7;
+	@bgcolor-b	:#d7d7d7;
+	@border		:1px solid #ccc;
+	@color		:#eaeaea;
+	@color-a	:#ccc;
+	@bgcolor	:#d7d7d7;
+	@radius		:4px;	
 }
 
 
@@ -149,8 +193,101 @@
 
 // AXGrid ///////////////////////////////////////////////////
 
-// AXInput ///////////////////////////////////////////////////
 
+
+
+// AXInput ///////////////////////////////////////////////////
+.dx-axinput-colors-normal(){
+	@color		:#333;
+	@color-a	:#222;					//focus
+	@color-b	:#fff;					//diabled	
+	@color-c	:#676767;				//readonly
+	@color-d	:#bbb;					//placeholder
+	@bgcolor	:#fff;	
+	@bgcolor-a	:#fff;				//focus
+	@bgcolor-b	:#fff;				//diabled
+	@bgcolor-c	:#fff;				//readonly
+	@bgcolor-d	:#fff;				//placeholder
+	@border		:1px solid #b6b6b6;
+	@border-a	:1px solid #949fa8;	//focus
+	@radius		:4px;
+	@radius-a	:15px;
+}
+.dx-axinput-colors-switch(){
+	@color		:#b6b6b6;
+	@color-a	:#fff;
+	@border		:1px solid #b6b6b6;
+	@border-a	:1px solid #4f5458;
+	@radius		:14px;
+	@bgcolor	:#fff;
+	@bgcolor-a	:#a3b0b9
+}
+
+.dx-axinput-colors-segments(){
+	@color		:#6e7a86;
+	@color-a	:#fff;
+	@border		:1px solid #b9babc;
+	@bgcolor	:#e8e8e8;
+	@bgcolor-a	:#fff;
+	@bgcolor-b	:#e8e8e8;			
+	@bgcolor-c	:#c7cfd4;
+	@bgcolor-d	:#e5eff2;
+	@bgcolor-e	:#7C7E83;
+	@bgcolor-f	:#b9babc;
+	@radius		:4px;
+}
+
+.dx-axinput-colors-slider(){
+	@color		:#acacac;
+	@color-a	:#444;
+	@bgcolor	:#e2e3e4;
+	@bgcolor-a	:#90979d;
+	@radius		:2px;
+}
+
+.dx-axinput-colors-selector(){
+	@border		:1px solid #b9babc;
+	@radius		:4px;
+}
+
+.dx-axinput-colors-date(){
+	//AXInput.less
+	@font-family:Arial;
+	@color		:#fff; 		//year & Month
+	@color-a	:#828f9e;	//dateTypeName
+	@border		:1px solid #808d9d;
+	@border-a	:1px solid #7f8d9c;
+	@border-b	:1px solid #b9babc;
+	@radius		:5px;
+	@bgcolor	:#fff;
+}
+
+.dx-axcalenter-colors-normal(){
+	//AXJ.less
+	@font-family:Arial;
+	@color		:#7b7b7b; 	
+	@color-a	:#c78b82;	//SUN
+	@color-b	:#627d9b; 	//SAT
+	@color-c	:#6d6e71; 	//Table body
+	@color-d	:#fff; 
+	@color-e	:#fff; 	
+	@color-f	:#bfbfc1;
+	@color-g	:#738089; 	//hour, minute, 
+	
+	@border		:1px solid #b9babc;		//Table body 
+	@border-a	:1px solid #f2f2f3;	//Table head right;
+	@border-b	:1px solid #b9babc;	//Table head left;
+	@border-c	:1px solid #7f8d9c;
+
+	@bgcolor	:#fff;
+	@bgcolor-a	:#d8e1e7;
+	@bgcolor-b	:#5ea3db;
+	@bgcolor-c	:#5ea3db;	
+	@bgcolor-d	:#f3e2df;
+	@bgcolor-e	:#a3b0b9;
+	@radius		:5px;
+
+}
 
 // AXProgress ///////////////////////////////////////////////////
 

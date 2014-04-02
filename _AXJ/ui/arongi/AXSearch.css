@@ -1,3 +1,21 @@
+/*
+@bgcolor:#fff;
+@font-family:"Open sans";
+@font-size:12px;
+@color:#565b61;
+@link:#6e7a86;
+@link-hover:#565b61;
+@link-focus:#565b61;
+@link-active:#82898f;
+@link-visited:#c3cad0;
+@stroke:"1px solid #000";
+
+@bgcolor-a:#e8e8e8;
+@bgcolor-b:#c6cdd3;
+@bgcolor-c:#717b85;
+@storke-a:#000;
+@stroke-b:#000;
+*/
 .util-border-radius-none {
   -webkit-border-radius: none;
   -moz-border-radius: none;
@@ -9,6 +27,24 @@
   text-overflow: ellipsis;
 }
 @media (min-width:1152px) {
+  /*
+  @bgcolor:#fff;
+  @font-family:"Open sans";
+  @font-size:12px;
+  @color:#565b61;
+  @link:#6e7a86;
+  @link-hover:#565b61;
+  @link-focus:#565b61;
+  @link-active:#82898f;
+  @link-visited:#c3cad0;
+  @stroke:"1px solid #000";
+  
+  @bgcolor-a:#e8e8e8;
+  @bgcolor-b:#c6cdd3;
+  @bgcolor-c:#717b85;
+  @storke-a:#000;
+  @stroke-b:#000;
+  */
   .util-border-radius-none {
     -webkit-border-radius: none;
     -moz-border-radius: none;
@@ -178,6 +214,24 @@
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1151px) {
+  /*
+  @bgcolor:#fff;
+  @font-family:"Open sans";
+  @font-size:12px;
+  @color:#565b61;
+  @link:#6e7a86;
+  @link-hover:#565b61;
+  @link-focus:#565b61;
+  @link-active:#82898f;
+  @link-visited:#c3cad0;
+  @stroke:"1px solid #000";
+  
+  @bgcolor-a:#e8e8e8;
+  @bgcolor-b:#c6cdd3;
+  @bgcolor-c:#717b85;
+  @storke-a:#000;
+  @stroke-b:#000;
+  */
   .util-border-radius-none {
     -webkit-border-radius: none;
     -moz-border-radius: none;
@@ -347,6 +401,24 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /*
+  @bgcolor:#fff;
+  @font-family:"Open sans";
+  @font-size:12px;
+  @color:#565b61;
+  @link:#6e7a86;
+  @link-hover:#565b61;
+  @link-focus:#565b61;
+  @link-active:#82898f;
+  @link-visited:#c3cad0;
+  @stroke:"1px solid #000";
+  
+  @bgcolor-a:#e8e8e8;
+  @bgcolor-b:#c6cdd3;
+  @bgcolor-c:#717b85;
+  @storke-a:#000;
+  @stroke-b:#000;
+  */
   .util-border-radius-none {
     -webkit-border-radius: none;
     -moz-border-radius: none;
@@ -516,6 +588,24 @@
   }
 }
 @media (max-width: 767px) {
+  /*
+  @bgcolor:#fff;
+  @font-family:"Open sans";
+  @font-size:12px;
+  @color:#565b61;
+  @link:#6e7a86;
+  @link-hover:#565b61;
+  @link-focus:#565b61;
+  @link-active:#82898f;
+  @link-visited:#c3cad0;
+  @stroke:"1px solid #000";
+  
+  @bgcolor-a:#e8e8e8;
+  @bgcolor-b:#c6cdd3;
+  @bgcolor-c:#717b85;
+  @storke-a:#000;
+  @stroke-b:#000;
+  */
   .util-border-radius-none {
     -webkit-border-radius: none;
     -moz-border-radius: none;

@@ -1,3 +1,21 @@
+/*
+@bgcolor:#fff;
+@font-family:"Open sans";
+@font-size:12px;
+@color:#565b61;
+@link:#6e7a86;
+@link-hover:#565b61;
+@link-focus:#565b61;
+@link-active:#82898f;
+@link-visited:#c3cad0;
+@stroke:"1px solid #000";
+
+@bgcolor-a:#e8e8e8;
+@bgcolor-b:#c6cdd3;
+@bgcolor-c:#717b85;
+@storke-a:#000;
+@stroke-b:#000;
+*/
 .util-border-radius-none {
   -webkit-border-radius: none;
   -moz-border-radius: none;
@@ -9,6 +27,24 @@
   text-overflow: ellipsis;
 }
 @media (min-width:1152px) {
+  /*
+  @bgcolor:#fff;
+  @font-family:"Open sans";
+  @font-size:12px;
+  @color:#565b61;
+  @link:#6e7a86;
+  @link-hover:#565b61;
+  @link-focus:#565b61;
+  @link-active:#82898f;
+  @link-visited:#c3cad0;
+  @stroke:"1px solid #000";
+  
+  @bgcolor-a:#e8e8e8;
+  @bgcolor-b:#c6cdd3;
+  @bgcolor-c:#717b85;
+  @storke-a:#000;
+  @stroke-b:#000;
+  */
   .util-border-radius-none {
     -webkit-border-radius: none;
     -moz-border-radius: none;
@@ -404,8 +440,9 @@
     width: 100%;
   }
   .AXCalendar table.calendarPage thead td {
+    background: #ffffff;
     font-size: 8px;
-    font-family: 'Arial';
+    font-family: Arial;
     height: 20px;
     line-height: 20px;
     padding: 0px;
@@ -470,12 +507,12 @@
   }
   .AXCalendar table.calendarPage tbody td A.calendarDate:active {
     background: #5ea3db;
-    color: #fff;
+    color: #ffffff;
     box-shadow: inset 0px 0px 4px #3d84bc;
   }
   .AXCalendar table.calendarPage tbody td A.calendarDate.selected {
     background: #5ea3db;
-    color: #fff;
+    color: #ffffff;
     box-shadow: inset 0px 0px 4px #3d84bc;
   }
   .AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate {
@@ -522,12 +559,12 @@
   }
   .AXCalendar table.calendarPageMonth tbody td A.calendarMonth:active {
     background: #5ea3db;
-    color: #fff;
+    color: #ffffff;
     box-shadow: inset 0px 0px 5px #3d84bc;
   }
   .AXCalendar table.calendarPageMonth tbody td A.calendarMonth.selected {
     background: #5ea3db;
-    color: #fff;
+    color: #ffffff;
     box-shadow: inset 0px 0px 5px #3d84bc;
   }
   .AXCalendar .timeBox {
@@ -584,7 +621,7 @@
     color: #fff;
     font-family: Arial;
     line-height: 22px;
-    text-shadow: 0px -1px #8a939e;
+    text-shadow: 0px -1px rgba(0, 0, 0, 0.25);
     outline: none;
     white-space: nowrap;
   }
@@ -805,6 +842,24 @@
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1151px) {
+  /*
+  @bgcolor:#fff;
+  @font-family:"Open sans";
+  @font-size:12px;
+  @color:#565b61;
+  @link:#6e7a86;
+  @link-hover:#565b61;
+  @link-focus:#565b61;
+  @link-active:#82898f;
+  @link-visited:#c3cad0;
+  @stroke:"1px solid #000";
+  
+  @bgcolor-a:#e8e8e8;
+  @bgcolor-b:#c6cdd3;
+  @bgcolor-c:#717b85;
+  @storke-a:#000;
+  @stroke-b:#000;
+  */
   .util-border-radius-none {
     -webkit-border-radius: none;
     -moz-border-radius: none;
@@ -1200,8 +1255,9 @@
     width: 100%;
   }
   .AXCalendar table.calendarPage thead td {
+    background: #ffffff;
     font-size: 8px;
-    font-family: 'Arial';
+    font-family: Arial;
     height: 20px;
     line-height: 20px;
     padding: 0px;
@@ -1266,12 +1322,12 @@
   }
   .AXCalendar table.calendarPage tbody td A.calendarDate:active {
     background: #5ea3db;
-    color: #fff;
+    color: #ffffff;
     box-shadow: inset 0px 0px 4px #3d84bc;
   }
   .AXCalendar table.calendarPage tbody td A.calendarDate.selected {
     background: #5ea3db;
-    color: #fff;
+    color: #ffffff;
     box-shadow: inset 0px 0px 4px #3d84bc;
   }
   .AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate {
@@ -1318,12 +1374,12 @@
   }
   .AXCalendar table.calendarPageMonth tbody td A.calendarMonth:active {
     background: #5ea3db;
-    color: #fff;
+    color: #ffffff;
     box-shadow: inset 0px 0px 5px #3d84bc;
   }
   .AXCalendar table.calendarPageMonth tbody td A.calendarMonth.selected {
     background: #5ea3db;
-    color: #fff;
+    color: #ffffff;
     box-shadow: inset 0px 0px 5px #3d84bc;
   }
   .AXCalendar .timeBox {
@@ -1380,7 +1436,7 @@
     color: #fff;
     font-family: Arial;
     line-height: 22px;
-    text-shadow: 0px -1px #8a939e;
+    text-shadow: 0px -1px rgba(0, 0, 0, 0.25);
     outline: none;
     white-space: nowrap;
   }
@@ -1601,6 +1657,24 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /*
+  @bgcolor:#fff;
+  @font-family:"Open sans";
+  @font-size:12px;
+  @color:#565b61;
+  @link:#6e7a86;
+  @link-hover:#565b61;
+  @link-focus:#565b61;
+  @link-active:#82898f;
+  @link-visited:#c3cad0;
+  @stroke:"1px solid #000";
+  
+  @bgcolor-a:#e8e8e8;
+  @bgcolor-b:#c6cdd3;
+  @bgcolor-c:#717b85;
+  @storke-a:#000;
+  @stroke-b:#000;
+  */
   .util-border-radius-none {
     -webkit-border-radius: none;
     -moz-border-radius: none;
@@ -1996,8 +2070,9 @@
     width: 100%;
   }
   .AXCalendar table.calendarPage thead td {
+    background: #ffffff;
     font-size: 8px;
-    font-family: 'Arial';
+    font-family: Arial;
     height: 20px;
     line-height: 20px;
     padding: 0px;
@@ -2062,12 +2137,12 @@
   }
   .AXCalendar table.calendarPage tbody td A.calendarDate:active {
     background: #5ea3db;
-    color: #fff;
+    color: #ffffff;
     box-shadow: inset 0px 0px 4px #3d84bc;
   }
   .AXCalendar table.calendarPage tbody td A.calendarDate.selected {
     background: #5ea3db;
-    color: #fff;
+    color: #ffffff;
     box-shadow: inset 0px 0px 4px #3d84bc;
   }
   .AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate {
@@ -2114,12 +2189,12 @@
   }
   .AXCalendar table.calendarPageMonth tbody td A.calendarMonth:active {
     background: #5ea3db;
-    color: #fff;
+    color: #ffffff;
     box-shadow: inset 0px 0px 5px #3d84bc;
   }
   .AXCalendar table.calendarPageMonth tbody td A.calendarMonth.selected {
     background: #5ea3db;
-    color: #fff;
+    color: #ffffff;
     box-shadow: inset 0px 0px 5px #3d84bc;
   }
   .AXCalendar .timeBox {
@@ -2176,7 +2251,7 @@
     color: #fff;
     font-family: Arial;
     line-height: 22px;
-    text-shadow: 0px -1px #8a939e;
+    text-shadow: 0px -1px rgba(0, 0, 0, 0.25);
     outline: none;
     white-space: nowrap;
   }
@@ -2397,6 +2472,24 @@
   }
 }
 @media (max-width: 767px) {
+  /*
+  @bgcolor:#fff;
+  @font-family:"Open sans";
+  @font-size:12px;
+  @color:#565b61;
+  @link:#6e7a86;
+  @link-hover:#565b61;
+  @link-focus:#565b61;
+  @link-active:#82898f;
+  @link-visited:#c3cad0;
+  @stroke:"1px solid #000";
+  
+  @bgcolor-a:#e8e8e8;
+  @bgcolor-b:#c6cdd3;
+  @bgcolor-c:#717b85;
+  @storke-a:#000;
+  @stroke-b:#000;
+  */
   .util-border-radius-none {
     -webkit-border-radius: none;
     -moz-border-radius: none;
@@ -2792,8 +2885,9 @@
     width: 100%;
   }
   .AXCalendar table.calendarPage thead td {
+    background: #ffffff;
     font-size: 8px;
-    font-family: 'Arial';
+    font-family: Arial;
     height: 20px;
     line-height: 20px;
     padding: 0px;
@@ -2858,12 +2952,12 @@
   }
   .AXCalendar table.calendarPage tbody td A.calendarDate:active {
     background: #5ea3db;
-    color: #fff;
+    color: #ffffff;
     box-shadow: inset 0px 0px 4px #3d84bc;
   }
   .AXCalendar table.calendarPage tbody td A.calendarDate.selected {
     background: #5ea3db;
-    color: #fff;
+    color: #ffffff;
     box-shadow: inset 0px 0px 4px #3d84bc;
   }
   .AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate {
@@ -2910,12 +3004,12 @@
   }
   .AXCalendar table.calendarPageMonth tbody td A.calendarMonth:active {
     background: #5ea3db;
-    color: #fff;
+    color: #ffffff;
     box-shadow: inset 0px 0px 5px #3d84bc;
   }
   .AXCalendar table.calendarPageMonth tbody td A.calendarMonth.selected {
     background: #5ea3db;
-    color: #fff;
+    color: #ffffff;
     box-shadow: inset 0px 0px 5px #3d84bc;
   }
   .AXCalendar .timeBox {
@@ -2972,7 +3066,7 @@
     color: #fff;
     font-family: Arial;
     line-height: 22px;
-    text-shadow: 0px -1px #8a939e;
+    text-shadow: 0px -1px rgba(0, 0, 0, 0.25);
     outline: none;
     white-space: nowrap;
   }
