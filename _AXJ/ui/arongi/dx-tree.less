@@ -3,10 +3,11 @@
 
 // AXTree ///////////////////////////////////////////////////
 .AXTree{
+	.dx-axtree-preset();
 	position:relative;
 	.AXTreeScrollBody{
 		position:relative;
-		border:1px solid #b1b1b1;
+		border:@border;
 		overflow:hidden;
 		//Tree Head...
 
@@ -14,7 +15,7 @@
 			position:absolute;left:0px;top:0px;
 			width:100%;
 			background:url('images/dx-tree-head-bg.png') repeat-x 0px 0px #fff;
-			border-bottom:1px solid #b1b1b1;
+			border-bottom:@border;
 			.colHeadTable{
 				table-layout:fixed;
 				background:url('images/dx-tree-head-bg.png') repeat-x 0px 0px #fff;
@@ -26,19 +27,19 @@
 							vertical-align:bottom;
 							cursor:pointer;				
 							&:hover{
-								background-color:#e5e6eb;								
+								background-color:@bgcolor;								
 							}
 							&.colHeadBottomBorder{
-								border-bottom:1px solid #b1b1b1;
+								border-bottom:@border;
 							}
 							&.sortDesc{
-								background-color:#e5e6eb;
+								background-color:@bgcolor;
 								.colHeadNode{
 									background:url('images/dx-sort-desc.png') no-repeat center 0px;
 								}
 							}
 							&.sortAsc{
-								background-color:#e5e6eb;
+								background-color:@bgcolor;
 								.colHeadNode{
 									background:url('images/dx-sort-asc.png') no-repeat center 0px;
 								}
@@ -48,7 +49,7 @@
 								width:5px;height:20px;
 								cursor:w-resize;
 								&:active{
-									background:#ffbbcc;
+									background:@bgcolor-a;
 								}
 							}
 							.colHeadTool{
@@ -73,18 +74,18 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:#5e5e5e;text-shadow:0px 1px 0px #fff;
-								font-family:AppleGothic, 'Malgun Gothic', Gulim;
-								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+								color:@color;text-shadow:0px 1px 0px #fff;
+								font-family:@font-family;
+								.util-text-ellipsis();
 							}
 							.colHeadTdCheck{
 								height:20px;padding:7px 1px 3px 0px;
-								color:#5e5e5e;
+								color:@color;
 								input{vertical-align:middle;}
 							}
 							.colHeadTdHtml{
 								height:30px;padding:0px 1px 0px 0px;
-								color:#5e5e5e;
+								color:@color;
 							}					
 						}
 					} 
@@ -116,34 +117,34 @@
 			.treeScrollTrackY{
 				position:absolute;right:0px;top:0px;
 				width:9px;height:9px;
-				border-left:1px solid #dbdbdb;border-right:1px solid #dbdbdb;
+				border-left:@border-a;border-right:@border-a;
 				background:#f3f3f3;
 				display:none;
 				.treeScrollHandle{
 					position:absolute;left:-1px;top:0px;
 					width:9px;height:20px;
 					background:url('images/dx-diagonal-bg.png');
-					border:1px solid #B6B6B6;
+					border:@border-b;
 					cursor:pointer;
 					&:hover, &.hover{
-						background:#929292;border:1px solid #636363;
+						background:@bgcolor-b;border:@border-c;
 					}
 				}
 			}
 			.treeScrollTrackX{
 				position:absolute;left:0px;bottom:0px;
 				width:9px;height:9px;
-				border-top:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb;
-				background:#f3f3f3;
+				border-top:@border-a;border-bottom:@border-a;
+				background:@bgcolor-c;
 				display:none;
 				.treeScrollHandle{
 					position:absolute;left:0px;top:-1px;
 					width:20px;height:9px;
 					background:url('images/dx-diagonal-bg.png');
-					border:1px solid #B6B6B6;
+					border:@border-b;
 					cursor:pointer;
 					&:hover, &.hover{
-						background:#929292;border:1px solid #636363;
+						background:@bgcolor-b;border:@border-c;
 					}
 				}
 			}
@@ -155,7 +156,7 @@
 							td{
 								vertical-align:middle;
 								height:100px;
-								border-bottom:1px solid #c8c8c8;
+								border-bottom:@border-d;
 							}
 						}
 						&.line0{
@@ -167,52 +168,52 @@
 						&.AXTreeSplit{
 							td{
 								vertical-align:middle;
-								height:1px;line-height:1px;background:#eee;
+								height:1px;line-height:1px;background:@bgcolor-d;
 								border-bottom:0px none;
 							}
 						}
 						&.red{
-							td{ background-color:#FFE8E8; }
+							td{ background-color:@bgcolor-e; }
 						}
 						&.green{
-							td{ background-color:#F7FDEA; }	
+							td{ background-color:@bgcolor-f; }	
 						} 
 						&.blue{
-							td{ background-color:#EAF5FD; }	
+							td{ background-color:@bgcolor-g; }	
 						} 
 						&.yellow{
-							td{ background-color:#FEFEE9; }	
+							td{ background-color:@bgcolor-h; }	
 						} 
 						&.hover{ 
-							td{background-color:#e7f1fa;}
+							td{background-color:@bgcolor-i;}
 						}
 						&.selected{
-							td{background-color:#D2D9DF;}
+							td{background-color:@bgcolor-j;}
 						}
 						&.disable{ 
 							td{
-								background-color:#F5F5F1;
+								background-color:@bgcolor-k;
 								color:#ccc ! important;
 							}
 						}
 						&.copied{
 							td{
-								background-color:#FFFFBF;
-								border-top:1px dotted;
-								border-bottom:1px dotted;
+								background-color:@bgcolor-l;
+								border-top:@border-e;
+								border-bottom:@border-e;
 							}
 						}
 						td{
 							padding:0px;
 							background:url('images/dx-tree-body-border.png') repeat-y 100% 0px;
 							vertical-align:bottom;
-							border-bottom:1px solid #c8c8c8;
+							border-bottom:@border-d;
 							cursor:pointer;
 							&.selected{
-								background-color:#D2D9DF;box-shadow:inset 0px 0px 2px #000;
+								background-color:@bgcolor-j;box-shadow:inset 0px 0px 2px #000;
 							}
 							&.bodyBottomBorder{
-								border-bottom:1px dashed #c8c8c8;
+								border-bottom:@border-f;
 							}
 							&.bodyNullTd{
 								background-image:none;								
@@ -291,9 +292,9 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:#3b3b3b;text-shadow:0px 1px 0px #fff;
-								font-family:AppleGothic, 'Malgun Gothic',Gulim;
-								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+								color:@color-a;text-shadow:0px 1px 0px #fff;
+								font-family:@font-family;
+								.util-text-ellipsis();
 							}
 							.bodyTdHtml{
 								padding:0px 1px 0px 0px;	
@@ -311,10 +312,10 @@
 							padding:0px;
 							background:url('images/dx-tree-body-border.png') repeat-y 100% 0px;
 							vertical-align:bottom;
-							border-bottom:1px solid #c8c8c8;
-							background-color:#FFFFEC;
+							border-bottom:@border-d;
+							background-color:@bgcolor-m;
 							&.bodyBottomBorder{
-								border-bottom:1px dashed #c8c8c8;
+								border-bottom:@border-f;
 							}							
 							&.bodyNullTd{
 								background-image:none;								
@@ -327,9 +328,9 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:#3b3b3b;text-shadow:0px 1px 0px #fff;
-								font-family:AppleGothic, 'Malgun Gothic',Gulim;
-								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;								
+								color:@color-a;text-shadow:0px 1px 0px #fff;
+								font-family:@font-family;
+								.util-text-ellipsis();
 							}
 							.bodyTdHtml{
 								padding:0px 1px 0px 0px;	
@@ -350,15 +351,15 @@
 							td{
 								vertical-align:middle;
 								height:100px;
-								background:#f7f7f7;
-								border-bottom:1px solid #c8c8c8;
+								background:@bgcolor-n;
+								border-bottom:@border-d;
 							}
 						}	
 						&.line0{
-							td	{background-color:#eaedef;}	
+							td	{background-color:@bgcolor-o;}	
 						} 
 						&.line1{
-							td	{background-color:#F7F8F9;}
+							td	{background-color:@bgcolor-p;}
 						}	
 						&.AXTreeSplit{
 							td{
@@ -368,37 +369,37 @@
 							}
 						}	
 						&.red{
-							td{ background-color:#FFE8E8;} 	
+							td{ background-color:@bgcolor-e;} 	
 						} 
 						&.green{
-							td{ background-color:#F7FDEA;} 
+							td{ background-color:@bgcolor-f;} 
 						} 
 						&.blue{
-							td{ background-color:#EAF5FD;} 
+							td{ background-color:@bgcolor-g;} 
 						} 
 						&.yellow{
-							td{ background-color:#FEFEE9;} 
+							td{ background-color:@bgcolor-h;} 
 						} 	
 						&.selected{
-							td{background-color:#D2D9DF;}
+							td{background-color:@bgcolor-j;}
 						}		
 						&.hover{
-							td{background-color:#d7dde3;}
+							td{background-color:@bgcolor-q;}
 						}																		
 						td{
 							padding:0px;
 							background:url('images/dx-tree-body-border.png') repeat-y 100% 0px;
 							vertical-align:bottom;
-							border-bottom:1px solid #c8c8c8;
+							border-bottom:@border-d;
 							cursor:pointer;
 							&.fixedLine{
 								background:url('images/dx-tree-fixed-body-border.png') repeat-y 100% 0px #FFFFEC;								
 							}
 							&.selected{
-								background-color:#D2D9DF;box-shadow:inset 0px 0px 2px #000;
+								background-color:@bgcolor-j;box-shadow:inset 0px 0px 2px #000;
 							}
 							&.bodyBottomBorder{
-								border-bottom:1px dashed #c8c8c8;
+								border-bottom:@border-f;
 							}
 							&.bodyNullTd{
 								background-image:none;	
@@ -411,9 +412,9 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:#3b3b3b;text-shadow:0px 1px 0px #fff;
-								font-family:AppleGothic, 'Malgun Gothic',Gulim;
-								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+								color:@color-a;text-shadow:0px 1px 0px #fff;
+								font-family:@font-family;
+								.util-text-ellipsis();
 							}
 							.bodyTdHtml{
 								padding:0px 1px 0px 0px;									
@@ -431,13 +432,13 @@
 							padding:0px;
 							background:url('images/dx-tree-body-border.png') repeat-y 100% 0px;
 							vertical-align:bottom;
-							border-bottom:1px solid #c8c8c8;
-							background-color:#FFFFEC;
+							border-bottom:@border-d;
+							background-color:@bgcolor-m;
 							&.fixedLine{
 								background:url('images/dx-tree-fixed-body-border.png') repeat-y 100% 0px #FFFFEC;
 							}	
 							&.bodyBottomBorder{
-								border-bottom:1px dashed #c8c8c8;
+								border-bottom:@border-f;
 							}
 							&.bodyNullTd{
 								background-image:none;	
@@ -450,9 +451,9 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:#3b3b3b;text-shadow:0px 1px 0px #fff;
-								font-family:AppleGothic, 'Malgun Gothic',Gulim;
-								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+								color:@color-a;text-shadow:0px 1px 0px #fff;
+								font-family:@font-family;
+								.util-text-ellipsis();
 							}
 							.bodyTdHtml{
 								padding:0px 1px 0px 0px;									
@@ -477,6 +478,7 @@
 
 // AXTree_none ///////////////////////////////////////////////////
 .AXTree_none{
+	.dx-axtree-preset();
 	position:relative;
 	.AXTreeScrollBody{
 		position:relative;
@@ -486,7 +488,7 @@
 			position:absolute;left:0px;top:0px;
 			width:100%;
 			background:url('images/dx-tree-head-bg.png') repeat-x 0px 0px #fff;
-			border-bottom:1px solid #b1b1b1;
+			border-bottom:@border;
 			.colHeadTable{
 				table-layout:fixed;
 				background:url('images/dx-tree-head-bg.png') repeat-x 0px 0px #fff;
@@ -498,29 +500,29 @@
 							vertical-align:bottom;
 							cursor:pointer;
 							&:hover{
-								background-color:#e5e6eb;								
+								background-color:@bgcolor;								
 							}
 							&.sortDesc{
-								background-color:#e5e6eb;
+								background-color:@bgcolor;
 								.colHeadNode{
 									background:url('images/dx-sort-desc.png') no-repeat center 0px;
 								}								
 							}
 							&.sortAsc{
-								background-color:#e5e6eb;
+								background-color:@bgcolor;
 								.colHeadNode{
 									background:url('images/dx-sort-asc.png') no-repeat center 0px;
 								}								
 							}
 							&.colHeadBottomBorder{
-								border-bottom:1px solid #b1b1b1;
+								border-bottom:@border;
 							}
 							.colHeadResizer{
 								position:absolute;right:0px;top:0px;
 								width:5px;height:20px;
 								cursor:w-resize;
 								&:active{
-									background:#ffbbcc;
+									background:@bgcolor-a;
 								}
 							}
 							.colHeadTool{
@@ -545,20 +547,20 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 0px;
-								color:#5e5e5e;text-shadow:0px 1px 0px #fff;
-								font-family:AppleGothic, 'Malgun Gothic', Gulim;
-								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+								color:@color;text-shadow:0px 1px 0px #fff;
+								font-family:@font-family;
+								.util-text-ellipsis();
 							}
 							.colHeadTdCheck{
 								height:20px;padding:7px 1px 3px 0px;
-								color:#5e5e5e;
+								color:@color;
 								input{
 									vertical-align:middle;
 								}
 							}
 							.colHeadTdHtml{
 								height:30px;padding:0px 1px 0px 0px;
-								color:#5e5e5e;
+								color:@color;
 							}
 						}						
 					}	
@@ -585,48 +587,48 @@
 				.treeScrollTrackY{
 					.treeScrollHandle{
 						&.hover{
-							background:#929292;border:1px solid #636363;
+							background:@bgcolor-b;border:@border-c;
 						}
 					}
 				}
 			}
 			.treeScrollTrackXY{
 				position:absolute;right:0px;bottom:0px;
-				width:9px;height:9px;border:1px solid #B6B6B6;
+				width:9px;height:9px;border:@border-b;
 				background:url('images/dx-diagonal-bg.png');
 				display:none;
 			}
 			.treeScrollTrackY{
 				position:absolute;right:0px;top:0px;
 				width:9px;height:9px;
-				border-left:1px solid #dbdbdb;border-right:1px solid #dbdbdb;
-				background:#f3f3f3;
+				border-left:@border-a;border-right:@border-a;
+				background:@bgcolor-c;
 				display:none;
 				.treeScrollHandle{
 					position:absolute;left:-1px;top:0px;
 					width:9px;height:20px;
 					background:url('images/dx-diagonal-bg.png');
-					border:1px solid #B6B6B6;
+					border:@border-b;
 					cursor:pointer;
 					&:hover, &.hover{
-						background:#929292;border:1px solid #636363;
+						background:@bgcolor-b;border:@border-c;
 					}
 				}
 			}
 			.treeScrollTrackX{
 				position:absolute;left:0px;bottom:0px;
 				width:9px;height:9px;
-				border-top:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb;
-				background:#f3f3f3;
+				border-top:@border-a;border-bottom:@border-a;
+				background:@bgcolor-c;
 				display:none;
 				.treeScrollHandle{
 					position:absolute;left:0px;top:-1px;
 					width:20px;height:9px;
 					background:url('images/dx-diagonal-bg.png');
-					border:1px solid #B6B6B6;
+					border:@border-a;
 					cursor:pointer;
 					&:hover, &.hover{
-						background:#929292;border:1px solid #636363;
+						background:@bgcolor-b;border:@border-c;
 					}
 				}
 			}
@@ -638,7 +640,7 @@
 							td{
 								vertical-align:middle;
 								height:100px;
-								border-bottom:1px solid #c8c8c8;
+								border-bottom:@border-d;
 							}							
 						}
 						&.line0{
@@ -650,27 +652,27 @@
 						&.AXTreeSplit{
 							td{
 								vertical-align:middle;
-								height:1px;line-height:1px;background:#ccc;
+								height:1px;line-height:1px;background:@bgcolor-r;
 								border-bottom:0px none;
 							}							
 						}
 						&.red{
-							td{ background-color:#FFE8E8; }
+							td{ background-color:@bgcolor-e; }
 						}
 						&.green{
-							td{ background-color:#F7FDEA; }
+							td{ background-color:@bgcolor-f; }
 						}
 						&.blue{
-							td{ background-color:#EAF5FD; }
+							td{ background-color:@bgcolor-g; }
 						}
 						&.yellow{
-							td{ background-color:#FEFEE9; }
+							td{ background-color:@bgcolor-h; }
 						}
 						&.hover{
-							td{background-color:#e7f1fa;}
+							td{background-color:@bgcolor-i;}
 						}
 						&.selected{
-							td{background-color:#D2D9DF;}
+							td{background-color:@bgcolor-j;}
 						}
 						&.disable{
 							td{
@@ -680,9 +682,9 @@
 						}
 						&.copied{
 							td{
-								background-color:#FFFFBF;
-								border-top:1px dotted;
-								border-bottom:1px dotted;
+								background-color:@bgcolor-l;
+								border-top:@border-e;
+								border-bottom:@border-e;
 							}
 						}
 						td{
@@ -690,10 +692,10 @@
 							vertical-align:bottom;
 							cursor:pointer;
 							&.selected{
-								background-color:#D2D9DF;box-shadow:inset 0px 0px 2px #000;
+								background-color:@bgcolor-j;box-shadow:inset 0px 0px 2px #000;
 							}
 							&.bodyBottomBorder{
-								border-bottom:1px dashed #c8c8c8;
+								border-bottom:@border-f;
 							}
 							&.bodyNullTd{
 								background-image:none;
@@ -771,9 +773,9 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:#3b3b3b;text-shadow:0px 1px 0px #fff;
-								font-family:AppleGothic, 'Malgun Gothic',Gulim;
-								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+								color:@color-a;text-shadow:0px 1px 0px #fff;
+								font-family:@font-family;
+								.util-text-ellipsis();
 							}
 							.bodyTdHtml{
 								padding:0px 1px 0px 0px;									
@@ -791,10 +793,10 @@
 							padding:0px;
 							background:url('images/dx-tree-body-border.png') repeat-y 100% 0px;
 							vertical-align:bottom;
-							border-bottom:1px solid #c8c8c8;
-							background-color:#FFFFEC;
+							border-bottom:@border-d;
+							background-color:@bgcolor-m;
 							&.bodyBottomBorder{
-								border-bottom:1px dashed #c8c8c8;
+								border-bottom:@border-f;
 							}
 							&.bodyNullTd{
 								background-image:none;
@@ -807,9 +809,9 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:#3b3b3b;text-shadow:0px 1px 0px #fff;
-								font-family:AppleGothic, 'Malgun Gothic',Gulim;
-								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+								color:@color-a;text-shadow:0px 1px 0px #fff;
+								font-family:@font-family;
+								.util-text-ellipsis();
 							}
 							.bodyTdHtml{
 								padding:0px 1px 0px 0px;									
@@ -830,59 +832,59 @@
 							td{
 								vertical-align:middle;
 								height:100px;
-								background:#f7f7f7;
-								border-bottom:1px solid #c8c8c8;
+								background:@bgcolor-n;
+								border-bottom:@border-f;
 							}
 						}
 						&.line0{
 							td{
-								background-color:#eaedef;
+								background-color:@bgcolor-o;
 							}
 						}
 						&.line1{
 							td{
-								background-color:#F7F8F9;
+								background-color:@bgcolor-p;
 							}
 						}
 						&.AXTreeSplit{
 							td{
 								vertical-align:middle;
-								height:1px;line-height:1px;background:#eee;
+								height:1px;line-height:1px;background:@bgcolor-d;
 								border-bottom:0px none;
 							}
 						}
 						&.red{
-							td{ background-color:#FFE8E8;}
+							td{ background-color:@bgcolor-e;}
 						}
 						&.green{
-							td{ background-color:#F7FDEA;}
+							td{ background-color:@bgcolor-f;}
 						}
 						&.blue{
-							td{ background-color:#EAF5FD;}
+							td{ background-color:@bgcolor-g;}
 						}
 						&.yellow{
-							td{ background-color:#FEFEE9;}
+							td{ background-color:@bgcolor-h;}
 						}
 						&.selected{
-							td{background-color:#D2D9DF;}								
+							td{background-color:@bgcolor-j;}								
 						}
 						&.hover{
-							td{background-color:#d7dde3;}
+							td{background-color:@bgcolor-q;}
 						}
 						td{
 							padding:0px;
 							background:url('images/dx-tree-body-border.png') repeat-y 100% 0px;
 							vertical-align:bottom;
-							border-bottom:1px solid #c8c8c8;
+							border-bottom:@border-d;
 							cursor:pointer;
 							&.fixedLine{
 								background:url('images/dx-tree-fixed-body-border.png') repeat-y 100% 0px #FFFFEC;
 							}
 							&.selected{
-								background-color:#D2D9DF;box-shadow:inset 0px 0px 2px #000;
+								background-color:@bgcolor-j;box-shadow:inset 0px 0px 2px #000;
 							}
 							&.bodyBottomBorder{
-								border-bottom:1px dashed #c8c8c8;
+								border-bottom:@border-f;
 							}
 							&.bodyNullTd{
 								background-image:none;
@@ -895,9 +897,9 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:#3b3b3b;text-shadow:0px 1px 0px #fff;
+								color:@color-a;text-shadow:0px 1px 0px #fff;
 								font-family:AppleGothic, 'Malgun Gothic',Gulim;
-								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+								.util-text-ellipsis();
 							}	
 							.bodyTdHtml{
 								padding:0px 1px 0px 0px;
@@ -916,13 +918,13 @@
 							padding:0px;
 							background:url('images/dx-tree-body-border.png') repeat-y 100% 0px;
 							vertical-align:bottom;
-							border-bottom:1px solid #c8c8c8;
-							background-color:#FFFFEC;
+							border-bottom:@border-d;
+							background-color:@bgcolor-m;
 							&.fixedLine{
 								background:url('images/dx-tree-fixed-body-border.png') repeat-y 100% 0px #FFFFEC;
 							}
 							&.bodyBottomBorder{
-								border-bottom:1px dashed #c8c8c8;
+								border-bottom:@border-d;
 							}
 							&.bodyNullTd{
 								background-image:none;
@@ -935,9 +937,9 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:#3b3b3b;text-shadow:0px 1px 0px #fff;
-								font-family:AppleGothic, 'Malgun Gothic',Gulim;
-								white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+								color:@color-a;text-shadow:0px 1px 0px #fff;
+								font-family:@font-family;
+								.util-text-ellipsis();
 							}
 							.bodyTdHtml{
 								padding:0px 1px 0px 0px;
@@ -962,19 +964,19 @@
 		.editorContent{
 			position:absolute;left:0px;top:0px;
 			width:100%;
-			background:#d8e1e7;
-			border-bottom:1px solid #7f8d9c;		
+			background:@bgcolor-s;
+			border-bottom:@border-g;		
 			box-shadow:1px 1px 3px #ccc;
 		}
 		.editorButtons{
 			position:absolute;left:50px;top:19px;
 			height:30px;padding:1px 3px;
-			background:#d8e1e7;
-			border-left:1px solid #7f8d9c;
-			border-right:1px solid #7f8d9c;
-			border-bottom:1px solid #7f8d9c;
-			box-shadow:1px 1px 3px #ccc;
-			border-bottom-left-radius:4px;border-bottom-right-radius:4px;
+			background:@bgcolor-s;
+			border-left:@border-g;
+			border-right:@border-g;
+			border-bottom:@border-g;
+			box-shadow:@border-g;
+			border-bottom-left-radius:@radius;border-bottom-right-radius:@radius;
 		}
 		.editorBodyTable{
 			table-layout:fixed;width:100%;
@@ -988,22 +990,23 @@
 
 // AXTreeColGroupListBox ///////////////////////////////////////////////////
 .AXTreeColGroupListBox{
+	.dx-axtree-preset();
 	z-index:4999;
 	position:absolute;left:0px;top:0px;
 	width:146px;
-	background:#fff;
-	border:1px solid #b1b1b1;border-radius:5px;
+	background:@bgcolor-t;
+	border:@border;border-radius:@radius-a;
 	box-shadow:0px 0px 5px #ccc;
 	.AXTreeColGroupListBoxItem{
 		display:block;
 		line-height:15px;padding:5px 5px 5px 25px;
-		color:#5e5e5e;text-decoration:none;
-		border-bottom:1px solid #e3e3e3;
+		color:@color;text-decoration:none;
+		border-bottom:@border-h;
 		&.last{
 			border-bottom:0px none;
 		}
 		&.on{
-			color:#7b8590;
+			color:@color-b;
 			background:url('images/dx-item-check.png') no-repeat 3px center;
 		}
 	}
@@ -1011,8 +1014,9 @@
 
 
 .AXtreeSelector{
+	.dx-axtree-preset();
 	height:400px;
-	background:#fff;
+	background:@bgcolor-t;
 }
 
 

@@ -4,13 +4,14 @@
 
 /** .AXGrid **/
 .AXGrid{
+	.dx-axgrid-preset();
 	position:relative;
 	.tdRelBlock{
 		position:relative;
 	}
 	.AXgridScrollBody{
 		position:relative;
-		border:1px solid #b1b1b1;
+		border:@border;
 		overflow:hidden;
 		div{
 			box-sizing:content-box !important;
@@ -19,7 +20,7 @@
 			position:absolute;left:0px;top:0px;
 			width:100%;
 			background:url('images/dx-grid-head-bg.png') repeat-x 0px 0px #fff;
-			border-bottom:1px solid #b1b1b1;
+			border-bottom:@border;
 		}
 		.fixedColHead{
 			position:absolute;left:0px;top:0px;
@@ -43,7 +44,7 @@
 								cursor:w-resize;
 							}
 							.colHeadResizer:active{
-								background:#ffbbcc;
+								background:@bgcolor-a;
 							}
 							.colHeadTool{
 								position:absolute;right:1px;top:0px;
@@ -66,29 +67,29 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:#5e5e5e;text-shadow:0px 1px 0px #fff;
+								color:@color;text-shadow:0px 1px 0px #fff;
 								.util-text-ellipsis();
 							}
 							.colHeadTdCheck{
 								height:20px;padding:7px 1px 3px 0px;
-								color:#5e5e5e;
+								color:@color;
 							}
 							.colHeadTdCheck input{
 								vertical-align:middle;
 							}
 							.colHeadTdHtml{
 								height:30px;padding:0px 1px 0px 0px;
-								color:#5e5e5e;
+								color:@color;
 							}
 						}
 						td.colHeadBottomBorder{
 							border-bottom:1px solid #b1b1b1;
 						}
 						td:hover{
-							background-color:#e5e6eb;
+							background-color:@color-a;
 						}
 						td.sortDesc{
-							background-color:#e5e6eb;
+							background-color:@color-a;
 							.colHeadNode{
 								background:url('images/dx-sort-desc.png') no-repeat center 0px;
 							}
@@ -116,43 +117,43 @@
 			}
 			.gridScrollTrackXY{
 				position:absolute;right:0px;bottom:0px;
-				width:9px;height:9px;border:1px solid #B6B6B6;
+				width:9px;height:9px;border:@border-a;
 				background:url('images/dx-diagonal-bg.png');
 				display:none;
 			}
 			.gridScrollTrackY{
 				position:absolute;right:0px;top:0px;
 				width:9px;height:9px;
-				border-left:1px solid #dbdbdb;border-right:1px solid #dbdbdb;
-				background:#f3f3f3;
+				border-left:@border-b;border-right:@border-b;
+				background:@bgcolor-b;
 				display:none;
 				.gridScrollHandle{
 					position:absolute;left:-1px;top:0px;
 					width:9px;height:20px;
 					background:url('images/dx-diagonal-bg.png');
-					border:1px solid #B6B6B6;
+					border:@border-a;
 					cursor:pointer;
 				}
 				.gridScrollHandle:hover, .gridScrollHandle.hover
 				{
-					background:#929292;border:1px solid #636363;
+					background:@bgcolor-c;border:@border-c;
 				}
 			}
 			.gridScrollTrackX{
 				position:absolute;left:0px;bottom:0px;
 				width:9px;height:9px;
-				border-top:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb;
-				background:#f3f3f3;
+				border-top:@border-b;border-bottom:@border-b;
+				background:@bgcolor-b;
 				display:none;
 				.gridScrollHandle{
 					position:absolute;left:0px;top:-1px;
 					width:20px;height:9px;
 					background:url('images/dx-diagonal-bg.png');
-					border:1px solid #B6B6B6;
+					border:@border-a;
 					cursor:pointer;
 				}
 				.gridScrollHandle:hover, .gridScrollHandle.hover{
-					background:#929292;border:1px solid #636363;
+					background:@bgcolor-c;border:@border-c;
 				}
 			}
 			.gridBodyTable{
@@ -163,48 +164,49 @@
 							padding:0px;
 							background:url('images/dx-grid-body-border.png') repeat-y 100% 0px #FFFFEC;
 							vertical-align:bottom;
-							border-bottom:1px solid #c8c8c8;
+							border-bottom:@border-d;
 							cursor:pointer;
 						}
 						td.selected{
-							background-color:#D2D9DF;box-shadow:inset 0px 0px 2px #000;
+							background-color:@bgcolor-d;
+							box-shadow:inset 0px 0px 2px #000;
 						}
 					}
 					tr.noListTr td{
 						vertical-align:middle;
 						height:100px;
-						background:#f7f7f7;
-						border-bottom:1px solid #c8c8c8;
+						background:@bgcolor-e;
+						border-bottom:@border-d;
 					}
 					tr.line0 td{
-						background-color:#f7f7f7;
+						background-color:@bgcolor-e;
 					}
 					tr.line1 td{
-						background-color:#fff;
+						background-color:@bgcolor-f;
 					}
 					tr.red td{
-						background-color:#FFE8E8;
+						background-color:@bgcolor-g;
 					}
 					tr.green td{
-						background-color:#F7FDEA;
+						background-color:@bgcolor-h;
 					}
 					tr.blue td{
-						background-color:#EAF5FD;
+						background-color:@bgcolor-i;
 					}
 					tr.yellow td{
-						background-color:#FEFEE9;
+						background-color:@bgcolor-j;
 					}
 					tr.white td{
-						background-color:#fff;
+						background-color:@bgcolor-k;
 					}
 					tr.gray td{
-						background-color:#f7f7f7;
+						background-color:@bgcolor-l;
 					}
 					tr.hover td{
-						background-color:#e7f1fa;
+						background-color:@bgcolor-e;
 					}
 					tr.selected td{
-						background-color:#D2D9DF;
+						background-color:@bgcolor-d;
 					}
 				}
 				thead, tfoot{
@@ -212,14 +214,14 @@
 						padding:0px;
 						background:url('images/dx-grid-body-border.png') repeat-y 100% 0px;
 						vertical-align:bottom;
-						border-bottom:1px solid #c8c8c8;
-						background-color:#FFFFEC;
+						border-bottom:@border-d;
+						background-color:@bgcolor-n;
 					}
 				}
 				thead, tbody, tfoot{
 					tr td{
 						.bodyBottomBorder{
-							border-bottom:1px dashed #c8c8c8;
+							border-bottom:@border-d;
 						}
 						.bodyNullTd{
 							background-image:none;
@@ -232,7 +234,7 @@
 							position:relative;
 							line-height:20px;
 							padding:5px 8px;
-							color:#3b3b3b;text-shadow:0px 1px 0px #fff;
+							color:@color-b;text-shadow:0px 1px 0px #fff;
 							.util-text-ellipsis();
 						}
 						.bodyTdHtml{
@@ -257,8 +259,8 @@
 						padding:0px;
 						background:url('images/dx-grid-body-border.png') repeat-y 100% 0px;
 						vertical-align:bottom;
-						border-bottom:1px solid #c8c8c8;
-						background-color:#FFFFEC;
+						border-bottom:@border-d;
+						background-color:@bgcolor-n;
 					}	
 				}
 				thead, tbody, tfoot{
@@ -272,7 +274,7 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:#3b3b3b;text-shadow:0px 1px 0px #fff;
+								color:@color-b;text-shadow:0px 1px 0px #fff;
 								.util-text-ellipsis();
 							}
 							.bodyTdHtml
@@ -286,7 +288,7 @@
 							}
 						}
 						td.bodyBottomBorder{
-							border-bottom:1px dashed #c8c8c8;
+							border-bottom:@border-e;
 						}
 						td.bodyNullTd{
 							background-image:none;
@@ -304,48 +306,48 @@
 							padding:0px;
 							background:url('images/dx-grid-body-border.png') repeat-y 100% 0px;
 							vertical-align:bottom;
-							border-bottom:1px solid #c8c8c8;
+							border-bottom:@border-d;
 							cursor:pointer;
 						}
 						td.selected{
-							background-color:#D2D9DF;box-shadow:inset 0px 0px 2px #000;
+							background-color:@bgcolor-d;box-shadow:inset 0px 0px 2px #000;
 						}
 					}
 					tr.noListTr td{
 						vertical-align:middle;
 						height:100px;
-						background:#f7f7f7;
-						border-bottom:1px solid #c8c8c8;
+						background:@bgcolor-e;
+						border-bottom:@border-d;
 					}
 					tr.line0 td{
-						background-color:#eaedef;
+						background-color:@bgcolor-o;
 					}
 					tr.line1 td{
-						background-color:#F7F8F9;
+						background-color:@bgcolor-p;
 					}
 					tr.red td{
-						background-color:#FFE8E8;
+						background-color:@bgcolor-g;
 					}
 					tr.green td{
-						background-color:#F7FDEA;
+						background-color:@bgcolor-h;
 					}
 					tr.blue td{
-						background-color:#EAF5FD;
+						background-color:@bgcolor-i;
 					}
 					tr.yellow td{
-						background-color:#FEFEE9;
+						background-color:@bgcolor-j;
 					}
 					tr.white td{
-						background-color:#fff;
+						background-color:@bgcolor-k;
 					}
 					tr.gray td{
-						background-color:#f7f7f7;
+						background-color:@bgcolor-l;
 					}
 					tr.selected td{
-						background-color:#D2D9DF;
+						background-color:@bgcolor-d;
 					}
 					tr.hover td{
-						background-color:#d7dde3;
+						background-color:@bgcolor-q;
 					}
 				}
 			}
@@ -358,15 +360,15 @@
 			.viewIcon{
 				float:left;
 				position:relative;
-				border:1px solid #ccc;
+				border:@border-f;
 				margin:5px 0px 0px 5px;
 				box-shadow:0px 0px 3px #ccc;
 				border-radius:5px;
-				background:#fff;
+				background:@bgcolor-f;
 				cursor:pointer;
 				.gridViewIconThumbnail{
 					position:absolute;
-					border:1px solid #eee;
+					border:@border-g;
 				}
 				.gridViewIconLabel{
 					position:absolute;	
@@ -376,7 +378,8 @@
 				.gridViewIconDescription{
 					position:absolute;
 					padding:0px;margin:0px;
-					overflow:hidden;text-overflow:ellipsis;
+					overflow:hidden;
+					.util-text-ellipsis();
 				}
 				.gridViewIconbuttons{
 					position:absolute;
@@ -384,10 +387,10 @@
 				}
 			}
 			.viewIcon:hover{
-				background-color:#e7f1fa;
+				background-color:@bgcolor-m;
 			}
 			.viewIcon.selected{
-				background-color:#D2D9DF;
+				background-color:@bgcolor-d;
 			}
 		}
 	}
@@ -395,14 +398,14 @@
 		position:relative;
 		height:30px;
 		background:url('images/dx-grid-page-bg.png') repeat-x;
-		border-bottom:1px solid #b1b1b1;border-left:1px solid #b1b1b1;border-right:1px solid #b1b1b1;
+		border-bottom:@border;border-left:@border;border-right:@border;
 		.AXgridPagingUnit{
 			position:absolute;left:0px;top:0px;
 			height:30px;
 			background:url('images/dx-grid-page-bg.png') repeat-x;
 			z-index:3;
 			.AXgridPageNo{
-				border:1px solid #b6b6b6;
+				border:@border-a;
 				height:22px;padding:0px 2px;
 				outline:none;
 			}
@@ -410,23 +413,23 @@
 				display:block;
 				float:left;
 				padding:4px 0px 4px 5px;height:22px;line-height:22px;
-				font-size:12px;color:#666666;
+				font-size:12px;color:@color-c;
 			}
 			.AXanchorSelect .selectedTextBox{
 				box-shadow:inset 0px 1px 1px #e9eced;
-				background:#fff;
+				background:@bgcolor-f;
 			}
 			.AXgridPageNumberCount{
 				display:block;
 				float:left;
 				padding:4px 10px 4px 5px;height:22px;line-height:22px;
-				font-size:12px;color:#666666;
-				border-right:1px solid #b1b1b1;
+				font-size:12px;color:@color-c;
+				border-right:@border;
 			}
 			.AXgridPagingPrev{
 				display:block;
 				float:left;
-				width:29px;height:30px;border-right:1px solid #b1b1b1;
+				width:29px;height:30px;border-right:@border;
 				background:url('images/dx-left-arrows.png') no-repeat;
 				text-indent:-1000px;overflow:hidden;
 			}
@@ -436,7 +439,7 @@
 			.AXgridPagingNext{
 				display:block;
 				float:left;
-				width:29px;height:30px;border-right:1px solid #b1b1b1;
+				width:29px;height:30px;border-right:@border;
 				background:url('images/dx-right-arrows.png') no-repeat;
 				text-indent:-1000px;overflow:hidden;
 			}
@@ -450,10 +453,10 @@
 			position:absolute;right:0px;top:0px;
 			height:30px;line-height:30px;
 			padding:0px 10px;
-			font-size:12px;color:#666666;
+			font-size:12px;color:@color-c;
 			z-index:1;
 			b{
-				color:#f47820;	
+				color:@color-d;	
 			}
 		}
 		.AXgridScroller{
@@ -463,7 +466,7 @@
 			.AXgridScrollUp{
 				display:block;
 				position:absolute;left:0px;top:0px;
-				width:29px;height:30px;border-left:1px solid #b1b1b1;
+				width:29px;height:30px;border-left:@border;
 				background:url('img/dx-up-arrows.png') no-repeat;
 				text-indent:-1000px;overflow:hidden;
 			}
@@ -473,7 +476,7 @@
 			.AXgridScrollDn{
 				display:block;
 				position:absolute;left:30px;top:0px;
-				width:29px;height:30px;border-left:1px solid #b1b1b1;
+				width:29px;height:30px;border-left:border;
 				background:url('img/dx-down-arrows.png') no-repeat;
 				text-indent:-1000px;overflow:hidden;
 			}
@@ -488,25 +491,25 @@
 		.editorContent{
 			position:absolute;left:0px;top:0px;
 			width:100%;
-			background:#d8e1e7;
-			border-bottom:1px solid #BDCCD7;
+			background:@bgcolor-r;
+			border-bottom:@border-h;
 			box-shadow:1px 1px 3px #ccc;
 		}
 		.fixedEditorContent{
 			position:absolute;left:0px;top:0px;
-			background:#d8e1e7;
+			background:@bgcolor-r;
 			box-shadow:0px 0px 3px #ccc;
 		}
 		.editorButtons{
 			position:absolute;left:10%;top:19px;
 			padding:2px 5px 5px 5px;
-			background:#d8e1e7;
-			border-top:1px solid #d8e1e7;
-			border-left:1px solid #BDCCD7;
-			border-right:1px solid #BDCCD7;
-			border-bottom:1px solid #BDCCD7;
+			background:@bgcolor-r;
+			border-top:1px solid @bgcolor-r;
+			border-left:@border-h;
+			border-right:@border-h;
+			border-bottom:@border-h;
 			box-shadow:1px 1px 3px #ccc;
-			border-bottom-left-radius:4px;border-bottom-right-radius:4px;
+			border-bottom-left-radius:@radius;border-bottom-right-radius:@radius;
 		}
 		.gridBodyTable{
 			width:100%;table-layout:fixed;
@@ -515,30 +518,30 @@
 					td{
 						padding:0px;
 						background:url('images/dx-grid-body-border.png') repeat-y 100% 0px;
-						background-color:#d8e1e7 !important;
+						background-color:@bgcolor-r !important;
 						vertical-align:top;
 						border-bottom:0px none;
 					}
 					td.selected{
-						background-color:#D2D9DF;box-shadow:inset 0px 0px 2px #000;
+						background-color:@bgcolor-s;box-shadow:inset 0px 0px 2px #000;
 					}
 				}
 				tr.noListTr td{
 					vertical-align:middle;
 					height:100px;
-					background:#f7f7f7;
+					background:@bgcolor-e;
 				}
 				tr.line0 td{
-					background-color:#f7f7f7;
+					background-color:@bgcolor-e;
 				}
 				tr.line1 td{
-					background-color:#fff;
+					background-color:@bgcolor-f;
 				}
 				tr.selected td{
-					background-color:#D2D9DF;
+					background-color:@bgcolor-s;
 				}
 				tr.hover td{
-					background-color:#d7dde3;
+					background-color:@bgcolor-q;
 				}
 			}
 			thead, tbody, tfoot{
@@ -555,7 +558,7 @@
 							position:relative;
 							line-height:20px;
 							padding:5px 8px;
-							color:#3b3b3b;text-shadow:0px 1px 0px #fff;
+							color:@color-b;text-shadow:0px 1px 0px #fff;
 							.util-text-ellipsis();
 						}
 						.bodyTdHtml{
@@ -589,19 +592,19 @@
 				tr.noListTr td{
 					vertical-align:middle;
 					height:100px;
-					background:#f7f7f7;
+					background:@bgcolor-e;
 				}
 				tr.line0 td{
-					background-color:#eaedef;
+					background-color:@bgcolor-o;
 				}
 				tr.line1 td{
-					background-color:#F7F8F9;
+					background-color:@bgcolor-p;
 				}
 				tr.selected td{
-					background-color:#D2D9DF;
+					background-color:@bgcolor-s;
 				}
 				tr.hover td{
-					background-color:#d7dde3;
+					background-color:@bgcolor-q;
 				}
 			}
 			thead, tbody, tfoot{
@@ -618,7 +621,7 @@
 							position:relative;
 							line-height:20px;
 							padding:5px 8px;
-							color:#3b3b3b;text-shadow:0px 1px 0px #fff;
+							color:@color-b;text-shadow:0px 1px 0px #fff;
 							.util-text-ellipsis();
 						}
 						.bodyTdHtml{
@@ -637,23 +640,24 @@
 
 /* AXGridColGroupListBox */
 .AXGridColGroupListBox{
+	.dx-axgrid-preset();
 	z-index:4999;
 	position:absolute;left:0px;top:0px;
 	width:146px;
-	background:#fff;
-	border:1px solid #b1b1b1;border-radius:5px;
+	background:@bgcolor-f;
+	border:@border;border-radius:@radius-a;
 	box-shadow:0px 0px 5px #ccc;
 	.AXGridColGroupListBoxItem{
 		display:block;
 		line-height:15px;padding:5px 5px 5px 25px;
-		color:#5e5e5e;text-decoration:none;
-		border-bottom:1px solid #e3e3e3;
+		color:@color;text-decoration:none;
+		border-bottom:@border-i;
 	}
 	.AXGridColGroupListBoxItem.last{
 		border-bottom:0px none;
 	}
 	.AXGridColGroupListBoxItem.on{
-		color:#7b8590;
+		color:@color-e;
 		background:url('images/dx-item-check.png') no-repeat 3px center;
 	}
 }

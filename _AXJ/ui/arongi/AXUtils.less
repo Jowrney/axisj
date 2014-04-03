@@ -20,10 +20,10 @@
 }
 
 //Box Shadow
-.util-box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
-	-webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
-	-moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
-	box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+.util-box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5, @inset:outset) {
+	-webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha) @inset;
+	-moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha) @inset;
+	box-shadow: @x @y @blur rgba(0, 0, 0, @alpha) @inset;
 }
 
 //Transition
@@ -91,11 +91,11 @@
 }
 
 .util-text-shadow-black(@y:-1px, @alpha: 0.25){
-	text-shadow:0px -1px rgba(0, 0, 0, @alpha);;
+	text-shadow:0px @y rgba(0, 0, 0, @alpha);;
 };
 
 .util-text-shadow-white(@y:-1px, @alpha: 0.25){
-	text-shadow:0px -1px rgba(0, 0, 0, @alpha);;
+	text-shadow:0px @y rgba(255, 255, 255, @alpha);;
 };
 
 

@@ -3,27 +3,28 @@
 
 // AXSearch ///////////////////////////////////////////////////
 .AXSearch{
+	.dx-axsearch-preset();
 	position:relative;
 	.expandHandle{
 		display:block;
-		border-bottom:1px solid #ccc;
-		background:#eee;
+		border-bottom:@border;
+		background:@bgcolor;
 		text-align:center;
-		color:#888;
+		color:@color;
 		text-decoration:none;
 		font-size:11px;line-height:20px;height:20px;
 	}	
 	.searchGroup{
 		position:relative;
-		background: #fff;
+		background: @bgcolor-a;
 		min-height:40px;
 		&.gray{
-			background: #f5f5f5;
+			background: @bgcolor-b;
 			padding:0px;
 			min-height:25px;
 			.searchItem{
 				&.searchLabel{
-					background: #eee;				
+					background: @bgcolor-c;				
 				}
 			}
 		}
@@ -37,7 +38,7 @@
 				tr{
 					th{
 						color:#616161;
-						border-right:1px solid #d8d8d8;
+						border-right:@border-a;
 						min-height:40px;
 					}
 					td{
@@ -48,7 +49,7 @@
 			&.secondItem{
 				.itemTable{
 					tr{
-						th{border-left:1px solid #d8d8d8 };						
+						th{border-left:@border-a};						
 					} 
 				}				
 			}
@@ -74,18 +75,18 @@
 				}				
 			}
 			&.searchLabel{
-				background: #f3f3f3;
+				background: @bgcolor-d;
 				font-weight:bold;
 				font-size:11px;
-				color:#444;
+				color:@color-a;
 			}
 			&.searchLink{
-				color:#ccc;
+				color:@color-b;
 				.searchLinkItem{
-					color:#616161;
+					color:@color-c;
 					text-decoration:none;padding:0px 3px;
 					&.on{
-						color:#616161;
+						color:@color-c;
 						font-weight:bold;
 						text-decoration:underline;
 					}	
@@ -94,7 +95,7 @@
 		}
 		.groupClear{
 			font-size:1px;line-height:1px;height:1px;
-			background:#ccc;
+			background:@color-b;
 			clear:both;
 		}
 	}	
@@ -105,7 +106,8 @@
 
 // AXSearchTable ///////////////////////////////////////////////////
 .AXSearchTable{
-	border-top:1px solid #c1c1c1;border-bottom:0px none;
+	.dx-axsearch-preset();
+	border-top:@border-b;border-bottom:0px none;
 	width:100%;table-layout:fixed;
 	font-size:12px;
 	td, th{
@@ -116,41 +118,41 @@
 	tbody{
 		td{
 			min-height:36px;height:36px;overflow:visible;
-			border-bottom:1px solid #c1c1c1;
-			color:#666;
+			border-bottom:@border-b;
+			color:@color-d;
 			background:url('images/dx-grid-body-border.png') repeat-y 100% 0px;			
 		}
 		th{
 			min-height:36px;height:36px;overflow:visible;
-			border-bottom:1px solid #c1c1c1;
-			color:#444;
+			border-bottom:@border-b;
+			color:@color-a;
 			text-align:center;
 			background:url('images/dx-grid-body-border.png') repeat-y 100% 0px #fff;			
 		}
 		tr{
 			.gray{
 				td, th{
-					background-color:#F5F5F5;
+					background-color:@bgcolor-b;
 				}
 			}
 			.red{
 				td, th{
-					background-color:#FFE8E8;
+					background-color:@bgcolor-e;
 				}				
 			}
 			.green{
 				td, th{
-					background-color:#F7FDEA;
+					background-color:@bgcolor-f;
 				}
 			}
 			.blue{
 				td, th{
-					background-color:#EAF5FD;
+					background-color:@bgcolor-g;
 				}
 			}
 			.yellow{
 				td, th{
-					background-color:#FEFEE9;
+					background-color:@bgcolor-h;
 				}
 			}
 		}
@@ -162,12 +164,14 @@
 	
 // AXMultiselectorHelper
 .AXMultiselectorHelper{
+	.dx-axsearch-preset();
 	position:absolute;
-	border:1px dotted #000;
+	border:@border-c;
 }
 
 // AXResizable
 .AXResizable{
+	.dx-axsearch-preset();
 	position:relative;
 	.AXResizableHandle{
 		position:absolute;
@@ -179,8 +183,9 @@
 }
 
 .AXResizableHelper{
+	.dx-axsearch-preset();
 	position:absolute;
-	border:1px dotted #000;
+	border:@border-c;
 	cursor:se-resize;
 	background:url('images/dx-resizable-handle.png') no-repeat 100% 100%;
 }		

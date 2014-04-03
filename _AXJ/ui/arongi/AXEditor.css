@@ -59,10 +59,10 @@
     position: relative;
     padding: 0px;
     margin: 0px;
-    background: #fff;
+    background: #ffffff;
     overflow: hidden;
     border: 2px solid #bebebe;
-    font-family: AppleGothic,Malgun Gothic;
+    font-family: "Open sans";
   }
   .AXEditor .editorHead {
     position: relative;
@@ -72,7 +72,7 @@
   .AXEditor .editorHead .me___headFileStatus {
     height: 24px;
     background: url('images/dx-editor-file-status.gif') no-repeat;
-    border-bottom: 1px solid #bebebe;
+    border-bottom: 2px solid #bebebe;
     text-indent: 25px;
     font-size: 11px;
     line-height: 24px;
@@ -88,7 +88,7 @@
     _overflow: hidden;
     position: relative;
     height: 33px;
-    border-right: 1px solid #bebebe;
+    border-right: 2px solid #bebebe;
     text-align: center;
   }
   .AXEditor .editorHead .me___tabContainer .me___item a.me____btn {
@@ -102,7 +102,7 @@
     text-align: center;
   }
   .AXEditor .editorHead .me___tabContainer .me___item a.me____btn:hover {
-    color: #ccc;
+    color: #cccccc;
   }
   .AXEditor .editorHead .me___tabContainer .me___item a.me____tab {
     display: block;
@@ -143,11 +143,11 @@
     height: 22px;
     line-height: 22px;
     text-align: center;
-    color: #000;
+    color: #000000;
     text-decoration: none;
   }
   .AXEditor .editorHead .me___headPanel a:hover {
-    color: #0080FF;
+    color: #0080ff;
   }
   .AXEditor .editorHead .me___headPanel a.me___btnL {
     width: 23px;
@@ -197,9 +197,12 @@
     height: 20px;
     line-height: 20px;
     border: 1px solid #bebebe;
-    border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px 5px 5px 5px;
+    -moz-border-radius: 2px 5px 5px 5px;
+    border-radius: 2px 5px 5px 5px;
     background: url('images/dx-editor-btn-bg.gif') repeat-x;
     margin: 0px 0px 0px 5px;
     font-size: 11px;
@@ -207,9 +210,12 @@
   .AXEditor .editorHead .me___headPanel a.me___btnS1:hover {
     background-position: 0px -20px;
     border: 1px solid #a4b5d8;
-    border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px 5px 5px 5px;
+    -moz-border-radius: 2px 5px 5px 5px;
+    border-radius: 2px 5px 5px 5px;
   }
   .AXEditor .editorHead .me___headPanel div {
     display: block;
@@ -412,14 +418,17 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    background: #fff;
+    background: #ffffff;
     border: 2px solid #bebebe;
-    border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    box-shadow: 0px 0px 3px #aaa;
-    -webkit-box-shadow: 0px 0px 3px #aaa;
-    -moz-box-shadow: 0px 0px 3px #aaa;
+    border-radius: 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
     z-index: 1000;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTitle {
@@ -433,7 +442,7 @@
     float: none;
     position: relative;
     height: 28px;
-    border-bottom: 1px solid #bebebe;
+    border-bottom: 2px solid #bebebe;
     background: #eaeaea;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTitleTabTray {
@@ -447,16 +456,13 @@
     display: inline-block;
     height: 20px;
     border: 1px solid #bebebe;
-    border-top-left-radius: 3px;
-    -webkit-border-top-left-radius: 3px;
-    -moz-border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    -webkit-border-top-right-radius: 3px;
-    -moz-border-top-right-radius: 3px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
     background: url('images/dx-editor-btn-bg.gif') repeat-x;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
     margin: 0px 2px 0px 0px;
     padding: 0px 10px;
     text-align: center;
@@ -466,8 +472,8 @@
     cursor: pointer;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTitleTabTray A.on {
-    border-bottom: 1px solid #fff;
-    background: #fff;
+    border-bottom: 1px solid #ffffff;
+    background: #ffffff;
     font-weight: bold;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTray {
@@ -483,7 +489,7 @@
     line-height: 15px;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterBot a {
-    color: #888;
+    color: #888888;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterArrow {
     position: absolute;
@@ -522,7 +528,7 @@
     text-overflow: ellipsis;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .ffItem:hover {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #cccccc;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___inputUrl {
     position: absolute;
@@ -565,7 +571,7 @@
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_btns {
     float: none;
-    background: #fff;
+    background: #ffffff;
     height: 22px;
     border-bottom: 1px solid #bebebe;
     padding: 4px 0px;
@@ -587,7 +593,7 @@
     text-align: left;
     background: #e0e0e0;
     height: 118px;
-    border-bottom: 1px solid #777;
+    border-bottom: 1px solid #777777;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -599,12 +605,15 @@
     width: 86px;
     height: 86px;
     border: 1px solid #a1a1a1;
-    border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px 5px 5px 5px;
+    -moz-border-radius: 3px 5px 5px 5px;
+    border-radius: 3px 5px 5px 5px;
     margin-top: 5px;
     margin-left: 8px;
-    background: #fff;
+    background: #ffffff;
     cursor: pointer;
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_CT .attchItem .attchItemName {
@@ -647,8 +656,8 @@
     clear: both;
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_CT .attchItemON {
-    border: 1px solid #0080FF;
-    color: #0080FF;
+    border: 1px solid #0080ff;
+    color: #0080ff;
     background: #eee;
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_CT .componentItem {
@@ -658,12 +667,15 @@
     width: 86px;
     height: 86px;
     border: 1px solid #a1a1a1;
-    border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px 5px 5px 5px;
+    -moz-border-radius: 3px 5px 5px 5px;
+    border-radius: 3px 5px 5px 5px;
     margin-top: 5px;
     margin-left: 8px;
-    background: #fff;
+    background: #ffffff;
     cursor: pointer;
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_CT .componentItem .componentItemName {
@@ -694,7 +706,7 @@
     z-index: 1;
   }
   .AXEditor .editorBody .me___AXMask {
-    background: #000;
+    background: #ffffff;
     -moz-opacity: 0.3;
     opacity: .30;
     filter: alpha(opacity=30);
@@ -710,7 +722,7 @@
     margin: 0px;
     padding: 0px 0px;
     background: #f3f3f3;
-    color: #000;
+    color: #000000;
     font-size: 12px;
     font-family: Consolas;
     line-height: 18px;
@@ -786,10 +798,10 @@
     position: relative;
     padding: 0px;
     margin: 0px;
-    background: #fff;
+    background: #ffffff;
     overflow: hidden;
     border: 2px solid #bebebe;
-    font-family: AppleGothic,Malgun Gothic;
+    font-family: "Open sans";
   }
   .AXEditor .editorHead {
     position: relative;
@@ -799,7 +811,7 @@
   .AXEditor .editorHead .me___headFileStatus {
     height: 24px;
     background: url('images/dx-editor-file-status.gif') no-repeat;
-    border-bottom: 1px solid #bebebe;
+    border-bottom: 2px solid #bebebe;
     text-indent: 25px;
     font-size: 11px;
     line-height: 24px;
@@ -815,7 +827,7 @@
     _overflow: hidden;
     position: relative;
     height: 33px;
-    border-right: 1px solid #bebebe;
+    border-right: 2px solid #bebebe;
     text-align: center;
   }
   .AXEditor .editorHead .me___tabContainer .me___item a.me____btn {
@@ -829,7 +841,7 @@
     text-align: center;
   }
   .AXEditor .editorHead .me___tabContainer .me___item a.me____btn:hover {
-    color: #ccc;
+    color: #cccccc;
   }
   .AXEditor .editorHead .me___tabContainer .me___item a.me____tab {
     display: block;
@@ -870,11 +882,11 @@
     height: 22px;
     line-height: 22px;
     text-align: center;
-    color: #000;
+    color: #000000;
     text-decoration: none;
   }
   .AXEditor .editorHead .me___headPanel a:hover {
-    color: #0080FF;
+    color: #0080ff;
   }
   .AXEditor .editorHead .me___headPanel a.me___btnL {
     width: 23px;
@@ -924,9 +936,12 @@
     height: 20px;
     line-height: 20px;
     border: 1px solid #bebebe;
-    border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px 5px 5px 5px;
+    -moz-border-radius: 2px 5px 5px 5px;
+    border-radius: 2px 5px 5px 5px;
     background: url('images/dx-editor-btn-bg.gif') repeat-x;
     margin: 0px 0px 0px 5px;
     font-size: 11px;
@@ -934,9 +949,12 @@
   .AXEditor .editorHead .me___headPanel a.me___btnS1:hover {
     background-position: 0px -20px;
     border: 1px solid #a4b5d8;
-    border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px 5px 5px 5px;
+    -moz-border-radius: 2px 5px 5px 5px;
+    border-radius: 2px 5px 5px 5px;
   }
   .AXEditor .editorHead .me___headPanel div {
     display: block;
@@ -1139,14 +1157,17 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    background: #fff;
+    background: #ffffff;
     border: 2px solid #bebebe;
-    border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    box-shadow: 0px 0px 3px #aaa;
-    -webkit-box-shadow: 0px 0px 3px #aaa;
-    -moz-box-shadow: 0px 0px 3px #aaa;
+    border-radius: 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
     z-index: 1000;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTitle {
@@ -1160,7 +1181,7 @@
     float: none;
     position: relative;
     height: 28px;
-    border-bottom: 1px solid #bebebe;
+    border-bottom: 2px solid #bebebe;
     background: #eaeaea;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTitleTabTray {
@@ -1174,16 +1195,13 @@
     display: inline-block;
     height: 20px;
     border: 1px solid #bebebe;
-    border-top-left-radius: 3px;
-    -webkit-border-top-left-radius: 3px;
-    -moz-border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    -webkit-border-top-right-radius: 3px;
-    -moz-border-top-right-radius: 3px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
     background: url('images/dx-editor-btn-bg.gif') repeat-x;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
     margin: 0px 2px 0px 0px;
     padding: 0px 10px;
     text-align: center;
@@ -1193,8 +1211,8 @@
     cursor: pointer;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTitleTabTray A.on {
-    border-bottom: 1px solid #fff;
-    background: #fff;
+    border-bottom: 1px solid #ffffff;
+    background: #ffffff;
     font-weight: bold;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTray {
@@ -1210,7 +1228,7 @@
     line-height: 15px;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterBot a {
-    color: #888;
+    color: #888888;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterArrow {
     position: absolute;
@@ -1249,7 +1267,7 @@
     text-overflow: ellipsis;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .ffItem:hover {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #cccccc;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___inputUrl {
     position: absolute;
@@ -1292,7 +1310,7 @@
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_btns {
     float: none;
-    background: #fff;
+    background: #ffffff;
     height: 22px;
     border-bottom: 1px solid #bebebe;
     padding: 4px 0px;
@@ -1314,7 +1332,7 @@
     text-align: left;
     background: #e0e0e0;
     height: 118px;
-    border-bottom: 1px solid #777;
+    border-bottom: 1px solid #777777;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -1326,12 +1344,15 @@
     width: 86px;
     height: 86px;
     border: 1px solid #a1a1a1;
-    border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px 5px 5px 5px;
+    -moz-border-radius: 3px 5px 5px 5px;
+    border-radius: 3px 5px 5px 5px;
     margin-top: 5px;
     margin-left: 8px;
-    background: #fff;
+    background: #ffffff;
     cursor: pointer;
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_CT .attchItem .attchItemName {
@@ -1374,8 +1395,8 @@
     clear: both;
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_CT .attchItemON {
-    border: 1px solid #0080FF;
-    color: #0080FF;
+    border: 1px solid #0080ff;
+    color: #0080ff;
     background: #eee;
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_CT .componentItem {
@@ -1385,12 +1406,15 @@
     width: 86px;
     height: 86px;
     border: 1px solid #a1a1a1;
-    border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px 5px 5px 5px;
+    -moz-border-radius: 3px 5px 5px 5px;
+    border-radius: 3px 5px 5px 5px;
     margin-top: 5px;
     margin-left: 8px;
-    background: #fff;
+    background: #ffffff;
     cursor: pointer;
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_CT .componentItem .componentItemName {
@@ -1421,7 +1445,7 @@
     z-index: 1;
   }
   .AXEditor .editorBody .me___AXMask {
-    background: #000;
+    background: #ffffff;
     -moz-opacity: 0.3;
     opacity: .30;
     filter: alpha(opacity=30);
@@ -1437,7 +1461,7 @@
     margin: 0px;
     padding: 0px 0px;
     background: #f3f3f3;
-    color: #000;
+    color: #000000;
     font-size: 12px;
     font-family: Consolas;
     line-height: 18px;
@@ -1513,10 +1537,10 @@
     position: relative;
     padding: 0px;
     margin: 0px;
-    background: #fff;
+    background: #ffffff;
     overflow: hidden;
     border: 2px solid #bebebe;
-    font-family: AppleGothic,Malgun Gothic;
+    font-family: "Open sans";
   }
   .AXEditor .editorHead {
     position: relative;
@@ -1526,7 +1550,7 @@
   .AXEditor .editorHead .me___headFileStatus {
     height: 24px;
     background: url('images/dx-editor-file-status.gif') no-repeat;
-    border-bottom: 1px solid #bebebe;
+    border-bottom: 2px solid #bebebe;
     text-indent: 25px;
     font-size: 11px;
     line-height: 24px;
@@ -1542,7 +1566,7 @@
     _overflow: hidden;
     position: relative;
     height: 33px;
-    border-right: 1px solid #bebebe;
+    border-right: 2px solid #bebebe;
     text-align: center;
   }
   .AXEditor .editorHead .me___tabContainer .me___item a.me____btn {
@@ -1556,7 +1580,7 @@
     text-align: center;
   }
   .AXEditor .editorHead .me___tabContainer .me___item a.me____btn:hover {
-    color: #ccc;
+    color: #cccccc;
   }
   .AXEditor .editorHead .me___tabContainer .me___item a.me____tab {
     display: block;
@@ -1597,11 +1621,11 @@
     height: 22px;
     line-height: 22px;
     text-align: center;
-    color: #000;
+    color: #000000;
     text-decoration: none;
   }
   .AXEditor .editorHead .me___headPanel a:hover {
-    color: #0080FF;
+    color: #0080ff;
   }
   .AXEditor .editorHead .me___headPanel a.me___btnL {
     width: 23px;
@@ -1651,9 +1675,12 @@
     height: 20px;
     line-height: 20px;
     border: 1px solid #bebebe;
-    border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px 5px 5px 5px;
+    -moz-border-radius: 2px 5px 5px 5px;
+    border-radius: 2px 5px 5px 5px;
     background: url('images/dx-editor-btn-bg.gif') repeat-x;
     margin: 0px 0px 0px 5px;
     font-size: 11px;
@@ -1661,9 +1688,12 @@
   .AXEditor .editorHead .me___headPanel a.me___btnS1:hover {
     background-position: 0px -20px;
     border: 1px solid #a4b5d8;
-    border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px 5px 5px 5px;
+    -moz-border-radius: 2px 5px 5px 5px;
+    border-radius: 2px 5px 5px 5px;
   }
   .AXEditor .editorHead .me___headPanel div {
     display: block;
@@ -1866,14 +1896,17 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    background: #fff;
+    background: #ffffff;
     border: 2px solid #bebebe;
-    border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    box-shadow: 0px 0px 3px #aaa;
-    -webkit-box-shadow: 0px 0px 3px #aaa;
-    -moz-box-shadow: 0px 0px 3px #aaa;
+    border-radius: 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
     z-index: 1000;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTitle {
@@ -1887,7 +1920,7 @@
     float: none;
     position: relative;
     height: 28px;
-    border-bottom: 1px solid #bebebe;
+    border-bottom: 2px solid #bebebe;
     background: #eaeaea;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTitleTabTray {
@@ -1901,16 +1934,13 @@
     display: inline-block;
     height: 20px;
     border: 1px solid #bebebe;
-    border-top-left-radius: 3px;
-    -webkit-border-top-left-radius: 3px;
-    -moz-border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    -webkit-border-top-right-radius: 3px;
-    -moz-border-top-right-radius: 3px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
     background: url('images/dx-editor-btn-bg.gif') repeat-x;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
     margin: 0px 2px 0px 0px;
     padding: 0px 10px;
     text-align: center;
@@ -1920,8 +1950,8 @@
     cursor: pointer;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTitleTabTray A.on {
-    border-bottom: 1px solid #fff;
-    background: #fff;
+    border-bottom: 1px solid #ffffff;
+    background: #ffffff;
     font-weight: bold;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTray {
@@ -1937,7 +1967,7 @@
     line-height: 15px;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterBot a {
-    color: #888;
+    color: #888888;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterArrow {
     position: absolute;
@@ -1976,7 +2006,7 @@
     text-overflow: ellipsis;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .ffItem:hover {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #cccccc;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___inputUrl {
     position: absolute;
@@ -2019,7 +2049,7 @@
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_btns {
     float: none;
-    background: #fff;
+    background: #ffffff;
     height: 22px;
     border-bottom: 1px solid #bebebe;
     padding: 4px 0px;
@@ -2041,7 +2071,7 @@
     text-align: left;
     background: #e0e0e0;
     height: 118px;
-    border-bottom: 1px solid #777;
+    border-bottom: 1px solid #777777;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -2053,12 +2083,15 @@
     width: 86px;
     height: 86px;
     border: 1px solid #a1a1a1;
-    border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px 5px 5px 5px;
+    -moz-border-radius: 3px 5px 5px 5px;
+    border-radius: 3px 5px 5px 5px;
     margin-top: 5px;
     margin-left: 8px;
-    background: #fff;
+    background: #ffffff;
     cursor: pointer;
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_CT .attchItem .attchItemName {
@@ -2101,8 +2134,8 @@
     clear: both;
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_CT .attchItemON {
-    border: 1px solid #0080FF;
-    color: #0080FF;
+    border: 1px solid #0080ff;
+    color: #0080ff;
     background: #eee;
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_CT .componentItem {
@@ -2112,12 +2145,15 @@
     width: 86px;
     height: 86px;
     border: 1px solid #a1a1a1;
-    border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px 5px 5px 5px;
+    -moz-border-radius: 3px 5px 5px 5px;
+    border-radius: 3px 5px 5px 5px;
     margin-top: 5px;
     margin-left: 8px;
-    background: #fff;
+    background: #ffffff;
     cursor: pointer;
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_CT .componentItem .componentItemName {
@@ -2148,7 +2184,7 @@
     z-index: 1;
   }
   .AXEditor .editorBody .me___AXMask {
-    background: #000;
+    background: #ffffff;
     -moz-opacity: 0.3;
     opacity: .30;
     filter: alpha(opacity=30);
@@ -2164,7 +2200,7 @@
     margin: 0px;
     padding: 0px 0px;
     background: #f3f3f3;
-    color: #000;
+    color: #000000;
     font-size: 12px;
     font-family: Consolas;
     line-height: 18px;
@@ -2240,10 +2276,10 @@
     position: relative;
     padding: 0px;
     margin: 0px;
-    background: #fff;
+    background: #ffffff;
     overflow: hidden;
     border: 2px solid #bebebe;
-    font-family: AppleGothic,Malgun Gothic;
+    font-family: "Open sans";
   }
   .AXEditor .editorHead {
     position: relative;
@@ -2253,7 +2289,7 @@
   .AXEditor .editorHead .me___headFileStatus {
     height: 24px;
     background: url('images/dx-editor-file-status.gif') no-repeat;
-    border-bottom: 1px solid #bebebe;
+    border-bottom: 2px solid #bebebe;
     text-indent: 25px;
     font-size: 11px;
     line-height: 24px;
@@ -2269,7 +2305,7 @@
     _overflow: hidden;
     position: relative;
     height: 33px;
-    border-right: 1px solid #bebebe;
+    border-right: 2px solid #bebebe;
     text-align: center;
   }
   .AXEditor .editorHead .me___tabContainer .me___item a.me____btn {
@@ -2283,7 +2319,7 @@
     text-align: center;
   }
   .AXEditor .editorHead .me___tabContainer .me___item a.me____btn:hover {
-    color: #ccc;
+    color: #cccccc;
   }
   .AXEditor .editorHead .me___tabContainer .me___item a.me____tab {
     display: block;
@@ -2324,11 +2360,11 @@
     height: 22px;
     line-height: 22px;
     text-align: center;
-    color: #000;
+    color: #000000;
     text-decoration: none;
   }
   .AXEditor .editorHead .me___headPanel a:hover {
-    color: #0080FF;
+    color: #0080ff;
   }
   .AXEditor .editorHead .me___headPanel a.me___btnL {
     width: 23px;
@@ -2378,9 +2414,12 @@
     height: 20px;
     line-height: 20px;
     border: 1px solid #bebebe;
-    border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px 5px 5px 5px;
+    -moz-border-radius: 2px 5px 5px 5px;
+    border-radius: 2px 5px 5px 5px;
     background: url('images/dx-editor-btn-bg.gif') repeat-x;
     margin: 0px 0px 0px 5px;
     font-size: 11px;
@@ -2388,9 +2427,12 @@
   .AXEditor .editorHead .me___headPanel a.me___btnS1:hover {
     background-position: 0px -20px;
     border: 1px solid #a4b5d8;
-    border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px 5px 5px 5px;
+    -moz-border-radius: 2px 5px 5px 5px;
+    border-radius: 2px 5px 5px 5px;
   }
   .AXEditor .editorHead .me___headPanel div {
     display: block;
@@ -2593,14 +2635,17 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    background: #fff;
+    background: #ffffff;
     border: 2px solid #bebebe;
-    border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    box-shadow: 0px 0px 3px #aaa;
-    -webkit-box-shadow: 0px 0px 3px #aaa;
-    -moz-box-shadow: 0px 0px 3px #aaa;
+    border-radius: 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
     z-index: 1000;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTitle {
@@ -2614,7 +2659,7 @@
     float: none;
     position: relative;
     height: 28px;
-    border-bottom: 1px solid #bebebe;
+    border-bottom: 2px solid #bebebe;
     background: #eaeaea;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTitleTabTray {
@@ -2628,16 +2673,13 @@
     display: inline-block;
     height: 20px;
     border: 1px solid #bebebe;
-    border-top-left-radius: 3px;
-    -webkit-border-top-left-radius: 3px;
-    -moz-border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    -webkit-border-top-right-radius: 3px;
-    -moz-border-top-right-radius: 3px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
     background: url('images/dx-editor-btn-bg.gif') repeat-x;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
     margin: 0px 2px 0px 0px;
     padding: 0px 10px;
     text-align: center;
@@ -2647,8 +2689,8 @@
     cursor: pointer;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTitleTabTray A.on {
-    border-bottom: 1px solid #fff;
-    background: #fff;
+    border-bottom: 1px solid #ffffff;
+    background: #ffffff;
     font-weight: bold;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTray {
@@ -2664,7 +2706,7 @@
     line-height: 15px;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterBot a {
-    color: #888;
+    color: #888888;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterArrow {
     position: absolute;
@@ -2703,7 +2745,7 @@
     text-overflow: ellipsis;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .ffItem:hover {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #cccccc;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___inputUrl {
     position: absolute;
@@ -2746,7 +2788,7 @@
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_btns {
     float: none;
-    background: #fff;
+    background: #ffffff;
     height: 22px;
     border-bottom: 1px solid #bebebe;
     padding: 4px 0px;
@@ -2768,7 +2810,7 @@
     text-align: left;
     background: #e0e0e0;
     height: 118px;
-    border-bottom: 1px solid #777;
+    border-bottom: 1px solid #777777;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -2780,12 +2822,15 @@
     width: 86px;
     height: 86px;
     border: 1px solid #a1a1a1;
-    border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px 5px 5px 5px;
+    -moz-border-radius: 3px 5px 5px 5px;
+    border-radius: 3px 5px 5px 5px;
     margin-top: 5px;
     margin-left: 8px;
-    background: #fff;
+    background: #ffffff;
     cursor: pointer;
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_CT .attchItem .attchItemName {
@@ -2828,8 +2873,8 @@
     clear: both;
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_CT .attchItemON {
-    border: 1px solid #0080FF;
-    color: #0080FF;
+    border: 1px solid #0080ff;
+    color: #0080ff;
     background: #eee;
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_CT .componentItem {
@@ -2839,12 +2884,15 @@
     width: 86px;
     height: 86px;
     border: 1px solid #a1a1a1;
-    border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px 5px 5px 5px;
+    -moz-border-radius: 3px 5px 5px 5px;
+    border-radius: 3px 5px 5px 5px;
     margin-top: 5px;
     margin-left: 8px;
-    background: #fff;
+    background: #ffffff;
     cursor: pointer;
   }
   .AXEditor .editorHead .me___headPanel .me___headDivPanel_attch .me___headDivPanel_attch_CT .componentItem .componentItemName {
@@ -2875,7 +2923,7 @@
     z-index: 1;
   }
   .AXEditor .editorBody .me___AXMask {
-    background: #000;
+    background: #ffffff;
     -moz-opacity: 0.3;
     opacity: .30;
     filter: alpha(opacity=30);
@@ -2891,7 +2939,7 @@
     margin: 0px;
     padding: 0px 0px;
     background: #f3f3f3;
-    color: #000;
+    color: #000000;
     font-size: 12px;
     font-family: Consolas;
     line-height: 18px;

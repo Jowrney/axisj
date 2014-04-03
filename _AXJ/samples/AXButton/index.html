@@ -7,7 +7,7 @@
 	<script src="../../jquery/jquery.min.js"></script>
 	<script src="../../lib/AXJ.js"></script>
 	
-	<script src="../../ui/arongi/page.js"></script>	
+	<script src="../page.js"></script>	
 	<link rel="stylesheet" type="text/css" href="../../ui/arongi/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../../ui/arongi/page.css">
 	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXButton.css">	
@@ -22,6 +22,7 @@
 			pageObj.host = "../../";
 			pageObj.incHeader();
 			pageObj.incFooter();		
+			pageObj.initTheme();
 		}
 	};
 	jQuery(document).ready(fnObj.pageStart);

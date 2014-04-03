@@ -2,9 +2,12 @@
 @import "AXUtils";
 
 // AXSelect ///////////////////////////////////////////////////
+
+
 .AXSelect{
-	border:1px solid #b6b6b6;background:#fff;
-	.util-border-radius(4px);
+	.dx-axselect-preset();
+	border:@border;background:@bgcolor;
+	.util-border-radius(@radius);
 	font-size:12px;
 	height:26px;line-height:26px;
 	padding:2px;
@@ -14,9 +17,10 @@
 }
 
 .AXSelectSmall{
-	border:1px solid #b6b6b6;background:#fff;
+	.dx-axselect-preset();
+	border:@border;background:@bgcolor;
 	.util-drop-shadow (0, 1px, 0, 0, 0.15);	
-	.util-border-radius(4px);
+	.util-border-radius(@radius);
 	font-size:11px; 
 	height:20px;line-height:20px;
 	padding:2px;
@@ -27,9 +31,10 @@
 }
 
 .AXTextarea{
-	border:1px solid #b6b6b6;background:#fff;
+	.dx-axselect-preset();
+	border:@border;background:@bgcolor;
 	.util-drop-shadow (0, 1px, 0, 0, 0.15);	
-	.util-border-radius(4px);
+	.util-border-radius(@radius);
 	font-size:12px;line-height:15px;
 	padding:4px;
 	margin:0px auto;
@@ -39,23 +44,25 @@
 
 
 .AXanchorSelect{
+	.dx-axselect-preset();
 	position:absolute;left:0px;top:0px;
 	padding:0px;
 	margin:0px;
 	vertical-align: middle;	
 	.selectedTextBox{
 		display:block;
-		border:1px solid #b6b6b6;
-		.util-gradient(top, #fdfdfd, #e8e8e8);		
+		border:@border;
+		.util-gradient(top, @bgcolor-a, @bgcolor-b);		
 		//background:url('images/defaultRegular.png') repeat-x;
 		.util-drop-shadow (0, 1px, 0, 0, 0.15);	
-		.util-border-radius(4px);
+		.util-border-radius(@radius);
 		cursor:pointer;
 		text-decoration:none;
-		white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+		.util-text-ellipsis();
 		text-align:left;
 		.selectedText{
-			color:#717b85;text-shadow:0px 1px #fff;	
+			color:@color; 
+			.util-text-shadow-white();
 		}
 		&:focus{
 	        outline:none;
@@ -68,14 +75,14 @@
 	&.disabled{
 		.selectedTextBox{
 			display:block;
-			border:1px solid #b6b6b6;
+			border:@border;
 			background:url('images/defaultRegular.png') repeat-x;
 			background-position:0px -78px;
 			box-shadow:inset 0px 1px 1px #888;
-			border-radius:4px;
+			border-radius:@radius;
 			cursor:pointer;
 			text-decoration:none;
-			white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+			.util-text-ellipsis();
 		}		
 	}	
 	.rootSelectBox{
@@ -95,19 +102,22 @@
 }
 
 .AXselectExpandBox{
+	.dx-axselect-preset();
 	z-index:5002;
 	position:absolute;left:0px;top:0px;
-	border:1px solid #b9babc;border-radius:4px;
-	background:#fff;
+	border:@border-a;border-radius:@radius;
+	background:@bgcolor;
 	box-shadow:0px 1px #e9eced;
 	overflow:hidden;
 	.selectExpandScroll{padding:2px 0px;}
 	a{
 		display:block;padding:3px 8px;
-		font-size:12px;line-height:18px;color:#888888;text-decoration:none;
-		border-bottom:1px solid #d8d9db;background:#fff;
-		&.on	{background:#d7dde3;}
-		&:hover	{background:#5ea3db;color:#fff;}
+		font-size:12px;line-height:18px;
+		color:@color-a;text-decoration:none;
+		border-bottom:@border-b;
+		background:@bgcolor-c;
+		&.on	{background:@bgcolor-d;}
+		&:hover	{background:@bgcolor-e;color:@color-b;}
 	}	
 	
 }

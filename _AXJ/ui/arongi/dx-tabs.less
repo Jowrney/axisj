@@ -4,7 +4,7 @@
 
 // AXTabs Style ///////////////////////////////////////////////////
 .axtabs-style-normal{
-	.dx-axtabs-colors-normal();
+	.dx-axtabs-preset-normal();
 	.util-gradient(top, @bgcolor-a, @bgcolor-b);
 	color:@color;
 	border:@border;
@@ -12,7 +12,7 @@
 	.util-border-radius (4px, 4px, 0, 0);
 }
 .axtabs-style-classic{
-	.dx-axtabs-colors-classic();
+	.dx-axtabs-preset-classic();
 	.util-gradient(top, @bgcolor-a, @bgcolor-b);
 	color:@color;
 	border:@border;
@@ -20,7 +20,7 @@
 	.util-border-radius (4px, 4px, 0, 0);
 }
 .axtabs-style-blue{
-	.dx-axtabs-colors-blue();
+	.dx-axtabs-preset-blue();
 	.util-gradient(top, @bgcolor-a, @bgcolor-b);
 	color:@color;
 	border:@border;
@@ -28,7 +28,7 @@
 	.util-border-radius (4px, 4px, 0, 0);
 }
 .axtabs-style-green{
-	.dx-axtabs-colors-green();
+	.dx-axtabs-preset-green();
 	.util-gradient(top, @bgcolor-a, @bgcolor-b);
 	color:@color;
 	border:@border;
@@ -36,7 +36,7 @@
 	.util-border-radius (4px, 4px, 0, 0);
 }
 .axtabs-style-red{
-	.dx-axtabs-colors-red();
+	.dx-axtabs-preset-red();
 	.util-gradient(top, @bgcolor-a, @bgcolor-b);
 	color:@color;
 	border:@border;
@@ -44,7 +44,7 @@
 	.util-border-radius (4px, 4px, 0, 0);
 }
 .axtabs-style-disabled{
-	.dx-axtabs-colors-disabled();
+	.dx-axtabs-preset-disabled();
 	.util-gradient(top, @bgcolor-a, @bgcolor-b);
 	color:@color;
 	border:@border;
@@ -57,7 +57,7 @@
 .axtabs-event-normal{
 	&				{.axtabs-style-normal;}
 	&:hover, &:focus{
-		.dx-axtabs-colors-normal();
+		.dx-axtabs-preset-normal();
 		background: @bgcolor-b;		
 	}
 	&:active		{
@@ -72,14 +72,14 @@
 .axtabs-event-classic{
 	&				{.axtabs-style-classic;}
 	&:hover, &:focus{
-		.dx-axtabs-colors-classic();
+		.dx-axtabs-preset-classic();
 		background: @bgcolor-b;		
 	}
 	&:active		{
 		box-shadow: none;
 	}
 	&.on{
-		.dx-axtabs-colors-classic();
+		.dx-axtabs-preset-classic();
 		text-shadow:none;		
 		color:@color-a;	
 		background:#fff; border-bottom:1px solid #fff;
@@ -89,14 +89,14 @@
 .axtabs-event-blue{
 	&				{.axtabs-style-blue;}
 	&:hover, &:focus{
-		.dx-axtabs-colors-blue();
+		.dx-axtabs-preset-blue();
 		background: @bgcolor-b;		
 	}
 	&:active		{
 		box-shadow: none;
 	}	
 	&.on{
-		.dx-axtabs-colors-blue();
+		.dx-axtabs-preset-blue();
 		text-shadow:none;		
 		color:@color-a;	
 		background:#fff; border-bottom:1px solid #fff;
@@ -106,14 +106,14 @@
 .axtabs-event-green{
 	&				{.axtabs-style-green;}
 	&:hover, &:focus{
-		.dx-axtabs-colors-green();
+		.dx-axtabs-preset-green();
 		background: @bgcolor-b;		
 	}
 	&:active		{
 		box-shadow: none;
 	}
 	&.on{
-		.dx-axtabs-colors-green();
+		.dx-axtabs-preset-green();
 		text-shadow:none;		
 		color:@color-a;	
 		background:#fff; border-bottom:1px solid #fff;
@@ -123,14 +123,14 @@
 .axtabs-event-red{
 	&				{.axtabs-style-red;}
 	&:hover, &:focus{
-		.dx-axtabs-colors-red();
+		.dx-axtabs-preset-red();
 		background: @bgcolor-b;		
 	}
 	&:active		{
 		box-shadow: none;
 	}	
 	&.on{
-		.dx-axtabs-colors-red();
+		.dx-axtabs-preset-red();
 		text-shadow:none;		
 		color:@color-a;	
 		background:#fff; border-bottom:1px solid #fff;
@@ -140,14 +140,14 @@
 .axtabs-event-disabled{
 	&				{.axtabs-style-disabled;}
 	&:hover, &:focus{
-		.dx-axtabs-colors-disabled();
+		.dx-axtabs-preset-disabled();
 		background: @bgcolor-b;		
 	}
 	&:active		{
 		box-shadow: none;
 	}
 	&.on{
-		.dx-axtabs-colors-disabled();
+		.dx-axtabs-preset-disabled();
 		text-shadow:none;		
 		color:@color-a;	
 		background:#fff; border-bottom:1px solid #fff;

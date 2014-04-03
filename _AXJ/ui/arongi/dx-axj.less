@@ -135,11 +135,12 @@
 
 // AXNotification //////////////////////////////////////////////////////////////
 .AXNotification{
+	.dx-axnotification-preset();
 	width:300px;
-	border:1px solid #c5c5c5;background:#ebebeb;
+	border:@border;background:@bgcolor;
 	padding:10px;margin:10px 0px;
 	box-shadow:0px 0px 5px #b2b2b2;
-	font-size:12px;color:#525252;
+	font-size:12px;color:@radius;
 	.util-opacity(80);
 	.util-border-radius(4px);	
 	&.Warning{
@@ -162,15 +163,15 @@
 	}
 	.AXNotificationHead{
 		font-weight:bold;
-		color:#717b85;text-shadow:0px 1px #fff;
+		color:@color-a;text-shadow:0px 1px #fff;
 		padding:5px 15px;height:20px;line-height:20px;
-		background:url('images/dx-dialog-title.png') repeat-x;
+		background:@bgcolor-a url('images/dx-dialog-title.png') repeat-x;
 		text-align:center;
 	}	
 	.AXNotificationTable{
-		width:100%;border:0px none !important;background:#ebebeb;
+		width:100%;border:0px none !important;background:@bgcolor;
 		td, th{
-			border:0px none !important; background:#ebebeb;
+			border:0px none !important; background:@bgcolor;
 		}
 	}
 	.AXNotificationIcon{
@@ -178,15 +179,15 @@
 		background:url('images/dx-noti-complete.png') no-repeat center 5px !important;
 	}		
 	.AXNotificationBody{
-		font-size:12px;color:#525252;padding-right:5px;
+		font-size:12px;color:@color;padding-right:5px;
 		line-height:1.6em;
-		B{color:#477e47;}
+		B{color:@color-b;}
 
 	}
 	.AXNotificationButton{width:45px;}
 	.AXNotificationButtons{
 		padding:10px 0px;
-		text-align:center;background:#ebebeb;
+		text-align:center;background:@bgcolor;
 	}
 }
 
@@ -196,15 +197,16 @@
 }
 
 .AXNotificationTrayDialog{
+	.dx-axnotification-preset();
 	position:fixed;left:0px;top:50px;
 	width:340px;
 	z-index:5001;
 	.AXNotification{
 		width:340px;
-		border:1px solid #444;background:#ebebeb;
+		border:@border-a; background:@bgcolor;
 		padding:0px;margin:0px 0px;
 		box-shadow:0px 0px 3px #888;
-		font-size:12px;color:#525252;
+		font-size:12px;color:@color;
 		overflow:hidden;
 		.util-opacity(100);
 		.util-border-radius(4px);
@@ -219,7 +221,7 @@
 
 // AXCalendar //////////////////////////////////////////////////////////////
 .AXCalendar{
-	.dx-axcalenter-colors-normal();
+	.dx-axcalenter-preset();
 	position:relative;
 	table{
 		&.calendarPage{
@@ -344,12 +346,13 @@
 
 // AXModal //////////////////////////////////////////////////////////////
 .AXModalBox{
+	.dx-axmodal-preset();
 	position:absolute;left:10px;top:10px;z-index:5001;
 	.windowbox{
-		border:1px solid #a6a6a6;background:#fff;
+		border:@border;background:@bgcolor;
 		box-shadow:0px 0px 1px #a6a6a6;
 		padding:0px;margin:0px 0px 10px 0px;
-		font-size:12px;color:#525252;
+		font-size:12px;color:@color;
 		.windowboxFrame{
 			-moz-opacity: 0.0;opacity:.00;filter: alpha(opacity=00);
 			&.loaded{
@@ -360,7 +363,7 @@
 			position:absolute;right:-39px;top:0px;
 			display:block;width:38px;height:38px;
 			background:url('images/dx-modal-close.png') no-repeat;
-			border:1px solid #a6a6a6;border-left:0px none;
+			border:@border;border-left:0px none;
 			box-shadow:0px 0px 1px #a6a6a6;
 			overflow:hidden;text-indent:-1000px;
 		}
@@ -371,44 +374,45 @@
 
 // AXScroll //////////////////////////////////////////////////////////////
 .AXScroll{
+	.dx-axscroll-preset();
 	position:relative;overflow:hidden;
 	.scrollTrack{
 		z-index:100;
 		position:absolute;right:2px;top:2px;
-		width:7px;height:100%;background:#000;
+		width:7px;height:100%;background:@bgcolor;
 		.util-opacity(0);
-		.util-border-radius(5px);
+		.util-border-radius(@radius);
 	}
 	.scrollTrack_hover{.util-opacity(20);}
 	.scrollBar{
 		z-index:100;
 		position:absolute;right:2px;top:2px;
-		width:7px;min-height:10px;background:#000;
-		.util-opacity(10);
-		.util-border-radius(5px);
+		width:7px;min-height:10px;background:@bgcolor;
+		.util-opacity(@opacity);
+		.util-border-radius(@radius);
 		&:hover{
 			width:11px;
 			right:0px;
 		}
 	}
-	.scrollBar_hover{.util-opacity(50);}	
+	.scrollBar_hover{.util-opacity(@opacity-c);}	
 	.scrollTarget{
 		position:absolute;left:0px;top:0px;
 	}
 	.xscrollTrack{
 		z-index:100;
 		position:absolute;left:2px;bottom:2px;
-		width:100%;height:7px;background:#000;
-		.util-opacity(10);
-		.util-border-radius(5px);
+		width:100%;height:7px;background:@bgcolor;
+		.util-opacity(@opacity);
+		.util-border-radius(@radius);
 	}	
-	.xscrollTrack_hover{.util-opacity(20);}	
+	.xscrollTrack_hover{.util-opacity(@opacity-a);}	
 	.xscrollBar{
 		z-index:100;
 		position:absolute;left:2px;bottom:2px;
-		height:7px;min-width:10px;background:#000;
-		.util-opacity(10);
-		.util-border-radius(5px);
+		height:7px;min-width:10px;background:@bgcolor;
+		.util-opacity(@opacity);
+		.util-border-radius(@radius);
 		&:hover{
 			height:11px;
 			bottom:0px;
@@ -421,25 +425,26 @@
 }
 	
 .AXScrollSmall{
+	.dx-axscroll-preset();
 	position:relative;overflow:hidden;
 	.scrollTrack{
 		position:absolute;right:3px;top:2px;
-		width:6px;height:100%;background:#000;
-		.util-opacity(10);
-		.util-border-radius(5px);
+		width:6px;height:100%;background:@bgcolor;
+		.util-opacity(@opacity);
+		.util-border-radius(@radius);
 	}
-	.scrollTrack_hover{.util-opacity(20);}	
+	.scrollTrack_hover{.util-opacity(@opacity-a);}	
 	.scrollBar{
 		position:absolute;right:3px;top:2px;
-		width:6px;min-height:10px;background:#000;
-		.util-opacity(30);
-		.util-border-radius(5px);
+		width:6px;min-height:10px;background:@bgcolor;
+		.util-opacity(@opacity-b);
+		.util-border-radius(@radius);
 		&:hover{
 			width:10px;
 			right:1px;
 		}
 	}
-	.scrollBar_hover{.util-opacity(50);}
+	.scrollBar_hover{.util-opacity(@opacity-c);}
 	.scrollTarget{
 		position:absolute;left:0px;top:0px;
 	}

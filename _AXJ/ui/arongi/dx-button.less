@@ -1,9 +1,10 @@
+
 @import "preset";
 @import "AXUtils";
 
 // AXButton Style ///////////////////////////////////////////////////
 .axbutton-style-normal{
-	.dx-axbutton-colors-normal();
+	.dx-axbutton-preset-normal();
 	background: @bgcolor-a;
 	.util-gradient(top, @bgcolor-a, @bgcolor-b);
 	color:@color;
@@ -20,17 +21,17 @@
 }
 
 .axbutton-style-classic{
-	.dx-axbutton-colors-classic();
+	.dx-axbutton-preset-classic();
 	background: @bgcolor-a;
 	.util-gradient(top, @bgcolor-a, @bgcolor-b);		
 	color:@color;
-	text-shadow: 0px -1px 0px rgba(0,0,0,0.25);	
+	text-shadow: 0px 1px 0px rgba(255,255,255,0.25);	
 	.util-drop-shadow (0, 1px, 0, 0, 0.15);	
 	border:@border;
 	.util-border-radius(@radius);			
 }
 .axbutton-style-blue{
-	.dx-axbutton-colors-blue();
+	.dx-axbutton-preset-blue();
 	background:@bgcolor-a;
 	text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
 	.util-gradient(top, @bgcolor-a, @bgcolor-b);			
@@ -38,7 +39,7 @@
 	border:@border;
 }
 .axbutton-style-green{
-	.dx-axbutton-colors-green();
+	.dx-axbutton-preset-green();
 	background:@bgcolor-a;
 	text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
 	.util-gradient(top, @bgcolor-a, @bgcolor-b);			
@@ -46,7 +47,7 @@
 	border:@border;	
 }
 .axbutton-style-red{
-	.dx-axbutton-colors-red();
+	.dx-axbutton-preset-red();
 	background:@bgcolor-a;
 	text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
 	.util-gradient(top, @bgcolor-a, @bgcolor-b);			
@@ -54,7 +55,7 @@
 	border:@border;		
 }
 .axbutton-style-disabled{
-	.dx-axbutton-colors-disabled();
+	.dx-axbutton-preset-disabled();
 	background:@bgcolor-a;
 	text-shadow: 0px -1px 0px rgba(0,0,0,0.10);
 	.util-gradient(top, @bgcolor-a, @bgcolor-b);			
@@ -67,7 +68,7 @@
 .axbutton-event-normal{
 	&				{.axbutton-style-normal;}
 	&:hover, &:focus{
-		.dx-axbutton-colors-normal();
+		.dx-axbutton-preset-normal();
 		background: @bgcolor-b;	
 		text-decoration: none; 
 		color:@color;	
@@ -80,7 +81,7 @@
 .axbutton-event-classic{
 	&				{.axbutton-style-classic;}
 	&:hover, &:focus{
-		.dx-axbutton-colors-classic();
+		.dx-axbutton-preset-classic();
 		background: @bgcolor-b;
 		text-decoration: none; 
 		color:@color;					
@@ -93,7 +94,7 @@
 .axbutton-event-blue{
 	&				{.axbutton-style-blue;}
 	&:hover, &:focus{
-		.dx-axbutton-colors-blue();
+		.dx-axbutton-preset-blue();
 		background: @bgcolor-b;		
 	}
 	&:active		{
@@ -104,7 +105,7 @@
 .axbutton-event-green{
 	&				{.axbutton-style-green;}
 	&:hover, &:focus{
-		.dx-axbutton-colors-green();
+		.dx-axbutton-preset-green();
 		background: @bgcolor-b;		
 	}
 	&:active		{
@@ -115,7 +116,7 @@
 .axbutton-event-red{
 	&				{.axbutton-style-red;}
 	&:hover, &:focus{
-		.dx-axbutton-colors-red();
+		.dx-axbutton-preset-red();
 		background: @bgcolor-b;		
 	}
 	&:active		{
@@ -126,7 +127,7 @@
 .axbutton-event-disabled{
 	&				{.axbutton-style-disabled;}
 	&:hover, &:focus{
-		.dx-axbutton-colors-disabled();
+		.dx-axbutton-preset-disabled();
 		background: @bgcolor-b;		
 	}
 	&:active		{

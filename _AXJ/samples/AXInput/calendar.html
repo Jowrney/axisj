@@ -12,7 +12,7 @@
 	<!-- Self -->
 	<script src="pageTab.js"></script>			
 	<!-- Theme -->
-	<script src="../../ui/arongi/page.js"></script>		
+	<script src="../page.js"></script>		
 	<link rel="stylesheet" type="text/css" href="../../ui/arongi/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../../ui/arongi/page.css">
 	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXJ.css">
@@ -34,7 +34,7 @@
 			pageObj.host = "../../";
 			pageObj.incHeader();
 			pageObj.incFooter();		
-			
+			pageObj.initTheme();			
 			
 			$("#AXInputDate").bindDate({align:"right", valign:"bottom", separator:"/", defaultSelectType:"m", onchange:function(){toast.push(Object.toJSON(this));}});
 			$("#AXInputDateMiddle").bindDate({align:"left", valign:"middle", onChange:function(){toast.push(Object.toJSON(this));}});
@@ -144,12 +144,12 @@
 						<div class="H20"></div>
 						
 						<h3>bind DateTime</h3>
-						<input type="text" name="" id="AXInputDate4" class="AXInput W120" />
+						<input type="text" name="" id="AXInputDate4" class="AXInput W140" />
 		
 						<div class="H20"></div>
 						
 						<h3>bind TwinDate</h3>
-						<input type="text" name="" id="AXInputDateST" class="AXInput W80" /> ~ <input type="text" name="" id="AXInputDateED" class="AXInput W80" />
+						<input type="text" name="" id="AXInputDateST" class="AXInput W80" /> ~ <input type="text" name="" id="AXInputDateED" class="AXInput W100" />
 						
 						<div class="H20"></div>
 										
@@ -163,7 +163,7 @@
 				
 						<h2>bind TwinDateTime</h2>
 				
-						<input type="text" name="" id="AXInputDateTimeST" class="AXInput W120" /> ~ <input type="text" name="" id="AXInputDateTimeED" class="AXInput W120" />
+						<input type="text" name="" id="AXInputDateTimeST" class="AXInput W140" /> ~ <input type="text" name="" id="AXInputDateTimeED" class="AXInput W140" />
 						
 						<div class="H20"></div>
 				

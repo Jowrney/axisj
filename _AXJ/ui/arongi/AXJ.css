@@ -326,7 +326,7 @@
     margin: 10px 0px;
     box-shadow: 0px 0px 5px #b2b2b2;
     font-size: 12px;
-    color: #525252;
+    color: 4px;
     -moz-opacity: 0.8;
     opacity: 0.8;
     filter: alpha(opacity=20);
@@ -360,7 +360,7 @@
     padding: 5px 15px;
     height: 20px;
     line-height: 20px;
-    background: url('images/dx-dialog-title.png') repeat-x;
+    background: #ffffff url('images/dx-dialog-title.png') repeat-x;
     text-align: center;
   }
   .AXNotification .AXNotificationTable {
@@ -411,7 +411,7 @@
   }
   .AXNotificationTrayDialog .AXNotification {
     width: 340px;
-    border: 1px solid #444;
+    border: 1px solid #444444;
     background: #ebebeb;
     padding: 0px;
     margin: 0px 0px;
@@ -638,7 +638,7 @@
   }
   .AXModalBox .windowbox {
     border: 1px solid #a6a6a6;
-    background: #fff;
+    background: #ffffff;
     box-shadow: 0px 0px 1px #a6a6a6;
     padding: 0px;
     margin: 0px 0px 10px 0px;
@@ -680,7 +680,7 @@
     top: 2px;
     width: 7px;
     height: 100%;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0;
     opacity: 0;
     filter: alpha(opacity=20);
@@ -703,7 +703,7 @@
     top: 2px;
     width: 7px;
     min-height: 10px;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.1;
     opacity: 0.1;
     filter: alpha(opacity=20);
@@ -735,7 +735,7 @@
     bottom: 2px;
     width: 100%;
     height: 7px;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.1;
     opacity: 0.1;
     filter: alpha(opacity=20);
@@ -758,7 +758,7 @@
     bottom: 2px;
     height: 7px;
     min-width: 10px;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.1;
     opacity: 0.1;
     filter: alpha(opacity=20);
@@ -793,7 +793,7 @@
     top: 2px;
     width: 6px;
     height: 100%;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.1;
     opacity: 0.1;
     filter: alpha(opacity=20);
@@ -815,7 +815,7 @@
     top: 2px;
     width: 6px;
     min-height: 10px;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.3;
     opacity: 0.3;
     filter: alpha(opacity=20);
@@ -1141,7 +1141,7 @@
     margin: 10px 0px;
     box-shadow: 0px 0px 5px #b2b2b2;
     font-size: 12px;
-    color: #525252;
+    color: 4px;
     -moz-opacity: 0.8;
     opacity: 0.8;
     filter: alpha(opacity=20);
@@ -1175,7 +1175,7 @@
     padding: 5px 15px;
     height: 20px;
     line-height: 20px;
-    background: url('images/dx-dialog-title.png') repeat-x;
+    background: #ffffff url('images/dx-dialog-title.png') repeat-x;
     text-align: center;
   }
   .AXNotification .AXNotificationTable {
@@ -1226,7 +1226,7 @@
   }
   .AXNotificationTrayDialog .AXNotification {
     width: 340px;
-    border: 1px solid #444;
+    border: 1px solid #444444;
     background: #ebebeb;
     padding: 0px;
     margin: 0px 0px;
@@ -1453,7 +1453,7 @@
   }
   .AXModalBox .windowbox {
     border: 1px solid #a6a6a6;
-    background: #fff;
+    background: #ffffff;
     box-shadow: 0px 0px 1px #a6a6a6;
     padding: 0px;
     margin: 0px 0px 10px 0px;
@@ -1495,7 +1495,7 @@
     top: 2px;
     width: 7px;
     height: 100%;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0;
     opacity: 0;
     filter: alpha(opacity=20);
@@ -1518,7 +1518,7 @@
     top: 2px;
     width: 7px;
     min-height: 10px;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.1;
     opacity: 0.1;
     filter: alpha(opacity=20);
@@ -1550,7 +1550,7 @@
     bottom: 2px;
     width: 100%;
     height: 7px;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.1;
     opacity: 0.1;
     filter: alpha(opacity=20);
@@ -1573,7 +1573,7 @@
     bottom: 2px;
     height: 7px;
     min-width: 10px;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.1;
     opacity: 0.1;
     filter: alpha(opacity=20);
@@ -1608,7 +1608,7 @@
     top: 2px;
     width: 6px;
     height: 100%;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.1;
     opacity: 0.1;
     filter: alpha(opacity=20);
@@ -1630,7 +1630,7 @@
     top: 2px;
     width: 6px;
     min-height: 10px;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.3;
     opacity: 0.3;
     filter: alpha(opacity=20);
@@ -1956,7 +1956,7 @@
     margin: 10px 0px;
     box-shadow: 0px 0px 5px #b2b2b2;
     font-size: 12px;
-    color: #525252;
+    color: 4px;
     -moz-opacity: 0.8;
     opacity: 0.8;
     filter: alpha(opacity=20);
@@ -1990,7 +1990,7 @@
     padding: 5px 15px;
     height: 20px;
     line-height: 20px;
-    background: url('images/dx-dialog-title.png') repeat-x;
+    background: #ffffff url('images/dx-dialog-title.png') repeat-x;
     text-align: center;
   }
   .AXNotification .AXNotificationTable {
@@ -2041,7 +2041,7 @@
   }
   .AXNotificationTrayDialog .AXNotification {
     width: 340px;
-    border: 1px solid #444;
+    border: 1px solid #444444;
     background: #ebebeb;
     padding: 0px;
     margin: 0px 0px;
@@ -2268,7 +2268,7 @@
   }
   .AXModalBox .windowbox {
     border: 1px solid #a6a6a6;
-    background: #fff;
+    background: #ffffff;
     box-shadow: 0px 0px 1px #a6a6a6;
     padding: 0px;
     margin: 0px 0px 10px 0px;
@@ -2310,7 +2310,7 @@
     top: 2px;
     width: 7px;
     height: 100%;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0;
     opacity: 0;
     filter: alpha(opacity=20);
@@ -2333,7 +2333,7 @@
     top: 2px;
     width: 7px;
     min-height: 10px;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.1;
     opacity: 0.1;
     filter: alpha(opacity=20);
@@ -2365,7 +2365,7 @@
     bottom: 2px;
     width: 100%;
     height: 7px;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.1;
     opacity: 0.1;
     filter: alpha(opacity=20);
@@ -2388,7 +2388,7 @@
     bottom: 2px;
     height: 7px;
     min-width: 10px;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.1;
     opacity: 0.1;
     filter: alpha(opacity=20);
@@ -2423,7 +2423,7 @@
     top: 2px;
     width: 6px;
     height: 100%;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.1;
     opacity: 0.1;
     filter: alpha(opacity=20);
@@ -2445,7 +2445,7 @@
     top: 2px;
     width: 6px;
     min-height: 10px;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.3;
     opacity: 0.3;
     filter: alpha(opacity=20);
@@ -2771,7 +2771,7 @@
     margin: 10px 0px;
     box-shadow: 0px 0px 5px #b2b2b2;
     font-size: 12px;
-    color: #525252;
+    color: 4px;
     -moz-opacity: 0.8;
     opacity: 0.8;
     filter: alpha(opacity=20);
@@ -2805,7 +2805,7 @@
     padding: 5px 15px;
     height: 20px;
     line-height: 20px;
-    background: url('images/dx-dialog-title.png') repeat-x;
+    background: #ffffff url('images/dx-dialog-title.png') repeat-x;
     text-align: center;
   }
   .AXNotification .AXNotificationTable {
@@ -2856,7 +2856,7 @@
   }
   .AXNotificationTrayDialog .AXNotification {
     width: 340px;
-    border: 1px solid #444;
+    border: 1px solid #444444;
     background: #ebebeb;
     padding: 0px;
     margin: 0px 0px;
@@ -3083,7 +3083,7 @@
   }
   .AXModalBox .windowbox {
     border: 1px solid #a6a6a6;
-    background: #fff;
+    background: #ffffff;
     box-shadow: 0px 0px 1px #a6a6a6;
     padding: 0px;
     margin: 0px 0px 10px 0px;
@@ -3125,7 +3125,7 @@
     top: 2px;
     width: 7px;
     height: 100%;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0;
     opacity: 0;
     filter: alpha(opacity=20);
@@ -3148,7 +3148,7 @@
     top: 2px;
     width: 7px;
     min-height: 10px;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.1;
     opacity: 0.1;
     filter: alpha(opacity=20);
@@ -3180,7 +3180,7 @@
     bottom: 2px;
     width: 100%;
     height: 7px;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.1;
     opacity: 0.1;
     filter: alpha(opacity=20);
@@ -3203,7 +3203,7 @@
     bottom: 2px;
     height: 7px;
     min-width: 10px;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.1;
     opacity: 0.1;
     filter: alpha(opacity=20);
@@ -3238,7 +3238,7 @@
     top: 2px;
     width: 6px;
     height: 100%;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.1;
     opacity: 0.1;
     filter: alpha(opacity=20);
@@ -3260,7 +3260,7 @@
     top: 2px;
     width: 6px;
     min-height: 10px;
-    background: #000;
+    background: #000000;
     -moz-opacity: 0.3;
     opacity: 0.3;
     filter: alpha(opacity=20);
