@@ -1,0 +1,286 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #565b61;
+  background: #ffffff;
+}
+html a,
+body a {
+  color: #6e7a86;
+  text-decoration: none;
+}
+html a:hover,
+body a:hover {
+  color: #565b61;
+}
+html a:active,
+body a:active {
+  color: #82898f;
+}
+html h1,
+body h1 {
+  font-size: 20px;
+}
+html h2,
+body h2 {
+  font-size: 16px;
+}
+html h3,
+body h3 {
+  font-size: 12px;
+}
+.ax-wrap {
+  position: relative;
+  margin: 0 auto;
+}
+.H10 {
+  height: 10px;
+  font-size: 1px;
+}
+.H20 {
+  height: 20px;
+  font-size: 1px;
+}
+.H30 {
+  height: 30px;
+  font-size: 1px;
+}
+.H40 {
+  height: 40px;
+  font-size: 1px;
+}
+.H50 {
+  height: 50px;
+  font-size: 1px;
+}
+#AXPage {
+  font-family: "Open sans";
+  font-size: 12px;
+  overflow: hidden;
+}
+#AXPage .ax-wrap {
+  margin: 0 auto;
+}
+#AXPage .ax-clear {
+  clear: both;
+}
+#AXPage .ax-unit {
+  margin: 0 10px;
+  position: relative;
+}
+#AXPage div[class^="ax-col-"] {
+  float: left;
+}
+#AXPage .ax-col-1 {
+  width: 8.3334%;
+}
+#AXPage .ax-col-2 {
+  width: 16.6667%;
+}
+#AXPage .ax-col-3 {
+  width: 25%;
+}
+#AXPage .ax-col-4 {
+  width: 33.3334%;
+}
+#AXPage .ax-col-5 {
+  width: 41.6667%;
+}
+#AXPage .ax-col-6 {
+  width: 50%;
+}
+#AXPage .ax-col-7 {
+  width: 58.3334%;
+}
+#AXPage .ax-col-8 {
+  width: 66.6667%;
+}
+#AXPage .ax-col-9 {
+  width: 75%;
+}
+#AXPage .ax-col-10 {
+  width: 83.3334%;
+}
+#AXPage .ax-col-11 {
+  width: 91.6667%;
+}
+#AXPage .ax-col-12 {
+  width: 100%;
+}
+#AXPage #AXPageHead .ax-layer-1 .ax-unit {
+  background: #e8e8e8;
+  margin: 0px;
+}
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu {
+  margin-bottom: 1px;
+  height: 40px;
+  overflow: hidden;
+}
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu h3 {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: normal;
+  border-right: 1px solid #ffffff;
+  background: #717b85;
+  color: #ffffff;
+}
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu ul li {
+  float: left;
+  border-right: 1px solid #ffffff;
+}
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu ul li a {
+  font-size: 13px;
+  display: block;
+  line-height: 40px;
+  padding: 0px 10px;
+  background: #e8e8e8;
+}
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu ul li a span {
+  font-size: 10px;
+  margin: 0px 2px;
+}
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu ul li a:hover {
+  background: #c6cdd3;
+}
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu ul li a.on {
+  background: #c6cdd3;
+}
+#AXPage #AXPageHead .ax-layer-2 .ax-unit {
+  margin: 0px;
+}
+#AXPage #AXPageHead .ax-layer-2 .ax-unit .AXdemoPageTabTarget {
+  background: #d4d4d4;
+}
+#AXPage #AXPageBody .title h1 {
+  text-indent: 10px;
+}
+#AXPage #AXPageBody .ax-wrap {
+  margin-bottom: 30px;
+}
+#AXPage #AXPageBody .ax-wrap .ax-layer-1 .secBlock {
+  border: 2px solid #e8e8e8;
+  margin: 10px;
+  overflow: hidden;
+}
+#AXPage #AXPageBody .ax-wrap .ax-layer-1 .secBlock h3 {
+  text-align: center;
+  background: #e8e8e8;
+  margin: 4px;
+  padding: 0px;
+  height: 40px;
+  line-height: 40px;
+}
+#AXPage #AXPageBody .ax-wrap .ax-layer-1 .secBlock ul {
+  margin: 10px;
+  padding: 0px;
+  list-style-position: inside;
+}
+#AXPage #AXPageBody .ax-wrap .ax-layer-1 .secBlock ul li {
+  line-height: 180%;
+}
+#AXPage #AXPageBody .ax-wrap .ax-layer-1 .secBlock ul li a:hover {
+  text-decoration: underline;
+}
+#AXPage #AXPageBody.SampleAXButton label {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 60px;
+  text-align: right;
+}
+#AXPage #AXPageBody.SampleAXButton .withIcons button {
+  margin-bottom: 10px;
+}
+#AXPage #AXPageBody.SampleAXInput label {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 80px;
+  text-align: right;
+}
+#AXPage #AXPageBody.SampleAXInput .bindCheckbox label {
+  text-align: left;
+}
+#AXPage #AXPageFoot {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+#AXPage #AXPageFoot .ax-layer-1 .ax-unit {
+  background: #e8e8e8;
+  margin: 0px;
+}
+#AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme {
+  height: 30px;
+  overflow: hidden;
+}
+#AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme h3 {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 0 20px;
+  border-right: 1px solid #ffffff;
+  background: #717b85;
+  color: #ffffff;
+}
+#AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+#AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme ul li {
+  float: left;
+  border-right: 1px solid #ffffff;
+}
+#AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme ul li a {
+  font-size: 13px;
+  display: block;
+  line-height: 30px;
+  padding: 0px 10px;
+  background: #e8e8e8;
+}
+#AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme ul li a span {
+  font-size: 10px;
+  margin: 0px 2px;
+}
+#AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme ul li a:hover {
+  background: #c6cdd3;
+}
+#AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme ul li a.on {
+  background: #c6cdd3;
+}
+@media (min-width:1152px) {
+  
+}
+@media only screen and (min-width: 1024px) and (max-width: 1151px) {
+  
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #AXPageBody .ax-wrap {
+    width: 100%;
+  }
+  #AXPageBody .ax-col-3 {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  #AXPageBody .ax-wrap {
+    width: 100%;
+  }
+  #AXPageBody .ax-col-3 {
+    width: 100%;
+  }
+}
