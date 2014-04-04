@@ -90,6 +90,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-classic {
     background: #c1cdd5;
@@ -108,7 +110,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -120,6 +122,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-blue {
     background: #6faee1;
@@ -141,6 +145,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-green {
     background: #98c87b;
@@ -162,6 +168,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-red {
     background: #c65a5b;
@@ -183,6 +191,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-disabled {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
@@ -201,8 +211,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-normal {
     background: #fdfdfd;
@@ -239,6 +254,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-normal:hover,
   .axbutton-event-normal:focus {
@@ -266,7 +283,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -278,12 +295,14 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-classic:hover,
   .axbutton-event-classic:focus {
     background: #98a4ae;
     text-decoration: none;
-    color: #565b61;
+    color: #5c6b74;
   }
   .axbutton-event-classic:active {
     box-shadow: none;
@@ -308,6 +327,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-blue:hover,
   .axbutton-event-blue:focus {
@@ -336,6 +357,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-green:hover,
   .axbutton-event-green:focus {
@@ -364,6 +387,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-red:hover,
   .axbutton-event-red:focus {
@@ -389,8 +414,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-disabled:hover,
   .axbutton-event-disabled:focus {
@@ -445,6 +475,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton:hover,
   .AXButton:focus {
@@ -472,7 +504,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -484,12 +516,14 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton.Classic:hover,
   .AXButton.Classic:focus {
     background: #98a4ae;
     text-decoration: none;
-    color: #565b61;
+    color: #5c6b74;
   }
   .AXButton.Classic:active {
     box-shadow: none;
@@ -514,6 +548,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton.Blue:hover,
   .AXButton.Blue:focus {
@@ -542,6 +578,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton.Green:hover,
   .AXButton.Green:focus {
@@ -570,6 +608,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton.Red:hover,
   .AXButton.Red:focus {
@@ -595,8 +635,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton[disabled]:hover,
   .AXButton[disabled]:focus {
@@ -651,6 +696,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall:hover,
   .AXButtonSmall:focus {
@@ -678,7 +725,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -690,12 +737,14 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall.Classic:hover,
   .AXButtonSmall.Classic:focus {
     background: #98a4ae;
     text-decoration: none;
-    color: #565b61;
+    color: #5c6b74;
   }
   .AXButtonSmall.Classic:active {
     box-shadow: none;
@@ -720,6 +769,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall.Blue:hover,
   .AXButtonSmall.Blue:focus {
@@ -748,6 +799,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall.Green:hover,
   .AXButtonSmall.Green:focus {
@@ -776,6 +829,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall.Red:hover,
   .AXButtonSmall.Red:focus {
@@ -801,8 +856,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall[disabled]:hover,
   .AXButtonSmall[disabled]:focus {
@@ -857,6 +917,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge:hover,
   .AXButtonLarge:focus {
@@ -884,7 +946,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -896,12 +958,14 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge.Classic:hover,
   .AXButtonLarge.Classic:focus {
     background: #98a4ae;
     text-decoration: none;
-    color: #565b61;
+    color: #5c6b74;
   }
   .AXButtonLarge.Classic:active {
     box-shadow: none;
@@ -926,6 +990,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge.Blue:hover,
   .AXButtonLarge.Blue:focus {
@@ -954,6 +1020,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge.Green:hover,
   .AXButtonLarge.Green:focus {
@@ -982,6 +1050,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge.Red:hover,
   .AXButtonLarge.Red:focus {
@@ -1007,8 +1077,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge[disabled]:hover,
   .AXButtonLarge[disabled]:focus {
@@ -1082,6 +1157,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-classic {
     background: #c1cdd5;
@@ -1100,7 +1177,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -1112,6 +1189,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-blue {
     background: #6faee1;
@@ -1133,6 +1212,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-green {
     background: #98c87b;
@@ -1154,6 +1235,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-red {
     background: #c65a5b;
@@ -1175,6 +1258,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-disabled {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
@@ -1193,8 +1278,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-normal {
     background: #fdfdfd;
@@ -1231,6 +1321,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-normal:hover,
   .axbutton-event-normal:focus {
@@ -1258,7 +1350,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -1270,12 +1362,14 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-classic:hover,
   .axbutton-event-classic:focus {
     background: #98a4ae;
     text-decoration: none;
-    color: #565b61;
+    color: #5c6b74;
   }
   .axbutton-event-classic:active {
     box-shadow: none;
@@ -1300,6 +1394,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-blue:hover,
   .axbutton-event-blue:focus {
@@ -1328,6 +1424,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-green:hover,
   .axbutton-event-green:focus {
@@ -1356,6 +1454,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-red:hover,
   .axbutton-event-red:focus {
@@ -1381,8 +1481,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-disabled:hover,
   .axbutton-event-disabled:focus {
@@ -1437,6 +1542,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton:hover,
   .AXButton:focus {
@@ -1464,7 +1571,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -1476,12 +1583,14 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton.Classic:hover,
   .AXButton.Classic:focus {
     background: #98a4ae;
     text-decoration: none;
-    color: #565b61;
+    color: #5c6b74;
   }
   .AXButton.Classic:active {
     box-shadow: none;
@@ -1506,6 +1615,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton.Blue:hover,
   .AXButton.Blue:focus {
@@ -1534,6 +1645,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton.Green:hover,
   .AXButton.Green:focus {
@@ -1562,6 +1675,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton.Red:hover,
   .AXButton.Red:focus {
@@ -1587,8 +1702,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton[disabled]:hover,
   .AXButton[disabled]:focus {
@@ -1643,6 +1763,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall:hover,
   .AXButtonSmall:focus {
@@ -1670,7 +1792,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -1682,12 +1804,14 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall.Classic:hover,
   .AXButtonSmall.Classic:focus {
     background: #98a4ae;
     text-decoration: none;
-    color: #565b61;
+    color: #5c6b74;
   }
   .AXButtonSmall.Classic:active {
     box-shadow: none;
@@ -1712,6 +1836,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall.Blue:hover,
   .AXButtonSmall.Blue:focus {
@@ -1740,6 +1866,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall.Green:hover,
   .AXButtonSmall.Green:focus {
@@ -1768,6 +1896,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall.Red:hover,
   .AXButtonSmall.Red:focus {
@@ -1793,8 +1923,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall[disabled]:hover,
   .AXButtonSmall[disabled]:focus {
@@ -1849,6 +1984,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge:hover,
   .AXButtonLarge:focus {
@@ -1876,7 +2013,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -1888,12 +2025,14 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge.Classic:hover,
   .AXButtonLarge.Classic:focus {
     background: #98a4ae;
     text-decoration: none;
-    color: #565b61;
+    color: #5c6b74;
   }
   .AXButtonLarge.Classic:active {
     box-shadow: none;
@@ -1918,6 +2057,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge.Blue:hover,
   .AXButtonLarge.Blue:focus {
@@ -1946,6 +2087,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge.Green:hover,
   .AXButtonLarge.Green:focus {
@@ -1974,6 +2117,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge.Red:hover,
   .AXButtonLarge.Red:focus {
@@ -1999,8 +2144,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge[disabled]:hover,
   .AXButtonLarge[disabled]:focus {
@@ -2074,6 +2224,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-classic {
     background: #c1cdd5;
@@ -2092,7 +2244,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -2104,6 +2256,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-blue {
     background: #6faee1;
@@ -2125,6 +2279,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-green {
     background: #98c87b;
@@ -2146,6 +2302,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-red {
     background: #c65a5b;
@@ -2167,6 +2325,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-disabled {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
@@ -2185,8 +2345,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-normal {
     background: #fdfdfd;
@@ -2223,6 +2388,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-normal:hover,
   .axbutton-event-normal:focus {
@@ -2250,7 +2417,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -2262,12 +2429,14 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-classic:hover,
   .axbutton-event-classic:focus {
     background: #98a4ae;
     text-decoration: none;
-    color: #565b61;
+    color: #5c6b74;
   }
   .axbutton-event-classic:active {
     box-shadow: none;
@@ -2292,6 +2461,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-blue:hover,
   .axbutton-event-blue:focus {
@@ -2320,6 +2491,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-green:hover,
   .axbutton-event-green:focus {
@@ -2348,6 +2521,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-red:hover,
   .axbutton-event-red:focus {
@@ -2373,8 +2548,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-disabled:hover,
   .axbutton-event-disabled:focus {
@@ -2429,6 +2609,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton:hover,
   .AXButton:focus {
@@ -2456,7 +2638,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -2468,12 +2650,14 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton.Classic:hover,
   .AXButton.Classic:focus {
     background: #98a4ae;
     text-decoration: none;
-    color: #565b61;
+    color: #5c6b74;
   }
   .AXButton.Classic:active {
     box-shadow: none;
@@ -2498,6 +2682,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton.Blue:hover,
   .AXButton.Blue:focus {
@@ -2526,6 +2712,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton.Green:hover,
   .AXButton.Green:focus {
@@ -2554,6 +2742,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton.Red:hover,
   .AXButton.Red:focus {
@@ -2579,8 +2769,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton[disabled]:hover,
   .AXButton[disabled]:focus {
@@ -2635,6 +2830,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall:hover,
   .AXButtonSmall:focus {
@@ -2662,7 +2859,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -2674,12 +2871,14 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall.Classic:hover,
   .AXButtonSmall.Classic:focus {
     background: #98a4ae;
     text-decoration: none;
-    color: #565b61;
+    color: #5c6b74;
   }
   .AXButtonSmall.Classic:active {
     box-shadow: none;
@@ -2704,6 +2903,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall.Blue:hover,
   .AXButtonSmall.Blue:focus {
@@ -2732,6 +2933,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall.Green:hover,
   .AXButtonSmall.Green:focus {
@@ -2760,6 +2963,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall.Red:hover,
   .AXButtonSmall.Red:focus {
@@ -2785,8 +2990,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall[disabled]:hover,
   .AXButtonSmall[disabled]:focus {
@@ -2841,6 +3051,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge:hover,
   .AXButtonLarge:focus {
@@ -2868,7 +3080,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -2880,12 +3092,14 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge.Classic:hover,
   .AXButtonLarge.Classic:focus {
     background: #98a4ae;
     text-decoration: none;
-    color: #565b61;
+    color: #5c6b74;
   }
   .AXButtonLarge.Classic:active {
     box-shadow: none;
@@ -2910,6 +3124,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge.Blue:hover,
   .AXButtonLarge.Blue:focus {
@@ -2938,6 +3154,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge.Green:hover,
   .AXButtonLarge.Green:focus {
@@ -2966,6 +3184,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge.Red:hover,
   .AXButtonLarge.Red:focus {
@@ -2991,8 +3211,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge[disabled]:hover,
   .AXButtonLarge[disabled]:focus {
@@ -3066,6 +3291,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-classic {
     background: #c1cdd5;
@@ -3084,7 +3311,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -3096,6 +3323,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-blue {
     background: #6faee1;
@@ -3117,6 +3346,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-green {
     background: #98c87b;
@@ -3138,6 +3369,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-red {
     background: #c65a5b;
@@ -3159,6 +3392,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-style-disabled {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
@@ -3177,8 +3412,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-normal {
     background: #fdfdfd;
@@ -3215,6 +3455,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-normal:hover,
   .axbutton-event-normal:focus {
@@ -3242,7 +3484,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -3254,12 +3496,14 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-classic:hover,
   .axbutton-event-classic:focus {
     background: #98a4ae;
     text-decoration: none;
-    color: #565b61;
+    color: #5c6b74;
   }
   .axbutton-event-classic:active {
     box-shadow: none;
@@ -3284,6 +3528,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-blue:hover,
   .axbutton-event-blue:focus {
@@ -3312,6 +3558,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-green:hover,
   .axbutton-event-green:focus {
@@ -3340,6 +3588,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-red:hover,
   .axbutton-event-red:focus {
@@ -3365,8 +3615,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .axbutton-event-disabled:hover,
   .axbutton-event-disabled:focus {
@@ -3421,6 +3676,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton:hover,
   .AXButton:focus {
@@ -3448,7 +3705,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -3460,12 +3717,14 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton.Classic:hover,
   .AXButton.Classic:focus {
     background: #98a4ae;
     text-decoration: none;
-    color: #565b61;
+    color: #5c6b74;
   }
   .AXButton.Classic:active {
     box-shadow: none;
@@ -3490,6 +3749,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton.Blue:hover,
   .AXButton.Blue:focus {
@@ -3518,6 +3779,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton.Green:hover,
   .AXButton.Green:focus {
@@ -3546,6 +3809,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton.Red:hover,
   .AXButton.Red:focus {
@@ -3571,8 +3836,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButton[disabled]:hover,
   .AXButton[disabled]:focus {
@@ -3627,6 +3897,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall:hover,
   .AXButtonSmall:focus {
@@ -3654,7 +3926,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -3666,12 +3938,14 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall.Classic:hover,
   .AXButtonSmall.Classic:focus {
     background: #98a4ae;
     text-decoration: none;
-    color: #565b61;
+    color: #5c6b74;
   }
   .AXButtonSmall.Classic:active {
     box-shadow: none;
@@ -3696,6 +3970,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall.Blue:hover,
   .AXButtonSmall.Blue:focus {
@@ -3724,6 +4000,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall.Green:hover,
   .AXButtonSmall.Green:focus {
@@ -3752,6 +4030,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall.Red:hover,
   .AXButtonSmall.Red:focus {
@@ -3777,8 +4057,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonSmall[disabled]:hover,
   .AXButtonSmall[disabled]:focus {
@@ -3833,6 +4118,8 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge:hover,
   .AXButtonLarge:focus {
@@ -3860,7 +4147,7 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c1cdd5, endColorstr=#98a4ae);
     /*For IE7-8-9*/
-    color: #565b61;
+    color: #5c6b74;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
@@ -3872,12 +4159,14 @@
     -webkit-border-radius: 4px 5px 5px 5px;
     -moz-border-radius: 4px 5px 5px 5px;
     border-radius: 4px 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge.Classic:hover,
   .AXButtonLarge.Classic:focus {
     background: #98a4ae;
     text-decoration: none;
-    color: #565b61;
+    color: #5c6b74;
   }
   .AXButtonLarge.Classic:active {
     box-shadow: none;
@@ -3902,6 +4191,8 @@
     /*For IE7-8-9*/
     color: #d0ebfe;
     border: 1px solid #3f80b1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge.Blue:hover,
   .AXButtonLarge.Blue:focus {
@@ -3930,6 +4221,8 @@
     /*For IE7-8-9*/
     color: #dffebe;
     border: 1px solid #6a9751;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge.Green:hover,
   .AXButtonLarge.Green:focus {
@@ -3958,6 +4251,8 @@
     /*For IE7-8-9*/
     color: #fcccc9;
     border: 1px solid #87302b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge.Red:hover,
   .AXButtonLarge.Red:focus {
@@ -3983,8 +4278,13 @@
   
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d7d7d7, endColorstr=#d7d7d7);
     /*For IE7-8-9*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #eaeaea;
     border: 1px solid #cccccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   .AXButtonLarge[disabled]:hover,
   .AXButtonLarge[disabled]:focus {

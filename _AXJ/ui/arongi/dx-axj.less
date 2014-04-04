@@ -250,10 +250,14 @@
 					padding:0px;text-align:center;
 					border-right:@border; 
 					border-bottom:@border;
-					background:url('images/dx-calendar-bgs.png') repeat-x 0px -26px;
+					.util-gradient (top, #fcfcfc, #edecef); 		//Days			
+					//background:url('images/dx-calendar-bgs.png') repeat-x 0px -26px;
 					&.bodyCol_6{border-right:0px none;}
 					&.bodyRow_5{border-bottom:0px none;}
-					&.setDate{background:url('images/dx-calendar-bgs.png') repeat-x 0px -76px;}
+					&.setDate{
+						.util-gradient (top, #faefed, #ebd2cd); 	//Today
+						//background:url('images/dx-calendar-bgs.png') repeat-x 0px -76px;
+					}
 					A{
 						&.calendarDate{
 							display:block;height:25px;line-height:25px;
@@ -286,7 +290,8 @@
 					padding:0px;text-align:center;
 					border-right:@border;
 					border-bottom:@border;
-					background:url('images/dx-calendar-bgs.png') repeat-x 0px -101px;
+					.util-gradient (top, #fcfcfc, #edecef);
+					//background:url('images/dx-calendar-bgs.png') repeat-x 0px -101px;
 					&.bodyCol_2	{border-right:0px none;}
 					&.bodyCol_3	{border-bottom:0px none;padding-bottom:1px;}	
 					&.setDate	{background:@bgcolor-d;}
@@ -295,7 +300,9 @@
 							display:block;height:43px;line-height:43px;
 							text-decoration:none;color:@color-c;
 							font-size:12px;font-family:@font-family;font-weight:bold;
-							&:hover	{background:#d8e1e7;}
+							&:hover	{
+								background:#d8e1e7;	//Selected BGColor
+							}
 							&:active{background:@bgcolor-b;color:@color-d;box-shadow:inset 0px 0px 5px #3d84bc;}						
 							&.selected{background:@bgcolor-c;color:@color-e;box-shadow:inset 0px 0px 5px #3d84bc;}
 						}

@@ -17,6 +17,7 @@
 	//.util-drop-shadow (0, 1px, 0, 0, 0.15);
 	border:@border;
 	.util-border-radius(@radius,@radius,@radius,@radius);			
+	.util-appearance();
 }
 
 .axbutton-style-classic{
@@ -27,7 +28,8 @@
 	//text-shadow: 0px 1px 0px rgba(255,255,255,0.25);	
 	//.util-drop-shadow (0, 1px, 0, 0, 0.15);	
 	border:@border;
-	.util-border-radius(@radius,@radius,@radius,@radius);			
+	.util-border-radius(@radius,@radius,@radius,@radius);	
+	.util-appearance();			
 }
 .axbutton-style-blue{
 	.dx-axbutton-preset-blue();
@@ -36,6 +38,7 @@
 	//.util-gradient(top, @bgcolor-a, @bgcolor-b);			
 	color:@color;
 	border:@border;
+	.util-appearance();	
 }
 .axbutton-style-green{
 	.dx-axbutton-preset-green();
@@ -44,6 +47,7 @@
 	//.util-gradient(top, @bgcolor-a, @bgcolor-b);			
 	color:@color;
 	border:@border;	
+	.util-appearance();	
 }
 .axbutton-style-red{
 	.dx-axbutton-preset-red();
@@ -52,6 +56,7 @@
 	//.util-gradient(top, @bgcolor-a, @bgcolor-b);			
 	color:@color;
 	border:@border;		
+	.util-appearance();	
 }
 .axbutton-style-disabled{
 	.dx-axbutton-preset-disabled();
@@ -60,8 +65,8 @@
 	//.util-gradient(top, @bgcolor-a, @bgcolor-b);			
 	color:@color;
 	border:@border;
-	
-}
+	.util-appearance();	
+}	
 
 // AXButton Events ///////////////////////////////////////////////////
 .axbutton-event-normal{

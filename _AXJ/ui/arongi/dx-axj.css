@@ -452,7 +452,21 @@
   text-align: center;
   border-right: 1px solid #b9babc;
   border-bottom: 1px solid #b9babc;
-  background: url('images/dx-calendar-bgs.png') repeat-x 0px -26px;
+  background: #edecef;
+  background: -webkit-linear-gradient(#fcfcfc, #edecef);
+  /* For Safari */
+
+  background: -o-linear-gradient(#fcfcfc, #edecef);
+  /* For Opera 11.1 to 12.0 */
+
+  background: -moz-linear-gradient(#fcfcfc, #edecef);
+  /* For Firefox 3.6 to 15 */
+
+  background: linear-gradient(#fcfcfc, #edecef);
+  /* Standard syntax */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#fcfcfc, endColorstr=#edecef);
+  /*For IE7-8-9*/
 }
 .AXCalendar table.calendarPage tbody td.bodyCol_6 {
   border-right: 0px none;
@@ -461,7 +475,21 @@
   border-bottom: 0px none;
 }
 .AXCalendar table.calendarPage tbody td.setDate {
-  background: url('images/dx-calendar-bgs.png') repeat-x 0px -76px;
+  background: #ebd2cd;
+  background: -webkit-linear-gradient(#faefed, #ebd2cd);
+  /* For Safari */
+
+  background: -o-linear-gradient(#faefed, #ebd2cd);
+  /* For Opera 11.1 to 12.0 */
+
+  background: -moz-linear-gradient(#faefed, #ebd2cd);
+  /* For Firefox 3.6 to 15 */
+
+  background: linear-gradient(#faefed, #ebd2cd);
+  /* Standard syntax */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#faefed, endColorstr=#ebd2cd);
+  /*For IE7-8-9*/
 }
 .AXCalendar table.calendarPage tbody td A.calendarDate {
   display: block;
@@ -503,7 +531,21 @@
   text-align: center;
   border-right: 1px solid #b9babc;
   border-bottom: 1px solid #b9babc;
-  background: url('images/dx-calendar-bgs.png') repeat-x 0px -101px;
+  background: #edecef;
+  background: -webkit-linear-gradient(#fcfcfc, #edecef);
+  /* For Safari */
+
+  background: -o-linear-gradient(#fcfcfc, #edecef);
+  /* For Opera 11.1 to 12.0 */
+
+  background: -moz-linear-gradient(#fcfcfc, #edecef);
+  /* For Firefox 3.6 to 15 */
+
+  background: linear-gradient(#fcfcfc, #edecef);
+  /* Standard syntax */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#fcfcfc, endColorstr=#edecef);
+  /*For IE7-8-9*/
 }
 .AXCalendar table.calendarPageMonth tbody td.bodyCol_2 {
   border-right: 0px none;

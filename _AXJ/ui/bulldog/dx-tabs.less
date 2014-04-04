@@ -5,152 +5,171 @@
 // AXTabs Style ///////////////////////////////////////////////////
 .axtabs-style-normal{
 	.dx-axtabs-preset-normal();
-	.util-gradient(top, @bgcolor-a, @bgcolor-b);
+	background: @bgcolor-a;
+	//.util-gradient(top, @bgcolor-a, @bgcolor-b);
 	color:@color;
 	border:@border;
-	text-shadow: 0px 1px 0px rgba(255,255,255,0.8);
+	//text-shadow: 0px 1px 0px rgba(255,255,255,0.8);
 	.util-border-radius (4px, 4px, 0, 0);
 }
 .axtabs-style-classic{
 	.dx-axtabs-preset-classic();
-	.util-gradient(top, @bgcolor-a, @bgcolor-b);
+	background: @bgcolor-a;
+	//.util-gradient(top, @bgcolor-a, @bgcolor-b);
 	color:@color;
 	border:@border;
-	text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
+	//text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
 	.util-border-radius (4px, 4px, 0, 0);
 }
 .axtabs-style-blue{
 	.dx-axtabs-preset-blue();
-	.util-gradient(top, @bgcolor-a, @bgcolor-b);
+	background: @bgcolor-a;
+	//.util-gradient(top, @bgcolor-a, @bgcolor-b);
 	color:@color;
 	border:@border;
-	text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
+	//text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
 	.util-border-radius (4px, 4px, 0, 0);
 }
 .axtabs-style-green{
 	.dx-axtabs-preset-green();
-	.util-gradient(top, @bgcolor-a, @bgcolor-b);
+	background: @bgcolor-a;
+	//.util-gradient(top, @bgcolor-a, @bgcolor-b);
 	color:@color;
 	border:@border;
-	text-shadow: 0px -1px 0px rgba(0,0,0,0.25);	
+	//text-shadow: 0px -1px 0px rgba(0,0,0,0.25);	
 	.util-border-radius (4px, 4px, 0, 0);
 }
 .axtabs-style-red{
 	.dx-axtabs-preset-red();
-	.util-gradient(top, @bgcolor-a, @bgcolor-b);
+	background: @bgcolor-a;
+	//.util-gradient(top, @bgcolor-a, @bgcolor-b);
 	color:@color;
 	border:@border;
-	text-shadow: 0px -1px 0px rgba(0,0,0,0.25);	
+	//text-shadow: 0px -1px 0px rgba(0,0,0,0.25);	
 	.util-border-radius (4px, 4px, 0, 0);
 }
 .axtabs-style-disabled{
 	.dx-axtabs-preset-disabled();
-	.util-gradient(top, @bgcolor-a, @bgcolor-b);
+	background: @bgcolor-a;
+	//.util-gradient(top, @bgcolor-a, @bgcolor-b);
 	color:@color;
 	border:@border;
-	text-shadow: 0px -1px 0px rgba(0,0,0,0.10);	
+	//text-shadow: 0px -1px 0px rgba(0,0,0,0.10);	
 	box-shadow: none;
 	.util-border-radius (4px, 4px, 0, 0);
 }
 
 // AXTabs Events ///////////////////////////////////////////////////
 .axtabs-event-normal{
+	.dx-axtabs-preset-normal();
 	&				{.axtabs-style-normal;}
 	&:hover, &:focus{
-		.dx-axtabs-preset-normal();
 		background: @bgcolor-b;		
+		border:@border-a;
 	}
 	&:active		{
 		box-shadow: none;
 	}
 	&.on{
 		text-shadow:none;
-		background:#fff; border-bottom:1px solid #fff;
+		background:#fff; 
+		border:@border-a;
+		border-bottom:1px solid #fff;
 	}			
 }
 
 .axtabs-event-classic{
+	.dx-axtabs-preset-classic();
 	&				{.axtabs-style-classic;}
 	&:hover, &:focus{
-		.dx-axtabs-preset-classic();
 		background: @bgcolor-b;		
+		border:@border;		
 	}
 	&:active		{
 		box-shadow: none;
 	}
 	&.on{
-		.dx-axtabs-preset-classic();
 		text-shadow:none;		
 		color:@color-a;	
-		background:#fff; border-bottom:1px solid #fff;
+		background:#fff; 
+		border:@border-a;		
+		border-bottom:1px solid #fff;
 	}					
 }
 
 .axtabs-event-blue{
+	.dx-axtabs-preset-blue();
 	&				{.axtabs-style-blue;}
 	&:hover, &:focus{
-		.dx-axtabs-preset-blue();
 		background: @bgcolor-b;		
+		border:@border;		
 	}
 	&:active		{
 		box-shadow: none;
 	}	
 	&.on{
-		.dx-axtabs-preset-blue();
 		text-shadow:none;		
 		color:@color-a;	
-		background:#fff; border-bottom:1px solid #fff;
+		background:#fff; 
+		border:@border-a;		
+		border-bottom:1px solid #fff;
 	}				
 }
 
 .axtabs-event-green{
+	.dx-axtabs-preset-green();
 	&				{.axtabs-style-green;}
 	&:hover, &:focus{
-		.dx-axtabs-preset-green();
 		background: @bgcolor-b;		
+		border:@border;		
 	}
 	&:active		{
 		box-shadow: none;
 	}
 	&.on{
-		.dx-axtabs-preset-green();
 		text-shadow:none;		
 		color:@color-a;	
-		background:#fff; border-bottom:1px solid #fff;
+		background:#fff; 
+		border:@border-a;
+		border-bottom:1px solid #fff;
 	}					
 }
 
 .axtabs-event-red{
+	.dx-axtabs-preset-red();
 	&				{.axtabs-style-red;}
 	&:hover, &:focus{
-		.dx-axtabs-preset-red();
 		background: @bgcolor-b;		
+		border:@border;		
 	}
 	&:active		{
 		box-shadow: none;
 	}	
 	&.on{
-		.dx-axtabs-preset-red();
 		text-shadow:none;		
 		color:@color-a;	
-		background:#fff; border-bottom:1px solid #fff;
+		background:#fff; 
+		border:@border-a;		
+		border-bottom:1px solid #fff;
 	}				
 }
 
 .axtabs-event-disabled{
+	.dx-axtabs-preset-disabled();
 	&				{.axtabs-style-disabled;}
 	&:hover, &:focus{
-		.dx-axtabs-preset-disabled();
 		background: @bgcolor-b;		
+		border:@border;		
 	}
 	&:active		{
 		box-shadow: none;
 	}
 	&.on{
-		.dx-axtabs-preset-disabled();
 		text-shadow:none;		
 		color:@color-a;	
-		background:#fff; border-bottom:1px solid #fff;
+		background:#fff; 
+		border:@border-a;		
+		border-bottom:1px solid #fff;
 	}					
 }
 

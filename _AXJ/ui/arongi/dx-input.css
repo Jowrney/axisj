@@ -657,7 +657,7 @@
   left: 0px;
   top: 0px;
   padding: 5px;
-  background: url('images/dx-calendar-box-bg.png');
+  background: #cdd2d8;
   border: 1px solid #808d9d;
   border-radius: 5px;
   box-shadow: 0px 1px 3px #ccc;
@@ -666,7 +666,21 @@
   position: relative;
   width: 181px;
   height: 26px;
-  background: url('images/dx-calendar-bgs.png') repeat-x;
+  background: #919ea7;
+  background: -webkit-linear-gradient(#b1bec7, #919ea7);
+  /* For Safari */
+
+  background: -o-linear-gradient(#b1bec7, #919ea7);
+  /* For Opera 11.1 to 12.0 */
+
+  background: -moz-linear-gradient(#b1bec7, #919ea7);
+  /* For Firefox 3.6 to 15 */
+
+  background: linear-gradient(#b1bec7, #919ea7);
+  /* Standard syntax */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#b1bec7, endColorstr=#919ea7);
+  /*For IE7-8-9*/
   border: 1px solid #7f8d9c;
 }
 .AXbindDateExpandBox .dateControlBox .prevbutton {

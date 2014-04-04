@@ -14,7 +14,7 @@ var pageObj = {
 	},
 	incFooter:function(){
 		var fo = [];
-		fo.push("<h3>AXISJ Theme</h3>");
+		fo.push("<!--h3>AXISJ Theme</h3-->");
 		fo.push("<ul>");
 		fo.push("<li><a href='javascript:pageObj.changeTheme(\"arongi\");' class='themeSelector' id='arongi'>Arongi<span>(Default)</span></a></li>");		
 		fo.push("<li><a href='javascript:pageObj.changeTheme(\"bulldog\");' class='themeSelector' id='bulldog'>Bulldog</a></li>");				

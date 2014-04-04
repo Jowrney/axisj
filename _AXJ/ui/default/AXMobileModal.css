@@ -5,8 +5,7 @@
  * 
  * Copyright axisj
  * http://axisj.com/license
- */
-/* ---------------------------- AXMobileModal ------------------------------- */
+ *//* ---------------------------- AXMobileModal ------------------------------- */
 .AXMobileModal {
   z-index: 6000;
   position: absolute;
@@ -94,6 +93,7 @@
 }
 .AXMobileModal .AXMobileModalPanel .mobileModalBody {
   /* 모달창 바디 */
+
 }
 .AXMobileModal .AXMobileModalPanel .mobileModalBody .AXContextMenuContainer {
   /* 모달창 바디 안에 위치한 스크롤 컨테이너 */

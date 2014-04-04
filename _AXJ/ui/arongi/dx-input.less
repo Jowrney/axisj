@@ -454,13 +454,15 @@
 	.dx-axinput-preset-date();
 	position:absolute;left:0px;top:0px;
 	padding:5px;
-	background:url('images/dx-calendar-box-bg.png');
+	background:@bgcolor-a; 
+	//.util-gradient (top, #cdd2d8, #cdd2d8);
 	border:@border;border-radius:@radius;
 	box-shadow:0px 1px 3px #ccc;
 	.dateControlBox{
 		position:relative;
 		width:181px;height:26px;
-		background:url('images/dx-calendar-bgs.png') repeat-x;
+		.util-gradient (top, @bgcolor-b, @bgcolor-c);
+		//background:url('images/dx-calendar-bgs.png') repeat-x;
 		border:@border-a;
 		.prevbutton{
 			position:absolute;left:0px;top:0px;width:26px;height:26px;

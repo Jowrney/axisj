@@ -11,7 +11,7 @@
 	<!-- Self -->
 	<script src="pageTab.js"></script>			
 	<!-- Theme -->
-	<script src="../../ui/arongi/page.js"></script>		
+	<script src="../page.js"></script>		
 	<link rel="stylesheet" type="text/css" href="../../ui/arongi/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../../ui/arongi/page.css">
 	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXJ.css">	
@@ -33,7 +33,7 @@
 			pageObj.host = "../../";
 			pageObj.incHeader();
 			pageObj.incFooter();		
-
+			pageObj.initTheme();
 			
 			$("#myTab01").bindTab({
 				theme : "AXTabs",

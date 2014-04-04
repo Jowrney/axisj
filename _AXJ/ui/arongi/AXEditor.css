@@ -426,9 +426,9 @@
     -webkit-border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
-    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5) outset;
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5) outset;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5) outset;
     z-index: 1000;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTitle {
@@ -1165,9 +1165,9 @@
     -webkit-border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
-    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5) outset;
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5) outset;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5) outset;
     z-index: 1000;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTitle {
@@ -1904,9 +1904,9 @@
     -webkit-border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
-    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5) outset;
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5) outset;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5) outset;
     z-index: 1000;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTitle {
@@ -2643,9 +2643,9 @@
     -webkit-border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
-    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5) outset;
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5) outset;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5) outset;
     z-index: 1000;
   }
   .AXEditor .editorHead .me___headPanel .me___selecterBox .me___selecterTitle {

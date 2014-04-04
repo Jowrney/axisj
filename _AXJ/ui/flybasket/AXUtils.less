@@ -19,11 +19,10 @@
     border-radius: none;
 }
 
-//Box Shadow
-.util-box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
-	-webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
-	-moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
-	box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+.util-box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5, @inset:outset) {
+	-webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha) @inset;
+	-moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha) @inset;
+	box-shadow: @x @y @blur rgba(0, 0, 0, @alpha) @inset;
 }
 
 //Transition
@@ -45,14 +44,13 @@
 }
 
 //Linear Gradient
-.util-gradient (@origin: left, @start: #ffffff, @stop: #000000) {
-    background-color: @start;
-    background-image: -webkit-linear-gradient(@origin, @start, @stop);
-    background-image: -moz-linear-gradient(@origin, @start, @stop);
-    background-image: -o-linear-gradient(@origin, @start, @stop);
-    background-image: -ms-linear-gradient(@origin, @start, @stop);
-    background-image: linear-gradient(@origin, @start, @stop);
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=@start, endColorstr=@stop); /*For IE7-8-9*/    
+.util-gradient (@origin: top, @start: #ffffff, @stop: #000000) {
+	background: @stop;
+	background: -webkit-linear-gradient(@start, @stop); /* For Safari */
+	background: -o-linear-gradient(@start, @stop); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(@start, @stop); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(@start, @stop); /* Standard syntax */
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=@start, endColorstr=@stop); /*For IE7-8-9*/ 
 }
 
 //Quick Gradient
@@ -74,7 +72,7 @@
 .util-drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
 	-webkit-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
 	-moz-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
-	box-shadow:		@x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:			@x @y @blur @spread rgba(0, 0, 0, @alpha);
 }
 
 
@@ -90,3 +88,31 @@
 .util-text-ellipsis{
 	white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
+
+.util-text-shadow-black(@y:-1px, @alpha: 0.25){
+	text-shadow:0px @y rgba(0, 0, 0, @alpha);;
+};
+
+.util-text-shadow-white(@y:-1px, @alpha: 0.25){
+	text-shadow:0px @y rgba(255, 255, 255, @alpha);;
+};
+
+
+.util-hspace(@height: 1px){
+	font-size:1px;line-height:1px;height:@height;
+}
+
+.util-rotate(@deg:0){
+	-ms-transform: rotate(unit(@deg, deg)); /* IE 9 */
+	-webkit-transform: rotate(unit(@deg, deg)); /* Chrome, Safari, Opera */
+	transform: rotate(unit(@deg, deg));	
+}
+
+.util-appearance(){
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+
+
+
+
