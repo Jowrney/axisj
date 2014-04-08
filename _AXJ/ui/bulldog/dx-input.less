@@ -12,15 +12,15 @@
 	border:@border;
 	background:@bgcolor;
 	color:@color;
-	box-shadow:inset 0px 1px 2px #dddddd;
-	.util-border-radius(@radius);
+	//box-shadow:inset 0px 1px 2px #dddddd;
+	.util-border-radius(@radius,@radius,@radius,@radius);
 	font-size:12px;line-height:15px;height:15px;
 	padding:4px;
 	margin:0px auto;
 	vertical-align: middle;
 	&:focus{
 		border:@border-a;
-		box-shadow:inset 0px 0px 3px #949fa8;
+		//box-shadow:inset 0px 0px 3px #949fa8;
 		outline:none;
 		color:@color-a;
 	}
@@ -28,12 +28,12 @@
 		background:url('images/dx-default-regular.png') repeat-x;
 		background-position:0px -78px;
 		color:@color-b;text-shadow:0px -1px #b7b7b7;
-		box-shadow:inset 0px 1px 2px #b1b1b1;
+		//box-shadow:inset 0px 1px 2px #b1b1b1;
 	}
 	&[readonly]{
 		background:#eee;
 		color:@color-c;text-shadow:0px 1px #fff;
-		box-shadow:inset 0px 1px 2px #b1b1b1;
+		//box-shadow:inset 0px 1px 2px #b1b1b1;
 	}
 	&::-webkit-input-placeholder	{color:@color-d;}
 	&::-moz-placeholder				{color:@color-d;}
@@ -49,15 +49,15 @@
 	border:@border;
 	background:@bgcolor;	
 	color:@color;
-	box-shadow:inset 0px 1px 1px #dddddd;
-	.util-border-radius(4px);
+	//box-shadow:inset 0px 1px 1px #dddddd;
+	.util-border-radius(@radius,@radius,@radius,@radius);
 	font-size:12px;line-height:12px;height:12px;
 	padding:3px 3px;
 	margin:0px auto;
 	vertical-align: middle;	
 	&:focus{
 		border:@border-a;
-		box-shadow:inset 0px 0px 3px #949fa8;
+		//box-shadow:inset 0px 0px 3px #949fa8;
 		outline:none;		
 		color:@color-a;
 	}
@@ -65,12 +65,12 @@
 		background:url('images/dx-default-small.png') repeat-x;
 		background-position:0px -60px;
 		color:@color-b;text-shadow:0px -1px #b7b7b7;
-		box-shadow:inset 0px 1px 2px #b1b1b1;
+		//box-shadow:inset 0px 1px 2px #b1b1b1;
 	}	
 	&[readonly]{
 		background:#eee;
 		color:@color-c;text-shadow:0px 1px #fff;
-		box-shadow:inset 0px 1px 2px #b1b1b1;
+		//box-shadow:inset 0px 1px 2px #b1b1b1;
 	}
 	&::-webkit-input-placeholder	{color:@color-d;}
 	&::-moz-placeholder				{color:@color-d;}
@@ -89,6 +89,7 @@
 	font-weight:normal;vertical-align:top;white-space:nowrap;cursor:pointer;
 	overflow:hidden;
 	background:url('images/dx-checkbox.png') no-repeat left 0px;
+	background-size: 26px 78px;
 	vertical-align: middle;	
 	&.checked{
 		background-position:left -26px;
@@ -171,11 +172,15 @@
 
 // AXbindNumber ///////////////////////////////////////////////////
 .AXanchorNumberContainer{
+	.dx-axinput-preset-number();
 	position:absolute;
 	width:18px;height:18px;
 	overflow:hidden;
-	background:url('images/dx-default-regular.png') repeat-x;
-	border:1px solid #b9babc;border-top-right-radius:4px;border-bottom-right-radius:4px;
+	//background:url('images/dx-default-regular.png') repeat-x;
+	background-color:@bgcolor;
+	border:@border;
+	border-top-right-radius:@radius;
+	border-bottom-right-radius:@radius;
 	overflow:hidden;
 	.AXanchorIncrease{
 		position:absolute;
@@ -184,7 +189,7 @@
 		*background-position: center 2px;
 		width:18px;height:18px;
 		overflow:hidden;text-indent:-2000px;
-		border-bottom:1px solid #b9babc;
+		border-bottom:@border-a;
 		&:active{
 			background-image:url('images/dx-up-arrow-on.png');
 		}
@@ -196,7 +201,7 @@
 		*background-position: center 2px;
 		width:18px;height:18px;
 		overflow:hidden;text-indent:-2000px;
-		border-top:1px solid #b9babc;
+		border-top:@border-b;
 		&:active{
 			background-image:url('images/dx-down-arrow-on.png');
 		}
@@ -211,7 +216,8 @@
 	.dx-axinput-preset-selector();
 	position:absolute;
 	width:18px;height:18px;
-	background:url('images/dx-default-regular.png') repeat-x;
+	//background:url('images/dx-default-regular.png') repeat-x;
+	background:@bgcolor;
 	border:@border;
 	border-top-right-radius:@radius;
 	border-bottom-right-radius:@radius;
@@ -222,8 +228,10 @@
 		overflow:hidden;text-indent:-2000px;
 		&.on{
 			background:url('images/dx-slide-up-arrow.png') center center no-repeat;
+			background-color:@bgcolor-a;
 		}
 	}
+	
 
 	
 }
@@ -232,7 +240,8 @@
 	.dx-axinput-preset-selector();
 	position:absolute;
 	width:18px;height:18px;
-	background:url('images/dx-default-regular.png') repeat-x;
+	//background:url('images/dx-default-regular.png') repeat-x;
+	background: @bgcolor;
 	border:@border;
 	.AXanchorSelectorFinder{
 		position:absolute;
@@ -241,6 +250,7 @@
 		overflow:hidden;text-indent:-2000px;
 		&.on{
 			background:url('images/dx-selector-search.png') center center no-repeat;
+			background-color:@bgcolor-a;
 		}
 	}
 	
@@ -368,7 +378,7 @@
 	position:absolute;left:0px;top:0px;height:22px;
 	border:@border;
 	background:@bgcolor;
-	box-shadow:inset 0px 1px 2px #dddddd;
+	//box-shadow:inset 0px 1px 2px #dddddd;
 	border-radius:@radius;
 	padding:0px;margin:0px;
 	outline:none;
@@ -388,13 +398,14 @@
 	&.on{
 		position:absolute;left:0px;top:0px;
 		border:@border-a;
-		background:@bgcolor-a;box-shadow:inset 0px 1px 2px #828282;
+		background:@bgcolor-a;
+		//box-shadow:inset 0px 1px 2px #222;
 		padding:0px;margin:0px;
 		outline:none;
 		.AXanchorSwitchDisplay{
 			text-align:center;padding-left:0px;padding-right:18px;
 			font-size:11px;color:@color-a;
-			text-shadow:0px -1px #8b969d;
+			//text-shadow:0px -1px #8b969d;
 			white-space:nowrap;overflow:hidden;
 		}
 		.AXanchorSwitchHandle{
@@ -424,19 +435,21 @@
 		.util-text-ellipsis();
 		&:hover, &:focus{
 			.util-gradient(top,@bgcolor-c,@bgcolor-d);
-			text-shadow:0px 1px #fff;
+			//text-shadow:0px 1px #fff;
 		}
 		&.segmentLeft{
-			border-top-left-radius:@radius;border-bottom-left-radius:@radius;	
+			border-top-left-radius:@radius;
+			border-bottom-left-radius:@radius;	
 		}
 		&.segmentRight{
 			border-right:@border;
-			border-top-right-radius:@radius;border-bottom-right-radius:@radius;
+			border-top-right-radius:@radius;
+			border-bottom-right-radius:@radius;
 		}
 		&.on{
 			.util-gradient(top,@bgcolor-e,@bgcolor-f);
 			color:@color-a;
-			text-shadow:0px 1px #4e585f;
+			//text-shadow:0px 1px #4e585f;
 		}
 	}
 }
@@ -453,22 +466,23 @@
 .AXbindDateExpandBox{
 	.dx-axinput-preset-date();
 	position:absolute;left:0px;top:0px;
-	padding:5px;
-	background:url('images/dx-calendar-box-bg.png');
-	border:@border;border-radius:@radius;
+	//background:url('images/dx-calendar-box-bg.png');
+	background: @bgcolor-b;
+	//border:@border;
+	border-radius:@radius;
 	box-shadow:0px 1px 3px #ccc;
 	.dateControlBox{
 		position:relative;
 		width:181px;height:26px;
-		background:url('images/dx-calendar-bgs.png') repeat-x;
-		border:@border-a;
+		background: @bgcolor-a;
+		//background:url('images/dx-calendar-bgs.png') repeat-x;
+		//border:@border-a;
 		.prevbutton{
 			position:absolute;left:0px;top:0px;width:26px;height:26px;
 			display:block;text-indent:-1000px;overflow:hidden;
 			background:url('images/dx-prev-arrow.png') no-repeat;
 			&:hover{
-				background:url('images/dx-prev-arrow.png') no-repeat 0px -26px;				
-			}
+				background:url('images/dx-prev-arrow.png') no-repeat 0px -26px;				}
 		}
 		.nextbutton{
 			position:absolute;right:0px;top:0px;width:26px;height:26px;
@@ -481,16 +495,20 @@
 		.yearbutton{
 			position:absolute;left:55px;top:0px;
 			text-decoration:none;color:@color;line-height:26px;
-			font-family:Arial;font-size:12px;text-shadow:0px -1px #869198;
+			font-family:Arial;font-size:12px;
+			//text-shadow:0px -1px #869198;
 		}
 		.monthbutton{
 			position:absolute;left:100px;top:0px;	
 			text-decoration:none;color:@color;line-height:26px;
-			font-family:Arial;font-size:12px;text-shadow:0px -1px #869198;
+			font-family:Arial;font-size:12px;
+			//text-shadow:0px -1px #869198;
 		}
 	}
 	.dateDisplayBox{
-		background:@bgcolor;border:@border-b;border-top:0px none;
+		background:@bgcolor;
+		//border:@border-b;
+		//border-top:0px none;
 		width:181px;
 	}
 	.timeDisplayBox{
@@ -504,15 +522,18 @@
 .AXbindTwinDateExpandBox{
 	.dx-axinput-preset-date();
 	position:absolute;left:0px;top:0px;
+	//background:url('images/dx-calendar-box-bg.png');
 	padding:5px;
-	background:url('images/dx-calendar-box-bg.png');
-	border:@border;border-radius:@radius;
-	box-shadow:0px 1px 3px #ccc;
+	background: @bgcolor-b;
+	//border:@border;
+	border-radius:@radius;
+	.util-drop-shadow (0px, 1px, 3px, 0, 0.25);
 	.dateControlBox{
 		position:relative;
 		height:26px;
-		background:url('images/dx-calendar-bgs.png') repeat-x;
-		border:@border-a;
+		background: @bgcolor-a;		
+		//background:url('images/dx-calendar-bgs.png') repeat-x;
+		//border:@border-a;
 		width:181px;
 		.prevbutton{
 			position:absolute;left:0px;top:0px;width:26px;height:26px;
@@ -534,16 +555,20 @@
 		.yearbutton{
 			position:absolute;left:55px;top:0px;
 			text-decoration:none;color:@color;line-height:26px;
-			font-family:@font-family;font-size:12px;text-shadow:0px -1px #869198;
+			font-family:@font-family;font-size:12px;
+			//text-shadow:0px -1px #869198;
 		}
 		.monthbutton{
 			position:absolute;left:100px;top:0px;	
 			text-decoration:none;color:@color;line-height:26px;
-			font-family:@font-family;font-size:12px;text-shadow:0px -1px #869198;
+			font-family:@font-family;font-size:12px;
+			//text-shadow:0px -1px #869198;
 		}
 	}
 	.dateDisplayBox{
-		background:@bgcolor;border:@border-b;border-top:0px none;
+		background:@bgcolor;
+		//border:@border-b;
+		//border-top:0px none;
 		width:181px;
 	}
 	.timeDisplayBox{
@@ -551,8 +576,8 @@
 		height:120px;
 	}
 	.dateTypeName{
-		height:22px;line-height:21px;text-align:center;
-		color:@color-a;text-shadow:0px 1px #fff;font-family:@font-family;	
+		height:22px;line-height:21px;text-align:center; font-size:12px;
+		color:@color-a;font-family:@font-family;	
 	}
 }
 

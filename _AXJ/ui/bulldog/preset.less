@@ -18,13 +18,11 @@
 ///////////////////////////////////////////////////////////////////////////////////
 
 
-
-
 // Common ///////////////////////////////////////////////////
-@color:#565b61;			
+@color:#5e5e5e;			
 @color-a:#565b61; 		
 @color-b:#565b61;		
-@color-c:#565b61;		
+@color-c:#526271;		
 
 @link:#6e7a86;	
 @link-hover:#565b61;
@@ -35,12 +33,13 @@
 @font-family:"Open sans";
 @font-size:12px;
 
-@border:1px solid #000;
+@border:1px solid #6c7b8a;
 
 @bgcolor:#fff;
-@bgcolor-a:#e8e8e8;
+@bgcolor-a:#d9d9d9;
 @bgcolor-b:#c6cdd3;
-@bgcolor-c:#717b85;
+@bgcolor-c:#526271;
+@bgcolor-d:#d7dde3;
 
 @wide:		~"(min-width:1152px)";
 @desktop:   ~"only screen and (min-width: 1024px) and (max-width: 1151px)";
@@ -271,45 +270,55 @@
 	@bgcolor-b	:#fff;				//diabled
 	@bgcolor-c	:#fff;				//readonly
 	@bgcolor-d	:#fff;				//placeholder
-	@border		:1px solid #b6b6b6;
-	@border-a	:1px solid #949fa8;	//focus
-	@radius		:4px;
+	@border		:1px solid #ccc;
+	@border-a	:1px solid #3badeb;	//focus
+	@radius		:2px;
 	@radius-a	:15px;
 }
+.dx-axinput-preset-number(){
+	@border		:1px solid #b9babc;
+	@border-a 	:1px solid #ccc;
+	@border-b 	:1px solid #ccc;	
+	@bgcolor 	:#b3b5b7;
+	@radius 	:2px;	
+}
+
 .dx-axinput-preset-switch(){
-	@color		:#b6b6b6;
+	@color		:#808084;
 	@color-a	:#fff;
-	@border		:1px solid #b6b6b6;
-	@border-a	:1px solid #4f5458;
+	@border		:1px solid #e5e5e5;
+	@border-a	:1px solid #536270;
 	@radius		:14px;
-	@bgcolor	:#fff;
-	@bgcolor-a	:#a3b0b9
+	@bgcolor	:#e5e5e5;
+	@bgcolor-a	:#536270;
 }
 
 .dx-axinput-preset-segments(){
-	@color		:#6e7a86;
+	@color		:#6e7a8d;
 	@color-a	:#fff;
-	@border		:1px solid #b9babc;
-	@bgcolor	:#e8e8e8;
-	@bgcolor-a	:#fff;
-	@bgcolor-b	:#e8e8e8;			
-	@bgcolor-c	:#c7cfd4;
-	@bgcolor-d	:#e5eff2;
-	@bgcolor-e	:#7C7E83;
-	@bgcolor-f	:#b9babc;
-	@radius		:4px;
+	@border		:1px solid #ccc;
+	@bgcolor	:#e5e5e5;
+	@bgcolor-a	:#e5e5e5;
+	@bgcolor-b	:#e5e5e5;			
+	@bgcolor-c	:#bbb;
+	@bgcolor-d	:#bbb;
+	@bgcolor-e	:#808080;
+	@bgcolor-f	:#808080;
+	@radius		:3px;
 }
 
 .dx-axinput-preset-slider(){
 	@color		:#acacac;
 	@color-a	:#444;
 	@bgcolor	:#e2e3e4;
-	@bgcolor-a	:#90979d;
+	@bgcolor-a	:#1dbb9a;
 	@radius		:2px;
 }
 
 .dx-axinput-preset-selector(){
-	@border		:1px solid #b9babc;
+	@border		:1px solid #b9b9b9;
+	@bgcolor 	:#b9b9b9;
+	@bgcolor-a	:#42aee8;	
 	@radius		:4px;
 }
 
@@ -318,11 +327,13 @@
 	@font-family:Arial;
 	@color		:#fff; 		//year & Month
 	@color-a	:#828f9e;	//dateTypeName
-	@border		:1px solid #808d9d;
-	@border-a	:1px solid #7f8d9c;
+	@border		:none;
+	@border-a	:1px solid #1dbb9a;
 	@border-b	:1px solid #b9babc;
 	@radius		:5px;
 	@bgcolor	:#fff;
+	@bgcolor-a	:#1dbb9a;
+	@bgcolor-b	:#f2f2f2; //Twin container bg;	
 }
 
 .dx-axcalenter-preset(){
@@ -331,23 +342,24 @@
 	@color		:#7b7b7b; 	
 	@color-a	:#c78b82;	//SUN
 	@color-b	:#627d9b; 	//SAT
-	@color-c	:#6d6e71; 	//Table body
+	@color-c	:#fff; 	//Table body
 	@color-d	:#fff; 
 	@color-e	:#fff; 	
 	@color-f	:#bfbfc1;
 	@color-g	:#738089; 	//hour, minute, 
 	
-	@border		:1px solid #b9babc;		//Table body 
+	@border		:1px solid #536270;		//Table body 
 	@border-a	:1px solid #f2f2f3;		//Table head right;
 	@border-b	:1px solid #b9babc;		//Table head left;
 	@border-c	:1px solid #7f8d9c;
 
-	@bgcolor	:#fff;
-	@bgcolor-a	:#d8e1e7;
-	@bgcolor-b	:#5ea3db;
-	@bgcolor-c	:#5ea3db;	
-	@bgcolor-d	:#f3e2df;
-	@bgcolor-e	:#a3b0b9;
+	@bgcolor	:#1dbb9a;
+	@bgcolor-a	:#536270;
+	@bgcolor-b	:#536270;
+	@bgcolor-c	:#1dbb9a;	
+	@bgcolor-d	:#1dbb9a;
+	@bgcolor-e	:#758798;
+	@bgcolor-f	:#758798;  //Active	
 	@radius		:5px;
 
 }
@@ -356,9 +368,11 @@
 .dx-axprogress-preset(){
 	//AXJ.less
 	@font-family:Arial;
-	@color		:#717b85;
+	@color		:#666;
+	@color-a	:#fff;
+	@bgcolor 	:#E5E5E5;
+	@bgcolor-a	:#00BC9A;
 	@border		:1px solid #e9e9e9;
-	@radius		:8px;
 }
 
 
@@ -367,7 +381,9 @@
 	//AXJ.less
 	@color   	:#525252;
 	@color-a   	:#717b85;
-	@color-b	:#477e47;
+	@color-b	:#526271;	//Complete
+	@color-c	:#bf601b; 	//Warinig
+	@color-d	:#f2524f;	//Caution
 	@border		:1px solid #c5c5c5;
 	@border-a	:1px solid #444;
 	@bgcolor	:#ebebeb;
@@ -425,16 +441,17 @@
 	@color		:#717b85;
 	@color-a	:#888;
 	@color-b	:#fff;
-	@border 	:1px solid #b6b6b6;
+	@border 	:1px solid #e6e6e6;
 	@border-a	:1px solid #b9babc;
 	@border-b	:1px solid #d8d9db;	
 	@bgcolor   	:#fff;
-	@bgcolor-a	:#fdfdfd;
+	@bgcolor-a	:#e6e6e6;
 	@bgcolor-b	:#e8e8e8;
 	@bgcolor-c	:#fff;
 	@bgcolor-d	:#d7dde3;
-	@bgcolor-e	:#5ea3db;	
-	@radius		:4px;
+	@bgcolor-e	:#00bc9c;	
+	@bgcolor-f	:#bbb;		
+	@radius		:2px;
 
 }
 

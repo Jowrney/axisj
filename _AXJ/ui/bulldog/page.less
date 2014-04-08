@@ -10,6 +10,7 @@
 
 // Common /////////////////////////////////////////////////////////////
 html, body	{
+	font-family: @font-family;
 	margin:0; padding:0; 
 	height:100%; 
 	color:@color; background: @bgcolor; 
@@ -59,16 +60,17 @@ html, body	{
 			.ax-unit{
 				background:@bgcolor-a; margin:0px;
 				.navMenu{
-					margin-bottom:1px; height:40px; overflow: hidden; 
+					height:40px; overflow: hidden; 
+					border-bottom:@border;
 					h3 {
 						float:left; margin: 0px; padding:0px; line-height: 40px; font-size:12px; font-weight: normal;
-						border-right:1px solid @bgcolor; background: @bgcolor-c; color:@bgcolor;
+						border-right:@border; background: @bgcolor-c; color:@bgcolor;
 					}
 					ul{
 					
 						list-style: none; margin:0px; padding:0px;
 						li{
-							float:left; border-right:1px solid @bgcolor;
+							float:left; border-right:@border;
 							a{
 								font-size:13px; display: block; line-height: 40px; 
 								padding:0px 10px; background: @bgcolor-a; 
@@ -76,9 +78,11 @@ html, body	{
 									font-size:10px; margin:0px 2px;
 								}
 								&:hover{
+									color:@color-c;
 									background: @bgcolor-b;
 								}
 								&.on{
+									color:@color-c;								
 									background: @bgcolor-b;
 								}
 							}
@@ -87,12 +91,42 @@ html, body	{
 				}	
 			}	
 		}
-		
 		.ax-layer-2{
 			.ax-unit{
 				margin:0px;
+				.themeInfo{
+					background: @bgcolor-d;
+					height:70px;
+					.logo{
+						overflow: hidden;						
+						position: absolute; 
+						top:5px; left:5px;
+						width:60px; height:60px; 
+						background: #eaeaea;
+						border-radius: 30px;
+					}
+ 					h1{
+ 						position: absolute; margin-left:80px; font-size:14px; margin-top:16px; font-weight: bold;
+	 					color:@color;
+ 					}
+					h2{position: absolute; margin-left:80px; font-size:11px; margin-top:38px; font-weight: normal;
+						color:@color;
+						a{
+							color:@link;
+							&:hover{
+								color:@link-hover;
+								text-decoration: underline;
+							}
+						}
+					}					
+				}
+			}
+		}
+		.ax-layer-3{
+			.ax-unit{
+				margin:0px;
 				.AXdemoPageTabTarget{
-					background:#d4d4d4; 
+					background:@bgcolor-d; 
 				}
 			}
 			
@@ -117,6 +151,7 @@ html, body	{
 						margin: 4px; padding:0px; height:40px; line-height: 40px; 
 					}
 					ul{
+						font-size:14px;
 						margin:10px; padding:0px; list-style-position: inside;
 						li{
 							line-height: 180%;
@@ -167,14 +202,15 @@ html, body	{
 				background:@bgcolor-a; margin:0px;
 				.navTheme{
 					height:30px; overflow: hidden;
+					border-top:@border;
 					h3 {
 						float:left; margin: 0px; padding:0px; line-height: 30px; font-size:12px; font-weight: normal;
-						padding:0 20px; border-right:1px solid @bgcolor; background: @bgcolor-c; color:@bgcolor;
+						padding:0 20px; border-right:@border; background: @bgcolor-c; color:@bgcolor;
 					}
 					ul{
 						list-style: none; margin:0px; padding:0px;
 						li{
-							float:left; border-right:1px solid @bgcolor;
+							float:left; border-right:@border;
 							a{
 								font-size:13px; display: block; line-height: 30px;
 								padding:0px 10px; background: @bgcolor-a; 
@@ -182,9 +218,11 @@ html, body	{
 									font-size:10px; margin:0px 2px;
 								}
 								&:hover{
+									color:@color-c;								
 									background: @bgcolor-b;
 								}
 								&.on{
+									color:@color-c;								
 									background: @bgcolor-b;
 								}
 							}

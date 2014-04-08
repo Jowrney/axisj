@@ -26,17 +26,20 @@
 		position:relative;
 		padding:5px 0px;
 		.AXprogressContainer{
+			background: @bgcolor;
 			.AXprogressBar{
 				position:relative;
 				height:14px;
 				border:@border;
-				background:url('images/dx-progress-bar.png') repeat-x !important;
-				border-radius:@radius;		 
+				background: @bgcolor-a;
+				//background:url('images/dx-progress-bar.png') repeat-x !important;
+				//border-radius:@radius;		 
 			}
 			.AXprogressLoadedText{
-				position:absolute;left:0px;top:20px;
-				color:@color;text-shadow:0px 1px 0px #fff;
+				position:absolute;left:0px;top:0px;
+				color:@color-a;
 				font-size:11px;font-family:@font-family;
+				line-height: 24px; text-indent: 10px;
 				white-space:nowrap;
 				span{
 					padding-left:5px;font-size:10px;

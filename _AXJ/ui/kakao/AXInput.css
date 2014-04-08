@@ -231,10 +231,10 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    background: url('images/dx-default-regular.png') repeat-x;
+    background: #b3b5b7;
     border: 1px solid #b9babc;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     overflow: hidden;
   }
   .AXanchorNumberContainer .AXanchorIncrease {
@@ -246,7 +246,7 @@
     height: 18px;
     overflow: hidden;
     text-indent: -2000px;
-    border-bottom: 1px solid #b9babc;
+    border-bottom: 1px solid #cccccc;
   }
   .AXanchorNumberContainer .AXanchorIncrease:active {
     background-image: url('images/dx-up-arrow-on.png');
@@ -260,7 +260,7 @@
     height: 18px;
     overflow: hidden;
     text-indent: -2000px;
-    border-top: 1px solid #b9babc;
+    border-top: 1px solid #cccccc;
   }
   .AXanchorNumberContainer .AXanchorDecrease:active {
     background-image: url('images/dx-down-arrow-on.png');
@@ -270,7 +270,8 @@
     width: 18px;
     height: 18px;
     background: url('images/dx-default-regular.png') repeat-x;
-    border: 1px solid #b9babc;
+    background: #b9b9b9;
+    border: 1px solid #b9b9b9;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
@@ -290,7 +291,8 @@
     width: 18px;
     height: 18px;
     background: url('images/dx-default-regular.png') repeat-x;
-    border: 1px solid #b9babc;
+    background: #b9b9b9;
+    border: 1px solid #b9b9b9;
   }
   .AXanchorSelectorFinderContainer .AXanchorSelectorFinder {
     position: absolute;
@@ -556,27 +558,27 @@
     float: left;
     padding: 0px 0px;
     margin: 0px;
-    border-top: 1px solid #b9babc;
-    border-left: 1px solid #b9babc;
-    border-bottom: 1px solid #b9babc;
+    border-top: 1px solid #cecece;
+    border-left: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
     font-size: 12px;
-    color: #6e7a86;
+    color: #523636;
     text-align: center;
     text-decoration: none;
-    background: #e8e8e8;
-    background: -webkit-linear-gradient(#ffffff, #e8e8e8);
+    background: #f7f7f7;
+    background: -webkit-linear-gradient(#f7f7f7, #f7f7f7);
     /* For Safari */
   
-    background: -o-linear-gradient(#ffffff, #e8e8e8);
+    background: -o-linear-gradient(#f7f7f7, #f7f7f7);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#ffffff, #e8e8e8);
+    background: -moz-linear-gradient(#f7f7f7, #f7f7f7);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#ffffff, #e8e8e8);
+    background: linear-gradient(#f7f7f7, #f7f7f7);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#e8e8e8);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f7f7f7, endColorstr=#f7f7f7);
     /*For IE7-8-9*/
     white-space: nowrap;
     overflow: hidden;
@@ -584,50 +586,48 @@
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle:hover,
   .AXanchorSegmentBox .AXanchorSegmentHandle:focus {
-    background: #e5eff2;
-    background: -webkit-linear-gradient(#c7cfd4, #e5eff2);
+    background: #fee834;
+    background: -webkit-linear-gradient(#fee834, #fee834);
     /* For Safari */
   
-    background: -o-linear-gradient(#c7cfd4, #e5eff2);
+    background: -o-linear-gradient(#fee834, #fee834);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#c7cfd4, #e5eff2);
+    background: -moz-linear-gradient(#fee834, #fee834);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#c7cfd4, #e5eff2);
+    background: linear-gradient(#fee834, #fee834);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c7cfd4, endColorstr=#e5eff2);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#fee834, endColorstr=#fee834);
     /*For IE7-8-9*/
-    text-shadow: 0px 1px #fff;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.segmentLeft {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.segmentRight {
-    border-right: 1px solid #b9babc;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-right: 1px solid #cecece;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.on {
-    background: #b9babc;
-    background: -webkit-linear-gradient(#7c7e83, #b9babc);
+    background: #cecece;
+    background: -webkit-linear-gradient(#cecece, #cecece);
     /* For Safari */
   
-    background: -o-linear-gradient(#7c7e83, #b9babc);
+    background: -o-linear-gradient(#cecece, #cecece);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#7c7e83, #b9babc);
+    background: -moz-linear-gradient(#cecece, #cecece);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#7c7e83, #b9babc);
+    background: linear-gradient(#cecece, #cecece);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#7c7e83, endColorstr=#b9babc);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#cecece, endColorstr=#cecece);
     /*For IE7-8-9*/
     color: #ffffff;
-    text-shadow: 0px 1px #4e585f;
   }
   .AXanchorDateHandle {
     position: absolute;
@@ -643,8 +643,8 @@
     left: 0px;
     top: 0px;
     padding: 5px;
-    background: url('images/dx-calendar-box-bg.png');
-    border: 1px solid #c1c1c1;
+    background: #ffffff;
+    border: 1px solid #cecece;
     border-radius: 5px;
     box-shadow: 0px 1px 3px #ccc;
   }
@@ -652,22 +652,23 @@
     position: relative;
     width: 181px;
     height: 26px;
-    background: #000000;
-    background: -webkit-linear-gradient(#ffffff, #000000);
+    background: #f3df01;
+    background: -webkit-linear-gradient(#ffea00, #f3df01);
     /* For Safari */
   
-    background: -o-linear-gradient(#ffffff, #000000);
+    background: -o-linear-gradient(#ffea00, #f3df01);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#ffffff, #000000);
+    background: -moz-linear-gradient(#ffea00, #f3df01);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#ffffff, #000000);
+    background: linear-gradient(#ffea00, #f3df01);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffea00, endColorstr=#f3df01);
     /*For IE7-8-9*/
-    border: 1px solid #7f8d9c;
+    border: none;
+    color: #523636;
   }
   .AXbindDateExpandBox .dateControlBox .prevbutton {
     position: absolute;
@@ -702,26 +703,23 @@
     left: 55px;
     top: 0px;
     text-decoration: none;
-    color: #ffffff;
+    color: #523636;
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindDateExpandBox .dateControlBox .monthbutton {
     position: absolute;
     left: 100px;
     top: 0px;
     text-decoration: none;
-    color: #ffffff;
+    color: #523636;
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindDateExpandBox .dateDisplayBox {
-    background: #ffffff;
-    border: 1px solid #b9babc;
+    border: none;
     border-top: 0px none;
     width: 181px;
   }
@@ -734,8 +732,8 @@
     left: 0px;
     top: 0px;
     padding: 5px;
-    background: #eee;
-    border: 1px solid #c1c1c1;
+    background: #ffffff;
+    border: 1px solid #cecece;
     border-radius: 5px;
     box-shadow: 0px 1px 3px #ccc;
   }
@@ -743,7 +741,7 @@
     position: relative;
     height: 26px;
     background: #ffea00;
-    border: 1px solid #7f8d9c;
+    border: none;
     width: 181px;
   }
   .AXbindTwinDateExpandBox .dateControlBox .prevbutton {
@@ -779,26 +777,24 @@
     left: 55px;
     top: 0px;
     text-decoration: none;
-    color: #ffffff;
+    color: #523636;
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindTwinDateExpandBox .dateControlBox .monthbutton {
     position: absolute;
     left: 100px;
     top: 0px;
     text-decoration: none;
-    color: #ffffff;
+    color: #523636;
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindTwinDateExpandBox .dateDisplayBox {
     background: #ffffff;
-    border: 1px solid #b9babc;
+    border: none;
     border-top: 0px none;
     width: 181px;
   }
@@ -807,11 +803,11 @@
     height: 120px;
   }
   .AXbindTwinDateExpandBox .dateTypeName {
+    font-size: 12px;
     height: 22px;
     line-height: 21px;
     text-align: center;
     color: #828f9e;
-    text-shadow: 0px 1px #fff;
     font-family: Arial;
   }
 }
@@ -1038,10 +1034,10 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    background: url('images/dx-default-regular.png') repeat-x;
+    background: #b3b5b7;
     border: 1px solid #b9babc;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     overflow: hidden;
   }
   .AXanchorNumberContainer .AXanchorIncrease {
@@ -1053,7 +1049,7 @@
     height: 18px;
     overflow: hidden;
     text-indent: -2000px;
-    border-bottom: 1px solid #b9babc;
+    border-bottom: 1px solid #cccccc;
   }
   .AXanchorNumberContainer .AXanchorIncrease:active {
     background-image: url('images/dx-up-arrow-on.png');
@@ -1067,7 +1063,7 @@
     height: 18px;
     overflow: hidden;
     text-indent: -2000px;
-    border-top: 1px solid #b9babc;
+    border-top: 1px solid #cccccc;
   }
   .AXanchorNumberContainer .AXanchorDecrease:active {
     background-image: url('images/dx-down-arrow-on.png');
@@ -1077,7 +1073,8 @@
     width: 18px;
     height: 18px;
     background: url('images/dx-default-regular.png') repeat-x;
-    border: 1px solid #b9babc;
+    background: #b9b9b9;
+    border: 1px solid #b9b9b9;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
@@ -1097,7 +1094,8 @@
     width: 18px;
     height: 18px;
     background: url('images/dx-default-regular.png') repeat-x;
-    border: 1px solid #b9babc;
+    background: #b9b9b9;
+    border: 1px solid #b9b9b9;
   }
   .AXanchorSelectorFinderContainer .AXanchorSelectorFinder {
     position: absolute;
@@ -1363,27 +1361,27 @@
     float: left;
     padding: 0px 0px;
     margin: 0px;
-    border-top: 1px solid #b9babc;
-    border-left: 1px solid #b9babc;
-    border-bottom: 1px solid #b9babc;
+    border-top: 1px solid #cecece;
+    border-left: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
     font-size: 12px;
-    color: #6e7a86;
+    color: #523636;
     text-align: center;
     text-decoration: none;
-    background: #e8e8e8;
-    background: -webkit-linear-gradient(#ffffff, #e8e8e8);
+    background: #f7f7f7;
+    background: -webkit-linear-gradient(#f7f7f7, #f7f7f7);
     /* For Safari */
   
-    background: -o-linear-gradient(#ffffff, #e8e8e8);
+    background: -o-linear-gradient(#f7f7f7, #f7f7f7);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#ffffff, #e8e8e8);
+    background: -moz-linear-gradient(#f7f7f7, #f7f7f7);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#ffffff, #e8e8e8);
+    background: linear-gradient(#f7f7f7, #f7f7f7);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#e8e8e8);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f7f7f7, endColorstr=#f7f7f7);
     /*For IE7-8-9*/
     white-space: nowrap;
     overflow: hidden;
@@ -1391,50 +1389,48 @@
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle:hover,
   .AXanchorSegmentBox .AXanchorSegmentHandle:focus {
-    background: #e5eff2;
-    background: -webkit-linear-gradient(#c7cfd4, #e5eff2);
+    background: #fee834;
+    background: -webkit-linear-gradient(#fee834, #fee834);
     /* For Safari */
   
-    background: -o-linear-gradient(#c7cfd4, #e5eff2);
+    background: -o-linear-gradient(#fee834, #fee834);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#c7cfd4, #e5eff2);
+    background: -moz-linear-gradient(#fee834, #fee834);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#c7cfd4, #e5eff2);
+    background: linear-gradient(#fee834, #fee834);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c7cfd4, endColorstr=#e5eff2);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#fee834, endColorstr=#fee834);
     /*For IE7-8-9*/
-    text-shadow: 0px 1px #fff;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.segmentLeft {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.segmentRight {
-    border-right: 1px solid #b9babc;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-right: 1px solid #cecece;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.on {
-    background: #b9babc;
-    background: -webkit-linear-gradient(#7c7e83, #b9babc);
+    background: #cecece;
+    background: -webkit-linear-gradient(#cecece, #cecece);
     /* For Safari */
   
-    background: -o-linear-gradient(#7c7e83, #b9babc);
+    background: -o-linear-gradient(#cecece, #cecece);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#7c7e83, #b9babc);
+    background: -moz-linear-gradient(#cecece, #cecece);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#7c7e83, #b9babc);
+    background: linear-gradient(#cecece, #cecece);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#7c7e83, endColorstr=#b9babc);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#cecece, endColorstr=#cecece);
     /*For IE7-8-9*/
     color: #ffffff;
-    text-shadow: 0px 1px #4e585f;
   }
   .AXanchorDateHandle {
     position: absolute;
@@ -1450,8 +1446,8 @@
     left: 0px;
     top: 0px;
     padding: 5px;
-    background: url('images/dx-calendar-box-bg.png');
-    border: 1px solid #c1c1c1;
+    background: #ffffff;
+    border: 1px solid #cecece;
     border-radius: 5px;
     box-shadow: 0px 1px 3px #ccc;
   }
@@ -1459,22 +1455,23 @@
     position: relative;
     width: 181px;
     height: 26px;
-    background: #000000;
-    background: -webkit-linear-gradient(#ffffff, #000000);
+    background: #f3df01;
+    background: -webkit-linear-gradient(#ffea00, #f3df01);
     /* For Safari */
   
-    background: -o-linear-gradient(#ffffff, #000000);
+    background: -o-linear-gradient(#ffea00, #f3df01);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#ffffff, #000000);
+    background: -moz-linear-gradient(#ffea00, #f3df01);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#ffffff, #000000);
+    background: linear-gradient(#ffea00, #f3df01);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffea00, endColorstr=#f3df01);
     /*For IE7-8-9*/
-    border: 1px solid #7f8d9c;
+    border: none;
+    color: #523636;
   }
   .AXbindDateExpandBox .dateControlBox .prevbutton {
     position: absolute;
@@ -1509,26 +1506,23 @@
     left: 55px;
     top: 0px;
     text-decoration: none;
-    color: #ffffff;
+    color: #523636;
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindDateExpandBox .dateControlBox .monthbutton {
     position: absolute;
     left: 100px;
     top: 0px;
     text-decoration: none;
-    color: #ffffff;
+    color: #523636;
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindDateExpandBox .dateDisplayBox {
-    background: #ffffff;
-    border: 1px solid #b9babc;
+    border: none;
     border-top: 0px none;
     width: 181px;
   }
@@ -1541,8 +1535,8 @@
     left: 0px;
     top: 0px;
     padding: 5px;
-    background: #eee;
-    border: 1px solid #c1c1c1;
+    background: #ffffff;
+    border: 1px solid #cecece;
     border-radius: 5px;
     box-shadow: 0px 1px 3px #ccc;
   }
@@ -1550,7 +1544,7 @@
     position: relative;
     height: 26px;
     background: #ffea00;
-    border: 1px solid #7f8d9c;
+    border: none;
     width: 181px;
   }
   .AXbindTwinDateExpandBox .dateControlBox .prevbutton {
@@ -1586,26 +1580,24 @@
     left: 55px;
     top: 0px;
     text-decoration: none;
-    color: #ffffff;
+    color: #523636;
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindTwinDateExpandBox .dateControlBox .monthbutton {
     position: absolute;
     left: 100px;
     top: 0px;
     text-decoration: none;
-    color: #ffffff;
+    color: #523636;
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindTwinDateExpandBox .dateDisplayBox {
     background: #ffffff;
-    border: 1px solid #b9babc;
+    border: none;
     border-top: 0px none;
     width: 181px;
   }
@@ -1614,11 +1606,11 @@
     height: 120px;
   }
   .AXbindTwinDateExpandBox .dateTypeName {
+    font-size: 12px;
     height: 22px;
     line-height: 21px;
     text-align: center;
     color: #828f9e;
-    text-shadow: 0px 1px #fff;
     font-family: Arial;
   }
 }
@@ -1845,10 +1837,10 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    background: url('images/dx-default-regular.png') repeat-x;
+    background: #b3b5b7;
     border: 1px solid #b9babc;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     overflow: hidden;
   }
   .AXanchorNumberContainer .AXanchorIncrease {
@@ -1860,7 +1852,7 @@
     height: 18px;
     overflow: hidden;
     text-indent: -2000px;
-    border-bottom: 1px solid #b9babc;
+    border-bottom: 1px solid #cccccc;
   }
   .AXanchorNumberContainer .AXanchorIncrease:active {
     background-image: url('images/dx-up-arrow-on.png');
@@ -1874,7 +1866,7 @@
     height: 18px;
     overflow: hidden;
     text-indent: -2000px;
-    border-top: 1px solid #b9babc;
+    border-top: 1px solid #cccccc;
   }
   .AXanchorNumberContainer .AXanchorDecrease:active {
     background-image: url('images/dx-down-arrow-on.png');
@@ -1884,7 +1876,8 @@
     width: 18px;
     height: 18px;
     background: url('images/dx-default-regular.png') repeat-x;
-    border: 1px solid #b9babc;
+    background: #b9b9b9;
+    border: 1px solid #b9b9b9;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
@@ -1904,7 +1897,8 @@
     width: 18px;
     height: 18px;
     background: url('images/dx-default-regular.png') repeat-x;
-    border: 1px solid #b9babc;
+    background: #b9b9b9;
+    border: 1px solid #b9b9b9;
   }
   .AXanchorSelectorFinderContainer .AXanchorSelectorFinder {
     position: absolute;
@@ -2170,27 +2164,27 @@
     float: left;
     padding: 0px 0px;
     margin: 0px;
-    border-top: 1px solid #b9babc;
-    border-left: 1px solid #b9babc;
-    border-bottom: 1px solid #b9babc;
+    border-top: 1px solid #cecece;
+    border-left: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
     font-size: 12px;
-    color: #6e7a86;
+    color: #523636;
     text-align: center;
     text-decoration: none;
-    background: #e8e8e8;
-    background: -webkit-linear-gradient(#ffffff, #e8e8e8);
+    background: #f7f7f7;
+    background: -webkit-linear-gradient(#f7f7f7, #f7f7f7);
     /* For Safari */
   
-    background: -o-linear-gradient(#ffffff, #e8e8e8);
+    background: -o-linear-gradient(#f7f7f7, #f7f7f7);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#ffffff, #e8e8e8);
+    background: -moz-linear-gradient(#f7f7f7, #f7f7f7);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#ffffff, #e8e8e8);
+    background: linear-gradient(#f7f7f7, #f7f7f7);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#e8e8e8);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f7f7f7, endColorstr=#f7f7f7);
     /*For IE7-8-9*/
     white-space: nowrap;
     overflow: hidden;
@@ -2198,50 +2192,48 @@
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle:hover,
   .AXanchorSegmentBox .AXanchorSegmentHandle:focus {
-    background: #e5eff2;
-    background: -webkit-linear-gradient(#c7cfd4, #e5eff2);
+    background: #fee834;
+    background: -webkit-linear-gradient(#fee834, #fee834);
     /* For Safari */
   
-    background: -o-linear-gradient(#c7cfd4, #e5eff2);
+    background: -o-linear-gradient(#fee834, #fee834);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#c7cfd4, #e5eff2);
+    background: -moz-linear-gradient(#fee834, #fee834);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#c7cfd4, #e5eff2);
+    background: linear-gradient(#fee834, #fee834);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c7cfd4, endColorstr=#e5eff2);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#fee834, endColorstr=#fee834);
     /*For IE7-8-9*/
-    text-shadow: 0px 1px #fff;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.segmentLeft {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.segmentRight {
-    border-right: 1px solid #b9babc;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-right: 1px solid #cecece;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.on {
-    background: #b9babc;
-    background: -webkit-linear-gradient(#7c7e83, #b9babc);
+    background: #cecece;
+    background: -webkit-linear-gradient(#cecece, #cecece);
     /* For Safari */
   
-    background: -o-linear-gradient(#7c7e83, #b9babc);
+    background: -o-linear-gradient(#cecece, #cecece);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#7c7e83, #b9babc);
+    background: -moz-linear-gradient(#cecece, #cecece);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#7c7e83, #b9babc);
+    background: linear-gradient(#cecece, #cecece);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#7c7e83, endColorstr=#b9babc);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#cecece, endColorstr=#cecece);
     /*For IE7-8-9*/
     color: #ffffff;
-    text-shadow: 0px 1px #4e585f;
   }
   .AXanchorDateHandle {
     position: absolute;
@@ -2257,8 +2249,8 @@
     left: 0px;
     top: 0px;
     padding: 5px;
-    background: url('images/dx-calendar-box-bg.png');
-    border: 1px solid #c1c1c1;
+    background: #ffffff;
+    border: 1px solid #cecece;
     border-radius: 5px;
     box-shadow: 0px 1px 3px #ccc;
   }
@@ -2266,22 +2258,23 @@
     position: relative;
     width: 181px;
     height: 26px;
-    background: #000000;
-    background: -webkit-linear-gradient(#ffffff, #000000);
+    background: #f3df01;
+    background: -webkit-linear-gradient(#ffea00, #f3df01);
     /* For Safari */
   
-    background: -o-linear-gradient(#ffffff, #000000);
+    background: -o-linear-gradient(#ffea00, #f3df01);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#ffffff, #000000);
+    background: -moz-linear-gradient(#ffea00, #f3df01);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#ffffff, #000000);
+    background: linear-gradient(#ffea00, #f3df01);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffea00, endColorstr=#f3df01);
     /*For IE7-8-9*/
-    border: 1px solid #7f8d9c;
+    border: none;
+    color: #523636;
   }
   .AXbindDateExpandBox .dateControlBox .prevbutton {
     position: absolute;
@@ -2316,26 +2309,23 @@
     left: 55px;
     top: 0px;
     text-decoration: none;
-    color: #ffffff;
+    color: #523636;
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindDateExpandBox .dateControlBox .monthbutton {
     position: absolute;
     left: 100px;
     top: 0px;
     text-decoration: none;
-    color: #ffffff;
+    color: #523636;
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindDateExpandBox .dateDisplayBox {
-    background: #ffffff;
-    border: 1px solid #b9babc;
+    border: none;
     border-top: 0px none;
     width: 181px;
   }
@@ -2348,8 +2338,8 @@
     left: 0px;
     top: 0px;
     padding: 5px;
-    background: #eee;
-    border: 1px solid #c1c1c1;
+    background: #ffffff;
+    border: 1px solid #cecece;
     border-radius: 5px;
     box-shadow: 0px 1px 3px #ccc;
   }
@@ -2357,7 +2347,7 @@
     position: relative;
     height: 26px;
     background: #ffea00;
-    border: 1px solid #7f8d9c;
+    border: none;
     width: 181px;
   }
   .AXbindTwinDateExpandBox .dateControlBox .prevbutton {
@@ -2393,26 +2383,24 @@
     left: 55px;
     top: 0px;
     text-decoration: none;
-    color: #ffffff;
+    color: #523636;
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindTwinDateExpandBox .dateControlBox .monthbutton {
     position: absolute;
     left: 100px;
     top: 0px;
     text-decoration: none;
-    color: #ffffff;
+    color: #523636;
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindTwinDateExpandBox .dateDisplayBox {
     background: #ffffff;
-    border: 1px solid #b9babc;
+    border: none;
     border-top: 0px none;
     width: 181px;
   }
@@ -2421,11 +2409,11 @@
     height: 120px;
   }
   .AXbindTwinDateExpandBox .dateTypeName {
+    font-size: 12px;
     height: 22px;
     line-height: 21px;
     text-align: center;
     color: #828f9e;
-    text-shadow: 0px 1px #fff;
     font-family: Arial;
   }
 }
@@ -2652,10 +2640,10 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    background: url('images/dx-default-regular.png') repeat-x;
+    background: #b3b5b7;
     border: 1px solid #b9babc;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     overflow: hidden;
   }
   .AXanchorNumberContainer .AXanchorIncrease {
@@ -2667,7 +2655,7 @@
     height: 18px;
     overflow: hidden;
     text-indent: -2000px;
-    border-bottom: 1px solid #b9babc;
+    border-bottom: 1px solid #cccccc;
   }
   .AXanchorNumberContainer .AXanchorIncrease:active {
     background-image: url('images/dx-up-arrow-on.png');
@@ -2681,7 +2669,7 @@
     height: 18px;
     overflow: hidden;
     text-indent: -2000px;
-    border-top: 1px solid #b9babc;
+    border-top: 1px solid #cccccc;
   }
   .AXanchorNumberContainer .AXanchorDecrease:active {
     background-image: url('images/dx-down-arrow-on.png');
@@ -2691,7 +2679,8 @@
     width: 18px;
     height: 18px;
     background: url('images/dx-default-regular.png') repeat-x;
-    border: 1px solid #b9babc;
+    background: #b9b9b9;
+    border: 1px solid #b9b9b9;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
@@ -2711,7 +2700,8 @@
     width: 18px;
     height: 18px;
     background: url('images/dx-default-regular.png') repeat-x;
-    border: 1px solid #b9babc;
+    background: #b9b9b9;
+    border: 1px solid #b9b9b9;
   }
   .AXanchorSelectorFinderContainer .AXanchorSelectorFinder {
     position: absolute;
@@ -2977,27 +2967,27 @@
     float: left;
     padding: 0px 0px;
     margin: 0px;
-    border-top: 1px solid #b9babc;
-    border-left: 1px solid #b9babc;
-    border-bottom: 1px solid #b9babc;
+    border-top: 1px solid #cecece;
+    border-left: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
     font-size: 12px;
-    color: #6e7a86;
+    color: #523636;
     text-align: center;
     text-decoration: none;
-    background: #e8e8e8;
-    background: -webkit-linear-gradient(#ffffff, #e8e8e8);
+    background: #f7f7f7;
+    background: -webkit-linear-gradient(#f7f7f7, #f7f7f7);
     /* For Safari */
   
-    background: -o-linear-gradient(#ffffff, #e8e8e8);
+    background: -o-linear-gradient(#f7f7f7, #f7f7f7);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#ffffff, #e8e8e8);
+    background: -moz-linear-gradient(#f7f7f7, #f7f7f7);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#ffffff, #e8e8e8);
+    background: linear-gradient(#f7f7f7, #f7f7f7);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#e8e8e8);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f7f7f7, endColorstr=#f7f7f7);
     /*For IE7-8-9*/
     white-space: nowrap;
     overflow: hidden;
@@ -3005,50 +2995,48 @@
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle:hover,
   .AXanchorSegmentBox .AXanchorSegmentHandle:focus {
-    background: #e5eff2;
-    background: -webkit-linear-gradient(#c7cfd4, #e5eff2);
+    background: #fee834;
+    background: -webkit-linear-gradient(#fee834, #fee834);
     /* For Safari */
   
-    background: -o-linear-gradient(#c7cfd4, #e5eff2);
+    background: -o-linear-gradient(#fee834, #fee834);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#c7cfd4, #e5eff2);
+    background: -moz-linear-gradient(#fee834, #fee834);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#c7cfd4, #e5eff2);
+    background: linear-gradient(#fee834, #fee834);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c7cfd4, endColorstr=#e5eff2);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#fee834, endColorstr=#fee834);
     /*For IE7-8-9*/
-    text-shadow: 0px 1px #fff;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.segmentLeft {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.segmentRight {
-    border-right: 1px solid #b9babc;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-right: 1px solid #cecece;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.on {
-    background: #b9babc;
-    background: -webkit-linear-gradient(#7c7e83, #b9babc);
+    background: #cecece;
+    background: -webkit-linear-gradient(#cecece, #cecece);
     /* For Safari */
   
-    background: -o-linear-gradient(#7c7e83, #b9babc);
+    background: -o-linear-gradient(#cecece, #cecece);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#7c7e83, #b9babc);
+    background: -moz-linear-gradient(#cecece, #cecece);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#7c7e83, #b9babc);
+    background: linear-gradient(#cecece, #cecece);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#7c7e83, endColorstr=#b9babc);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#cecece, endColorstr=#cecece);
     /*For IE7-8-9*/
     color: #ffffff;
-    text-shadow: 0px 1px #4e585f;
   }
   .AXanchorDateHandle {
     position: absolute;
@@ -3064,8 +3052,8 @@
     left: 0px;
     top: 0px;
     padding: 5px;
-    background: url('images/dx-calendar-box-bg.png');
-    border: 1px solid #c1c1c1;
+    background: #ffffff;
+    border: 1px solid #cecece;
     border-radius: 5px;
     box-shadow: 0px 1px 3px #ccc;
   }
@@ -3073,22 +3061,23 @@
     position: relative;
     width: 181px;
     height: 26px;
-    background: #000000;
-    background: -webkit-linear-gradient(#ffffff, #000000);
+    background: #f3df01;
+    background: -webkit-linear-gradient(#ffea00, #f3df01);
     /* For Safari */
   
-    background: -o-linear-gradient(#ffffff, #000000);
+    background: -o-linear-gradient(#ffea00, #f3df01);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#ffffff, #000000);
+    background: -moz-linear-gradient(#ffea00, #f3df01);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#ffffff, #000000);
+    background: linear-gradient(#ffea00, #f3df01);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#000000);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffea00, endColorstr=#f3df01);
     /*For IE7-8-9*/
-    border: 1px solid #7f8d9c;
+    border: none;
+    color: #523636;
   }
   .AXbindDateExpandBox .dateControlBox .prevbutton {
     position: absolute;
@@ -3123,26 +3112,23 @@
     left: 55px;
     top: 0px;
     text-decoration: none;
-    color: #ffffff;
+    color: #523636;
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindDateExpandBox .dateControlBox .monthbutton {
     position: absolute;
     left: 100px;
     top: 0px;
     text-decoration: none;
-    color: #ffffff;
+    color: #523636;
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindDateExpandBox .dateDisplayBox {
-    background: #ffffff;
-    border: 1px solid #b9babc;
+    border: none;
     border-top: 0px none;
     width: 181px;
   }
@@ -3155,8 +3141,8 @@
     left: 0px;
     top: 0px;
     padding: 5px;
-    background: #eee;
-    border: 1px solid #c1c1c1;
+    background: #ffffff;
+    border: 1px solid #cecece;
     border-radius: 5px;
     box-shadow: 0px 1px 3px #ccc;
   }
@@ -3164,7 +3150,7 @@
     position: relative;
     height: 26px;
     background: #ffea00;
-    border: 1px solid #7f8d9c;
+    border: none;
     width: 181px;
   }
   .AXbindTwinDateExpandBox .dateControlBox .prevbutton {
@@ -3200,26 +3186,24 @@
     left: 55px;
     top: 0px;
     text-decoration: none;
-    color: #ffffff;
+    color: #523636;
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindTwinDateExpandBox .dateControlBox .monthbutton {
     position: absolute;
     left: 100px;
     top: 0px;
     text-decoration: none;
-    color: #ffffff;
+    color: #523636;
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindTwinDateExpandBox .dateDisplayBox {
     background: #ffffff;
-    border: 1px solid #b9babc;
+    border: none;
     border-top: 0px none;
     width: 181px;
   }
@@ -3228,11 +3212,11 @@
     height: 120px;
   }
   .AXbindTwinDateExpandBox .dateTypeName {
+    font-size: 12px;
     height: 22px;
     line-height: 21px;
     text-align: center;
     color: #828f9e;
-    text-shadow: 0px 1px #fff;
     font-family: Arial;
   }
 }

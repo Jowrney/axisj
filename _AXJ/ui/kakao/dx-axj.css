@@ -274,21 +274,18 @@
 .AXNotification {
   width: 300px;
   border: 1px solid #c5c5c5;
-  background: #ebebeb;
+  background: #ffffff;
   padding: 10px;
   margin: 10px 0px;
   box-shadow: 0px 0px 5px #b2b2b2;
   font-size: 12px;
-  color: 4px;
+  color: #525252;
   -moz-opacity: 0.8;
   opacity: 0.8;
   filter: alpha(opacity=20);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px 5px 5px 5px;
-  -moz-border-radius: 4px 5px 5px 5px;
-  border-radius: 4px 5px 5px 5px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
 }
 .AXNotification.Warning .AXNotificationIcon {
   width: 42px;
@@ -296,7 +293,7 @@
   background: url('images/dx-noti-warning.png') no-repeat center center !important;
 }
 .AXNotification.Warning .AXNotificationBody B {
-  color: #bf601b;
+  color: #c8b518;
 }
 .AXNotification.Caution .AXNotificationIcon {
   width: 42px;
@@ -304,27 +301,26 @@
   background: url('images/dx-noti-caution.png') no-repeat center center !important;
 }
 .AXNotification.Caution .AXNotificationBody B {
-  color: #7e302c;
+  color: #fc5c4f;
 }
 .AXNotification .AXNotificationHead {
   font-weight: bold;
-  color: #717b85;
-  text-shadow: 0px 1px #fff;
+  color: #493334;
   padding: 5px 15px;
   height: 20px;
   line-height: 20px;
-  background: #ffffff url('images/dx-dialog-title.png') repeat-x;
+  background-color: #fee834;
   text-align: center;
 }
 .AXNotification .AXNotificationTable {
   width: 100%;
   border: 0px none !important;
-  background: #ebebeb;
+  background: #ffffff;
 }
 .AXNotification .AXNotificationTable td,
 .AXNotification .AXNotificationTable th {
   border: 0px none !important;
-  background: #ebebeb;
+  background: #ffffff;
 }
 .AXNotification .AXNotificationIcon {
   width: 42px;
@@ -338,7 +334,7 @@
   line-height: 1.6em;
 }
 .AXNotification .AXNotificationBody B {
-  color: #477e47;
+  color: #493334;
 }
 .AXNotification .AXNotificationButton {
   width: 45px;
@@ -346,7 +342,7 @@
 .AXNotification .AXNotificationButtons {
   padding: 10px 0px;
   text-align: center;
-  background: #ebebeb;
+  background: #ffffff;
 }
 .AXNotificationTray {
   position: fixed;
@@ -365,7 +361,7 @@
 .AXNotificationTrayDialog .AXNotification {
   width: 340px;
   border: 1px solid #444444;
-  background: #ebebeb;
+  background: #ffffff;
   padding: 0px;
   margin: 0px 0px;
   box-shadow: 0px 0px 3px #888;
@@ -375,12 +371,9 @@
   -moz-opacity: 1;
   opacity: 1;
   filter: alpha(opacity=20);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px 5px 5px 5px;
-  -moz-border-radius: 4px 5px 5px 5px;
-  border-radius: 4px 5px 5px 5px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
 }
 .AXNotificationTrayDialog .AXNotification .AXNotificationCT {
   padding: 10px;
@@ -401,13 +394,12 @@
   padding: 0px;
   text-align: center;
   border-right: 1px solid #f2f2f3;
-  border-bottom: 1px solid #b9babc;
 }
 .AXCalendar table.calendarPage thead td.head_6 {
   border-right: 0px none;
 }
 .AXCalendar table.calendarPage thead td.dayofweek_0 {
-  color: #c78b82;
+  color: #ffea00;
 }
 .AXCalendar table.calendarPage thead td.dayofweek_1 {
   color: #7b7b7b;
@@ -432,45 +424,49 @@
   line-height: 25px;
   padding: 0px;
   text-align: center;
-  border-right: 1px solid #b9babc;
-  border-bottom: 1px solid #b9babc;
-  background: #000000;
-  background: -webkit-linear-gradient(#ffffff, #000000);
+  border-right: 1px solid #523636;
+  border-bottom: 1px solid #523636;
+  background: #523636;
+  background: -webkit-linear-gradient(#523636, #523636);
   /* For Safari */
 
-  background: -o-linear-gradient(#ffffff, #000000);
+  background: -o-linear-gradient(#523636, #523636);
   /* For Opera 11.1 to 12.0 */
 
-  background: -moz-linear-gradient(#ffffff, #000000);
+  background: -moz-linear-gradient(#523636, #523636);
   /* For Firefox 3.6 to 15 */
 
-  background: linear-gradient(#ffffff, #000000);
+  background: linear-gradient(#523636, #523636);
   /* Standard syntax */
 
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#000000);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#523636, endColorstr=#523636);
   /*For IE7-8-9*/
+}
+.AXCalendar table.calendarPage tbody td.bodyCol_0 {
+  background: #442a2a;
 }
 .AXCalendar table.calendarPage tbody td.bodyCol_6 {
   border-right: 0px none;
+  background: #442a2a;
 }
 .AXCalendar table.calendarPage tbody td.bodyRow_5 {
   border-bottom: 0px none;
 }
 .AXCalendar table.calendarPage tbody td.setDate {
-  background: #000000;
-  background: -webkit-linear-gradient(#ffffff, #000000);
+  background: #ff5b49;
+  background: -webkit-linear-gradient(#ff5b49, #ff5b49);
   /* For Safari */
 
-  background: -o-linear-gradient(#ffffff, #000000);
+  background: -o-linear-gradient(#ff5b49, #ff5b49);
   /* For Opera 11.1 to 12.0 */
 
-  background: -moz-linear-gradient(#ffffff, #000000);
+  background: -moz-linear-gradient(#ff5b49, #ff5b49);
   /* For Firefox 3.6 to 15 */
 
-  background: linear-gradient(#ffffff, #000000);
+  background: linear-gradient(#ff5b49, #ff5b49);
   /* Standard syntax */
 
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#000000);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ff5b49, endColorstr=#ff5b49);
   /*For IE7-8-9*/
 }
 .AXCalendar table.calendarPage tbody td A.calendarDate {
@@ -478,29 +474,36 @@
   height: 25px;
   line-height: 25px;
   text-decoration: none;
-  color: #6d6e71;
+  color: #f7f7f7;
   font-size: 11px;
   font-family: Arial;
   font-weight: bold;
 }
 .AXCalendar table.calendarPage tbody td A.calendarDate:hover {
-  background: #d8e1e7;
+  background: #60c3c0;
+  color: #523636;
 }
 .AXCalendar table.calendarPage tbody td A.calendarDate:active {
-  background: #5ea3db;
+  background: #60c3c0;
   color: #ffffff;
   box-shadow: inset 0px 0px 4px #3d84bc;
 }
 .AXCalendar table.calendarPage tbody td A.calendarDate.selected {
-  background: #5ea3db;
-  color: #ffffff;
+  background: #fee834;
+  color: #523636;
   box-shadow: inset 0px 0px 4px #3d84bc;
 }
 .AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate {
-  color: #c78b82;
+  color: #ffea00;
+}
+.AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate:hover {
+  color: #523636;
 }
 .AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate.notThisMonth {
-  color: #bfbfc1;
+  color: #795858;
+}
+.AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate.notThisMonth:hover {
+  background: #442a2a;
 }
 .AXCalendar table.calendarPageMonth {
   table-layout: fixed;
@@ -511,22 +514,22 @@
   line-height: 43px;
   padding: 0px;
   text-align: center;
-  border-right: 1px solid #b9babc;
-  border-bottom: 1px solid #b9babc;
-  background: #000000;
-  background: -webkit-linear-gradient(#ffffff, #000000);
+  border-right: 1px solid #523636;
+  border-bottom: 1px solid #523636;
+  background: #523636;
+  background: -webkit-linear-gradient(#523636, #523636);
   /* For Safari */
 
-  background: -o-linear-gradient(#ffffff, #000000);
+  background: -o-linear-gradient(#523636, #523636);
   /* For Opera 11.1 to 12.0 */
 
-  background: -moz-linear-gradient(#ffffff, #000000);
+  background: -moz-linear-gradient(#523636, #523636);
   /* For Firefox 3.6 to 15 */
 
-  background: linear-gradient(#ffffff, #000000);
+  background: linear-gradient(#523636, #523636);
   /* Standard syntax */
 
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#000000);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#523636, endColorstr=#523636);
   /*For IE7-8-9*/
 }
 .AXCalendar table.calendarPageMonth tbody td.bodyCol_2 {
@@ -537,29 +540,45 @@
   padding-bottom: 1px;
 }
 .AXCalendar table.calendarPageMonth tbody td.setDate {
-  background: #f3e2df;
+  color: #523636;
+  background: #ff5b49;
+  background: -webkit-linear-gradient(#ff5b49, #ff5b49);
+  /* For Safari */
+
+  background: -o-linear-gradient(#ff5b49, #ff5b49);
+  /* For Opera 11.1 to 12.0 */
+
+  background: -moz-linear-gradient(#ff5b49, #ff5b49);
+  /* For Firefox 3.6 to 15 */
+
+  background: linear-gradient(#ff5b49, #ff5b49);
+  /* Standard syntax */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ff5b49, endColorstr=#ff5b49);
+  /*For IE7-8-9*/
 }
 .AXCalendar table.calendarPageMonth tbody td A.calendarMonth {
   display: block;
   height: 43px;
   line-height: 43px;
   text-decoration: none;
-  color: #6d6e71;
+  color: #f7f7f7;
   font-size: 12px;
   font-family: Arial;
   font-weight: bold;
 }
 .AXCalendar table.calendarPageMonth tbody td A.calendarMonth:hover {
-  background: #d8e1e7;
+  background: #60c3c0;
+  color: #523636;
 }
 .AXCalendar table.calendarPageMonth tbody td A.calendarMonth:active {
-  background: #5ea3db;
+  background: #60c3c0;
   color: #ffffff;
   box-shadow: inset 0px 0px 5px #3d84bc;
 }
 .AXCalendar table.calendarPageMonth tbody td A.calendarMonth.selected {
-  background: #5ea3db;
-  color: #ffffff;
+  background: #fee834;
+  color: #523636;
   box-shadow: inset 0px 0px 5px #3d84bc;
 }
 .AXCalendar .timeBox {
@@ -607,7 +626,7 @@
   left: 5px;
   top: 90px;
   border: 1px solid #7f8d9c;
-  background: #a3b0b9;
+  background: #60c3c0;
   box-shadow: inset 0px 1px 2px #828282;
   border-radius: 5px;
   padding: 0px 20px;

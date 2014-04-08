@@ -23,9 +23,9 @@
   color: #ccc2be;
   border: 1px solid #593629;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  -webkit-border-radius: 1px 1px 0 0;
-  -moz-border-radius: 1px 1px 0 0;
-  border-radius: 1px 1px 0 0;
+  -webkit-border-radius: 2px 2px 0 0;
+  -moz-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -88,9 +88,9 @@
   color: #ccc2be;
   border: 1px solid #593629;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  -webkit-border-radius: 1px 1px 0 0;
-  -moz-border-radius: 1px 1px 0 0;
-  border-radius: 1px 1px 0 0;
+  -webkit-border-radius: 2px 2px 0 0;
+  -moz-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -105,7 +105,7 @@
 }
 .axtabs-event-normal.on {
   text-shadow: none;
-  color: #565b61;
+  color: #99847d;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -280,9 +280,9 @@
   color: #ccc2be;
   border: 1px solid #593629;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  -webkit-border-radius: 1px 1px 0 0;
-  -moz-border-radius: 1px 1px 0 0;
-  border-radius: 1px 1px 0 0;
+  -webkit-border-radius: 2px 2px 0 0;
+  -moz-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -297,7 +297,7 @@
 }
 .AXTabs .AXTabsTray .AXTab.on {
   text-shadow: none;
-  color: #565b61;
+  color: #99847d;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -526,9 +526,9 @@
   color: #ccc2be;
   border: 1px solid #593629;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  -webkit-border-radius: 1px 1px 0 0;
-  -moz-border-radius: 1px 1px 0 0;
-  border-radius: 1px 1px 0 0;
+  -webkit-border-radius: 2px 2px 0 0;
+  -moz-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -543,7 +543,7 @@
 }
 .AXTabsLarge .AXTabsTray .AXTab.on {
   text-shadow: none;
-  color: #565b61;
+  color: #99847d;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -772,9 +772,9 @@
   color: #ccc2be;
   border: 1px solid #593629;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-  -webkit-border-radius: 1px 1px 0 0;
-  -moz-border-radius: 1px 1px 0 0;
-  border-radius: 1px 1px 0 0;
+  -webkit-border-radius: 2px 2px 0 0;
+  -moz-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
@@ -789,7 +789,7 @@
 }
 .AXTabsSmall .AXTabsTray .AXTab.on {
   text-shadow: none;
-  color: #565b61;
+  color: #99847d;
   background: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -996,9 +996,9 @@
     color: #ccc2be;
     border: 1px solid #593629;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 1px 1px 0 0;
-    -moz-border-radius: 1px 1px 0 0;
-    border-radius: 1px 1px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
     -webkit-appearance: none;
     -moz-appearance: none;
   }
@@ -1061,9 +1061,9 @@
     color: #ccc2be;
     border: 1px solid #593629;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 1px 1px 0 0;
-    -moz-border-radius: 1px 1px 0 0;
-    border-radius: 1px 1px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
     -webkit-appearance: none;
     -moz-appearance: none;
   }
@@ -1078,7 +1078,7 @@
   }
   .axtabs-event-normal.on {
     text-shadow: none;
-    color: #565b61;
+    color: #99847d;
     background: #fff;
     border-bottom: 1px solid #fff;
   }
@@ -1253,9 +1253,9 @@
     color: #ccc2be;
     border: 1px solid #593629;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 1px 1px 0 0;
-    -moz-border-radius: 1px 1px 0 0;
-    border-radius: 1px 1px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
     -webkit-appearance: none;
     -moz-appearance: none;
   }
@@ -1270,7 +1270,7 @@
   }
   .AXTabs .AXTabsTray .AXTab.on {
     text-shadow: none;
-    color: #565b61;
+    color: #99847d;
     background: #fff;
     border-bottom: 1px solid #fff;
   }
@@ -1499,9 +1499,9 @@
     color: #ccc2be;
     border: 1px solid #593629;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 1px 1px 0 0;
-    -moz-border-radius: 1px 1px 0 0;
-    border-radius: 1px 1px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
     -webkit-appearance: none;
     -moz-appearance: none;
   }
@@ -1516,7 +1516,7 @@
   }
   .AXTabsLarge .AXTabsTray .AXTab.on {
     text-shadow: none;
-    color: #565b61;
+    color: #99847d;
     background: #fff;
     border-bottom: 1px solid #fff;
   }
@@ -1745,9 +1745,9 @@
     color: #ccc2be;
     border: 1px solid #593629;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 1px 1px 0 0;
-    -moz-border-radius: 1px 1px 0 0;
-    border-radius: 1px 1px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
     -webkit-appearance: none;
     -moz-appearance: none;
   }
@@ -1762,7 +1762,7 @@
   }
   .AXTabsSmall .AXTabsTray .AXTab.on {
     text-shadow: none;
-    color: #565b61;
+    color: #99847d;
     background: #fff;
     border-bottom: 1px solid #fff;
   }
@@ -1970,9 +1970,9 @@
     color: #ccc2be;
     border: 1px solid #593629;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 1px 1px 0 0;
-    -moz-border-radius: 1px 1px 0 0;
-    border-radius: 1px 1px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
     -webkit-appearance: none;
     -moz-appearance: none;
   }
@@ -2035,9 +2035,9 @@
     color: #ccc2be;
     border: 1px solid #593629;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 1px 1px 0 0;
-    -moz-border-radius: 1px 1px 0 0;
-    border-radius: 1px 1px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
     -webkit-appearance: none;
     -moz-appearance: none;
   }
@@ -2052,7 +2052,7 @@
   }
   .axtabs-event-normal.on {
     text-shadow: none;
-    color: #565b61;
+    color: #99847d;
     background: #fff;
     border-bottom: 1px solid #fff;
   }
@@ -2227,9 +2227,9 @@
     color: #ccc2be;
     border: 1px solid #593629;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 1px 1px 0 0;
-    -moz-border-radius: 1px 1px 0 0;
-    border-radius: 1px 1px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
     -webkit-appearance: none;
     -moz-appearance: none;
   }
@@ -2244,7 +2244,7 @@
   }
   .AXTabs .AXTabsTray .AXTab.on {
     text-shadow: none;
-    color: #565b61;
+    color: #99847d;
     background: #fff;
     border-bottom: 1px solid #fff;
   }
@@ -2473,9 +2473,9 @@
     color: #ccc2be;
     border: 1px solid #593629;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 1px 1px 0 0;
-    -moz-border-radius: 1px 1px 0 0;
-    border-radius: 1px 1px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
     -webkit-appearance: none;
     -moz-appearance: none;
   }
@@ -2490,7 +2490,7 @@
   }
   .AXTabsLarge .AXTabsTray .AXTab.on {
     text-shadow: none;
-    color: #565b61;
+    color: #99847d;
     background: #fff;
     border-bottom: 1px solid #fff;
   }
@@ -2719,9 +2719,9 @@
     color: #ccc2be;
     border: 1px solid #593629;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 1px 1px 0 0;
-    -moz-border-radius: 1px 1px 0 0;
-    border-radius: 1px 1px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
     -webkit-appearance: none;
     -moz-appearance: none;
   }
@@ -2736,7 +2736,7 @@
   }
   .AXTabsSmall .AXTabsTray .AXTab.on {
     text-shadow: none;
-    color: #565b61;
+    color: #99847d;
     background: #fff;
     border-bottom: 1px solid #fff;
   }
@@ -2944,9 +2944,9 @@
     color: #ccc2be;
     border: 1px solid #593629;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 1px 1px 0 0;
-    -moz-border-radius: 1px 1px 0 0;
-    border-radius: 1px 1px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
     -webkit-appearance: none;
     -moz-appearance: none;
   }
@@ -3009,9 +3009,9 @@
     color: #ccc2be;
     border: 1px solid #593629;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 1px 1px 0 0;
-    -moz-border-radius: 1px 1px 0 0;
-    border-radius: 1px 1px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
     -webkit-appearance: none;
     -moz-appearance: none;
   }
@@ -3026,7 +3026,7 @@
   }
   .axtabs-event-normal.on {
     text-shadow: none;
-    color: #565b61;
+    color: #99847d;
     background: #fff;
     border-bottom: 1px solid #fff;
   }
@@ -3201,9 +3201,9 @@
     color: #ccc2be;
     border: 1px solid #593629;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 1px 1px 0 0;
-    -moz-border-radius: 1px 1px 0 0;
-    border-radius: 1px 1px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
     -webkit-appearance: none;
     -moz-appearance: none;
   }
@@ -3218,7 +3218,7 @@
   }
   .AXTabs .AXTabsTray .AXTab.on {
     text-shadow: none;
-    color: #565b61;
+    color: #99847d;
     background: #fff;
     border-bottom: 1px solid #fff;
   }
@@ -3447,9 +3447,9 @@
     color: #ccc2be;
     border: 1px solid #593629;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 1px 1px 0 0;
-    -moz-border-radius: 1px 1px 0 0;
-    border-radius: 1px 1px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
     -webkit-appearance: none;
     -moz-appearance: none;
   }
@@ -3464,7 +3464,7 @@
   }
   .AXTabsLarge .AXTabsTray .AXTab.on {
     text-shadow: none;
-    color: #565b61;
+    color: #99847d;
     background: #fff;
     border-bottom: 1px solid #fff;
   }
@@ -3693,9 +3693,9 @@
     color: #ccc2be;
     border: 1px solid #593629;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-    -webkit-border-radius: 1px 1px 0 0;
-    -moz-border-radius: 1px 1px 0 0;
-    border-radius: 1px 1px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
     -webkit-appearance: none;
     -moz-appearance: none;
   }
@@ -3710,7 +3710,7 @@
   }
   .AXTabsSmall .AXTabsTray .AXTab.on {
     text-shadow: none;
-    color: #565b61;
+    color: #99847d;
     background: #fff;
     border-bottom: 1px solid #fff;
   }

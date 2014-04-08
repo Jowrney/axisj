@@ -21,13 +21,14 @@
 
 
 // Common ///////////////////////////////////////////////////
-@color:#565b61;			
-@color-a:#565b61; 		
-@color-b:#565b61;		
-@color-c:#565b61;		
+@color:#5c382c;			
+@color-a:#593629; 		
+@color-b:#99847d;		
+@color-c:#f1efea;	
+	
 
-@link:#6e7a86;	
-@link-hover:#565b61;
+@link:#99847d;	
+@link-hover:#f1efea;
 @link-focus:#565b61;
 @link-active:#82898f;
 @link-visited:#c3cad0;
@@ -35,12 +36,13 @@
 @font-family:"Open sans";
 @font-size:12px;
 
-@border:1px solid #000;
+@border:1px solid #99847d;
 
 @bgcolor:#fff;
-@bgcolor-a:#e8e8e8;
-@bgcolor-b:#c6cdd3;
-@bgcolor-c:#717b85;
+@bgcolor-a:#f1efea;
+@bgcolor-b:#99847d;
+@bgcolor-c:#99847d;
+@bgcolor-d:#f1efea;
 
 @wide:		~"(min-width:1152px)";
 @desktop:   ~"only screen and (min-width: 1024px) and (max-width: 1151px)";
@@ -120,7 +122,7 @@
 	@color-a	:#fff;
 	@color-b	:#593629;
 	@border		:1px solid #593629;	
-	@radius		:1px;
+	@radius		:2px;
 }
 
 .dx-axtabs-preset-classic(){
@@ -366,13 +368,15 @@
 .dx-axnotification-preset(){
 	//AXJ.less
 	@color   	:#525252;
-	@color-a   	:#717b85;
-	@color-b	:#477e47;
-	@border		:1px solid #c5c5c5;
-	@border-a	:1px solid #444;
-	@bgcolor	:#ebebeb;
-	@bgcolor-a  :#fff;
-	@radius		:4px;
+	@color-a   	:#58362a;
+	@color-b	:#99847e;	//Complete
+	@color-c	:#bf601b;	//Warining
+	@color-d	:#c25c5f;	//Caution
+	@border		:2px solid #99847e;
+	@border-a	:2px solid #99847e;
+	@bgcolor	:#fff;
+	@bgcolor-a  :#ccc2be;
+	@radius		:2px;
 }
 
 
@@ -422,19 +426,19 @@
 
 // AXSelect ///////////////////////////////////////////////////
 .dx-axselect-preset(){
-	@color		:#717b85;
+	@color		:#58362a;
 	@color-a	:#888;
 	@color-b	:#fff;
-	@border 	:1px solid #b6b6b6;
+	@border 	:2px solid #b6b6b6;
 	@border-a	:1px solid #b9babc;
 	@border-b	:1px solid #d8d9db;	
 	@bgcolor   	:#fff;
 	@bgcolor-a	:#fdfdfd;
 	@bgcolor-b	:#e8e8e8;
 	@bgcolor-c	:#fff;
-	@bgcolor-d	:#d7dde3;
-	@bgcolor-e	:#5ea3db;	
-	@radius		:4px;
+	@bgcolor-d	:#ccc2be;
+	@bgcolor-e	:#99847e;	
+	@radius		:1px;
 
 }
 

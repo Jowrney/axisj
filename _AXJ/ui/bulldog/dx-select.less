@@ -6,7 +6,8 @@
 
 .AXSelect{
 	.dx-axselect-preset();
-	border:@border;background:@bgcolor;
+	border:@border;
+	background:@bgcolor;
 	.util-border-radius(@radius);
 	font-size:12px;
 	height:26px;line-height:26px;
@@ -52,10 +53,11 @@
 	.selectedTextBox{
 		display:block;
 		border:@border;
-		.util-gradient(top, @bgcolor-a, @bgcolor-b);		
+		background:@bgcolor-a; 
+		//.util-gradient(top, @bgcolor-a, @bgcolor-b);		
 		//background:url('images/defaultRegular.png') repeat-x;
-		.util-drop-shadow (0, 1px, 0, 0, 0.15);	
-		.util-border-radius(@radius);
+		//.util-drop-shadow (0, 1px, 0, 0, 0.15);	
+		.util-border-radius(@radius,@radius,@radius,@radius);
 		cursor:pointer;
 		text-decoration:none;
 		.util-text-ellipsis();
@@ -76,9 +78,10 @@
 		.selectedTextBox{
 			display:block;
 			border:@border;
-			background:url('images/defaultRegular.png') repeat-x;
+			//background:url('images/dx-default-regular.png') repeat-x;
+			background: @bgcolor-a;
 			background-position:0px -78px;
-			box-shadow:inset 0px 1px 1px #888;
+			//box-shadow:inset 0px 1px 1px #888;
 			border-radius:@radius;
 			cursor:pointer;
 			text-decoration:none;
@@ -87,15 +90,20 @@
 	}	
 	.rootSelectBox{
 		position:absolute;left:0px;top:0px;
-		-moz-opacity: 0.0;opacity:.00;filter: alpha(opacity=0);
+		.util-opacity(@opacity:0);
 	}
 	.selectBoxArrow{
 		position:absolute;display:block;
 		right:0px;top:0px;
 		width:24px;height:18px;
-		background:url('images/slideDownArrow.png') center center no-repeat;
+		background:url('images/dx-slide-down-arrow.png') center center no-repeat;
+		background-color: @bgcolor-f;
+		.util-border-radius(@radius,@radius,@radius,@radius);
 		overflow:hidden;text-indent:-2000px;	
-		&.on{background:url('images/slideUpArrow.png') center center no-repeat; }
+		&.on{
+			background:url('images/dx-slide-up-arrow.png') center center no-repeat; 
+			background-color: @bgcolor-f;
+		}
 
 	}	
 	

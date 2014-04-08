@@ -1,23 +1,6 @@
-/*
-@bgcolor:#fff;
-@font-family:"Open sans";
-@font-size:12px;
-@color:#565b61;
-@link:#6e7a86;
-@link-hover:#565b61;
-@link-focus:#565b61;
-@link-active:#82898f;
-@link-visited:#c3cad0;
-@stroke:"1px solid #000";
-
-@bgcolor-a:#e8e8e8;
-@bgcolor-b:#c6cdd3;
-@bgcolor-c:#717b85;
-@storke-a:#000;
-@stroke-b:#000;
-*/
 html,
 body {
+  font-family: "Open sans", "Nanum Gothic";
   margin: 0;
   padding: 0;
   height: 100%;
@@ -74,7 +57,7 @@ body h3 {
   font-size: 1px;
 }
 #AXPage {
-  font-family: "Open sans";
+  font-family: "Open sans", "Nanum Gothic";
   font-size: 12px;
   overflow: hidden;
 }
@@ -132,9 +115,9 @@ body h3 {
   margin: 0px;
 }
 #AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu {
-  margin-bottom: 1px;
   height: 40px;
   overflow: hidden;
+  border-bottom: 1px solid #ffffff;
 }
 #AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu h3 {
   float: left;
@@ -176,7 +159,47 @@ body h3 {
 #AXPage #AXPageHead .ax-layer-2 .ax-unit {
   margin: 0px;
 }
-#AXPage #AXPageHead .ax-layer-2 .ax-unit .AXdemoPageTabTarget {
+#AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo {
+  background: #d4d4d4;
+  height: 70px;
+}
+#AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo .logo {
+  overflow: hidden;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 60px;
+  height: 60px;
+  background: #eaeaea;
+  border-radius: 30px;
+}
+#AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo h1 {
+  position: absolute;
+  margin-left: 80px;
+  font-size: 14px;
+  margin-top: 16px;
+  font-weight: bold;
+  color: #565b61;
+}
+#AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo h2 {
+  position: absolute;
+  margin-left: 80px;
+  font-size: 11px;
+  margin-top: 38px;
+  font-weight: normal;
+  color: #565b61;
+}
+#AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo h2 a {
+  color: #6e7a86;
+}
+#AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo h2 a:hover {
+  color: #565b61;
+  text-decoration: underline;
+}
+#AXPage #AXPageHead .ax-layer-3 .ax-unit {
+  margin: 0px;
+}
+#AXPage #AXPageHead .ax-layer-3 .ax-unit .AXdemoPageTabTarget {
   background: #d4d4d4;
 }
 #AXPage #AXPageBody .title h1 {
@@ -193,12 +216,14 @@ body h3 {
 #AXPage #AXPageBody .ax-wrap .ax-layer-1 .secBlock h3 {
   text-align: center;
   background: #e8e8e8;
+  font-size: 18px;
   margin: 4px;
   padding: 0px;
   height: 40px;
   line-height: 40px;
 }
 #AXPage #AXPageBody .ax-wrap .ax-layer-1 .secBlock ul {
+  font-size: 14px;
   margin: 10px;
   padding: 0px;
   list-style-position: inside;
@@ -241,6 +266,7 @@ body h3 {
 #AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme {
   height: 30px;
   overflow: hidden;
+  border-top: 1px solid #ffffff;
 }
 #AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme h3 {
   float: left;

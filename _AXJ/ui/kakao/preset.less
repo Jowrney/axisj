@@ -21,12 +21,12 @@
 
 
 // Common ///////////////////////////////////////////////////
-@color:#565b61;			
-@color-a:#565b61; 		
-@color-b:#565b61;		
-@color-c:#565b61;		
+@color:#523636;			
+@color-a:#523636; 		
+@color-b:#523636;		
+@color-c:#fee834;		
 
-@link:#6e7a86;	
+@link:#523636;	
 @link-hover:#565b61;
 @link-focus:#565b61;
 @link-active:#82898f;
@@ -38,9 +38,10 @@
 @border:1px solid #000;
 
 @bgcolor:#fff;
-@bgcolor-a:#e8e8e8;
-@bgcolor-b:#c6cdd3;
-@bgcolor-c:#717b85;
+@bgcolor-a:#523636;
+@bgcolor-b:#fee834;
+@bgcolor-c:#3a2121;
+@bgcolor-d:#fafafa;
 
 @wide:		~"(min-width:1152px)";
 @desktop:   ~"only screen and (min-width: 1024px) and (max-width: 1151px)";
@@ -56,7 +57,8 @@
 	@bgcolor-b	:#493334;	
 	@color		:#493334;
 	@color-a	:#ffea00;
-	@border		:none;	
+	@border		:1px solid #ffea00;	
+	@border-a	:1px solid #493334;		
 	@radius		:3px;
 }
 
@@ -66,7 +68,8 @@
 	@bgcolor-b	:#493334;	
 	@color		:#fff;
 	@color-a	:#ffea00;	
-	@border		:none;	
+	@border		:1px solid #493334;	
+	@border-a	:1px solid #493334;		
 	@radius		:3px;
 }
 
@@ -77,6 +80,7 @@
 	@color		:#959595;
 	@color-a	:#4a4a4a;		
 	@border		:1px solid #c1c1c1;	
+	@border-a	:1px solid #f7f7f7;		
 	@radius		:1px;	
 }
 
@@ -86,7 +90,8 @@
 	@bgcolor-b	:#0dc5b9;	
 	@color		:#fff;
 	@color-a	:#ffea00;		
-	@border		:none;	
+	@border		:1px solid #0dc5b9;	
+	@border-a	:1px solid #0dc5b9;		
 	@radius		:1px;	
 }
 
@@ -96,7 +101,8 @@
 	@bgcolor-b	:#ff5b49;	
 	@color		:#fff;
 	@color-a	:#ffea00;		
-	@border		:none;	
+	@border		:1px solid #ff5b49;	
+	@border-a	:1px solid #ff5b49;		
 	@radius		:1px;	
 }
 
@@ -106,7 +112,8 @@
 	@bgcolor-b	:#d7d7d7;
 	@color		:#eaeaea;
 	@color-a	:#eaeaea;
-	@border		:none;	
+	@border		:1px solid #d7d7d7;	
+	@border-a	:1px solid #d7d7d7;		
 	@radius		:1px;	
 }
 
@@ -270,6 +277,15 @@
 	@radius		:3px;
 	@radius-a	:15px;
 }
+
+.dx-axinput-preset-number(){
+	@border		:1px solid #b9babc;
+	@border-a 	:1px solid #ccc;
+	@border-b 	:1px solid #ccc;	
+	@bgcolor 	:#b3b5b7;
+	@radius 	:2px;	
+}
+
 .dx-axinput-preset-switch(){
 	@color		:#b6b6b6;
 	@color-a	:#fff;
@@ -281,17 +297,17 @@
 }
 
 .dx-axinput-preset-segments(){
-	@color		:#6e7a86;
+	@color		:#523636;
 	@color-a	:#fff;
-	@border		:1px solid #b9babc;
-	@bgcolor	:#e8e8e8;
-	@bgcolor-a	:#fff;
-	@bgcolor-b	:#e8e8e8;			
-	@bgcolor-c	:#c7cfd4;
-	@bgcolor-d	:#e5eff2;
-	@bgcolor-e	:#7C7E83;
-	@bgcolor-f	:#b9babc;
-	@radius		:4px;
+	@border		:1px solid #cecece;
+	@bgcolor	:#f7f7f7;
+	@bgcolor-a	:#f7f7f7;
+	@bgcolor-b	:#f7f7f7;			
+	@bgcolor-c	:#fee834;
+	@bgcolor-d	:#fee834;
+	@bgcolor-e	:#cecece;
+	@bgcolor-f	:#cecece;
+	@radius		:3px;
 }
 
 .dx-axinput-preset-slider(){
@@ -303,45 +319,51 @@
 }
 
 .dx-axinput-preset-selector(){
-	@border		:1px solid #b9babc;
-	@radius		:4px;
-}
+	@border		:1px solid #b9b9b9;
+	@bgcolor 	:#b9b9b9;
+	@radius		:4px;}
 
 .dx-axinput-preset-date(){
 	//AXInput.less
 	@font-family:Arial;
-	@color		:#fff; 		//year & Month
-	@color-a	:#828f9e;	//dateTypeName
-	@border		:1px solid #c1c1c1;
-	@border-a	:1px solid #7f8d9c;
-	@border-b	:1px solid #b9babc;
+	@color		:#523636; 		//year & Month
+	@color-a	:#828f9e;		//dateTypeName
+	@border		:1px solid #cecece;
+	@border-a	:none;
+	@border-b	:none;
 	@radius		:5px;
 	@bgcolor	:#fff;
+	@bgcolor-a	:#ffea00;
+	@bgcolor-b	:#f3df01;	
+	@bgcolor-c	:#60c3c0;
 }
 
 .dx-axcalenter-preset(){
 	//AXJ.less
 	@font-family:Arial;
-	@color		:#7b7b7b; 	
-	@color-a	:#c78b82;	//SUN
+	@color		:#7b7b7b;	//Week name color 	
+	@color-a	:#ffea00;	//SUN
 	@color-b	:#627d9b; 	//SAT
-	@color-c	:#6d6e71; 	//Table body
+	@color-c	:#f7f7f7; 	//Table body
 	@color-d	:#fff; 
-	@color-e	:#fff; 	
-	@color-f	:#bfbfc1;
+	@color-e	:#523636; 	
+	@color-f	:#795858;
 	@color-g	:#738089; 	//hour, minute, 
 	
-	@border		:1px solid #b9babc;		//Table body 
+	@border		:1px solid #523636;		//Table body 
 	@border-a	:1px solid #f2f2f3;		//Table head right;
 	@border-b	:1px solid #b9babc;		//Table head left;
 	@border-c	:1px solid #7f8d9c;
 
 	@bgcolor	:#fff;
-	@bgcolor-a	:#d8e1e7;
-	@bgcolor-b	:#5ea3db;
-	@bgcolor-c	:#5ea3db;	
-	@bgcolor-d	:#f3e2df;
-	@bgcolor-e	:#a3b0b9;
+	@bgcolor-a	:#523636;
+	@bgcolor-b	:#523636;
+	@bgcolor-c	:#ff5b49;	
+	@bgcolor-d	:#ff5b49;
+	@bgcolor-e	:#60c3c0;
+	@bgcolor-f	:#442a2a;
+	@bgcolor-g	:#60c3c0; //Active
+	@bgcolor-h	:#fee834;
 	@radius		:5px;
 
 }
@@ -360,15 +382,16 @@
 .dx-axnotification-preset(){
 	//AXJ.less
 	@color   	:#525252;
-	@color-a   	:#717b85;
-	@color-b	:#477e47;
+	@color-a   	:#493334;
+	@color-b	:#493334;	//Complete
+	@color-c	:#c8b518;	//Warning
+	@color-d	:#fc5c4f;	//Caution
 	@border		:1px solid #c5c5c5;
 	@border-a	:1px solid #444;
-	@bgcolor	:#ebebeb;
-	@bgcolor-a  :#fff;
-	@radius		:4px;
+	@bgcolor	:#fff;
+	@bgcolor-a  :#fee834;
+	@radius		:3px;
 }
-
 
 // AXScroll ///////////////////////////////////////////////////
 .dx-axscroll-preset(){
@@ -416,19 +439,19 @@
 
 // AXSelect ///////////////////////////////////////////////////
 .dx-axselect-preset(){
-	@color		:#717b85;
+	@color		:#592d2d;
 	@color-a	:#888;
-	@color-b	:#fff;
-	@border 	:1px solid #b6b6b6;
+	@color-b	:#fee834;
+	@border 	:1px solid #dfdfdf;
 	@border-a	:1px solid #b9babc;
 	@border-b	:1px solid #d8d9db;	
 	@bgcolor   	:#fff;
-	@bgcolor-a	:#fdfdfd;
+	@bgcolor-a	:#fafafa;
 	@bgcolor-b	:#e8e8e8;
 	@bgcolor-c	:#fff;
-	@bgcolor-d	:#d7dde3;
-	@bgcolor-e	:#5ea3db;	
-	@radius		:4px;
+	@bgcolor-d	:#fee834;
+	@bgcolor-e	:#523636;	
+	@radius		:3px;
 
 }
 

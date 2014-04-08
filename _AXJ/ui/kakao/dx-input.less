@@ -171,11 +171,14 @@
 
 // AXbindNumber ///////////////////////////////////////////////////
 .AXanchorNumberContainer{
+	.dx-axinput-preset-number();
 	position:absolute;
 	width:18px;height:18px;
 	overflow:hidden;
-	background:url('images/dx-default-regular.png') repeat-x;
-	border:1px solid #b9babc;border-top-right-radius:4px;border-bottom-right-radius:4px;
+	//background:url('images/dx-default-regular.png') repeat-x;
+	background: @bgcolor;
+	border:@border;
+	border-top-right-radius:@radius;border-bottom-right-radius:@radius;
 	overflow:hidden;
 	.AXanchorIncrease{
 		position:absolute;
@@ -184,7 +187,7 @@
 		*background-position: center 2px;
 		width:18px;height:18px;
 		overflow:hidden;text-indent:-2000px;
-		border-bottom:1px solid #b9babc;
+		border-bottom:@border-a;
 		&:active{
 			background-image:url('images/dx-up-arrow-on.png');
 		}
@@ -196,7 +199,7 @@
 		*background-position: center 2px;
 		width:18px;height:18px;
 		overflow:hidden;text-indent:-2000px;
-		border-top:1px solid #b9babc;
+		border-top:@border-b;
 		&:active{
 			background-image:url('images/dx-down-arrow-on.png');
 		}
@@ -212,6 +215,7 @@
 	position:absolute;
 	width:18px;height:18px;
 	background:url('images/dx-default-regular.png') repeat-x;
+	background:@bgcolor;
 	border:@border;
 	border-top-right-radius:@radius;
 	border-bottom-right-radius:@radius;
@@ -233,6 +237,7 @@
 	position:absolute;
 	width:18px;height:18px;
 	background:url('images/dx-default-regular.png') repeat-x;
+	background: @bgcolor;
 	border:@border;
 	.AXanchorSelectorFinder{
 		position:absolute;
@@ -424,7 +429,7 @@
 		.util-text-ellipsis();
 		&:hover, &:focus{
 			.util-gradient(top,@bgcolor-c,@bgcolor-d);
-			text-shadow:0px 1px #fff;
+			//text-shadow:0px 1px #fff;
 		}
 		&.segmentLeft{
 			border-top-left-radius:@radius;border-bottom-left-radius:@radius;	
@@ -436,7 +441,7 @@
 		&.on{
 			.util-gradient(top,@bgcolor-e,@bgcolor-f);
 			color:@color-a;
-			text-shadow:0px 1px #4e585f;
+			//text-shadow:0px 1px #4e585f;
 		}
 	}
 }
@@ -454,15 +459,18 @@
 	.dx-axinput-preset-date();
 	position:absolute;left:0px;top:0px;
 	padding:5px;
-	background:url('images/dx-calendar-box-bg.png');
-	border:@border;border-radius:@radius;
+	background: @bgcolor;
+	//background:url('images/dx-calendar-box-bg.png');
+	border:@border;
+	border-radius:@radius;
 	box-shadow:0px 1px 3px #ccc;
 	.dateControlBox{
 		position:relative;
 		width:181px;height:26px;
-		.util-gradient(top, #ffffff, #000000);
+		.util-gradient(top, @bgcolor-a, @bgcolor-b);
 		//background:url('images/dx-calendar-bgs.png') repeat-x;
 		border:@border-a;
+		color:@color;
 		.prevbutton{
 			position:absolute;left:0px;top:0px;width:26px;height:26px;
 			display:block;text-indent:-1000px;overflow:hidden;
@@ -482,16 +490,19 @@
 		.yearbutton{
 			position:absolute;left:55px;top:0px;
 			text-decoration:none;color:@color;line-height:26px;
-			font-family:Arial;font-size:12px;text-shadow:0px -1px #869198;
+			font-family:Arial;font-size:12px;
+			//text-shadow:0px -1px #869198;
 		}
 		.monthbutton{
 			position:absolute;left:100px;top:0px;	
 			text-decoration:none;color:@color;line-height:26px;
-			font-family:Arial;font-size:12px;text-shadow:0px -1px #869198;
+			font-family:Arial;font-size:12px;
+			//text-shadow:0px -1px #869198;
 		}
 	}
 	.dateDisplayBox{
-		background:@bgcolor;border:@border-b;border-top:0px none;
+		border:@border-b;
+		border-top:0px none;
 		width:181px;
 	}
 	.timeDisplayBox{
@@ -506,7 +517,7 @@
 	.dx-axinput-preset-date();
 	position:absolute;left:0px;top:0px;
 	padding:5px;
-	background:#eee;
+	background:@bgcolor;
 	//background:url('images/dx-calendar-box-bg.png');
 	border:@border;border-radius:@radius;
 	box-shadow:0px 1px 3px #ccc;
@@ -538,12 +549,14 @@
 		.yearbutton{
 			position:absolute;left:55px;top:0px;
 			text-decoration:none;color:@color;line-height:26px;
-			font-family:@font-family;font-size:12px;text-shadow:0px -1px #869198;
+			font-family:@font-family;font-size:12px;
+			//text-shadow:0px -1px #869198;
 		}
 		.monthbutton{
 			position:absolute;left:100px;top:0px;	
 			text-decoration:none;color:@color;line-height:26px;
-			font-family:@font-family;font-size:12px;text-shadow:0px -1px #869198;
+			font-family:@font-family;font-size:12px;
+			//text-shadow:0px -1px #869198;
 		}
 	}
 	.dateDisplayBox{
@@ -555,9 +568,12 @@
 		height:120px;
 	}
 	.dateTypeName{
+		font-size:12px;
 		height:22px;line-height:21px;text-align:center;
-		color:@color-a;text-shadow:0px 1px #fff;font-family:@font-family;	
+		color:@color-a;
+		font-family:@font-family;	
 	}
+
 }
 
 	

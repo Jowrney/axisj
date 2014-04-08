@@ -28,16 +28,12 @@
     vertical-align: middle;
   }
   .AXInput {
-    border: 1px solid #b6b6b6;
+    border: 1px solid #cccccc;
     background: #ffffff;
     color: #333333;
-    box-shadow: inset 0px 1px 2px #dddddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px 5px 5px 5px;
-    -moz-border-radius: 4px 5px 5px 5px;
-    border-radius: 4px 5px 5px 5px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
     font-size: 12px;
     line-height: 15px;
     height: 15px;
@@ -46,8 +42,7 @@
     vertical-align: middle;
   }
   .AXInput:focus {
-    border: 1px solid #949fa8;
-    box-shadow: inset 0px 0px 3px #949fa8;
+    border: 1px solid #3badeb;
     outline: none;
     color: #222222;
   }
@@ -56,13 +51,11 @@
     background-position: 0px -78px;
     color: #ffffff;
     text-shadow: 0px -1px #b7b7b7;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
   }
   .AXInput[readonly] {
     background: #eee;
     color: #676767;
     text-shadow: 0px 1px #fff;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
   }
   .AXInput::-webkit-input-placeholder {
     color: #bbbbbb;
@@ -79,16 +72,12 @@
     border-radius: 15px 15px 15px 15px;
   }
   .AXInputSmall {
-    border: 1px solid #b6b6b6;
+    border: 1px solid #cccccc;
     background: #ffffff;
     color: #333333;
-    box-shadow: inset 0px 1px 1px #dddddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px 5px 5px 5px;
-    -moz-border-radius: 4px 5px 5px 5px;
-    border-radius: 4px 5px 5px 5px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
     font-size: 12px;
     line-height: 12px;
     height: 12px;
@@ -97,8 +86,7 @@
     vertical-align: middle;
   }
   .AXInputSmall:focus {
-    border: 1px solid #949fa8;
-    box-shadow: inset 0px 0px 3px #949fa8;
+    border: 1px solid #3badeb;
     outline: none;
     color: #222222;
   }
@@ -107,13 +95,11 @@
     background-position: 0px -60px;
     color: #ffffff;
     text-shadow: 0px -1px #b7b7b7;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
   }
   .AXInputSmall[readonly] {
     background: #eee;
     color: #676767;
     text-shadow: 0px 1px #fff;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
   }
   .AXInputSmall::-webkit-input-placeholder {
     color: #bbbbbb;
@@ -142,6 +128,7 @@
     cursor: pointer;
     overflow: hidden;
     background: url('images/dx-checkbox.png') no-repeat left 0px;
+    background-size: 26px 78px;
     vertical-align: middle;
   }
   .AXCheckbox.checked {
@@ -237,10 +224,10 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    background: url('images/dx-default-regular.png') repeat-x;
+    background-color: #b3b5b7;
     border: 1px solid #b9babc;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     overflow: hidden;
   }
   .AXanchorNumberContainer .AXanchorIncrease {
@@ -252,7 +239,7 @@
     height: 18px;
     overflow: hidden;
     text-indent: -2000px;
-    border-bottom: 1px solid #b9babc;
+    border-bottom: 1px solid #cccccc;
   }
   .AXanchorNumberContainer .AXanchorIncrease:active {
     background-image: url('images/dx-up-arrow-on.png');
@@ -266,7 +253,7 @@
     height: 18px;
     overflow: hidden;
     text-indent: -2000px;
-    border-top: 1px solid #b9babc;
+    border-top: 1px solid #cccccc;
   }
   .AXanchorNumberContainer .AXanchorDecrease:active {
     background-image: url('images/dx-down-arrow-on.png');
@@ -275,8 +262,8 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    background: url('images/dx-default-regular.png') repeat-x;
-    border: 1px solid #b9babc;
+    background: #b9b9b9;
+    border: 1px solid #b9b9b9;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
@@ -290,13 +277,14 @@
   }
   .AXanchorSelectorHandleContainer .AXanchorSelectorHandle.on {
     background: url('images/dx-slide-up-arrow.png') center center no-repeat;
+    background-color: #42aee8;
   }
   .AXanchorSelectorFinderContainer {
     position: absolute;
     width: 18px;
     height: 18px;
-    background: url('images/dx-default-regular.png') repeat-x;
-    border: 1px solid #b9babc;
+    background: #b9b9b9;
+    border: 1px solid #b9b9b9;
   }
   .AXanchorSelectorFinderContainer .AXanchorSelectorFinder {
     position: absolute;
@@ -308,6 +296,7 @@
   }
   .AXanchorSelectorFinderContainer .AXanchorSelectorFinder.on {
     background: url('images/dx-selector-search.png') center center no-repeat;
+    background-color: #42aee8;
   }
   .AXanchorSelectorExpandBox {
     position: absolute;
@@ -394,7 +383,7 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    background: #90979d;
+    background: #1dbb9a;
     height: 4px;
     border-radius: 2px;
   }
@@ -488,9 +477,8 @@
     left: 0px;
     top: 0px;
     height: 22px;
-    border: 1px solid #b6b6b6;
-    background: #ffffff;
-    box-shadow: inset 0px 1px 2px #dddddd;
+    border: 1px solid #e5e5e5;
+    background: #e5e5e5;
     border-radius: 14px;
     padding: 0px;
     margin: 0px;
@@ -501,7 +489,7 @@
     padding-left: 18px;
     font-family: Arial;
     font-size: 11px;
-    color: #b6b6b6;
+    color: #808084;
     line-height: 22px;
     white-space: nowrap;
     overflow: hidden;
@@ -521,9 +509,8 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    border: 1px solid #4f5458;
-    background: #a3b0b9;
-    box-shadow: inset 0px 1px 2px #828282;
+    border: 1px solid #536270;
+    background: #536270;
     padding: 0px;
     margin: 0px;
     outline: none;
@@ -534,7 +521,6 @@
     padding-right: 18px;
     font-size: 11px;
     color: #ffffff;
-    text-shadow: 0px -1px #8b969d;
     white-space: nowrap;
     overflow: hidden;
   }
@@ -563,27 +549,27 @@
     float: left;
     padding: 0px 0px;
     margin: 0px;
-    border-top: 1px solid #b9babc;
-    border-left: 1px solid #b9babc;
-    border-bottom: 1px solid #b9babc;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
     font-size: 12px;
-    color: #6e7a86;
+    color: #6e7a8d;
     text-align: center;
     text-decoration: none;
-    background: #e8e8e8;
-    background: -webkit-linear-gradient(#ffffff, #e8e8e8);
+    background: #e5e5e5;
+    background: -webkit-linear-gradient(#e5e5e5, #e5e5e5);
     /* For Safari */
   
-    background: -o-linear-gradient(#ffffff, #e8e8e8);
+    background: -o-linear-gradient(#e5e5e5, #e5e5e5);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#ffffff, #e8e8e8);
+    background: -moz-linear-gradient(#e5e5e5, #e5e5e5);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#ffffff, #e8e8e8);
+    background: linear-gradient(#e5e5e5, #e5e5e5);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#e8e8e8);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e5e5e5, endColorstr=#e5e5e5);
     /*For IE7-8-9*/
     white-space: nowrap;
     overflow: hidden;
@@ -591,50 +577,48 @@
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle:hover,
   .AXanchorSegmentBox .AXanchorSegmentHandle:focus {
-    background: #e5eff2;
-    background: -webkit-linear-gradient(#c7cfd4, #e5eff2);
+    background: #bbbbbb;
+    background: -webkit-linear-gradient(#bbbbbb, #bbbbbb);
     /* For Safari */
   
-    background: -o-linear-gradient(#c7cfd4, #e5eff2);
+    background: -o-linear-gradient(#bbbbbb, #bbbbbb);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#c7cfd4, #e5eff2);
+    background: -moz-linear-gradient(#bbbbbb, #bbbbbb);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#c7cfd4, #e5eff2);
+    background: linear-gradient(#bbbbbb, #bbbbbb);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c7cfd4, endColorstr=#e5eff2);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#bbbbbb, endColorstr=#bbbbbb);
     /*For IE7-8-9*/
-    text-shadow: 0px 1px #fff;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.segmentLeft {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.segmentRight {
-    border-right: 1px solid #b9babc;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-right: 1px solid #cccccc;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.on {
-    background: #b9babc;
-    background: -webkit-linear-gradient(#7c7e83, #b9babc);
+    background: #808080;
+    background: -webkit-linear-gradient(#808080, #808080);
     /* For Safari */
   
-    background: -o-linear-gradient(#7c7e83, #b9babc);
+    background: -o-linear-gradient(#808080, #808080);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#7c7e83, #b9babc);
+    background: -moz-linear-gradient(#808080, #808080);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#7c7e83, #b9babc);
+    background: linear-gradient(#808080, #808080);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#7c7e83, endColorstr=#b9babc);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#808080, endColorstr=#808080);
     /*For IE7-8-9*/
     color: #ffffff;
-    text-shadow: 0px 1px #4e585f;
   }
   .AXanchorDateHandle {
     position: absolute;
@@ -649,9 +633,7 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    padding: 5px;
-    background: url('images/dx-calendar-box-bg.png');
-    border: 1px solid #808d9d;
+    background: #f2f2f2;
     border-radius: 5px;
     box-shadow: 0px 1px 3px #ccc;
   }
@@ -659,8 +641,7 @@
     position: relative;
     width: 181px;
     height: 26px;
-    background: url('images/dx-calendar-bgs.png') repeat-x;
-    border: 1px solid #7f8d9c;
+    background: #1dbb9a;
   }
   .AXbindDateExpandBox .dateControlBox .prevbutton {
     position: absolute;
@@ -699,7 +680,6 @@
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindDateExpandBox .dateControlBox .monthbutton {
     position: absolute;
@@ -710,12 +690,9 @@
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindDateExpandBox .dateDisplayBox {
     background: #ffffff;
-    border: 1px solid #b9babc;
-    border-top: 0px none;
     width: 181px;
   }
   .AXbindDateExpandBox .timeDisplayBox {
@@ -727,16 +704,16 @@
     left: 0px;
     top: 0px;
     padding: 5px;
-    background: url('images/dx-calendar-box-bg.png');
-    border: 1px solid #808d9d;
+    background: #f2f2f2;
     border-radius: 5px;
-    box-shadow: 0px 1px 3px #ccc;
+    -webkit-box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25);
   }
   .AXbindTwinDateExpandBox .dateControlBox {
     position: relative;
     height: 26px;
-    background: url('images/dx-calendar-bgs.png') repeat-x;
-    border: 1px solid #7f8d9c;
+    background: #1dbb9a;
     width: 181px;
   }
   .AXbindTwinDateExpandBox .dateControlBox .prevbutton {
@@ -776,7 +753,6 @@
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindTwinDateExpandBox .dateControlBox .monthbutton {
     position: absolute;
@@ -787,12 +763,9 @@
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindTwinDateExpandBox .dateDisplayBox {
     background: #ffffff;
-    border: 1px solid #b9babc;
-    border-top: 0px none;
     width: 181px;
   }
   .AXbindTwinDateExpandBox .timeDisplayBox {
@@ -803,8 +776,8 @@
     height: 22px;
     line-height: 21px;
     text-align: center;
+    font-size: 12px;
     color: #828f9e;
-    text-shadow: 0px 1px #fff;
     font-family: Arial;
   }
 }
@@ -828,16 +801,12 @@
     vertical-align: middle;
   }
   .AXInput {
-    border: 1px solid #b6b6b6;
+    border: 1px solid #cccccc;
     background: #ffffff;
     color: #333333;
-    box-shadow: inset 0px 1px 2px #dddddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px 5px 5px 5px;
-    -moz-border-radius: 4px 5px 5px 5px;
-    border-radius: 4px 5px 5px 5px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
     font-size: 12px;
     line-height: 15px;
     height: 15px;
@@ -846,8 +815,7 @@
     vertical-align: middle;
   }
   .AXInput:focus {
-    border: 1px solid #949fa8;
-    box-shadow: inset 0px 0px 3px #949fa8;
+    border: 1px solid #3badeb;
     outline: none;
     color: #222222;
   }
@@ -856,13 +824,11 @@
     background-position: 0px -78px;
     color: #ffffff;
     text-shadow: 0px -1px #b7b7b7;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
   }
   .AXInput[readonly] {
     background: #eee;
     color: #676767;
     text-shadow: 0px 1px #fff;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
   }
   .AXInput::-webkit-input-placeholder {
     color: #bbbbbb;
@@ -879,16 +845,12 @@
     border-radius: 15px 15px 15px 15px;
   }
   .AXInputSmall {
-    border: 1px solid #b6b6b6;
+    border: 1px solid #cccccc;
     background: #ffffff;
     color: #333333;
-    box-shadow: inset 0px 1px 1px #dddddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px 5px 5px 5px;
-    -moz-border-radius: 4px 5px 5px 5px;
-    border-radius: 4px 5px 5px 5px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
     font-size: 12px;
     line-height: 12px;
     height: 12px;
@@ -897,8 +859,7 @@
     vertical-align: middle;
   }
   .AXInputSmall:focus {
-    border: 1px solid #949fa8;
-    box-shadow: inset 0px 0px 3px #949fa8;
+    border: 1px solid #3badeb;
     outline: none;
     color: #222222;
   }
@@ -907,13 +868,11 @@
     background-position: 0px -60px;
     color: #ffffff;
     text-shadow: 0px -1px #b7b7b7;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
   }
   .AXInputSmall[readonly] {
     background: #eee;
     color: #676767;
     text-shadow: 0px 1px #fff;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
   }
   .AXInputSmall::-webkit-input-placeholder {
     color: #bbbbbb;
@@ -942,6 +901,7 @@
     cursor: pointer;
     overflow: hidden;
     background: url('images/dx-checkbox.png') no-repeat left 0px;
+    background-size: 26px 78px;
     vertical-align: middle;
   }
   .AXCheckbox.checked {
@@ -1037,10 +997,10 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    background: url('images/dx-default-regular.png') repeat-x;
+    background-color: #b3b5b7;
     border: 1px solid #b9babc;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     overflow: hidden;
   }
   .AXanchorNumberContainer .AXanchorIncrease {
@@ -1052,7 +1012,7 @@
     height: 18px;
     overflow: hidden;
     text-indent: -2000px;
-    border-bottom: 1px solid #b9babc;
+    border-bottom: 1px solid #cccccc;
   }
   .AXanchorNumberContainer .AXanchorIncrease:active {
     background-image: url('images/dx-up-arrow-on.png');
@@ -1066,7 +1026,7 @@
     height: 18px;
     overflow: hidden;
     text-indent: -2000px;
-    border-top: 1px solid #b9babc;
+    border-top: 1px solid #cccccc;
   }
   .AXanchorNumberContainer .AXanchorDecrease:active {
     background-image: url('images/dx-down-arrow-on.png');
@@ -1075,8 +1035,8 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    background: url('images/dx-default-regular.png') repeat-x;
-    border: 1px solid #b9babc;
+    background: #b9b9b9;
+    border: 1px solid #b9b9b9;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
@@ -1090,13 +1050,14 @@
   }
   .AXanchorSelectorHandleContainer .AXanchorSelectorHandle.on {
     background: url('images/dx-slide-up-arrow.png') center center no-repeat;
+    background-color: #42aee8;
   }
   .AXanchorSelectorFinderContainer {
     position: absolute;
     width: 18px;
     height: 18px;
-    background: url('images/dx-default-regular.png') repeat-x;
-    border: 1px solid #b9babc;
+    background: #b9b9b9;
+    border: 1px solid #b9b9b9;
   }
   .AXanchorSelectorFinderContainer .AXanchorSelectorFinder {
     position: absolute;
@@ -1108,6 +1069,7 @@
   }
   .AXanchorSelectorFinderContainer .AXanchorSelectorFinder.on {
     background: url('images/dx-selector-search.png') center center no-repeat;
+    background-color: #42aee8;
   }
   .AXanchorSelectorExpandBox {
     position: absolute;
@@ -1194,7 +1156,7 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    background: #90979d;
+    background: #1dbb9a;
     height: 4px;
     border-radius: 2px;
   }
@@ -1288,9 +1250,8 @@
     left: 0px;
     top: 0px;
     height: 22px;
-    border: 1px solid #b6b6b6;
-    background: #ffffff;
-    box-shadow: inset 0px 1px 2px #dddddd;
+    border: 1px solid #e5e5e5;
+    background: #e5e5e5;
     border-radius: 14px;
     padding: 0px;
     margin: 0px;
@@ -1301,7 +1262,7 @@
     padding-left: 18px;
     font-family: Arial;
     font-size: 11px;
-    color: #b6b6b6;
+    color: #808084;
     line-height: 22px;
     white-space: nowrap;
     overflow: hidden;
@@ -1321,9 +1282,8 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    border: 1px solid #4f5458;
-    background: #a3b0b9;
-    box-shadow: inset 0px 1px 2px #828282;
+    border: 1px solid #536270;
+    background: #536270;
     padding: 0px;
     margin: 0px;
     outline: none;
@@ -1334,7 +1294,6 @@
     padding-right: 18px;
     font-size: 11px;
     color: #ffffff;
-    text-shadow: 0px -1px #8b969d;
     white-space: nowrap;
     overflow: hidden;
   }
@@ -1363,27 +1322,27 @@
     float: left;
     padding: 0px 0px;
     margin: 0px;
-    border-top: 1px solid #b9babc;
-    border-left: 1px solid #b9babc;
-    border-bottom: 1px solid #b9babc;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
     font-size: 12px;
-    color: #6e7a86;
+    color: #6e7a8d;
     text-align: center;
     text-decoration: none;
-    background: #e8e8e8;
-    background: -webkit-linear-gradient(#ffffff, #e8e8e8);
+    background: #e5e5e5;
+    background: -webkit-linear-gradient(#e5e5e5, #e5e5e5);
     /* For Safari */
   
-    background: -o-linear-gradient(#ffffff, #e8e8e8);
+    background: -o-linear-gradient(#e5e5e5, #e5e5e5);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#ffffff, #e8e8e8);
+    background: -moz-linear-gradient(#e5e5e5, #e5e5e5);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#ffffff, #e8e8e8);
+    background: linear-gradient(#e5e5e5, #e5e5e5);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#e8e8e8);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e5e5e5, endColorstr=#e5e5e5);
     /*For IE7-8-9*/
     white-space: nowrap;
     overflow: hidden;
@@ -1391,50 +1350,48 @@
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle:hover,
   .AXanchorSegmentBox .AXanchorSegmentHandle:focus {
-    background: #e5eff2;
-    background: -webkit-linear-gradient(#c7cfd4, #e5eff2);
+    background: #bbbbbb;
+    background: -webkit-linear-gradient(#bbbbbb, #bbbbbb);
     /* For Safari */
   
-    background: -o-linear-gradient(#c7cfd4, #e5eff2);
+    background: -o-linear-gradient(#bbbbbb, #bbbbbb);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#c7cfd4, #e5eff2);
+    background: -moz-linear-gradient(#bbbbbb, #bbbbbb);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#c7cfd4, #e5eff2);
+    background: linear-gradient(#bbbbbb, #bbbbbb);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c7cfd4, endColorstr=#e5eff2);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#bbbbbb, endColorstr=#bbbbbb);
     /*For IE7-8-9*/
-    text-shadow: 0px 1px #fff;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.segmentLeft {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.segmentRight {
-    border-right: 1px solid #b9babc;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-right: 1px solid #cccccc;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.on {
-    background: #b9babc;
-    background: -webkit-linear-gradient(#7c7e83, #b9babc);
+    background: #808080;
+    background: -webkit-linear-gradient(#808080, #808080);
     /* For Safari */
   
-    background: -o-linear-gradient(#7c7e83, #b9babc);
+    background: -o-linear-gradient(#808080, #808080);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#7c7e83, #b9babc);
+    background: -moz-linear-gradient(#808080, #808080);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#7c7e83, #b9babc);
+    background: linear-gradient(#808080, #808080);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#7c7e83, endColorstr=#b9babc);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#808080, endColorstr=#808080);
     /*For IE7-8-9*/
     color: #ffffff;
-    text-shadow: 0px 1px #4e585f;
   }
   .AXanchorDateHandle {
     position: absolute;
@@ -1449,9 +1406,7 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    padding: 5px;
-    background: url('images/dx-calendar-box-bg.png');
-    border: 1px solid #808d9d;
+    background: #f2f2f2;
     border-radius: 5px;
     box-shadow: 0px 1px 3px #ccc;
   }
@@ -1459,8 +1414,7 @@
     position: relative;
     width: 181px;
     height: 26px;
-    background: url('images/dx-calendar-bgs.png') repeat-x;
-    border: 1px solid #7f8d9c;
+    background: #1dbb9a;
   }
   .AXbindDateExpandBox .dateControlBox .prevbutton {
     position: absolute;
@@ -1499,7 +1453,6 @@
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindDateExpandBox .dateControlBox .monthbutton {
     position: absolute;
@@ -1510,12 +1463,9 @@
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindDateExpandBox .dateDisplayBox {
     background: #ffffff;
-    border: 1px solid #b9babc;
-    border-top: 0px none;
     width: 181px;
   }
   .AXbindDateExpandBox .timeDisplayBox {
@@ -1527,16 +1477,16 @@
     left: 0px;
     top: 0px;
     padding: 5px;
-    background: url('images/dx-calendar-box-bg.png');
-    border: 1px solid #808d9d;
+    background: #f2f2f2;
     border-radius: 5px;
-    box-shadow: 0px 1px 3px #ccc;
+    -webkit-box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25);
   }
   .AXbindTwinDateExpandBox .dateControlBox {
     position: relative;
     height: 26px;
-    background: url('images/dx-calendar-bgs.png') repeat-x;
-    border: 1px solid #7f8d9c;
+    background: #1dbb9a;
     width: 181px;
   }
   .AXbindTwinDateExpandBox .dateControlBox .prevbutton {
@@ -1576,7 +1526,6 @@
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindTwinDateExpandBox .dateControlBox .monthbutton {
     position: absolute;
@@ -1587,12 +1536,9 @@
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindTwinDateExpandBox .dateDisplayBox {
     background: #ffffff;
-    border: 1px solid #b9babc;
-    border-top: 0px none;
     width: 181px;
   }
   .AXbindTwinDateExpandBox .timeDisplayBox {
@@ -1603,8 +1549,8 @@
     height: 22px;
     line-height: 21px;
     text-align: center;
+    font-size: 12px;
     color: #828f9e;
-    text-shadow: 0px 1px #fff;
     font-family: Arial;
   }
 }
@@ -1628,16 +1574,12 @@
     vertical-align: middle;
   }
   .AXInput {
-    border: 1px solid #b6b6b6;
+    border: 1px solid #cccccc;
     background: #ffffff;
     color: #333333;
-    box-shadow: inset 0px 1px 2px #dddddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px 5px 5px 5px;
-    -moz-border-radius: 4px 5px 5px 5px;
-    border-radius: 4px 5px 5px 5px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
     font-size: 12px;
     line-height: 15px;
     height: 15px;
@@ -1646,8 +1588,7 @@
     vertical-align: middle;
   }
   .AXInput:focus {
-    border: 1px solid #949fa8;
-    box-shadow: inset 0px 0px 3px #949fa8;
+    border: 1px solid #3badeb;
     outline: none;
     color: #222222;
   }
@@ -1656,13 +1597,11 @@
     background-position: 0px -78px;
     color: #ffffff;
     text-shadow: 0px -1px #b7b7b7;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
   }
   .AXInput[readonly] {
     background: #eee;
     color: #676767;
     text-shadow: 0px 1px #fff;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
   }
   .AXInput::-webkit-input-placeholder {
     color: #bbbbbb;
@@ -1679,16 +1618,12 @@
     border-radius: 15px 15px 15px 15px;
   }
   .AXInputSmall {
-    border: 1px solid #b6b6b6;
+    border: 1px solid #cccccc;
     background: #ffffff;
     color: #333333;
-    box-shadow: inset 0px 1px 1px #dddddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px 5px 5px 5px;
-    -moz-border-radius: 4px 5px 5px 5px;
-    border-radius: 4px 5px 5px 5px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
     font-size: 12px;
     line-height: 12px;
     height: 12px;
@@ -1697,8 +1632,7 @@
     vertical-align: middle;
   }
   .AXInputSmall:focus {
-    border: 1px solid #949fa8;
-    box-shadow: inset 0px 0px 3px #949fa8;
+    border: 1px solid #3badeb;
     outline: none;
     color: #222222;
   }
@@ -1707,13 +1641,11 @@
     background-position: 0px -60px;
     color: #ffffff;
     text-shadow: 0px -1px #b7b7b7;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
   }
   .AXInputSmall[readonly] {
     background: #eee;
     color: #676767;
     text-shadow: 0px 1px #fff;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
   }
   .AXInputSmall::-webkit-input-placeholder {
     color: #bbbbbb;
@@ -1742,6 +1674,7 @@
     cursor: pointer;
     overflow: hidden;
     background: url('images/dx-checkbox.png') no-repeat left 0px;
+    background-size: 26px 78px;
     vertical-align: middle;
   }
   .AXCheckbox.checked {
@@ -1837,10 +1770,10 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    background: url('images/dx-default-regular.png') repeat-x;
+    background-color: #b3b5b7;
     border: 1px solid #b9babc;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     overflow: hidden;
   }
   .AXanchorNumberContainer .AXanchorIncrease {
@@ -1852,7 +1785,7 @@
     height: 18px;
     overflow: hidden;
     text-indent: -2000px;
-    border-bottom: 1px solid #b9babc;
+    border-bottom: 1px solid #cccccc;
   }
   .AXanchorNumberContainer .AXanchorIncrease:active {
     background-image: url('images/dx-up-arrow-on.png');
@@ -1866,7 +1799,7 @@
     height: 18px;
     overflow: hidden;
     text-indent: -2000px;
-    border-top: 1px solid #b9babc;
+    border-top: 1px solid #cccccc;
   }
   .AXanchorNumberContainer .AXanchorDecrease:active {
     background-image: url('images/dx-down-arrow-on.png');
@@ -1875,8 +1808,8 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    background: url('images/dx-default-regular.png') repeat-x;
-    border: 1px solid #b9babc;
+    background: #b9b9b9;
+    border: 1px solid #b9b9b9;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
@@ -1890,13 +1823,14 @@
   }
   .AXanchorSelectorHandleContainer .AXanchorSelectorHandle.on {
     background: url('images/dx-slide-up-arrow.png') center center no-repeat;
+    background-color: #42aee8;
   }
   .AXanchorSelectorFinderContainer {
     position: absolute;
     width: 18px;
     height: 18px;
-    background: url('images/dx-default-regular.png') repeat-x;
-    border: 1px solid #b9babc;
+    background: #b9b9b9;
+    border: 1px solid #b9b9b9;
   }
   .AXanchorSelectorFinderContainer .AXanchorSelectorFinder {
     position: absolute;
@@ -1908,6 +1842,7 @@
   }
   .AXanchorSelectorFinderContainer .AXanchorSelectorFinder.on {
     background: url('images/dx-selector-search.png') center center no-repeat;
+    background-color: #42aee8;
   }
   .AXanchorSelectorExpandBox {
     position: absolute;
@@ -1994,7 +1929,7 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    background: #90979d;
+    background: #1dbb9a;
     height: 4px;
     border-radius: 2px;
   }
@@ -2088,9 +2023,8 @@
     left: 0px;
     top: 0px;
     height: 22px;
-    border: 1px solid #b6b6b6;
-    background: #ffffff;
-    box-shadow: inset 0px 1px 2px #dddddd;
+    border: 1px solid #e5e5e5;
+    background: #e5e5e5;
     border-radius: 14px;
     padding: 0px;
     margin: 0px;
@@ -2101,7 +2035,7 @@
     padding-left: 18px;
     font-family: Arial;
     font-size: 11px;
-    color: #b6b6b6;
+    color: #808084;
     line-height: 22px;
     white-space: nowrap;
     overflow: hidden;
@@ -2121,9 +2055,8 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    border: 1px solid #4f5458;
-    background: #a3b0b9;
-    box-shadow: inset 0px 1px 2px #828282;
+    border: 1px solid #536270;
+    background: #536270;
     padding: 0px;
     margin: 0px;
     outline: none;
@@ -2134,7 +2067,6 @@
     padding-right: 18px;
     font-size: 11px;
     color: #ffffff;
-    text-shadow: 0px -1px #8b969d;
     white-space: nowrap;
     overflow: hidden;
   }
@@ -2163,27 +2095,27 @@
     float: left;
     padding: 0px 0px;
     margin: 0px;
-    border-top: 1px solid #b9babc;
-    border-left: 1px solid #b9babc;
-    border-bottom: 1px solid #b9babc;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
     font-size: 12px;
-    color: #6e7a86;
+    color: #6e7a8d;
     text-align: center;
     text-decoration: none;
-    background: #e8e8e8;
-    background: -webkit-linear-gradient(#ffffff, #e8e8e8);
+    background: #e5e5e5;
+    background: -webkit-linear-gradient(#e5e5e5, #e5e5e5);
     /* For Safari */
   
-    background: -o-linear-gradient(#ffffff, #e8e8e8);
+    background: -o-linear-gradient(#e5e5e5, #e5e5e5);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#ffffff, #e8e8e8);
+    background: -moz-linear-gradient(#e5e5e5, #e5e5e5);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#ffffff, #e8e8e8);
+    background: linear-gradient(#e5e5e5, #e5e5e5);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#e8e8e8);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e5e5e5, endColorstr=#e5e5e5);
     /*For IE7-8-9*/
     white-space: nowrap;
     overflow: hidden;
@@ -2191,50 +2123,48 @@
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle:hover,
   .AXanchorSegmentBox .AXanchorSegmentHandle:focus {
-    background: #e5eff2;
-    background: -webkit-linear-gradient(#c7cfd4, #e5eff2);
+    background: #bbbbbb;
+    background: -webkit-linear-gradient(#bbbbbb, #bbbbbb);
     /* For Safari */
   
-    background: -o-linear-gradient(#c7cfd4, #e5eff2);
+    background: -o-linear-gradient(#bbbbbb, #bbbbbb);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#c7cfd4, #e5eff2);
+    background: -moz-linear-gradient(#bbbbbb, #bbbbbb);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#c7cfd4, #e5eff2);
+    background: linear-gradient(#bbbbbb, #bbbbbb);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c7cfd4, endColorstr=#e5eff2);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#bbbbbb, endColorstr=#bbbbbb);
     /*For IE7-8-9*/
-    text-shadow: 0px 1px #fff;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.segmentLeft {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.segmentRight {
-    border-right: 1px solid #b9babc;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-right: 1px solid #cccccc;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.on {
-    background: #b9babc;
-    background: -webkit-linear-gradient(#7c7e83, #b9babc);
+    background: #808080;
+    background: -webkit-linear-gradient(#808080, #808080);
     /* For Safari */
   
-    background: -o-linear-gradient(#7c7e83, #b9babc);
+    background: -o-linear-gradient(#808080, #808080);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#7c7e83, #b9babc);
+    background: -moz-linear-gradient(#808080, #808080);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#7c7e83, #b9babc);
+    background: linear-gradient(#808080, #808080);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#7c7e83, endColorstr=#b9babc);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#808080, endColorstr=#808080);
     /*For IE7-8-9*/
     color: #ffffff;
-    text-shadow: 0px 1px #4e585f;
   }
   .AXanchorDateHandle {
     position: absolute;
@@ -2249,9 +2179,7 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    padding: 5px;
-    background: url('images/dx-calendar-box-bg.png');
-    border: 1px solid #808d9d;
+    background: #f2f2f2;
     border-radius: 5px;
     box-shadow: 0px 1px 3px #ccc;
   }
@@ -2259,8 +2187,7 @@
     position: relative;
     width: 181px;
     height: 26px;
-    background: url('images/dx-calendar-bgs.png') repeat-x;
-    border: 1px solid #7f8d9c;
+    background: #1dbb9a;
   }
   .AXbindDateExpandBox .dateControlBox .prevbutton {
     position: absolute;
@@ -2299,7 +2226,6 @@
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindDateExpandBox .dateControlBox .monthbutton {
     position: absolute;
@@ -2310,12 +2236,9 @@
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindDateExpandBox .dateDisplayBox {
     background: #ffffff;
-    border: 1px solid #b9babc;
-    border-top: 0px none;
     width: 181px;
   }
   .AXbindDateExpandBox .timeDisplayBox {
@@ -2327,16 +2250,16 @@
     left: 0px;
     top: 0px;
     padding: 5px;
-    background: url('images/dx-calendar-box-bg.png');
-    border: 1px solid #808d9d;
+    background: #f2f2f2;
     border-radius: 5px;
-    box-shadow: 0px 1px 3px #ccc;
+    -webkit-box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25);
   }
   .AXbindTwinDateExpandBox .dateControlBox {
     position: relative;
     height: 26px;
-    background: url('images/dx-calendar-bgs.png') repeat-x;
-    border: 1px solid #7f8d9c;
+    background: #1dbb9a;
     width: 181px;
   }
   .AXbindTwinDateExpandBox .dateControlBox .prevbutton {
@@ -2376,7 +2299,6 @@
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindTwinDateExpandBox .dateControlBox .monthbutton {
     position: absolute;
@@ -2387,12 +2309,9 @@
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindTwinDateExpandBox .dateDisplayBox {
     background: #ffffff;
-    border: 1px solid #b9babc;
-    border-top: 0px none;
     width: 181px;
   }
   .AXbindTwinDateExpandBox .timeDisplayBox {
@@ -2403,8 +2322,8 @@
     height: 22px;
     line-height: 21px;
     text-align: center;
+    font-size: 12px;
     color: #828f9e;
-    text-shadow: 0px 1px #fff;
     font-family: Arial;
   }
 }
@@ -2428,16 +2347,12 @@
     vertical-align: middle;
   }
   .AXInput {
-    border: 1px solid #b6b6b6;
+    border: 1px solid #cccccc;
     background: #ffffff;
     color: #333333;
-    box-shadow: inset 0px 1px 2px #dddddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px 5px 5px 5px;
-    -moz-border-radius: 4px 5px 5px 5px;
-    border-radius: 4px 5px 5px 5px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
     font-size: 12px;
     line-height: 15px;
     height: 15px;
@@ -2446,8 +2361,7 @@
     vertical-align: middle;
   }
   .AXInput:focus {
-    border: 1px solid #949fa8;
-    box-shadow: inset 0px 0px 3px #949fa8;
+    border: 1px solid #3badeb;
     outline: none;
     color: #222222;
   }
@@ -2456,13 +2370,11 @@
     background-position: 0px -78px;
     color: #ffffff;
     text-shadow: 0px -1px #b7b7b7;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
   }
   .AXInput[readonly] {
     background: #eee;
     color: #676767;
     text-shadow: 0px 1px #fff;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
   }
   .AXInput::-webkit-input-placeholder {
     color: #bbbbbb;
@@ -2479,16 +2391,12 @@
     border-radius: 15px 15px 15px 15px;
   }
   .AXInputSmall {
-    border: 1px solid #b6b6b6;
+    border: 1px solid #cccccc;
     background: #ffffff;
     color: #333333;
-    box-shadow: inset 0px 1px 1px #dddddd;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px 5px 5px 5px;
-    -moz-border-radius: 4px 5px 5px 5px;
-    border-radius: 4px 5px 5px 5px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
     font-size: 12px;
     line-height: 12px;
     height: 12px;
@@ -2497,8 +2405,7 @@
     vertical-align: middle;
   }
   .AXInputSmall:focus {
-    border: 1px solid #949fa8;
-    box-shadow: inset 0px 0px 3px #949fa8;
+    border: 1px solid #3badeb;
     outline: none;
     color: #222222;
   }
@@ -2507,13 +2414,11 @@
     background-position: 0px -60px;
     color: #ffffff;
     text-shadow: 0px -1px #b7b7b7;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
   }
   .AXInputSmall[readonly] {
     background: #eee;
     color: #676767;
     text-shadow: 0px 1px #fff;
-    box-shadow: inset 0px 1px 2px #b1b1b1;
   }
   .AXInputSmall::-webkit-input-placeholder {
     color: #bbbbbb;
@@ -2542,6 +2447,7 @@
     cursor: pointer;
     overflow: hidden;
     background: url('images/dx-checkbox.png') no-repeat left 0px;
+    background-size: 26px 78px;
     vertical-align: middle;
   }
   .AXCheckbox.checked {
@@ -2637,10 +2543,10 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    background: url('images/dx-default-regular.png') repeat-x;
+    background-color: #b3b5b7;
     border: 1px solid #b9babc;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     overflow: hidden;
   }
   .AXanchorNumberContainer .AXanchorIncrease {
@@ -2652,7 +2558,7 @@
     height: 18px;
     overflow: hidden;
     text-indent: -2000px;
-    border-bottom: 1px solid #b9babc;
+    border-bottom: 1px solid #cccccc;
   }
   .AXanchorNumberContainer .AXanchorIncrease:active {
     background-image: url('images/dx-up-arrow-on.png');
@@ -2666,7 +2572,7 @@
     height: 18px;
     overflow: hidden;
     text-indent: -2000px;
-    border-top: 1px solid #b9babc;
+    border-top: 1px solid #cccccc;
   }
   .AXanchorNumberContainer .AXanchorDecrease:active {
     background-image: url('images/dx-down-arrow-on.png');
@@ -2675,8 +2581,8 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    background: url('images/dx-default-regular.png') repeat-x;
-    border: 1px solid #b9babc;
+    background: #b9b9b9;
+    border: 1px solid #b9b9b9;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
   }
@@ -2690,13 +2596,14 @@
   }
   .AXanchorSelectorHandleContainer .AXanchorSelectorHandle.on {
     background: url('images/dx-slide-up-arrow.png') center center no-repeat;
+    background-color: #42aee8;
   }
   .AXanchorSelectorFinderContainer {
     position: absolute;
     width: 18px;
     height: 18px;
-    background: url('images/dx-default-regular.png') repeat-x;
-    border: 1px solid #b9babc;
+    background: #b9b9b9;
+    border: 1px solid #b9b9b9;
   }
   .AXanchorSelectorFinderContainer .AXanchorSelectorFinder {
     position: absolute;
@@ -2708,6 +2615,7 @@
   }
   .AXanchorSelectorFinderContainer .AXanchorSelectorFinder.on {
     background: url('images/dx-selector-search.png') center center no-repeat;
+    background-color: #42aee8;
   }
   .AXanchorSelectorExpandBox {
     position: absolute;
@@ -2794,7 +2702,7 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    background: #90979d;
+    background: #1dbb9a;
     height: 4px;
     border-radius: 2px;
   }
@@ -2888,9 +2796,8 @@
     left: 0px;
     top: 0px;
     height: 22px;
-    border: 1px solid #b6b6b6;
-    background: #ffffff;
-    box-shadow: inset 0px 1px 2px #dddddd;
+    border: 1px solid #e5e5e5;
+    background: #e5e5e5;
     border-radius: 14px;
     padding: 0px;
     margin: 0px;
@@ -2901,7 +2808,7 @@
     padding-left: 18px;
     font-family: Arial;
     font-size: 11px;
-    color: #b6b6b6;
+    color: #808084;
     line-height: 22px;
     white-space: nowrap;
     overflow: hidden;
@@ -2921,9 +2828,8 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    border: 1px solid #4f5458;
-    background: #a3b0b9;
-    box-shadow: inset 0px 1px 2px #828282;
+    border: 1px solid #536270;
+    background: #536270;
     padding: 0px;
     margin: 0px;
     outline: none;
@@ -2934,7 +2840,6 @@
     padding-right: 18px;
     font-size: 11px;
     color: #ffffff;
-    text-shadow: 0px -1px #8b969d;
     white-space: nowrap;
     overflow: hidden;
   }
@@ -2963,27 +2868,27 @@
     float: left;
     padding: 0px 0px;
     margin: 0px;
-    border-top: 1px solid #b9babc;
-    border-left: 1px solid #b9babc;
-    border-bottom: 1px solid #b9babc;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
     font-size: 12px;
-    color: #6e7a86;
+    color: #6e7a8d;
     text-align: center;
     text-decoration: none;
-    background: #e8e8e8;
-    background: -webkit-linear-gradient(#ffffff, #e8e8e8);
+    background: #e5e5e5;
+    background: -webkit-linear-gradient(#e5e5e5, #e5e5e5);
     /* For Safari */
   
-    background: -o-linear-gradient(#ffffff, #e8e8e8);
+    background: -o-linear-gradient(#e5e5e5, #e5e5e5);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#ffffff, #e8e8e8);
+    background: -moz-linear-gradient(#e5e5e5, #e5e5e5);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#ffffff, #e8e8e8);
+    background: linear-gradient(#e5e5e5, #e5e5e5);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#e8e8e8);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e5e5e5, endColorstr=#e5e5e5);
     /*For IE7-8-9*/
     white-space: nowrap;
     overflow: hidden;
@@ -2991,50 +2896,48 @@
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle:hover,
   .AXanchorSegmentBox .AXanchorSegmentHandle:focus {
-    background: #e5eff2;
-    background: -webkit-linear-gradient(#c7cfd4, #e5eff2);
+    background: #bbbbbb;
+    background: -webkit-linear-gradient(#bbbbbb, #bbbbbb);
     /* For Safari */
   
-    background: -o-linear-gradient(#c7cfd4, #e5eff2);
+    background: -o-linear-gradient(#bbbbbb, #bbbbbb);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#c7cfd4, #e5eff2);
+    background: -moz-linear-gradient(#bbbbbb, #bbbbbb);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#c7cfd4, #e5eff2);
+    background: linear-gradient(#bbbbbb, #bbbbbb);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#c7cfd4, endColorstr=#e5eff2);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#bbbbbb, endColorstr=#bbbbbb);
     /*For IE7-8-9*/
-    text-shadow: 0px 1px #fff;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.segmentLeft {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.segmentRight {
-    border-right: 1px solid #b9babc;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-right: 1px solid #cccccc;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
   .AXanchorSegmentBox .AXanchorSegmentHandle.on {
-    background: #b9babc;
-    background: -webkit-linear-gradient(#7c7e83, #b9babc);
+    background: #808080;
+    background: -webkit-linear-gradient(#808080, #808080);
     /* For Safari */
   
-    background: -o-linear-gradient(#7c7e83, #b9babc);
+    background: -o-linear-gradient(#808080, #808080);
     /* For Opera 11.1 to 12.0 */
   
-    background: -moz-linear-gradient(#7c7e83, #b9babc);
+    background: -moz-linear-gradient(#808080, #808080);
     /* For Firefox 3.6 to 15 */
   
-    background: linear-gradient(#7c7e83, #b9babc);
+    background: linear-gradient(#808080, #808080);
     /* Standard syntax */
   
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#7c7e83, endColorstr=#b9babc);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#808080, endColorstr=#808080);
     /*For IE7-8-9*/
     color: #ffffff;
-    text-shadow: 0px 1px #4e585f;
   }
   .AXanchorDateHandle {
     position: absolute;
@@ -3049,9 +2952,7 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    padding: 5px;
-    background: url('images/dx-calendar-box-bg.png');
-    border: 1px solid #808d9d;
+    background: #f2f2f2;
     border-radius: 5px;
     box-shadow: 0px 1px 3px #ccc;
   }
@@ -3059,8 +2960,7 @@
     position: relative;
     width: 181px;
     height: 26px;
-    background: url('images/dx-calendar-bgs.png') repeat-x;
-    border: 1px solid #7f8d9c;
+    background: #1dbb9a;
   }
   .AXbindDateExpandBox .dateControlBox .prevbutton {
     position: absolute;
@@ -3099,7 +2999,6 @@
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindDateExpandBox .dateControlBox .monthbutton {
     position: absolute;
@@ -3110,12 +3009,9 @@
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindDateExpandBox .dateDisplayBox {
     background: #ffffff;
-    border: 1px solid #b9babc;
-    border-top: 0px none;
     width: 181px;
   }
   .AXbindDateExpandBox .timeDisplayBox {
@@ -3127,16 +3023,16 @@
     left: 0px;
     top: 0px;
     padding: 5px;
-    background: url('images/dx-calendar-box-bg.png');
-    border: 1px solid #808d9d;
+    background: #f2f2f2;
     border-radius: 5px;
-    box-shadow: 0px 1px 3px #ccc;
+    -webkit-box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.25);
   }
   .AXbindTwinDateExpandBox .dateControlBox {
     position: relative;
     height: 26px;
-    background: url('images/dx-calendar-bgs.png') repeat-x;
-    border: 1px solid #7f8d9c;
+    background: #1dbb9a;
     width: 181px;
   }
   .AXbindTwinDateExpandBox .dateControlBox .prevbutton {
@@ -3176,7 +3072,6 @@
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindTwinDateExpandBox .dateControlBox .monthbutton {
     position: absolute;
@@ -3187,12 +3082,9 @@
     line-height: 26px;
     font-family: Arial;
     font-size: 12px;
-    text-shadow: 0px -1px #869198;
   }
   .AXbindTwinDateExpandBox .dateDisplayBox {
     background: #ffffff;
-    border: 1px solid #b9babc;
-    border-top: 0px none;
     width: 181px;
   }
   .AXbindTwinDateExpandBox .timeDisplayBox {
@@ -3203,8 +3095,8 @@
     height: 22px;
     line-height: 21px;
     text-align: center;
+    font-size: 12px;
     color: #828f9e;
-    text-shadow: 0px 1px #fff;
     font-family: Arial;
   }
 }

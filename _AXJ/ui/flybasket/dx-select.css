@@ -9,14 +9,11 @@
   text-overflow: ellipsis;
 }
 .AXSelect {
-  border: 1px solid #b6b6b6;
+  border: 2px solid #b6b6b6;
   background: #ffffff;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px 5px 5px 5px;
-  -moz-border-radius: 4px 5px 5px 5px;
-  border-radius: 4px 5px 5px 5px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
   font-size: 12px;
   height: 26px;
   line-height: 26px;
@@ -26,17 +23,14 @@
   vertical-align: middle;
 }
 .AXSelectSmall {
-  border: 1px solid #b6b6b6;
+  border: 2px solid #b6b6b6;
   background: #ffffff;
   -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px 5px 5px 5px;
-  -moz-border-radius: 4px 5px 5px 5px;
-  border-radius: 4px 5px 5px 5px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
   font-size: 11px;
   height: 20px;
   line-height: 20px;
@@ -47,17 +41,14 @@
   vertical-align: middle;
 }
 .AXTextarea {
-  border: 1px solid #b6b6b6;
+  border: 2px solid #b6b6b6;
   background: #ffffff;
   -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px 5px 5px 5px;
-  -moz-border-radius: 4px 5px 5px 5px;
-  border-radius: 4px 5px 5px 5px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
   font-size: 12px;
   line-height: 15px;
   padding: 4px;
@@ -75,7 +66,7 @@
 }
 .AXanchorSelect .selectedTextBox {
   display: block;
-  border: 1px solid #b6b6b6;
+  border: 2px solid #b6b6b6;
   background: #e8e8e8;
   background: -webkit-linear-gradient(#fdfdfd, #e8e8e8);
   /* For Safari */
@@ -94,12 +85,9 @@
   -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px 5px 5px 5px;
-  -moz-border-radius: 4px 5px 5px 5px;
-  border-radius: 4px 5px 5px 5px;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
   cursor: pointer;
   text-decoration: none;
   white-space: nowrap;
@@ -108,7 +96,7 @@
   text-align: left;
 }
 .AXanchorSelect .selectedTextBox .selectedText {
-  color: #717b85;
+  color: #58362a;
   text-shadow: 0px -1px rgba(255, 255, 255, 0.25);
 }
 .AXanchorSelect .selectedTextBox:focus {
@@ -119,11 +107,13 @@
 }
 .AXanchorSelect.disabled .selectedTextBox {
   display: block;
-  border: 1px solid #b6b6b6;
-  background: url('images/defaultRegular.png') repeat-x;
+  border: 2px solid #b6b6b6;
+  background: url('images/dx-default-regular.png') repeat-x;
   background-position: 0px -78px;
-  box-shadow: inset 0px 1px 1px #888;
-  border-radius: 4px;
+  box-shadow: inset 0px 1px 1px #d9d9d9;
+  -webkit-border-radius: 1px 1px 1px 1px;
+  -moz-border-radius: 1px 1px 1px 1px;
+  border-radius: 1px 1px 1px 1px;
   cursor: pointer;
   text-decoration: none;
   white-space: nowrap;
@@ -134,8 +124,8 @@
   position: absolute;
   left: 0px;
   top: 0px;
-  -moz-opacity: 0.0;
-  opacity: .00;
+  -moz-opacity: 0;
+  opacity: 0;
   filter: alpha(opacity=0);
 }
 .AXanchorSelect .selectBoxArrow {
@@ -145,12 +135,12 @@
   top: 0px;
   width: 24px;
   height: 18px;
-  background: url('images/slideDownArrow.png') center center no-repeat;
+  background: url('images/dx-slide-down-arrow.png') center center no-repeat;
   overflow: hidden;
   text-indent: -2000px;
 }
 .AXanchorSelect .selectBoxArrow.on {
-  background: url('images/slideUpArrow.png') center center no-repeat;
+  background: url('images/dx-slide-up-arrow.png') center center no-repeat;
 }
 .AXselectExpandBox {
   z-index: 5002;
@@ -158,7 +148,7 @@
   left: 0px;
   top: 0px;
   border: 1px solid #b9babc;
-  border-radius: 4px;
+  border-radius: 1px;
   background: #ffffff;
   box-shadow: 0px 1px #e9eced;
   overflow: hidden;
@@ -177,9 +167,9 @@
   background: #ffffff;
 }
 .AXselectExpandBox a.on {
-  background: #d7dde3;
+  background: #ccc2be;
 }
 .AXselectExpandBox a:hover {
-  background: #5ea3db;
+  background: #99847e;
   color: #ffffff;
 }

@@ -1,19 +1,20 @@
 html,
 body {
+  font-family: "Open sans";
   margin: 0;
   padding: 0;
   height: 100%;
-  color: #565b61;
+  color: #5c382c;
   background: #ffffff;
 }
 html a,
 body a {
-  color: #6e7a86;
+  color: #99847d;
   text-decoration: none;
 }
 html a:hover,
 body a:hover {
-  color: #565b61;
+  color: #f1efea;
 }
 html a:active,
 body a:active {
@@ -110,13 +111,13 @@ body h3 {
   width: 100%;
 }
 #AXPage #AXPageHead .ax-layer-1 .ax-unit {
-  background: #e8e8e8;
+  background: #f1efea;
   margin: 0px;
 }
 #AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu {
-  margin-bottom: 1px;
   height: 40px;
   overflow: hidden;
+  border-bottom: 1px solid #99847d;
 }
 #AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu h3 {
   float: left;
@@ -125,8 +126,8 @@ body h3 {
   line-height: 40px;
   font-size: 12px;
   font-weight: normal;
-  border-right: 1px solid #ffffff;
-  background: #717b85;
+  border-right: 1 1px solid #99847d;
+  background: #99847d;
   color: #ffffff;
 }
 #AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu ul {
@@ -136,30 +137,70 @@ body h3 {
 }
 #AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu ul li {
   float: left;
-  border-right: 1px solid #ffffff;
+  border-right: 1px solid #99847d;
 }
 #AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu ul li a {
   font-size: 13px;
   display: block;
   line-height: 40px;
   padding: 0px 10px;
-  background: #e8e8e8;
+  background: #f1efea;
 }
 #AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu ul li a span {
   font-size: 10px;
   margin: 0px 2px;
 }
 #AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu ul li a:hover {
-  background: #c6cdd3;
+  background: #99847d;
 }
 #AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu ul li a.on {
-  background: #c6cdd3;
+  background: #99847d;
 }
 #AXPage #AXPageHead .ax-layer-2 .ax-unit {
   margin: 0px;
 }
-#AXPage #AXPageHead .ax-layer-2 .ax-unit .AXdemoPageTabTarget {
-  background: #d4d4d4;
+#AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo {
+  background: #f1efea;
+  height: 70px;
+}
+#AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo .logo {
+  overflow: hidden;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 60px;
+  height: 60px;
+  background: #eaeaea;
+  border-radius: 30px;
+}
+#AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo h1 {
+  position: absolute;
+  margin-left: 80px;
+  font-size: 14px;
+  margin-top: 16px;
+  font-weight: bold;
+  color: #5c382c;
+}
+#AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo h2 {
+  position: absolute;
+  margin-left: 80px;
+  font-size: 11px;
+  margin-top: 38px;
+  font-weight: normal;
+  color: #5c382c;
+}
+#AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo h2 a {
+  color: #99847d;
+}
+#AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo h2 a:hover {
+  color: #f1efea;
+  text-decoration: underline;
+}
+#AXPage #AXPageHead .ax-layer-3 .ax-unit {
+  margin: 0px;
+}
+#AXPage #AXPageHead .ax-layer-3 .ax-unit .AXdemoPageTabTarget {
+  background: #f1efea;
 }
 #AXPage #AXPageBody .title h1 {
   text-indent: 10px;
@@ -168,19 +209,20 @@ body h3 {
   margin-bottom: 30px;
 }
 #AXPage #AXPageBody .ax-wrap .ax-layer-1 .secBlock {
-  border: 2px solid #e8e8e8;
+  border: 2px solid #f1efea;
   margin: 10px;
   overflow: hidden;
 }
 #AXPage #AXPageBody .ax-wrap .ax-layer-1 .secBlock h3 {
   text-align: center;
-  background: #e8e8e8;
+  background: #f1efea;
   margin: 4px;
   padding: 0px;
   height: 40px;
   line-height: 40px;
 }
 #AXPage #AXPageBody .ax-wrap .ax-layer-1 .secBlock ul {
+  font-size: 14px;
   margin: 10px;
   padding: 0px;
   list-style-position: inside;
@@ -217,12 +259,13 @@ body h3 {
   width: 100%;
 }
 #AXPage #AXPageFoot .ax-layer-1 .ax-unit {
-  background: #e8e8e8;
+  background: #f1efea;
   margin: 0px;
 }
 #AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme {
   height: 30px;
   overflow: hidden;
+  border-top: 1px solid #99847d;
 }
 #AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme h3 {
   float: left;
@@ -232,8 +275,8 @@ body h3 {
   font-size: 12px;
   font-weight: normal;
   padding: 0 20px;
-  border-right: 1px solid #ffffff;
-  background: #717b85;
+  border-right: 1px solid #99847d;
+  background: #99847d;
   color: #ffffff;
 }
 #AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme ul {
@@ -243,24 +286,26 @@ body h3 {
 }
 #AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme ul li {
   float: left;
-  border-right: 1px solid #ffffff;
+  border-right: 1px solid #99847d;
 }
 #AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme ul li a {
   font-size: 13px;
   display: block;
   line-height: 30px;
   padding: 0px 10px;
-  background: #e8e8e8;
+  background: #f1efea;
 }
 #AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme ul li a span {
   font-size: 10px;
   margin: 0px 2px;
 }
 #AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme ul li a:hover {
-  background: #c6cdd3;
+  color: #f1efea;
+  background: #99847d;
 }
 #AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme ul li a.on {
-  background: #c6cdd3;
+  color: #f1efea;
+  background: #99847d;
 }
 @media (min-width:1152px) {
   

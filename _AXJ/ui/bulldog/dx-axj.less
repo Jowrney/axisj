@@ -140,7 +140,7 @@
 	border:@border;background:@bgcolor;
 	padding:10px;margin:10px 0px;
 	box-shadow:0px 0px 5px #b2b2b2;
-	font-size:12px;color:@radius;
+	font-size:12px;color:@color;
 	.util-opacity(80);
 	.util-border-radius(4px);	
 	&.Warning{
@@ -149,7 +149,7 @@
 			background:url('images/dx-noti-warning.png') no-repeat center center !important;
 		}
 		.AXNotificationBody{
-			B{color:#bf601b;}
+			B{color:@color-c;}
 		}
 	}
 	&.Caution{
@@ -158,14 +158,16 @@
 			background:url('images/dx-noti-caution.png') no-repeat center center !important;
 		}
 		.AXNotificationBody{
-			B{color:#7e302c;}
+			B{color:@color-d;}
 		}
 	}
 	.AXNotificationHead{
 		font-weight:bold;
-		color:@color-a;text-shadow:0px 1px #fff;
+		color:@color-a; 
+		text-shadow:0px 1px #fff;
 		padding:5px 15px;height:20px;line-height:20px;
-		background:@bgcolor-a url('images/dx-dialog-title.png') repeat-x;
+		//background:url('images/dx-dialog-title.png') repeat-x;
+		background-color:@bgcolor-a;
 		text-align:center;
 	}	
 	.AXNotificationTable{
@@ -232,9 +234,11 @@
 					font-size:8px;font-family:@font-family;
 					height:20px;line-height:20px;
 					padding:0px;text-align:center;
-					border-right:@border-a;
-					border-bottom:@border-b;
-					&.head_6{border-right:0px none;}
+					//border-right:@border-a;
+					//border-bottom:@border-b;
+					&.head_6{
+						//border-right:0px none;
+					}
 					&.dayofweek_0{color:@color-a;}
 					&.dayofweek_1{color:@color;}
 					&.dayofweek_2{color:@color;}
@@ -248,20 +252,31 @@
 				td{
 					height:25px;line-height:25px;
 					padding:0px;text-align:center;
-					border-right:@border; 
-					border-bottom:@border;
-					background:url('images/dx-calendar-bgs.png') repeat-x 0px -26px;
-					&.bodyCol_6{border-right:0px none;}
-					&.bodyRow_5{border-bottom:0px none;}
-					&.setDate{background:url('images/dx-calendar-bgs.png') repeat-x 0px -76px;}
+					//border-right:@border; 
+					//border-bottom:@border;
+					.util-gradient(top, @bgcolor-a, @bgcolor-b);
+					//background:url('images/dx-calendar-bgs.png') repeat-x 0px -26px;
+					&.bodyCol_6{
+						//border-right:0px none;
+					}
+					&.bodyRow_5{
+						//border-bottom:0px none;
+					}
+					&.setDate{
+						.util-gradient (top, @bgcolor-c, @bgcolor-d);
+						//background:url('images/dx-calendar-bgs.png') repeat-x 0px -76px;
+					}
 					A{
 						&.calendarDate{
 							display:block;height:25px;line-height:25px;
 							text-decoration:none;color:@color-c;
-							font-size:11px;font-family:@font-family;font-weight:bold;
-							&:hover		{background:@bgcolor-a;}
-							&:active	{background:@bgcolor-b;color:@color-d;box-shadow:inset 0px 0px 4px #3d84bc;}
-							&.selected	{background:@bgcolor-c;color:@color-e;box-shadow:inset 0px 0px 4px #3d84bc;}
+							font-size:11px;font-family:@font-family;
+							&:hover		{background:@bgcolor-f;}
+							&:active	{
+								background:@bgcolor-c;
+								color:@color-d;box-shadow:inset 0px 0px 4px #037960;
+							}
+							&.selected	{background:@bgcolor-e;color:@color-e;box-shadow:inset 0px 0px 4px #3d84bc;}
 						}
 					}
 					&.bodyCol_0{
@@ -284,20 +299,31 @@
 				td{
 					height:43px;line-height:43px;
 					padding:0px;text-align:center;
-					border-right:@border;
-					border-bottom:@border;
-					background:url('images/dx-calendar-bgs.png') repeat-x 0px -101px;
-					&.bodyCol_2	{border-right:0px none;}
-					&.bodyCol_3	{border-bottom:0px none;padding-bottom:1px;}	
+					//border-right:@border;
+					//border-bottom:@border;
+					.util-gradient (top, @bgcolor-a, @bgcolor-b);
+					//background:url('images/dx-calendar-bgs.png') repeat-x 0px -101px;
+					&.bodyCol_2	{
+						//border-right:0px none;
+					}
+					&.bodyCol_3	{
+						//border-bottom:0px none;
+						padding-bottom:1px;
+					}	
 					&.setDate	{background:@bgcolor-d;}
 					A{
 						&.calendarMonth{
 							display:block;height:43px;line-height:43px;
 							text-decoration:none;color:@color-c;
-							font-size:12px;font-family:@font-family;font-weight:bold;
-							&:hover	{background:#d8e1e7;}
-							&:active{background:@bgcolor-b;color:@color-d;box-shadow:inset 0px 0px 5px #3d84bc;}						
-							&.selected{background:@bgcolor-c;color:@color-e;box-shadow:inset 0px 0px 5px #3d84bc;}
+							font-size:12px;font-family:@font-family;
+							&:hover	{
+								background:@bgcolor-f;
+							}
+							&:active{
+								background:@bgcolor-c;color:@color-d;
+								box-shadow:inset 0px 0px 5px #037960;
+							}						
+							&.selected{background:@bgcolor-e;color:@color-e;box-shadow:inset 0px 0px 5px #3d84bc;}
 						}
 					}
 				}	

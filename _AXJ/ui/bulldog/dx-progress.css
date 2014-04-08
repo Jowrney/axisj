@@ -17,7 +17,7 @@
 }
 .AXlineProgress .AXprogressTitle {
   padding: 5px;
-  color: #717b85;
+  color: #666666;
   text-shadow: 0px 1px 0px #fff;
   font-size: 12px;
   text-align: center;
@@ -37,21 +37,24 @@
   position: relative;
   padding: 5px 0px;
 }
+.AXlineProgress .AXprogress .AXprogressContainer {
+  background: #e5e5e5;
+}
 .AXlineProgress .AXprogress .AXprogressContainer .AXprogressBar {
   position: relative;
   height: 14px;
   border: 1px solid #e9e9e9;
-  background: url('images/dx-progress-bar.png') repeat-x !important;
-  border-radius: 8px;
+  background: #00bc9a;
 }
 .AXlineProgress .AXprogress .AXprogressContainer .AXprogressLoadedText {
   position: absolute;
   left: 0px;
-  top: 20px;
-  color: #717b85;
-  text-shadow: 0px 1px 0px #fff;
+  top: 0px;
+  color: #ffffff;
   font-size: 11px;
   font-family: Arial;
+  line-height: 24px;
+  text-indent: 10px;
   white-space: nowrap;
 }
 .AXlineProgress .AXprogress .AXprogressContainer .AXprogressLoadedText span {
@@ -60,7 +63,7 @@
 }
 .AXCircleProgress .AXprogressTitle {
   padding: 5px;
-  color: #717b85;
+  color: #666666;
   text-shadow: 0px 1px 0px #fff;
   font-size: 12px;
   text-align: center;
@@ -157,7 +160,7 @@
   height: 66px;
   text-align: center;
   line-height: 60px;
-  color: #717b85;
+  color: #666666;
   text-shadow: 0px 1px 0px #fff;
   font-size: 15px;
   font-family: Arial;

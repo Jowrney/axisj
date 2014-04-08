@@ -1,5 +1,32 @@
 var pageObj = {
 	host:"",
+	theme:"arongi",
+	themeData:[
+		{
+			name:"Arongi",
+			ver:"1.0",
+			developer:"Jowrney Kim",
+			mail:"jowrney@axisj.com"
+		},		
+		{
+			name:"Bulldog",
+			ver:"1.0",
+			developer:"Dongyoung Kim",
+			mail:"dongyoung@axisj.com"
+		},		
+		{
+			name:"Flybasket",
+			ver:"1.0",
+			developer:"Jowrney Kim",
+			mail:"jowrney@axisj.com"
+		},		
+		{
+			name:"Kakao",
+			ver:"1.0",
+			developer:"Jowrney Kim",
+			mail:"jowrney@axisj.com"
+		}
+	],
 	incHeader:function(){
 		var ho = [];
 		ho.push("<h3><a href='"+pageObj.host+"index.html'><img src='"+pageObj.host+"AXJ.png' style='width:110px; height:40px;' /></a></h3>");
@@ -27,7 +54,21 @@ var pageObj = {
 	changeTheme: function(newTheme){
 		//var newTheme = jQuery("#myThemeSelector").val();
 		AXUtil.setCookie("AXISTHEME", newTheme);
+		pageObj.theme = newTheme;
 		toast.push(newTheme+"가 적용 되었습니다.");
+
+		var to = [];
+		var tdata = {};
+		for(var a=0; a<pageObj.themeData.length; a++){
+			if(pageObj.theme == pageObj.themeData[a].name.toLowerCase()) tdata = pageObj.themeData[a];
+		}
+		
+		to.push("<div class='logo'><img src='"+pageObj.host+"ui/"+pageObj.theme+"/images/dx-theme-logo.png' /></div>");
+		to.push("<h1><span>"+tdata.name+"</span> ver"+tdata.ver+"</h1>");
+		to.push("<h2>Theme Developer. <a href='mailto:"+tdata.mail+"'>"+tdata.developer+"</a></h2>");
+		to.push("<div class='ax-clear'></div>");
+		jQuery(".themeInfo").empty();
+		jQuery(".themeInfo").append(to.join(""));
 
 		jQuery("link").each(function(){
 
