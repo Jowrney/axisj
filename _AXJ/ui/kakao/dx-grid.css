@@ -17,8 +17,9 @@
 }
 .AXGrid .AXgridScrollBody {
   position: relative;
-  border: 1px solid #b1b1b1;
+  border: 1px solid #cecece;
   overflow: hidden;
+  background: #ffffff;
   /* 아이콘 보기 모드 */
 
 }
@@ -30,8 +31,22 @@
   left: 0px;
   top: 0px;
   width: 100%;
-  background: url('images/dx-grid-head-bg.png') repeat-x 0px 0px #ffffff;
-  border-bottom: 1px solid #b1b1b1;
+  background: #ededed;
+  background: -webkit-linear-gradient(#ffffff, #ededed);
+  /* For Safari */
+
+  background: -o-linear-gradient(#ffffff, #ededed);
+  /* For Opera 11.1 to 12.0 */
+
+  background: -moz-linear-gradient(#ffffff, #ededed);
+  /* For Firefox 3.6 to 15 */
+
+  background: linear-gradient(#ffffff, #ededed);
+  /* Standard syntax */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#ededed);
+  /*For IE7-8-9*/
+  border-bottom: 1px solid #cecece;
 }
 .AXGrid .AXgridScrollBody .fixedColHead {
   position: absolute;
@@ -42,7 +57,21 @@
 }
 .AXGrid .AXgridScrollBody .AXGridColHead .colHeadTable {
   table-layout: fixed;
-  background: url('images/dx-grid-head-bg.png') repeat-x 0px 0px #ffffff;
+  background: #ededed;
+  background: -webkit-linear-gradient(#ffffff, #ededed);
+  /* For Safari */
+
+  background: -o-linear-gradient(#ffffff, #ededed);
+  /* For Opera 11.1 to 12.0 */
+
+  background: -moz-linear-gradient(#ffffff, #ededed);
+  /* For Firefox 3.6 to 15 */
+
+  background: linear-gradient(#ffffff, #ededed);
+  /* Standard syntax */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#ededed);
+  /*For IE7-8-9*/
 }
 .AXGrid .AXgridScrollBody .AXGridColHead .colHeadTable tbody tr td {
   padding: 0px;
@@ -86,8 +115,7 @@
   position: relative;
   line-height: 20px;
   padding: 5px 8px;
-  color: #5e5e5e;
-  text-shadow: 0px 1px 0px #fff;
+  color: #513636;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -95,7 +123,7 @@
 .AXGrid .AXgridScrollBody .AXGridColHead .colHeadTable tbody tr td .colHeadTdCheck {
   height: 20px;
   padding: 7px 1px 3px 0px;
-  color: #5e5e5e;
+  color: #513636;
 }
 .AXGrid .AXgridScrollBody .AXGridColHead .colHeadTable tbody tr td .colHeadTdCheck input {
   vertical-align: middle;
@@ -103,16 +131,16 @@
 .AXGrid .AXgridScrollBody .AXGridColHead .colHeadTable tbody tr td .colHeadTdHtml {
   height: 30px;
   padding: 0px 1px 0px 0px;
-  color: #5e5e5e;
+  color: #513636;
 }
 .AXGrid .AXgridScrollBody .AXGridColHead .colHeadTable tbody tr td.colHeadBottomBorder {
-  border-bottom: 1px solid #b1b1b1;
+  border-bottom: 1px solid #cecece;
 }
 .AXGrid .AXgridScrollBody .AXGridColHead .colHeadTable tbody tr td:hover {
-  background-color: #e5e6eb;
+  background-color: #fee834;
 }
 .AXGrid .AXgridScrollBody .AXGridColHead .colHeadTable tbody tr td.sortDesc {
-  background-color: #e5e6eb;
+  background-color: #fee834;
 }
 .AXGrid .AXgridScrollBody .AXGridColHead .colHeadTable tbody tr td.sortDesc .colHeadNode {
   background: url('images/dx-sort-desc.png') no-repeat center 0px;
@@ -174,8 +202,8 @@
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridScrollTrackY .gridScrollHandle:hover,
 .AXGrid .AXgridScrollBody .AXGridBody .gridScrollTrackY .gridScrollHandle.hover {
-  background: #929292;
-  border: 1px solid #636363;
+  background: #fee834;
+  border: 1px solid #cecece;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridScrollTrackX {
   position: absolute;
@@ -200,8 +228,8 @@
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridScrollTrackX .gridScrollHandle:hover,
 .AXGrid .AXgridScrollBody .AXGridBody .gridScrollTrackX .gridScrollHandle.hover {
-  background: #929292;
-  border: 1px solid #636363;
+  background: #fee834;
+  border: 1px solid #cecece;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridBodyTable {
   width: 100%;
@@ -215,17 +243,17 @@
   cursor: pointer;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridBodyTable tbody tr td.selected {
-  background-color: #d2d9df;
+  background-color: #fff6ac;
   box-shadow: inset 0px 0px 2px #000;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridBodyTable tbody tr.noListTr td {
   vertical-align: middle;
   height: 100px;
-  background: #f7f7f7;
+  background: #f8f8f8;
   border-bottom: 1px solid #c8c8c8;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridBodyTable tbody tr.line0 td {
-  background-color: #f7f7f7;
+  background-color: #f8f8f8;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridBodyTable tbody tr.line1 td {
   background-color: #ffffff;
@@ -249,10 +277,10 @@
   background-color: #f7f7f7;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridBodyTable tbody tr.hover td {
-  background-color: #f7f7f7;
+  background-color: #fff6ac;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridBodyTable tbody tr.selected td {
-  background-color: #d2d9df;
+  background-color: #fff6ac;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridBodyTable thead tr td,
 .AXGrid .AXgridScrollBody .AXGridBody .gridBodyTable tfoot tr td {
@@ -260,7 +288,7 @@
   background: url('images/dx-grid-body-border.png') repeat-y 100% 0px;
   vertical-align: bottom;
   border-bottom: 1px solid #c8c8c8;
-  background-color: #ffffec;
+  background-color: #fee834;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridBodyTable thead tr td .bodyBottomBorder,
 .AXGrid .AXgridScrollBody .AXGridBody .gridBodyTable tbody tr td .bodyBottomBorder,
@@ -285,7 +313,6 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  text-shadow: 0px 1px 0px #fff;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -320,7 +347,7 @@
   background: url('images/dx-grid-body-border.png') repeat-y 100% 0px;
   vertical-align: bottom;
   border-bottom: 1px solid #c8c8c8;
-  background-color: #ffffec;
+  background-color: #fee834;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridFixedBodyTable thead tr td .bodyNode,
 .AXGrid .AXgridScrollBody .AXGridBody .gridFixedBodyTable tbody tr td .bodyNode,
@@ -335,7 +362,6 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  text-shadow: 0px 1px 0px #fff;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -377,20 +403,20 @@
   cursor: pointer;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridFixedBodyTable tbody tr td.selected {
-  background-color: #d2d9df;
+  background-color: #fff6ac;
   box-shadow: inset 0px 0px 2px #000;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridFixedBodyTable tbody tr.noListTr td {
   vertical-align: middle;
   height: 100px;
-  background: #f7f7f7;
+  background: #f8f8f8;
   border-bottom: 1px solid #c8c8c8;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridFixedBodyTable tbody tr.line0 td {
-  background-color: #eaedef;
+  background-color: #efefef;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridFixedBodyTable tbody tr.line1 td {
-  background-color: #f7f8f9;
+  background-color: #f9f9f9;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridFixedBodyTable tbody tr.red td {
   background-color: #ffe8e8;
@@ -411,10 +437,10 @@
   background-color: #f7f7f7;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridFixedBodyTable tbody tr.selected td {
-  background-color: #d2d9df;
+  background-color: #fff6ac;
 }
 .AXGrid .AXgridScrollBody .AXGridBody .gridFixedBodyTable tbody tr.hover td {
-  background-color: #d7dde3;
+  background-color: #fff6ac;
 }
 .AXGrid .AXgridScrollBody .gridBodyDiv .viewIcon {
   float: left;
@@ -452,25 +478,53 @@
   margin: 0px;
 }
 .AXGrid .AXgridScrollBody .gridBodyDiv .viewIcon:hover {
-  background-color: #e7f1fa;
+  background-color: #f8f8f8;
 }
 .AXGrid .AXgridScrollBody .gridBodyDiv .viewIcon.selected {
-  background-color: #d2d9df;
+  background-color: #fff6ac;
 }
 .AXGrid .AXgridPageBody {
   position: relative;
   height: 30px;
-  background: url('images/dx-grid-page-bg.png') repeat-x;
-  border-bottom: 1px solid #b1b1b1;
-  border-left: 1px solid #b1b1b1;
-  border-right: 1px solid #b1b1b1;
+  background: #ededed;
+  background: -webkit-linear-gradient(#ffffff, #ededed);
+  /* For Safari */
+
+  background: -o-linear-gradient(#ffffff, #ededed);
+  /* For Opera 11.1 to 12.0 */
+
+  background: -moz-linear-gradient(#ffffff, #ededed);
+  /* For Firefox 3.6 to 15 */
+
+  background: linear-gradient(#ffffff, #ededed);
+  /* Standard syntax */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#ededed);
+  /*For IE7-8-9*/
+  border-bottom: 1px solid #cecece;
+  border-left: 1px solid #cecece;
+  border-right: 1px solid #cecece;
 }
 .AXGrid .AXgridPageBody .AXgridPagingUnit {
   position: absolute;
   left: 0px;
   top: 0px;
   height: 30px;
-  background: url('images/dx-grid-page-bg.png') repeat-x;
+  background: #ededed;
+  background: -webkit-linear-gradient(#ffffff, #ededed);
+  /* For Safari */
+
+  background: -o-linear-gradient(#ffffff, #ededed);
+  /* For Opera 11.1 to 12.0 */
+
+  background: -moz-linear-gradient(#ffffff, #ededed);
+  /* For Firefox 3.6 to 15 */
+
+  background: linear-gradient(#ffffff, #ededed);
+  /* Standard syntax */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#ededed);
+  /*For IE7-8-9*/
   z-index: 3;
 }
 .AXGrid .AXgridPageBody .AXgridPagingUnit .AXgridPageNo {
@@ -500,14 +554,14 @@
   line-height: 22px;
   font-size: 12px;
   color: #666666;
-  border-right: 1px solid #b1b1b1;
+  border-right: 1px solid #cecece;
 }
 .AXGrid .AXgridPageBody .AXgridPagingUnit .AXgridPagingPrev {
   display: block;
   float: left;
   width: 29px;
   height: 30px;
-  border-right: 1px solid #b1b1b1;
+  border-right: 1px solid #cecece;
   background: url('images/dx-left-arrows.png') no-repeat;
   text-indent: -1000px;
   overflow: hidden;
@@ -520,7 +574,7 @@
   float: left;
   width: 29px;
   height: 30px;
-  border-right: 1px solid #b1b1b1;
+  border-right: 1px solid #cecece;
   background: url('images/dx-right-arrows.png') no-repeat;
   text-indent: -1000px;
   overflow: hidden;
@@ -557,7 +611,7 @@
   top: 0px;
   width: 29px;
   height: 30px;
-  border-left: 1px solid #b1b1b1;
+  border-left: 1px solid #cecece;
   background: url('img/dx-up-arrows.png') no-repeat;
   text-indent: -1000px;
   overflow: hidden;
@@ -635,10 +689,10 @@
 .AXGrid .AXgridEditor .gridBodyTable tbody tr.noListTr td {
   vertical-align: middle;
   height: 100px;
-  background: #f7f7f7;
+  background: #f8f8f8;
 }
 .AXGrid .AXgridEditor .gridBodyTable tbody tr.line0 td {
-  background-color: #f7f7f7;
+  background-color: #f8f8f8;
 }
 .AXGrid .AXgridEditor .gridBodyTable tbody tr.line1 td {
   background-color: #ffffff;
@@ -647,7 +701,7 @@
   background-color: #d2d9df;
 }
 .AXGrid .AXgridEditor .gridBodyTable tbody tr.hover td {
-  background-color: #d7dde3;
+  background-color: #fff6ac;
 }
 .AXGrid .AXgridEditor .gridBodyTable thead tr td.bodyNullTd,
 .AXGrid .AXgridEditor .gridBodyTable tbody tr td.bodyNullTd,
@@ -667,7 +721,6 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  text-shadow: 0px 1px 0px #fff;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -703,19 +756,19 @@
 .AXGrid .AXgridEditor .gridFixedBodyTable tbody tr.noListTr td {
   vertical-align: middle;
   height: 100px;
-  background: #f7f7f7;
+  background: #f8f8f8;
 }
 .AXGrid .AXgridEditor .gridFixedBodyTable tbody tr.line0 td {
-  background-color: #eaedef;
+  background-color: #efefef;
 }
 .AXGrid .AXgridEditor .gridFixedBodyTable tbody tr.line1 td {
-  background-color: #f7f8f9;
+  background-color: #f9f9f9;
 }
 .AXGrid .AXgridEditor .gridFixedBodyTable tbody tr.selected td {
   background-color: #d2d9df;
 }
 .AXGrid .AXgridEditor .gridFixedBodyTable tbody tr.hover td {
-  background-color: #d7dde3;
+  background-color: #fff6ac;
 }
 .AXGrid .AXgridEditor .gridFixedBodyTable thead tr td.bodyNullTd,
 .AXGrid .AXgridEditor .gridFixedBodyTable tbody tr td.bodyNullTd,
@@ -735,7 +788,6 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  text-shadow: 0px 1px 0px #fff;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -760,7 +812,7 @@
   top: 0px;
   width: 146px;
   background: #ffffff;
-  border: 1px solid #b1b1b1;
+  border: 1px solid #cecece;
   border-radius: 5px;
   box-shadow: 0px 0px 5px #ccc;
 }
@@ -768,14 +820,15 @@
   display: block;
   line-height: 15px;
   padding: 5px 5px 5px 25px;
-  color: #5e5e5e;
+  color: #513636;
   text-decoration: none;
   border-bottom: 1px solid #e3e3e3;
+  font-size: 12px;
 }
 .AXGridColGroupListBox .AXGridColGroupListBoxItem.last {
   border-bottom: 0px none;
 }
 .AXGridColGroupListBox .AXGridColGroupListBoxItem.on {
-  color: #7b8590;
+  color: #513636;
   background: url('images/dx-item-check.png') no-repeat 3px center;
 }

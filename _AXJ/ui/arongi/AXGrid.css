@@ -30,6 +30,7 @@
     position: relative;
     border: 1px solid #b1b1b1;
     overflow: hidden;
+    background: #ffffff;
     /* 아이콘 보기 모드 */
   
   }
@@ -41,7 +42,21 @@
     left: 0px;
     top: 0px;
     width: 100%;
-    background: url('images/dx-grid-head-bg.png') repeat-x 0px 0px #ffffff;
+    background: #ffffff;
+    background: -webkit-linear-gradient(#e2e5e7, #ffffff);
+    /* For Safari */
+  
+    background: -o-linear-gradient(#e2e5e7, #ffffff);
+    /* For Opera 11.1 to 12.0 */
+  
+    background: -moz-linear-gradient(#e2e5e7, #ffffff);
+    /* For Firefox 3.6 to 15 */
+  
+    background: linear-gradient(#e2e5e7, #ffffff);
+    /* Standard syntax */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e2e5e7, endColorstr=#ffffff);
+    /*For IE7-8-9*/
     border-bottom: 1px solid #b1b1b1;
   }
   .AXGrid .AXgridScrollBody .fixedColHead {
@@ -53,7 +68,21 @@
   }
   .AXGrid .AXgridScrollBody .AXGridColHead .colHeadTable {
     table-layout: fixed;
-    background: url('images/dx-grid-head-bg.png') repeat-x 0px 0px #ffffff;
+    background: #ffffff;
+    background: -webkit-linear-gradient(#e2e5e7, #ffffff);
+    /* For Safari */
+  
+    background: -o-linear-gradient(#e2e5e7, #ffffff);
+    /* For Opera 11.1 to 12.0 */
+  
+    background: -moz-linear-gradient(#e2e5e7, #ffffff);
+    /* For Firefox 3.6 to 15 */
+  
+    background: linear-gradient(#e2e5e7, #ffffff);
+    /* Standard syntax */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e2e5e7, endColorstr=#ffffff);
+    /*For IE7-8-9*/
   }
   .AXGrid .AXgridScrollBody .AXGridColHead .colHeadTable tbody tr td {
     padding: 0px;
@@ -471,7 +500,21 @@
   .AXGrid .AXgridPageBody {
     position: relative;
     height: 30px;
-    background: url('images/dx-grid-page-bg.png') repeat-x;
+    background: #f3f3f3;
+    background: -webkit-linear-gradient(#ffffff, #f3f3f3);
+    /* For Safari */
+  
+    background: -o-linear-gradient(#ffffff, #f3f3f3);
+    /* For Opera 11.1 to 12.0 */
+  
+    background: -moz-linear-gradient(#ffffff, #f3f3f3);
+    /* For Firefox 3.6 to 15 */
+  
+    background: linear-gradient(#ffffff, #f3f3f3);
+    /* Standard syntax */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#f3f3f3);
+    /*For IE7-8-9*/
     border-bottom: 1px solid #b1b1b1;
     border-left: 1px solid #b1b1b1;
     border-right: 1px solid #b1b1b1;
@@ -481,7 +524,21 @@
     left: 0px;
     top: 0px;
     height: 30px;
-    background: url('images/dx-grid-page-bg.png') repeat-x;
+    background: #f3f3f3;
+    background: -webkit-linear-gradient(#ffffff, #f3f3f3);
+    /* For Safari */
+  
+    background: -o-linear-gradient(#ffffff, #f3f3f3);
+    /* For Opera 11.1 to 12.0 */
+  
+    background: -moz-linear-gradient(#ffffff, #f3f3f3);
+    /* For Firefox 3.6 to 15 */
+  
+    background: linear-gradient(#ffffff, #f3f3f3);
+    /* Standard syntax */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#f3f3f3);
+    /*For IE7-8-9*/
     z-index: 3;
   }
   .AXGrid .AXgridPageBody .AXgridPagingUnit .AXgridPageNo {
@@ -782,6 +839,7 @@
     color: #5e5e5e;
     text-decoration: none;
     border-bottom: 1px solid #e3e3e3;
+    font-size: 12px;
   }
   .AXGridColGroupListBox .AXGridColGroupListBoxItem.last {
     border-bottom: 0px none;
@@ -813,6 +871,7 @@
     position: relative;
     border: 1px solid #b1b1b1;
     overflow: hidden;
+    background: #ffffff;
     /* 아이콘 보기 모드 */
   
   }
@@ -824,7 +883,21 @@
     left: 0px;
     top: 0px;
     width: 100%;
-    background: url('images/dx-grid-head-bg.png') repeat-x 0px 0px #ffffff;
+    background: #ffffff;
+    background: -webkit-linear-gradient(#e2e5e7, #ffffff);
+    /* For Safari */
+  
+    background: -o-linear-gradient(#e2e5e7, #ffffff);
+    /* For Opera 11.1 to 12.0 */
+  
+    background: -moz-linear-gradient(#e2e5e7, #ffffff);
+    /* For Firefox 3.6 to 15 */
+  
+    background: linear-gradient(#e2e5e7, #ffffff);
+    /* Standard syntax */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e2e5e7, endColorstr=#ffffff);
+    /*For IE7-8-9*/
     border-bottom: 1px solid #b1b1b1;
   }
   .AXGrid .AXgridScrollBody .fixedColHead {
@@ -836,7 +909,21 @@
   }
   .AXGrid .AXgridScrollBody .AXGridColHead .colHeadTable {
     table-layout: fixed;
-    background: url('images/dx-grid-head-bg.png') repeat-x 0px 0px #ffffff;
+    background: #ffffff;
+    background: -webkit-linear-gradient(#e2e5e7, #ffffff);
+    /* For Safari */
+  
+    background: -o-linear-gradient(#e2e5e7, #ffffff);
+    /* For Opera 11.1 to 12.0 */
+  
+    background: -moz-linear-gradient(#e2e5e7, #ffffff);
+    /* For Firefox 3.6 to 15 */
+  
+    background: linear-gradient(#e2e5e7, #ffffff);
+    /* Standard syntax */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e2e5e7, endColorstr=#ffffff);
+    /*For IE7-8-9*/
   }
   .AXGrid .AXgridScrollBody .AXGridColHead .colHeadTable tbody tr td {
     padding: 0px;
@@ -1254,7 +1341,21 @@
   .AXGrid .AXgridPageBody {
     position: relative;
     height: 30px;
-    background: url('images/dx-grid-page-bg.png') repeat-x;
+    background: #f3f3f3;
+    background: -webkit-linear-gradient(#ffffff, #f3f3f3);
+    /* For Safari */
+  
+    background: -o-linear-gradient(#ffffff, #f3f3f3);
+    /* For Opera 11.1 to 12.0 */
+  
+    background: -moz-linear-gradient(#ffffff, #f3f3f3);
+    /* For Firefox 3.6 to 15 */
+  
+    background: linear-gradient(#ffffff, #f3f3f3);
+    /* Standard syntax */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#f3f3f3);
+    /*For IE7-8-9*/
     border-bottom: 1px solid #b1b1b1;
     border-left: 1px solid #b1b1b1;
     border-right: 1px solid #b1b1b1;
@@ -1264,7 +1365,21 @@
     left: 0px;
     top: 0px;
     height: 30px;
-    background: url('images/dx-grid-page-bg.png') repeat-x;
+    background: #f3f3f3;
+    background: -webkit-linear-gradient(#ffffff, #f3f3f3);
+    /* For Safari */
+  
+    background: -o-linear-gradient(#ffffff, #f3f3f3);
+    /* For Opera 11.1 to 12.0 */
+  
+    background: -moz-linear-gradient(#ffffff, #f3f3f3);
+    /* For Firefox 3.6 to 15 */
+  
+    background: linear-gradient(#ffffff, #f3f3f3);
+    /* Standard syntax */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#f3f3f3);
+    /*For IE7-8-9*/
     z-index: 3;
   }
   .AXGrid .AXgridPageBody .AXgridPagingUnit .AXgridPageNo {
@@ -1565,6 +1680,7 @@
     color: #5e5e5e;
     text-decoration: none;
     border-bottom: 1px solid #e3e3e3;
+    font-size: 12px;
   }
   .AXGridColGroupListBox .AXGridColGroupListBoxItem.last {
     border-bottom: 0px none;
@@ -1596,6 +1712,7 @@
     position: relative;
     border: 1px solid #b1b1b1;
     overflow: hidden;
+    background: #ffffff;
     /* 아이콘 보기 모드 */
   
   }
@@ -1607,7 +1724,21 @@
     left: 0px;
     top: 0px;
     width: 100%;
-    background: url('images/dx-grid-head-bg.png') repeat-x 0px 0px #ffffff;
+    background: #ffffff;
+    background: -webkit-linear-gradient(#e2e5e7, #ffffff);
+    /* For Safari */
+  
+    background: -o-linear-gradient(#e2e5e7, #ffffff);
+    /* For Opera 11.1 to 12.0 */
+  
+    background: -moz-linear-gradient(#e2e5e7, #ffffff);
+    /* For Firefox 3.6 to 15 */
+  
+    background: linear-gradient(#e2e5e7, #ffffff);
+    /* Standard syntax */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e2e5e7, endColorstr=#ffffff);
+    /*For IE7-8-9*/
     border-bottom: 1px solid #b1b1b1;
   }
   .AXGrid .AXgridScrollBody .fixedColHead {
@@ -1619,7 +1750,21 @@
   }
   .AXGrid .AXgridScrollBody .AXGridColHead .colHeadTable {
     table-layout: fixed;
-    background: url('images/dx-grid-head-bg.png') repeat-x 0px 0px #ffffff;
+    background: #ffffff;
+    background: -webkit-linear-gradient(#e2e5e7, #ffffff);
+    /* For Safari */
+  
+    background: -o-linear-gradient(#e2e5e7, #ffffff);
+    /* For Opera 11.1 to 12.0 */
+  
+    background: -moz-linear-gradient(#e2e5e7, #ffffff);
+    /* For Firefox 3.6 to 15 */
+  
+    background: linear-gradient(#e2e5e7, #ffffff);
+    /* Standard syntax */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e2e5e7, endColorstr=#ffffff);
+    /*For IE7-8-9*/
   }
   .AXGrid .AXgridScrollBody .AXGridColHead .colHeadTable tbody tr td {
     padding: 0px;
@@ -2037,7 +2182,21 @@
   .AXGrid .AXgridPageBody {
     position: relative;
     height: 30px;
-    background: url('images/dx-grid-page-bg.png') repeat-x;
+    background: #f3f3f3;
+    background: -webkit-linear-gradient(#ffffff, #f3f3f3);
+    /* For Safari */
+  
+    background: -o-linear-gradient(#ffffff, #f3f3f3);
+    /* For Opera 11.1 to 12.0 */
+  
+    background: -moz-linear-gradient(#ffffff, #f3f3f3);
+    /* For Firefox 3.6 to 15 */
+  
+    background: linear-gradient(#ffffff, #f3f3f3);
+    /* Standard syntax */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#f3f3f3);
+    /*For IE7-8-9*/
     border-bottom: 1px solid #b1b1b1;
     border-left: 1px solid #b1b1b1;
     border-right: 1px solid #b1b1b1;
@@ -2047,7 +2206,21 @@
     left: 0px;
     top: 0px;
     height: 30px;
-    background: url('images/dx-grid-page-bg.png') repeat-x;
+    background: #f3f3f3;
+    background: -webkit-linear-gradient(#ffffff, #f3f3f3);
+    /* For Safari */
+  
+    background: -o-linear-gradient(#ffffff, #f3f3f3);
+    /* For Opera 11.1 to 12.0 */
+  
+    background: -moz-linear-gradient(#ffffff, #f3f3f3);
+    /* For Firefox 3.6 to 15 */
+  
+    background: linear-gradient(#ffffff, #f3f3f3);
+    /* Standard syntax */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#f3f3f3);
+    /*For IE7-8-9*/
     z-index: 3;
   }
   .AXGrid .AXgridPageBody .AXgridPagingUnit .AXgridPageNo {
@@ -2348,6 +2521,7 @@
     color: #5e5e5e;
     text-decoration: none;
     border-bottom: 1px solid #e3e3e3;
+    font-size: 12px;
   }
   .AXGridColGroupListBox .AXGridColGroupListBoxItem.last {
     border-bottom: 0px none;
@@ -2379,6 +2553,7 @@
     position: relative;
     border: 1px solid #b1b1b1;
     overflow: hidden;
+    background: #ffffff;
     /* 아이콘 보기 모드 */
   
   }
@@ -2390,7 +2565,21 @@
     left: 0px;
     top: 0px;
     width: 100%;
-    background: url('images/dx-grid-head-bg.png') repeat-x 0px 0px #ffffff;
+    background: #ffffff;
+    background: -webkit-linear-gradient(#e2e5e7, #ffffff);
+    /* For Safari */
+  
+    background: -o-linear-gradient(#e2e5e7, #ffffff);
+    /* For Opera 11.1 to 12.0 */
+  
+    background: -moz-linear-gradient(#e2e5e7, #ffffff);
+    /* For Firefox 3.6 to 15 */
+  
+    background: linear-gradient(#e2e5e7, #ffffff);
+    /* Standard syntax */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e2e5e7, endColorstr=#ffffff);
+    /*For IE7-8-9*/
     border-bottom: 1px solid #b1b1b1;
   }
   .AXGrid .AXgridScrollBody .fixedColHead {
@@ -2402,7 +2591,21 @@
   }
   .AXGrid .AXgridScrollBody .AXGridColHead .colHeadTable {
     table-layout: fixed;
-    background: url('images/dx-grid-head-bg.png') repeat-x 0px 0px #ffffff;
+    background: #ffffff;
+    background: -webkit-linear-gradient(#e2e5e7, #ffffff);
+    /* For Safari */
+  
+    background: -o-linear-gradient(#e2e5e7, #ffffff);
+    /* For Opera 11.1 to 12.0 */
+  
+    background: -moz-linear-gradient(#e2e5e7, #ffffff);
+    /* For Firefox 3.6 to 15 */
+  
+    background: linear-gradient(#e2e5e7, #ffffff);
+    /* Standard syntax */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e2e5e7, endColorstr=#ffffff);
+    /*For IE7-8-9*/
   }
   .AXGrid .AXgridScrollBody .AXGridColHead .colHeadTable tbody tr td {
     padding: 0px;
@@ -2820,7 +3023,21 @@
   .AXGrid .AXgridPageBody {
     position: relative;
     height: 30px;
-    background: url('images/dx-grid-page-bg.png') repeat-x;
+    background: #f3f3f3;
+    background: -webkit-linear-gradient(#ffffff, #f3f3f3);
+    /* For Safari */
+  
+    background: -o-linear-gradient(#ffffff, #f3f3f3);
+    /* For Opera 11.1 to 12.0 */
+  
+    background: -moz-linear-gradient(#ffffff, #f3f3f3);
+    /* For Firefox 3.6 to 15 */
+  
+    background: linear-gradient(#ffffff, #f3f3f3);
+    /* Standard syntax */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#f3f3f3);
+    /*For IE7-8-9*/
     border-bottom: 1px solid #b1b1b1;
     border-left: 1px solid #b1b1b1;
     border-right: 1px solid #b1b1b1;
@@ -2830,7 +3047,21 @@
     left: 0px;
     top: 0px;
     height: 30px;
-    background: url('images/dx-grid-page-bg.png') repeat-x;
+    background: #f3f3f3;
+    background: -webkit-linear-gradient(#ffffff, #f3f3f3);
+    /* For Safari */
+  
+    background: -o-linear-gradient(#ffffff, #f3f3f3);
+    /* For Opera 11.1 to 12.0 */
+  
+    background: -moz-linear-gradient(#ffffff, #f3f3f3);
+    /* For Firefox 3.6 to 15 */
+  
+    background: linear-gradient(#ffffff, #f3f3f3);
+    /* Standard syntax */
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#f3f3f3);
+    /*For IE7-8-9*/
     z-index: 3;
   }
   .AXGrid .AXgridPageBody .AXgridPagingUnit .AXgridPageNo {
@@ -3131,6 +3362,7 @@
     color: #5e5e5e;
     text-decoration: none;
     border-bottom: 1px solid #e3e3e3;
+    font-size: 12px;
   }
   .AXGridColGroupListBox .AXGridColGroupListBoxItem.last {
     border-bottom: 0px none;

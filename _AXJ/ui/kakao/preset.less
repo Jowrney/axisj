@@ -211,50 +211,54 @@
 
 // AXGrid ///////////////////////////////////////////////////
 .dx-axgrid-preset(){
-	@border:1px solid #b1b1b1;
-	@border-a:1px solid #B6B6B6;
-	@border-b:1px solid #dbdbdb;
-	@border-c:1px solid #636363;
-	@border-d:1px solid #c8c8c8;
-	@border-e:1px dashed #c8c8c8;
-	@border-f:1px solid #ccc;
-	@border-g:1px solid #eee;
-	@border-h:1px solid #BDCCD7;
-	@border-i:1px solid #e3e3e3;
-	@bgcolor:#ffbbcc;
-	@bgcolor-a:#ffbbcc;
-	@bgcolor-b:#f3f3f3;
-	@bgcolor-c:#929292;
-	@bgcolor-d:#d2d9df;
-	@bgcolor-e:#f7f7f7;
+	@border		:1px solid #cecece;		// Grid head, body, footer border
+	@border-a	:1px solid #B6B6B6;		// Scroll handle border
+	@border-b	:1px solid #dbdbdb;		// Scroll track border
+	@border-c	:1px solid #cecece;		// Scroll handle over border
+	@border-d	:1px solid #c8c8c8;		// Grid body rows bottom border
+	@border-e	:1px dashed #c8c8c8;	// Grid body rows bottom border(Dashed)
+	@border-f	:1px solid #ccc;		// Grid Icon(Preview-viewMode) block border
+	@border-g	:1px solid #eee;		// Grid Icon(Thumbnail-viewMode) block border
+	@border-h	:1px solid #BDCCD7;		// Grid Editor bottom border
+	@border-i	:1px solid #e3e3e3;		// Grid head option(tools) list border
 
-	@bgcolor-f:#fff;
-	@bgcolor-g:#FFE8E8;	//red
-	@bgcolor-h:#F7FDEA;	//green
-	@bgcolor-i:#EAF5FD; //blue
-	@bgcolor-j:#FEFEE9; //yellow
-	@bgcolor-k:#fff;	//white
-	@bgcolor-l:#f7f7f7;	//gray
+	@bgcolor	:#fff;					// Grid base bgcolor
+	@bgcolor-a	:#fff;					// Grid header gradient element-a bgcolor
+	@bgcolor-b	:#ededed;				// Grid header gradient element-b bgcolor
+	@bgcolor-c	:#fff;					// Grid footer gradient element-a bgcolor
+	@bgcolor-d	:#ededed;				// Grid footer gradient element-b bgcolor
 
-	@bgcolor-m:#e7f1fa;
-	@bgcolor-n:#FFFFEC;
+	@bgcolor-e	:#ffbbcc;				// Grid head vertical resize handle bgcolor
+	@bgcolor-f	:#f3f3f3;				// Scroll track bgcolor
+	@bgcolor-g	:#fee834;				// Scroll handle over bgcolor
+	@bgcolor-h	:#fff6ac;				// Grid body rows selected bgcolor
+	@bgcolor-i	:#f8f8f8;				// Grid body rows element-a bgcolor
+	@bgcolor-j	:#fff;					// Grid body rows element-b bgcolor
 	
-	@bgcolor-o:#eaedef;
-	@bgcolor-p:#F7F8F9;
-	@bgcolor-q:#d7dde3;
+	@bgcolor-k	:#FFE8E8;				// Grid body rows red bgcolor
+	@bgcolor-l	:#F7FDEA;				// Grid body rows green bgcolor
+	@bgcolor-m	:#EAF5FD;				// Grid body rows blue bgcolor
+	@bgcolor-n	:#FEFEE9; 				// Grid body rows yellow bgcolor
+	@bgcolor-o	:#fff;					// Grid body rows white bgcolor
+	@bgcolor-p	:#f7f7f7;				// Grid body rows gray bgcolor
+	@bgcolor-q	:#f8f8f8;				// Grid Icon(Preview-viewMode) over bgcolor
+	@bgcolor-r	:#fee834;				// Grid Sum rows bgcolor
+	@bgcolor-s	:#efefef;				// Grid body rows fixed element-a bgcolor
+	@bgcolor-t	:#f9f9f9;				// Grid body rows fixed element-b bgcolor
+	@bgcolor-u	:#fffbdc;				// Grid body rows fixed hover bgcolor
+	@bgcolor-v	:#d8e1e7;				// Grid Editor rows bgcolor
+	@bgcolor-w	:#D2D9DF; 				// Grid Editor same @bgcolor-h
 	
-	@bgcolor-r:#d8e1e7;
-	@bgcolor-s:#D2D9DF;
+	@bgcolor-x	:#fee834; 				// Grid head hover bgcolor
 	
-	@color:#5e5e5e;
-	@color-a:#e5e6eb;
-	@color-b:#3b3b3b;
-	@color-c:#666;
-	@color-d:#f47820;
-	@color-e:#7b8590;
-	
-	@radius:4px;
-	@radius-a:5px;
+	@color		:#513636;				// Grid head font color
+	@color-a	:#3b3b3b;				// Grid body font color
+	@color-b	:#666;					// Grid foot right label font color
+	@color-c	:#f47820;				// Grid foot right label font(Bold) color
+	@color-d	:#513636;				// Grid head option(tools) list font color
+		
+	@radius		:4px;					// Grid editor button radius
+	@radius-a	:5px;					// Grid head option(tools) list radius
 	
 }
 
@@ -458,50 +462,50 @@
 // AXTree ///////////////////////////////////////////////////
 .dx-axtree-preset(){
 
-	@border:1px solid #b1b1b1;
-	@border-a:1px solid #dbdbdb;
-	@border-b:1px solid #B6B6B6;
-	@border-c:1px solid #636363;	
-	@border-d:1px solid #c8c8c8;
-	@border-e:1px dotted;
-	@border-f:1px dashed #c8c8c8;
-	@border-g:1px solid #7f8d9c;
-	@border-h:1px solid #e3e3e3;
+	@border		:1px solid #b1b1b1;		//Tree outline border
+	@border-a	:1px solid #dbdbdb;		//Scroll track border
+	@border-b	:1px solid #B6B6B6;		//Scroll handle border
+	@border-c	:1px solid #636363;		//Scroll handle(over) border
+	@border-d	:1px solid #c8c8c8;		//Tree rows bottom border
+	@border-e	:1px dotted;			//.copied
+	@border-f	:1px dashed #c8c8c8;	//.bodyBottomBorder	
+	@border-g	:1px solid #7f8d9c;		//AXTreeEditor
+	@border-h	:1px solid #e3e3e3;		//Tree option(tool) list bottom border
 	
-	@bgcolor:#e5e6eb;
-	@bgcolor-a:#ffbbcc;
-	@bgcolor-b:#929292;
-	@bgcolor-c:#f3f3f3;
-	@bgcolor-d:#eee;
+	@bgcolor	:#e5e6eb;
+	@bgcolor-a	:#e2e4e6;				// Tree head element-a bgcolor
+	@bgcolor-b	:#fff;					// Tree head element-b bgcolor
+	@bgcolor-c	:#f3f3f3;				//Scroll track bgcolor
+	@bgcolor-d	:#eee;					//.AXTreeSplit
 	
-	@bgcolor-e:#FFE8E8;			//red
-	@bgcolor-f:#F7FDEA;			//green
-	@bgcolor-g:#EAF5FD;			//blue
-	@bgcolor-h:#FEFEE9;			//yellow
+	@bgcolor-e	:#FFE8E8;				//.red
+	@bgcolor-f	:#F7FDEA;				//.green
+	@bgcolor-g	:#EAF5FD;				//.blue
+	@bgcolor-h	:#FEFEE9;				//.yellow
 
-	@bgcolor-i:#e7f1fa;			
-	@bgcolor-j:#D2D9DF;
+	@bgcolor-i	:#e7f1fa;				// Tree rows over bgcolor
+	@bgcolor-j	:#D2D9DF;				// Tree rows selected bgcolor
 	
-	@bgcolor-k:#F5F5F1;
-	@bgcolor-l:#FFFFBF;
+	@bgcolor-k	:#F5F5F1;				// Tree rows disabeld disable bgcolor;
+	@bgcolor-l	:#FFFFBF;				//.copied
 	
-	@bgcolor-m:#FFFFEC;
-	@bgcolor-n:#f7f7f7;
+	@bgcolor-m	:#FFFFEC;				//.treeBodyTable
+	@bgcolor-n	:#f7f7f7;				//.treeFixedBodyTable
 	
-	@bgcolor-o:#eaedef;
-	@bgcolor-p:#F7F8F9;
+	@bgcolor-o	:#eaedef;				//.treeFixedBodyTable .line0
+	@bgcolor-p	:#F7F8F9;				//.treeFixedBodyTable .line1
 	
-	@bgcolor-q:#d7dde3;
-	@bgcolor-r:#ccc;
-	@bgcolor-s:#d8e1e7;
-	@bgcolor-t:#fff;
+	@bgcolor-q	:#d7dde3;				//.treeFixedBodyTable .hover
+	@bgcolor-r	:#ccc;					//.treeBodyTable .AXTreeSplit
+	@bgcolor-s	:#d8e1e7;				//.AXTreeEditor
+	@bgcolor-t	:#fff;					//.AXTreeColGroupListBox
 	
-	@color:#5e5e5e;
-	@color-a:#3b3b3b;
-	@color-b:#7b8590;
+	@color		:#5e5e5e;				//Tree head font color
+	@color-a	:#3b3b3b;				//Tree body font color
+	@color-b	:#7b8590;				//Tree option(tool) list font color
 	
-	@radius:4px;
-	@radius-a:5px;
+	@radius		:4px;
+	@radius-a	:5px;
 	
 
 }

@@ -14,11 +14,13 @@
 		.AXTreeColHead{
 			position:absolute;left:0px;top:0px;
 			width:100%;
-			background:url('images/dx-tree-head-bg.png') repeat-x 0px 0px #fff;
+			//background:url('images/dx-tree-head-bg.png') repeat-x 0px 0px #fff;
+			.util-gradient(top, @bgcolor-a, @bgcolor-b);
 			border-bottom:@border;
 			.colHeadTable{
 				table-layout:fixed;
-				background:url('images/dx-tree-head-bg.png') repeat-x 0px 0px #fff;
+				//background:url('images/dx-tree-head-bg.png') repeat-x 0px 0px #fff;
+				.util-gradient(top, @bgcolor-a, @bgcolor-b);				
 				tbody{
 					tr{
 						td{
@@ -117,7 +119,8 @@
 			.treeScrollTrackY{
 				position:absolute;right:0px;top:0px;
 				width:9px;height:9px;
-				border-left:@border-a;border-right:@border-a;
+				border-left:@border-a;
+				border-right:@border-a;
 				background:#f3f3f3;
 				display:none;
 				.treeScrollHandle{
@@ -127,7 +130,8 @@
 					border:@border-b;
 					cursor:pointer;
 					&:hover, &.hover{
-						background:@bgcolor-b;border:@border-c;
+						background:@bgcolor-b;
+						border:@border-c;
 					}
 				}
 			}
@@ -1002,6 +1006,7 @@
 		line-height:15px;padding:5px 5px 5px 25px;
 		color:@color;text-decoration:none;
 		border-bottom:@border-h;
+		font-size:12px;
 		&.last{
 			border-bottom:0px none;
 		}
