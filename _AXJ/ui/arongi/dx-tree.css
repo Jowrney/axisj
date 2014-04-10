@@ -586,6 +586,7 @@
 }
 .AXTree_none .AXTreeScrollBody {
   position: relative;
+  border: 1px solid #b1b1b1;
   overflow: hidden;
 }
 .AXTree_none .AXTreeScrollBody .AXTreeColHead {

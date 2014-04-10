@@ -13,7 +13,7 @@
 }
 .AXTree .AXTreeScrollBody {
   position: relative;
-  border: 1px solid #ffffff;
+  border: 1px solid #d5dadf;
   overflow: hidden;
 }
 .AXTree .AXTreeScrollBody .AXTreeColHead {
@@ -117,7 +117,6 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #5e5e5e;
-  text-shadow: 0px 1px 0px #fff;
   font-family: "Open sans";
   white-space: nowrap;
   overflow: hidden;
@@ -230,7 +229,7 @@
 .AXTree .AXTreeScrollBody .AXTreeBody .treeBodyTable tbody tr.noListTr td {
   vertical-align: middle;
   height: 100px;
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #ffffff;
 }
 .AXTree .AXTreeScrollBody .AXTreeBody .treeBodyTable tbody tr.AXTreeSplit td {
   vertical-align: middle;
@@ -269,8 +268,9 @@
 .AXTree .AXTreeScrollBody .AXTreeBody .treeBodyTable tbody tr td {
   padding: 0px;
   background: url('images/dx-tree-body-border.png') repeat-y 100% 0px;
+  background-color: #f2f2f2;
   vertical-align: bottom;
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #ffffff;
   cursor: pointer;
 }
 .AXTree .AXTreeScrollBody .AXTreeBody .treeBodyTable tbody tr td.selected {
@@ -391,7 +391,6 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  text-shadow: 0px 1px 0px #fff;
   font-family: "Open sans";
   white-space: nowrap;
   overflow: hidden;
@@ -410,7 +409,7 @@
   padding: 0px;
   background: url('images/dx-tree-body-border.png') repeat-y 100% 0px;
   vertical-align: bottom;
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #ffffff;
   background-color: #ffffec;
 }
 .AXTree .AXTreeScrollBody .AXTreeBody .treeBodyTable thead tr td.bodyBottomBorder,
@@ -432,7 +431,6 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  text-shadow: 0px 1px 0px #fff;
   font-family: "Open sans";
   white-space: nowrap;
   overflow: hidden;
@@ -455,7 +453,7 @@
   vertical-align: middle;
   height: 100px;
   background: #f7f7f7;
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #ffffff;
 }
 .AXTree .AXTreeScrollBody .AXTreeBody .treeFixedBodyTable tbody tr.line0 td {
   background-color: #eaedef;
@@ -492,7 +490,7 @@
   padding: 0px;
   background: url('images/dx-tree-body-border.png') repeat-y 100% 0px;
   vertical-align: bottom;
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #ffffff;
   cursor: pointer;
 }
 .AXTree .AXTreeScrollBody .AXTreeBody .treeFixedBodyTable tbody tr td.fixedLine {
@@ -517,7 +515,6 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  text-shadow: 0px 1px 0px #fff;
   font-family: "Open sans";
   white-space: nowrap;
   overflow: hidden;
@@ -536,7 +533,7 @@
   padding: 0px;
   background: url('images/dx-tree-body-border.png') repeat-y 100% 0px;
   vertical-align: bottom;
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #ffffff;
   background-color: #ffffec;
 }
 .AXTree .AXTreeScrollBody .AXTreeBody .treeFixedBodyTable thead tr td.fixedLine,
@@ -562,7 +559,6 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  text-shadow: 0px 1px 0px #fff;
   font-family: "Open sans";
   white-space: nowrap;
   overflow: hidden;
@@ -586,6 +582,7 @@
 }
 .AXTree_none .AXTreeScrollBody {
   position: relative;
+  border: 1px solid #d5dadf;
   overflow: hidden;
 }
 .AXTree_none .AXTreeScrollBody .AXTreeColHead {
@@ -593,12 +590,40 @@
   left: 0px;
   top: 0px;
   width: 100%;
-  background: url('images/dx-tree-head-bg.png') repeat-x 0px 0px #ffffff;
+  background: #d6dbe0;
+  background: -webkit-linear-gradient(#d6dbe0, #d6dbe0);
+  /* For Safari */
+
+  background: -o-linear-gradient(#d6dbe0, #d6dbe0);
+  /* For Opera 11.1 to 12.0 */
+
+  background: -moz-linear-gradient(#d6dbe0, #d6dbe0);
+  /* For Firefox 3.6 to 15 */
+
+  background: linear-gradient(#d6dbe0, #d6dbe0);
+  /* Standard syntax */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d6dbe0, endColorstr=#d6dbe0);
+  /*For IE7-8-9*/
   border-bottom: 1px solid #ffffff;
 }
 .AXTree_none .AXTreeScrollBody .AXTreeColHead .colHeadTable {
   table-layout: fixed;
-  background: url('images/dx-tree-head-bg.png') repeat-x 0px 0px #ffffff;
+  background: #d6dbe0;
+  background: -webkit-linear-gradient(#d6dbe0, #d6dbe0);
+  /* For Safari */
+
+  background: -o-linear-gradient(#d6dbe0, #d6dbe0);
+  /* For Opera 11.1 to 12.0 */
+
+  background: -moz-linear-gradient(#d6dbe0, #d6dbe0);
+  /* For Firefox 3.6 to 15 */
+
+  background: linear-gradient(#d6dbe0, #d6dbe0);
+  /* Standard syntax */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d6dbe0, endColorstr=#d6dbe0);
+  /*For IE7-8-9*/
 }
 .AXTree_none .AXTreeScrollBody .AXTreeColHead .colHeadTable tbody tr td {
   padding: 0px;
@@ -661,7 +686,6 @@
   line-height: 20px;
   padding: 5px 0px;
   color: #5e5e5e;
-  text-shadow: 0px 1px 0px #fff;
   font-family: "Open sans";
   white-space: nowrap;
   overflow: hidden;
@@ -778,7 +802,7 @@
 .AXTree_none .AXTreeScrollBody .AXTreeBody .treeBodyTable tbody tr.noListTr td {
   vertical-align: middle;
   height: 100px;
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #ffffff;
 }
 .AXTree_none .AXTreeScrollBody .AXTreeBody .treeBodyTable tbody tr.AXTreeSplit td {
   vertical-align: middle;
@@ -934,7 +958,6 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  text-shadow: 0px 1px 0px #fff;
   font-family: "Open sans";
   white-space: nowrap;
   overflow: hidden;
@@ -953,7 +976,7 @@
   padding: 0px;
   background: url('images/dx-tree-body-border.png') repeat-y 100% 0px;
   vertical-align: bottom;
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #ffffff;
   background-color: #ffffec;
 }
 .AXTree_none .AXTreeScrollBody .AXTreeBody .treeBodyTable thead tr td.bodyBottomBorder,
@@ -975,7 +998,6 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  text-shadow: 0px 1px 0px #fff;
   font-family: "Open sans";
   white-space: nowrap;
   overflow: hidden;
@@ -1035,7 +1057,7 @@
   padding: 0px;
   background: url('images/dx-tree-body-border.png') repeat-y 100% 0px;
   vertical-align: bottom;
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #ffffff;
   cursor: pointer;
 }
 .AXTree_none .AXTreeScrollBody .AXTreeBody .treeFixedBodyTable tbody tr td.fixedLine {
@@ -1060,7 +1082,6 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  text-shadow: 0px 1px 0px #fff;
   font-family: AppleGothic, 'Malgun Gothic', Gulim;
   white-space: nowrap;
   overflow: hidden;
@@ -1079,7 +1100,7 @@
   padding: 0px;
   background: url('images/dx-tree-body-border.png') repeat-y 100% 0px;
   vertical-align: bottom;
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #ffffff;
   background-color: #ffffec;
 }
 .AXTree_none .AXTreeScrollBody .AXTreeBody .treeFixedBodyTable thead tr td.fixedLine,
@@ -1088,7 +1109,7 @@
 }
 .AXTree_none .AXTreeScrollBody .AXTreeBody .treeFixedBodyTable thead tr td.bodyBottomBorder,
 .AXTree_none .AXTreeScrollBody .AXTreeBody .treeFixedBodyTable tfoot tr td.bodyBottomBorder {
-  border-bottom: 1px solid #c8c8c8;
+  border-bottom: 1px solid #ffffff;
 }
 .AXTree_none .AXTreeScrollBody .AXTreeBody .treeFixedBodyTable thead tr td.bodyNullTd,
 .AXTree_none .AXTreeScrollBody .AXTreeBody .treeFixedBodyTable tfoot tr td.bodyNullTd {
@@ -1105,7 +1126,6 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  text-shadow: 0px 1px 0px #fff;
   font-family: "Open sans";
   white-space: nowrap;
   overflow: hidden;

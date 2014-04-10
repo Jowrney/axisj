@@ -6,25 +6,29 @@ var pageObj = {
 			name:"Arongi",
 			ver:"1.0",
 			developer:"Jowrney Kim",
-			mail:"jowrney@axisj.com"
+			mail:"jowrney@axisj.com",
+			support:["DX","MX"]
 		},		
 		{
 			name:"Bulldog",
 			ver:"1.0",
 			developer:"Dongyoung Kim",
-			mail:"dongyoung@axisj.com"
+			mail:"dongyoung@axisj.com",
+			support:["DX"]		
 		},		
 		{
 			name:"Flybasket",
 			ver:"1.0",
 			developer:"Jowrney Kim",
-			mail:"jowrney@axisj.com"
+			mail:"jowrney@axisj.com",
+			support:["DX"]					
 		},		
 		{
 			name:"Kakao",
 			ver:"1.0",
 			developer:"Jowrney Kim",
-			mail:"jowrney@axisj.com"
+			mail:"jowrney@axisj.com",
+			support:["DX"]					
 		}
 	],
 	incHeader:function(){
@@ -64,8 +68,15 @@ var pageObj = {
 		}
 		
 		to.push("<div class='logo'><img src='"+pageObj.host+"ui/"+pageObj.theme+"/images/dx-theme-logo.png' /></div>");
-		to.push("<h1><span>"+tdata.name+"</span> ver"+tdata.ver+"</h1>");
+
+		to.push("<h1>");
+		to.push("<span>"+tdata.name+"</span> ver"+tdata.ver+"&nbsp;&nbsp;");
+		for(var b=0; b<tdata.support.length; b++){
+			to.push("<span class='support'>"+tdata.support[b]+"</span>");
+		}	
+		to.push("</h1>");
 		to.push("<h2>Theme Developer. <a href='mailto:"+tdata.mail+"'>"+tdata.developer+"</a></h2>");
+		
 		to.push("<div class='ax-clear'></div>");
 		jQuery(".themeInfo").empty();
 		jQuery(".themeInfo").append(to.join(""));

@@ -7,10 +7,9 @@
 	position:relative;
 	.AXTreeScrollBody{
 		position:relative;
-		border:@border;
+		border:@border-i;
 		overflow:hidden;
 		//Tree Head...
-
 		.AXTreeColHead{
 			position:absolute;left:0px;top:0px;
 			width:100%;
@@ -76,7 +75,8 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:@color;text-shadow:0px 1px 0px #fff;
+								color:@color;
+								//text-shadow:0px 1px 0px #fff;
 								font-family:@font-family;
 								.util-text-ellipsis();
 							}
@@ -210,6 +210,7 @@
 						td{
 							padding:0px;
 							background:url('images/dx-tree-body-border.png') repeat-y 100% 0px;
+							background-color:@bgcolor-u;
 							vertical-align:bottom;
 							border-bottom:@border-d;
 							cursor:pointer;
@@ -296,7 +297,8 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:@color-a;text-shadow:0px 1px 0px #fff;
+								color:@color-a;
+								//text-shadow:0px 1px 0px #fff;
 								font-family:@font-family;
 								.util-text-ellipsis();
 							}
@@ -332,7 +334,8 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:@color-a;text-shadow:0px 1px 0px #fff;
+								color:@color-a;
+								//text-shadow:0px 1px 0px #fff;
 								font-family:@font-family;
 								.util-text-ellipsis();
 							}
@@ -416,7 +419,8 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:@color-a;text-shadow:0px 1px 0px #fff;
+								color:@color-a;
+								//text-shadow:0px 1px 0px #fff;
 								font-family:@font-family;
 								.util-text-ellipsis();
 							}
@@ -455,7 +459,8 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:@color-a;text-shadow:0px 1px 0px #fff;
+								color:@color-a;
+								//text-shadow:0px 1px 0px #fff;
 								font-family:@font-family;
 								.util-text-ellipsis();
 							}
@@ -486,16 +491,18 @@
 	position:relative;
 	.AXTreeScrollBody{
 		position:relative;
-		//border:1px solid #b1b1b1;
+		border:@border-i;
 		overflow:hidden;
 		.AXTreeColHead{
 			position:absolute;left:0px;top:0px;
 			width:100%;
-			background:url('images/dx-tree-head-bg.png') repeat-x 0px 0px #fff;
+			//background:url('images/dx-tree-head-bg.png') repeat-x 0px 0px #fff;
+			.util-gradient(top, @bgcolor-a, @bgcolor-b);			
 			border-bottom:@border;
 			.colHeadTable{
 				table-layout:fixed;
-				background:url('images/dx-tree-head-bg.png') repeat-x 0px 0px #fff;
+				//background:url('images/dx-tree-head-bg.png') repeat-x 0px 0px #fff;
+				.util-gradient(top, @bgcolor-a, @bgcolor-b);				
 				tbody{
 					tr{
 						td{
@@ -551,7 +558,8 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 0px;
-								color:@color;text-shadow:0px 1px 0px #fff;
+								color:@color;
+								//text-shadow:0px 1px 0px #fff;
 								font-family:@font-family;
 								.util-text-ellipsis();
 							}
@@ -777,7 +785,8 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:@color-a;text-shadow:0px 1px 0px #fff;
+								color:@color-a;
+								//text-shadow:0px 1px 0px #fff;
 								font-family:@font-family;
 								.util-text-ellipsis();
 							}
@@ -813,7 +822,8 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:@color-a;text-shadow:0px 1px 0px #fff;
+								color:@color-a;
+								//text-shadow:0px 1px 0px #fff;
 								font-family:@font-family;
 								.util-text-ellipsis();
 							}
@@ -901,7 +911,8 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:@color-a;text-shadow:0px 1px 0px #fff;
+								color:@color-a;
+								//text-shadow:0px 1px 0px #fff;
 								font-family:AppleGothic, 'Malgun Gothic',Gulim;
 								.util-text-ellipsis();
 							}	
@@ -941,7 +952,8 @@
 								position:relative;
 								line-height:20px;
 								padding:5px 8px;
-								color:@color-a;text-shadow:0px 1px 0px #fff;
+								color:@color-a;
+								//text-shadow:0px 1px 0px #fff;
 								font-family:@font-family;
 								.util-text-ellipsis();
 							}

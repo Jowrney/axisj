@@ -183,6 +183,14 @@ body h3 {
   font-weight: bold;
   color: #5e5e5e;
 }
+#AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo h1 .support {
+  font-size: 10px;
+  background: #d9d9d9;
+  color: #526271;
+  border-radius: 10px;
+  padding: 2px 6px;
+  margin-left: 2px;
+}
 #AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo h2 {
   position: absolute;
   margin-left: 80px;

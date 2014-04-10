@@ -8,3175 +8,794 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media (min-width:1152px) {
-  .util-border-radius-none {
-    -webkit-border-radius: none;
-    -moz-border-radius: none;
-    border-radius: none;
-  }
-  .util-text-ellipsis {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .clear {
-    clear: both;
-  }
-  .AXHspace1 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 1px;
-  }
-  .AXHspace2 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 2px;
-  }
-  .AXHspace3 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 3px;
-  }
-  .AXHspace4 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 4px;
-  }
-  .AXHspace5 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 5px;
-  }
-  .AXHspace10 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 10px;
-  }
-  .AXHspace15 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 15px;
-  }
-  .AXHspace20 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 20px;
-  }
-  .AXHspace30 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 30px;
-  }
-  .AXHspace40 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 40px;
-  }
-  .AXHspace50 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 50px;
-  }
-  .W10 {
-    width: 20px;
-  }
-  .W20 {
-    width: 20px;
-  }
-  .W30 {
-    width: 30px;
-  }
-  .W40 {
-    width: 40px;
-  }
-  .W50 {
-    width: 50px;
-  }
-  .W60 {
-    width: 60px;
-  }
-  .W70 {
-    width: 70px;
-  }
-  .W80 {
-    width: 80px;
-  }
-  .W90 {
-    width: 90px;
-  }
-  .W100 {
-    width: 100px;
-  }
-  .W110 {
-    width: 110px;
-  }
-  .W120 {
-    width: 120px;
-  }
-  .W130 {
-    width: 130px;
-  }
-  .W140 {
-    width: 140px;
-  }
-  .W150 {
-    width: 150px;
-  }
-  .W160 {
-    width: 160px;
-  }
-  .W170 {
-    width: 170px;
-  }
-  .W180 {
-    width: 180px;
-  }
-  .W190 {
-    width: 190px;
-  }
-  .W200 {
-    width: 200px;
-  }
-  .AXUserSelectNone {
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -o-user-select: none;
-  }
-  .AXMobileConsole {
-    padding: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    z-index: 10000;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    color: #FF00FF;
-    text-shadow: 0px 1px 0px #fff;
-  }
-  .AXMask {
-    z-index: 5000;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    -moz-opacity: 0.2;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
-  }
-  .AXLoading {
-    min-height: 50px;
-    background: url('images/dx-progresss-ani-white-1.gif') no-repeat center center;
-  }
-  .AXLoadingSmall {
-    min-height: 25px;
-    background: url('images/dx-progresss-ani-white-2.gif') no-repeat center center;
-  }
-  .AXContextMenu {
-    z-index: 4999;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 140px;
-    background: #fff;
-    border: 1px solid #b1b1b1;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #ccc;
-  }
-  .AXContextMenu .contextMenuItem {
-    position: relative;
-    display: block;
-    height: 30px;
-    line-height: 30px;
-    padding: 0px 5px 0px 30px;
-    color: #5e5e5e;
-    text-decoration: none;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    background-image: url('images/dx-context-icon-doc.png');
-    background-repeat: no-repeat;
-    background-position: 0px center;
-  }
-  .AXContextMenu .contextMenuItem:hover {
-    background-color: #eee;
-  }
-  .AXContextMenu .contextMenuItem.first {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-  .AXContextMenu .contextMenuItem.last {
-    border-bottom: 0px none;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-  .AXContextMenu .contextMenuItem.docline {
-    background-image: url('images/dx-context-icon-docline.png');
-  }
-  .AXContextMenu .contextMenuItem.plus {
-    background-image: url('images/dx-context-icon-plus.png');
-  }
-  .AXContextMenu .contextMenuItem.minus {
-    background-image: url('images/dx-context-icon-minus.png');
-  }
-  .AXContextMenu .contextMenuItem.group {
-    background-image: url('images/dx-context-icon-group.png');
-  }
-  .AXContextMenu .contextMenuItem.edit {
-    background-image: url('images/dx-context-icon-edit.png');
-  }
-  .AXContextMenu .contextMenuItem.copy {
-    background-image: url('images/dx-context-icon-copy.png');
-  }
-  .AXContextMenu .contextMenuItem.cut {
-    background-image: url('images/dx-context-icon-cut.png');
-  }
-  .AXContextMenu .contextMenuItem.paste {
-    background-image: url('images/dx-context-icon-paste.png');
-  }
-  .AXContextMenu .contextMenuItem.up {
-    background-image: url('images/dx-context-icon-up.png');
-  }
-  .AXContextMenu .contextMenuItem.down {
-    background-image: url('images/dx-context-icon-down.png');
-  }
-  .AXContextMenu .contextMenuItem.left {
-    background-image: url('images/dx-context-icon-left.png');
-  }
-  .AXContextMenu .contextMenuItem.right {
-    background-image: url('images/dx-context-icon-right.png');
-  }
-  .AXContextMenu .contextMenuItem.link {
-    background-image: url('images/dx-context-icon-link.png');
-  }
-  .AXContextMenu .contextMenuItem.unlink {
-    background-image: url('images/dx-context-icon-unlink.png');
-  }
-  .AXContextMenu .contextMenuItem.openall {
-    background-image: url('images/dx-context-icon-openall.png');
-  }
-  .AXContextMenu .contextMenuItem.closeall {
-    background-image: url('images/dx-context-icon-cloaseall.png');
-  }
-  .AXContextMenu .contextMenuItem .contextSubMenuIcon {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 30px;
-    height: 30px;
-    background-image: url('images/dx-context-sub-icon.png');
-    background-repeat: no-repeat;
-    background-position: 0px center;
-  }
-  .AXContextMenu .hline {
-    display: block;
-    height: 1px;
-    line-height: 1px;
-    font-size: 1px;
-    background: #b1b1b1;
-  }
-  .AXContextMenu .contextMenuItem:hover {
-    background-color: #eee;
-  }
-  .AXNotification {
-    width: 300px;
-    border: 2px solid #99847e;
-    background: #ffffff;
-    padding: 10px;
-    margin: 10px 0px;
-    box-shadow: 0px 0px 5px #b2b2b2;
-    font-size: 12px;
-    color: #525252;
-    -moz-opacity: 0.8;
-    opacity: 0.8;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 2px 2px 2px 2px;
-    -moz-border-radius: 2px 2px 2px 2px;
-    border-radius: 2px 2px 2px 2px;
-  }
-  .AXNotification.Warning .AXNotificationIcon {
-    width: 42px;
-    height: 42px;
-    background: url('images/dx-noti-warning.png') no-repeat center center !important;
-  }
-  .AXNotification.Warning .AXNotificationBody B {
-    color: #bf601b;
-  }
-  .AXNotification.Caution .AXNotificationIcon {
-    width: 42px;
-    height: 42px;
-    background: url('images/dx-noti-caution.png') no-repeat center center !important;
-  }
-  .AXNotification.Caution .AXNotificationBody B {
-    color: #c25c5f;
-  }
-  .AXNotification .AXNotificationHead {
-    font-weight: bold;
-    color: #58362a;
-    padding: 5px 15px;
-    height: 20px;
-    line-height: 20px;
-    background: #ccc2be;
-    text-align: center;
-  }
-  .AXNotification .AXNotificationTable {
-    width: 100%;
-    border: 0px none !important;
-    background: #ffffff;
-  }
-  .AXNotification .AXNotificationTable td,
-  .AXNotification .AXNotificationTable th {
-    border: 0px none !important;
-    background: #ffffff;
-  }
-  .AXNotification .AXNotificationIcon {
-    width: 42px;
-    height: 42px;
-    background: url('images/dx-noti-complete.png') no-repeat center 5px !important;
-  }
-  .AXNotification .AXNotificationBody {
-    font-size: 12px;
-    color: #525252;
-    padding-right: 5px;
-    line-height: 1.6em;
-  }
-  .AXNotification .AXNotificationBody B {
-    color: #99847e;
-  }
-  .AXNotification .AXNotificationButton {
-    width: 45px;
-  }
-  .AXNotification .AXNotificationButtons {
-    padding: 10px 0px;
-    text-align: center;
-    background: #ffffff;
-  }
-  .AXNotificationTray {
-    position: fixed;
-    right: 10px;
-    top: 0px;
-    z-index: 5001;
-    width: 322px;
-  }
-  .AXNotificationTrayDialog {
-    position: fixed;
-    left: 0px;
-    top: 50px;
-    width: 340px;
-    z-index: 5001;
-  }
-  .AXNotificationTrayDialog .AXNotification {
-    width: 340px;
-    border: 2px solid #99847e;
-    background: #ffffff;
-    padding: 0px;
-    margin: 0px 0px;
-    box-shadow: 0px 0px 3px #888;
-    font-size: 12px;
-    color: #525252;
-    overflow: hidden;
-    -moz-opacity: 1;
-    opacity: 1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    -webkit-border-radius: 2px 5px 5px 5px;
-    -moz-border-radius: 2px 5px 5px 5px;
-    border-radius: 2px 5px 5px 5px;
-  }
-  .AXNotificationTrayDialog .AXNotification .AXNotificationCT {
-    padding: 10px;
-  }
-  .AXCalendar {
-    position: relative;
-  }
-  .AXCalendar table.calendarPage {
-    table-layout: fixed;
-    width: 100%;
-  }
-  .AXCalendar table.calendarPage thead td {
-    background: #ffffff;
-    font-size: 8px;
-    font-family: Arial;
-    height: 20px;
-    line-height: 20px;
-    padding: 0px;
-    text-align: center;
-    border-right: 1px solid #f2f2f3;
-    border-bottom: 1px solid #b9babc;
-  }
-  .AXCalendar table.calendarPage thead td.head_6 {
-    border-right: 0px none;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_0 {
-    color: #c78b82;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_1 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_2 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_3 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_4 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_5 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_6 {
-    color: #627d9b;
-  }
-  .AXCalendar table.calendarPage tbody td {
-    height: 25px;
-    line-height: 25px;
-    padding: 0px;
-    text-align: center;
-    border-right: 1px solid #b9babc;
-    border-bottom: 1px solid #b9babc;
-    background: url('images/dx-calendar-bgs.png') repeat-x 0px -26px;
-  }
-  .AXCalendar table.calendarPage tbody td.bodyCol_6 {
-    border-right: 0px none;
-  }
-  .AXCalendar table.calendarPage tbody td.bodyRow_5 {
-    border-bottom: 0px none;
-  }
-  .AXCalendar table.calendarPage tbody td.setDate {
-    background: url('images/dx-calendar-bgs.png') repeat-x 0px -76px;
-  }
-  .AXCalendar table.calendarPage tbody td A.calendarDate {
-    display: block;
-    height: 25px;
-    line-height: 25px;
-    text-decoration: none;
-    color: #6d6e71;
-    font-size: 11px;
-    font-family: Arial;
-    font-weight: bold;
-  }
-  .AXCalendar table.calendarPage tbody td A.calendarDate:hover {
-    background: #d8e1e7;
-  }
-  .AXCalendar table.calendarPage tbody td A.calendarDate:active {
-    background: #5ea3db;
-    color: #ffffff;
-    box-shadow: inset 0px 0px 4px #3d84bc;
-  }
-  .AXCalendar table.calendarPage tbody td A.calendarDate.selected {
-    background: #5ea3db;
-    color: #ffffff;
-    box-shadow: inset 0px 0px 4px #3d84bc;
-  }
-  .AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate {
-    color: #c78b82;
-  }
-  .AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate.notThisMonth {
-    color: #bfbfc1;
-  }
-  .AXCalendar table.calendarPageMonth {
-    table-layout: fixed;
-    width: 100%;
-  }
-  .AXCalendar table.calendarPageMonth tbody td {
-    height: 43px;
-    line-height: 43px;
-    padding: 0px;
-    text-align: center;
-    border-right: 1px solid #b9babc;
-    border-bottom: 1px solid #b9babc;
-    background: url('images/dx-calendar-bgs.png') repeat-x 0px -101px;
-  }
-  .AXCalendar table.calendarPageMonth tbody td.bodyCol_2 {
-    border-right: 0px none;
-  }
-  .AXCalendar table.calendarPageMonth tbody td.bodyCol_3 {
-    border-bottom: 0px none;
-    padding-bottom: 1px;
-  }
-  .AXCalendar table.calendarPageMonth tbody td.setDate {
-    background: #f3e2df;
-  }
-  .AXCalendar table.calendarPageMonth tbody td A.calendarMonth {
-    display: block;
-    height: 43px;
-    line-height: 43px;
-    text-decoration: none;
-    color: #6d6e71;
-    font-size: 12px;
-    font-family: Arial;
-    font-weight: bold;
-  }
-  .AXCalendar table.calendarPageMonth tbody td A.calendarMonth:hover {
-    background: #d8e1e7;
-  }
-  .AXCalendar table.calendarPageMonth tbody td A.calendarMonth:active {
-    background: #5ea3db;
-    color: #ffffff;
-    box-shadow: inset 0px 0px 5px #3d84bc;
-  }
-  .AXCalendar table.calendarPageMonth tbody td A.calendarMonth.selected {
-    background: #5ea3db;
-    color: #ffffff;
-    box-shadow: inset 0px 0px 5px #3d84bc;
-  }
-  .AXCalendar .timeBox {
-    position: relative;
-    height: 90px;
-  }
-  .AXCalendar .timeBox .hourTitle {
-    position: absolute;
-    left: 5px;
-    top: 18px;
-    color: #738089;
-    font-size: 11px;
-    line-height: 24px;
-    font-family: Arial;
-    text-shadow: 0px 1px #fff;
-  }
-  .AXCalendar .timeBox .hourSlider {
-    position: absolute;
-    left: 45px;
-    top: 15px;
-  }
-  .AXCalendar .timeBox .hourSlider input {
-    width: 120px;
-  }
-  .AXCalendar .timeBox .minuteTitle {
-    position: absolute;
-    left: 5px;
-    top: 53px;
-    color: #738089;
-    font-size: 11px;
-    line-height: 24px;
-    font-family: Arial;
-    text-shadow: 0px 1px #fff;
-  }
-  .AXCalendar .timeBox .minuteSlider {
-    position: absolute;
-    left: 45px;
-    top: 50px;
-  }
-  .AXCalendar .timeBox .minuteSlider input {
-    width: 120px;
-  }
-  .AXCalendar .timeBox .timeDisplay {
-    position: absolute;
-    left: 5px;
-    top: 90px;
-    border: 1px solid #7f8d9c;
-    background: #a3b0b9;
-    box-shadow: inset 0px 1px 2px #828282;
-    border-radius: 5px;
-    padding: 0px 20px;
-    margin: 0px;
-    font-size: 12px;
-    color: #fff;
-    font-family: Arial;
-    line-height: 22px;
-    text-shadow: 0px -1px rgba(0, 0, 0, 0.25);
-    outline: none;
-    white-space: nowrap;
-  }
-  .AXCalendar .timeBox .AMPM {
-    position: absolute;
-    right: 10px;
-    top: 90px;
-  }
-  .AXModalBox {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    z-index: 5001;
-  }
-  .AXModalBox .windowbox {
-    border: 1px solid #a6a6a6;
-    background: #ffffff;
-    box-shadow: 0px 0px 1px #a6a6a6;
-    padding: 0px;
-    margin: 0px 0px 10px 0px;
-    font-size: 12px;
-    color: #525252;
-  }
-  .AXModalBox .windowbox .windowboxFrame {
-    -moz-opacity: 0.0;
-    opacity: .00;
-    filter: alpha(opacity=00);
-  }
-  .AXModalBox .windowbox .windowboxFrame.loaded {
-    -moz-opacity: 1.0;
-    opacity: 1;
-    filter: alpha(opacity=100);
-  }
-  .AXModalBox .windowbox .closeBtn {
-    position: absolute;
-    right: -39px;
-    top: 0px;
-    display: block;
-    width: 38px;
-    height: 38px;
-    background: url('images/dx-modal-close.png') no-repeat;
-    border: 1px solid #a6a6a6;
-    border-left: 0px none;
-    box-shadow: 0px 0px 1px #a6a6a6;
-    overflow: hidden;
-    text-indent: -1000px;
-  }
-  .AXScroll {
-    position: relative;
-    overflow: hidden;
-  }
-  .AXScroll .scrollTrack {
-    z-index: 100;
-    position: absolute;
-    right: 2px;
-    top: 2px;
-    width: 7px;
-    height: 100%;
-    background: #000000;
-    -moz-opacity: 0;
-    opacity: 0;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScroll .scrollTrack_hover {
-    -moz-opacity: 0.2;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
-  }
-  .AXScroll .scrollBar {
-    z-index: 100;
-    position: absolute;
-    right: 2px;
-    top: 2px;
-    width: 7px;
-    min-height: 10px;
-    background: #000000;
-    -moz-opacity: 0.1;
-    opacity: 0.1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScroll .scrollBar:hover {
-    width: 11px;
-    right: 0px;
-  }
-  .AXScroll .scrollBar_hover {
-    -moz-opacity: 0.5;
-    opacity: 0.5;
-    filter: alpha(opacity=20);
-  }
-  .AXScroll .scrollTarget {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  }
-  .AXScroll .xscrollTrack {
-    z-index: 100;
-    position: absolute;
-    left: 2px;
-    bottom: 2px;
-    width: 100%;
-    height: 7px;
-    background: #000000;
-    -moz-opacity: 0.1;
-    opacity: 0.1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScroll .xscrollTrack_hover {
-    -moz-opacity: 0.2;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
-  }
-  .AXScroll .xscrollBar {
-    z-index: 100;
-    position: absolute;
-    left: 2px;
-    bottom: 2px;
-    height: 7px;
-    min-width: 10px;
-    background: #000000;
-    -moz-opacity: 0.1;
-    opacity: 0.1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScroll .xscrollBar:hover {
-    height: 11px;
-    bottom: 0px;
-  }
-  .AXScroll .xscrollBar_hover {
-    -moz-opacity: 0.5;
-    opacity: 0.5;
-    filter: alpha(opacity=20);
-  }
-  .AXScroll .xscrollTarget {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  }
-  .AXScrollSmall {
-    position: relative;
-    overflow: hidden;
-  }
-  .AXScrollSmall .scrollTrack {
-    position: absolute;
-    right: 3px;
-    top: 2px;
-    width: 6px;
-    height: 100%;
-    background: #000000;
-    -moz-opacity: 0.1;
-    opacity: 0.1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScrollSmall .scrollTrack_hover {
-    -moz-opacity: 0.2;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
-  }
-  .AXScrollSmall .scrollBar {
-    position: absolute;
-    right: 3px;
-    top: 2px;
-    width: 6px;
-    min-height: 10px;
-    background: #000000;
-    -moz-opacity: 0.3;
-    opacity: 0.3;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScrollSmall .scrollBar:hover {
-    width: 10px;
-    right: 1px;
-  }
-  .AXScrollSmall .scrollBar_hover {
-    -moz-opacity: 0.5;
-    opacity: 0.5;
-    filter: alpha(opacity=20);
-  }
-  .AXScrollSmall .scrollTarget {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  }
+.util-border-radius-none {
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  border-radius: none;
 }
-@media only screen and (min-width: 1024px) and (max-width: 1151px) {
-  .util-border-radius-none {
-    -webkit-border-radius: none;
-    -moz-border-radius: none;
-    border-radius: none;
-  }
-  .util-text-ellipsis {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .clear {
-    clear: both;
-  }
-  .AXHspace1 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 1px;
-  }
-  .AXHspace2 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 2px;
-  }
-  .AXHspace3 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 3px;
-  }
-  .AXHspace4 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 4px;
-  }
-  .AXHspace5 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 5px;
-  }
-  .AXHspace10 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 10px;
-  }
-  .AXHspace15 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 15px;
-  }
-  .AXHspace20 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 20px;
-  }
-  .AXHspace30 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 30px;
-  }
-  .AXHspace40 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 40px;
-  }
-  .AXHspace50 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 50px;
-  }
-  .W10 {
-    width: 20px;
-  }
-  .W20 {
-    width: 20px;
-  }
-  .W30 {
-    width: 30px;
-  }
-  .W40 {
-    width: 40px;
-  }
-  .W50 {
-    width: 50px;
-  }
-  .W60 {
-    width: 60px;
-  }
-  .W70 {
-    width: 70px;
-  }
-  .W80 {
-    width: 80px;
-  }
-  .W90 {
-    width: 90px;
-  }
-  .W100 {
-    width: 100px;
-  }
-  .W110 {
-    width: 110px;
-  }
-  .W120 {
-    width: 120px;
-  }
-  .W130 {
-    width: 130px;
-  }
-  .W140 {
-    width: 140px;
-  }
-  .W150 {
-    width: 150px;
-  }
-  .W160 {
-    width: 160px;
-  }
-  .W170 {
-    width: 170px;
-  }
-  .W180 {
-    width: 180px;
-  }
-  .W190 {
-    width: 190px;
-  }
-  .W200 {
-    width: 200px;
-  }
-  .AXUserSelectNone {
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -o-user-select: none;
-  }
-  .AXMobileConsole {
-    padding: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    z-index: 10000;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    color: #FF00FF;
-    text-shadow: 0px 1px 0px #fff;
-  }
-  .AXMask {
-    z-index: 5000;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    -moz-opacity: 0.2;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
-  }
-  .AXLoading {
-    min-height: 50px;
-    background: url('images/dx-progresss-ani-white-1.gif') no-repeat center center;
-  }
-  .AXLoadingSmall {
-    min-height: 25px;
-    background: url('images/dx-progresss-ani-white-2.gif') no-repeat center center;
-  }
-  .AXContextMenu {
-    z-index: 4999;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 140px;
-    background: #fff;
-    border: 1px solid #b1b1b1;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #ccc;
-  }
-  .AXContextMenu .contextMenuItem {
-    position: relative;
-    display: block;
-    height: 30px;
-    line-height: 30px;
-    padding: 0px 5px 0px 30px;
-    color: #5e5e5e;
-    text-decoration: none;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    background-image: url('images/dx-context-icon-doc.png');
-    background-repeat: no-repeat;
-    background-position: 0px center;
-  }
-  .AXContextMenu .contextMenuItem:hover {
-    background-color: #eee;
-  }
-  .AXContextMenu .contextMenuItem.first {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-  .AXContextMenu .contextMenuItem.last {
-    border-bottom: 0px none;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-  .AXContextMenu .contextMenuItem.docline {
-    background-image: url('images/dx-context-icon-docline.png');
-  }
-  .AXContextMenu .contextMenuItem.plus {
-    background-image: url('images/dx-context-icon-plus.png');
-  }
-  .AXContextMenu .contextMenuItem.minus {
-    background-image: url('images/dx-context-icon-minus.png');
-  }
-  .AXContextMenu .contextMenuItem.group {
-    background-image: url('images/dx-context-icon-group.png');
-  }
-  .AXContextMenu .contextMenuItem.edit {
-    background-image: url('images/dx-context-icon-edit.png');
-  }
-  .AXContextMenu .contextMenuItem.copy {
-    background-image: url('images/dx-context-icon-copy.png');
-  }
-  .AXContextMenu .contextMenuItem.cut {
-    background-image: url('images/dx-context-icon-cut.png');
-  }
-  .AXContextMenu .contextMenuItem.paste {
-    background-image: url('images/dx-context-icon-paste.png');
-  }
-  .AXContextMenu .contextMenuItem.up {
-    background-image: url('images/dx-context-icon-up.png');
-  }
-  .AXContextMenu .contextMenuItem.down {
-    background-image: url('images/dx-context-icon-down.png');
-  }
-  .AXContextMenu .contextMenuItem.left {
-    background-image: url('images/dx-context-icon-left.png');
-  }
-  .AXContextMenu .contextMenuItem.right {
-    background-image: url('images/dx-context-icon-right.png');
-  }
-  .AXContextMenu .contextMenuItem.link {
-    background-image: url('images/dx-context-icon-link.png');
-  }
-  .AXContextMenu .contextMenuItem.unlink {
-    background-image: url('images/dx-context-icon-unlink.png');
-  }
-  .AXContextMenu .contextMenuItem.openall {
-    background-image: url('images/dx-context-icon-openall.png');
-  }
-  .AXContextMenu .contextMenuItem.closeall {
-    background-image: url('images/dx-context-icon-cloaseall.png');
-  }
-  .AXContextMenu .contextMenuItem .contextSubMenuIcon {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 30px;
-    height: 30px;
-    background-image: url('images/dx-context-sub-icon.png');
-    background-repeat: no-repeat;
-    background-position: 0px center;
-  }
-  .AXContextMenu .hline {
-    display: block;
-    height: 1px;
-    line-height: 1px;
-    font-size: 1px;
-    background: #b1b1b1;
-  }
-  .AXContextMenu .contextMenuItem:hover {
-    background-color: #eee;
-  }
-  .AXNotification {
-    width: 300px;
-    border: 2px solid #99847e;
-    background: #ffffff;
-    padding: 10px;
-    margin: 10px 0px;
-    box-shadow: 0px 0px 5px #b2b2b2;
-    font-size: 12px;
-    color: #525252;
-    -moz-opacity: 0.8;
-    opacity: 0.8;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 2px 2px 2px 2px;
-    -moz-border-radius: 2px 2px 2px 2px;
-    border-radius: 2px 2px 2px 2px;
-  }
-  .AXNotification.Warning .AXNotificationIcon {
-    width: 42px;
-    height: 42px;
-    background: url('images/dx-noti-warning.png') no-repeat center center !important;
-  }
-  .AXNotification.Warning .AXNotificationBody B {
-    color: #bf601b;
-  }
-  .AXNotification.Caution .AXNotificationIcon {
-    width: 42px;
-    height: 42px;
-    background: url('images/dx-noti-caution.png') no-repeat center center !important;
-  }
-  .AXNotification.Caution .AXNotificationBody B {
-    color: #c25c5f;
-  }
-  .AXNotification .AXNotificationHead {
-    font-weight: bold;
-    color: #58362a;
-    padding: 5px 15px;
-    height: 20px;
-    line-height: 20px;
-    background: #ccc2be;
-    text-align: center;
-  }
-  .AXNotification .AXNotificationTable {
-    width: 100%;
-    border: 0px none !important;
-    background: #ffffff;
-  }
-  .AXNotification .AXNotificationTable td,
-  .AXNotification .AXNotificationTable th {
-    border: 0px none !important;
-    background: #ffffff;
-  }
-  .AXNotification .AXNotificationIcon {
-    width: 42px;
-    height: 42px;
-    background: url('images/dx-noti-complete.png') no-repeat center 5px !important;
-  }
-  .AXNotification .AXNotificationBody {
-    font-size: 12px;
-    color: #525252;
-    padding-right: 5px;
-    line-height: 1.6em;
-  }
-  .AXNotification .AXNotificationBody B {
-    color: #99847e;
-  }
-  .AXNotification .AXNotificationButton {
-    width: 45px;
-  }
-  .AXNotification .AXNotificationButtons {
-    padding: 10px 0px;
-    text-align: center;
-    background: #ffffff;
-  }
-  .AXNotificationTray {
-    position: fixed;
-    right: 10px;
-    top: 0px;
-    z-index: 5001;
-    width: 322px;
-  }
-  .AXNotificationTrayDialog {
-    position: fixed;
-    left: 0px;
-    top: 50px;
-    width: 340px;
-    z-index: 5001;
-  }
-  .AXNotificationTrayDialog .AXNotification {
-    width: 340px;
-    border: 2px solid #99847e;
-    background: #ffffff;
-    padding: 0px;
-    margin: 0px 0px;
-    box-shadow: 0px 0px 3px #888;
-    font-size: 12px;
-    color: #525252;
-    overflow: hidden;
-    -moz-opacity: 1;
-    opacity: 1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    -webkit-border-radius: 2px 5px 5px 5px;
-    -moz-border-radius: 2px 5px 5px 5px;
-    border-radius: 2px 5px 5px 5px;
-  }
-  .AXNotificationTrayDialog .AXNotification .AXNotificationCT {
-    padding: 10px;
-  }
-  .AXCalendar {
-    position: relative;
-  }
-  .AXCalendar table.calendarPage {
-    table-layout: fixed;
-    width: 100%;
-  }
-  .AXCalendar table.calendarPage thead td {
-    background: #ffffff;
-    font-size: 8px;
-    font-family: Arial;
-    height: 20px;
-    line-height: 20px;
-    padding: 0px;
-    text-align: center;
-    border-right: 1px solid #f2f2f3;
-    border-bottom: 1px solid #b9babc;
-  }
-  .AXCalendar table.calendarPage thead td.head_6 {
-    border-right: 0px none;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_0 {
-    color: #c78b82;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_1 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_2 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_3 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_4 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_5 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_6 {
-    color: #627d9b;
-  }
-  .AXCalendar table.calendarPage tbody td {
-    height: 25px;
-    line-height: 25px;
-    padding: 0px;
-    text-align: center;
-    border-right: 1px solid #b9babc;
-    border-bottom: 1px solid #b9babc;
-    background: url('images/dx-calendar-bgs.png') repeat-x 0px -26px;
-  }
-  .AXCalendar table.calendarPage tbody td.bodyCol_6 {
-    border-right: 0px none;
-  }
-  .AXCalendar table.calendarPage tbody td.bodyRow_5 {
-    border-bottom: 0px none;
-  }
-  .AXCalendar table.calendarPage tbody td.setDate {
-    background: url('images/dx-calendar-bgs.png') repeat-x 0px -76px;
-  }
-  .AXCalendar table.calendarPage tbody td A.calendarDate {
-    display: block;
-    height: 25px;
-    line-height: 25px;
-    text-decoration: none;
-    color: #6d6e71;
-    font-size: 11px;
-    font-family: Arial;
-    font-weight: bold;
-  }
-  .AXCalendar table.calendarPage tbody td A.calendarDate:hover {
-    background: #d8e1e7;
-  }
-  .AXCalendar table.calendarPage tbody td A.calendarDate:active {
-    background: #5ea3db;
-    color: #ffffff;
-    box-shadow: inset 0px 0px 4px #3d84bc;
-  }
-  .AXCalendar table.calendarPage tbody td A.calendarDate.selected {
-    background: #5ea3db;
-    color: #ffffff;
-    box-shadow: inset 0px 0px 4px #3d84bc;
-  }
-  .AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate {
-    color: #c78b82;
-  }
-  .AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate.notThisMonth {
-    color: #bfbfc1;
-  }
-  .AXCalendar table.calendarPageMonth {
-    table-layout: fixed;
-    width: 100%;
-  }
-  .AXCalendar table.calendarPageMonth tbody td {
-    height: 43px;
-    line-height: 43px;
-    padding: 0px;
-    text-align: center;
-    border-right: 1px solid #b9babc;
-    border-bottom: 1px solid #b9babc;
-    background: url('images/dx-calendar-bgs.png') repeat-x 0px -101px;
-  }
-  .AXCalendar table.calendarPageMonth tbody td.bodyCol_2 {
-    border-right: 0px none;
-  }
-  .AXCalendar table.calendarPageMonth tbody td.bodyCol_3 {
-    border-bottom: 0px none;
-    padding-bottom: 1px;
-  }
-  .AXCalendar table.calendarPageMonth tbody td.setDate {
-    background: #f3e2df;
-  }
-  .AXCalendar table.calendarPageMonth tbody td A.calendarMonth {
-    display: block;
-    height: 43px;
-    line-height: 43px;
-    text-decoration: none;
-    color: #6d6e71;
-    font-size: 12px;
-    font-family: Arial;
-    font-weight: bold;
-  }
-  .AXCalendar table.calendarPageMonth tbody td A.calendarMonth:hover {
-    background: #d8e1e7;
-  }
-  .AXCalendar table.calendarPageMonth tbody td A.calendarMonth:active {
-    background: #5ea3db;
-    color: #ffffff;
-    box-shadow: inset 0px 0px 5px #3d84bc;
-  }
-  .AXCalendar table.calendarPageMonth tbody td A.calendarMonth.selected {
-    background: #5ea3db;
-    color: #ffffff;
-    box-shadow: inset 0px 0px 5px #3d84bc;
-  }
-  .AXCalendar .timeBox {
-    position: relative;
-    height: 90px;
-  }
-  .AXCalendar .timeBox .hourTitle {
-    position: absolute;
-    left: 5px;
-    top: 18px;
-    color: #738089;
-    font-size: 11px;
-    line-height: 24px;
-    font-family: Arial;
-    text-shadow: 0px 1px #fff;
-  }
-  .AXCalendar .timeBox .hourSlider {
-    position: absolute;
-    left: 45px;
-    top: 15px;
-  }
-  .AXCalendar .timeBox .hourSlider input {
-    width: 120px;
-  }
-  .AXCalendar .timeBox .minuteTitle {
-    position: absolute;
-    left: 5px;
-    top: 53px;
-    color: #738089;
-    font-size: 11px;
-    line-height: 24px;
-    font-family: Arial;
-    text-shadow: 0px 1px #fff;
-  }
-  .AXCalendar .timeBox .minuteSlider {
-    position: absolute;
-    left: 45px;
-    top: 50px;
-  }
-  .AXCalendar .timeBox .minuteSlider input {
-    width: 120px;
-  }
-  .AXCalendar .timeBox .timeDisplay {
-    position: absolute;
-    left: 5px;
-    top: 90px;
-    border: 1px solid #7f8d9c;
-    background: #a3b0b9;
-    box-shadow: inset 0px 1px 2px #828282;
-    border-radius: 5px;
-    padding: 0px 20px;
-    margin: 0px;
-    font-size: 12px;
-    color: #fff;
-    font-family: Arial;
-    line-height: 22px;
-    text-shadow: 0px -1px rgba(0, 0, 0, 0.25);
-    outline: none;
-    white-space: nowrap;
-  }
-  .AXCalendar .timeBox .AMPM {
-    position: absolute;
-    right: 10px;
-    top: 90px;
-  }
-  .AXModalBox {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    z-index: 5001;
-  }
-  .AXModalBox .windowbox {
-    border: 1px solid #a6a6a6;
-    background: #ffffff;
-    box-shadow: 0px 0px 1px #a6a6a6;
-    padding: 0px;
-    margin: 0px 0px 10px 0px;
-    font-size: 12px;
-    color: #525252;
-  }
-  .AXModalBox .windowbox .windowboxFrame {
-    -moz-opacity: 0.0;
-    opacity: .00;
-    filter: alpha(opacity=00);
-  }
-  .AXModalBox .windowbox .windowboxFrame.loaded {
-    -moz-opacity: 1.0;
-    opacity: 1;
-    filter: alpha(opacity=100);
-  }
-  .AXModalBox .windowbox .closeBtn {
-    position: absolute;
-    right: -39px;
-    top: 0px;
-    display: block;
-    width: 38px;
-    height: 38px;
-    background: url('images/dx-modal-close.png') no-repeat;
-    border: 1px solid #a6a6a6;
-    border-left: 0px none;
-    box-shadow: 0px 0px 1px #a6a6a6;
-    overflow: hidden;
-    text-indent: -1000px;
-  }
-  .AXScroll {
-    position: relative;
-    overflow: hidden;
-  }
-  .AXScroll .scrollTrack {
-    z-index: 100;
-    position: absolute;
-    right: 2px;
-    top: 2px;
-    width: 7px;
-    height: 100%;
-    background: #000000;
-    -moz-opacity: 0;
-    opacity: 0;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScroll .scrollTrack_hover {
-    -moz-opacity: 0.2;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
-  }
-  .AXScroll .scrollBar {
-    z-index: 100;
-    position: absolute;
-    right: 2px;
-    top: 2px;
-    width: 7px;
-    min-height: 10px;
-    background: #000000;
-    -moz-opacity: 0.1;
-    opacity: 0.1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScroll .scrollBar:hover {
-    width: 11px;
-    right: 0px;
-  }
-  .AXScroll .scrollBar_hover {
-    -moz-opacity: 0.5;
-    opacity: 0.5;
-    filter: alpha(opacity=20);
-  }
-  .AXScroll .scrollTarget {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  }
-  .AXScroll .xscrollTrack {
-    z-index: 100;
-    position: absolute;
-    left: 2px;
-    bottom: 2px;
-    width: 100%;
-    height: 7px;
-    background: #000000;
-    -moz-opacity: 0.1;
-    opacity: 0.1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScroll .xscrollTrack_hover {
-    -moz-opacity: 0.2;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
-  }
-  .AXScroll .xscrollBar {
-    z-index: 100;
-    position: absolute;
-    left: 2px;
-    bottom: 2px;
-    height: 7px;
-    min-width: 10px;
-    background: #000000;
-    -moz-opacity: 0.1;
-    opacity: 0.1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScroll .xscrollBar:hover {
-    height: 11px;
-    bottom: 0px;
-  }
-  .AXScroll .xscrollBar_hover {
-    -moz-opacity: 0.5;
-    opacity: 0.5;
-    filter: alpha(opacity=20);
-  }
-  .AXScroll .xscrollTarget {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  }
-  .AXScrollSmall {
-    position: relative;
-    overflow: hidden;
-  }
-  .AXScrollSmall .scrollTrack {
-    position: absolute;
-    right: 3px;
-    top: 2px;
-    width: 6px;
-    height: 100%;
-    background: #000000;
-    -moz-opacity: 0.1;
-    opacity: 0.1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScrollSmall .scrollTrack_hover {
-    -moz-opacity: 0.2;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
-  }
-  .AXScrollSmall .scrollBar {
-    position: absolute;
-    right: 3px;
-    top: 2px;
-    width: 6px;
-    min-height: 10px;
-    background: #000000;
-    -moz-opacity: 0.3;
-    opacity: 0.3;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScrollSmall .scrollBar:hover {
-    width: 10px;
-    right: 1px;
-  }
-  .AXScrollSmall .scrollBar_hover {
-    -moz-opacity: 0.5;
-    opacity: 0.5;
-    filter: alpha(opacity=20);
-  }
-  .AXScrollSmall .scrollTarget {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  }
+.util-text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .util-border-radius-none {
-    -webkit-border-radius: none;
-    -moz-border-radius: none;
-    border-radius: none;
-  }
-  .util-text-ellipsis {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .clear {
-    clear: both;
-  }
-  .AXHspace1 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 1px;
-  }
-  .AXHspace2 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 2px;
-  }
-  .AXHspace3 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 3px;
-  }
-  .AXHspace4 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 4px;
-  }
-  .AXHspace5 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 5px;
-  }
-  .AXHspace10 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 10px;
-  }
-  .AXHspace15 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 15px;
-  }
-  .AXHspace20 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 20px;
-  }
-  .AXHspace30 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 30px;
-  }
-  .AXHspace40 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 40px;
-  }
-  .AXHspace50 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 50px;
-  }
-  .W10 {
-    width: 20px;
-  }
-  .W20 {
-    width: 20px;
-  }
-  .W30 {
-    width: 30px;
-  }
-  .W40 {
-    width: 40px;
-  }
-  .W50 {
-    width: 50px;
-  }
-  .W60 {
-    width: 60px;
-  }
-  .W70 {
-    width: 70px;
-  }
-  .W80 {
-    width: 80px;
-  }
-  .W90 {
-    width: 90px;
-  }
-  .W100 {
-    width: 100px;
-  }
-  .W110 {
-    width: 110px;
-  }
-  .W120 {
-    width: 120px;
-  }
-  .W130 {
-    width: 130px;
-  }
-  .W140 {
-    width: 140px;
-  }
-  .W150 {
-    width: 150px;
-  }
-  .W160 {
-    width: 160px;
-  }
-  .W170 {
-    width: 170px;
-  }
-  .W180 {
-    width: 180px;
-  }
-  .W190 {
-    width: 190px;
-  }
-  .W200 {
-    width: 200px;
-  }
-  .AXUserSelectNone {
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -o-user-select: none;
-  }
-  .AXMobileConsole {
-    padding: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    z-index: 10000;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    color: #FF00FF;
-    text-shadow: 0px 1px 0px #fff;
-  }
-  .AXMask {
-    z-index: 5000;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    -moz-opacity: 0.2;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
-  }
-  .AXLoading {
-    min-height: 50px;
-    background: url('images/dx-progresss-ani-white-1.gif') no-repeat center center;
-  }
-  .AXLoadingSmall {
-    min-height: 25px;
-    background: url('images/dx-progresss-ani-white-2.gif') no-repeat center center;
-  }
-  .AXContextMenu {
-    z-index: 4999;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 140px;
-    background: #fff;
-    border: 1px solid #b1b1b1;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #ccc;
-  }
-  .AXContextMenu .contextMenuItem {
-    position: relative;
-    display: block;
-    height: 30px;
-    line-height: 30px;
-    padding: 0px 5px 0px 30px;
-    color: #5e5e5e;
-    text-decoration: none;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    background-image: url('images/dx-context-icon-doc.png');
-    background-repeat: no-repeat;
-    background-position: 0px center;
-  }
-  .AXContextMenu .contextMenuItem:hover {
-    background-color: #eee;
-  }
-  .AXContextMenu .contextMenuItem.first {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-  .AXContextMenu .contextMenuItem.last {
-    border-bottom: 0px none;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-  .AXContextMenu .contextMenuItem.docline {
-    background-image: url('images/dx-context-icon-docline.png');
-  }
-  .AXContextMenu .contextMenuItem.plus {
-    background-image: url('images/dx-context-icon-plus.png');
-  }
-  .AXContextMenu .contextMenuItem.minus {
-    background-image: url('images/dx-context-icon-minus.png');
-  }
-  .AXContextMenu .contextMenuItem.group {
-    background-image: url('images/dx-context-icon-group.png');
-  }
-  .AXContextMenu .contextMenuItem.edit {
-    background-image: url('images/dx-context-icon-edit.png');
-  }
-  .AXContextMenu .contextMenuItem.copy {
-    background-image: url('images/dx-context-icon-copy.png');
-  }
-  .AXContextMenu .contextMenuItem.cut {
-    background-image: url('images/dx-context-icon-cut.png');
-  }
-  .AXContextMenu .contextMenuItem.paste {
-    background-image: url('images/dx-context-icon-paste.png');
-  }
-  .AXContextMenu .contextMenuItem.up {
-    background-image: url('images/dx-context-icon-up.png');
-  }
-  .AXContextMenu .contextMenuItem.down {
-    background-image: url('images/dx-context-icon-down.png');
-  }
-  .AXContextMenu .contextMenuItem.left {
-    background-image: url('images/dx-context-icon-left.png');
-  }
-  .AXContextMenu .contextMenuItem.right {
-    background-image: url('images/dx-context-icon-right.png');
-  }
-  .AXContextMenu .contextMenuItem.link {
-    background-image: url('images/dx-context-icon-link.png');
-  }
-  .AXContextMenu .contextMenuItem.unlink {
-    background-image: url('images/dx-context-icon-unlink.png');
-  }
-  .AXContextMenu .contextMenuItem.openall {
-    background-image: url('images/dx-context-icon-openall.png');
-  }
-  .AXContextMenu .contextMenuItem.closeall {
-    background-image: url('images/dx-context-icon-cloaseall.png');
-  }
-  .AXContextMenu .contextMenuItem .contextSubMenuIcon {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 30px;
-    height: 30px;
-    background-image: url('images/dx-context-sub-icon.png');
-    background-repeat: no-repeat;
-    background-position: 0px center;
-  }
-  .AXContextMenu .hline {
-    display: block;
-    height: 1px;
-    line-height: 1px;
-    font-size: 1px;
-    background: #b1b1b1;
-  }
-  .AXContextMenu .contextMenuItem:hover {
-    background-color: #eee;
-  }
-  .AXNotification {
-    width: 300px;
-    border: 2px solid #99847e;
-    background: #ffffff;
-    padding: 10px;
-    margin: 10px 0px;
-    box-shadow: 0px 0px 5px #b2b2b2;
-    font-size: 12px;
-    color: #525252;
-    -moz-opacity: 0.8;
-    opacity: 0.8;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 2px 2px 2px 2px;
-    -moz-border-radius: 2px 2px 2px 2px;
-    border-radius: 2px 2px 2px 2px;
-  }
-  .AXNotification.Warning .AXNotificationIcon {
-    width: 42px;
-    height: 42px;
-    background: url('images/dx-noti-warning.png') no-repeat center center !important;
-  }
-  .AXNotification.Warning .AXNotificationBody B {
-    color: #bf601b;
-  }
-  .AXNotification.Caution .AXNotificationIcon {
-    width: 42px;
-    height: 42px;
-    background: url('images/dx-noti-caution.png') no-repeat center center !important;
-  }
-  .AXNotification.Caution .AXNotificationBody B {
-    color: #c25c5f;
-  }
-  .AXNotification .AXNotificationHead {
-    font-weight: bold;
-    color: #58362a;
-    padding: 5px 15px;
-    height: 20px;
-    line-height: 20px;
-    background: #ccc2be;
-    text-align: center;
-  }
-  .AXNotification .AXNotificationTable {
-    width: 100%;
-    border: 0px none !important;
-    background: #ffffff;
-  }
-  .AXNotification .AXNotificationTable td,
-  .AXNotification .AXNotificationTable th {
-    border: 0px none !important;
-    background: #ffffff;
-  }
-  .AXNotification .AXNotificationIcon {
-    width: 42px;
-    height: 42px;
-    background: url('images/dx-noti-complete.png') no-repeat center 5px !important;
-  }
-  .AXNotification .AXNotificationBody {
-    font-size: 12px;
-    color: #525252;
-    padding-right: 5px;
-    line-height: 1.6em;
-  }
-  .AXNotification .AXNotificationBody B {
-    color: #99847e;
-  }
-  .AXNotification .AXNotificationButton {
-    width: 45px;
-  }
-  .AXNotification .AXNotificationButtons {
-    padding: 10px 0px;
-    text-align: center;
-    background: #ffffff;
-  }
-  .AXNotificationTray {
-    position: fixed;
-    right: 10px;
-    top: 0px;
-    z-index: 5001;
-    width: 322px;
-  }
-  .AXNotificationTrayDialog {
-    position: fixed;
-    left: 0px;
-    top: 50px;
-    width: 340px;
-    z-index: 5001;
-  }
-  .AXNotificationTrayDialog .AXNotification {
-    width: 340px;
-    border: 2px solid #99847e;
-    background: #ffffff;
-    padding: 0px;
-    margin: 0px 0px;
-    box-shadow: 0px 0px 3px #888;
-    font-size: 12px;
-    color: #525252;
-    overflow: hidden;
-    -moz-opacity: 1;
-    opacity: 1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    -webkit-border-radius: 2px 5px 5px 5px;
-    -moz-border-radius: 2px 5px 5px 5px;
-    border-radius: 2px 5px 5px 5px;
-  }
-  .AXNotificationTrayDialog .AXNotification .AXNotificationCT {
-    padding: 10px;
-  }
-  .AXCalendar {
-    position: relative;
-  }
-  .AXCalendar table.calendarPage {
-    table-layout: fixed;
-    width: 100%;
-  }
-  .AXCalendar table.calendarPage thead td {
-    background: #ffffff;
-    font-size: 8px;
-    font-family: Arial;
-    height: 20px;
-    line-height: 20px;
-    padding: 0px;
-    text-align: center;
-    border-right: 1px solid #f2f2f3;
-    border-bottom: 1px solid #b9babc;
-  }
-  .AXCalendar table.calendarPage thead td.head_6 {
-    border-right: 0px none;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_0 {
-    color: #c78b82;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_1 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_2 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_3 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_4 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_5 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_6 {
-    color: #627d9b;
-  }
-  .AXCalendar table.calendarPage tbody td {
-    height: 25px;
-    line-height: 25px;
-    padding: 0px;
-    text-align: center;
-    border-right: 1px solid #b9babc;
-    border-bottom: 1px solid #b9babc;
-    background: url('images/dx-calendar-bgs.png') repeat-x 0px -26px;
-  }
-  .AXCalendar table.calendarPage tbody td.bodyCol_6 {
-    border-right: 0px none;
-  }
-  .AXCalendar table.calendarPage tbody td.bodyRow_5 {
-    border-bottom: 0px none;
-  }
-  .AXCalendar table.calendarPage tbody td.setDate {
-    background: url('images/dx-calendar-bgs.png') repeat-x 0px -76px;
-  }
-  .AXCalendar table.calendarPage tbody td A.calendarDate {
-    display: block;
-    height: 25px;
-    line-height: 25px;
-    text-decoration: none;
-    color: #6d6e71;
-    font-size: 11px;
-    font-family: Arial;
-    font-weight: bold;
-  }
-  .AXCalendar table.calendarPage tbody td A.calendarDate:hover {
-    background: #d8e1e7;
-  }
-  .AXCalendar table.calendarPage tbody td A.calendarDate:active {
-    background: #5ea3db;
-    color: #ffffff;
-    box-shadow: inset 0px 0px 4px #3d84bc;
-  }
-  .AXCalendar table.calendarPage tbody td A.calendarDate.selected {
-    background: #5ea3db;
-    color: #ffffff;
-    box-shadow: inset 0px 0px 4px #3d84bc;
-  }
-  .AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate {
-    color: #c78b82;
-  }
-  .AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate.notThisMonth {
-    color: #bfbfc1;
-  }
-  .AXCalendar table.calendarPageMonth {
-    table-layout: fixed;
-    width: 100%;
-  }
-  .AXCalendar table.calendarPageMonth tbody td {
-    height: 43px;
-    line-height: 43px;
-    padding: 0px;
-    text-align: center;
-    border-right: 1px solid #b9babc;
-    border-bottom: 1px solid #b9babc;
-    background: url('images/dx-calendar-bgs.png') repeat-x 0px -101px;
-  }
-  .AXCalendar table.calendarPageMonth tbody td.bodyCol_2 {
-    border-right: 0px none;
-  }
-  .AXCalendar table.calendarPageMonth tbody td.bodyCol_3 {
-    border-bottom: 0px none;
-    padding-bottom: 1px;
-  }
-  .AXCalendar table.calendarPageMonth tbody td.setDate {
-    background: #f3e2df;
-  }
-  .AXCalendar table.calendarPageMonth tbody td A.calendarMonth {
-    display: block;
-    height: 43px;
-    line-height: 43px;
-    text-decoration: none;
-    color: #6d6e71;
-    font-size: 12px;
-    font-family: Arial;
-    font-weight: bold;
-  }
-  .AXCalendar table.calendarPageMonth tbody td A.calendarMonth:hover {
-    background: #d8e1e7;
-  }
-  .AXCalendar table.calendarPageMonth tbody td A.calendarMonth:active {
-    background: #5ea3db;
-    color: #ffffff;
-    box-shadow: inset 0px 0px 5px #3d84bc;
-  }
-  .AXCalendar table.calendarPageMonth tbody td A.calendarMonth.selected {
-    background: #5ea3db;
-    color: #ffffff;
-    box-shadow: inset 0px 0px 5px #3d84bc;
-  }
-  .AXCalendar .timeBox {
-    position: relative;
-    height: 90px;
-  }
-  .AXCalendar .timeBox .hourTitle {
-    position: absolute;
-    left: 5px;
-    top: 18px;
-    color: #738089;
-    font-size: 11px;
-    line-height: 24px;
-    font-family: Arial;
-    text-shadow: 0px 1px #fff;
-  }
-  .AXCalendar .timeBox .hourSlider {
-    position: absolute;
-    left: 45px;
-    top: 15px;
-  }
-  .AXCalendar .timeBox .hourSlider input {
-    width: 120px;
-  }
-  .AXCalendar .timeBox .minuteTitle {
-    position: absolute;
-    left: 5px;
-    top: 53px;
-    color: #738089;
-    font-size: 11px;
-    line-height: 24px;
-    font-family: Arial;
-    text-shadow: 0px 1px #fff;
-  }
-  .AXCalendar .timeBox .minuteSlider {
-    position: absolute;
-    left: 45px;
-    top: 50px;
-  }
-  .AXCalendar .timeBox .minuteSlider input {
-    width: 120px;
-  }
-  .AXCalendar .timeBox .timeDisplay {
-    position: absolute;
-    left: 5px;
-    top: 90px;
-    border: 1px solid #7f8d9c;
-    background: #a3b0b9;
-    box-shadow: inset 0px 1px 2px #828282;
-    border-radius: 5px;
-    padding: 0px 20px;
-    margin: 0px;
-    font-size: 12px;
-    color: #fff;
-    font-family: Arial;
-    line-height: 22px;
-    text-shadow: 0px -1px rgba(0, 0, 0, 0.25);
-    outline: none;
-    white-space: nowrap;
-  }
-  .AXCalendar .timeBox .AMPM {
-    position: absolute;
-    right: 10px;
-    top: 90px;
-  }
-  .AXModalBox {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    z-index: 5001;
-  }
-  .AXModalBox .windowbox {
-    border: 1px solid #a6a6a6;
-    background: #ffffff;
-    box-shadow: 0px 0px 1px #a6a6a6;
-    padding: 0px;
-    margin: 0px 0px 10px 0px;
-    font-size: 12px;
-    color: #525252;
-  }
-  .AXModalBox .windowbox .windowboxFrame {
-    -moz-opacity: 0.0;
-    opacity: .00;
-    filter: alpha(opacity=00);
-  }
-  .AXModalBox .windowbox .windowboxFrame.loaded {
-    -moz-opacity: 1.0;
-    opacity: 1;
-    filter: alpha(opacity=100);
-  }
-  .AXModalBox .windowbox .closeBtn {
-    position: absolute;
-    right: -39px;
-    top: 0px;
-    display: block;
-    width: 38px;
-    height: 38px;
-    background: url('images/dx-modal-close.png') no-repeat;
-    border: 1px solid #a6a6a6;
-    border-left: 0px none;
-    box-shadow: 0px 0px 1px #a6a6a6;
-    overflow: hidden;
-    text-indent: -1000px;
-  }
-  .AXScroll {
-    position: relative;
-    overflow: hidden;
-  }
-  .AXScroll .scrollTrack {
-    z-index: 100;
-    position: absolute;
-    right: 2px;
-    top: 2px;
-    width: 7px;
-    height: 100%;
-    background: #000000;
-    -moz-opacity: 0;
-    opacity: 0;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScroll .scrollTrack_hover {
-    -moz-opacity: 0.2;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
-  }
-  .AXScroll .scrollBar {
-    z-index: 100;
-    position: absolute;
-    right: 2px;
-    top: 2px;
-    width: 7px;
-    min-height: 10px;
-    background: #000000;
-    -moz-opacity: 0.1;
-    opacity: 0.1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScroll .scrollBar:hover {
-    width: 11px;
-    right: 0px;
-  }
-  .AXScroll .scrollBar_hover {
-    -moz-opacity: 0.5;
-    opacity: 0.5;
-    filter: alpha(opacity=20);
-  }
-  .AXScroll .scrollTarget {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  }
-  .AXScroll .xscrollTrack {
-    z-index: 100;
-    position: absolute;
-    left: 2px;
-    bottom: 2px;
-    width: 100%;
-    height: 7px;
-    background: #000000;
-    -moz-opacity: 0.1;
-    opacity: 0.1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScroll .xscrollTrack_hover {
-    -moz-opacity: 0.2;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
-  }
-  .AXScroll .xscrollBar {
-    z-index: 100;
-    position: absolute;
-    left: 2px;
-    bottom: 2px;
-    height: 7px;
-    min-width: 10px;
-    background: #000000;
-    -moz-opacity: 0.1;
-    opacity: 0.1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScroll .xscrollBar:hover {
-    height: 11px;
-    bottom: 0px;
-  }
-  .AXScroll .xscrollBar_hover {
-    -moz-opacity: 0.5;
-    opacity: 0.5;
-    filter: alpha(opacity=20);
-  }
-  .AXScroll .xscrollTarget {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  }
-  .AXScrollSmall {
-    position: relative;
-    overflow: hidden;
-  }
-  .AXScrollSmall .scrollTrack {
-    position: absolute;
-    right: 3px;
-    top: 2px;
-    width: 6px;
-    height: 100%;
-    background: #000000;
-    -moz-opacity: 0.1;
-    opacity: 0.1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScrollSmall .scrollTrack_hover {
-    -moz-opacity: 0.2;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
-  }
-  .AXScrollSmall .scrollBar {
-    position: absolute;
-    right: 3px;
-    top: 2px;
-    width: 6px;
-    min-height: 10px;
-    background: #000000;
-    -moz-opacity: 0.3;
-    opacity: 0.3;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScrollSmall .scrollBar:hover {
-    width: 10px;
-    right: 1px;
-  }
-  .AXScrollSmall .scrollBar_hover {
-    -moz-opacity: 0.5;
-    opacity: 0.5;
-    filter: alpha(opacity=20);
-  }
-  .AXScrollSmall .scrollTarget {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  }
+.clear {
+  clear: both;
 }
-@media (max-width: 767px) {
-  .util-border-radius-none {
-    -webkit-border-radius: none;
-    -moz-border-radius: none;
-    border-radius: none;
-  }
-  .util-text-ellipsis {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .clear {
-    clear: both;
-  }
-  .AXHspace1 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 1px;
-  }
-  .AXHspace2 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 2px;
-  }
-  .AXHspace3 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 3px;
-  }
-  .AXHspace4 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 4px;
-  }
-  .AXHspace5 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 5px;
-  }
-  .AXHspace10 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 10px;
-  }
-  .AXHspace15 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 15px;
-  }
-  .AXHspace20 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 20px;
-  }
-  .AXHspace30 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 30px;
-  }
-  .AXHspace40 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 40px;
-  }
-  .AXHspace50 {
-    font-size: 1px;
-    line-height: 1px;
-    height: 50px;
-  }
-  .W10 {
-    width: 20px;
-  }
-  .W20 {
-    width: 20px;
-  }
-  .W30 {
-    width: 30px;
-  }
-  .W40 {
-    width: 40px;
-  }
-  .W50 {
-    width: 50px;
-  }
-  .W60 {
-    width: 60px;
-  }
-  .W70 {
-    width: 70px;
-  }
-  .W80 {
-    width: 80px;
-  }
-  .W90 {
-    width: 90px;
-  }
-  .W100 {
-    width: 100px;
-  }
-  .W110 {
-    width: 110px;
-  }
-  .W120 {
-    width: 120px;
-  }
-  .W130 {
-    width: 130px;
-  }
-  .W140 {
-    width: 140px;
-  }
-  .W150 {
-    width: 150px;
-  }
-  .W160 {
-    width: 160px;
-  }
-  .W170 {
-    width: 170px;
-  }
-  .W180 {
-    width: 180px;
-  }
-  .W190 {
-    width: 190px;
-  }
-  .W200 {
-    width: 200px;
-  }
-  .AXUserSelectNone {
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -o-user-select: none;
-  }
-  .AXMobileConsole {
-    padding: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    z-index: 10000;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    color: #FF00FF;
-    text-shadow: 0px 1px 0px #fff;
-  }
-  .AXMask {
-    z-index: 5000;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    -moz-opacity: 0.2;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
-  }
-  .AXLoading {
-    min-height: 50px;
-    background: url('images/dx-progresss-ani-white-1.gif') no-repeat center center;
-  }
-  .AXLoadingSmall {
-    min-height: 25px;
-    background: url('images/dx-progresss-ani-white-2.gif') no-repeat center center;
-  }
-  .AXContextMenu {
-    z-index: 4999;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 140px;
-    background: #fff;
-    border: 1px solid #b1b1b1;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #ccc;
-  }
-  .AXContextMenu .contextMenuItem {
-    position: relative;
-    display: block;
-    height: 30px;
-    line-height: 30px;
-    padding: 0px 5px 0px 30px;
-    color: #5e5e5e;
-    text-decoration: none;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    background-image: url('images/dx-context-icon-doc.png');
-    background-repeat: no-repeat;
-    background-position: 0px center;
-  }
-  .AXContextMenu .contextMenuItem:hover {
-    background-color: #eee;
-  }
-  .AXContextMenu .contextMenuItem.first {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-  .AXContextMenu .contextMenuItem.last {
-    border-bottom: 0px none;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
-  .AXContextMenu .contextMenuItem.docline {
-    background-image: url('images/dx-context-icon-docline.png');
-  }
-  .AXContextMenu .contextMenuItem.plus {
-    background-image: url('images/dx-context-icon-plus.png');
-  }
-  .AXContextMenu .contextMenuItem.minus {
-    background-image: url('images/dx-context-icon-minus.png');
-  }
-  .AXContextMenu .contextMenuItem.group {
-    background-image: url('images/dx-context-icon-group.png');
-  }
-  .AXContextMenu .contextMenuItem.edit {
-    background-image: url('images/dx-context-icon-edit.png');
-  }
-  .AXContextMenu .contextMenuItem.copy {
-    background-image: url('images/dx-context-icon-copy.png');
-  }
-  .AXContextMenu .contextMenuItem.cut {
-    background-image: url('images/dx-context-icon-cut.png');
-  }
-  .AXContextMenu .contextMenuItem.paste {
-    background-image: url('images/dx-context-icon-paste.png');
-  }
-  .AXContextMenu .contextMenuItem.up {
-    background-image: url('images/dx-context-icon-up.png');
-  }
-  .AXContextMenu .contextMenuItem.down {
-    background-image: url('images/dx-context-icon-down.png');
-  }
-  .AXContextMenu .contextMenuItem.left {
-    background-image: url('images/dx-context-icon-left.png');
-  }
-  .AXContextMenu .contextMenuItem.right {
-    background-image: url('images/dx-context-icon-right.png');
-  }
-  .AXContextMenu .contextMenuItem.link {
-    background-image: url('images/dx-context-icon-link.png');
-  }
-  .AXContextMenu .contextMenuItem.unlink {
-    background-image: url('images/dx-context-icon-unlink.png');
-  }
-  .AXContextMenu .contextMenuItem.openall {
-    background-image: url('images/dx-context-icon-openall.png');
-  }
-  .AXContextMenu .contextMenuItem.closeall {
-    background-image: url('images/dx-context-icon-cloaseall.png');
-  }
-  .AXContextMenu .contextMenuItem .contextSubMenuIcon {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 30px;
-    height: 30px;
-    background-image: url('images/dx-context-sub-icon.png');
-    background-repeat: no-repeat;
-    background-position: 0px center;
-  }
-  .AXContextMenu .hline {
-    display: block;
-    height: 1px;
-    line-height: 1px;
-    font-size: 1px;
-    background: #b1b1b1;
-  }
-  .AXContextMenu .contextMenuItem:hover {
-    background-color: #eee;
-  }
-  .AXNotification {
-    width: 300px;
-    border: 2px solid #99847e;
-    background: #ffffff;
-    padding: 10px;
-    margin: 10px 0px;
-    box-shadow: 0px 0px 5px #b2b2b2;
-    font-size: 12px;
-    color: #525252;
-    -moz-opacity: 0.8;
-    opacity: 0.8;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 2px 2px 2px 2px;
-    -moz-border-radius: 2px 2px 2px 2px;
-    border-radius: 2px 2px 2px 2px;
-  }
-  .AXNotification.Warning .AXNotificationIcon {
-    width: 42px;
-    height: 42px;
-    background: url('images/dx-noti-warning.png') no-repeat center center !important;
-  }
-  .AXNotification.Warning .AXNotificationBody B {
-    color: #bf601b;
-  }
-  .AXNotification.Caution .AXNotificationIcon {
-    width: 42px;
-    height: 42px;
-    background: url('images/dx-noti-caution.png') no-repeat center center !important;
-  }
-  .AXNotification.Caution .AXNotificationBody B {
-    color: #c25c5f;
-  }
-  .AXNotification .AXNotificationHead {
-    font-weight: bold;
-    color: #58362a;
-    padding: 5px 15px;
-    height: 20px;
-    line-height: 20px;
-    background: #ccc2be;
-    text-align: center;
-  }
-  .AXNotification .AXNotificationTable {
-    width: 100%;
-    border: 0px none !important;
-    background: #ffffff;
-  }
-  .AXNotification .AXNotificationTable td,
-  .AXNotification .AXNotificationTable th {
-    border: 0px none !important;
-    background: #ffffff;
-  }
-  .AXNotification .AXNotificationIcon {
-    width: 42px;
-    height: 42px;
-    background: url('images/dx-noti-complete.png') no-repeat center 5px !important;
-  }
-  .AXNotification .AXNotificationBody {
-    font-size: 12px;
-    color: #525252;
-    padding-right: 5px;
-    line-height: 1.6em;
-  }
-  .AXNotification .AXNotificationBody B {
-    color: #99847e;
-  }
-  .AXNotification .AXNotificationButton {
-    width: 45px;
-  }
-  .AXNotification .AXNotificationButtons {
-    padding: 10px 0px;
-    text-align: center;
-    background: #ffffff;
-  }
-  .AXNotificationTray {
-    position: fixed;
-    right: 10px;
-    top: 0px;
-    z-index: 5001;
-    width: 322px;
-  }
-  .AXNotificationTrayDialog {
-    position: fixed;
-    left: 0px;
-    top: 50px;
-    width: 340px;
-    z-index: 5001;
-  }
-  .AXNotificationTrayDialog .AXNotification {
-    width: 340px;
-    border: 2px solid #99847e;
-    background: #ffffff;
-    padding: 0px;
-    margin: 0px 0px;
-    box-shadow: 0px 0px 3px #888;
-    font-size: 12px;
-    color: #525252;
-    overflow: hidden;
-    -moz-opacity: 1;
-    opacity: 1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    -webkit-border-radius: 2px 5px 5px 5px;
-    -moz-border-radius: 2px 5px 5px 5px;
-    border-radius: 2px 5px 5px 5px;
-  }
-  .AXNotificationTrayDialog .AXNotification .AXNotificationCT {
-    padding: 10px;
-  }
-  .AXCalendar {
-    position: relative;
-  }
-  .AXCalendar table.calendarPage {
-    table-layout: fixed;
-    width: 100%;
-  }
-  .AXCalendar table.calendarPage thead td {
-    background: #ffffff;
-    font-size: 8px;
-    font-family: Arial;
-    height: 20px;
-    line-height: 20px;
-    padding: 0px;
-    text-align: center;
-    border-right: 1px solid #f2f2f3;
-    border-bottom: 1px solid #b9babc;
-  }
-  .AXCalendar table.calendarPage thead td.head_6 {
-    border-right: 0px none;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_0 {
-    color: #c78b82;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_1 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_2 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_3 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_4 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_5 {
-    color: #7b7b7b;
-  }
-  .AXCalendar table.calendarPage thead td.dayofweek_6 {
-    color: #627d9b;
-  }
-  .AXCalendar table.calendarPage tbody td {
-    height: 25px;
-    line-height: 25px;
-    padding: 0px;
-    text-align: center;
-    border-right: 1px solid #b9babc;
-    border-bottom: 1px solid #b9babc;
-    background: url('images/dx-calendar-bgs.png') repeat-x 0px -26px;
-  }
-  .AXCalendar table.calendarPage tbody td.bodyCol_6 {
-    border-right: 0px none;
-  }
-  .AXCalendar table.calendarPage tbody td.bodyRow_5 {
-    border-bottom: 0px none;
-  }
-  .AXCalendar table.calendarPage tbody td.setDate {
-    background: url('images/dx-calendar-bgs.png') repeat-x 0px -76px;
-  }
-  .AXCalendar table.calendarPage tbody td A.calendarDate {
-    display: block;
-    height: 25px;
-    line-height: 25px;
-    text-decoration: none;
-    color: #6d6e71;
-    font-size: 11px;
-    font-family: Arial;
-    font-weight: bold;
-  }
-  .AXCalendar table.calendarPage tbody td A.calendarDate:hover {
-    background: #d8e1e7;
-  }
-  .AXCalendar table.calendarPage tbody td A.calendarDate:active {
-    background: #5ea3db;
-    color: #ffffff;
-    box-shadow: inset 0px 0px 4px #3d84bc;
-  }
-  .AXCalendar table.calendarPage tbody td A.calendarDate.selected {
-    background: #5ea3db;
-    color: #ffffff;
-    box-shadow: inset 0px 0px 4px #3d84bc;
-  }
-  .AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate {
-    color: #c78b82;
-  }
-  .AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate.notThisMonth {
-    color: #bfbfc1;
-  }
-  .AXCalendar table.calendarPageMonth {
-    table-layout: fixed;
-    width: 100%;
-  }
-  .AXCalendar table.calendarPageMonth tbody td {
-    height: 43px;
-    line-height: 43px;
-    padding: 0px;
-    text-align: center;
-    border-right: 1px solid #b9babc;
-    border-bottom: 1px solid #b9babc;
-    background: url('images/dx-calendar-bgs.png') repeat-x 0px -101px;
-  }
-  .AXCalendar table.calendarPageMonth tbody td.bodyCol_2 {
-    border-right: 0px none;
-  }
-  .AXCalendar table.calendarPageMonth tbody td.bodyCol_3 {
-    border-bottom: 0px none;
-    padding-bottom: 1px;
-  }
-  .AXCalendar table.calendarPageMonth tbody td.setDate {
-    background: #f3e2df;
-  }
-  .AXCalendar table.calendarPageMonth tbody td A.calendarMonth {
-    display: block;
-    height: 43px;
-    line-height: 43px;
-    text-decoration: none;
-    color: #6d6e71;
-    font-size: 12px;
-    font-family: Arial;
-    font-weight: bold;
-  }
-  .AXCalendar table.calendarPageMonth tbody td A.calendarMonth:hover {
-    background: #d8e1e7;
-  }
-  .AXCalendar table.calendarPageMonth tbody td A.calendarMonth:active {
-    background: #5ea3db;
-    color: #ffffff;
-    box-shadow: inset 0px 0px 5px #3d84bc;
-  }
-  .AXCalendar table.calendarPageMonth tbody td A.calendarMonth.selected {
-    background: #5ea3db;
-    color: #ffffff;
-    box-shadow: inset 0px 0px 5px #3d84bc;
-  }
-  .AXCalendar .timeBox {
-    position: relative;
-    height: 90px;
-  }
-  .AXCalendar .timeBox .hourTitle {
-    position: absolute;
-    left: 5px;
-    top: 18px;
-    color: #738089;
-    font-size: 11px;
-    line-height: 24px;
-    font-family: Arial;
-    text-shadow: 0px 1px #fff;
-  }
-  .AXCalendar .timeBox .hourSlider {
-    position: absolute;
-    left: 45px;
-    top: 15px;
-  }
-  .AXCalendar .timeBox .hourSlider input {
-    width: 120px;
-  }
-  .AXCalendar .timeBox .minuteTitle {
-    position: absolute;
-    left: 5px;
-    top: 53px;
-    color: #738089;
-    font-size: 11px;
-    line-height: 24px;
-    font-family: Arial;
-    text-shadow: 0px 1px #fff;
-  }
-  .AXCalendar .timeBox .minuteSlider {
-    position: absolute;
-    left: 45px;
-    top: 50px;
-  }
-  .AXCalendar .timeBox .minuteSlider input {
-    width: 120px;
-  }
-  .AXCalendar .timeBox .timeDisplay {
-    position: absolute;
-    left: 5px;
-    top: 90px;
-    border: 1px solid #7f8d9c;
-    background: #a3b0b9;
-    box-shadow: inset 0px 1px 2px #828282;
-    border-radius: 5px;
-    padding: 0px 20px;
-    margin: 0px;
-    font-size: 12px;
-    color: #fff;
-    font-family: Arial;
-    line-height: 22px;
-    text-shadow: 0px -1px rgba(0, 0, 0, 0.25);
-    outline: none;
-    white-space: nowrap;
-  }
-  .AXCalendar .timeBox .AMPM {
-    position: absolute;
-    right: 10px;
-    top: 90px;
-  }
-  .AXModalBox {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    z-index: 5001;
-  }
-  .AXModalBox .windowbox {
-    border: 1px solid #a6a6a6;
-    background: #ffffff;
-    box-shadow: 0px 0px 1px #a6a6a6;
-    padding: 0px;
-    margin: 0px 0px 10px 0px;
-    font-size: 12px;
-    color: #525252;
-  }
-  .AXModalBox .windowbox .windowboxFrame {
-    -moz-opacity: 0.0;
-    opacity: .00;
-    filter: alpha(opacity=00);
-  }
-  .AXModalBox .windowbox .windowboxFrame.loaded {
-    -moz-opacity: 1.0;
-    opacity: 1;
-    filter: alpha(opacity=100);
-  }
-  .AXModalBox .windowbox .closeBtn {
-    position: absolute;
-    right: -39px;
-    top: 0px;
-    display: block;
-    width: 38px;
-    height: 38px;
-    background: url('images/dx-modal-close.png') no-repeat;
-    border: 1px solid #a6a6a6;
-    border-left: 0px none;
-    box-shadow: 0px 0px 1px #a6a6a6;
-    overflow: hidden;
-    text-indent: -1000px;
-  }
-  .AXScroll {
-    position: relative;
-    overflow: hidden;
-  }
-  .AXScroll .scrollTrack {
-    z-index: 100;
-    position: absolute;
-    right: 2px;
-    top: 2px;
-    width: 7px;
-    height: 100%;
-    background: #000000;
-    -moz-opacity: 0;
-    opacity: 0;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScroll .scrollTrack_hover {
-    -moz-opacity: 0.2;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
-  }
-  .AXScroll .scrollBar {
-    z-index: 100;
-    position: absolute;
-    right: 2px;
-    top: 2px;
-    width: 7px;
-    min-height: 10px;
-    background: #000000;
-    -moz-opacity: 0.1;
-    opacity: 0.1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScroll .scrollBar:hover {
-    width: 11px;
-    right: 0px;
-  }
-  .AXScroll .scrollBar_hover {
-    -moz-opacity: 0.5;
-    opacity: 0.5;
-    filter: alpha(opacity=20);
-  }
-  .AXScroll .scrollTarget {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  }
-  .AXScroll .xscrollTrack {
-    z-index: 100;
-    position: absolute;
-    left: 2px;
-    bottom: 2px;
-    width: 100%;
-    height: 7px;
-    background: #000000;
-    -moz-opacity: 0.1;
-    opacity: 0.1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScroll .xscrollTrack_hover {
-    -moz-opacity: 0.2;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
-  }
-  .AXScroll .xscrollBar {
-    z-index: 100;
-    position: absolute;
-    left: 2px;
-    bottom: 2px;
-    height: 7px;
-    min-width: 10px;
-    background: #000000;
-    -moz-opacity: 0.1;
-    opacity: 0.1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScroll .xscrollBar:hover {
-    height: 11px;
-    bottom: 0px;
-  }
-  .AXScroll .xscrollBar_hover {
-    -moz-opacity: 0.5;
-    opacity: 0.5;
-    filter: alpha(opacity=20);
-  }
-  .AXScroll .xscrollTarget {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  }
-  .AXScrollSmall {
-    position: relative;
-    overflow: hidden;
-  }
-  .AXScrollSmall .scrollTrack {
-    position: absolute;
-    right: 3px;
-    top: 2px;
-    width: 6px;
-    height: 100%;
-    background: #000000;
-    -moz-opacity: 0.1;
-    opacity: 0.1;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScrollSmall .scrollTrack_hover {
-    -moz-opacity: 0.2;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
-  }
-  .AXScrollSmall .scrollBar {
-    position: absolute;
-    right: 3px;
-    top: 2px;
-    width: 6px;
-    min-height: 10px;
-    background: #000000;
-    -moz-opacity: 0.3;
-    opacity: 0.3;
-    filter: alpha(opacity=20);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .AXScrollSmall .scrollBar:hover {
-    width: 10px;
-    right: 1px;
-  }
-  .AXScrollSmall .scrollBar_hover {
-    -moz-opacity: 0.5;
-    opacity: 0.5;
-    filter: alpha(opacity=20);
-  }
-  .AXScrollSmall .scrollTarget {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  }
+.AXHspace1 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 1px;
+}
+.AXHspace2 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 2px;
+}
+.AXHspace3 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 3px;
+}
+.AXHspace4 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 4px;
+}
+.AXHspace5 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 5px;
+}
+.AXHspace10 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 10px;
+}
+.AXHspace15 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 15px;
+}
+.AXHspace20 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 20px;
+}
+.AXHspace30 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 30px;
+}
+.AXHspace40 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 40px;
+}
+.AXHspace50 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 50px;
+}
+.W10 {
+  width: 20px;
+}
+.W20 {
+  width: 20px;
+}
+.W30 {
+  width: 30px;
+}
+.W40 {
+  width: 40px;
+}
+.W50 {
+  width: 50px;
+}
+.W60 {
+  width: 60px;
+}
+.W70 {
+  width: 70px;
+}
+.W80 {
+  width: 80px;
+}
+.W90 {
+  width: 90px;
+}
+.W100 {
+  width: 100px;
+}
+.W110 {
+  width: 110px;
+}
+.W120 {
+  width: 120px;
+}
+.W130 {
+  width: 130px;
+}
+.W140 {
+  width: 140px;
+}
+.W150 {
+  width: 150px;
+}
+.W160 {
+  width: 160px;
+}
+.W170 {
+  width: 170px;
+}
+.W180 {
+  width: 180px;
+}
+.W190 {
+  width: 190px;
+}
+.W200 {
+  width: 200px;
+}
+.AXUserSelectNone {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -o-user-select: none;
+}
+.AXMobileConsole {
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 10000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  color: #FF00FF;
+  text-shadow: 0px 1px 0px #fff;
+}
+.AXMask {
+  z-index: 5000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  -moz-opacity: 0.2;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.AXLoading {
+  min-height: 50px;
+  background: url('images/dx-progresss-ani-white-1.gif') no-repeat center center;
+}
+.AXLoadingSmall {
+  min-height: 25px;
+  background: url('images/dx-progresss-ani-white-2.gif') no-repeat center center;
+}
+.AXContextMenu {
+  z-index: 4999;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 140px;
+  background: #fff;
+  border: 1px solid #b1b1b1;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #ccc;
+}
+.AXContextMenu .contextMenuItem {
+  position: relative;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0px 5px 0px 30px;
+  color: #5e5e5e;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-image: url('images/dx-context-icon-doc.png');
+  background-repeat: no-repeat;
+  background-position: 0px center;
+}
+.AXContextMenu .contextMenuItem:hover {
+  background-color: #eee;
+}
+.AXContextMenu .contextMenuItem.first {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.AXContextMenu .contextMenuItem.last {
+  border-bottom: 0px none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.AXContextMenu .contextMenuItem.docline {
+  background-image: url('images/dx-context-icon-docline.png');
+}
+.AXContextMenu .contextMenuItem.plus {
+  background-image: url('images/dx-context-icon-plus.png');
+}
+.AXContextMenu .contextMenuItem.minus {
+  background-image: url('images/dx-context-icon-minus.png');
+}
+.AXContextMenu .contextMenuItem.group {
+  background-image: url('images/dx-context-icon-group.png');
+}
+.AXContextMenu .contextMenuItem.edit {
+  background-image: url('images/dx-context-icon-edit.png');
+}
+.AXContextMenu .contextMenuItem.copy {
+  background-image: url('images/dx-context-icon-copy.png');
+}
+.AXContextMenu .contextMenuItem.cut {
+  background-image: url('images/dx-context-icon-cut.png');
+}
+.AXContextMenu .contextMenuItem.paste {
+  background-image: url('images/dx-context-icon-paste.png');
+}
+.AXContextMenu .contextMenuItem.up {
+  background-image: url('images/dx-context-icon-up.png');
+}
+.AXContextMenu .contextMenuItem.down {
+  background-image: url('images/dx-context-icon-down.png');
+}
+.AXContextMenu .contextMenuItem.left {
+  background-image: url('images/dx-context-icon-left.png');
+}
+.AXContextMenu .contextMenuItem.right {
+  background-image: url('images/dx-context-icon-right.png');
+}
+.AXContextMenu .contextMenuItem.link {
+  background-image: url('images/dx-context-icon-link.png');
+}
+.AXContextMenu .contextMenuItem.unlink {
+  background-image: url('images/dx-context-icon-unlink.png');
+}
+.AXContextMenu .contextMenuItem.openall {
+  background-image: url('images/dx-context-icon-openall.png');
+}
+.AXContextMenu .contextMenuItem.closeall {
+  background-image: url('images/dx-context-icon-cloaseall.png');
+}
+.AXContextMenu .contextMenuItem .contextSubMenuIcon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  background-image: url('images/dx-context-sub-icon.png');
+  background-repeat: no-repeat;
+  background-position: 0px center;
+}
+.AXContextMenu .hline {
+  display: block;
+  height: 1px;
+  line-height: 1px;
+  font-size: 1px;
+  background: #b1b1b1;
+}
+.AXContextMenu .contextMenuItem:hover {
+  background-color: #eee;
+}
+.AXNotification {
+  width: 300px;
+  border: 2px solid #99847e;
+  background: #ffffff;
+  padding: 10px;
+  margin: 10px 0px;
+  box-shadow: 0px 0px 5px #b2b2b2;
+  font-size: 12px;
+  color: #525252;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  filter: alpha(opacity=20);
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+}
+.AXNotification.Warning .AXNotificationIcon {
+  width: 42px;
+  height: 42px;
+  background: url('images/dx-noti-warning.png') no-repeat center center !important;
+}
+.AXNotification.Warning .AXNotificationBody B {
+  color: #bf601b;
+}
+.AXNotification.Caution .AXNotificationIcon {
+  width: 42px;
+  height: 42px;
+  background: url('images/dx-noti-caution.png') no-repeat center center !important;
+}
+.AXNotification.Caution .AXNotificationBody B {
+  color: #c25c5f;
+}
+.AXNotification .AXNotificationHead {
+  font-weight: bold;
+  color: #58362a;
+  padding: 5px 15px;
+  height: 20px;
+  line-height: 20px;
+  background: #ccc2be;
+  text-align: center;
+}
+.AXNotification .AXNotificationTable {
+  width: 100%;
+  border: 0px none !important;
+  background: #ffffff;
+}
+.AXNotification .AXNotificationTable td,
+.AXNotification .AXNotificationTable th {
+  border: 0px none !important;
+  background: #ffffff;
+}
+.AXNotification .AXNotificationIcon {
+  width: 42px;
+  height: 42px;
+  background: url('images/dx-noti-complete.png') no-repeat center 5px !important;
+}
+.AXNotification .AXNotificationBody {
+  font-size: 12px;
+  color: #525252;
+  padding-right: 5px;
+  line-height: 1.6em;
+}
+.AXNotification .AXNotificationBody B {
+  color: #99847e;
+}
+.AXNotification .AXNotificationButton {
+  width: 45px;
+}
+.AXNotification .AXNotificationButtons {
+  padding: 10px 0px;
+  text-align: center;
+  background: #ffffff;
+}
+.AXNotificationTray {
+  position: fixed;
+  right: 10px;
+  top: 0px;
+  z-index: 5001;
+  width: 322px;
+}
+.AXNotificationTrayDialog {
+  position: fixed;
+  left: 0px;
+  top: 50px;
+  width: 340px;
+  z-index: 5001;
+}
+.AXNotificationTrayDialog .AXNotification {
+  width: 340px;
+  border: 2px solid #99847e;
+  background: #ffffff;
+  padding: 0px;
+  margin: 0px 0px;
+  box-shadow: 0px 0px 3px #888;
+  font-size: 12px;
+  color: #525252;
+  overflow: hidden;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity=20);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px 5px 5px 5px;
+  -moz-border-radius: 2px 5px 5px 5px;
+  border-radius: 2px 5px 5px 5px;
+}
+.AXNotificationTrayDialog .AXNotification .AXNotificationCT {
+  padding: 10px;
+}
+.AXCalendar {
+  position: relative;
+}
+.AXCalendar table.calendarPage {
+  table-layout: fixed;
+  width: 100%;
+}
+.AXCalendar table.calendarPage thead td {
+  background: #ffffff;
+  font-size: 8px;
+  font-family: Arial;
+  height: 20px;
+  line-height: 20px;
+  padding: 0px;
+  text-align: center;
+  border-right: 1px solid #f2f2f3;
+  border-bottom: 1px solid #b9babc;
+}
+.AXCalendar table.calendarPage thead td.head_6 {
+  border-right: 0px none;
+}
+.AXCalendar table.calendarPage thead td.dayofweek_0 {
+  color: #c78b82;
+}
+.AXCalendar table.calendarPage thead td.dayofweek_1 {
+  color: #7b7b7b;
+}
+.AXCalendar table.calendarPage thead td.dayofweek_2 {
+  color: #7b7b7b;
+}
+.AXCalendar table.calendarPage thead td.dayofweek_3 {
+  color: #7b7b7b;
+}
+.AXCalendar table.calendarPage thead td.dayofweek_4 {
+  color: #7b7b7b;
+}
+.AXCalendar table.calendarPage thead td.dayofweek_5 {
+  color: #7b7b7b;
+}
+.AXCalendar table.calendarPage thead td.dayofweek_6 {
+  color: #627d9b;
+}
+.AXCalendar table.calendarPage tbody td {
+  height: 25px;
+  line-height: 25px;
+  padding: 0px;
+  text-align: center;
+  border-right: 1px solid #b9babc;
+  border-bottom: 1px solid #b9babc;
+  background: url('images/dx-calendar-bgs.png') repeat-x 0px -26px;
+}
+.AXCalendar table.calendarPage tbody td.bodyCol_6 {
+  border-right: 0px none;
+}
+.AXCalendar table.calendarPage tbody td.bodyRow_5 {
+  border-bottom: 0px none;
+}
+.AXCalendar table.calendarPage tbody td.setDate {
+  background: url('images/dx-calendar-bgs.png') repeat-x 0px -76px;
+}
+.AXCalendar table.calendarPage tbody td A.calendarDate {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #6d6e71;
+  font-size: 11px;
+  font-family: Arial;
+  font-weight: bold;
+}
+.AXCalendar table.calendarPage tbody td A.calendarDate:hover {
+  background: #d8e1e7;
+}
+.AXCalendar table.calendarPage tbody td A.calendarDate:active {
+  background: #5ea3db;
+  color: #ffffff;
+  box-shadow: inset 0px 0px 4px #3d84bc;
+}
+.AXCalendar table.calendarPage tbody td A.calendarDate.selected {
+  background: #5ea3db;
+  color: #ffffff;
+  box-shadow: inset 0px 0px 4px #3d84bc;
+}
+.AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate {
+  color: #c78b82;
+}
+.AXCalendar table.calendarPage tbody td.bodyCol_0 A.calendarDate.notThisMonth {
+  color: #bfbfc1;
+}
+.AXCalendar table.calendarPageMonth {
+  table-layout: fixed;
+  width: 100%;
+}
+.AXCalendar table.calendarPageMonth tbody td {
+  height: 43px;
+  line-height: 43px;
+  padding: 0px;
+  text-align: center;
+  border-right: 1px solid #b9babc;
+  border-bottom: 1px solid #b9babc;
+  background: url('images/dx-calendar-bgs.png') repeat-x 0px -101px;
+}
+.AXCalendar table.calendarPageMonth tbody td.bodyCol_2 {
+  border-right: 0px none;
+}
+.AXCalendar table.calendarPageMonth tbody td.bodyCol_3 {
+  border-bottom: 0px none;
+  padding-bottom: 1px;
+}
+.AXCalendar table.calendarPageMonth tbody td.setDate {
+  background: #f3e2df;
+}
+.AXCalendar table.calendarPageMonth tbody td A.calendarMonth {
+  display: block;
+  height: 43px;
+  line-height: 43px;
+  text-decoration: none;
+  color: #6d6e71;
+  font-size: 12px;
+  font-family: Arial;
+  font-weight: bold;
+}
+.AXCalendar table.calendarPageMonth tbody td A.calendarMonth:hover {
+  background: #d8e1e7;
+}
+.AXCalendar table.calendarPageMonth tbody td A.calendarMonth:active {
+  background: #5ea3db;
+  color: #ffffff;
+  box-shadow: inset 0px 0px 5px #3d84bc;
+}
+.AXCalendar table.calendarPageMonth tbody td A.calendarMonth.selected {
+  background: #5ea3db;
+  color: #ffffff;
+  box-shadow: inset 0px 0px 5px #3d84bc;
+}
+.AXCalendar .timeBox {
+  position: relative;
+  height: 90px;
+}
+.AXCalendar .timeBox .hourTitle {
+  position: absolute;
+  left: 5px;
+  top: 18px;
+  color: #738089;
+  font-size: 11px;
+  line-height: 24px;
+  font-family: Arial;
+  text-shadow: 0px 1px #fff;
+}
+.AXCalendar .timeBox .hourSlider {
+  position: absolute;
+  left: 45px;
+  top: 15px;
+}
+.AXCalendar .timeBox .hourSlider input {
+  width: 120px;
+}
+.AXCalendar .timeBox .minuteTitle {
+  position: absolute;
+  left: 5px;
+  top: 53px;
+  color: #738089;
+  font-size: 11px;
+  line-height: 24px;
+  font-family: Arial;
+  text-shadow: 0px 1px #fff;
+}
+.AXCalendar .timeBox .minuteSlider {
+  position: absolute;
+  left: 45px;
+  top: 50px;
+}
+.AXCalendar .timeBox .minuteSlider input {
+  width: 120px;
+}
+.AXCalendar .timeBox .timeDisplay {
+  position: absolute;
+  left: 5px;
+  top: 90px;
+  border: 1px solid #7f8d9c;
+  background: #a3b0b9;
+  box-shadow: inset 0px 1px 2px #828282;
+  border-radius: 5px;
+  padding: 0px 20px;
+  margin: 0px;
+  font-size: 12px;
+  color: #fff;
+  font-family: Arial;
+  line-height: 22px;
+  text-shadow: 0px -1px rgba(0, 0, 0, 0.25);
+  outline: none;
+  white-space: nowrap;
+}
+.AXCalendar .timeBox .AMPM {
+  position: absolute;
+  right: 10px;
+  top: 90px;
+}
+.AXModalBox {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 5001;
+}
+.AXModalBox .windowbox {
+  border: 1px solid #a6a6a6;
+  background: #ffffff;
+  box-shadow: 0px 0px 1px #a6a6a6;
+  padding: 0px;
+  margin: 0px 0px 10px 0px;
+  font-size: 12px;
+  color: #525252;
+}
+.AXModalBox .windowbox .windowboxFrame {
+  -moz-opacity: 0.0;
+  opacity: .00;
+  filter: alpha(opacity=00);
+}
+.AXModalBox .windowbox .windowboxFrame.loaded {
+  -moz-opacity: 1.0;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.AXModalBox .windowbox .closeBtn {
+  position: absolute;
+  right: -39px;
+  top: 0px;
+  display: block;
+  width: 38px;
+  height: 38px;
+  background: url('images/dx-modal-close.png') no-repeat;
+  border: 1px solid #a6a6a6;
+  border-left: 0px none;
+  box-shadow: 0px 0px 1px #a6a6a6;
+  overflow: hidden;
+  text-indent: -1000px;
+}
+.AXScroll {
+  position: relative;
+  overflow: hidden;
+}
+.AXScroll .scrollTrack {
+  z-index: 100;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 7px;
+  height: 100%;
+  background: #000000;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity=20);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+.AXScroll .scrollTrack_hover {
+  -moz-opacity: 0.2;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.AXScroll .scrollBar {
+  z-index: 100;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 7px;
+  min-height: 10px;
+  background: #000000;
+  -moz-opacity: 0.1;
+  opacity: 0.1;
+  filter: alpha(opacity=20);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+.AXScroll .scrollBar:hover {
+  width: 11px;
+  right: 0px;
+}
+.AXScroll .scrollBar_hover {
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  filter: alpha(opacity=20);
+}
+.AXScroll .scrollTarget {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.AXScroll .xscrollTrack {
+  z-index: 100;
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
+  width: 100%;
+  height: 7px;
+  background: #000000;
+  -moz-opacity: 0.1;
+  opacity: 0.1;
+  filter: alpha(opacity=20);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+.AXScroll .xscrollTrack_hover {
+  -moz-opacity: 0.2;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.AXScroll .xscrollBar {
+  z-index: 100;
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
+  height: 7px;
+  min-width: 10px;
+  background: #000000;
+  -moz-opacity: 0.1;
+  opacity: 0.1;
+  filter: alpha(opacity=20);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+.AXScroll .xscrollBar:hover {
+  height: 11px;
+  bottom: 0px;
+}
+.AXScroll .xscrollBar_hover {
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  filter: alpha(opacity=20);
+}
+.AXScroll .xscrollTarget {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.AXScrollSmall {
+  position: relative;
+  overflow: hidden;
+}
+.AXScrollSmall .scrollTrack {
+  position: absolute;
+  right: 3px;
+  top: 2px;
+  width: 6px;
+  height: 100%;
+  background: #000000;
+  -moz-opacity: 0.1;
+  opacity: 0.1;
+  filter: alpha(opacity=20);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+.AXScrollSmall .scrollTrack_hover {
+  -moz-opacity: 0.2;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.AXScrollSmall .scrollBar {
+  position: absolute;
+  right: 3px;
+  top: 2px;
+  width: 6px;
+  min-height: 10px;
+  background: #000000;
+  -moz-opacity: 0.3;
+  opacity: 0.3;
+  filter: alpha(opacity=20);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+.AXScrollSmall .scrollBar:hover {
+  width: 10px;
+  right: 1px;
+}
+.AXScrollSmall .scrollBar_hover {
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  filter: alpha(opacity=20);
+}
+.AXScrollSmall .scrollTarget {
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
