@@ -42,11 +42,11 @@ var AXSelectConverter = Class.create(AXJ, {
     init: function () {
         var browser = AXUtil.browser;
         this.isMobile = browser.mobile;
-        $(window).resize(this.windowResize.bind(this));
+        axdom(window).resize(this.windowResize.bind(this));
     },
     windowResize: function () {
         if (this.windowResizeObs) clearTimeout(this.windowResizeObs);
-        this.windowResizeObs = setTimeout(this.alignAllAnchor.bind(this), 100);
+        this.windowResizeObs = setTimeout(this.alignAllAnchor.bind(this), 50);
     },
     alignAllAnchor: function () {
         var alignAnchor = this.alignAnchor.bind(this);
@@ -155,14 +155,14 @@ var AXSelectConverter = Class.create(AXJ, {
         var iobjPosition = iobj.position();
         var l = iobjPosition.left, t = iobjPosition.top, w = 0, h = 0;
 
-
+/*
         var borderW = iobj.css("border-left-width").number();
-        var borderH = iobj.css("border-top-width").number();
+        var borderT = iobj.css("border-top-width").number();
+        var borderB = iobj.css("border-bottom-width").number();
         var marginW = iobj.css("margin-left").number();
         var marginH = iobj.css("margin-top").number();
-
-
-        l = l + marginW;
+*/
+        //l = l + marginW;
         //t = t;
         w = iobj.outerWidth();
         h = iobj.outerHeight();
@@ -179,13 +179,14 @@ var AXSelectConverter = Class.create(AXJ, {
         //iobj.show();
         var iobjPosition = iobj.position();
         var l = iobjPosition.left, t = iobjPosition.top, w = 0, h = 0;
-        /*
-         var borderW = iobj.css("border-left-width").number();
-         var borderH = iobj.css("border-top-width").number();
-         var marginW = iobj.css("margin-left").number();
-         var marginH = iobj.css("margin-top").number();
-         l = l + marginW;
-         */
+
+        var borderW = iobj.css("border-left-width").number();
+        var borderT = iobj.css("border-top-width").number();
+        var borderB = iobj.css("border-bottom-width").number();
+        var marginW = iobj.css("margin-left").number();
+        var marginH = iobj.css("margin-top").number();
+        l = l + marginW;
+
         //t = t;
         w = iobj.outerWidth();
         h = iobj.outerHeight();
@@ -195,9 +196,9 @@ var AXSelectConverter = Class.create(AXJ, {
         axdom("#" + cfg.targetID + "_AX_" + objID).data("height", h);
 
         axdom("#" + cfg.targetID + "_AX_" + objID + "_AX_SelectBox").css({width:w, height:h});
-        axdom("#" + cfg.targetID + "_AX_" + objID + "_AX_SelectTextBox").css({height:(h-2)});
+        axdom("#" + cfg.targetID + "_AX_" + objID + "_AX_SelectTextBox").css({height:(h-(borderT+borderB))+"px"});
 
-        axdom("#" + cfg.targetID + "_AX_" + objID + "_AX_SelectText").css({"line-height":(h-2)+"px"});
+        axdom("#" + cfg.targetID + "_AX_" + objID + "_AX_SelectText").css({"line-height":(h-(borderT+borderB))+"px"});
         axdom("#" + cfg.targetID + "_AX_" + objID + "_AX_SelectBoxArrow").css({height:h});
 
         //iobj.hide();
@@ -206,12 +207,14 @@ var AXSelectConverter = Class.create(AXJ, {
     bindSelect: function (objID, objSeq) {
         var cfg = this.config, _this = this;
         var obj = this.objects[objSeq];
+        var iobj = axdom("#" + objID);
         var objDom = axdom("#" + cfg.targetID + "_AX_" + objID);
         if(!obj.config.onChange) obj.config.onChange = obj.config.onchange;
 
         var w = jQuery("#" + cfg.targetID + "_AX_" + objID).width();
         var h = jQuery("#" + cfg.targetID + "_AX_" + objID).data("height");
-
+        var borderT = iobj.css("border-top-width").number();
+        var borderB = iobj.css("border-bottom-width").number();
         //trace(obj.config);
 
         var fontSize = jQuery("#" + objID).css("font-size").number();
@@ -219,10 +222,10 @@ var AXSelectConverter = Class.create(AXJ, {
 
         var po = [];
         po.push("<div id=\"" + cfg.targetID + "_AX_" + objID + "_AX_SelectBox\" class=\"" + cfg.anchorSelectClassName + "\" style=\"width:" + w + "px;height:" + h + "px;\">");
-        po.push("<a " + obj.config.href + " class=\"selectedTextBox\" id=\"" + cfg.targetID + "_AX_" + objID + "_AX_SelectTextBox\" style=\"height:" + (h - 2) + "px;\"");
+        po.push("<a " + obj.config.href + " class=\"selectedTextBox\" id=\"" + cfg.targetID + "_AX_" + objID + "_AX_SelectTextBox\" style=\"height:" + (h - (borderT+borderB)) + "px;\"");
         if(tabIndex != undefined) po.push(" tabindex=\""+tabIndex+"\"");
         po.push(">");
-        po.push("	<span class=\"selectedText\" id=\"" + cfg.targetID + "_AX_" + objID + "_AX_SelectText\" style=\"line-height:" + (h - 2) + "px;padding:0px 4px;font-size:" + fontSize + "px;\"></span>");
+        po.push("	<span class=\"selectedText\" id=\"" + cfg.targetID + "_AX_" + objID + "_AX_SelectText\" style=\"line-height:" + (h - (borderT+borderB)) + "px;padding:0px 4px;font-size:" + fontSize + "px;\"></span>");
         po.push("	<span class=\"selectBoxArrow\" id=\"" + cfg.targetID + "_AX_" + objID + "_AX_SelectBoxArrow\" style=\"height:" + h + "px;\"></span>");
         po.push("</a>");
         po.push("</div>");
