@@ -8,6 +8,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.util-textHidden {
+  text-indent: -9999px;
+  overflow: hidden;
+}
 .AXprogressTray {
   position: fixed;
   left: 0px;
@@ -44,7 +48,7 @@
   background: url('images/dx-progress-bar.png') repeat-x !important;
   border-radius: 8px;
 }
-.AXlineProgress .AXprogress .AXprogressContainer .AXprogressLoadedText {
+.AXlineProgress .AXprogress .AXprogressLoadedText {
   position: absolute;
   left: 0px;
   top: 20px;
@@ -54,7 +58,7 @@
   font-family: Arial;
   white-space: nowrap;
 }
-.AXlineProgress .AXprogress .AXprogressContainer .AXprogressLoadedText span {
+.AXlineProgress .AXprogress .AXprogressLoadedText span {
   padding-left: 5px;
   font-size: 10px;
 }

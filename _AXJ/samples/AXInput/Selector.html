@@ -3,24 +3,37 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1" />
-	<title>AXISJ</title>
-	<!-- Libs -->
-	<script type="text/javascript" src="../../jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="../../lib/AXJ.js"></script>
-	<script type="text/javascript" src="../../lib/AXTab.js"></script>	
-	<script type="text/javascript" src="../../lib/AXInput.js"></script>
-	<script type="text/javascript" src="../../lib/AXMultiSelector.js"></script>			
-	<!-- Self -->
-	<script src="pageTab.js"></script>			
-	<!-- Theme -->
-	<script src="../page.js"></script>		
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/page.css">
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXJ.css">
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXButton.css">	
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXTabs.css">
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXInput.css">	
+	<title>bindSelector - AXISJ</title>
 
+    <link rel="shortcut icon" href="../../ui/axisj.ico" type="image/x-icon" />
+    <link rel="icon" href="../../ui/axisj.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../ui/AXJ.png" />
+    <link rel="apple-touch-icon-precomposed" href="../../ui/AXJ.png" />
+    <meta property="og:image" content="/samples/_img/axisj_sns.png" />
+    <meta property="og:site_name" content="Axis of Javascript - axisj.com" />
+    <meta property="og:description" id="meta_description" content="Javascript UI Library based on JQuery" />
+
+    <!-- css block -->
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/page.css">
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/AXJ.css" />
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/AXInput.css" />
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/AXButton.css" />
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/AXTabs.css" />
+    <style type="text/css">
+
+    </style>
+    <!-- css block -->
+
+    <!-- js block -->
+    <script type="text/javascript" src="../../jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../../lib/AXJ.js"></script>
+    <script type="text/javascript" src="../../lib/AXTopDownMenu.js"></script>
+    <script type="text/javascript" src="../../lib/AXTab.js"></script>
+    <script type="text/javascript" src="../../lib/AXInput.js"></script>
+    <script type="text/javascript" src="../../lib/AXMultiSelector.js"></script>
+    <script type="text/javascript" src="../page.js"></script>
+    <script type="text/javascript" src="pageTab.js"></script>
+    <!-- js block -->
 	<script>
 	/**
 	 * Require Files for AXISJ UI Component...
@@ -29,14 +42,9 @@
 	 * CSS			: AXJ.css, AXInput.css
 	 */	
 	var pageID = "Selector";
-	var MyMultiSelector = new AXMultiSelector();	
+	var MyMultiSelector = new AXMultiSelector();
 	var fnObj = {
 		pageStart: function(){
-			//Require page.js before this fn...
-			pageObj.host = "../../";
-			pageObj.incHeader();
-			pageObj.incFooter();	
-			pageObj.initTheme();				
 
 			jQuery("#AXInputSelector").bindSelector({
 				appendable:true,
@@ -65,7 +73,7 @@
 			
 			jQuery("#AXInputSelectorAjax").bindSelector({
 				appendable:false,
-				ajaxUrl:"selectorData.txt", 
+				ajaxUrl:"selectorData.php",
 				ajaxPars:"",
 				//selectorName:"imselector",
 				onChange:function(){
@@ -149,7 +157,7 @@
 			jQuery("#AXInputSelector").setValueInput(9);
 		}
 	};
-	jQuery(document).ready(fnObj.pageStart);
+	jQuery(document).ready(fnObj.pageStart.delay(0.1));
 	</script>
 
 	<style type="text/css">
@@ -190,49 +198,10 @@
 <body>
 
 <div id="AXPage">
-	<!-- s.AXPageHead -------------------------------------------------- -->
-	<header id="AXPageHead">
-		<div class="ax-wrap">
-			<div class="ax-layer-1">
-				<div class="ax-col-12">
-					<div class="ax-unit">
 
-						<!-- navMenu < -->
-						<nav class="navMenu"></nav>
-						<!-- navMenu > -->
-
-					</div>	
-				</div>	
-			</div>	
-			<div class="ax-layer-2">
-				<div class="ax-col-12">
-					<div class="ax-unit">
-						<!-- s.navMenu -->
-						<nav class="themeInfo"></nav>
-						<!-- e.navMenu -->
-					</div>	
-				</div>	
-			</div>				
-			<div class="ax-layer-3">
-				<div class="ax-col-12">
-					<div class="ax-unit">
-
-						<!-- navMenu < -->
-						<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
-						<!-- navMenu > -->
-
-					</div>	
-				</div>	
-			</div>	
-
-		</div>
-	</header>
-	<!-- e.AXPageHead -------------------------------------------------- -->
-	<div class="ax-clear"></div>						
-	<!-- s.AXPageBody -------------------------------------------------- -->
 	<article id="AXPageBody" class="SampleAXInput">
-
-		<div class="ax-wrap">
+        <div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
+		<div class="ax-wrap AXdemoPageContent">
 			<div class="title"><h1>AXInput</h1></div>
 			<!-- s.axlayer 1 -->		
 			<section class="ax-layer-1">
@@ -242,16 +211,20 @@
 						
 						<h3>bind Selector</h3>
 						<input type="text" name="inputSelector" id="AXInputSelector" value="" class="AXInput" />
-						<div class="H20"></div>	
+                        &nbsp;
+                        <input type="button" class="AXButton" value="값 주기" onclick="fnObj.setValue();" />
+                        <div class="H20"></div>
 												
 						<h3>bind Selector(AJAX)</h3>
 						<input type="text" name="inputSelector" id="AXInputSelectorAjax" value="" class="AXInput" />
-						<input type="button" class="AXButton" value="값 주기" onclick="fnObj.setValue();" />
+
+
 
 						<div class="H20"></div>
 						
 						<h2>AXInput bind Selector(find)</h2>													
-						<input type="text" name="inputSelector" id="AXInputSelectorFind" value="" class="AXInput W200" />						
+						<input type="text" name="inputSelector" id="AXInputSelectorFind" value="" class="AXInput W200" />
+                        <h2>AXMultiSelector</h2>
 						<button type="button" class="AXButton" id="multiSelector">다중선택</button>						
 						<div class="H30"></div>	
 						
@@ -265,27 +238,7 @@
 		</div>
 		<div class="H20"></div>		
 	</article>
-	<!-- e.AXPageBody -------------------------------------------------- -->
 
-	<div class="ax-clear"></div>
-	
-	<!-- s.AXPageFoot -------------------------------------------------- -->
-	<footer id="AXPageFoot">
-		<div class="ax-wrap">
-			<div class="ax-layer-1">
-				<div class="ax-col-12">
-					<div class="ax-unit">
-						
-						<!-- navTheme < -->
-						<nav class="navTheme"></nav>
-						<!-- navTheme > -->
-						
-					</div>	
-				</div>
-			</div>			
-		</div>
-	</footer>
-	<!-- e.AXPageFoot -------------------------------------------------- -->
 </div>
 
 </body>

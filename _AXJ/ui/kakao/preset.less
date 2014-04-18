@@ -17,14 +17,11 @@
 //
 ///////////////////////////////////////////////////////////////////////////////////
 
-
-
-
 // Common ///////////////////////////////////////////////////
 @color:#523636;			
-@color-a:#523636; 		
+@color-a:#523636;
 @color-b:#523636;		
-@color-c:#fee834;		
+@color-c:#fee834;
 
 @link:#523636;	
 @link-hover:#565b61;
@@ -32,10 +29,11 @@
 @link-active:#82898f;
 @link-visited:#c3cad0;
 
-@font-family:"Open sans";
+@font-family:"Nanum Gothic";
 @font-size:12px;
 
 @border:1px solid #000;
+@border-a:1px solid #000;
 
 @bgcolor:#fff;
 @bgcolor-a:#523636;
@@ -47,7 +45,6 @@
 @desktop:   ~"only screen and (min-width: 1024px) and (max-width: 1151px)";
 @tablet:    ~"only screen and (min-width: 768px) and (max-width: 1023px)";
 @mobile:	~"(max-width: 767px)";
-
 
 
 // AXButton ///////////////////////////////////////////////////
@@ -117,7 +114,6 @@
 	@radius		:1px;	
 }
 
-
 // AXTab ///////////////////////////////////////////////////
 .dx-axtabs-preset-normal(){
 	@bgcolor	:#ffea00;	
@@ -178,7 +174,6 @@
 	@border		:none;	
 	@radius		:1px;	
 }
-
 
 // AXEditor ///////////////////////////////////////////////////
 .dx-axeditor-preset(){
@@ -261,8 +256,11 @@
 	@radius-a	:5px;					// Grid head option(tools) list radius
 	
 }
-
-
+.mx-axgrid-colors-normal(){
+  @color-fill-a:#e7e9ea;
+  @color-fill-b:#fefefd;
+  @color-stroke:#b1b1b1;
+}
 
 // AXInput ///////////////////////////////////////////////////
 .dx-axinput-preset-normal(){
@@ -382,7 +380,6 @@
 	@radius		:8px;
 }
 
-
 // AXNotification ///////////////////////////////////////////////////
 .dx-axnotification-preset(){
 	//AXJ.less
@@ -415,7 +412,6 @@
 	@bgcolor:#fff;
 	@color:#525252;
 }
-
 
 // AXSearch ///////////////////////////////////////////////////
 .dx-axsearch-preset(){
@@ -533,4 +529,19 @@
 }
 
 
+// AXMobileModal ///////////////////////////////////////////////////
+.dx-axmobilemodal-preset(){
+  @border:1px solid #000;
+  @border-a:1px solid #000;
+  @radius:5px;
 
+  @font-color:#523636;
+  @font-color-a:#523636;
+  @font-color-b:#523636;
+
+  @bgcolor:#fee834;
+  @bgcolor-a:#fff;
+  @bgcolor-b:#f7f7f7;
+  @bgcolor-c:#5ea3db;
+  @bgcolor-d:#000;
+}

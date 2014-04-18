@@ -8,6 +8,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.util-textHidden {
+  text-indent: -9999px;
+  overflow: hidden;
+}
 .axbutton-style-normal {
   background: #ffea00;
   color: #493334;

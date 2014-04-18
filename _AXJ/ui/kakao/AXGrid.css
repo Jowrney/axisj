@@ -8,6 +8,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.util-textHidden {
+  text-indent: -9999px;
+  overflow: hidden;
+}
 .util-border-radius-none {
   -webkit-border-radius: none;
   -moz-border-radius: none;
@@ -17,6 +21,10 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.util-textHidden {
+  text-indent: -9999px;
+  overflow: hidden;
 }
 /** .AXGrid **/
 .AXGrid {
@@ -538,17 +546,17 @@
   z-index: 3;
 }
 .AXGrid .AXgridPageBody .AXgridPagingUnit .AXgridPageNo {
-  border: 1px solid #b6b6b6;
+  border: 0px none;
+  vertical-align: top;
   height: 22px;
   padding: 0px 2px;
   outline: none;
 }
 .AXGrid .AXgridPageBody .AXgridPagingUnit .AXgridPageNumber {
-  display: block;
+  display: table-cell;
+  padding: 4px 0px 0px 5px;
+  height: 26px;
   float: left;
-  padding: 4px 0px 4px 5px;
-  height: 22px;
-  line-height: 22px;
   font-size: 12px;
   color: #666666;
 }
@@ -841,4 +849,278 @@
 .AXGridColGroupListBox .AXGridColGroupListBoxItem.on {
   color: #513636;
   background: url('images/dx-item-check.png') no-repeat 3px center;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody {
+  border: 0px none;
+  overflow: visible;
+  /* 모바일 뷰 용 목록 스타일 시트 클래스 */
+
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .AXGridToolGroup {
+  display: block;
+  position: relative;
+  height: 43px;
+  background: #ededed;
+  background: -webkit-linear-gradient(#ffffff, #ededed);
+  /* For Safari */
+
+  background: -o-linear-gradient(#ffffff, #ededed);
+  /* For Opera 11.1 to 12.0 */
+
+  background: -moz-linear-gradient(#ffffff, #ededed);
+  /* For Firefox 3.6 to 15 */
+
+  background: linear-gradient(#ffffff, #ededed);
+  /* Standard syntax */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#ededed);
+  /*For IE7-8-9*/
+  border-bottom: 1px solid #cecece;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .AXGridToolGroup.top {
+  border-top: 1px solid #cecece;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .AXGridToolGroup .displayNone {
+  display: none;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .AXGridToolGroup .tool-config {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+  width: 43px;
+  height: 43px;
+  box-sizing: content-box;
+  padding: 0px;
+  margin: 0px;
+  background: url(images/mx-grid-icon-config.png) no-repeat center center;
+  background-size: 30px 30px;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .AXGridToolGroup .tool-pageGroup {
+  position: relative;
+  display: block;
+  width: 172px;
+  height: 43px;
+  margin: 0px auto;
+  padding: 0px;
+  box-sizing: content-box;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .AXGridToolGroup .tool-pageGroup .tool-prevPage {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+  width: 43px;
+  height: 43px;
+  box-sizing: content-box;
+  padding: 0px;
+  margin: 0px;
+  background: url(images/mx-grid-icon-prev.png) no-repeat center center;
+  background-size: 30px 30px;
+  cursor: pointer;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .AXGridToolGroup .tool-pageGroup .tool-pageNo {
+  padding: 0px 0px;
+  width: 172px;
+  height: 43px;
+  background: url(images/mx-grid-icon-pageBg.png) no-repeat center center;
+  background-size: contain;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .AXGridToolGroup .tool-pageGroup .tool-pageNo select {
+  position: absolute;
+  left: 43px;
+  top: 6px;
+  width: 86px;
+  height: 30px;
+  border: 0px none;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .AXGridToolGroup .tool-pageGroup .tool-pageNo span {
+  display: block;
+  width: 86px;
+  box-sizing: content-box;
+  padding: 6px 43px;
+  text-align: center;
+  line-height: 31px;
+  font-weight: bold;
+  color: #6c6c6c;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .AXGridToolGroup .tool-pageGroup .tool-nextPage {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: block;
+  width: 43px;
+  height: 43px;
+  box-sizing: content-box;
+  padding: 0px;
+  margin: 0px;
+  background: url(images/mx-grid-icon-next.png) no-repeat center center;
+  background-size: 30px 30px;
+  cursor: pointer;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .AXGridToolGroup .tool-gotoTop {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: block;
+  width: 43px;
+  height: 43px;
+  box-sizing: content-box;
+  padding: 0px;
+  margin: 0px;
+  background: url(images/mx-grid-icon-down.png) no-repeat center center;
+  background-size: 30px 30px;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .AXGridToolGroup .tool-gotoBottom {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: block;
+  width: 43px;
+  height: 43px;
+  background: url(images/mx-grid-icon-up.png) no-repeat center center;
+  background-size: 30px 30px;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .AXGridBody {
+  position: relative;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile {
+  position: relative;
+  border-bottom: 1px solid #cecece;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 5px 5px 5px;
+  cursor: pointer;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile.line0 {
+  background: #f8f8f8;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile.line1 {
+  background: #ffffff;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile.red {
+  background-color: #FFE8E8;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile.green {
+  background-color: #F7FDEA;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile.blue {
+  background-color: #EAF5FD;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile.yellow {
+  background-color: #FEFEE9;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile.white {
+  background-color: #fff;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile.gray {
+  background-color: #f7f7f7;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile.hover,
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile:hover {
+  background-color: #fff6ac;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile.selected {
+  background-color: #ededed;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile .column {
+  float: left;
+  padding: 0px 0px;
+  margin: 0px;
+  border-box: content-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile .column.underLine {
+  border-bottom: 1px dashed #c8c8c8;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile .column.col1 {
+  width: 25%;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile .column.col2 {
+  width: 50%;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile .column.col3 {
+  width: 75%;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile .column.col4 {
+  width: 100%;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile .column.colNone {
+  border: 1px solid #e3e3e3;
+  background: #ffffff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px 5px 5px 5px;
+  -moz-border-radius: 4px 5px 5px 5px;
+  border-radius: 4px 5px 5px 5px;
+  margin: 5px 0px 0px 5px;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile .column.colNone .label {
+  margin: 0px;
+  padding: 5px;
+  background: #ffffff;
+  color: #3b3b3b;
+  font-size: 11px;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile .column.colNone .content {
+  margin: 0px;
+  padding: 8px 10px 8px 0px;
+  line-height: 12px;
+  min-height: 12px;
+  color: #513636;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile .column.colNone .content.solid {
+  display: inline-block;
+  padding: 8px 10px 8px 10px;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile .column .label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 0px 10px 5px;
+  padding: 0px 4px;
+  height: 20px;
+  line-height: 20px;
+  background: #b1b1b1;
+  color: #fff;
+  font-size: 11px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px 5px 5px 5px;
+  -moz-border-radius: 4px 5px 5px 5px;
+  border-radius: 4px 5px 5px 5px;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile .column .content {
+  display: inline;
+  vertical-align: middle;
+  margin: 10px 10px 10px 5px;
+  padding: 4px 0px;
+  line-height: 12px;
+  min-height: 12px;
+  color: #513636;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile .column .content.solid {
+  display: inline-block;
+  padding: 3px 3px;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile .columnClear {
+  clear: both;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile .buttonGroup {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.AXGrid.AXGridMobile .AXgridScrollBody .gridBodyDiv .bodyViewMobile .buttonGroup .handle {
+  cursor: pointer;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("images/mx-grid-icon-handle.png") no-repeat center center;
+  background-size: 30px 30px;
 }

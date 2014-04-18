@@ -1,9 +1,12 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 html,
 body {
-  font-family: "Open sans";
+  font-family: "Nanum Gothic";
   margin: 0;
   padding: 0;
   height: 100%;
+  font-size: 12px;
+  line-height: 1.6em;
   color: #523636;
   background: #ffffff;
 }
@@ -57,7 +60,7 @@ body h3 {
   font-size: 1px;
 }
 #AXPage {
-  font-family: "Open sans";
+  font-family: "Nanum Gothic";
   font-size: 12px;
   overflow: hidden;
 }
@@ -110,11 +113,20 @@ body h3 {
 #AXPage .ax-col-12 {
   width: 100%;
 }
+#AXPage #AXPageHead {
+  position: relative;
+  z-index: 10;
+}
+#AXPage #AXPageHead .ax-layer-1 {
+  position: relative;
+  z-index: 10;
+}
 #AXPage #AXPageHead .ax-layer-1 .ax-unit {
   background: #523636;
   margin: 0px;
 }
 #AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu {
+  display: block;
   height: 40px;
   overflow: hidden;
   border-bottom: 1px solid #000000;
@@ -130,6 +142,16 @@ body h3 {
   background: #3a2121;
   color: #ffffff;
 }
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu h3 a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+}
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu #sampleMenuBox {
+  position: absolute;
+  left: 110px;
+  top: 0px;
+}
 #AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu ul {
   list-style: none;
   margin: 0px;
@@ -138,6 +160,7 @@ body h3 {
 #AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu ul li {
   float: left;
   border-right: 1px solid #000000;
+  display: block;
 }
 #AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu ul li a {
   font-size: 13px;
@@ -159,10 +182,59 @@ body h3 {
   color: #523636;
   background: #fee834;
 }
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu .parentMenu {
+  position: relative;
+}
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu .childMenu {
+  position: absolute;
+  line-height: 25px;
+  font-size: 12px;
+  display: none;
+}
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu .childMenu ul {
+  padding: 0px;
+  margin: 0px;
+  display: block;
+  position: relative;
+  border-top: 1px solid #000000;
+}
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu .childMenu ul li {
+  float: none;
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid #000000;
+  border-top: 0px none;
+}
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu .childMenu ul li a {
+  display: block;
+  _width: 100%;
+  padding: 0px 10px;
+  height: 30px;
+  line-height: 30px;
+  background: #523636;
+  text-decoration: none;
+  white-space: nowrap;
+}
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu .childMenu ul li a:hover {
+  background: #fee834;
+}
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu .childMenu ul li a.on {
+  background: #fee834;
+}
+#AXPage #AXPageHead .ax-layer-1 .ax-unit .navMenu .childsMenu {
+  position: absolute;
+  line-height: 20px;
+  font-size: 12px;
+}
+#AXPage #AXPageHead .ax-layer-2 {
+  position: relative;
+  z-index: 9;
+}
 #AXPage #AXPageHead .ax-layer-2 .ax-unit {
   margin: 0px;
 }
 #AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo {
+  display: block;
   background: #fafafa;
   height: 70px;
 }
@@ -207,11 +279,36 @@ body h3 {
   color: #565b61;
   text-decoration: underline;
 }
+#AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo .facebook {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 11px;
+}
+#AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo .github {
+  position: absolute;
+  right: 5px;
+  top: 25px;
+  font-size: 11px;
+}
+#AXPage #AXPageHead .ax-layer-2 .ax-unit .themeInfo .api {
+  position: absolute;
+  right: 5px;
+  top: 45px;
+  font-size: 11px;
+}
 #AXPage #AXPageHead .ax-layer-3 .ax-unit {
   margin: 0px;
 }
 #AXPage #AXPageHead .ax-layer-3 .ax-unit .AXdemoPageTabTarget {
   background: #fafafa;
+}
+#AXPage #AXPageHead #devCentermobileMenu {
+  z-index: 10;
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 #AXPage #AXPageBody .title h1 {
   text-indent: 10px;
@@ -227,6 +324,7 @@ body h3 {
 #AXPage #AXPageBody .ax-wrap .ax-layer-1 .secBlock h3 {
   text-align: center;
   background: #523636;
+  color: #fee834;
   margin: 4px;
   padding: 0px;
   height: 40px;
@@ -268,6 +366,7 @@ body h3 {
   position: fixed;
   bottom: 0px;
   width: 100%;
+  z-index: 100;
 }
 #AXPage #AXPageFoot .ax-layer-1 .ax-unit {
   background: #523636;
@@ -300,7 +399,7 @@ body h3 {
   border-right: 1px solid #000000;
 }
 #AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme ul li a {
-  font-size: 13px;
+  font-size: 10px;
   display: block;
   line-height: 30px;
   padding: 0px 10px;
@@ -318,6 +417,7 @@ body h3 {
 #AXPage #AXPageFoot .ax-layer-1 .ax-unit .navTheme ul li a.on {
   color: #523636;
   background: #fee834;
+  font-size: 13px;
 }
 @media (min-width:1152px) {
   
@@ -340,4 +440,176 @@ body h3 {
   #AXPageBody .ax-col-3 {
     width: 100%;
   }
+  #sampleMenuBox {
+    display: none;
+  }
+  #AXPage #AXPageHead #devCentermobileMenu {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
 }
+/* { oldCode Css -------------------------------------------------------------------- */
+.AXdemoPageTabTarget {
+  padding: 5px 0px 0px 0px;
+}
+.AXdemoPageContent {
+  padding: 0px 10px 50px 10px;
+}
+.clear {
+  clear: both;
+}
+.Hspace1 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 1px;
+}
+.Hspace2 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 2px;
+}
+.Hspace3 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 3px;
+}
+.Hspace5 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 5px;
+}
+.Hspace10 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 10px;
+}
+.Hspace15 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 15px;
+}
+.Hspace20 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 20px;
+}
+.Hspace30 {
+  font-size: 1px;
+  line-height: 1px;
+  height: 30px;
+}
+.description {
+  padding-left: 20px;
+  color: #888;
+}
+.method {
+  position: relative;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  overflow: hidden;
+  line-height: 1.6em;
+}
+.method .methodName {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid #000000;
+  background: #523636;
+  color: #fee834;
+}
+.method .methodDesc {
+  padding: 10px;
+  padding-left: 10px;
+}
+.method .methodDesc .desc {
+  color: #523636;
+  padding-bottom: 5px;
+  font-style: italic;
+}
+.method .methodDesc ul {
+  padding: 0px;
+  margin: 0px;
+}
+.method .methodDesc ul li {
+  padding: 3px;
+  font-size: 14px;
+}
+.method .methodDesc ul ul {
+  padding-left: 20px;
+}
+.method .methodDesc .methodDescContent {
+  padding: 5px 10px;
+  color: 1px solid #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background: #fee834;
+}
+.method .methodExam {
+  padding: 10px;
+  border-top: 1px solid #000000;
+  background: #ffffff;
+  position: relative;
+}
+.method table {
+  border-top: 1px solid #E3E3E3;
+  width: 100%;
+}
+.method table caption {
+  text-align: left;
+  padding: 10px;
+  color: #0080C0;
+}
+.method table th {
+  border-right: 1px solid #E3E3E3;
+  background: #E1F0FF;
+}
+.method table th,
+.method table td {
+  border-bottom: 1px solid #E3E3E3;
+}
+.contentContainer {
+  padding: 20px;
+}
+table.setConfig {
+  border: 1px solid #E3E3E3;
+  width: 100%;
+  border-collapse: collapse;
+}
+table.setConfig caption {
+  text-align: left;
+  padding: 10px;
+  color: #0080C0;
+}
+table.setConfig th {
+  border: 1px solid #E3E3E3;
+  background: #E1F0FF;
+}
+table.setConfig td {
+  border: 1px solid #E3E3E3;
+}
+table.setConfig td.ti5 {
+  text-indent: 5px;
+}
+table.setConfig td.ti10 {
+  text-indent: 10px;
+}
+table.setConfig td.ti20 {
+  text-indent: 20px;
+}
+table.setConfig pre {
+  margin: 0px;
+}
+.tac {
+  text-align: center;
+}
+.fieldsetBody {
+  width: 100%;
+  background: #eeeeee;
+  border: 0px none;
+  padding: 0px;
+  font-size: 12px;
+  line-height: 1.8em;
+}
+/* -------------------------------------------------------------------- oldCode Css} */

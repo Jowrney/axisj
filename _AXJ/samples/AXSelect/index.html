@@ -3,24 +3,38 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1" />
-	<title>AXISJ</title>
-	<!-- Libs -->
-	<script type="text/javascript" src="../../jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="../../lib/AXJ.js"></script>
-	<script type="text/javascript" src="../../lib/AXTab.js"></script>	
-	<script type="text/javascript" src="../../lib/AXInput.js"></script>		
-	<script type="text/javascript" src="../../lib/AXSelect.js"></script>			
-	<!-- Self -->
-	<script src="pageTab.js"></script>			
-	<!-- Theme -->
-	<script src="../page.js"></script>		
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/page.css">
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXJ.css">
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXTabs.css">
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXButton.css">			
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXInput.css">	
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXSelect.css">		
+	<title>bindSelect - AXISJ</title>
+
+    <link rel="shortcut icon" href="../../ui/axisj.ico" type="image/x-icon" />
+    <link rel="icon" href="../../ui/axisj.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../ui/AXJ.png" />
+    <link rel="apple-touch-icon-precomposed" href="../../ui/AXJ.png" />
+    <meta property="og:image" content="/samples/_img/axisj_sns.png" />
+    <meta property="og:site_name" content="Axis of Javascript - axisj.com" />
+    <meta property="og:description" id="meta_description" content="Javascript UI Library based on JQuery" />
+
+    <!-- css block -->
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/page.css">
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/AXJ.css" />
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/AXInput.css" />
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/AXButton.css" />
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/AXTabs.css" />
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/AXSelect.css" />
+    <style type="text/css">
+
+    </style>
+    <!-- css block -->
+
+    <!-- js block -->
+    <script type="text/javascript" src="../../jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../../lib/AXJ.js"></script>
+    <script type="text/javascript" src="../../lib/AXTopDownMenu.js"></script>
+    <script type="text/javascript" src="../../lib/AXTab.js"></script>
+    <script type="text/javascript" src="../../lib/AXInput.js"></script>
+    <script type="text/javascript" src="../../lib/AXSelect.js"></script>
+    <script type="text/javascript" src="../page.js"></script>
+    <script type="text/javascript" src="pageTab.js"></script>
+    <!-- js block -->
 
 	<script>
 	/**
@@ -31,20 +45,26 @@
 	 */	
 	var pageID = "AXSelect";
 	var fnObj = {
+        testStart: function(){
+
+            jQuery("#AXSelect1").bindSelect({
+                maxHeight: 100,
+                onChange: function(){
+                    trace(this);
+                }
+            });
+
+
+        },
 		pageStart: function(){
-			//Require page.js before this fn...
-			pageObj.host = "../../";
-			pageObj.incHeader();
-			pageObj.incFooter();		
-			pageObj.initTheme();			
-			
+
             jQuery("#AXSelect1").bindSelect({
             	maxHeight: 100,
             	onChange: function(){
             		trace(this);
             	}
             });
-            
+
             jQuery("#AXSelect2").bindSelect({
             	onChange: function(){
             		toast.push(Object.toJSON(this));
@@ -52,7 +72,7 @@
             });
 
             jQuery("#AXSelect3").bindSelect({
-                ajaxUrl: "selectData.txt",
+                ajaxUrl: "selectData.php",
                 ajaxPars: "",
                 isspace: false,
                 isspaceTitle: "전체",
@@ -77,6 +97,46 @@
 
             // bindSelect option 
             jQuery(".classSelect").bindSelect();
+
+
+            $("#AXSelect_m0").bindSelect({
+                ajaxUrl: "selectData.php", ajaxPars: "", ajaxAsync:false,
+                isspace: true, isspaceTitle: "선택하세요",
+                setValue:"",
+                onChange: function(){
+                    //toast.push(Object.toJSON(this));
+
+                    $("#AXSelect_m1").bindSelect({
+                        ajaxUrl: "selectData.php", ajaxPars: "", ajaxAsync:false,
+                        isspace: true, isspaceTitle: "선택하세요",
+                        setValue:this.optionValue,
+                        onChange: function(){
+                            //toast.push(Object.toJSON(this));
+
+                            $("#AXSelect_m2").bindSelect({
+                                ajaxUrl: "selectData.php", ajaxPars: "", ajaxAsync:false,
+                                isspace: true, isspaceTitle: "선택하세요",
+                                setValue:this.optionValue,
+                                onChange: function(){
+                                    //toast.push(Object.toJSON(this));
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+
+// AJAX 로딩중에 #AXSelect_m1, m2 가 나중에 보일수 있는데 그 현상을 없애고 싶다면
+
+/*
+            $("#AXSelect_m1").bindSelect();
+            $("#AXSelect_m2").bindSelect();
+
+            $("#AXSelect_m0").bindSelectSetValue("3");
+            $("#AXSelect_m1").bindSelectSetValue("4");
+            $("#AXSelect_m2").bindSelectSetValue("5");
+*/
+
 		},
         unbindSelect: function () {
             jQuery("#AXSelect1").unbindSelect();
@@ -99,7 +159,7 @@
             });
             
             jQuery("#AXSelect3").bindSelect({
-                ajaxUrl: "selectData.txt",
+                ajaxUrl: "selectData.php",
                 ajaxPars: "",
                 isspace: false,
                 isspaceTitle: "전체"
@@ -125,7 +185,7 @@
         	jQuery("#"+a).bindSelectDisabled(b);
         }
 	};
-	jQuery(document).ready(fnObj.pageStart);
+	jQuery(document).ready(fnObj.pageStart.delay(0.1));
 	</script>
 
 	<style type="text/css">
@@ -136,202 +196,104 @@
 <body>
 
 <div id="AXPage">
-	<!-- s.AXPageHead -------------------------------------------------- -->
-	<header id="AXPageHead">
-		<div class="ax-wrap">
-			<div class="ax-layer-1">
-				<div class="ax-col-12">
-					<div class="ax-unit">
 
-						<!-- navMenu < -->
-						<nav class="navMenu"></nav>
-						<!-- navMenu > -->
-
-					</div>	
-				</div>	
-			</div>	
-			<div class="ax-layer-2">
-				<div class="ax-col-12">
-					<div class="ax-unit">
-						<!-- s.navMenu -->
-						<nav class="themeInfo"></nav>
-						<!-- e.navMenu -->
-					</div>	
-				</div>	
-			</div>	
-			<div class="ax-layer-3">
-				<div class="ax-col-12">
-					<div class="ax-unit">
-
-						<!-- navMenu < -->
-						<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
-						<!-- navMenu > -->
-
-					</div>	
-				</div>	
-			</div>	
-
-		</div>
-	</header>
-	<!-- e.AXPageHead -------------------------------------------------- -->
-	<div class="ax-clear"></div>						
-	<!-- s.AXPageBody -------------------------------------------------- -->
 	<article id="AXPageBody" class="SampleAXSelect">
-
-		<div class="ax-wrap">
+        <div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
+		<div class="ax-wrap AXdemoPageContent">
 			<div class="title"><h1>AXSelect</h1></div>
-			<!-- s.axlayer 1 -->		
-			<section class="ax-layer-1">
-				<div class="ax-col-12">
-					<div class="ax-unit">
-						<h2>AXSelect bind Select</h2>
-						<h3>Default</h3>
 
-						<select name="" class="AXSelect" id="AXSelect1" tabindex="7">
-							<option value="">-- 선택하세요 --</option>
-							<option value="1">%가나다라마바사</option>
-							<option value="2" selected="selected">abcdefg</option>
-							<option value="3">abcdefg 가나다라마바사</option>
-							<option value="4">abcdefg 가나다라마바사</option>
-							<option value="5">abcdefg 가나다라마바사</option>
-							<option value="6">abcdefg 가나다라마바사</option>
-						</select>
-						<input type="button" value="valueCheck" class="AXButton" onclick="alert($('#AXSelect1').val())" />	
-																
-						<h3>small</h3>
-						<select name="" class="AXSelectSmall" id="AXSelect2">
-							<option value="0">0 가나다라마바사 가나다라마바사</option>
-							<option value="1">1 abcdefg 가나다라마바사</option>
-							<option value="9">9 abcdefg 가나다라마바사</option>
-							<option value="99">99 abcdefg 가나다라마바사</option>
-							<option value="100" selected="selected">100 abcdefg 가나다라마바사</option>
-						</select>		
-						<input type="button" value="valueCheck" class="AXButtonSmall" onclick="alert($('#AXSelect2').val())" />						
-						
-						<div class="H20"></div>
-						
-						<h3>AJAX 호출방식</h3>
-						<select name="" class="AXSelect" id="AXSelect3" style="width:100px;" tabindex="5"></select>		
-						
-						<div class="H20"></div>
-						
-						<h3>option script 지정방식</h3>
-						<select name="" class="AXSelect" id="AXSelect4" style="width:100px;" tabindex="4"></select>		
-				
-						<div class="H20"></div>
-						
-						<input type="button" value="AXSelect unbind" class="AXButton Red" onclick="fnObj.unbindSelect();" />
-						<input type="button" value="AXSelect bind" class="AXButton Red" onclick="fnObj.bindSelect();" />
-						<input type="button" value="AXSelect bindSelectDisabled(true)" class="AXButton Red" onclick="fnObj.bindSelectDisabled('AXSelect1',true);" />
-						<input type="button" value="AXSelect bindSelectDisabled(false)" class="AXButton Red" onclick="fnObj.bindSelectDisabled('AXSelect1',false);" />
-						
-						<div class="H20"></div>
-						
-						<input type="button" value="AXSelect1 value change" class="AXButton" onclick="fnObj.bindSelectSetValue('AXSelect1', '99');" />
-						<input type="button" value="AXSelect1 value change" class="AXButton" onclick="fnObj.bindSelectSetValue('AXSelect2', '99');" />
-						<input type="button" value="AXSelect1 value change" class="AXButton" onclick="fnObj.bindSelectSetValue('AXSelect3', '9');" />
-						<input type="button" value="AXSelect1 value change" class="AXButton" onclick="fnObj.bindSelectSetValue('AXSelect4', '5');" />
-						
-						<div class="h20"></div>
-				
-						<h3>다단계 선택 방식</h3>
-						<select name="" class="AXSelect" id="AXSelect_m0" style="width:200px;" tabindex="1"></select>		
-						<select name="" class="AXSelect" id="AXSelect_m1" style="width:200px;" tabindex="2"></select>		
-						<select name="" class="AXSelect" id="AXSelect_m2" style="width:200px;" tabindex="3"></select>
-						
-						<div class="H20"></div>
-						
-						<select name="" class="AXSelect classSelect" id="AXSelect9" tabindex="7">
-							<option value="">-- 선택하세요 --</option>
-							<option value="1">%가나다라마바사</option>
-							<option value="2" selected="selected">abcdefg</option>
-							<option value="3">abcdefg 가나다라마바사</option>
-							<option value="4">abcdefg 가나다라마바사</option>
-							<option value="5">abcdefg 가나다라마바사</option>
-							<option value="6">abcdefg 가나다라마바사</option>
-						</select>
-						
-						<select name="" class="AXSelect classSelect" id="AXSelect10" tabindex="7">
-							<option value="">-- 선택하세요 --</option>
-							<option value="5">abcdefg 가나다라마바사</option>
-							<option value="6">abcdefg 가나다라마바사</option>
-						</select>
-						
-						<div class="H30"></div>
-						
-					</div>	
-				</div>
+            <h2>AXSelect bind Select</h2>
+            <h3>Default</h3>
+            <label class="AXInputLabel">
+                <select name="" class="AXSelect" id="AXSelect1" tabindex="7">
+                    <option value="">-- 선택하세요 --</option>
+                    <option value="1">%가나다라마바사</option>
+                    <option value="2" selected="selected">abcdefg</option>
+                    <option value="3">abcdefg 가나다라마바사</option>
+                    <option value="4">abcdefg 가나다라마바사</option>
+                    <option value="5">abcdefg 가나다라마바사</option>
+                    <option value="6">abcdefg 가나다라마바사</option>
+                </select>
+            </label>
+            <input type="button" value="valueCheck" class="AXButton" onclick="alert($('#AXSelect1').val())" />
 
-				<div class="ax-clear"></div>
-			</section>
-			<!-- e.axlayer 1 -->
-			<div class="ax-clear"></div>							
-	
+            <h3>small</h3>
+            <label class="AXInputLabel">
+                <select name="" class="AXSelectSmall" id="AXSelect2">
+                    <option value="0">0 가나다라마바사 가나다라마바사</option>
+                    <option value="1">1 abcdefg 가나다라마바사</option>
+                    <option value="9">9 abcdefg 가나다라마바사</option>
+                    <option value="99">99 abcdefg 가나다라마바사</option>
+                    <option value="100" selected="selected">100 abcdefg 가나다라마바사</option>
+                </select>
+            </label>
+            <input type="button" value="valueCheck" class="AXButtonSmall" onclick="alert($('#AXSelect2').val())" />
+
+            <div class="H20"></div>
+
+            <h3>AJAX 호출방식</h3>
+            <label class="AXInputLabel">
+                <select name="" class="AXSelect" id="AXSelect3" style="width:100px;" tabindex="5"></select>
+            </label>
+
+            <div class="H20"></div>
+
+            <h3>option script 지정방식</h3>
+            <select name="" class="AXSelect" id="AXSelect4" style="width:100px;" tabindex="4"></select>
+
+            <div class="H20"></div>
+
+            <input type="button" value="AXSelect unbind" class="AXButton Red" onclick="fnObj.unbindSelect();" />
+            <input type="button" value="AXSelect bind" class="AXButton Red" onclick="fnObj.bindSelect();" />
+            <input type="button" value="AXSelect bindSelectDisabled(true)" class="AXButton Red" onclick="fnObj.bindSelectDisabled('AXSelect1',true);" />
+            <input type="button" value="AXSelect bindSelectDisabled(false)" class="AXButton Red" onclick="fnObj.bindSelectDisabled('AXSelect1',false);" />
+
+            <div class="H20"></div>
+
+            <input type="button" value="AXSelect1 value change" class="AXButton" onclick="fnObj.bindSelectSetValue('AXSelect1', '99');" />
+            <input type="button" value="AXSelect1 value change" class="AXButton" onclick="fnObj.bindSelectSetValue('AXSelect2', '99');" />
+            <input type="button" value="AXSelect1 value change" class="AXButton" onclick="fnObj.bindSelectSetValue('AXSelect3', '9');" />
+            <input type="button" value="AXSelect1 value change" class="AXButton" onclick="fnObj.bindSelectSetValue('AXSelect4', '5');" />
+
+            <div class="h20"></div>
+
+            <h3>다단계 선택 방식</h3>
+            <label class="AXInputLabel">
+                <select name="" class="AXSelect" id="AXSelect_m0" style="width:200px;" tabindex="1"></select>
+            </label>
+            <label class="AXInputLabel">
+                <select name="" class="AXSelect" id="AXSelect_m1" style="width:200px;" tabindex="2"></select>
+            </label>
+            <label class="AXInputLabel">
+                <select name="" class="AXSelect" id="AXSelect_m2" style="width:200px;" tabindex="3"></select>
+            </label>
+
+            <div class="H20"></div>
+
+            <label class="AXInputLabel">
+                <select name="" class="AXSelect classSelect" id="AXSelect9" tabindex="7">
+                    <option value="">-- 선택하세요 --</option>
+                    <option value="1">%가나다라마바사</option>
+                    <option value="2" selected="selected">abcdefg</option>
+                    <option value="3">abcdefg 가나다라마바사</option>
+                    <option value="4">abcdefg 가나다라마바사</option>
+                    <option value="5">abcdefg 가나다라마바사</option>
+                    <option value="6">abcdefg 가나다라마바사</option>
+                </select>
+            </label>
+            <label class="AXInputLabel">
+                <select name="" class="AXSelect classSelect" id="AXSelect10" tabindex="7">
+                    <option value="">-- 선택하세요 --</option>
+                    <option value="5">abcdefg 가나다라마바사</option>
+                    <option value="6">abcdefg 가나다라마바사</option>
+                </select>
+            </label>
+
 		</div>
-		<div class="H20"></div>		
 	</article>
-	<!-- e.AXPageBody -------------------------------------------------- -->
 
-	<div class="ax-clear"></div>
-	
-	<!-- s.AXPageFoot -------------------------------------------------- -->
-	<footer id="AXPageFoot">
-		<div class="ax-wrap">
-			<div class="ax-layer-1">
-				<div class="ax-col-12">
-					<div class="ax-unit">
-						
-						<!-- navTheme < -->
-						<nav class="navTheme"></nav>
-						<!-- navTheme > -->
-						
-					</div>	
-				</div>
-			</div>			
-		</div>
-	</footer>
-	<!-- e.AXPageFoot -------------------------------------------------- -->
+
 </div>
 
 </body>
-</html>		
-
-<script>
-
-$("#AXSelect_m0").bindSelect({
-    ajaxUrl: "selectData.txt", ajaxPars: "", ajaxAsync:false,
-    isspace: true, isspaceTitle: "선택하세요",
-	setValue:"",
-	onChange: function(){
-		//toast.push(Object.toJSON(this));
-		
-		$("#AXSelect_m1").bindSelect({
-			ajaxUrl: "selectData.txt", ajaxPars: "", ajaxAsync:false,
-			isspace: true, isspaceTitle: "선택하세요",
-			setValue:this.optionValue,
-			onChange: function(){
-	    		//toast.push(Object.toJSON(this));
-				
-				$("#AXSelect_m2").bindSelect({
-					ajaxUrl: "selectData.txt", ajaxPars: "", ajaxAsync:false,
-					isspace: true, isspaceTitle: "선택하세요",
-					setValue:this.optionValue,
-					onChange: function(){
-						//toast.push(Object.toJSON(this));
-					}
-				});
-	    	}
-		});	
-	}
-});
-
-
-
-// AJAX 로딩중에 #AXSelect_m1, m2 가 나중에 보일수 있는데 그 현상을 없애고 싶다면
-$("#AXSelect_m1, #AXSelect_m2").bindSelect();
-
-$("#AXSelect_m0").bindSelectSetValue("3");
-$("#AXSelect_m1").bindSelectSetValue("4");
-$("#AXSelect_m2").bindSelectSetValue("5");
-
-</script>
+</html>

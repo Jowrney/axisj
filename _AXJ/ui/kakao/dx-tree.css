@@ -8,6 +8,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.util-textHidden {
+  text-indent: -9999px;
+  overflow: hidden;
+}
 .AXTree {
   position: relative;
 }
@@ -117,7 +121,7 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #503636;
-  font-family: "Open sans";
+  font-family: "Nanum Gothic";
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -390,7 +394,7 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  font-family: "Open sans";
+  font-family: "Nanum Gothic";
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -430,7 +434,7 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  font-family: "Open sans";
+  font-family: "Nanum Gothic";
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -514,7 +518,7 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  font-family: "Open sans";
+  font-family: "Nanum Gothic";
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -558,7 +562,7 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  font-family: "Open sans";
+  font-family: "Nanum Gothic";
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -656,7 +660,7 @@
   line-height: 20px;
   padding: 5px 0px;
   color: #503636;
-  font-family: "Open sans";
+  font-family: "Nanum Gothic";
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -928,7 +932,7 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  font-family: "Open sans";
+  font-family: "Nanum Gothic";
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -968,7 +972,7 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  font-family: "Open sans";
+  font-family: "Nanum Gothic";
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1096,7 +1100,7 @@
   line-height: 20px;
   padding: 5px 8px;
   color: #3b3b3b;
-  font-family: "Open sans";
+  font-family: "Nanum Gothic";
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

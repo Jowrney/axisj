@@ -175,14 +175,14 @@
 					tr.noListTr td{
 						vertical-align:middle;
 						height:100px;
-						background:@bgcolor-e;
+						background:@bgcolor-a;
 						border-bottom:@border-d;
 					}
 					tr.line0 td{
-						background-color:@bgcolor-e;
+						background-color:@bgcolor-a;
 					}
 					tr.line1 td{
-						background-color:@bgcolor-f;
+						background-color:@bgcolor-b;
 					}
 					tr.red td{
 						background-color:@bgcolor-g;
@@ -203,7 +203,7 @@
 						background-color:@bgcolor-l;
 					}
 					tr.hover td{
-						background-color:@bgcolor-e;
+						background-color:@bgcolor-h;
 					}
 					tr.selected td{
 						background-color:@bgcolor-d;
@@ -313,42 +313,42 @@
 							background-color:@bgcolor-d;box-shadow:inset 0px 0px 2px #000;
 						}
 					}
-					tr.noListTr td{
-						vertical-align:middle;
-						height:100px;
-						background:@bgcolor-e;
-						border-bottom:@border-d;
-					}
-					tr.line0 td{
-						background-color:@bgcolor-o;
-					}
-					tr.line1 td{
-						background-color:@bgcolor-p;
-					}
-					tr.red td{
-						background-color:@bgcolor-g;
-					}
-					tr.green td{
-						background-color:@bgcolor-h;
-					}
-					tr.blue td{
-						background-color:@bgcolor-i;
-					}
-					tr.yellow td{
-						background-color:@bgcolor-j;
-					}
-					tr.white td{
-						background-color:@bgcolor-k;
-					}
-					tr.gray td{
-						background-color:@bgcolor-l;
-					}
-					tr.selected td{
-						background-color:@bgcolor-d;
-					}
-					tr.hover td{
-						background-color:@bgcolor-q;
-					}
+                  tr.noListTr td{
+                    vertical-align:middle;
+                    height:100px;
+                    background:@bgcolor-a;
+                    border-bottom:@border-d;
+                  }
+                  tr.line0 td{
+                    background-color:@bgcolor-a;
+                  }
+                  tr.line1 td{
+                    background-color:@bgcolor-b;
+                  }
+                  tr.red td{
+                    background-color:@bgcolor-g;
+                  }
+                  tr.green td{
+                    background-color:@bgcolor-h;
+                  }
+                  tr.blue td{
+                    background-color:@bgcolor-i;
+                  }
+                  tr.yellow td{
+                    background-color:@bgcolor-j;
+                  }
+                  tr.white td{
+                    background-color:@bgcolor-k;
+                  }
+                  tr.gray td{
+                    background-color:@bgcolor-l;
+                  }
+                  tr.hover td{
+                    background-color:@bgcolor-h;
+                  }
+                  tr.selected td{
+                    background-color:@bgcolor-d;
+                  }
 				}
 			}
 		}
@@ -404,17 +404,16 @@
 			height:30px;
 			background:url('images/dx-grid-page-bg.png') repeat-x;
 			z-index:3;
-			.AXgridPageNo{
-				border:@border-a;
-				height:22px;padding:0px 2px;
-				outline:none;
-			}
-			.AXgridPageNumber{
-				display:block;
-				float:left;
-				padding:4px 0px 4px 5px;height:22px;line-height:22px;
-				font-size:12px;color:@color-c;
-			}
+
+            .AXgridPageNo{
+              border:0px none;vertical-align: top;
+              height:22px;padding:0px 2px;outline:none;
+            }
+            .AXgridPageNumber{
+              display:table-cell;padding:3px 0px 0px 5px;height: 26px;
+              float:left;font-size:12px;color:@color-c;
+            }
+
 			.AXanchorSelect .selectedTextBox{
 				box-shadow:inset 0px 1px 1px #e9eced;
 				background:@bgcolor-f;
@@ -660,4 +659,219 @@
 		color:@color-e;
 		background:url('images/dx-item-check.png') no-repeat 3px center;
 	}
+}
+
+// 2014-04-03 오후 5:40:56 -tom
+.AXGrid{
+  &.AXGridMobile{
+    .dx-axgrid-preset();
+
+    .AXgridScrollBody{
+      border:0px none;
+      overflow:visible;
+
+      .AXGridToolGroup{
+        display:block;
+        position:relative;
+        height:43px;
+        .util-gradient(top, @bgcolor-a, @bgcolor-b);
+        border-bottom:@border;
+        &.top{
+          border-top:@border;
+        }
+        .displayNone{display:none;}
+        .tool-config{
+          position:absolute;left:0px;top:0px;
+          display:block;width:43px;height:43px;
+          box-sizing:content-box;padding:0px;margin:0px;
+          background:url(images/mx-grid-icon-config.png) no-repeat center center;
+          background-size:30px 30px;
+        }
+        .tool-pageGroup{
+          position:relative;
+          display:block;
+          width:172px;height:43px;
+          margin:0px auto;
+          padding:0px;
+          box-sizing:content-box;
+          .tool-prevPage{
+            position:absolute;left:0px;top:0px;
+            display:block;width:43px;height:43px;
+            box-sizing:content-box;padding:0px;margin:0px;
+            background:url(images/mx-grid-icon-prev.png) no-repeat center center;
+            background-size:30px 30px;
+            cursor:pointer;
+          }
+          .tool-pageNo{
+            padding:0px 0px;
+            width:172px;height:43px;
+            background:url(images/mx-grid-icon-pageBg.png) no-repeat center center;
+            background-size:contain;
+            select{
+              position:absolute;left:43px;top:6px;
+              width:86px;height:30px;
+              border:0px none;
+              .util-opacity(0);
+            }
+            span{
+              display:block;
+              width:86px;
+              box-sizing:content-box;
+              padding:6px 43px;text-align:center;
+              line-height:31px;font-weight:bold;
+              color:#6c6c6c;
+            }
+          }
+          .tool-nextPage{
+            position:absolute;right:0px;top:0px;
+            display:block;width:43px;height:43px;
+            box-sizing:content-box;padding:0px;margin:0px;
+            background:url(images/mx-grid-icon-next.png) no-repeat center center;
+            background-size:30px 30px;
+            cursor:pointer;
+          }
+        }
+        .tool-gotoTop{
+          position:absolute;right:0px;top:0px;
+          display:block;width:43px;height:43px;
+          box-sizing:content-box;padding:0px;margin:0px;
+          background:url(images/mx-grid-icon-down.png) no-repeat center center;
+          background-size:30px 30px;
+        }
+        .tool-gotoBottom{
+          position:absolute;right:0px;top:0px;
+          display:block;width:43px;height:43px;
+          background:url(images/mx-grid-icon-up.png) no-repeat center center;
+          background-size:30px 30px;
+        }
+      }
+
+      .AXGridBody{
+        position:relative;
+
+      }
+      /* 모바일 뷰 용 목록 스타일 시트 클래스 */
+      .gridBodyDiv{
+        .bodyViewMobile{
+          position:relative;
+          border-bottom:@border;
+          margin:0px 0px 0px 0px;
+          padding:0px 5px 5px 5px;
+          cursor:pointer;
+          &.line0{
+            background:@bgcolor-i;
+          }
+          &.line1{
+            background:@bgcolor-j;
+          }
+          &.red{
+            background-color:#FFE8E8;
+          }
+          &.green{
+            background-color:#F7FDEA;
+          }
+          &.blue{
+            background-color:#EAF5FD;
+          }
+          &.yellow{
+            background-color:#FEFEE9;
+          }
+          &.white{
+            background-color:#fff;
+          }
+          &.gray{
+            background-color:#f7f7f7;
+          }
+          &.hover, &:hover{
+            background-color:@bgcolor-h;
+          }
+          &.selected{
+            background-color:@bgcolor-d;
+          }
+
+          .column{
+            float:left;
+            padding:0px 0px;margin:0px;
+            border-box:content-box;
+            .util-text-ellipsis();
+
+            &.underLine{
+              border-bottom:@border-e;
+            }
+            &.col1{
+              width:25%;
+            }
+            &.col2{
+              width:50%;
+            }
+            &.col3{
+              width:75%;
+            }
+            &.col4{
+              width:100%;
+            }
+            &.colNone{
+              border:@border-i;
+              background:@bgcolor;
+              .util-border-radius(4px);
+              margin:5px 0px 0px 5px;
+              .label{
+                margin:0px;
+                padding:5px;
+                background:@bgcolor;
+                color:@color-a;
+                font-size:11px;
+              }
+              .content{
+                margin:0px;
+                padding:8px 10px 8px 0px;
+                line-height:12px;min-height:12px;
+                color:@color;
+                &.solid{
+                  display:inline-block;
+                  padding:8px 10px 8px 10px;
+                }
+              }
+            }
+            .label{
+              display:inline-block;
+              vertical-align:middle;
+              margin:10px 0px 10px 5px;
+              padding:0px 4px;
+              height:20px;line-height:20px;
+              background:#b1b1b1;
+              color:#fff;
+              font-size:11px;
+              .util-border-radius(4px);
+            }
+            .content{
+              display:inline;vertical-align:middle;
+              margin:10px 10px 10px 5px;
+              padding:4px 0px;
+              line-height:12px;min-height:12px;
+              color:@color;
+              &.solid{
+                display:inline-block;
+                padding:3px 3px;
+              }
+            }
+          }
+          .columnClear{
+            clear:both;
+          }
+          .buttonGroup{
+            position:absolute;
+            right:0px;top:0px;
+            .handle{
+              cursor: pointer;
+              display:inline-block;
+              width: 40px;height: 40px;
+              background: url("images/mx-grid-icon-handle.png") no-repeat center center;
+              background-size:30px 30px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

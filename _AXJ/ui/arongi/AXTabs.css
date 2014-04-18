@@ -8,6 +8,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.util-textHidden {
+  text-indent: -9999px;
+  overflow: hidden;
+}
 .util-border-radius-none {
   -webkit-border-radius: none;
   -moz-border-radius: none;
@@ -17,6 +21,10 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.util-textHidden {
+  text-indent: -9999px;
+  overflow: hidden;
 }
 .axtabs-style-normal {
   background: #e8e8e8;
@@ -1316,6 +1324,10 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+  .util-textHidden {
+    text-indent: -9999px;
+    overflow: hidden;
   }
   .axtabs-style-normal {
     background: #e8e8e8;

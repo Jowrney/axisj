@@ -2,20 +2,31 @@
 /* http://www.axisj.com, license : http://www.axisj.com/license */
  
 var AXTabClass = Class.create(AXJ, {
-    version: "AXTabClass V0.1",
+    version: "AXTabClass V0.5",
     author: "tom@axisj.com",
     logs: [
-		"2013-07-05 오후 1:16:16"
+		"2013-07-05 오후 1:16:16",
+        "2014-04-14 : tom 모바일 반응 너비 지정 방식 변경 & ff 타이밍 버그 픽스 "
     ],
     initialize: function(AXJ_super) {
         AXJ_super();
         this.objects = [];
         this.config.handleWidth = 22;
-        this.config.responsiveWidth = AXConfig.mobile.responsiveWidth;
+        this.config.responseiveMobile = AXConfig.mobile.responsiveWidth;
         this.config.bounces = true;
     },
     init: function(){
-    	
+        axdom(window).bind("resize", this.windowResize.bind(this));
+    },
+    windowResize: function () {
+        var windowResizeApply = this.windowResizeApply.bind(this);
+        if (this.windowResizeObserver) clearTimeout(this.windowResizeObserver);
+        this.windowResizeObserver = setTimeout(function () {
+            windowResizeApply();
+        }, 500);
+    },
+    windowResizeApply: function(){
+        this.resizeCheck();
     },
     bind: function (obj) {
         var cfg = this.config;
@@ -59,7 +70,7 @@ var AXTabClass = Class.create(AXJ, {
     },
     initTab: function(objID, objSeq){
     	//trace({objID:objID, objSeq:objSeq});
-    	var cfg = this.config;
+    	var cfg = this.config, _this = this;
     	var obj = this.objects[objSeq];
 
 		var po = [];
@@ -88,9 +99,9 @@ var AXTabClass = Class.create(AXJ, {
 				po.push("	<div class=\"clear\"></div>");
 			if(obj.config.overflow != "visible"){
 			po.push("	</div>");
-			po.push("	<div class=\"leftArrowHandleBox\"><a href=\"javascript:;\" class=\"tabArrow\" id=\"" + objID + "_AX_Arrow_AX_Left\">arrow</a></div>");
-			po.push("	<div class=\"rightArrowHandleBox\"><a href=\"javascript:;\" class=\"tabArrow\" id=\"" + objID + "_AX_Arrow_AX_Right\">arrow</a></div>");
-			po.push("	<div class=\"rightArrowMoreBox\"><a href=\"javascript:;\" class=\"tabArrow\" id=\"" + objID + "_AX_Arrow_AX_More\">arrow</a></div>");
+			po.push("	<div class=\"leftArrowHandleBox\" style=\"display:none;\"><a href=\"javascript:;\" class=\"tabArrow\" id=\"" + objID + "_AX_Arrow_AX_Left\">arrow</a></div>");
+			po.push("	<div class=\"rightArrowHandleBox\" style=\"display:none;\"><a href=\"javascript:;\" class=\"tabArrow\" id=\"" + objID + "_AX_Arrow_AX_Right\">arrow</a></div>");
+			po.push("	<div class=\"rightArrowMoreBox\" style=\"display:none;\"><a href=\"javascript:;\" class=\"tabArrow\" id=\"" + objID + "_AX_Arrow_AX_More\">arrow</a></div>");
 			}
 		po.push("	</div>");
 		po.push("</div>");
@@ -147,49 +158,55 @@ var AXTabClass = Class.create(AXJ, {
     	});
     	
     	if(obj.overflow != "visible"){
-	    	var tabsWidth = (AXUtil.clientWidth() < cfg.responsiveWidth) ? 40 : 30;
-	    	var tabsMargin = (AXUtil.clientWidth() < cfg.responsiveWidth) ? 5 : 5;
-	    	obj.tabContainer.find(".AXTab").each(function(){
-	    		tabsWidth += (jQuery(this).outerWidth().number() + jQuery(this).css("marginLeft").number() + jQuery(this).css("marginRight").number() + tabsMargin);
-	    	});
-	    	
-	    	obj.tabScroll.css({width:tabsWidth, left:cfg.handleWidth});
-	    	obj.tabTray.css({height:obj.tabScroll.outerHeight()});
-	    	
-			var trayWidth = obj.tabTray.outerWidth();
-			var scrollWidth = obj.tabScroll.outerWidth();
+            setTimeout(function(){
+                var tabsWidth = (axf.clientWidth() < cfg.responseiveMobile) ? 40 : 30;
+                var tabsMargin = (axf.clientWidth() < cfg.responseiveMobile) ? 5 : 5;
+                obj.tabContainer.find(".AXTab").each(function(){
+                    tabsWidth += (jQuery(this).outerWidth().number() + jQuery(this).css("marginLeft").number() + jQuery(this).css("marginRight").number() + tabsMargin);
+                });
 
-			if(trayWidth > scrollWidth){
-				obj.tabContainer.find(".leftArrowHandleBox").hide();
-				obj.tabContainer.find(".rightArrowHandleBox").hide();
-				obj.tabContainer.find(".rightArrowMoreBox").hide();
-				obj.tabScroll.css({left:0});
-			}else if(obj.config.selectedIndex != null){
-				this.focusingItem(objID, objSeq, obj.config.selectedIndex);
-			}
-			
-			if(trayWidth < scrollWidth && AXUtil.clientWidth() < cfg.responsiveWidth){
-				obj.tabContainer.find(".leftArrowHandleBox").hide();
-				obj.tabContainer.find(".rightArrowHandleBox").hide();
-				obj.tabScroll.css({left:0});
-			}
-			
-			/* touch event */
-			var touchstart = this.touchstart.bind(this);
-			if(AXUtil.browser.mobile){
-				var touchBodyID = obj.tabTray.get(0).id;
-				this.touchstartBind = function () { touchstart(objID, objSeq); };
-				if (document.addEventListener) AXgetId(touchBodyID).addEventListener("touchstart", this.touchstartBind, false);
-			}else{
-				this.touchstartBind = function (event) { touchstart(objID, objSeq, event); };
-				obj.tabTray.unbind("mousedown.AXMobileTouch").bind("mousedown.AXMobileTouch", this.touchstartBind);
-			}
-			obj.tabTray.attr("onselectstart", "return false");
-			obj.tabTray.addClass("AXUserSelectNone");
-			
-			obj.tabTray.unbind("dragstart.AXMobileTouch").bind("dragstart.AXMobileTouch", this.cancelEvent.bind(this));
-			/* touch event */
-			
+                obj.tabScroll.css({width:tabsWidth, left:cfg.handleWidth});
+                obj.tabTray.css({height:obj.tabScroll.outerHeight()});
+
+                var trayWidth = obj.tabTray.outerWidth();
+                var scrollWidth = obj.tabScroll.outerWidth();
+
+                if(trayWidth > scrollWidth){
+                    obj.tabContainer.find(".leftArrowHandleBox").hide();
+                    obj.tabContainer.find(".rightArrowHandleBox").hide();
+                    obj.tabContainer.find(".rightArrowMoreBox").hide();
+                    obj.tabScroll.css({left:0});
+                }else if(obj.config.selectedIndex != null){
+                    obj.tabContainer.find(".leftArrowHandleBox").show();
+                    obj.tabContainer.find(".rightArrowHandleBox").show();
+                    obj.tabContainer.find(".rightArrowMoreBox").show();
+                    _this.focusingItem(objID, objSeq, obj.config.selectedIndex);
+                }
+
+                if(trayWidth < scrollWidth && AXUtil.clientWidth() < cfg.responseiveMobile){
+                    obj.tabContainer.find(".leftArrowHandleBox").hide();
+                    obj.tabContainer.find(".rightArrowHandleBox").hide();
+                    obj.tabScroll.css({left:0});
+                }else{
+
+                }
+
+                /* touch event */
+                var touchstart = _this.touchstart.bind(_this);
+                if(AXUtil.browser.mobile){
+                    var touchBodyID = obj.tabTray.get(0).id;
+                    _this.touchstartBind = function () { touchstart(objID, objSeq); };
+                    if (document.addEventListener) AXgetId(touchBodyID).addEventListener("touchstart", _this.touchstartBind, false);
+                }else{
+                    _this.touchstartBind = function (event) { touchstart(objID, objSeq, event); };
+                    obj.tabTray.unbind("mousedown.AXMobileTouch").bind("mousedown.AXMobileTouch", _this.touchstartBind);
+                }
+                obj.tabTray.attr("onselectstart", "return false");
+                obj.tabTray.addClass("AXUserSelectNone");
+
+                obj.tabTray.unbind("dragstart.AXMobileTouch").bind("dragstart.AXMobileTouch", _this.cancelEvent.bind(_this));
+                /* touch event */
+            }, 100);
 	    }
     },
     bindTabClick: function(objID, objSeq, event){
@@ -290,7 +307,7 @@ var AXTabClass = Class.create(AXJ, {
     	var obj = this.objects[objSeq];
 
 		var trayWidth = obj.tabTray.outerWidth();
-    	if(AXUtil.clientWidth() < cfg.responsiveWidth){
+    	if(AXUtil.clientWidth() < cfg.responseiveMobile){
     		var rightMargin = 40;
     	}else{
     		var rightMargin = 29 + cfg.handleWidth;
@@ -365,7 +382,7 @@ var AXTabClass = Class.create(AXJ, {
 		var scrollAmount = 500;
 		
 		var trayWidth = obj.tabTray.outerWidth();
-    	if(AXUtil.clientWidth() < cfg.responsiveWidth){
+    	if(AXUtil.clientWidth() < cfg.responseiveMobile){
     		var rightMargin = 40;
     	}else{
     		var rightMargin = 29 + cfg.handleWidth;
@@ -423,7 +440,10 @@ var AXTabClass = Class.create(AXJ, {
     bindTabMoreClick: function(objID, objSeq, direction, event){
     	var cfg = this.config;
     	var obj = this.objects[objSeq];
-    	
+        if(axf.clientWidth() < cfg.responseiveMobile) {
+            AXContextMenu.setConfig({responseiveMobile: 640});
+            /* mobile 너비 지정 */
+        }
     	AXContextMenu.open({id:objID + "_AX_tabMore", title:AXConfig.AXContextMenu.title}, event);
     },
     resizeCheck: function(){
@@ -441,7 +461,7 @@ var AXTabClass = Class.create(AXJ, {
 				obj.tabContainer.find(".rightArrowMoreBox").hide();
 				obj.tabScroll.css({left:0});
 			}else{
-				if(AXUtil.clientWidth() < cfg.responsiveWidth){
+				if(AXUtil.clientWidth() < cfg.responseiveMobile){
 					obj.tabContainer.find(".leftArrowHandleBox").hide();
 					obj.tabContainer.find(".rightArrowHandleBox").hide();
 				}else{
@@ -462,7 +482,7 @@ var AXTabClass = Class.create(AXJ, {
     		return;
     	}
     	
-    	if(AXUtil.clientWidth() < cfg.responsiveWidth){
+    	if(AXUtil.clientWidth() < cfg.responseiveMobile){
     		var scrollLeft = (jQuery("#" + objID + "_AX_Tabs_AX_" + optionIndex).position().left);
     		var itemWidth = (jQuery("#" + objID + "_AX_Tabs_AX_" + optionIndex).outerWidth());
     		var handleWidth = 0;
@@ -675,7 +695,7 @@ var AXTabClass = Class.create(AXJ, {
 		/*trace({eLeft: eLeft, velocity:velocity, endLeft:endLeft});*/
 		if(endLeft > 0) endLeft = 0;
 		var newLeft = endLeft.abs();
-   		if(AXUtil.clientWidth() < cfg.responsiveWidth){
+   		if(AXUtil.clientWidth() < cfg.responseiveMobile){
     		var handleWidth = 0;
     		var rightMargin = 40;
     	}else{
@@ -701,9 +721,6 @@ var AXTabClass = Class.create(AXJ, {
 
 var AXTab = new AXTabClass();
 AXTab.setConfig({});
-jQuery(window).bind("resize", function(){
-	AXTab.resizeCheck();
-});
 
 jQuery.fn.unbindTab = function (config) {
     jQuery.each(this, function () {

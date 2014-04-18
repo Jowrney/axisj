@@ -26,7 +26,7 @@ var AXProgress = Class.create(AXJ, {
 		config.options = options;
 		
 		var totalCount = config.totalCount || 100;
-		this.loadedCount = 1;
+		this.loadedCount = 0;
 		var loadedCount = this.loadedCount;
 		var loadedRate = (loadedCount / totalCount * 100).round(1);
 		var progressWidth = config.width || 200;
@@ -47,18 +47,20 @@ var AXProgress = Class.create(AXJ, {
 			if(config.options.cancel) hasCancel = config.options.cancel;
 			if(config.options.theme) theme = config.options.theme;
 		}
-		
+
 		var po = [];
 		po.push("<div class=\"AXprogressTray "+theme+"\" id=\""+progressID+"_AX_tray\" align=\"center\" style=\"top:"+progressTop+"px;\">");
 		if(progressTitle != ""){
 			po.push("	<div class=\"AXprogressTitle\" id=\""+progressID+"_AX_title\" style=\"width:"+progressWidth+"px;\" align=\"left\">"+progressTitle+"</div>");
 		}
 		po.push("<div class=\"AXprogress\" id=\""+progressID+"\" style=\"width:"+progressWidth+"px;\">");
-		po.push("	<div class=\"AXprogressContainer\" id=\""+progressID+"_AX_container\" align=\"left\">");
+		po.push("	<div class=\"AXprogressContainer\" id=\""+progressID+"_AX_container\" align=\"left\" style=\"overflow:hidden;\">");
 		if(theme == "AXlineProgress") po.push("		<div class=\"AXprogressBar\" id=\""+progressID+"_AX_bar\" style=\"width:"+loadedRate+"%;\"></div>");
 		else  po.push("		<div class=\"AXprogressBar\" id=\""+progressID+"_AX_bar\"></div>");
-		po.push("		<div class=\"AXprogressLoadedText\" id=\""+progressID+"_AX_loadedText\">"+loadedRate+"%</div>");
+
 		po.push("	</div>");
+
+        po.push("    <div class=\"AXprogressLoadedText\" id=\""+progressID+"_AX_loadedText\">"+loadedRate+"%</div>");
 
 		if(hasCancel){
 			po.push(" <a href=\"#axexec\" id=\""+progressID+"_AX_cancel\" class=\"AXprogressCancel\">Cancel</a>");
@@ -71,7 +73,7 @@ var AXProgress = Class.create(AXJ, {
 		jQuery(document.body).append(this.progress);
 		
 		jQuery("#"+progressID+"_AX_cancel").bind("click", this.cancel.bind(this));
-		
+        this.loadedCount = 1;
 		this.update();
 	},
 	update: function(){

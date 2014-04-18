@@ -3,23 +3,39 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1" />
-	<title>AXISJ</title>
-	<!-- Libs -->
-	<script type="text/javascript" src="../../jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="../../lib/AXJ.js"></script>
-	<script type="text/javascript" src="../../lib/AXTab.js"></script>	
-	<script type="text/javascript" src="../../lib/AXInput.js"></script>		
-	<script type="text/javascript" src="../../lib/AXProgress.js"></script>			
-	<!-- Self -->
-	<script src="pageTab.js"></script>			
-	<!-- Theme -->
-	<script src="../page.js"></script>		
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/page.css">
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXJ.css">
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXTabs.css">
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXButton.css">			
-	<link rel="stylesheet" type="text/css" href="../../ui/arongi/AXProgress.css">	
+	<title>AXScroll(bounces) AXISJ</title>
+
+    <link rel="shortcut icon" href="../../ui/axisj.ico" type="image/x-icon" />
+    <link rel="icon" href="../../ui/axisj.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../ui/AXJ.png" />
+    <link rel="apple-touch-icon-precomposed" href="../../ui/AXJ.png" />
+    <meta property="og:image" content="/samples/_img/axisj_sns.png" />
+    <meta property="og:site_name" content="Axis of Javascript - axisj.com" />
+    <meta property="og:description" id="meta_description" content="Javascript UI Library based on JQuery" />
+
+    <!-- css block -->
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/page.css">
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/AXJ.css" />
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/AXInput.css" />
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/AXButton.css" />
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/AXTabs.css" />
+    <link rel="stylesheet" type="text/css" href="../../ui/arongi/AXSelect.css" />
+    <style type="text/css">
+
+    </style>
+    <!-- css block -->
+
+    <!-- js block -->
+    <script type="text/javascript" src="../../jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../../lib/AXJ.js"></script>
+    <script type="text/javascript" src="../../lib/AXTopDownMenu.js"></script>
+    <script type="text/javascript" src="../../lib/AXTab.js"></script>
+    <script type="text/javascript" src="../../lib/AXInput.js"></script>
+    <script type="text/javascript" src="../../lib/AXSelect.js"></script>
+    <script type="text/javascript" src="../page.js"></script>
+    <script type="text/javascript" src="pageTab.js"></script>
+    <!-- js block -->
 
 	<script>
 	/**
@@ -33,12 +49,7 @@
 	
 	var fnObj = {
 		pageStart: function(){
-			//Require page.js before this fn...
-			pageObj.host = "../../";
-			pageObj.incHeader();
-			pageObj.incFooter();	
-			pageObj.initTheme();			
-			
+
 			myUIScroll3.setConfig({
 				targetID:"UIScrollContainer3",
 				scrollID:"UIScrollTarget3",
@@ -59,55 +70,12 @@
 <body>
 
 <div id="AXPage">
-	<!-- s.AXPageHead -------------------------------------------------- -->
-	<header id="AXPageHead">
-		<div class="ax-wrap">
-			<div class="ax-layer-1">
-				<div class="ax-col-12">
-					<div class="ax-unit">
 
-						<!-- navMenu < -->
-						<nav class="navMenu"></nav>
-						<!-- navMenu > -->
-
-					</div>	
-				</div>	
-			</div>	
-			<div class="ax-layer-2">
-				<div class="ax-col-12">
-					<div class="ax-unit">
-						<!-- s.navMenu -->
-						<nav class="themeInfo"></nav>
-						<!-- e.navMenu -->
-					</div>	
-				</div>	
-			</div>	
-			
-			<div class="ax-layer-3">
-				<div class="ax-col-12">
-					<div class="ax-unit">
-
-						<!-- navMenu < -->
-						<div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
-						<!-- navMenu > -->
-
-					</div>	
-				</div>	
-			</div>	
-
-		</div>
-	</header>
-	<!-- e.AXPageHead -------------------------------------------------- -->
-	<div class="ax-clear"></div>						
-	<!-- s.AXPageBody -------------------------------------------------- -->
 	<article id="AXPageBody" class="SampleAXSelect">
-
-		<div class="ax-wrap">
+        <div id="demoPageTabTarget" class="AXdemoPageTabTarget"></div>
+		<div class="AXdemoPageContent">
 			<div class="title"><h1>AXScroll</h1></div>
-			<!-- s.axlayer 1 -->		
-			<section class="ax-layer-1">
-				<div class="ax-col-12">
-					<div class="ax-unit">
+
 						<h2>AXScroll (bounces)</h2>
 						<h3>모바일 브라우저서만 반동 액션을 확인 할 수 있습니다.</h3>
 						<div class="containerBox" id="UIScrollContainer3" style="border:1px solid #888;box-shadow:inset 1px 1px 3px #ccc;overflow:hidden;height:250px;position:relative;">
@@ -144,38 +112,14 @@
 						<div class="H30"></div>
 						
 					</div>	
-				</div>
-				
-				<div class="ax-clear"></div>
-			</section>
-			<!-- e.axlayer 1 -->
+
 			
 			<div class="ax-clear"></div>							
 	
 		</div>
 		<div class="H20"></div>		
 	</article>
-	<!-- e.AXPageBody -------------------------------------------------- -->
 
-	<div class="ax-clear"></div>
-	
-	<!-- s.AXPageFoot -------------------------------------------------- -->
-	<footer id="AXPageFoot">
-		<div class="ax-wrap">
-			<div class="ax-layer-1">
-				<div class="ax-col-12">
-					<div class="ax-unit">
-						
-						<!-- navTheme < -->
-						<nav class="navTheme"></nav>
-						<!-- navTheme > -->
-						
-					</div>	
-				</div>
-			</div>			
-		</div>
-	</footer>
-	<!-- e.AXPageFoot -------------------------------------------------- -->
 </div>
 
 </body>

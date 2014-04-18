@@ -4,155 +4,71 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1" />
 	<title>AXISJ</title>
-	<script src="jquery/jquery.min.js"></script>
-	<script src="lib/AXJ.js"></script>
-	
-	<script src="samples/page.js"></script>	
-	<link rel="stylesheet" type="text/css" href="ui/arongi/page.css">
-	<script>
-	var fnObj = {
-		pageStart: function(){
-			//Require page.js before this fn...
-			pageObj.host = "";
-			pageObj.incHeader();
-			pageObj.incFooter();
-					
-		}
-	};
-	jQuery(document).ready(fnObj.pageStart);
-	</script>
-	<style type="text/css">
-	
-	</style>
+
+    <link rel="shortcut icon" href="ui/axisj.ico" type="image/x-icon" />
+    <link rel="icon" href="ui/axisj.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ui/AXJ.png" />
+    <link rel="apple-touch-icon-precomposed" href="ui/AXJ.png" />
+
+
+    <link rel="stylesheet" type="text/css" href="ui/arongi/page.css">
+    <link rel="stylesheet" type="text/css" href="ui/arongi/AXJ.css">
+    <link rel="stylesheet" type="text/css" href="ui/arongi/AXButton.css">
+
+    <script type="text/javascript" src="jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/AXJ.js"></script>
+    <script type="text/javascript" src="lib/AXTopDownMenu.js"></script>
+    <script type="text/javascript" src="samples/page.js"></script>
+
+    <style type="text/css">
+
+    </style>
 </head>
-	
 <body>
 
-<div id="AXPage">
-	<!-- AXPageHead < -------------------------------------------------- -->
-	<header id="AXPageHead">
-		<div class="ax-wrap">
-			<div class="ax-layer-1">
-				<div class="ax-col-12">
-					<div class="ax-unit">
-
-						<!-- navMenu < -->
-						<nav class="navMenu">
-							<!--h3><img src="AXJ.png" style="width:110px; height:40px;" /></h3>
-							<ul>
-								<li><a href="#">Common</a></li>
-								<li><a href="#">UI<span>(Unique)</span></a></li>
-								<li><a href="#">UI<span>(Complex)</span></a></li>
-								<li><a href="#">Lab</a></li>
-							</ul>
-							<div class="ax-clear"></div-->							
-						</nav>
-						<!-- navMenu > -->
-												
-					</div>	
-				</div>	
-			</div>	
-		</div>
-	</header>
-	<!-- AXPageHead > -------------------------------------------------- -->
-
-	<!-- AXPageBody < -------------------------------------------------- -->
-	<article id="AXPageBody">
-
-		<div class="ax-wrap">
-			<!-- axlayer 1 < -->			
-			<section class="ax-layer-1">
-				<div class="ax-col-3">
-					<div class="ax-unit secBlock">
-						<h3>Common</h3>
-						<ul>
-							<li><a href="samples/AXCore/index.html">AXCore</a></li>
-							<li><a href="samples/AXValidator/index.html">AXValidator</a></li>
-							<li><a href="samples/AXAddress/index.html">AXAddress</a></li>
-						</ul>
-					</div>	
-				</div>	
-				<div class="ax-col-3">
-					<div class="ax-unit secBlock">
-						<h3>UI-Unique</h3>
-						<ul>
-							<li><a href="samples/AXButton/index.html">AXButton</a></li>
-							<li><a href="samples/AXInput/index.html">AXInput</a></li>							
-							<li><a href="samples/AXSelect/index.html">AXSelect</a></li>
-							<li><a href="samples/AXNotification/index.html">AXNotification</a></li>
-							<li><a href="samples/AXProgress/index.html">AXProgress</a></li>							
-							<li><a href="samples/AXScroll/index.html">AXScroll</a></li>
-							<li><a href="samples/AXTabs/index.html">AXTabs</a></li>
-						</ul>
-					</div>	
-				</div>	
-				<div class="ax-col-3">
-					<div class="ax-unit secBlock">
-						<h3>UI-Complex</h3>
-						<ul>
-							<li><a href="samples/AXModal/index.html">AXModal</a></li>
-							<li><a href="samples/AXGrid/index.html">AXGrid</a></li>
-							<li><a href="samples/AXTree/index.html">AXTree</a></li>
-							<li><a href="samples/AXEditor/index.html">AXEditor</a></li>	
-							<li><a href="samples/AXSearch/index.html">AXSearch</a></li>
-							<li><a href="samples/AXUpload5/index.html">AXUpload5</a></li>						
-						</ul>
-					</div>	
-				</div>				
-				<div class="ax-col-3">
-					<div class="ax-unit secBlock">
-						<h3>Lab</h3>
-						<ul>
-							<li><a href="samples/AXTopDownMenu/index.html">AXTopDownMenu</a></li>
-							<li><a href="samples/AXExcelConvert/index.html">AXExcelConvert</a></li>							
-							<li><a href="samples/AXTimeTable/index.html">AXTimeTable</a></li>
-							<li><a href="samples/AXModelControl/index.html">AXModelControl</a></li>
-							<li><a href="samples/AXUserSelect/index.html">AXUserSelect</a></li>							
-							<li><a href="samples/tableStyleGuide/index.html">tableStyleGuide</a></li>							
-							<li><a href="samples/AXScheduleCalendar/index.html">AXScheduleCalendar(alpha)</a></li>
-							<li><a href="samples/AXFrameSet/index.html">AXFrameSet(alpha)</a></li>
-							<li><a href="samples/AXTabs/index.html">for Mobile</a></li>
-							<li><a href="samples/AXTabs/index.html">for AngularJS</a></li>
-						</ul>
-					</div>	
-				</div>	
-				<div class="ax-clear"></div>				
-			</section>	
-			<!-- axlayer 1 > -->	
-
-		</div>
-		
-	</article>
-	<!-- AXPageBody > -------------------------------------------------- -->
-	
-	
-	<!-- AXPageFoot < -------------------------------------------------- -->
-	<footer id="AXPageFoot">
-		<div class="ax-wrap">
-			<div class="ax-layer-1">
-				<div class="ax-col-12">
-					<div class="ax-unit">
-						
-						<!-- navTheme < -->
-						<nav class="navTheme">
-							<!--h3>AXISJ Theme</h3>
-							<ul>
-								<li><a href="#" class="on">Arongi<span>(Default)</span></a></li>
-								<li><a href="#">Bulldog</a></li>
-								<li><a href="#">Flybasket</a></li>
-								<li><a href="#">Kakao</a></li>
-							</ul>
-							<div class="ax-clear"></div-->
-						</nav>
-						<!-- navTheme > -->
-						
-					</div>	
-				</div>
-			</div>			
-		</div>
-	</footer>
-	<!-- AXPageFoot > -------------------------------------------------- -->
-</div>
+    <div id="AXPage">
+        <!-- AXPageBody -->
+        <article id="AXPageBody">
+            <div class="ax-wrap">
+                <div class="ax-layer-1" id="ax_layer_1"></div>
+            </div>
+        </article>
+        <!-- AXPageBody -->
+    </div>
 
 </body>
-</html>		
+</html>
+
+<script type="text/javascript" type="text/javascript">
+    isIndex = true;
+
+    jQuery(document).ready(function(){
+    	setTimeout(function(){
+            var po = [];
+            axf.each(sampleTree, function(){
+                po.push('<div class="ax-col-3">');
+                    po.push('<div class="ax-unit secBlock">');
+                        po.push('<h3>', this.label,'</h3>');
+                        po.push('<ul id="comon">');
+                            axf.each(this.cn, function() {
+                                po.push('<li><a href="', this.url,'">', this.label,'</a></li>');
+                            });
+                        po.push('</ul>');
+                    po.push('</div>');
+                po.push('</div>');
+            });
+            po.push('<div class="ax-clear"></div>');
+            $("#ax_layer_1").html(po.join(''));
+    	}, 500);
+    });
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-38119279-1', 'axisj.com');
+    ga('send', 'pageview');
+</script>

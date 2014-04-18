@@ -8,6 +8,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.util-textHidden {
+  text-indent: -9999px;
+  overflow: hidden;
+}
 .util-border-radius-none {
   -webkit-border-radius: none;
   -moz-border-radius: none;
@@ -17,6 +21,10 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.util-textHidden {
+  text-indent: -9999px;
+  overflow: hidden;
 }
 .axbutton-style-normal {
   background: #ffea00;

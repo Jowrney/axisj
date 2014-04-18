@@ -8,6 +8,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.util-textHidden {
+  text-indent: -9999px;
+  overflow: hidden;
+}
 .AXEditor {
   position: relative;
   padding: 0px;
@@ -15,7 +19,7 @@
   background: #ffffff;
   overflow: hidden;
   border: 2px solid #bebebe;
-  font-family: "Open sans";
+  font-family: "Nanum Gothic";
 }
 .AXEditor .editorHead {
   position: relative;

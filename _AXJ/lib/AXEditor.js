@@ -113,37 +113,17 @@ var AXEditorLang = {
 	}
 };
 
+/*
 
-var AXEditorIcons = [
-	{
-	categoryNM:"Grimi", 
-	copyRights:"<a href='http://jowrney.com/xe/grimi/' target='_blank'>Copyright © Jowrney.com. All rights reserved.</a>", 
-	imageFolder:"/_AXJ/ui/icon/grimi/", 
-	icons:["grimi_big_smile16.png","grimi_cry16.png","grimi_doze16.png","grimi_happy16.png","grimi_love16.png","grimi_smile16.png","grimi_so_what16.png","grimi_vomit16.png"]
-	},
-	{
-	categoryNM:"Fugue Icons", 
-	copyRights:"<a href='http://p.yusukekamiyamane.com/' target='_blank'>Copyright © Yusuke Kamiyamane. All rights reserved.</a>", 
-	imageFolder:"/_AXJ/ui/icon/", 
-	icons:["address-book.png","alarm-clock.png","arrow-000-medium.png","arrow-045-medium.png","arrow-045.png","arrow-090-medium.png","arrow-090.png",
-	"arrow-135-medium.png","arrow-135.png","arrow-180-medium.png","arrow-180.png","arrow-225-medium.png","arrow-225.png","arrow-270-medium.png","arrow-270.png",
-	"arrow-315-medium.png","arrow-315.png","arrow.png","asterisk.png","auction-hammer.png","balance.png","balloon-ellipsis.png","balloon-quotation.png","balloon.png",
-	"bandaid.png","bell.png","bin.png","binocular.png","block.png","bomb.png","bookmark.png","box.png","briefcase.png","broom.png","building.png","burn.png",
-	"calculator.png","camcorder.png","camera.png","car--exclamation.png","car-red.png","clapperboard.png","compass.png","credit-card.png","crown-bronze.png",
-	"crown-silver.png","crown.png","currency-euro.png","currency-pound.png","currency-yen.png","currency.png","cursor-small.png","cursor.png","direction.png",
-	"drill.png","eraser.png","eye.png","hammer.png","hand.png","heart-break.png","heart.png","inbox.png","keyboard.png","leaf.png","lifebuoy.png","light-bulb.png",
-	"mail-open.png","mail.png","marker.png","megaphone.png","microphone.png","mobile-phone.png","money.png","mouse.png","music.png","paint-can.png","pipette-color.png",
-	"plug.png","printer.png","safe.png","smiley-confuse.png","smiley-cool.png","smiley-cry.png","smiley-eek.png","smiley-evil.png","smiley-fat.png","smiley-grin.png",
-	"smiley-lol.png","smiley-mad.png","smiley-mr-green.png","smiley-neutral.png","smiley-paint-brush.png","smiley-razz.png","smiley-red.png","smiley-roll.png","smiley-sad.png",
-	"smiley-slim.png","smiley-surprise.png","smiley-twist.png","smiley-wink.png","smiley-yell.png","smiley.png"]
-	}
-];
+2014-04-17 : tom - insert image & remove image 아이디 문제 해결
+
+*/
 
 var AXEditor = Class.create(AXJ, {
-	version       : "AXEditor V1.0",
+	version       : "AXEditor V1.1",
 	author        : "SQUALL",
 	createDate    : "2010.11.23",
-	lastModifyDate: "2010.02.08",
+	lastModifyDate: "2014.04.17",
 	initialize: function(AXJ_super){
 		AXJ_super();
 		this.moveSens = 0;
@@ -185,6 +165,34 @@ var AXEditor = Class.create(AXJ, {
     		config.tabExternals = [];
     		config.readyTofocus = true;
 		}
+
+
+        this.config.AXEditorIcons = [
+            {
+                categoryNM:"Grimi",
+                copyRights:"<a href='http://jowrney.com/xe/grimi/' target='_blank'>Copyright © Jowrney.com. All rights reserved.</a>",
+                imageFolder:"/ui/icons/grimi/",
+                icons:["grimi_big_smile16.png","grimi_cry16.png","grimi_doze16.png","grimi_happy16.png","grimi_love16.png","grimi_smile16.png","grimi_so_what16.png","grimi_vomit16.png"]
+            },
+            {
+                categoryNM:"Fugue Icons",
+                copyRights:"<a href='http://p.yusukekamiyamane.com/' target='_blank'>Copyright © Yusuke Kamiyamane. All rights reserved.</a>",
+                imageFolder:"/ui/icons/",
+                icons:["address-book.png","alarm-clock.png","arrow-000-medium.png","arrow-045-medium.png","arrow-045.png","arrow-090-medium.png","arrow-090.png",
+                    "arrow-135-medium.png","arrow-135.png","arrow-180-medium.png","arrow-180.png","arrow-225-medium.png","arrow-225.png","arrow-270-medium.png","arrow-270.png",
+                    "arrow-315-medium.png","arrow-315.png","arrow.png","asterisk.png","auction-hammer.png","balance.png","balloon-ellipsis.png","balloon-quotation.png","balloon.png",
+                    "bandaid.png","bell.png","bin.png","binocular.png","block.png","bomb.png","bookmark.png","box.png","briefcase.png","broom.png","building.png","burn.png",
+                    "calculator.png","camcorder.png","camera.png","car--exclamation.png","car-red.png","clapperboard.png","compass.png","credit-card.png","crown-bronze.png",
+                    "crown-silver.png","crown.png","currency-euro.png","currency-pound.png","currency-yen.png","currency.png","cursor-small.png","cursor.png","direction.png",
+                    "drill.png","eraser.png","eye.png","hammer.png","hand.png","heart-break.png","heart.png","inbox.png","keyboard.png","leaf.png","lifebuoy.png","light-bulb.png",
+                    "mail-open.png","mail.png","marker.png","megaphone.png","microphone.png","mobile-phone.png","money.png","mouse.png","music.png","paint-can.png","pipette-color.png",
+                    "plug.png","printer.png","safe.png","smiley-confuse.png","smiley-cool.png","smiley-cry.png","smiley-eek.png","smiley-evil.png","smiley-fat.png","smiley-grin.png",
+                    "smiley-lol.png","smiley-mad.png","smiley-mr-green.png","smiley-neutral.png","smiley-paint-brush.png","smiley-razz.png","smiley-red.png","smiley-roll.png","smiley-sad.png",
+                    "smiley-slim.png","smiley-surprise.png","smiley-twist.png","smiley-wink.png","smiley-yell.png","smiley.png"]
+            }
+        ];
+
+
 	},
 	init: function(){
 		this._self    = jQuery("#"+this.config.targetID);
@@ -473,12 +481,12 @@ var AXEditor = Class.create(AXJ, {
 		var config = this.config;
 		var re = config.targetID;
 		var ty = file.ty.dec().toLowerCase();
-		var tyReg = /(bmp|jpg|jpeg|gif|png)$/; 
+		var tyReg = /(bmp|jpg|jpeg|gif|png)$/;
  		if (tyReg.test(ty)) {
 			/*본문삽입*/
 			var imgObj = new Image();
 			imgObj.src = file.path.dec()+file.nm.dec();
-			imgObj.id = "MF_"+file.nm.replace(file.ty, "").dec();
+			imgObj.id = "MF_"+file.nm.replace(new RegExp("[\.]"+file.ty, "i"), "").dec();
 			
 			var pasteHTML = this.__pasteHTML.bind(this);
 			var canvasWidth = this.canvas.width() - 40;
@@ -1329,7 +1337,7 @@ var AXEditor = Class.create(AXJ, {
 		po.push("	<div class='me___selecterArrow me_ico' style='left:372px;'></div>");
 		po.push("	<div class='me___selecterTitleTab me_ico'>");
 		po.push("		<div class='me___selecterTitleTabTray me_ico'>");
-		jQuery.each(AXEditorIcons, function(idx, ca){
+		jQuery.each(config.AXEditorIcons, function(idx, ca){
 			if(icoCategoryIndex == idx)
 		po.push("<a href='#AXExec' class='categoryItem me_ico on' id='"+re+"_icoCategory_"+idx+"'>"+ca.categoryNM+"</a>");
 			else
@@ -1338,13 +1346,13 @@ var AXEditor = Class.create(AXJ, {
 		po.push("		</div>");
 		po.push("	</div>");
 		po.push("	<div class='me___selecterTray me_ico' style='height:120px;' id='"+re+"_icoTray'>");
-		var icoFolder = AXEditorIcons[icoCategoryIndex].imageFolder;
-		jQuery.each(AXEditorIcons[icoCategoryIndex].icons, function(index, n){
+		var icoFolder = config.AXEditorIcons[icoCategoryIndex].imageFolder;
+		jQuery.each(config.AXEditorIcons[icoCategoryIndex].icons, function(index, n){
 			po.push("<a href='#AXExex' class='icoItem me_ico'><img src='"+icoFolder+n+"' align='middle' alt='' /></a>");
 		});
 		po.push("	</div>");
 		po.push("	<div class='me___selecterBot me_ico' id='"+re+"_icoBot'>");
-		po.push("	"+AXEditorIcons[icoCategoryIndex].copyRights);
+		po.push("	"+config.AXEditorIcons[icoCategoryIndex].copyRights);
 		po.push("	</div>");
 		po.push("</div>");
 		this.icPicker = jQuery(po.join(''));
@@ -1409,13 +1417,13 @@ var AXEditor = Class.create(AXJ, {
 		jQuery("#"+re+"_icoCategory_"+idx).addClass("on");
 		
 		var po = [];
-		var icoFolder = AXEditorIcons[icoCategoryIndex].imageFolder;
-		jQuery.each(AXEditorIcons[icoCategoryIndex].icons, function(index, n){
+		var icoFolder = config.AXEditorIcons[icoCategoryIndex].imageFolder;
+		jQuery.each(config.AXEditorIcons[icoCategoryIndex].icons, function(index, n){
 			po.push("<a href='#AXExex' class='icoItem me_ico'><img src='"+icoFolder+n+"' align='middle' alt='' /></a>");
 		});
 		jQuery("#"+re+"_icoTray").html(po.join(''));
 		this.icPicker.find(".icoItem img").bind("click", this.clickic.bind(this, "imoticon")); 
-		jQuery("#"+re+"_icoBot").html(AXEditorIcons[icoCategoryIndex].copyRights);
+		jQuery("#"+re+"_icoBot").html(config.AXEditorIcons[icoCategoryIndex].copyRights);
 	},
 	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 	onContentMode: function(event){

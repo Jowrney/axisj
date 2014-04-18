@@ -8,6 +8,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.util-textHidden {
+  text-indent: -9999px;
+  overflow: hidden;
+}
 .axtabs-style-normal {
   background: #e8e8e8;
   background: -webkit-linear-gradient(#fdfdfd, #e8e8e8);

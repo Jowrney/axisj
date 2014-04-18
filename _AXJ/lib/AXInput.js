@@ -3,7 +3,7 @@
  
 
 var AXInputConverter = Class.create(AXJ, {
-	version: "AXInputConverter v1.42",
+	version: "AXInputConverter v1.45",
 	author: "tom@axisj.com",
 	logs: [
 		"2012-11-05 오후 1:23:24",
@@ -32,7 +32,9 @@ var AXInputConverter = Class.create(AXJ, {
 		"2014-02-21 오후 4:52:24 tom : bindMoney 포커스 유지 기능 추가",
 		"2014-02-25 오후 9:05:04 tom : earlierThan/ laterThan 설정 버그픽스",
 		"2014-03-18 오후 1:58:57 tom : bindSelector 텍스트 변경 안 되었을 때 이벤트 처리 안하기",
-		"2014-03-18 오후 9:44:57 tom : 날짜 입력 시 4자리 입력 후 포커스 아웃 시 당해년도 4자리 자동 포함, 날짜 입력 시 6자리 입력 후 포커스 아웃 시 당해년도 앞 2자리 자동 포함"
+		"2014-03-18 오후 9:44:57 tom : 날짜 입력 시 4자리 입력 후 포커스 아웃 시 당해년도 4자리 자동 포함, 날짜 입력 시 6자리 입력 후 포커스 아웃 시 당해년도 앞 2자리 자동 포함",
+		"2014-04-03 오후 3:49:21 tom : bindDate ie 10 blur 버그 픽스",
+        "2014-04-14 tom : 모바일 너비 지정 방식 변경"
 	],
 	initialize: function (AXJ_super) {
 		AXJ_super();
@@ -60,7 +62,8 @@ var AXInputConverter = Class.create(AXJ, {
 		this.config.anchorDateHandleClassName = "AXanchorDateHandle";
 		this.config.bindDateExpandBoxClassName = "AXbindDateExpandBox";
 		this.config.bindTwinDateExpandBoxClassName = "AXbindTwinDateExpandBox";
-		this.config.responsiveWidth = AXConfig.mobile.responsiveWidth; /* 모바일 반응 너비 */
+		/* 모바일 반응 너비 */
+        this.config.responseiveMobile = AXConfig.mobile.responsiveWidth;
 	},
 	init: function () {
 		$(window).resize(this.windowResize.bind(this));
@@ -2112,8 +2115,8 @@ var AXInputConverter = Class.create(AXJ, {
 	},
 	bindDateExpand: function (objID, objSeq, isToggle, event) {
 		var cfg = this.config;
-		//alert(cfg.responsiveWidth);
-		if (AXUtil.clientWidth() < cfg.responsiveWidth) {
+		//alert(cfg.responseiveMobile);
+		if (AXUtil.clientWidth() < cfg.responseiveMobile) {
 			this.bindDateExpandMobile(objID, objSeq, isToggle, event);
 			return;
 			/* 클라이언트 너비가 모바일 너비이면 프로세스 중지 */
@@ -2300,7 +2303,7 @@ var AXInputConverter = Class.create(AXJ, {
 
 		var bindDateExpandBoxClick = this.bindDateExpandBoxClick.bind(this);
 		obj.documentclickEvent = function (event) {
-			//trace(objID, objSeq);
+			//trace(objID);
 			bindDateExpandBoxClick(objID, objSeq, event);
 		}
 		var bindDateKeyup = this.bindDateKeyup.bind(this);
@@ -2311,9 +2314,11 @@ var AXInputConverter = Class.create(AXJ, {
 			axdom("#" + cfg.targetID + "_AX_" + objID + "_AX_controlYear").css({ left: "70px" });
 			axdom("#" + cfg.targetID + "_AX_" + objID + "_AX_controlMonth").hide();
 		}
+
 		//trace("event bind");
-		axdom(document).bind("click.AXInput", obj.documentclickEvent);
+		axdom(document).unbind("click.AXInput").bind("click.AXInput", obj.documentclickEvent);
 		axdom("#" + objID).bind("keydown.AXInput", obj.inputKeyup);
+		
 	},
 	/* bindDate for mobile --------- s */
 	bindDateExpandMobile: function (objID, objSeq, isToggle, event) {
@@ -2900,11 +2905,13 @@ var AXInputConverter = Class.create(AXJ, {
 			}
 		}
 
+		/* ie10 버그
 		axdom("#" + cfg.targetID + "_AX_" + objID + "_AX_expandBox").remove(); // 개체 삭제 처리
 
 		//비활성 처리후 메소드 종료
 		axdom(document).unbind("click.AXInput");
 		axdom("#" + objID).unbind("keydown.AXInput");
+		*/
 
 		event.stopPropagation(); // disableevent
 		return;
@@ -3969,9 +3976,7 @@ var AXInputConverter = Class.create(AXJ, {
 				}
 			}
 		}
-
-		axdom("#" + cfg.targetID + "_AX_" + objID + "_AX_expandBox").remove(); // 개체 삭제 처리
-
+		
 		if (!obj.config.onChange) obj.config.onChange = obj.config.onchange;
 		if (obj.config.onChange) {
 			obj.config.onChange.call({
@@ -3982,11 +3987,14 @@ var AXInputConverter = Class.create(AXJ, {
 				ED_value: axdom("#" + objID).val()
 			});
 		}
+		
+		/* ie10 버그 픽스
+		axdom("#" + cfg.targetID + "_AX_" + objID + "_AX_expandBox").remove(); // 개체 삭제 처리
 
 		//비활성 처리후 메소드 종료
 		axdom(document).unbind("click.AXInput");
 		axdom("#" + objID).unbind("keydown.AXInput");
-
+		*/
 		event.stopPropagation(); // disableevent
 		return;
 	}
